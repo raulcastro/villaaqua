@@ -1,0 +1,222 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon.eot?-rh6pp9');
+	src:url('../fonts/icomoon.eot?#iefix-rh6pp9') format('embedded-opentype'),
+		url('../fonts/icomoon.woff?-rh6pp9') format('woff'),
+		url('../fonts/icomoon.ttf?-rh6pp9') format('truetype'),
+		url('../fonts/icomoon.svg?-rh6pp9#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icomoon-"], [class*=" icomoon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icomoon-alcohol:before {
+	content: "\e600";
+}
+
+.icomoon-anchor2:before {
+	content: "\e601";
+}
+
+.icomoon-anchor:before {
+	content: "\e602";
+}
+
+.icomoon-arrowleft:before {
+	content: "\e603";
+}
+
+.icomoon-arrowright:before {
+	content: "\e604";
+}
+
+.icomoon-arrowwithround:before {
+	content: "\e605";
+}
+
+.icomoon-compass:before {
+	content: "\e606";
+}
+
+.icomoon-Flag:before {
+	content: "\e607";
+}
+
+.icomoon-lifebuoy:before {
+	content: "\e608";
+}
+
+.icomoon-NWES:before {
+	content: "\e609";
+}
+
+.icomoon-palm2:before {
+	content: "\e60a";
+}
+
+.icomoon-Palm:before {
+	content: "\e60b";
+}
+
+.icomoon-seahorse:before {
+	content: "\e60c";
+}
+
+.icomoon-shark:before {
+	content: "\e60d";
+}
+
+.icomoon-shell:before {
+	content: "\e60e";
+}
+
+.icomoon-ship2:before {
+	content: "\e60f";
+}
+
+.icomoon-ship:before {
+	content: "\e610";
+}
+
+.icomoon-sun2:before {
+	content: "\e611";
+}
+
+.icomoon-sun3:before {
+	content: "\e612";
+}
+
+.icomoon-sun:before {
+	content: "\e613";
+}
+
+.icomoon-Wheel2:before {
+	content: "\e614";
+}
+
+.icomoon-Wheel:before {
+	content: "\e615";
+}
+
+.icomoon-WNES2 .path1:before {
+	content: "\e616";
+	color: rgb(0, 0, 0);
+}
+.icomoon-WNES2 .path2:before {
+	content: "\e617";
+	margin-left: -1.02734375em;
+	color: rgb(0, 0, 0);
+}
+.icomoon-WNES2 .path3:before {
+	content: "\e618";
+	margin-left: -1.02734375em;
+	color: rgb(0, 0, 0);
+}
+.icomoon-WNES2 .path4:before {
+	content: "\e619";
+	margin-left: -1.02734375em;
+	color: rgb(0, 0, 0);
+}
+.icomoon-WNES2 .path5:before {
+	content: "\e61a";
+	margin-left: -1.02734375em;
+	color: rgb(0, 0, 0);
+}
+.icomoon-WNES2 .path6:before {
+	content: "\e61b";
+	margin-left: -1.02734375em;
+	color: rgb(0, 0, 0);
+}
+.icomoon-WNES2 .path7:before {
+	content: "\e61c";
+	margin-left: -1.02734375em;
+	color: rgb(0, 0, 0);
+}
+.icomoon-WNES2 .path8:before {
+	content: "\e61d";
+	margin-left: -1.02734375em;
+	color: rgb(0, 0, 0);
+}
+.icomoon-WNES2 .path9:before {
+	content: "\e61e";
+	margin-left: -1.02734375em;
+	color: rgb(0, 0, 0);
+}
+.icomoon-WNES2 .path10:before {
+	content: "\e61f";
+	margin-left: -1.02734375em;
+	color: rgb(0, 0, 0);
+}
+.icomoon-WNES2 .path11:before {
+	content: "\e620";
+	margin-left: -1.02734375em;
+	color: rgb(0, 0, 0);
+}
+.icomoon-WNES2 .path12:before {
+	content: "\e621";
+	margin-left: -1.02734375em;
+	color: rgb(0, 0, 0);
+}
+.icomoon-WNES2 .path13:before {
+	content: "\e622";
+	margin-left: -1.02734375em;
+	color: rgb(0, 0, 0);
+}
+.icomoon-WNES2 .path14:before {
+	content: "\e623";
+	margin-left: -1.02734375em;
+	color: rgb(245, 245, 245);
+}
+.icomoon-WNES2 .path15:before {
+	content: "\e624";
+	margin-left: -1.02734375em;
+	color: rgb(0, 0, 0);
+}
+.icomoon-WNES2 .path16:before {
+	content: "\e625";
+	margin-left: -1.02734375em;
+	color: rgb(0, 0, 0);
+}
+.icomoon-WNES2 .path17:before {
+	content: "\e626";
+	margin-left: -1.02734375em;
+	color: rgb(0, 0, 0);
+}
+.icomoon-WNES2 .path18:before {
+	content: "\e627";
+	margin-left: -1.02734375em;
+	color: rgb(0, 0, 0);
+}
+.icomoon-WNES2 .path19:before {
+	content: "\e628";
+	margin-left: -1.02734375em;
+	color: rgb(0, 0, 0);
+}
+.icomoon-WNES2 .path20:before {
+	content: "\e629";
+	margin-left: -1.02734375em;
+	color: rgb(0, 0, 0);
+}
+.icomoon-WNES2 .path21:before {
+	content: "\e62a";
+	margin-left: -1.02734375em;
+	color: rgb(0, 0, 0);
+}
+
+.icomoon-X:before {
+	content: "\e62b";
+}
+
