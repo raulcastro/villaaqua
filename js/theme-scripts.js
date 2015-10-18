@@ -1,6 +1,16 @@
 (function ($) {
     "use strict";
     
+    jQuery("#layerslider_1").layerSlider({
+                    responsiveUnder: 1920,
+                    pauseOnHover: false,
+                    skin: 'amber',
+                    hoverPrevNext: false,
+                    navStartStop: false,
+                    navButtons: false,
+                    showCircleTimer: false,
+                    skinsPath: 'http://cdn.amber.stylemixthemes.com/wp-content/themes/amber/inc/ls-skins/'
+                });
     if (top.location != location) {
        top.location.href = document.location.href;
     }
@@ -151,20 +161,7 @@
         });
     }
 
-    var localStorageItems = Object.keys(window.localStorage);
-    for (var i = 0; localStorageItems.length > i; i++) {
-        var event = localStorageItems[i].split('_');
-        if (event[0] == 'event') {
-            if ($('.event-add').length) {
-                $('.event-add').each(function () {
-                    var eventID = $(this).attr('event-id');
-                    if (eventID == event[1]) {
-                        $(this).addClass('is-active');
-                    }
-                });
-            }
-        }
-    }
+
 
     $(".main-navbar .navbar-nav > li .caret").on('click', function() {
         $(this).parent('.dropdown').toggleClass('open').siblings('.dropdown').removeClass('open');
@@ -172,31 +169,3 @@
 
 })(jQuery);
 
-// Events
-jQuery('.event-add').on('click', function () {
-    var $ = jQuery,
-        id = $(this).attr('event-id'),
-        event_add = parseInt(localStorage.getItem('event_' + id));
-
-    if (event_add > 0 || $(this).hasClass('cancelled') || $(this).hasClass('full_booked')) {
-        return false;
-    }
-
-    localStorage.setItem('event_' + id, 1);
-
-    $.ajax({
-        url: '/',
-        data: 'event_add=true&event_id=' + id,
-        type: 'POST',
-        dataType: 'json',
-        context: $(this),
-        success: function (json) {
-            if (json['result']) {
-                $(this).addClass('is-active');
-                $(this).parent().find('.event-members').text(json['total_members']).addClass('is-members');
-            }
-        }
-    });
-
-    return false;
-});
