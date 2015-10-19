@@ -76,3 +76,364 @@ div.wpcf7 div.ajax-error {
 div.wpcf7 .placeheld {
 	color: #888;
 }
+
+/* Those were in the index embbebed */
+
+.post-password-form input[type="submit"],
+        .main-navbar .user-menu a,
+        .wpb_call_to_action.style-2 .wpb_button,
+        .stm-contact_callback,
+        .rental-services_filter .active,
+        .stm_staff-member .stm_details_more,
+        .contact-details .see-map_link,
+        .wpcf7-form .wpcf7-textarea:focus,
+        .wpcf7-form .wpcf7-text:focus,
+        .wpcf7-form .wpcf7-submit,
+        .info_box.box,
+        .events-list .event-add,
+        .error-404 .return_link,
+        .btn-primary,
+        .btn-primary:hover,
+        .ult_design_3 .ult_pricing_table .ult_price_link .ult_price_action_button,
+        body .wpb_tabs.wpb_content_element .wpb_tabs_nav li,
+        body .wpb_tour.wpb_content_element .wpb_tabs_nav li,
+        .event-details .event-add,
+        .post-start,
+        .bypostauthor img.avatar,
+        .comment.bypostauthor .comment-author.avatar img.avatar,
+        .comment-form .form-submit input[type="submit"],
+        .comment-field_wrap textarea:focus,
+        .comment-field_wrap input:focus,
+        .not-found .search-form .search-field,
+        .not-found .search-form .search-submit,
+        .footer_widget-area,
+        .move-top,
+
+        .vc_separator.vc_sep_color_chino .vc_sep_line,
+        .vc_btn3.vc_btn3-color-chino.vc_btn3-style-outline,
+        .vc_btn3.vc_btn3-color-chino.vc_btn3-style-outline:hover,
+        .vc_btn3.vc_btn3-color-chino.vc_btn3-style-outline:focus,
+        .vc_btn3.vc_btn3-color-chino:focus,
+        .vc_btn3.vc_btn3-color-chino.vc_btn3-style-flat:hover,
+        body .vc_general.vc_btn3,
+        body .vc_btn3,
+        .ult_countdown.ult-cd-s2 .ult_countdown-section .ult_countdown-amount {
+            border-color: #9d8f62;
+        }
+
+        p a,
+        dl a,
+        .wp-caption a,
+        .post-password-form input[type="submit"],
+        .page-links a,
+        .main-navbar .navbar-brand.no-logo,
+        .main-navbar .navbar-nav > li.menu-item-language-current > a,
+        .main-navbar .submenu-languages > li > a:hover,
+        .main-navbar .navbar-nav li.current-menu-parent > a,
+        .main-navbar .navbar-nav li.current-menu-item > a,
+        .main-navbar .navbar-nav > li > a:hover,
+        .main-navbar .navbar-nav > li > a:focus,
+        .main-navbar .navbar-nav > .open > a,
+        .main-navbar .navbar-nav > .open > a:focus,
+        .main-navbar .navbar-nav > .open > a:hover,
+        .main-navbar .user-menu a,
+        .dropdown-menu > li > a:focus,
+        .dropdown-menu > li > a:hover,
+        .top-navbar .user-menu-item.cart-contents i,
+        .vc_separator h2,
+        .wpb_call_to_action.style-1 .wpb_button:focus,
+        .wpb_call_to_action.style-1 .wpb_button:hover,
+        .wpb_call_to_action.style-2 .wpb_button,
+        .wpb_call_to_action.style-2 .wpb_call_text,
+        .stm-testimonial .author,
+        body .ult-carousel-wrapper.bullets-white .slick-dots li.slick-active i,
+        .rental-service-price_currency,
+        .rental-service-price_table .rental-service-price_cost,
+        .item-features_list li:before,
+        .stm_item-details .detail_name,
+        .rental-service_item .rs-item_actions a,
+        .rental-service_item .rs-item_price,
+        .stm-contact_callback,
+        .owl-carousel .owl-nav > div:hover i.icon,
+        .rental-services_filter a:focus,
+        .rental-services_filter a:hover,
+        .rental-services_filter .active,
+        .blog_grid .post-content h4 a:hover,
+        .blog_grid .post-comments_num a:hover,
+        .blog_grid .post-read_more a,
+        .stm_staff-member .stm_member_name,
+        .stm_staff-member .stm_details_more,
+        .wpb_text_column a,
+        .contact-details .contact-email a:hover,
+        .contact-details .see-map_link,
+        .wpcf7-form .wpcf7-submit,
+        .info_box.box h5,
+        .events-list .entry-content h4 a:hover,
+        .events-list .event-details i,
+        .events-list .event-add,
+        .error-404 .return_link,
+        .page-meta_list li a:hover,
+        .page-meta_list li i,
+        .wpb_text_column.drop-caps p:first-child:first-letter,
+        .btn-primary,
+        .table thead > tr > th,
+        table thead > tr > th,
+        table tbody > tr > td a,
+        table tbody > tr > th a,
+        body .wpb_content_element .wpb_tabs_nav li:hover a,
+        body .wpb_content_element .wpb_tour_tabs_wrapper .wpb_tabs_nav .ui-tabs-active a,
+        body .wpb_tour_next_prev_nav a,
+        .wpb_accordion .wpb_accordion_wrapper .wpb_accordion_header:hover a,
+        .event-details_list i,
+        .event-details .event-add,
+        .hentry.view-for-grid .entry-title a:focus,
+        .hentry.view-for-grid .entry-title a:hover,
+        .hentry.view-for-list .read-more,
+        .hentry.view-for-grid .read-more,
+        .posts-navigation .page-numbers:focus,
+        .posts-navigation .page-numbers:hover,
+        .posts-navigation .page-numbers.current,
+        .hentry.view-for-list .entry-title a:hover,
+        .hentry.view-for-list .entry-title a:focus,
+        .post-start,
+        .related-post_title a,
+        .comments-title .count-comments,
+        .comment-author.vcard .fn a:hover,
+        .comment-meta .reply a,
+        .comment-meta .reply i,
+        #cancel-comment-reply-link,
+        .comment-form .form-submit input[type="submit"],
+        .logged-in-as a,
+        .widget-title a:focus,
+        .widget-title a:hover,
+        .widget ul li a:focus,
+        .widget ul li a:hover,
+        .recent-events_list li h5 a,
+        .recent-events_list td i,
+        .widget.widget_archive ul li:before,
+        .widget_mailchimp .input-group-btn,
+        .tweets_list .tweet.left-icon:after,
+        .tweets_list .tweet p a,
+        .widget.widget_calendar table a,
+        .widget_product_categories .product-categories > li:before,
+        .widget.widget_categories ul li:before,
+        .widget.widget_recent_comments ul li,
+        .widget.widget_recent_comments ul li:before,
+        .widget.widget_recent_comments a:hover,
+        .widget.widget_event_categories .event-categories_list li:before,
+        .widget.widget_rss ul li a,
+        .not-found .search-form .search-submit,
+        .footer_widget-area .widget-title,
+        .widget_contact_us .contact-details_list li a,
+        .footer_widget-area .widget_recent_entries a,
+        .copyright a,
+        .move-top,
+        .buy_theme_popup .buy_button:hover,
+
+        .lost_password a,
+
+        body .aio-icon i,
+        .widget.widget_search .search-form label:after,
+        .main-navbar.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus,
+        .main-navbar.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+        .stats-block .stats-text,
+        .vc_btn3.vc_btn3-color-chino.vc_btn3-style-outline,
+        .top-navbar .user-menu-item.social-networks:hover a,
+        .top-navbar .user-menu-item.social-networks a:hover,
+        .vc_btn3.vc_btn3-color-chino:focus,
+        .vc_btn3.vc_btn3-color-chino:hover,
+        .vc_btn3.vc_btn3-color-chino.vc_btn3-style-flat:focus,
+        .vc_btn3.vc_btn3-color-chino.vc_btn3-style-flat:hover,
+        .ult_countdown.ult-cd-s2 .ult_countdown-section .ult_countdown-period,
+        .main-navbar .dropdown-menu > li:hover > a,
+        .stm-separator_holder.__icon {
+            color: #9d8f62;
+        }
+
+        .post-password-form input[type="submit"]:hover,
+        .main-navbar .user-menu a:hover,
+        .wpb_call_to_action.style-2 .wpb_button:focus,
+        .wpb_call_to_action.style-2 .wpb_button:hover,
+        .info-box_separator .line,
+        .stm-separator_line,
+        .rental-service_tags .tags-links a:focus,
+        .rental-service_tags .tags-links a:hover,
+        .rental-service_item .rs-item_actions a:hover,
+        .stm-contact_callback:hover,
+        .blog_grid .post-separator .fill-line,
+        .stm_details-more_hover,
+        .contact-details .see-map_link:focus,
+        .contact-details .see-map_link:hover,
+        .wpcf7-form .wpcf7-submit:focus,
+        .wpcf7-form .wpcf7-submit:hover,
+        .info_box.box .info-box_img,
+        .events-list .event-add.is-active,
+        .events-list .event-add:hover,
+        .error-404_head .separator-line,
+        .error-404 .return_link:hover,
+        .wpb_text_column.drop-caps_circle p:first-child:first-letter,
+        .hentry.view-single-post blockquote,
+        blockquote,
+        .wpb_text_column blockquote,
+        .btn-primary:hover,
+        .table-striped thead,
+        .ult_design_3 .ult_pricing_table .ult_pricing_heading,
+        .ult_design_3 .ult_pricing_table .ult_price_link .ult_price_action_button:hover,
+        body .wpb_tabs.wpb_content_element .wpb_tabs_nav li,
+        body .wpb_tour.wpb_content_element .wpb_tabs_nav li,
+        .event-details .event-add.is-active,
+        .event-details .event-add:hover,
+        .single-event-container .tags-links a:hover,
+        .hentry.view-for-list .entry-footer .line-fill,
+        .hentry.view-for-grid .entry-footer .line-fill,
+        .hentry.view-single-post .tags-links a:focus,
+        .hentry.view-single-post .tags-links a:hover,
+        .post-start:focus,
+        .post-start:hover,
+        .comment-form .form-submit input[type="submit"]:focus,
+        .comment-form .form-submit input[type="submit"]:hover,
+        .stm-blockquote,
+        .widget.widget_tag_cloud .tagcloud a:focus,
+        .widget.widget_tag_cloud .tagcloud a:hover,
+        .widget.widget_search,
+        .not-found .search-form .search-submit:hover,
+        .move-top:focus,
+        .move-top:hover,
+        .buy_theme_popup,
+
+        .search-responsive-collapse,
+        .vc_btn3.vc_btn3-color-chino.vc_btn3-style-outline:hover,
+        .vc_btn3.vc_btn3-color-chino.vc_btn3-style-outline:focus,
+        .vc_btn3.vc_btn3-color-chino,
+        .vc_btn3.vc_btn3-color-chino.vc_btn3-style-flat {
+            background-color: #9d8f62;
+        }
+
+        .top-navbar {
+            background-color: #171717;
+        }
+
+        .top-navbar .user-menu-item a,
+        .top-navbar .navbar-form .form-control,
+        .top-navbar .navbar-form .form-control-feedback {
+            color: #6b6b6b;
+        }
+
+        .top-navbar .navbar-form .form-control {
+            color: #3c3c3c;
+        }
+
+        .main-navbar,
+        .main-navbar .submenu-languages,
+        .dropdown-menu {
+            background-color: #282828;
+        }
+
+        .main-navbar .navbar-nav > li > a,
+        .dropdown-menu > li > a {
+            color: #9b9b9b;
+        }
+
+        .main-navbar .navbar-nav > li > a {
+            text-transform: uppercase;
+            font-style: 400;
+            font-size: 14px;
+        }
+
+        .dropdown-menu > li > a {
+            font-style: 400;
+            font-size: 14px;
+        }
+
+        .main-navbar .dropdown-menu > li > a {
+            color: #666666;
+        }
+
+        .navbar-default .navbar-toggle .icon-bar {
+            background-color: #888888;
+        }
+
+        .navbar-toggle.search-toggle,
+        .main-navbar .navbar-nav > li .caret {
+            color: #6e6e6e;
+        }
+
+        .navbar-toggle.close-search,
+        .search-responsive-collapse .btn-search,
+        .search-responsive-collapse .form-control {
+            color: #413c2a;
+        }
+
+        body {
+            font-family: "Roboto Slab";
+            font-size: 14px;
+        }
+
+
+
+        .widget_contact_us .contact-details_list li,
+        .tweets_list .tweet p,
+        .widget_follow_us p,
+        .widget_recent_entries .post-date,
+        .widget_contact_us .contact-details_list.left-icon li:after,
+        .copyright {
+            color: #a5a5a5;
+        }
+
+.vc_second-row {
+    padding-top: 80px !important;
+    padding-bottom: 80px !important;
+    background-color: #FFF !important;
+}
+
+        .vc_custom_1426663491012 {
+            padding-top: 80px !important;
+            padding-bottom: 80px !important;
+        }
+
+        .vc_custom_1427803088111 {
+            padding-top: 46px !important;
+            padding-bottom: 46px !important;
+            background-color: #282828 !important;
+        }
+
+        .vc_custom_1427803471819 {
+            padding-top: 175px !important;
+            padding-bottom: 71px !important;
+        }
+
+        .vc_custom_1426664924161 {
+            padding-top: 80px !important;
+            padding-bottom: 74px !important;
+        }
+
+        .vc_custom_1426669393698 {
+            padding-top: 80px !important;
+            padding-bottom: 80px !important;
+        }
+
+        .vc_custom_1426670046078 {
+            padding-top: 75px !important;
+            padding-bottom: 29px !important;
+        }
+
+        .vc_custom_1428300017097 {
+            padding-top: 80px !important;
+        }
+
+        .vc_custom_1428300023710 {
+            padding-bottom: 80px !important;
+        }
+
+        .vc_custom_1425470118379 {
+            margin-bottom: 0px !important;
+        }
+
+.upb_row_bg {
+    border: 1px solid red;
+    min-width: 1251px;
+
+    width: 100%;
+
+
+}

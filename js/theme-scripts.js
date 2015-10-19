@@ -11,6 +11,48 @@
                     showCircleTimer: false,
                     skinsPath: 'http://cdn.amber.stylemixthemes.com/wp-content/themes/amber/inc/ls-skins/'
                 });
+
+    jQuery('.ult-carousel').slick({
+        dots: true,
+        autoplaySpeed: 5000,
+        speed: 300,
+        infinite: false,
+        arrows: false,
+        slidesToScroll: 1,
+        slidesToShow: 1,
+        swipe: true,
+        draggable: true,
+        touchMove: true,
+        responsive: [
+            {
+                breakpoint: 1025,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 769,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 481,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ],
+        pauseOnHover: true,
+        pauseOnDotsHover: true,
+        customPaging: function (slider, i) {
+            return '<i type="button " style="color:#91824f; " class="ultsl-record " data-role="none "></i>';
+        },
+    });
+
     if (top.location != location) {
        top.location.href = document.location.href;
     }

@@ -1,4 +1,4 @@
-f/*
+/*
 Theme Name: Amber
 Theme URI: https://amber.stylemixthemes.com/
 Author: Stylemixthemes
@@ -389,6 +389,7 @@ body.outer-title_hide .site-header {
     display: block;
     height: 72px;
     line-height: 72px;
+    margin-top: 10px;
 }
 
 .navbar-brand.has-logo img {
@@ -404,12 +405,13 @@ body.outer-title_hide .site-header {
 }
 
 .main-navbar {
-    background: #282828;
+    /*background: #282828;*/
+    background: #FFF;
 }
 
 .main-navbar .navbar-nav > li > a {
     color: #9b9b9b;
-    font-size: 14px;
+    font-size: 11px;
     font-style: normal;
     padding-right: 20px;
     padding-left: 20px;
@@ -455,7 +457,7 @@ body.outer-title_hide .site-header {
     font-size: 14px;
     text-align: left;
     padding: 8px 0;
-    background-color: #282828;
+    /*background-color: #282828;*/
     border-top: 10px solid transparent;
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
@@ -536,7 +538,7 @@ body.outer-title_hide .site-header {
     border-radius: 0;
     border: 0 none;
     box-shadow: none;
-    background-color: #282828;
+    /*background-color: #282828;*/
     padding: 8px 0;
 }
 
@@ -4891,8 +4893,8 @@ body .vc_btn3.vc_btn3-color-chino.vc_btn3-style-flat:hover {
     }
 
     .main-navbar .navbar-nav > li > a {
-        padding-top: 26px;
-        padding-bottom: 26px;
+        padding-top: 40px;
+        padding-bottom: 40px;
     }
 
     .main-navbar .navbar-nav > li:last-child > a {
