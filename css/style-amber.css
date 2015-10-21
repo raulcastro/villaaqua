@@ -1339,7 +1339,7 @@ body.no-touch-device .rental-service_item:hover .rs-item_actions a {
     bottom: 0;
     left: 0;
     width: 100%;
-    background: rgba(43, 43, 43, 0.7);
+    background: rgba(34, 188, 184, 0.7);
     padding: 11px 20px 15px 20px;
 }
 
@@ -1351,14 +1351,14 @@ body.no-touch-device .rental-service_item:hover .rs-item_actions a {
     color: #ffffff;
     font-size: 14px;
     line-height: 24px;
+    font-weight: bold;
 }
 
 .rental-service_item .rs-item_price {
-    font-family: "Lora";
     font-weight: 400;
     font-style: italic;
     font-size: 14px;
-    color: #9d8f62;
+    color: #333;
 }
 
 .stm-contact {
@@ -1480,13 +1480,13 @@ body.no-touch-device .rental-service_item:hover .rs-item_actions a {
 
 .rental-services_filter a:focus,
 .rental-services_filter a:hover {
-    color: #9d8f62;
+    color: #636262;
     text-decoration: none;
 }
 
 .rental-services_filter .active {
-    color: #9d8f62;
-    border-color: #9d8f62;
+    color: #333;
+    border-color: #333;
 }
 
 .rental-services-container {
@@ -3956,9 +3956,7 @@ body .wpb_accordion .wpb_accordion_wrapper .ui-state-active .ui-icon {
 }
 
 .widget ul li {
-    font-family: "Lora";
-    font-size: 14px;
-    font-style: italic;
+    font-size: 12px;
 }
 
 .widget ul li a {
@@ -4095,11 +4093,11 @@ body .wpb_accordion .wpb_accordion_wrapper .ui-state-active .ui-icon {
 
 .tweets_list .tweet.left-icon {
     position: relative;
-    padding-left: 27px;
+    /*padding-left: 27px;*/
 }
 
 .tweets_list .tweet.left-icon:after {
-    content: "\f099";
+    /*content: "\f099";*/
     position: absolute;
     top: 3px;
     left: 0;
@@ -4576,7 +4574,7 @@ body .vc_btn3.vc_btn3-color-chino.vc_btn3-style-flat:hover {
 
 /* Site Footer */
 .site-footer {
-    background-color: #22BCB8;
+    background-color: #636262;
 }
 
 .footer_widget-area {
@@ -4585,7 +4583,7 @@ body .vc_btn3.vc_btn3-color-chino.vc_btn3-style-flat:hover {
 }
 
 .footer_widget-area .widget-title {
-    color: #333;
+    color: #22BCB8;
     font-weight: 300;
     text-transform: none;
     margin-bottom: 43px;
@@ -4595,7 +4593,7 @@ body .vc_btn3.vc_btn3-color-chino.vc_btn3-style-flat:hover {
     font-size: 14px;
     color: #fff;
     line-height: 22px;
-    margin-bottom: 26px;
+    margin-bottom: 10px;
 }
 
 .widget_contact_us .contact-details_list.left-icon li {
@@ -4706,8 +4704,7 @@ body .vc_btn3.vc_btn3-color-chino.vc_btn3-style-flat:hover {
 }
 
 .widget_follow_us .follow_label {
-    font-family: "Lora";
-    font-style: italic;
+    /*font-style: italic;*/
     display: table-cell;
     vertical-align: middle;
     padding: 5px 0;
@@ -4748,8 +4745,8 @@ body .vc_btn3.vc_btn3-color-chino.vc_btn3-style-flat:hover {
 }
 
 .site-info {
-    padding-top: 67px;
-    padding-bottom: 47px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .site-info:after {
@@ -4821,7 +4818,7 @@ body .vc_btn3.vc_btn3-color-chino.vc_btn3-style-flat:hover {
     right: 20px;
     bottom: -100%;
     width: 200px;
-    background: #9d8f62;
+    background: #22BCB8;
     text-align: center;
     padding: 20px 0 15px;
     z-index: 9999999;
@@ -4849,7 +4846,7 @@ body .vc_btn3.vc_btn3-color-chino.vc_btn3-style-flat:hover {
 }
 
 .buy_theme_popup p {
-    color: #413c2a;
+    color: #333;
     font-size: 14px;
     line-height: 20px;
     margin: 0 0 15px;
@@ -4862,15 +4859,15 @@ body .vc_btn3.vc_btn3-color-chino.vc_btn3-style-flat:hover {
 }
 
 .buy_theme_popup .buy_button:hover {
-    color: #9d8f62;
+    color: #fff;
     border-color: #413c2a;
-    background: #413c2a;
+    background: #333;
 }
 
 .buy_theme_popup .buy_button {
     display: inline-block;
     vertical-align: baseline;
-    border: 1px solid #413c2a;
+    border: 1px solid #333;
     min-width: 170px;
     text-decoration: none !important;
     text-transform: uppercase;
@@ -4884,7 +4881,7 @@ body .vc_btn3.vc_btn3-color-chino.vc_btn3-style-flat:hover {
     -o-transition: all 0.3s linear;
     transition: all 0.3s linear;
     background: transparent;
-    color: #413c2a;
+    color: #333;
 }
 
 /* 6.0 Media
