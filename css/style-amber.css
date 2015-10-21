@@ -51,7 +51,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 /* 1.0
 -------------------------------------------------------------- */
 body {
-    background-color: #f4f4f4;
+    background-color: #FFF;
     overflow-x: hidden;
 }
 
@@ -349,7 +349,7 @@ body.outer-title_hide .site-header {
 }
 
 .navbar a {
-    font-family: "Lora";
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-style: italic;
 }
 
@@ -424,7 +424,7 @@ body.outer-title_hide .site-header {
 .main-navbar li.current-menu-item > a,
 .main-navbar .navbar-nav > li > a:hover,
 .main-navbar .navbar-nav > li > a:focus {
-    color: #9d8f62;
+    color: #5F5F5F;
 }
 
 .main-navbar .navbar-nav > .open > a,
@@ -791,7 +791,7 @@ body.outer-title_hide .site-header {
 }
 
 .vc_separator h2 {
-    color: #9d8f62;
+    color: #22BCB8;
     font-weight: 300;
     font-size: 36px;
     padding: 0 0.833em;
@@ -907,7 +907,7 @@ body.outer-title_hide .site-header {
 }
 
 .info-box_separator .line {
-    background: #9d8f62;
+    background: #22BCB8;
     height: 1px;
     width: 25%;
     -webkit-transition: all 1.2s ease;
@@ -935,22 +935,23 @@ body.outer-title_hide .site-header {
 
 .stm-testimonial p {
     font-size: 24px;
-    color: #ffffff;
+    color: #333;
     font-weight: 300;
     font-style: normal;
     line-height: 30px;
-    margin-bottom: 19px;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 .stm-testimonial .author {
     font-family: "Lora";
     font-style: italic;
     font-size: 18px;
-    color: #9d8f62;
+    color: #22BCB8;
 }
 
 body .ult-carousel-wrapper.bullets-white .slick-dots li i {
-    color: #ffffff !important;
+    color: #333 !important;
 }
 
 body .ult-carousel-wrapper.bullets-white .slick-dots li {
@@ -987,7 +988,7 @@ body .aio-icon.none {
     height: 1px;
     width: 100%;
     display: block;
-    background-color: #9d8f62;
+    background-color: #22BCB8;
 }
 
 .stm-separator_holder.__icon {
@@ -1085,7 +1086,7 @@ body .aio-icon.none {
 }
 
 .stm_item-features {
-    padding: 23px 0 15px 0;
+    padding: 0;
     margin: 0 -15px;
     border-bottom: 1px solid #f4f4f4;
 }
@@ -1107,22 +1108,29 @@ body .aio-icon.none {
     float: left;
 }
 
-.stm_item-features .item-features_list li {
+.stm_item-features .item-features_list_extended {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    float: left;
+}
+
+.stm_item-features .item-features_list li, .stm_item-features .item-features_list_extended li  {
     position: relative;
     padding-left: 25px;
-    font-family: "Lora";
     font-style: italic;
     font-size: 14px;
-    color: #7b7b7b;
+    color: #636262;
     margin-bottom: 10px;
 }
 
-.item-features_list li:before {
+.item-features_list li:before, .item-features_list_extended li:before {
     content: "\f14a";
     display: inline-block;
     font: normal normal normal 14px/1 FontAwesome;
     font-size: inherit;
-    color: #9d8f62;
+    color: #22BCB8;
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -1272,7 +1280,7 @@ body.no-touch-device .rental-service_item:hover .rs-item_actions {
     border-radius: 50%;
     background: #ffffff;
     padding: 6px;
-    color: #9d8f62;
+    color: #22BCB8;
     text-decoration: none;
     font-size: 20px;
     position: absolute;
@@ -1292,8 +1300,9 @@ body.no-touch-device .rental-service_item:hover .rs-item_actions a {
     transform: translateY(0);
 }
 
+
 .rental-service_item .rs-item_actions a:hover {
-    background: #9d8f62;
+    background: #22BCB8;
     color: #ffffff;
 }
 
@@ -1963,6 +1972,7 @@ body .stats-top .stats-number {
 
 .wpb_text_column p {
     margin-bottom: 23px;
+    text-align: justify;
 }
 
 .wpb_text_column li,
@@ -2572,7 +2582,6 @@ body .ult_countdown.ult-cd-s2 .ult_countdown-section .ult_countdown-period {
 }
 
 .page-header p {
-    font-family: "Lora";
     color: #ffffff;
     font-weight: 400;
     font-style: italic;
@@ -2911,12 +2920,11 @@ body .wpb_tour_next_prev_nav a:hover {
 
 /* Accordion */
 body .wpb_accordion .wpb_accordion_wrapper .wpb_accordion_header a {
-    color: #7b7b7b;
-    font-family: "Lora";
+    color: #636262;
     font-style: italic;
     font-size: 14px;
     padding-left: 40px;
-    padding: 15px 15px 15px 40px;
+    padding: 6px 15px 6px 40px;
 }
 
 body .wpb_accordion .wpb_accordion_wrapper .wpb_accordion_header:focus {
@@ -2924,7 +2932,7 @@ body .wpb_accordion .wpb_accordion_wrapper .wpb_accordion_header:focus {
 }
 
 .wpb_accordion .wpb_accordion_wrapper .wpb_accordion_header:hover a {
-    color: #9d8f62;
+    color: #333;
 }
 
 .wpb_accordion_section.group {
@@ -4100,7 +4108,7 @@ body .wpb_accordion .wpb_accordion_wrapper .ui-state-active .ui-icon {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     transform: translate(0, 0);
-    color: #9d8f62;
+    color: #fff;
 }
 
 .tweets_list li {
@@ -4114,12 +4122,12 @@ body .wpb_accordion .wpb_accordion_wrapper .ui-state-active .ui-icon {
 .tweets_list .tweet p {
     font-size: 14px;
     line-height: 18px;
-    color: #a5a5a5;
+    color: #fff;
     margin: 0;
 }
 
 .tweets_list .tweet p a {
-    color: #9d8f62;
+    color: #fff;
     -webkit-transition: all .5s;
     -moz-transition: all .5s;
     -ms-transition: all .5s;
@@ -4128,7 +4136,7 @@ body .wpb_accordion .wpb_accordion_wrapper .ui-state-active .ui-icon {
 }
 
 .tweets_list .tweet p a:hover {
-    color: #ffffff;
+    color: #333;
     text-decoration: none;
 }
 
@@ -4417,17 +4425,17 @@ body .wpb_accordion .wpb_accordion_wrapper .ui-state-active .ui-icon {
 .ls-container h1.ls-l {
     text-align: center;
     text-transform: uppercase;
-    font-size: 50px;
+    font-size: 60px;
     color: #36332e;
 }
 
 .ls-container .btn {
-    border: 2px solid #ffffff;
+    border: 3px solid #ffffff;
     text-transform: uppercase;
     background: transparent;
     color: #ffffff;
     border-radius: 0;
-    font-size: 12px;
+    font-size: 14px;
     font-style: normal;
     padding: 16px 36px;
 }
@@ -4567,16 +4575,16 @@ body .vc_btn3.vc_btn3-color-chino.vc_btn3-style-flat:hover {
 
 /* Site Footer */
 .site-footer {
-    background-color: #282828;
+    background-color: #22BCB8;
 }
 
 .footer_widget-area {
     padding-top: 52px;
-    border-top: 8px solid #9d8f62;
+    border-top: 8px solid #333;
 }
 
 .footer_widget-area .widget-title {
-    color: #9d8f62;
+    color: #333;
     font-weight: 300;
     text-transform: none;
     margin-bottom: 43px;
@@ -4584,7 +4592,7 @@ body .vc_btn3.vc_btn3-color-chino.vc_btn3-style-flat:hover {
 
 .widget_contact_us .contact-details_list li {
     font-size: 14px;
-    color: #a5a5a5;
+    color: #fff;
     line-height: 22px;
     margin-bottom: 26px;
 }
@@ -4605,7 +4613,7 @@ body .vc_btn3.vc_btn3-color-chino.vc_btn3-style-flat:hover {
     position: absolute;
     left: 0;
     top: 3px;
-    color: #a5a5a5;
+    color: #fff;
 }
 
 .widget_contact_us .contact-details_list.left-icon li.address:after {
@@ -4625,7 +4633,7 @@ body .vc_btn3.vc_btn3-color-chino.vc_btn3-style-flat:hover {
 }
 
 .widget_contact_us .contact-details_list li a {
-    color: #9d8f62;
+    color: #fff;
     -webkit-transition: all .5s;
     -moz-transition: all .5s;
     -ms-transition: all .5s;
@@ -4635,12 +4643,12 @@ body .vc_btn3.vc_btn3-color-chino.vc_btn3-style-flat:hover {
 
 .footer_widget-area .contact-details_list li a:hover {
     text-decoration: none;
-    color: #ffffff;
+    color: #333;
 }
 
 .widget_follow_us p {
     font-size: 14px;
-    color: #a5a5a5;
+    color: #fff;
     display: table;
 }
 
@@ -4714,11 +4722,10 @@ body .vc_btn3.vc_btn3-color-chino.vc_btn3-style-flat:hover {
     margin-bottom: 24px;
     line-height: 18px;
     font-size: 14px;
-    font-family: "Lora";
 }
 
 .footer_widget-area .widget_recent_entries a {
-    color: #9d8f62;
+    color: #FFF;
     font-style: normal;
     line-height: 18px;
     -webkit-transition: 0.5s ease;
@@ -4728,12 +4735,12 @@ body .vc_btn3.vc_btn3-color-chino.vc_btn3-style-flat:hover {
 
 .footer_widget-area .widget_recent_entries a:focus,
 .footer_widget-area .widget_recent_entries a:hover {
-    color: #ffffff;
+    color: #333;
     text-decoration: none;
 }
 
 .widget_recent_entries .post-date {
-    color: #a5a5a5;
+    color: #fff;
     font-style: italic;
     margin-top: 1px;
     display: block;
@@ -4751,27 +4758,27 @@ body .vc_btn3.vc_btn3-color-chino.vc_btn3-style-flat:hover {
 }
 
 .copyright {
-    color: #a5a5a5;
+    color: #fff;
     font-style: normal;
     line-height: 20px;
     float: left;
 }
 
 .copyright a {
-    color: #9d8f62;
+    color: #fff;
 }
 
 .copyright a:hover,
 .copyright a:focus {
-    color: #ffffff;
+    color: #333;
     text-decoration: none;
 }
 
 .move-top {
     padding: 11px 23px 15px 50px;
     float: right;
-    border: 2px solid #9d8f62;
-    color: #9d8f62;
+    border: 2px solid #333;
+    color: #333;
     text-transform: uppercase;
     font-size: 12px;
     position: relative;
@@ -4785,9 +4792,9 @@ body .vc_btn3.vc_btn3-color-chino.vc_btn3-style-flat:hover {
 
 .move-top:focus,
 .move-top:hover {
-    color: #ffffff;
+    color: #333;
     text-decoration: none;
-    background: #9d8f62;
+    background: #fff;
 }
 
 .move-top_text {
@@ -5355,4 +5362,30 @@ body .vc_btn3.vc_btn3-color-chino.vc_btn3-style-flat:hover {
         font-size: 10px;
         padding: 4px 20px;
     }
+}
+
+ .item-features_list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 50%;
+    float: left;
+}
+
+.vc_left_middle {
+	margin-top: 80px;	
+}
+
+.vc_right_middle {
+	margin-top: 80px;
+	text-align: right;	
+}
+.page-title {
+	color:#22BCB8!important; 
+	text-transform:uppercase;
+	font-size: 70px;	
+}
+
+.top-margin {
+	margin-top: 70px;
 }

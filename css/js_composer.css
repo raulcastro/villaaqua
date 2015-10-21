@@ -7563,15 +7563,15 @@ a.wpb_button_a:hover {
   background-color: #bfaf91;
 }
 .vc_btn3.vc_btn3-color-chino.vc_btn3-style-outline {
-  color: #cec2ab;
-  border-color: #cec2ab;
+  color: #22BCB8;
+  border-color: #22BCB8;
   background-color: transparent;
 }
 .vc_btn3.vc_btn3-color-chino.vc_btn3-style-outline:hover,
 .vc_btn3.vc_btn3-color-chino.vc_btn3-style-outline:focus {
   color: #ffffff;
-  border-color: #cec2ab;
-  background-color: #cec2ab;
+  border-color: #22BCB8;
+  background-color: #22BCB8;
 }
 .vc_btn3.vc_btn3-color-chino.vc_btn3-style-outline:active,
 .vc_btn3.vc_btn3-color-chino.vc_btn3-style-outline.active {
@@ -10581,7 +10581,7 @@ a.wpb_button_a:hover {
 }
 .wpb_content_element .wpb_tour_tabs_wrapper .wpb_tab,
 .wpb_content_element .wpb_accordion_wrapper .wpb_accordion_content {
-  padding: 1em;
+  padding: 0 1em;
 }
 .wpb_content_element .wpb_tour_tabs_wrapper .wpb_tab > .wpb_content_element:last-child,
 .wpb_content_element .wpb_accordion_wrapper .wpb_accordion_content > .wpb_content_element:last-child,

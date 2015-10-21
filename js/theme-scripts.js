@@ -49,7 +49,7 @@
         pauseOnHover: true,
         pauseOnDotsHover: true,
         customPaging: function (slider, i) {
-            return '<i type="button " style="color:#91824f; " class="ultsl-record " data-role="none "></i>';
+            return '<i type="button " style="color:#22BCB8; " class="ultsl-record " data-role="none "></i>';
         },
     });
 
@@ -113,8 +113,9 @@
         $(".js-carousel").owlCarousel({
             margin: 30,
             pagination: false,
-            nav: true,
-            navText: ['<i class="icon icomoon-arrowleft"></i>', '<i class="icon icomoon-arrowright"></i>'],
+            //nav: true,
+            //navText: ['<i class="icon icomoon-arrowleft"></i>', '<i class="icon icomoon-arrowright"></i>'],
+            nav: false,
             smartSpeed: 750,
             responsive: {
                 1024: {

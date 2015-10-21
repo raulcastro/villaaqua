@@ -247,7 +247,7 @@ div.wpcf7 .placeheld {
         .ult_countdown.ult-cd-s2 .ult_countdown-section .ult_countdown-period,
         .main-navbar .dropdown-menu > li:hover > a,
         .stm-separator_holder.__icon {
-            color: #9d8f62;
+            color: #636262;
         }
 
         .post-password-form input[type="submit"]:hover,
@@ -365,7 +365,7 @@ div.wpcf7 .placeheld {
         }
 
         body {
-            font-family: "Roboto Slab";
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
             font-size: 14px;
         }
 
@@ -391,20 +391,21 @@ div.wpcf7 .placeheld {
             padding-bottom: 80px !important;
         }
 
+        /*este era el carousel de services */
         .vc_custom_1427803088111 {
             padding-top: 46px !important;
             padding-bottom: 46px !important;
-            background-color: #282828 !important;
+            background-color: #FFF !important;
         }
 
         .vc_custom_1427803471819 {
-            padding-top: 175px !important;
-            padding-bottom: 71px !important;
+            padding-top: 75px !important;
+            padding-bottom: 40px !important;
         }
 
         .vc_custom_1426664924161 {
-            padding-top: 80px !important;
-            padding-bottom: 74px !important;
+            padding-top: 60px !important;
+            padding-bottom: 20px !important;
         }
 
         .vc_custom_1426669393698 {
@@ -430,7 +431,7 @@ div.wpcf7 .placeheld {
         }
 
 .upb_row_bg {
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     min-width: 1251px;
 
     width: 100%;
