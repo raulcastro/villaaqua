@@ -877,6 +877,7 @@ body.outer-title_hide .site-header {
 .vc_custom_heading h5,
 .vc_custom_heading h6 {
     margin: 0;
+    margin-top: -5px;
 }
 
 .info_box h4 {
@@ -5381,9 +5382,9 @@ body .vc_btn3.vc_btn3-color-chino.vc_btn3-style-flat:hover {
 	text-align: right;	
 }
 .page-title {
-	color:#22BCB8!important; 
+	color:#FFF!important; 
 	text-transform:uppercase;
-	font-size: 70px;	
+	font-size: 50px;	
 }
 
 .top-margin {
