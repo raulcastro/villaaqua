@@ -343,9 +343,9 @@ if ( typeof window[ 'vc_accordionBehaviour' ] !== 'function' ) {
 				autoHeight: false,
 				heightStyle: "content",
 				active: active_tab,
-				collapsible: collapsible,
+				collapsible: true,
 				navigation: true,
-
+				active: false,
 				activate: vc_accordionActivate,
 				change: function ( event, ui ) {
 					if ( jQuery.fn.isotope != undefined ) {

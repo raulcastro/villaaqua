@@ -1,16 +1,17 @@
 (function ($) {
     "use strict";
     
+    // This is for the main slider
     jQuery("#layerslider_1").layerSlider({
-                    responsiveUnder: 1920,
-                    pauseOnHover: false,
-                    skin: 'amber',
-                    hoverPrevNext: false,
-                    navStartStop: false,
-                    navButtons: false,
-                    showCircleTimer: false,
-                    skinsPath: 'http://cdn.amber.stylemixthemes.com/wp-content/themes/amber/inc/ls-skins/'
-                });
+        responsiveUnder: 1920,
+        pauseOnHover: false,
+        skin: 'amber',
+        hoverPrevNext: false,
+        navStartStop: false,
+        navButtons: false,
+        showCircleTimer: false,
+        skinsPath: 'http://cdn.amber.stylemixthemes.com/wp-content/themes/amber/inc/ls-skins/'
+    });
 
     jQuery('.ult-carousel').slick({
         dots: true,
@@ -108,6 +109,7 @@
         return false;
     });
 
+    // on the index - included -  not included - events
     // Project carousel
     if ($(".js-carousel").length) {
         $(".js-carousel").owlCarousel({
