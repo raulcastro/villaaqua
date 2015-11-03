@@ -945,14 +945,13 @@ body.outer-title_hide .site-header {
 }
 
 .stm-testimonial .author {
-    font-family: "Lora";
     font-style: italic;
     font-size: 18px;
     color: #22BCB8;
 }
 
 body .ult-carousel-wrapper.bullets-white .slick-dots li i {
-    color: #333 !important;
+    color: #22BCB8 !important;
 }
 
 body .ult-carousel-wrapper.bullets-white .slick-dots li {
@@ -1089,7 +1088,7 @@ body .aio-icon.none {
 .stm_item-features {
     padding: 0;
     margin: 0 -15px;
-    border-bottom: 1px solid #f4f4f4;
+    /*border-bottom: 1px solid #f4f4f4;*/
 }
 
 .stm_item-features_inner {
@@ -1982,7 +1981,7 @@ body .stats-top .stats-number {
 }
 
 .wpb_text_column a {
-    color: #9d8f62;
+    color: #22BCB8;
 }
 
 .contact-details {
@@ -2782,11 +2781,11 @@ table tbody > tr > td,
 }
 
 .table-striped thead {
-    background-color: #9d8f62;
+    background-color: #22BCB8;
 }
 
 table.table-striped thead > tr > th {
-    color: #413c2a;
+    color: #fff;
     font-size: 18px;
     font-weight: normal;
 }
@@ -3503,10 +3502,9 @@ body .wpb_accordion .wpb_accordion_wrapper .ui-state-active .ui-icon {
 
 .hentry.view-for-list .entry-content,
 .hentry.view-for-list .entry-content p {
-    color: #555555;
+    color: #33333;
     line-height: 22px;
-    font-family: "Lora";
-    font-style: italic;
+    text-align: justify;
 }
 
 .hentry.view-for-list .entry-content p {
@@ -5378,6 +5376,7 @@ body .vc_btn3.vc_btn3-color-chino.vc_btn3-style-flat:hover {
 	margin-top: 80px;
 	text-align: right;	
 }
+
 .page-title {
 	color:#FFF!important; 
 	text-transform:uppercase;
@@ -5386,4 +5385,12 @@ body .vc_btn3.vc_btn3-color-chino.vc_btn3-style-flat:hover {
 
 .top-margin {
 	margin-top: 70px;
+}
+
+.custom-table {
+	border: 1px solid red;
+}
+
+.custom-table thead > tr > th {
+	color: red;
 }

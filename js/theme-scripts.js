@@ -13,6 +13,7 @@
         skinsPath: 'http://cdn.amber.stylemixthemes.com/wp-content/themes/amber/inc/ls-skins/'
     });
 
+    // Like testimonials
     jQuery('.ult-carousel').slick({
         dots: true,
         autoplaySpeed: 5000,
