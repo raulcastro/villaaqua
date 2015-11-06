@@ -936,7 +936,7 @@ body.outer-title_hide .site-header {
 
 .stm-testimonial p {
     font-size: 24px;
-    color: #333;
+    color: #FFF;
     font-weight: 300;
     font-style: normal;
     line-height: 30px;
@@ -946,7 +946,7 @@ body.outer-title_hide .site-header {
 
 .stm-testimonial .author {
     font-style: italic;
-    font-size: 18px;
+    font-size: 16px;
     color: #22BCB8;
 }
 
@@ -2925,6 +2925,10 @@ body .wpb_accordion .wpb_accordion_wrapper .wpb_accordion_header a {
     font-size: 14px;
     padding-left: 40px;
     padding: 6px 15px 6px 40px;
+}
+
+body .wpb_accordion .wpb_accordion_wrapper .wpb_accordion_header a:hover {
+	color: #22BCB8;
 }
 
 body .wpb_accordion .wpb_accordion_wrapper .wpb_accordion_header:focus {
@@ -5204,7 +5208,7 @@ body .vc_btn3.vc_btn3-color-chino.vc_btn3-style-flat:hover {
     .rental-services-navigation i.icon {
         margin: 0;
     }
-
+    
     .contact-details .full-address p br {
         display: none;
     }
@@ -5384,7 +5388,7 @@ body .vc_btn3.vc_btn3-color-chino.vc_btn3-style-flat:hover {
 }
 
 .top-margin {
-	margin-top: 70px;
+	margin-top: 50px;
 }
 
 .custom-table {
@@ -5393,4 +5397,91 @@ body .vc_btn3.vc_btn3-color-chino.vc_btn3-style-flat:hover {
 
 .custom-table thead > tr > th {
 	color: red;
+}
+
+body .ult-carousel-wrapper.bullets-white .slick-dots li.slick-active i {
+	color: #22BCB8 !important;
+}
+
+body .ult-carousel-wrapper.bullets-white .slick-dots li.slick-active i {
+    color: #22BCB8 !important;
+}
+
+@media (max-width: 991px) {
+    .main-navbar .navbar-nav > li > a:hover,
+    .main-navbar .navbar-nav > li > a:focus,
+    .main-navbar .navbar-nav > li > a {
+        border-bottom-color: #353535
+    }
+    .main-navbar .navbar-nav > li > a,
+    .main-navbar .dropdown-menu > li > a {
+        font-size: 16px !important
+    }
+}
+
+.vc_custom_heading h2 {
+	color: 333;
+	text-align: left;
+	font-weight:300;
+	font-style:normal
+}
+
+.events-teaser {
+	color: #FFF!important;
+}
+
+.events-teaser p {
+	color: #FFF!important;
+}
+
+#ww_2 {padding:0px; margin: 0px auto 10px auto; font-size:12px; list-style:none; background:none;width: 203px;height: 73px; overflow:hidden;}
+
+#ww_2 * {margin:0px; padding:0px; list-style:none;background:none;}
+
+#ww_2 .weather02_t{
+	position: absolute;
+	width: auto;
+	height: auto;
+	top: 29px;
+	left: 110px;
+	font-family: Helvetica, sans-serif;
+	font-size: 14px;
+	letter-spacing: .5px;
+	color: #22BCB8;
+}	
+
+#ww_2 .weather02_city{
+	position: absolute;
+	width: 120px;
+	height: auto;
+	top: 50px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	line-height:12px;
+	text-transform: uppercase;
+	text-align: left;
+	color: #22BCB8;
+	left: 10px;
+
+}	
+
+#ww_2 .weather02_date{
+	position: absolute;
+	width: 73px;
+	height: auto;
+	top: 13px;
+	font-family: Helvetica, sans-serif;
+	font-size: 10px;
+	color: #22BCB8;
+	text-align: center;
+	left: 100px;	
+}
+
+#ww_2 .weather02_city a{
+	text-decoration:none;
+	font-family: Helvetica, sans-serif;
+	font-size: 9px;
+	text-transform: uppercase;
+	text-align: center;
+	color: #22BCB8;
 }

@@ -10,14 +10,61 @@
         navStartStop: false,
         navButtons: false,
         showCircleTimer: false,
+        slideDelay              : 100,
+        durationIn              : 100,
+        durationOut             : 100,
         skinsPath: 'http://cdn.amber.stylemixthemes.com/wp-content/themes/amber/inc/ls-skins/'
     });
 
-    // Like testimonials
-    jQuery('.ult-carousel').slick({
+    
+    'use strict';
+    var map_map_563bc65e35a5c = null;
+    var coordinate_map_563bc65e35a5c;
+    var isDraggable = jQuery(document).width() > 641 ? true : true;
+    try {
+        var map_map_563bc65e35a5c = null;
+        var coordinate_map_563bc65e35a5c;
+        coordinate_map_563bc65e35a5c = new google.maps.LatLng(18.591212, 73.741261);
+        var mapOptions = {
+            zoom: 12,
+            center: coordinate_map_563bc65e35a5c,
+            scaleControl: true,
+            streetViewControl: false,
+            mapTypeControl: false,
+            panControl: false,
+            zoomControl: false,
+            scrollwheel: false,
+            draggable: isDraggable,
+            zoomControlOptions: {
+                style: google.maps.ZoomControlStyle.SMALL
+            },
+            mapTypeId: google.maps.MapTypeId.ROADMAP,
+        };
+        var map_map_563bc65e35a5c = new google.maps.Map(document.getElementById('map_563bc65e35a5c'), mapOptions);
+        var marker_map_563bc65e35a5c = new google.maps.Marker({
+            position: new google.maps.LatLng(18.591212, 73.741261),
+            animation: google.maps.Animation.DROP,
+            map: map_map_563bc65e35a5c,
+            icon: ''
+        });
+        google.maps.event.addListener(marker_map_563bc65e35a5c, 'click', toggleBounce);
+    } catch (e) {};
+
+    function toggleBounce() {
+        if (marker_map_563bc65e35a5c.getAnimation() != null) {
+            marker_map_563bc65e35a5c.setAnimation(null);
+        } else {
+            marker_map_563bc65e35a5c.setAnimation(google.maps.Animation.BOUNCE);
+        }
+    }
+    
+    
+ // Like testimonials
+    jQuery('.ult-carousel-slide').slick({
         dots: true,
         autoplaySpeed: 5000,
-        speed: 300,
+        autoplay: true,
+        speed: 900,
         infinite: false,
         arrows: false,
         slidesToScroll: 1,
@@ -25,6 +72,51 @@
         swipe: true,
         draggable: true,
         touchMove: true,
+        responsive: [
+            {
+                breakpoint: 1025,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 769,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 481,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ],
+        pauseOnHover: true,
+        pauseOnDotsHover: true,
+        customPaging: function (slider, i) {
+            return '<i type="button " style="color:#22BCB8; " class="ultsl-record " data-role="none "></i>';
+        },
+    });
+    
+    // Like testimonials
+    jQuery('.ult-carousel').slick({
+        dots: true,
+        autoplaySpeed: 5000,
+        autoplay: true,
+        speed: 900,
+        infinite: false,
+        arrows: false,
+        slidesToScroll: 1,
+        slidesToShow: 1,
+        swipe: true,
+        draggable: true,
+        touchMove: true,
+        fade: true,
+        cssEase: 'linear',
         responsive: [
             {
                 breakpoint: 1025,

@@ -1,0 +1,58 @@
+RewriteEngine On
+
+# Error Pages
+ErrorDocument 401 /not-found.html
+ErrorDocument 403 /not-found.html
+ErrorDocument 404 /not-found.html
+ErrorDocument 500 /not-found.html
+
+# Prevent directory browsing
+Options -Indexes +FollowSymLinks -MultiViews
+
+# Canonical host
+RewriteCond %{HTTP_HOST}    ^www\.(.*)      [NC]
+RewriteRule ^(.*)$          http://%1/$1    [L,R,NE]
+
+#Needed
+RewriteRule ^sitemap.xml$ sitemap.xml
+
+RewriteRule ^$ /index.php?lang=
+RewriteRule ^en/$ /index.php?lang=en
+
+# English
+RewriteRule ^overview/$ 			/overview.php
+RewriteRule ^the-rooms/$ 			/the-rooms.php
+RewriteRule ^living-spaces/$ 		/living-spaces.php
+RewriteRule ^pool-and-outdoor/$ 	/pool-and-outdoor.php
+RewriteRule ^what-to-do/$ 			/what-to-do.php
+RewriteRule ^staff-and-services/$ 	/staff-and-services.php
+RewriteRule ^included/$ 			/included.php
+RewriteRule ^at-an-extra-cost/$ 	/at-an-extra-cost.php
+RewriteRule ^riviera-maya/$ 	/riviera-maya.php
+RewriteRule ^out-and-about/$ 	/out-and-about.php
+RewriteRule ^events-corporate-retreats/$ 	/events-corporate-retreats.php
+RewriteRule ^events-family-friends-reunion/$ 	/events-family-friends-reunion.php
+RewriteRule ^events-photo-shoots/$ 	/events-photo-shoots.php
+RewriteRule ^events-private-events/$ 	/events-private-events.php
+RewriteRule ^events-weddings/$ 	/events-weddings.php
+RewriteRule ^events/$ 	/events.php
+RewriteRule ^contact-us/$ 	/contact-us.php
+RewriteRule ^faq/$ 	/faq.php
+RewriteRule ^testimonials/$ 	/testimonials.php
+RewriteRule ^villa-rules-and-policies/$ 	/villa-rules-and-policies.php
+
+
+RewriteRule ^reservation-rental-rates-and-process/$ 	/reservation-rental-rates-and-process.php
+RewriteRule ^out-and-about-dining-culture-shopping/$ 			/out-and-about-dining-culture-shopping.php
+RewriteRule ^arriving-to-the-villa-playacar-playa-del-carmen/$ 	/arriving-to-the-villa-playacar-playa-del-carmen.php
+
+
+# Espagnol
+RewriteRule ^es/acerca-de-nosotros/$ /about-us.php?lang=es
+RewriteRule ^es/vision/$ /vision.php?lang=es
+RewriteRule ^es/areas-de-intervencion/$ /areas.php?lang=es
+RewriteRule ^es/areas-de-intervencion/([A-Za-z0-9-]+)/$ /single-area.php?lang=es&area=$1
+RewriteRule ^es/contacto/$ /contact.php?lang=es
+
+
+
