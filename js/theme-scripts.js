@@ -193,7 +193,7 @@
         }, 1500);
     }
 
-    $('.move-top, .post-start').click(function () {
+    $('.move-top, .post-start, .to-section').click(function () {
         var el = $(this).attr('href');
         var elWrapper = $(el);
         var offsetTop = 90;

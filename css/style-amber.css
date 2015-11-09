@@ -354,7 +354,7 @@ body.outer-title_hide .site-header {
 }
 
 .top-navbar {
-    background: #171717;
+    background: #22BCB8;
 }
 
 .top-navbar .navbar-form {
@@ -4581,7 +4581,7 @@ body .vc_btn3.vc_btn3-color-chino.vc_btn3-style-flat:hover {
 
 .footer_widget-area {
     padding-top: 52px;
-    border-top: 8px solid #333;
+    border-top: 8px solid #22BCB8;
 }
 
 .footer_widget-area .widget-title {
@@ -4601,6 +4601,7 @@ body .vc_btn3.vc_btn3-color-chino.vc_btn3-style-flat:hover {
 .widget_contact_us .contact-details_list.left-icon li {
     padding-left: 19px;
     position: relative;
+    font-style: italic;
 }
 
 .widget_contact_us .contact-details_list.left-icon li:after {
@@ -4693,6 +4694,10 @@ body .vc_btn3.vc_btn3-color-chino.vc_btn3-style-flat:hover {
     background-color: #00a0d1;
 }
 
+.widget_follow_us .follow_ins a {
+    background-color: #125688;
+}
+
 .widget_follow_us .follow_ytb a {
     background-color: #c4302b;
 }
@@ -4706,7 +4711,7 @@ body .vc_btn3.vc_btn3-color-chino.vc_btn3-style-flat:hover {
 }
 
 .widget_follow_us .follow_label {
-    /*font-style: italic;*/
+    font-style: italic;
     display: table-cell;
     vertical-align: middle;
     padding: 5px 0;
@@ -4726,7 +4731,7 @@ body .vc_btn3.vc_btn3-color-chino.vc_btn3-style-flat:hover {
 
 .footer_widget-area .widget_recent_entries a {
     color: #FFF;
-    font-style: normal;
+    font-style: italic;
     line-height: 18px;
     -webkit-transition: 0.5s ease;
     -moz-transition: 0.5s ease;
@@ -4759,7 +4764,7 @@ body .vc_btn3.vc_btn3-color-chino.vc_btn3-style-flat:hover {
 
 .copyright {
     color: #fff;
-    font-style: normal;
+    font-style: italic;
     line-height: 20px;
     float: left;
 }

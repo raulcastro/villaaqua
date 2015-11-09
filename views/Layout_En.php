@@ -277,8 +277,19 @@ class Layout_View
         ob_start();
         ?>
         
-		<?php echo self::getCommonDocuments(); ?>
-		<?php echo self::getGoogleAnalytics(); ?>
+		<?php echo self :: getCommonDocuments(); ?>
+		<?php echo self :: getGoogleAnalytics(); ?>
+		<style type="text/css">
+	        .info_box h4 a {
+	        	color: #fff;
+	        }
+	        
+	        .info_box h4 a:hover {
+	        	color: #22BCB8;
+	        	text-decoration:none;
+	        }
+	    </style>
+		
 		<?php
         $head = ob_get_contents();
         ob_end_clean();
@@ -311,8 +322,6 @@ class Layout_View
 	    <script type='text/javascript' src='/js/layerslider.kreaturamedia.jquery.js?ver=5.4.0'></script>
 	    <script type='text/javascript' src='/js/layerslider.transitions.js?ver=5.4.0'></script>
 	    
-	    
-	    
 	    <link rel="shortcut icon" type="image/x-icon" href="" />
 
 	    <style type="text/css">
@@ -339,8 +348,6 @@ class Layout_View
     	ob_start();
     	?>
     	<div class="buy_theme_popup ">
-	        <p>Villa Aqua 
-	            <br /> Luxury vacation rentals</p>
 	        <a target="_blank " href="#" class="buy_button ">Book Now</a>
 	    </div>
 	    <script type="text/javascript ">
@@ -429,6 +436,14 @@ class Layout_View
 		?>
 		<!--header-->
 		<header id="masthead" class="site-header" role="banner">
+			<div class="top-navbar navbar navbar-default">
+			    <div class="container">
+					<ul class="nav navbar-nav navbar-right">
+							<li><a href="#">English</a></li>
+			                <li><a href="#">Espa&ntilde;ol</a></li>
+					</ul>
+				</div><!-- end .container -->
+			</div>
             <!-- end .top-navbar -->
             <div class="main-navbar navbar navbar-default">
                 <div class="container">
@@ -443,6 +458,14 @@ class Layout_View
                         </a>
                     </div>
                     <div class="collapse navbar-collapse navbar-responsive-collapse">
+                    	<div class="user-navbar">
+                            <ul class="user-menu">
+                                <li class="user-menu-item"><a class="login-button" href="#">English</a>
+                                </li>
+                                <li class="user-menu-item"><a class="singup-button" href="w#">Espa&ntilde;ol</a>
+                                </li>
+                            </ul>
+                        </div>
                         <ul id="menu-main_menu" class="nav navbar-nav  navbar-right">
                             <li id="menu-item-134" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-4 current_page_item">
                                 <a href="/">Home</a>
@@ -465,17 +488,17 @@ class Layout_View
                                 <b class="caret"></b>
                                 <ul class="dropdown-menu">
                                 	<li class="menu-item"><a href="/included/">Included</a></li>
-                                    <li class="menu-item"><a href="/at-an-extra-cost/">At an extra cost</a></li>
+                                    <li class="menu-item"><a href="/at-extra-cost/">At extra cost</a></li>
                                 </ul>
                             </li>
                             
                             <li class="dropdown menu-item menu-item-object-page">
-                                <a href="#">Location Info</a>
+                                <a href="/arriving-to-the-villa-playacar-playa-del-carmen/">Location Info</a>
                                 <b class="caret"></b>
                                 <ul class="dropdown-menu">
                                 	<li class="menu-item"><a href="/arriving-to-the-villa-playacar-playa-del-carmen/">Arriving to the villa</a></li>
-                                    <li class="menu-item"><a href="/arriving-to-the-villa-playacar-playa-del-carmen/">Playacar</a></li>
-                                    <li class="menu-item"><a href="/arriving-to-the-villa-playacar-playa-del-carmen/">Playa del Carmen</a></li>
+                                    <li class="menu-item"><a href="/arriving-to-the-villa-playacar-playa-del-carmen/#playacar" class="to-section">Playacar</a></li>
+                                    <li class="menu-item"><a href="/arriving-to-the-villa-playacar-playa-del-carmen/#playadelcarmen" class="to-section">Playa del Carmen</a></li>
                                     <li class="menu-item"><a href="/riviera-maya/">Riviera Maya</a></li>
                                 </ul>
                             </li>
@@ -485,11 +508,12 @@ class Layout_View
                                 <b class="caret"></b>
                                 <ul class="dropdown-menu">
                                     <li class="menu-item"><a href="/out-and-about/">Beaches</a></li>
-                                    <li class="menu-item"><a href="/out-and-about/">In the water</a></li>
-                                    <li class="menu-item"><a href="/out-and-about/">Golf Parks</a></li>
+                                    <li class="menu-item"><a href="/out-and-about/#water" class="to-section">In the water</a></li>
+                                    <li class="menu-item"><a href="/out-and-about/#golf" class="to-section">Golf</a></li>
+                                    <li class="menu-item"><a href="/out-and-about/#parks" class="to-section">Parks</a></li>
                                     <li class="menu-item"><a href="/out-and-about-dining-culture-shopping/">Culture</a></li>
-                                    <li class="menu-item"><a href="/out-and-about-dining-culture-shopping/">Dining</a></li>
-                                    <li class="menu-item"><a href="/out-and-about-dining-culture-shopping/">Shopping</a></li>
+                                    <li class="menu-item"><a href="/out-and-about-dining-culture-shopping/#dining" class="to-section">Dining</a></li>
+                                    <li class="menu-item"><a href="/out-and-about-dining-culture-shopping/#shopping" class="to-section">Shopping</a></li>
                                 </ul>
                             </li>
                             
@@ -510,7 +534,7 @@ class Layout_View
                             </li>
                             
                             <li class="dropdown menu-item menu-item-object-page">
-                                <a href="#">Reservations</a>
+                                <a href="/reservation-rental-rates-and-process/">Reservations</a>
                                 <b class="caret"></b>
                                 <ul class="dropdown-menu">
                                     <li class="menu-item"><a href="/reservation-rental-rates-and-process/">Reservation process</a></li>
@@ -543,13 +567,13 @@ class Layout_View
     {
     	ob_start();
     	?>
-    	<div class="container vc-page-container" style="">
+    	<div class="container vc-page-container" style="margin: 0 0 110px 0;">
             <div class="container-inner">
                 <div class="content">
                     <article id="post-4" class="post-4 page type-page status-publish hentry" >
                     	<?php echo self :: getIndexSlider(); ?>
                     	<?php echo self :: getIndexOverviewTeaser(); ?>
-                    	<?php echo self :: getTestimonialsIndexTeaser(); //this the one that brokes the pop up ?>
+                    	<?php echo self :: getTestimonialsIndexTeaser(); ?>
                     	<?php echo self :: getStaffServicesIndexTeaser(); ?>
                     	<?php echo self :: getEventsIndexTeaser(); ?>
                     </article>
@@ -580,7 +604,7 @@ class Layout_View
 											Stay at Villa Aqua
 										</h1>
 										<p class="ls-l" style="top:434px;left:50%;font-size:12px;color:#ffffff;white-space: nowrap;" data-ls="offsetxin:0;offset:100%;durationin:900;delayin:400;easingin:easeInOutSine;offsetxout:0;durationout:200;showuntil:3000;easingout:easeInOutSine;">
-										<a href="index.html#" class="btn">Book Now</a>
+										<a href="#" class="btn">Book Now</a>
 										</p>
 									</div>
 									
@@ -689,7 +713,7 @@ class Layout_View
 						<div class="ult-spacer spacer-561be2953b20c" data-id="561be2953b20c" data-height="5" data-height-mobile="5" data-height-tab="5" data-height-tab-portrait="5" data-height-mobile-landscape="5" style="clear:both;display:block;"></div>
 						<div class="vc_separator wpb_content_element vc_sep_width_100 vc_sep_pos_align_center">
 							<span class="vc_sep_holder vc_sep_holder_l"><span style="border-color:#22BCB8;" class="vc_sep_line"></span></span>
-							<h2 style="color:#22BCB8;font-weight: 300;">Staff & Services</h2>
+							<h2 style="color:#22BCB8;font-weight: 300;">Staff &amp; Services</h2>
 							<span class="vc_sep_holder vc_sep_holder_r"><span style="border-color:#22BCB8;" class="vc_sep_line"></span></span>
 						</div>
 						
@@ -700,7 +724,6 @@ class Layout_View
 								</div>
 							</div>
 						</div>
-						
 					</div>
 					
 					<div class="ult-animation  ult-animate-viewport  ult-no-mobile" data-animate="fadeIn" data-animation-delay="0" data-animation-duration="3" data-animation-iteration="1" style="opacity:0;" data-opacity_start_effect="">
@@ -753,9 +776,8 @@ class Layout_View
 		</div>
 		<div class="ult-spacer spacer-561be2953972e" data-id="561be2953972e" data-height="52" data-height-mobile="52" data-height-tab="52" data-height-tab-portrait="52" data-height-mobile-landscape="52" style="clear:both;display:block;"></div>
 		<div class="ult-animation ult-animate-viewport ult-no-mobile " data-animate="fadeIn " data-animation-delay="0 " data-animation-duration="1.5 " data-animation-iteration="1 " style="opacity:0; " data-opacity_start_effect="95 ">
-                                        <div class="vc_btn3-container vc_btn3-center "><a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-square vc_btn3-style-outline vc_btn3-block vc_btn3-color-chino " href="/staff-and-services/" title=" ">VIEW ALL SERVICES</a>
-                                        </div>
-                                    </div>
+			<div class="vc_btn3-container vc_btn3-center "><a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-square vc_btn3-style-outline vc_btn3-block vc_btn3-color-chino " href="/staff-and-services/" title=" ">VIEW ALL SERVICES</a></div>
+		</div>
 		<div class="ult-spacer spacer-561be2953972e" data-id="561be2953972e" data-height="52" data-height-mobile="52" data-height-tab="52" data-height-tab-portrait="52" data-height-mobile-landscape="52" style="clear:both;display:block;"></div>
 		<div class="ult-spacer spacer-561be2953b81a" data-id="561be2953b81a" data-height="52" data-height-mobile="52" data-height-tab="52" data-height-tab-portrait="52" data-height-mobile-landscape="52" style="clear:both;display:block;"></div>
 		<?php
@@ -770,7 +792,7 @@ class Layout_View
 		?>
 		<!-- Testimonials -->
 		<div class="vc_row wpb_row vc_row-fluid vc_custom_1426664924161 ">
-		<div class="upb_row_bg vcpb-vz-jquery" data-upb_br_animation="" data-parallax_sense="30" data-bg-override="ex-full" data-bg-animation="left-animation" data-bg-animation-type="h" data-animation-repeat="repeat" style="min-width: 1261px; left: -220.5px; width: 1680px; background-image: url(/images/home/BG_QUOTE_07.jpg); background-attachment: scroll; background-color: rgba(0, 0, 0, 0); background-size: cover; background-position: 50% -17px; background-repeat: no-repeat;"></div>
+			<div class="upb_row_bg vcpb-vz-jquery" data-upb_br_animation="" data-parallax_sense="30" data-bg-override="ex-full" data-bg-animation="left-animation" data-bg-animation-type="h" data-animation-repeat="repeat" style="min-width: 1261px; left: -220.5px; width: 1680px; background-image: url(/images/home/BG_QUOTE_07.jpg); background-attachment: scroll; background-color: rgba(0, 0, 0, 0); background-size: cover; background-position: 50% -17px; background-repeat: no-repeat;"></div>
 			<div class="vc_col-sm-12 wpb_column vc_column_container ">
 				<div class="wpb_wrapper ">
 					<div class="ult-just-icon-wrapper ">
@@ -797,8 +819,8 @@ class Layout_View
 									<div class="stm-testimonial ">
 										<p>
 											We can not say enough. The staff was incredible. We enjoyed our stay 
-											so much & can not wait to come back again. Truly was an incredible house, s
-											tay & more!!!!
+											so much & can not wait to come back again. Truly was an incredible house, 
+											stay & more!!!!
 										</p>
 										<div class="author ">Edmonton´s<br> Texas, USA<br>July 2015</div>
 									</div>
@@ -870,7 +892,9 @@ class Layout_View
 								<div class="ult-animation ult-animate-viewport ult-no-mobile " data-animate="fadeIn " data-animation-delay="0 " data-animation-duration=".5 " data-animation-iteration="1 " style="opacity:0; ">
 									<div class="info_box ">
 										<div class="info-box_img " style="font-size:36px "><img src="/images/home/events-icons/Icon_wedding.svg " alt="Brilliant creative design " /></div>
-										<h4>Weddings</h4>
+										<h4>
+											<a href="/events-weddings/">Weddings</a>
+										</h4>
 										<div class="info-box_separator ">
 											<div class="line "></div>
 										</div>
@@ -886,7 +910,7 @@ class Layout_View
 								<div class="ult-animation ult-animate-viewport ult-no-mobile " data-animate="fadeIn " data-animation-delay="0 " data-animation-duration=".5 " data-animation-iteration="1 " style="opacity:0; ">
 									<div class="info_box ">
 										<div class="info-box_img " style="font-size:36px "><img src="/images/home/events-icons/Icon_corporate.svg " alt="Brilliant creative design " /></div>
-										<h4>Corporate retreats</h4>
+										<h4><a href="/events-corporate-retreats/">Corporate retreats</a></h4>
 										<div class="info-box_separator ">
 											<div class="line "></div>
 										</div>
@@ -902,7 +926,7 @@ class Layout_View
 								<div class="ult-animation ult-animate-viewport ult-no-mobile " data-animate="fadeIn " data-animation-delay="0 " data-animation-duration=".5 " data-animation-iteration="1 " style="opacity:0; ">
 									<div class="info_box ">
 										<div class="info-box_img " style="font-size:36px "><img src="/images/home/events-icons/Icon_family.svg " alt="Brilliant creative design " /></div>
-										<h4>Family & Friends Reunion</h4>
+										<h4><a href="/events-family-friends-reunion/">Family & Friends Reunion</a></h4>
 										<div class="info-box_separator ">
 											<div class="line "></div>
 										</div>
@@ -920,7 +944,7 @@ class Layout_View
 								<div class="ult-animation ult-animate-viewport ult-no-mobile " data-animate="fadeIn " data-animation-delay="0 " data-animation-duration=".5 " data-animation-iteration="1 " style="opacity:0; ">
 									<div class="info_box ">
 										<div class="info-box_img " style="font-size:36px "><img src="/images/home/events-icons/Icon_private.svg" alt="Brilliant creative design " /></div>
-										<h4>Private Event</h4>
+										<h4><a href="/events-family-friends-reunion/">Private Events</a></h4>
 										<div class="info-box_separator ">
 											<div class="line "></div>
 										</div>
@@ -937,7 +961,7 @@ class Layout_View
 								<div class="ult-animation ult-animate-viewport ult-no-mobile " data-animate="fadeIn " data-animation-delay="0 " data-animation-duration=".5 " data-animation-iteration="1 " style="opacity:0; ">
 									<div class="info_box ">
 										<div class="info-box_img " style="font-size:36px "><img src="/images/home/events-icons/Icon_photo.svg" alt="Brilliant creative design " /></div>
-										<h4>Photo shoots</h4>
+										<h4><a href="/events-photo-shoots/">Photo shoots</a></h4>
 										<div class="info-box_separator ">
 											<div class="line "></div>
 										</div>
@@ -953,7 +977,6 @@ class Layout_View
 			</div>
 		</div>
 		<!-- Row Backgrounds -->
-		
 		
 		<div class="vc_row wpb_row vc_row-fluid vc_custom_1427803088111">
 			<div class="upb_row_bg vcpb-default" data-upb_br_animation="" data-parallax_sense="30" data-bg-override="ex-full" data-bg-animation="left-animation" data-bg-animation-type="h" data-animation-repeat="repeat" style="min-width: 1256px; left: -43px; width: 1256px;  background-attachment: scroll; background-color: rgb(34, 188, 184); background-size: initial; background-repeat: repeat;"></div>
@@ -991,7 +1014,6 @@ class Layout_View
     	echo self::getOverviewHeader();
     	?>
        	<div class="container vc-page-container" style="margin: 35px auto 45px auto">
-       		
             <div class="ult-spacer spacer-56253aed4f277" data-id="56253aed4f277" data-height="25" data-height-mobile="25" data-height-tab="25" data-height-tab-portrait="25" data-height-mobile-landscape="25" style="clear:both;display:block;"></div>
             <div class="container-inner">
                 <div class="content">
@@ -1068,7 +1090,6 @@ class Layout_View
                                                                 <div class="ult-spacer spacer-562665424585b" data-id="562665424585b" data-height="14" data-height-mobile="14" data-height-tab="14" data-height-tab-portrait="14" data-height-mobile-landscape="14" style="clear:both;display:block;"></div>
                                                                 <div class="wpb_text_column wpb_content_element ">
                                                                     <div class="wpb_wrapper">
-
                                                                         <div class="stm_item-features">
                                                                         	<div class="stm_item-features_inner">
                                                                         		<ul class="item-features_list">
@@ -1179,10 +1200,8 @@ class Layout_View
 														<div class="wpb_accordion_section group">
                                                             <h3 class="wpb_accordion_header ui-accordion-header"><a href="#drag-drop-builder"><strong>ENTERTAINMENT</strong></a></h3>
                                                             <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
-
                                                                 <div class="wpb_text_column wpb_content_element ">
                                                                     <div class="wpb_wrapper">
-
                                                                         <div class="stm_item-features">
                                                                         	<div class="stm_item-features_inner">
                                                                         		<ul class="item-features_list">
@@ -1265,14 +1284,12 @@ class Layout_View
                                                 </div>
                                             </div>
                                         </div>
-
                                     </div>
                                 </div>
                             </div>
 
                             <div class="vc_col-sm-6 wpb_column vc_column_container ">
                                 <div class="wpb_wrapper">
-
                                     <div class="wpb_single_image wpb_content_element vc_align_center">
                                         <div class="wpb_wrapper">
 
@@ -1284,7 +1301,6 @@ class Layout_View
                                 </div>
                                 
                                 <div class="wpb_wrapper top-margin">
-
                                     <div class="wpb_single_image wpb_content_element vc_align_center">
                                         <div class="wpb_wrapper">
 
@@ -1405,7 +1421,7 @@ class Layout_View
                                     <div class="ult-spacer spacer-56253aed585bd" data-id="56253aed585bd" data-height="25" data-height-mobile="25" data-height-tab="25" data-height-tab-portrait="25" data-height-mobile-landscape="25" style="clear:both;display:block;"></div>
                                     <div class="wpb_text_column wpb_content_element ">
                                         <div class="wpb_wrapper">
-                                            <a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-square vc_btn3-style-outline vc_btn3-color-chino" href="pool-and-outdoor.html" title="" target="_self">READ MORE</a>
+                                            <a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-square vc_btn3-style-outline vc_btn3-color-chino" href="/pool-and-outdoor/" title="" target="_self">READ MORE</a>
                                         </div>
                                     </div>
                                 </div>
@@ -1455,8 +1471,6 @@ class Layout_View
                         <!-- Row Backgrounds -->
                         <div class="upb_color" data-bg-override="ex-full" data-bg-color="#ffffff" data-fadeout="" data-fadeout-percentage="30" data-parallax-content="" data-parallax-content-sense="30" data-row-effect-mobile-disable="true" data-img-parallax-mobile-disable="false" data-rtl="false" data-custom-vc-row="" data-vc="4.6.2" data-theme-support="" data-overlay="false" data-overlay-color="" data-overlay-pattern="" data-overlay-pattern-opacity="" data-overlay-pattern-size=""></div>
 						<!-- /What to do -->
-                    	
-                    	
 					</article>
     			</div>
     		</div>
@@ -1656,8 +1670,9 @@ class Layout_View
 	                                                                     	<div class="stm_item-features_inner">
 	                                                                     		<ul class="item-features_list_extended">
 	                                                                     			<li class="item-feature">Afternoon turndown service</li>
-	                                                                     			<li class="item-feature">Newspaper delivered to your room upon request (Please advice your Villa Host one week prior to arrival with your Newspaper preference to check availability).
-</li>
+	                                                                     			<li class="item-feature">Newspaper delivered to your room upon 
+	                                                                     			request (Please advice your Villa Host one week prior to arrival with your 
+	                                                                     			Newspaper preference to check availability).</li>
 	                                                                     		</ul>
 	                                                                     	</div>
                                                                        </div>
@@ -1689,7 +1704,6 @@ class Layout_View
                                             			</div>
                                             		</div>
                                             	</div>
-                                            	
                                             </div>
                                             
                                             <div class="vc_single_image-wrapper vc_box_border_grey">
@@ -1704,15 +1718,6 @@ class Layout_View
                                             			</div>
                                             		</div>
                                             	</div>
-                                            	
-                                            </div>
-                                            
-                                            <div class="vc_single_image-wrapper vc_box_border_grey">
-                                            	<img width="1140" height="676" src="/images/overview/the-rooms/Villa_Aqua_master_bedroom_1.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-                                            </div>
-                                            
-                                            <div class="vc_single_image-wrapper vc_box_border_grey">
-                                            	<img width="1140" height="676" src="/images/overview/the-rooms/Villa_Aqua_master_bedroom_2.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
                                             </div>
                                             
                                             <div class="vc_single_image-wrapper vc_box_border_grey">
@@ -1931,7 +1936,6 @@ class Layout_View
                     
                     <!-- Bedroom 3 -->
                     	<div class="vc_row wpb_row vc_row-fluid top-margin horizontal-block">
-<!---------------- Bedroom 3 ------------------->                        
                             <div class="vc_col-sm-6 wpb_column vc_column_container ">
                                 <div class="wpb_wrapper">
                                     <div class="vc_custom_heading">
@@ -2489,7 +2493,6 @@ class Layout_View
                         <div class="upb_color" data-bg-override="ex-full" data-bg-color="#ffffff" data-fadeout="" data-fadeout-percentage="30" data-parallax-content="" data-parallax-content-sense="30" data-row-effect-mobile-disable="true" data-img-parallax-mobile-disable="false" data-rtl="false" data-custom-vc-row="" data-vc="4.6.2" data-theme-support="" data-overlay="false" data-overlay-color="" data-overlay-pattern="" data-overlay-pattern-opacity="" data-overlay-pattern-size=""></div>
                         <!-- Row Backgrounds -->
                     <!-- /Bedroom 5 -->
-                    
                     </article>
                 </div>
             </div>
@@ -2542,7 +2545,6 @@ class Layout_View
                     <article id="post-300" class="post-300 page type-page status-publish hentry">
                         <div class="vc_row wpb_row vc_row-fluid horizontal-block">
                             <div class="vc_col-sm-6 wpb_column vc_column_container ">
-<!------------------- Master Bedroom  -------------------->                            
                                 <div class="wpb_wrapper">
                                     <div class="vc_custom_heading">
                                         <h2 style="color: 333;text-align: left;font-weight:300;font-style:normal">Living Room</h2>
@@ -2604,7 +2606,6 @@ class Layout_View
 							</div> 
 						</div>
 						
-						
                         <div class="vc_row wpb_row vc_row-fluid top-margin horizontal-block">
                             <div class="vc_col-sm-6 wpb_column vc_column_container ">
                                 <div class="wpb_wrapper">
@@ -2637,7 +2638,6 @@ class Layout_View
                                     </div>
                                 </div>
                             </div>
-<!------------------- Bedroom 2 --------------------->
                             <div class="vc_col-sm-6 wpb_column vc_column_container ">
                                 <div class="wpb_wrapper">
                                     <div class="vc_custom_heading ">
@@ -2677,7 +2677,6 @@ class Layout_View
 						</div>
                         <!-- Row Backgrounds -->
                         <div class="vc_row wpb_row vc_row-fluid top-margin horizontal-block">
-<!---------------- Bedroom 3 ------------------->                        
                             <div class="vc_col-sm-6 wpb_column vc_column_container ">
                                 <div class="wpb_wrapper">
                                     <div class="vc_custom_heading">
@@ -2753,7 +2752,6 @@ class Layout_View
                                 </div>
                             </div>
 
-<!------------- Bedroom 4 ------------------->
                             <div class="vc_col-sm-6 wpb_column vc_column_container ">
                                 <div class="wpb_wrapper">
                                     <div class="vc_custom_heading">
@@ -2777,14 +2775,12 @@ class Layout_View
 												Guests can relax in this contemporary space with its comfortable furniture, air conditioning 
 												and Wi-Fi access.
                                             </p>
-                                        
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-<!------------- Bedroom 5 -------------------->                        
                         <!-- Row Backgrounds -->
                         <div class="upb_color" data-bg-override="ex-full" data-bg-color="#ffffff" data-fadeout="" data-fadeout-percentage="30" data-parallax-content="" data-parallax-content-sense="30" data-row-effect-mobile-disable="true" data-img-parallax-mobile-disable="false" data-rtl="false" data-custom-vc-row="" data-vc="4.6.2" data-theme-support="" data-overlay="false" data-overlay-color="" data-overlay-pattern="" data-overlay-pattern-opacity="" data-overlay-pattern-size=""></div>
                         <div class="vc_col-sm-12 wpb_column vc_column_container ">
@@ -2810,7 +2806,7 @@ class Layout_View
 												in action or even take a class and learn how to prepare your favorite Mexican dish!
                                             </p>
                                             <p class="paragraph ng-attr-widget">
-												Contact your Villa Host for any questions or review our  <a href="/images/staff-and-services/menu-food-and-beverage.pdf">Food & Beverages Menu</a>
+												Contact your Villa Host for any questions or review our  <a href="/images/staff-and-services/menu-food-and-beverage.pdf" target="_blank">Food & Beverages Menu</a>
                                             </p>
                                         </div>
                                     </div>
@@ -2969,7 +2965,6 @@ class Layout_View
 								<div class="stm-separator"><span class="stm-separator_holder __line"><span class="stm-separator_line"></span></span><span class="stm-separator_holder __icon"></span><span class="stm-separator_holder __line"><span class="stm-separator_line"></span></span></div>
 							</div> 
 						</div>
-						
 						
                         <div class="vc_row wpb_row vc_row-fluid top-margin horizontal-block">
                             <div class="vc_col-sm-6 wpb_column vc_column_container ">
@@ -3195,7 +3190,6 @@ class Layout_View
 
                             <div class="vc_col-sm-6 wpb_column vc_column_container ">
                                 <div class="wpb_wrapper">
-
                                     <div class="wpb_single_image wpb_content_element vc_align_center">
                                         <div class="wpb_wrapper  ult-carousel">
                                             <div class="vc_single_image-wrapper vc_box_border_grey">
@@ -3242,7 +3236,6 @@ class Layout_View
 	    return $header;
 	}
     
-	
 	public function getWhatToDoHead()
 	{
 		ob_start();
@@ -3286,7 +3279,6 @@ class Layout_View
 	                                            </p>
                                             </div>
                                             <div class="ult-spacer spacer-56253aed4f277" data-id="56253aed4f277" data-height="25" data-height-mobile="25" data-height-tab="25" data-height-tab-portrait="25" data-height-mobile-landscape="25" style="clear:both;display:block;"></div>
-                                            
                                             
                                             <div class="wpb_wrapper">
                                             	<div class="wpb_accordion wpb_content_element  not-column-inherit" data-collapsible="" data-vc-disable-keydown="false" data-active-tab="1">
@@ -3373,15 +3365,9 @@ class Layout_View
                                                                 </div>
                                                             </div>
                                                         </div>
-
-                                                        
-
-                                                        
-                                                        
                                                     </div>
                                                 </div>
                                         	</div>
-                                            
                                             
                                             <p style="text-align: right; "><i>*extra fees apply</i></p>
                                         </div>
@@ -3486,7 +3472,7 @@ class Layout_View
                         <div class="rs_filter-inner">
                             <a href="#" class="active" data-filter="all">All</a>
                             <a href="#" data-filter="included">Included</a>
-                            <a href="#" data-filter="at-extra">At an extra cost</a>
+                            <a href="#" data-filter="at-extra">At extra cost</a>
                         </div>
                     </div>
                     <div class="rental-services-grid">
@@ -3554,7 +3540,7 @@ class Layout_View
                             <div class="rental-service_item">
                                 <div class="rs-item_inner">
                                     <div class="rs-item_actions">
-                                        <a class="rs-item_action_link" href="/at-an-extra-cost/"><i class="fa fa-eye"></i></a>
+                                        <a class="rs-item_action_link" href="/at-extra-cost/"><i class="fa fa-eye"></i></a>
                                     </div>
                                     <div class="rs-item_content"><img width="570" height="446" src="/images/staff-and-services/Villa_Aqua_services_not_included_food_&_beverage.jpg" class="attachment-full wp-post-image" alt="Over-the-Sea" />
                                     </div>
@@ -3569,7 +3555,7 @@ class Layout_View
                             <div class="rental-service_item">
                                 <div class="rs-item_inner">
                                     <div class="rs-item_actions">
-                                        <a class="rs-item_action_link" href="/at-an-extra-cost/"><i class="fa fa-eye"></i></a>
+                                        <a class="rs-item_action_link" href="/at-extra-cost/"><i class="fa fa-eye"></i></a>
                                     </div>
                                     <div class="rs-item_content"><img width="570" height="446" src="/images/staff-and-services/Villa_Aqua_services_not_included_spa.jpg" class="attachment-full wp-post-image" alt="Above-the-clouds" />
                                     </div>
@@ -3584,7 +3570,7 @@ class Layout_View
                             <div class="rental-service_item">
                                 <div class="rs-item_inner">
                                     <div class="rs-item_actions">
-                                        <a class="rs-item_action_link" href="/at-an-extra-cost/"><i class="fa fa-eye"></i></a>
+                                        <a class="rs-item_action_link" href="/at-extra-cost/"><i class="fa fa-eye"></i></a>
                                     </div>
                                     <div class="rs-item_content"><img width="570" height="446" src="/images/staff-and-services/Villa_Aqua_services_not_included_transportation.jpg" class="attachment-full wp-post-image" alt="Ready-to-way" />
                                     </div>
@@ -3599,7 +3585,7 @@ class Layout_View
                             <div class="rental-service_item">
                                 <div class="rs-item_inner">
                                     <div class="rs-item_actions">
-                                        <a class="rs-item_action_link" href="/at-an-extra-cost/"><i class="fa fa-eye"></i></a>
+                                        <a class="rs-item_action_link" href="/at-extra-cost/"><i class="fa fa-eye"></i></a>
                                     </div>
                                     <div class="rs-item_content"><img width="570" height="446" src="/images/staff-and-services/Villa_aqua_entertainment.jpg" class="attachment-full wp-post-image" alt="Stylish-convertible" />
                                     </div>
@@ -3722,18 +3708,6 @@ class Layout_View
                                         </div>
                                     </div>
                                 </div>
-                                
-                                <!-- <div class="wpb_wrapper top-margin">
-
-                                    <div class="wpb_single_image wpb_content_element vc_align_center">
-                                        <div class="wpb_wrapper">
-
-                                            <div class="vc_single_image-wrapper vc_box_border_grey">
-                                            	<img width="1140" height="676" src="/images/overview/Villa_Aqua_general_overview_2.jpg" class="vc_single_image-img attachment-full" alt="Driving-yacht" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div> -->
                             </div>
                         </div>
 						<!-- Row Backgrounds -->
@@ -3743,7 +3717,6 @@ class Layout_View
 								<div class="stm-separator"><span class="stm-separator_holder __line"><span class="stm-separator_line"></span></span><span class="stm-separator_holder __icon"></span><span class="stm-separator_holder __line"><span class="stm-separator_line"></span></span></div>
 							</div> 
 						</div>
-                        
                         
                         <div class="vc_row wpb_row vc_row-fluid top-margin horizontal-block">
                             <div class="vc_col-sm-6 wpb_column vc_column_container ">
@@ -3792,7 +3765,6 @@ class Layout_View
                             </div>
                         </div>             
                         
-                        
                         <!-- Row Backgrounds -->
                         <div class="upb_color" data-bg-override="ex-full" data-bg-color="#ffffff" data-fadeout="" data-fadeout-percentage="30" data-parallax-content="" data-parallax-content-sense="30" data-row-effect-mobile-disable="true" data-img-parallax-mobile-disable="false" data-rtl="false" data-custom-vc-row="" data-vc="4.6.2" data-theme-support="" data-overlay="false" data-overlay-color="" data-overlay-pattern="" data-overlay-pattern-opacity="" data-overlay-pattern-size=""></div>
                         <div class="vc_col-sm-12 wpb_column vc_column_container ">
@@ -3834,7 +3806,7 @@ class Layout_View
                                            
                                            <p class="paragraph ng-attr-widget">
                                                 <span class="ng-directive ng-binding" style="">
-                                                    Check out our sample menu which can be customized to your taste.  
+                                                    Check out our <a href="/images/staff-and-services/menu-food-and-beverage.pdf" target="_blank"> sample menu</a> which can be customized to your taste.  
                                                 </span>
                                             </p>
                                         </div>
@@ -3854,8 +3826,6 @@ class Layout_View
                                 </div>
                             </div>
                         </div>
-                        
-                        
                         <!-- Villa host -->
                         
                         <!-- Row Backgrounds -->
@@ -3930,18 +3900,22 @@ class Layout_View
                                         <div class="wpb_wrapper">
                                             <p class="paragraph ng-attr-widget">
                                                 <span class="ng-directive ng-binding" style="">
-                                                    These part time members of Villa Aqua staff are responsible to<strong> maintain the villa in optimal conditions.</strong> Their activities go from taking care of the pool and Jacuzzi, to maintaining the landscape and garden impeccable.
+                                                    These part time members of Villa Aqua staff are responsible to<strong> maintain the villa in optimal 
+                                                    conditions.</strong> Their activities go from taking care of the pool and Jacuzzi, to maintaining the 
+                                                    landscape and garden impeccable.
                                                 </span>
                                             </p>
                                             <p class="paragraph ng-attr-widget">
                                                 <span class="ng-directive ng-binding" style="">
-                                                    They are discreetly attending to any maintenance requirements that may arise, whether part of the daily schedule or unprompted, always assuring that everything in Villa Aqua works properly.
+                                                    They are discreetly attending to any maintenance requirements that may arise, whether part of the daily 
+                                                    schedule or unprompted, always assuring that everything in Villa Aqua works properly.
 You can recognize our maintenance team for their uniform. 
                                                 </span>
                                             </p>
                                             <p class="paragraph ng-attr-widget">
                                                 <span class="ng-directive ng-binding" style="">
-                                                    <strong>If there is anything that does not work properly at the villa, please advice your Villa Host</strong> and we will do our best to solve any problems immediately.
+                                                    <strong>If there is anything that does not work properly at the villa, please advice your Villa Host</strong> 
+                                                    and we will do our best to solve any problems immediately.
                                                 </span>
                                             </p>
                                         </div>
@@ -4015,7 +3989,7 @@ You can recognize our maintenance team for their uniform.
 		?>
 		<div class="container vc-page-container" style="margin: 35px auto 45px auto;">
         	<div class="vc_custom_heading">
-             	<h2 style="color: 333;text-align: left;font-weight:300;font-style:normal">At an Extra Cost </h2>
+             	<h2 style="color: 333;text-align: left;font-weight:300;font-style:normal">At Extra Cost </h2>
             </div>
             <div class="ult-spacer spacer-56253aed4f277" data-id="56253aed4f277" data-height="25" data-height-mobile="25" data-height-tab="25" data-height-tab-portrait="25" data-height-mobile-landscape="25" style="clear:both;display:block;"></div>
             <div class="container-inner">
@@ -4035,10 +4009,10 @@ You can recognize our maintenance team for their uniform.
                                                 			<li class="item-feature">Wine and Liquor supply (charges apply)</li>
                                                 			<li class="item-feature">Pre-stock and Grocery Shopping service (20% delivery fee)</li>
                                                 			<li class="item-feature">Chef Services for dinner</li>
-                                                			<li class="item-feature"> Bartender</li>
+                                                			<li class="item-feature">Bartender</li>
                                                 			<li class="item-feature">Waiter</li>
                                                 			<li class="item-feature">Spa Services</li>
-                                                			<li class="item-feature"> Extra maid</li>
+                                                			<li class="item-feature">Extra maid</li>
                                                  			<li class="item-feature">Laundry & Dry Cleaning Service</li>
                                                  			<li class="item-feature">Babysitter</li>
                                                  			<li class="item-feature">Car rental & Driver (transportation services)</li>
@@ -4068,18 +4042,6 @@ You can recognize our maintenance team for their uniform.
                                         </div>
                                     </div>
                                 </div>
-                                
-                                <!-- <div class="wpb_wrapper top-margin">
-
-                                    <div class="wpb_single_image wpb_content_element vc_align_center">
-                                        <div class="wpb_wrapper">
-
-                                            <div class="vc_single_image-wrapper vc_box_border_grey">
-                                            	<img width="1140" height="676" src="/images/overview/Villa_Aqua_general_overview_2.jpg" class="vc_single_image-img attachment-full" alt="Driving-yacht" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div> -->
                             </div>
                         </div>
 						<!-- Row Backgrounds -->
@@ -4150,7 +4112,7 @@ You can recognize our maintenance team for their uniform.
                                                         </div>
 
                                                         <div class="wpb_accordion_section group">
-                                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#optimised-for-speed"><strong>Organic & Local Produce</strong></a></h3>
+                                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#optimised-for-speed"><strong style="text-transform: uppercase;">Organic & Local Produce</strong></a></h3>
                                                             <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
                                                                 <div class="wpb_text_column wpb_content_element ">
                                                                     <div class="wpb_wrapper">
@@ -4169,7 +4131,7 @@ You can recognize our maintenance team for their uniform.
                                                         </div>
 
                                                         <div class="wpb_accordion_section group">
-                                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#drag-drop-builder"><strong>Allergies & Dietary Restrictions</strong></a></h3>
+                                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#drag-drop-builder"><strong style="text-transform: uppercase;">Allergies & Dietary Restrictions</strong></a></h3>
                                                             <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
                                                                 <div class="wpb_text_column wpb_content_element ">
                                                                     <div class="wpb_wrapper">
@@ -4186,7 +4148,7 @@ You can recognize our maintenance team for their uniform.
                                                         </div>
                                                         
                                                         <div class="wpb_accordion_section group">
-                                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#drag-drop-builder"><strong>Family Style Service</strong></a></h3>
+                                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#drag-drop-builder"><strong style="text-transform: uppercase;">Family Style Service</strong></a></h3>
                                                             <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
                                                                 <div class="wpb_text_column wpb_content_element ">
                                                                     <div class="wpb_wrapper">
@@ -4211,7 +4173,7 @@ You can recognize our maintenance team for their uniform.
                                                         </div>
                                                         
                                                         <div class="wpb_accordion_section group">
-                                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#drag-drop-builder"><strong>Beverages</strong></a></h3>
+                                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#drag-drop-builder"><strong style="text-transform: uppercase;">Beverages</strong></a></h3>
                                                             <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
                                                                 <div class="wpb_text_column wpb_content_element ">
                                                                     <div class="wpb_wrapper">
@@ -4233,7 +4195,7 @@ You can recognize our maintenance team for their uniform.
                                                         </div>
                                                         
                                                         <div class="wpb_accordion_section group">
-                                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#drag-drop-builder"><strong>Menu</strong></a></h3>
+                                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#drag-drop-builder"><strong style="text-transform: uppercase;">Menu</strong></a></h3>
                                                             <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
                                                                 <div class="wpb_text_column wpb_content_element ">
                                                                     <div class="wpb_wrapper">
@@ -4257,7 +4219,6 @@ You can recognize our maintenance team for their uniform.
                                 </div>
                             </div>
                         </div>             
-                        
                         
                         <!-- Row Backgrounds -->
                         <div class="upb_color" data-bg-override="ex-full" data-bg-color="#ffffff" data-fadeout="" data-fadeout-percentage="30" data-parallax-content="" data-parallax-content-sense="30" data-row-effect-mobile-disable="true" data-img-parallax-mobile-disable="false" data-rtl="false" data-custom-vc-row="" data-vc="4.6.2" data-theme-support="" data-overlay="false" data-overlay-color="" data-overlay-pattern="" data-overlay-pattern-opacity="" data-overlay-pattern-size=""></div>
@@ -4506,19 +4467,24 @@ You can recognize our maintenance team for their uniform.
                                         <div class="wpb_wrapper">
                                             <p class="paragraph ng-attr-widget">
                                                 <span class="ng-directive ng-binding" style="">
-                                                    Getting to the Riviera Maya is very easy. Cancun International Airport (code CUN) is located 52 km north of Villa Aqua (Playa del Carmen) and is served by all major International Airlines with direct or nonstop service from almost anywhere around the world.
+                                                    Getting to the Riviera Maya is very easy. Cancun International Airport (code CUN) is 
+                                                    located 52 km north of Villa Aqua (Playa del Carmen) and is served by all major International 
+                                                    Airlines with direct or nonstop service from almost anywhere around the world.
                                                 </span>
                                             </p>
 
                                             <p class="paragraph ng-attr-widget">
                                                 <span class="ng-directive ng-binding" style="">
-                                                    Once you arrive to Cancun airport, we provide complimentary transportation to the villa (1 round trip for stays of 4 or more nights). 
+                                                    Once you arrive to Cancun airport, we provide complimentary transportation to the villa 
+                                                    (1 round trip for stays of 4 or more nights). 
                                                 </span>
                                             </p>
 
                                             <p class="paragraph ng-attr-widget">
                                                 <span class="ng-directive ng-binding" style="">
-                                                    Cozumel Airport (code CZM) may also be considered an international access to this region but it is on the island and you will need to take a 30 min ferry to Playa del Carmen where Villa Aqua is located and we can arrange your transportation from the dock to the house. 
+                                                    Cozumel Airport (code CZM) may also be considered an international access to this region 
+                                                    but it is on the island and you will need to take a 30 min ferry to Playa del Carmen where 
+                                                    Villa Aqua is located and we can arrange your transportation from the dock to the house. 
                                                 </span>
                                             </p>
 
@@ -4549,18 +4515,6 @@ You can recognize our maintenance team for their uniform.
                                         </div>
                                     </div>
                                 </div>
-
-                                <!-- <div class="wpb_wrapper top-margin">
-
-                                    <div class="wpb_single_image wpb_content_element vc_align_center">
-                                        <div class="wpb_wrapper">
-
-                                            <div class="vc_single_image-wrapper vc_box_border_grey">
-                                            	<img width="1140" height="676" src="/images/overview/Villa_Aqua_general_overview_2.jpg" class="vc_single_image-img attachment-full" alt="Driving-yacht" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div> -->
                             </div>
                         </div>
                         <!-- Row Backgrounds -->
@@ -4585,7 +4539,7 @@ You can recognize our maintenance team for their uniform.
                                     </div>
                                 </div>
                             </div>
-                            <div class="vc_col-sm-6 wpb_column vc_column_container ">
+                            <div class="vc_col-sm-6 wpb_column vc_column_container" id="playacar">
                                 <div class="wpb_wrapper">
                                     <div class="vc_custom_heading ">
                                         <h2 style="color: 333;text-align: left;font-weight:300;font-style:normal">Playacar</h2>
@@ -4596,22 +4550,28 @@ You can recognize our maintenance team for their uniform.
                                         <div class="wpb_wrapper">
                                         	<p class="paragraph ng-attr-widget">
                                                 <span class="ng-directive ng-binding" style="">
-                                                    Villa Aqua is located just a few minutes walking distance to the beautiful beaches of Playacar Phase I and Playa del Carmen downtown.
+                                                    Villa Aqua is located just a few minutes walking distance to the beautiful beaches of 
+                                                    Playacar Phase I and Playa del Carmen downtown.
                                                 </span>
                                             </p>
                                             <p class="paragraph ng-attr-widget">
                                                 <span class="ng-directive ng-binding" style="">
-                                                    Playacar is an upscale-gated community located just south of Playa del Carmen's main urban area. Playacar is approximately 40 minutes drive from Cancun International airport.
+                                                    Playacar is an upscale-gated community located just south of Playa del Carmen's main 
+                                                    urban area. Playacar is approximately 40 minutes drive from Cancun International airport.
                                                 </span>
                                             </p>
                                             <p class="paragraph ng-attr-widget">
                                                 <span class="ng-directive ng-binding" style="">
-                                                    The resort of Playacar is the ideal spot for families wanting a little bit of everything. It is divided into two phases, the first borders the ocean, the second, where Villa Aqua is located, lining the 18 hole golf course designed by Robert Von Hagge, and exposes luxury resorts, private homes and a couple of small shopping centers.
+                                                    The resort of Playacar is the ideal spot for families wanting a little bit of everything. 
+                                                    It is divided into two phases, the first borders the ocean, the second, where Villa Aqua is 
+                                                    located, lining the 18 hole golf course designed by Robert Von Hagge, and exposes luxury 
+                                                    resorts, private homes and a couple of small shopping centers.
                                                 </span>
                                             </p>
                                             <p class="paragraph ng-attr-widget">
                                                 <span class="ng-directive ng-binding" style="">
-                                                    The Xaman-Ha Aviary is also located within Playacar Phase II, and contains more than 200 animals of 45 different species; besides birds they also have butterflies, iguanas and small mammals.
+                                                    The Xaman-Ha Aviary is also located within Playacar Phase II, and contains more than 200 
+                                                    animals of 45 different species; besides birds they also have butterflies, iguanas and small mammals.
                                                 </span>
                                             </p>
                                             <p class="paragraph ng-attr-widget">
@@ -4637,7 +4597,7 @@ You can recognize our maintenance team for their uniform.
                         </div>
 
                         <!-- Row Backgrounds -->
-                        <div class="vc_row wpb_row vc_row-fluid top-margin horizontal-block">
+                        <div class="vc_row wpb_row vc_row-fluid top-margin horizontal-block"  id="playadelcarmen">
                             <div class="vc_col-sm-6 wpb_column vc_column_container ">
                                 <div class="wpb_wrapper">
                                     <div class="vc_custom_heading">
@@ -4648,22 +4608,39 @@ You can recognize our maintenance team for their uniform.
                                         <div class="wpb_wrapper">
                                             <p class="paragraph ng-attr-widget">
                                                 <span class="ng-directive ng-binding" style="">
-                                                    Situated right in the heart of the Riviera Maya, just 50 km south from Cancun's International Airport, Playa del Carmen is the region's top destination for shopping, dining and nightlife. Playa, as everybody calls it, provides everything one could wish for, in a Caribbean location: White sand beaches, amazing golf, water sports, nature adventure, cultural and recreational centers and much more.
+                                                    Situated right in the heart of the Riviera Maya, just 50 km south from Cancun's International 
+                                                    Airport, Playa del Carmen is the region's top destination for shopping, dining and nightlife. 
+                                                    Playa, as everybody calls it, provides everything one could wish for, in a Caribbean location: 
+                                                    White sand beaches, amazing golf, water sports, nature adventure, cultural and recreational 
+                                                    centers and much more.
                                                 </span>
                                             </p>
                                             <p class="paragraph ng-attr-widget">
                                                 <span class="ng-directive ng-binding" style="">
-                                                    After your day at the beach, head into town and take a stroll along the pedestrian Fifth Avenue strip, locally known as Quinta Avenida. La Quinta is the place to see and be seen, with its cosmopolitan atmosphere of joy, security, and harmony, by day it's packed with people browsing the shops and boutiques; by night roving musicians entertain diners in the many restaurants and bars. Playa del Carmen is one of the Riviera Maya's top culinary destinations where you'll find everything from street tacos to five-star establishments serving up their own unique takes on traditional Mayan and international cuisine. As the evening progresses, La Quinta gyrates to the sounds of rock, salsa and reggae as people flock to the bars and nightclubs. The beach clubs get in on the action too, hosting dance parties that rage on until the early morning hours and Villa Aqua is just minutes walking distance to all this fun, right in Playacar, a high-end development complete with golf course, all-inclusive luxury resorts and gated residences. 
+                                                    After your day at the beach, head into town and take a stroll along the pedestrian Fifth Avenue 
+                                                    strip, locally known as Quinta Avenida. La Quinta is the place to see and be seen, with its 
+                                                    cosmopolitan atmosphere of joy, security, and harmony, by day it's packed with people browsing 
+                                                    the shops and boutiques; by night roving musicians entertain diners in the many restaurants and 
+                                                    bars. Playa del Carmen is one of the Riviera Maya's top culinary destinations where you'll find 
+                                                    everything from street tacos to five-star establishments serving up their own unique takes on 
+                                                    traditional Mayan and international cuisine. As the evening progresses, La Quinta gyrates to the 
+                                                    sounds of rock, salsa and reggae as people flock to the bars and nightclubs. The beach clubs get 
+                                                    in on the action too, hosting dance parties that rage on until the early morning hours and Villa 
+                                                    Aqua is just minutes walking distance to all this fun, right in Playacar, a high-end development 
+                                                    complete with golf course, all-inclusive luxury resorts and gated residences. 
                                                 </span>
                                             </p>
                                             <p class="paragraph ng-attr-widget">
                                                 <span class="ng-directive ng-binding" style="">
-                                                    Ferry service connects the Caribbean island of Cozumel with Playa del Carmen so you can easily enjoy a day trip out to the island for some scuba diving or snorkeling. You can also arrange day trips to visit ancient archaeological sites, ecological parks and cenotes.
+                                                    Ferry service connects the Caribbean island of Cozumel with Playa del Carmen so you can easily 
+                                                    enjoy a day trip out to the island for some scuba diving or snorkeling. You can also arrange day 
+                                                    trips to visit ancient archaeological sites, ecological parks and cenotes.
                                                 </span>
                                             </p>
                                             <p class="paragraph ng-attr-widget">
                                                 <span class="ng-directive ng-binding" style="">
-                                                    Whether you are here to relax and unravel, or to immerse yourself in an abundance of cultural or adrenaline filled activities, the possibilities are endless and will definitely exceed your expectations. 
+                                                    Whether you are here to relax and unravel, or to immerse yourself in an abundance of cultural or 
+                                                    adrenaline filled activities, the possibilities are endless and will definitely exceed your expectations. 
                                                 </span>
                                             </p>
                                         </div>
@@ -4765,11 +4742,8 @@ You can recognize our maintenance team for their uniform.
 	                                                    <td>57</td>
 	                                                    <td>37</td>
 	                                                </tr>
-	                                                
-	                                                
 	                                            </tbody>
 	                                        </table>
-	
 	                                    </div>
 	                                </div>
                             	</div>
@@ -4939,13 +4913,22 @@ You can recognize our maintenance team for their uniform.
                                     <div class="wpb_accordion wpb_content_element  not-column-inherit" data-collapsible="" data-vc-disable-keydown="false" data-active-tab="1">
                                         <div class="wpb_wrapper wpb_accordion_wrapper ui-accordion">
                                             <div class="wpb_accordion_section group">
-                                                <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post"><strong>Language</strong></a></h3>
+                                                <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post"><strong>LANGUAGE</strong></a></h3>
                                                 <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
                                                     <div class="wpb_text_column wpb_content_element ">
                                                         <div class="wpb_wrapper">
                                                             <div class="entry-holder has-padd">
                                                                 <div class="entry-content">
-                                                                    The official language of Mexico is Spanish. In this region the indigenous population speaks Mayan. But as the Riviera Maya is a popular touristic destination you won't have trouble finding English speaking almost all around and even other languages.
+                                                                	<div class="stm_item-features">
+					                                                	<div class="stm_item-features_inner">
+					                                                		<ul class="item-features_list_extended">
+					                                                			<li class="item-feature">
+					                                                				The official language of Mexico is Spanish. In this region the indigenous population speaks Mayan. But as the Riviera Maya is a popular touristic destination you won't have trouble finding English speaking almost all around and even other languages.
+					                                                			</li>
+					                                                		</ul>
+					                                                	</div>
+					                                                </div>
+                                                                
                                                                 </div>
                                                                 <!-- .entry-content -->
                                                             </div>
@@ -4955,56 +4938,21 @@ You can recognize our maintenance team for their uniform.
                                             </div>
 
                                             <div class="wpb_accordion_section group">
-                                                <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post"><strong>Currency</strong></a></h3>
+                                                <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post"><strong>CURRENCY</strong></a></h3>
                                                 <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
                                                     <div class="wpb_text_column wpb_content_element ">
                                                         <div class="wpb_wrapper">
                                                             <div class="entry-holder has-padd">
                                                                 <div class="entry-content">
-                                                                    The official currency is the Mexican Peso. The exchange rate is between 14 and 17 pesos per American dollar varying according to fluctuations in the foreign exchange market, but US Dollars and credit cards are accepted in most places. There are many exchange offices and banks where you can get pesos. The first generally give better exchange rate but you may have to wait in long lines and they usually ask for documents. Be aware that some only accept few currencies. If you need to change Euros, you must bring your passport.
-                                                                </div>
-                                                                <!-- .entry-content -->
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-
-                                            <div class="wpb_accordion_section group">
-                                                <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post"><strong>Weather</strong></a></h3>
-                                                <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
-                                                    <div class="wpb_text_column wpb_content_element ">
-                                                        <div class="wpb_wrapper">
-                                                            <div class="entry-holder has-padd">
-                                                                <div class="entry-content">
-                                                                    The average annual temperature in Riviera Maya is 24–25 °C (75–77 °F) but can reach 35-40 °C during summer months. Usually the weather is hot and humid but the higher temperatures are registered between the months of May and August with frequent night showers. The climate is dominated by a rainy season from May through November, and within the dry season there is a period dominated by northerly winds, which usually occurs in the months of January and February when the weather is sunny and cool. Groundwater and therefore "cenote" (sink holes) water temperatures are 25°C (77°F) year round. Coastal waters range from 26°C (79°F) in January to 29°C (84°F) in August.
-                                                                </div>
-                                                                <!-- .entry-content -->
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-
-                                            <div class="wpb_accordion_section group">
-                                                <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post"><strong>Passport & Visa</strong></a></h3>
-                                                <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
-                                                    <div class="wpb_text_column wpb_content_element ">
-                                                        <div class="wpb_wrapper">
-                                                            <div class="entry-holder has-padd">
-                                                                <div class="entry-content">
-                                                                    <h6>For USA citizens only:</h6> Since 2007, ALL persons, including U.S. citizens, traveling by air between the United States and Canada, Mexico, Central and South America, the Caribbean, and Bermuda will be required to present a valid passport, Air NEXUS card, or U.S. Coast Guard Merchant Mariner Document, or an Alien Registration Card, Form I-551, if applicable. If traveling by land or sea (including ferries), ALL persons, including U.S. citizens, may be required to present a valid passport or other documents as determined by the Department of Homeland Security.
-                                                                    <br />
-                                                                    <br />
-                                                                    <h6>Other Countries:</h6> If you are a citizen of Andorra, Argentina, Australia, Austria, Belgium, Canada, Chile, Costa Rica, the Czech Republic, Denmark, Finland, France, Germany, Great Britain, Greece, Hungary, Iceland, Ireland, Israel, Italy, Japan, Liechtenstein, Luxembourg, Monaco, Netherlands, New Zealand, Norway, Poland, Portugal, Puerto Rico, San Marino, Singapore, Slovenia, Spain, South Korea, Sweden, Switzerland, United States of America, Uruguay or Venezuela, you don't need a visa to enter Mexico, although you must present a valid passport and fill out an immigration form for tourists and business trips, which can be obtained in travel agencies, airlines or at the point where you enter Mexico.
-                                                                    <br />
-                                                                    <br /> The immigration officer at your point of entry into Mexico can also request that you demonstrate that you have sufficient funds and a return ticket to your country. If you are a citizen of any other country, you need to go to a Mexican consulate to request a visa.
-                                                                    <br />
-                                                                    <br /> If you have a family member, friend or acquaintance in Mexico, he or she can do this at the INM.
-                                                                    <br />
-                                                                    <br /> Visa Airport Departure Tax is approximately $17.00 USD. Children under 2 years of age are exempt.
+                                                                	<div class="stm_item-features">
+					                                                	<div class="stm_item-features_inner">
+					                                                		<ul class="item-features_list_extended">
+					                                                			<li class="item-feature">
+					                                                				The official currency is the Mexican Peso. The exchange rate is between 14 and 17 pesos per American dollar varying according to fluctuations in the foreign exchange market, but US Dollars and credit cards are accepted in most places. There are many exchange offices and banks where you can get pesos. The first generally give better exchange rate but you may have to wait in long lines and they usually ask for documents. Be aware that some only accept few currencies. If you need to change Euros, you must bring your passport.
+					                                                			</li>
+					                                                		</ul>
+					                                                	</div>
+					                                                </div>
                                                                 </div>
                                                                 <!-- .entry-content -->
                                                             </div>
@@ -5015,34 +4963,24 @@ You can recognize our maintenance team for their uniform.
 
 
                                             <div class="wpb_accordion_section group">
-                                                <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post"><strong>Local time</strong></a></h3>
+                                                <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post"><strong>WEATHER</strong></a></h3>
                                                 <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
                                                     <div class="wpb_text_column wpb_content_element ">
                                                         <div class="wpb_wrapper">
                                                             <div class="entry-holder has-padd">
                                                                 <div class="entry-content">
-                                                                    In Riviera Maya applies the Eastern Standard Time EST UTC/GMT-5 hours or the same time of Miami, FL.
-                                                                </div>
-                                                                <!-- .entry-content -->
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="wpb_accordion_section group">
-                                                <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post"><strong>Water</strong></a></h3>
-                                                <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
-                                                    <div class="wpb_text_column wpb_content_element ">
-                                                        <div class="wpb_wrapper">
-                                                            <div class="entry-holder has-padd">
-                                                                <div class="entry-content">
-                                                                    The water that comes out of the sinks and showers at Villa Aqua is treated and desalinated. Please help to conserve local water by using only the water that you need. Even though the water in the villa is treated we do not recommend you drink it from the faucets as it has many minerals that your stomach may not tolerate. For drinking water please use bottle water or the blue large water jugs that we provide in the kitchen, it is complimentary.
-
-                                                                    <br />
-                                                                    <br /> Almost all restaurants in Playa will only serve purified water and use purified ice so do not worry about dining out!
-                                                                    <br />
-                                                                    <br /> If you are going to spend your day out on the beach or visiting the different attractions, we recommend you to bring a supply of bottled water and/or drink only bottled beverages.
+                                                                	<div class="stm_item-features">
+					                                                	<div class="stm_item-features_inner">
+					                                                		<ul class="item-features_list_extended">
+					                                                			<li class="item-feature">
+					                                                				The average annual temperature in Riviera Maya is 24–25 °C (75–77 °F) but can reach 35-40 °C during summer months. Usually the weather is hot and humid but the higher temperatures are registered between the months of May and August with frequent night showers. The climate is dominated by a rainy season from May through November, and within the dry season there is a period dominated by northerly winds, which usually occurs in the months of January and February when the weather is sunny and cool. Groundwater and therefore "cenote" (sink holes) water temperatures are 25°C (77°F) year round. Coastal waters range from 26°C (79°F) in January to 29°C (84°F) in August.
+					                                                			</li>
+					                                                		</ul>
+					                                                	</div>
+					                                                </div>
+                                                                
+                                                                
+                                                                    
                                                                 </div>
                                                                 <!-- .entry-content -->
                                                             </div>
@@ -5052,14 +4990,26 @@ You can recognize our maintenance team for their uniform.
                                             </div>
 
 
+                                            
+
+
                                             <div class="wpb_accordion_section group">
-                                                <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post"><strong>Electricity</strong></a></h3>
+                                                <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post"><strong>LOCAL TIME</strong></a></h3>
                                                 <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
                                                     <div class="wpb_text_column wpb_content_element ">
                                                         <div class="wpb_wrapper">
                                                             <div class="entry-holder has-padd">
                                                                 <div class="entry-content">
-                                                                    Mexico uses the conventional 110/220 electrical powers, the same as the United States. Electricity is very precious here in the Riviera Maya, please remember to keep all doors and windows closed while using the air conditioning to maintain the villa cool and conserve electricity. If you are to open doors and windows please be aware of the fact that it will take time to cool the room and villa again.
+                                                                	<div class="stm_item-features">
+					                                                	<div class="stm_item-features_inner">
+					                                                		<ul class="item-features_list_extended">
+					                                                			<li class="item-feature">
+					                                                				In Riviera Maya applies the Eastern Standard Time EST UTC/GMT-5 hours or the same time of Miami, FL.
+					                                                			</li>
+					                                                		</ul>
+					                                                	</div>
+					                                                </div>
+                                                                    
                                                                 </div>
                                                                 <!-- .entry-content -->
                                                             </div>
@@ -5069,13 +5019,56 @@ You can recognize our maintenance team for their uniform.
                                             </div>
 
                                             <div class="wpb_accordion_section group">
-                                                <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post"><strong>Bugs & fauna</strong></a></h3>
+                                                <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post"><strong>WATER</strong></a></h3>
                                                 <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
                                                     <div class="wpb_text_column wpb_content_element ">
                                                         <div class="wpb_wrapper">
                                                             <div class="entry-holder has-padd">
                                                                 <div class="entry-content">
-                                                                    Playa del Carmen is a tropical destination, with that comes sporadic rain showers and high humidity. It might be helpful to buy mosquito repellent because of the wet and humid conditions. We would also like you to note that there are all types of wildlife in our surroundings. Even though we are in a populated area you can still see large iguanas, squirrels, local mammals, exotic birds, as well as various tropical insects.
+                                                                	<div class="stm_item-features">
+					                                                	<div class="stm_item-features_inner">
+					                                                		<ul class="item-features_list_extended">
+					                                                			<li class="item-feature">
+					                                                				The water that comes out of the sinks and showers at Villa Aqua is treated and desalinated. Please help to conserve local water by using only the water that you need. Even though the water in the villa is treated we do not recommend you drink it from the faucets as it has many minerals that your stomach may not tolerate. For drinking water please use bottle water or the blue large water jugs that we provide in the kitchen, it is complimentary.
+					                                                			</li>
+					                                                			
+					                                                			<li class="item-feature">
+					                                                				Almost all restaurants in Playa will only serve purified water and use purified ice so do not worry about dining out!
+					                                                			</li>
+					                                                			
+					                                                			<li class="item-feature">
+					                                                				If you are going to spend your day out on the beach or visiting the different attractions, we recommend you to bring a supply of bottled water and/or drink only bottled beverages.
+					                                                			</li>
+					                                                		</ul>
+					                                                	</div>
+					                                                </div>
+                                                                
+                                                                </div>
+                                                                <!-- .entry-content -->
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="wpb_accordion_section group">
+                                                <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post"><strong>ELECTRICITY</strong></a></h3>
+                                                <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
+                                                    <div class="wpb_text_column wpb_content_element ">
+                                                        <div class="wpb_wrapper">
+                                                            <div class="entry-holder has-padd">
+                                                                <div class="entry-content">
+                                                                	<div class="stm_item-features">
+					                                                	<div class="stm_item-features_inner">
+					                                                		<ul class="item-features_list_extended">
+					                                                			<li class="item-feature">
+					                                                				In Riviera Maya applies the Eastern Standard Time EST UTC/GMT-5 hours or the same time of Miami, FL.
+					                                                			</li>
+					                                                		</ul>
+					                                                	</div>
+					                                                </div>
+                                                                    
                                                                 </div>
                                                                 <!-- .entry-content -->
                                                             </div>
@@ -5085,15 +5078,22 @@ You can recognize our maintenance team for their uniform.
                                             </div>
 
                                             <div class="wpb_accordion_section group">
-                                                <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post"><strong>ATM´s</strong></a></h3>
+                                                <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post"><strong>BUGS & FAUNA</strong></a></h3>
                                                 <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
                                                     <div class="wpb_text_column wpb_content_element ">
                                                         <div class="wpb_wrapper">
                                                             <div class="entry-holder has-padd">
                                                                 <div class="entry-content">
-                                                                    There are many ATMs throughout Playa del Carmen where you can receive Pesos but take in mind that sometimes you will be charge a double commission: the ATM's bank and yours! There are some ATMs that provide US dollars but have in mind that sometimes the commission can be up to 10% of the amount you retire.
-                                                                    <br />
-                                                                    <br /> If you go on tours outside of the city remember to take plenty of cash with you because it is not common to find an ATM or even a place that will accept credit cards in rural areas.
+                                                                	<div class="stm_item-features">
+					                                                	<div class="stm_item-features_inner">
+					                                                		<ul class="item-features_list_extended">
+					                                                			<li class="item-feature">
+					                                                				Playa del Carmen is a tropical destination, with that comes sporadic rain showers and high humidity. It might be helpful to buy mosquito repellent because of the wet and humid conditions. We would also like you to note that there are all types of wildlife in our surroundings. Even though we are in a populated area you can still see large iguanas, squirrels, local mammals, exotic birds, as well as various tropical insects.
+					                                                			</li>
+					                                                		</ul>
+					                                                	</div>
+					                                                </div>
+                                                                    
                                                                 </div>
                                                                 <!-- .entry-content -->
                                                             </div>
@@ -5102,21 +5102,103 @@ You can recognize our maintenance team for their uniform.
                                                 </div>
                                             </div>
 
-
                                             <div class="wpb_accordion_section group">
-                                                <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post"><strong>Tax & tips</strong></a></h3>
+                                                <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post"><strong>ATM'S</strong></a></h3>
                                                 <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
                                                     <div class="wpb_text_column wpb_content_element ">
                                                         <div class="wpb_wrapper">
                                                             <div class="entry-holder has-padd">
                                                                 <div class="entry-content">
-                                                                    In Riviera Maya, which belongs to the State of Quintana Roo, there is a 16% VAT (Value Added Tax) that is added to most products and services.
+                                                                	<div class="stm_item-features">
+	                                                                	<div class="stm_item-features_inner">
+					                                                		<ul class="item-features_list_extended">
+					                                                			<li class="item-feature">
+					                                                				There are many ATMs throughout Playa del Carmen where you can receive Pesos but take in mind that sometimes you will be charge a double commission: the ATM's bank and yours! There are some ATMs that provide US dollars but have in mind that sometimes the commission can be up to 10% of the amount you retire.
+					                                                			</li>
+					                                                			<li class="item-feature">
+					                                                				If you go on tours outside of the city remember to take plenty of cash with you because it is not common to find an ATM or even a place that will accept credit cards in rural areas.
+					                                                			</li>
+					                                                		</ul>
+					                                                	</div>
+				                                                	</div>
+                                                                </div>
+                                                                <!-- .entry-content -->
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="wpb_accordion_section group">
+                                                <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post"><strong>PASSPORT & VISA</strong></a></h3>
+                                                <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
+                                                    <div class="wpb_text_column wpb_content_element ">
+                                                        <div class="wpb_wrapper">
+                                                            <div class="entry-holder has-padd">
+                                                                <div class="entry-content">
+                                                                    <h6>For USA citizens only:</h6> 
+                                                                    <div class="stm_item-features">
+					                                                	<div class="stm_item-features_inner">
+					                                                		<ul class="item-features_list_extended">
+					                                                			<li class="item-feature">
+					                                                				Since 2007, ALL persons, including U.S. citizens, traveling by air between the United States and Canada, Mexico, Central and South America, the Caribbean, and Bermuda will be required to present a valid passport, Air NEXUS card, or U.S. Coast Guard Merchant Mariner Document, or an Alien Registration Card, Form I-551, if applicable. If traveling by land or sea (including ferries), ALL persons, including U.S. citizens, may be required to present a valid passport or other documents as determined by the Department of Homeland Security.
+					                                                			</li>
+					                                                		</ul>
+					                                                	</div>
+					                                                </div>
                                                                     <br />
-                                                                    <br /> Tips are very common in Mexico. The amount you tip is at your discretion and should be based on the quality of service you received. Tips to service personnel (ie: Chef, kitchen assistant, housekeepers, server, maintenance, villa host, etc…) are not included in the cost of your villa rental.
                                                                     <br />
-                                                                    <br /> To give you an idea of how much is usually tipped, and which service providers will expect a tip from you, here is a rundown of who and how much to tip in Mexico:
-                                                                    <br />
-                                                                    <br />
+                                                                    <h6>Other Countries:</h6> 
+                                                                    <div class="stm_item-features">
+					                                                	<div class="stm_item-features_inner">
+					                                                		<ul class="item-features_list_extended">
+					                                                			<li class="item-feature">
+					                                                				If you are a citizen of Andorra, Argentina, Australia, Austria, Belgium, Canada, Chile, Costa Rica, the Czech Republic, Denmark, Finland, France, Germany, Great Britain, Greece, Hungary, Iceland, Ireland, Israel, Italy, Japan, Liechtenstein, Luxembourg, Monaco, Netherlands, New Zealand, Norway, Poland, Portugal, Puerto Rico, San Marino, Singapore, Slovenia, Spain, South Korea, Sweden, Switzerland, United States of America, Uruguay or Venezuela, you don't need a visa to enter Mexico, although you must present a valid passport and fill out an immigration form for tourists and business trips, which can be obtained in travel agencies, airlines or at the point where you enter Mexico.
+					                                                			</li>
+					                                                			<li class="item-feature">
+					                                                				The immigration officer at your point of entry into Mexico can also request that you demonstrate that you have sufficient funds and a return ticket to your country. If you are a citizen of any other country, you need to go to a Mexican consulate to request a visa.
+					                                                			</li>
+					                                                			<li class="item-feature">
+					                                                				If you have a family member, friend or acquaintance in Mexico, he or she can do this at the INM.
+					                                                			</li>
+					                                                			<li class="item-feature">
+					                                                				Visa Airport Departure Tax is approximately $17.00 USD. Children under 2 years of age are exempt.
+					                                                			</li>
+					                                                		</ul>
+					                                                	</div>
+					                                                </div>
+                                                                </div>
+                                                                <!-- .entry-content -->
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="wpb_accordion_section group">
+                                                <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post"><strong>TAX & TIPS</strong></a></h3>
+                                                <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
+                                                    <div class="wpb_text_column wpb_content_element ">
+                                                        <div class="wpb_wrapper">
+                                                            <div class="entry-holder has-padd">
+                                                                <div class="entry-content">
+                                                                	<div class="stm_item-features">
+	                                                                	<div class="stm_item-features_inner">
+					                                                		<ul class="item-features_list_extended">
+					                                                			<li class="item-feature">
+					                                                				In Riviera Maya, which belongs to the State of Quintana Roo, there is a 16% VAT (Value Added Tax) that is added to most products and services.
+					                                                			</li>
+					                                                			<li class="item-feature">
+					                                                				Tips are very common in Mexico. The amount you tip is at your discretion and should be based on the quality of service you received. Tips to service personnel (ie: Chef, kitchen assistant, housekeepers, server, maintenance, villa host, etc…) are not included in the cost of your villa rental.
+					                                                			</li>
+					                                                			<li class="item-feature">
+					                                                			
+					                                                				To give you an idea of how much is usually tipped, and which service providers will expect a tip from you, here is a rundown of who and how much to tip in Mexico:
+					                                                			</li>
+					                                                		</ul>
+					                                                	</div>
+				                                                	</div>
+                                                                
                                                                     <ul>
                                                                         <li>
                                                                             Waiters and Waitresses in Restaurants: it is customary to leave a tip equal to 10 to 20% of the total of the bill. In some restaurants service is included, particularly if you're part of a large group, but this is not usually the case. Always check the bill to see if service is included or if there are errors in the calculation. If a service charge is included, you may choose to tip extra for superior service.
@@ -5164,21 +5246,36 @@ You can recognize our maintenance team for their uniform.
                                             </div>
 
                                             <div class="wpb_accordion_section group">
-                                                <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post"><strong>Tips for Tipping </strong></a></h3>
+                                                <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post"><strong>TIPS FOR TIPPING </strong></a></h3>
                                                 <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
                                                     <div class="wpb_text_column wpb_content_element ">
                                                         <div class="wpb_wrapper">
                                                             <div class="entry-holder has-padd">
                                                                 <div class="entry-content">
-                                                                    <ul>
-                                                                        <li>Plan ahead for tipping: include tips in your vacation budget.</li>
-                                                                        <li>Change can be hard to come by in Mexico. Use larger bills when making purchases and hang on to your change so that you’ll have it on-hand for tips.</li>
-                                                                        <li>Villa Aqua has no-tipping policies but most staff is happy to receive tips.</li>
-                                                                        <li>Leaving a tip is important, but a smile and a “gracias” can be just as important in showing your appreciation to someone who has provided you with a service</li>
-                                                                        <li>Tips are voluntary, NOT an obligation. You will make the final decision on how you will compensate the service personal.
-                                                                        </li>
-                                                                        <li>Please do not feel obligated to tip. This information is being provided because we have encountered a lot of questions about tipping and would like to leave this decision 100% private and up to your discretion.</li>
-                                                                    </ul>
+                                                                	<div class="stm_item-features">
+	                                                                	<div class="stm_item-features_inner">
+					                                                		<ul class="item-features_list_extended">
+					                                                			<li class="item-feature">
+					                                                				Plan ahead for tipping: include tips in your vacation budget.
+					                                                			</li>
+					                                                			<li class="item-feature">
+					                                                				Change can be hard to come by in Mexico. Use larger bills when making purchases and hang on to your change so that you’ll have it on-hand for tips.
+					                                                			</li>
+					                                                			<li class="item-feature">
+					                                                				Villa Aqua has no-tipping policies but most staff is happy to receive tips.
+					                                                			</li>
+					                                                			<li class="item-feature">
+					                                                				Leaving a tip is important, but a smile and a “gracias” can be just as important in showing your appreciation to someone who has provided you with a service
+					                                                			</li>
+					                                                			<li class="item-feature">
+					                                                				Tips are voluntary, NOT an obligation. You will make the final decision on how you will compensate the service personal.
+					                                                			</li>
+					                                                			<li class="item-feature">
+					                                                				Please do not feel obligated to tip. This information is being provided because we have encountered a lot of questions about tipping and would like to leave this decision 100% private and up to your discretion.
+					                                                			</li>
+					                                                		</ul>
+					                                                	</div>
+				                                                	</div>
                                                                 </div>
                                                                 <!-- .entry-content -->
                                                             </div>
@@ -5337,7 +5434,6 @@ You can recognize our maintenance team for their uniform.
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        
                                                         
                                                         <div class="wpb_accordion_section group">
                                                             <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post"><strong>CORALINA</strong></a></h3>
@@ -5505,7 +5601,7 @@ You can recognize our maintenance team for their uniform.
 						</div>
 						
 						
-                        <div class="vc_row wpb_row vc_row-fluid top-margin horizontal-block">
+                        <div class="vc_row wpb_row vc_row-fluid top-margin horizontal-block" id="water">
                             <div class="vc_col-sm-6 wpb_column vc_column_container ">
                                 <div class="wpb_wrapper">
                                     <div class="wpb_single_image wpb_content_element vc_align_center">
@@ -5834,7 +5930,7 @@ You can recognize our maintenance team for their uniform.
 							</div> 
 						</div>
                         <!-- Row Backgrounds -->
-                        <div class="vc_row wpb_row vc_row-fluid top-margin horizontal-block">
+                        <div class="vc_row wpb_row vc_row-fluid top-margin horizontal-block" id="golf">
 <!---------------- Bedroom 3 ------------------->                        
                             <div class="vc_col-sm-6 wpb_column vc_column_container ">
                                 <div class="wpb_wrapper">
@@ -6028,7 +6124,7 @@ You can recognize our maintenance team for their uniform.
 							</div> 
 						</div>
 						
-                        <div class="vc_row wpb_row vc_row-fluid top-margin horizontal-block">
+                        <div class="vc_row wpb_row vc_row-fluid top-margin horizontal-block" id="parks">
                             <div class="vc_col-sm-6 wpb_column vc_column_container ">
                                 <div class="wpb_wrapper">
                                     <div class="wpb_single_image wpb_content_element vc_align_center">
@@ -6460,7 +6556,7 @@ You can recognize our maintenance team for their uniform.
 							</div> 
 						</div>
 						
-                        <div class="vc_row wpb_row vc_row-fluid top-margin horizontal-block">
+                        <div class="vc_row wpb_row vc_row-fluid top-margin horizontal-block" id="dining">
                             <div class="vc_col-sm-6 wpb_column vc_column_container ">
                                 <div class="wpb_wrapper">
                                     <div class="wpb_single_image wpb_content_element vc_align_center">
@@ -6513,7 +6609,7 @@ You can recognize our maintenance team for their uniform.
 							</div> 
 						</div>
                         <!-- Row Backgrounds -->
-                        <div class="vc_row wpb_row vc_row-fluid top-margin horizontal-block">
+                        <div class="vc_row wpb_row vc_row-fluid top-margin horizontal-block" id="shopping">
                             <div class="vc_col-sm-6 wpb_column vc_column_container ">
                                 <div class="wpb_wrapper">
                                     <div class="vc_custom_heading">
@@ -6565,26 +6661,59 @@ You can recognize our maintenance team for their uniform.
                                         <div class="wpb_accordion wpb_content_element  not-column-inherit" data-collapsible="" data-vc-disable-keydown="false" data-active-tab="1">
                                              <div class="wpb_wrapper wpb_accordion_wrapper ui-accordion">
                                                  <div class="wpb_accordion_section group">
-                                                     <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post"><strong>Some ideas of the things you can buy as souvenir</strong></a></h3>
+                                                     <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post"><strong>SOME IDEAS OF THE THINGS YOU CAN BUY AS SOUVENIR</strong></a></h3>
                                                      <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
                                                          <div class="wpb_text_column wpb_content_element ">
                                                              <div class="wpb_wrapper">
-                                                                 <ul>
-					                                            	<li>Tequila, the national Mexican drink is distilled from the agave plant. Beware: all tequilas are not created equal! Always Look for the 100% Agave" label.</li>
-					                                            	<li>Xtabentun (pronounced shta-ben-TUNE) makes a beautiful gift. The subtle, honey-based, anise-flavored liqueur made locally in the Yucatan, comes packaged in elegant glass bottles.</li>
-					                                            	<li>Silverwork is inexpensive and abundant in Playa. Look for the silver content indicated by the stamp,.925, which means that the metal is 92.5% pure.</li>
-					                                            	<li>Huipiles (cool, cotton dresses with colorful designs embroidered around the neck and hem).</li>
-					                                            	<li>Guayaberas (short or long-sleeved shirts in white or pastels, usually made of cotton and linen).</li>
-					                                            	<li>Hammocks made of natural or synthetic fiber.</li>
-					                                            	<li>Braided Palm Baskets</li>
-					                                            	<li>Sarapes (multi-colored woven shawls)</li>
-					                                            	<li>Sombreros (very wide-brimmed traditional hats)</li>
-					                                            	<li>Nacimientos (terra-cotta nativity figurines)</li>
-					                                            	<li>Painted Pottery</li>
-					                                            	<li>Hand-Painted Ceramic Tiles</li>
-					                                            	<li>Leather (stamped and plain)</li>
-					                                            	<li>Perfumes in one of the Tax Free shops</li>
-					                                            </ul>
+                                                             	<div class="stm_item-features">
+	                                                                	<div class="stm_item-features_inner">
+					                                                		<ul class="item-features_list_extended">
+					                                                			<li class="item-feature">
+					                                                				Tequila, the national Mexican drink is distilled from the agave plant. Beware: all tequilas are not created equal! Always Look for the 100% Agave" label.
+					                                                			</li>
+					                                                			<li class="item-feature">
+					                                                				Xtabentun (pronounced shta-ben-TUNE) makes a beautiful gift. The subtle, honey-based, anise-flavored liqueur made locally in the Yucatan, comes packaged in elegant glass bottles.
+					                                                			</li>
+					                                                			<li class="item-feature">
+					                                                				Silverwork is inexpensive and abundant in Playa. Look for the silver content indicated by the stamp,.925, which means that the metal is 92.5% pure.
+					                                                			</li>
+					                                                			<li class="item-feature">
+					                                                				Huipiles (cool, cotton dresses with colorful designs embroidered around the neck and hem).
+					                                                			</li>
+					                                                			<li class="item-feature">
+					                                                				Guayaberas (short or long-sleeved shirts in white or pastels, usually made of cotton and linen).
+					                                                			</li>
+					                                                			<li class="item-feature">
+					                                                				Hammocks made of natural or synthetic fiber.
+					                                                			</li>
+					                                                			<li class="item-feature">
+					                                                				Braided Palm Baskets
+					                                                			</li>
+					                                                			<li class="item-feature">
+					                                                				Sarapes (multi-colored woven shawls)
+					                                                			</li>
+					                                                			<li class="item-feature">
+					                                                				Sombreros (very wide-brimmed traditional hats)
+					                                                			</li>
+					                                                			<li class="item-feature">
+					                                                				Nacimientos (terra-cotta nativity figurines)
+					                                                			</li>
+					                                                			<li class="item-feature">
+					                                                				Painted Pottery
+					                                                			</li>
+					                                                			<li class="item-feature">
+					                                                				Hand-Painted Ceramic Tiles
+					                                                			</li>
+					                                                			<li class="item-feature">
+					                                                				Leather (stamped and plain)
+					                                                			</li>
+					                                                			<li class="item-feature">
+					                                                				Perfumes in one of the Tax Free shops
+					                                                			</li>
+					                                                		</ul>
+					                                                	</div>
+				                                                	</div>
+                                                             
                                                              </div>
                                                          </div>
                                                      </div>
@@ -7150,7 +7279,7 @@ You can recognize our maintenance team for their uniform.
 													we can help you customize your private event and make lifetime memories for everyone.
 	                                            </p>
 	                                            
-	                                            <h6>VILLA AQUA EPIC EXPERIENCES*</h6>
+	                                            <h6 style="color: #22BCB8;">VILLA AQUA EPIC EXPERIENCES*</h6>
 	                                            <p class="paragraph ng-attr-widget">
 													From simple kid's birthday celebrations with the classical "Piñata" to
 													 exotic Mayan Rituals, we can organize many <strong>epic experiences that will 
@@ -7352,7 +7481,7 @@ You can recognize our maintenance team for their uniform.
                             <div class="rental-service_item">
                                 <div class="rs-item_inner">
                                     <div class="rs-item_actions">
-                                        <a class="rs-item_action_link" href="events-weddings.html"><i class="fa fa-eye"></i></a>
+                                        <a class="rs-item_action_link" href="/events-weddings/"><i class="fa fa-eye"></i></a>
                                     </div>
                                     <div class="rs-item_content"><img width="570" height="446" src="/images/events/Villa_Aqua_events_weddings.jpg" class="attachment-full wp-post-image" alt="Exellent-view" />
                                     </div>
@@ -7366,7 +7495,7 @@ You can recognize our maintenance team for their uniform.
                             <div class="rental-service_item">
                                 <div class="rs-item_inner">
                                     <div class="rs-item_actions">
-                                        <a class="rs-item_action_link" href="events-corporate-retreats.html"><i class="fa fa-eye"></i></a>
+                                        <a class="rs-item_action_link" href="/events-corporate-retreats/"><i class="fa fa-eye"></i></a>
                                     </div>
                                     <div class="rs-item_content"><img width="570" height="446" src="/images/events/Villa_Aqua_events_corporate_retreats.jpg" class="attachment-full wp-post-image" alt="Berth" />
                                     </div>
@@ -7380,7 +7509,7 @@ You can recognize our maintenance team for their uniform.
                             <div class="rental-service_item">
                                 <div class="rs-item_inner">
                                     <div class="rs-item_actions">
-                                        <a class="rs-item_action_link" href="events-family-friends-reunion.html"><i class="fa fa-eye"></i></a>
+                                        <a class="rs-item_action_link" href="/events-family-friends-reunion/"><i class="fa fa-eye"></i></a>
                                     </div>
                                     <div class="rs-item_content"><img width="570" height="446" src="/images/events/Villa_Aqua_events_family_reunion.jpg" class="attachment-full wp-post-image" alt="Big-Yacht" />
                                     </div>
@@ -7394,7 +7523,7 @@ You can recognize our maintenance team for their uniform.
                             <div class="rental-service_item">
                                 <div class="rs-item_inner">
                                     <div class="rs-item_actions">
-                                        <a class="rs-item_action_link" href="events-private-events.html"><i class="fa fa-eye"></i></a>
+                                        <a class="rs-item_action_link" href="/events-private-events/"><i class="fa fa-eye"></i></a>
                                     </div>
                                     <div class="rs-item_content"><img width="570" height="446" src="/images/events/Villa_Aqua_private_events.jpg" class="attachment-full wp-post-image" alt="Villas-near-the-beach" />
                                     </div>
@@ -7408,7 +7537,7 @@ You can recognize our maintenance team for their uniform.
                             <div class="rental-service_item">
                                 <div class="rs-item_inner">
                                     <div class="rs-item_actions">
-                                        <a class="rs-item_action_link" href="events-photo-shoots.html"><i class="fa fa-eye"></i></a>
+                                        <a class="rs-item_action_link" href="/events-photo-shoots/"><i class="fa fa-eye"></i></a>
                                     </div>
                                     <div class="rs-item_content"><img width="570" height="446" src="/images/events/Villa_Aqua_photo_shooting.jpg" class="attachment-full wp-post-image" alt="Over-the-Sea" />
                                     </div>
@@ -8592,9 +8721,7 @@ You can recognize our maintenance team for their uniform.
                                 <li class="phone">Phone USA: 1 (956) 465 44 59</li>
                                 <li class="phone">Phone MX: +52 1 (984) 807 94 75</li>
                                 <li class="phone">Phone MX: +52 1 (984) 803 27 19</li>
-                                <li class="email">E-Mail: <a href="mailto:villahost@villaaqua.com">villahost@villaaqua.com</a></li>
                                 <li class="email">E-Mail: <a href="mailto:rentals@villaaqua.com">rentals@villaaqua.com</a></li>
-                                <li class="address">Address: Retorno Uxmal Numero 24, Manzana 15, Playacar Fase II, 77717 Playa del Carmen, Quintana Roo</li>
                             </ul>
                         </aside>
                         
@@ -8603,6 +8730,8 @@ You can recognize our maintenance team for their uniform.
                             <p class="follow_fb "><span class="follow-icon_holder "><a href="https://www.facebook.com/villaaquamexico/" target="_blank"><i class="fa fa-facebook "></i></a></span><span class="follow_label ">Like us on Facebook</span>
                             </p>
                             <p class="follow_tw "><span class="follow-icon_holder "><a href="https://twitter.com/villaaqua" target="_blank"><i class="fa fa-twitter "></i></a></span><span class="follow_label ">Follow us on Twitter</span>
+                            </p>
+                            <p class="follow_ins "><span class="follow-icon_holder "><a href="https://instagram.com/villaaquapdc/" target="_blank"><i class="fa fa-instagram "></i></a></span><span class="follow_label ">Follow us on Instagram</span>
                             </p>
                         </aside>
                         
@@ -8622,6 +8751,7 @@ You can recognize our maintenance team for their uniform.
                         </aside>
                         
                         <aside id="stm_tweets-3 " class="widget widget_stm_tweets col-xs-12 col-sm-6 col-md-3 col-lg-3 ">
+                        	<h4 class="widget-title ">The weather today</h4>
                             <div style="margin-top:20px">
 								<div id="ww_2">
 								    <ul id="weather02_body_3531673" style="position: relative; width: 177px; height: 73px; margin: 0px auto 10px; list-style: none;">
@@ -8633,7 +8763,7 @@ You can recognize our maintenance team for their uniform.
 								    	</li>
 								        <li id="weather02_t_3531673" class="weather02_t">+27°C</li>
 								        <li id="weather02_city_3531673" class="weather02_city">Playacar, Mex.</li>
-								        <li id="weather02_date_3531673" class="weather02_date">2015-11-05</li>
+								        <li id="weather02_date_3531673" class="weather02_date">2015-11-09</li>
 								    </ul>
 								</div>
 								<script type="text/javascript" src="http://www.weatherandtime.net/w_4.js?city=3531673&amp;lang=en&amp;cf=C&amp;icon=5"></script>
@@ -8646,7 +8776,7 @@ You can recognize our maintenance team for their uniform.
                 <div class="site-info ">
                     <p class="copyright ">Copyright © 2015 <a target="_blank " href="http://www.villaaquacom/ ">Villa Aqua</a>
                     </p>
-                    <a href="index.html#site-start " class="move-top "><span class="move-top_text ">Back to top of page<i class="fa fa-angle-up "></i></span></a>
+                    <a href="#site-start " class="move-top"><span class="move-top_text">Back to top of page<i class="fa fa-angle-up "></i></span></a>
                 </div>
             </div>
         </footer>

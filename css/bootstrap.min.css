@@ -5289,7 +5289,8 @@ select[multiple].input-group-sm>.input-group-btn>.btn {
 }
 
 .navbar-default .navbar-nav>li>a {
-    color: #777
+    color: #525252;
+    font-size: 12px;
 }
 
 .navbar-default .navbar-nav>li>a:hover,

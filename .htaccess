@@ -27,7 +27,7 @@ RewriteRule ^pool-and-outdoor/$ 	/pool-and-outdoor.php
 RewriteRule ^what-to-do/$ 			/what-to-do.php
 RewriteRule ^staff-and-services/$ 	/staff-and-services.php
 RewriteRule ^included/$ 			/included.php
-RewriteRule ^at-an-extra-cost/$ 	/at-an-extra-cost.php
+RewriteRule ^at-extra-cost/$ 	/at-an-extra-cost.php
 RewriteRule ^riviera-maya/$ 	/riviera-maya.php
 RewriteRule ^out-and-about/$ 	/out-and-about.php
 RewriteRule ^events-corporate-retreats/$ 	/events-corporate-retreats.php
