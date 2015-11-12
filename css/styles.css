@@ -393,8 +393,8 @@ div.wpcf7 .placeheld {
 
         /*este era el carousel de services */
         .vc_custom_1427803088111 {
-            padding-top: 46px !important;
-            padding-bottom: 46px !important;
+           /* padding-top: 46px !important;*/
+            padding-bottom: 30px !important;
             background-color: #FFF !important;
         }
 

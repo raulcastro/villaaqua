@@ -24,9 +24,9 @@
     try {
         var map_map_563bc65e35a5c = null;
         var coordinate_map_563bc65e35a5c;
-        coordinate_map_563bc65e35a5c = new google.maps.LatLng(18.591212, 73.741261);
+        coordinate_map_563bc65e35a5c = new google.maps.LatLng(20.618230, -87.083811);
         var mapOptions = {
-            zoom: 12,
+            zoom: 16,
             center: coordinate_map_563bc65e35a5c,
             scaleControl: true,
             streetViewControl: false,
@@ -42,7 +42,7 @@
         };
         var map_map_563bc65e35a5c = new google.maps.Map(document.getElementById('map_563bc65e35a5c'), mapOptions);
         var marker_map_563bc65e35a5c = new google.maps.Marker({
-            position: new google.maps.LatLng(18.591212, 73.741261),
+            position: new google.maps.LatLng(20.618230, -87.083811),
             animation: google.maps.Animation.DROP,
             map: map_map_563bc65e35a5c,
             icon: ''

@@ -1,5 +1,15 @@
-<?php 
+<div class="rental-service_item">
+                                            		<div class="rs-item_inner">
+                                            			<div class="rs-item_actions">
+                                            				<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/the-rooms/Villa_Aqua_master_bedroom_1.jpg"><i class="fa fa-search-plus"></i></a>
+                                            			</div>
+                                            			<div class="rs-item_content">
+                                            				<img width="1140" height="676" src="/images/overview/the-rooms/Villa_Aqua_master_bedroom_1.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
+                                            			</div>
+                                            		</div>
+                                            	</div>
 
+<?php 
 public function getHead()
 {
 	ob_start();
@@ -36,3 +46,5 @@ public function getHeader()
 }
 
 ?>
+
+

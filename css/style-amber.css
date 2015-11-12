@@ -411,10 +411,10 @@ body.outer-title_hide .site-header {
 
 .main-navbar .navbar-nav > li > a {
     color: #9b9b9b;
-    font-size: 11px;
+    font-size: 12px;
     font-style: normal;
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-right: 18px;
+    padding-left: 18px;
     text-transform: uppercase;
 }
 
@@ -430,7 +430,7 @@ body.outer-title_hide .site-header {
 .main-navbar .navbar-nav > .open > a,
 .main-navbar .navbar-nav > .open > a:focus,
 .main-navbar .navbar-nav > .open > a:hover {
-    color: #9d8f62;
+    color: #525252;
     background: transparent;
 }
 
@@ -501,18 +501,18 @@ body.outer-title_hide .site-header {
 
 .main-navbar .user-menu a {
     display: block;
-    padding: 14px 15px 15px 15px;
+    padding: 6px;
     font-style: normal;
-    font-size: 12px;
-    color: #9d8f62;
+    font-size: 10px;
+    color: #22BCB8;
     text-transform: uppercase;
-    border: 2px solid #9d8f62;
+    border: 1px solid #22BCB8;
     text-align: center;
 }
 
 .main-navbar .user-menu a:hover {
     text-decoration: none;
-    background: #9d8f62;
+    background: #22BCB8;
     color: #ffffff;
 }
 
@@ -2054,9 +2054,8 @@ body .stats-top .stats-number {
 .wpcf7-form .wpcf7-textarea,
 .wpcf7-form .wpcf7-text {
     width: 100%;
-    border: 1px solid #dfdfdf;
-    color: #7b7b7b;
-    font-family: "Lora";
+    border: 1px solid #22BCB8;
+    color: #636262;
     font-size: 13px;
     font-style: italic;
     padding: 10px;
@@ -2086,7 +2085,7 @@ span.wpcf7-not-valid-tip {
 .wpcf7-form .wpcf7-text:focus {
     box-shadow: none;
     outline: 0 none;
-    border-color: #9d8f62;
+    border-color: #525252;
 }
 
 .wpcf7-submit_wrap {
@@ -2097,8 +2096,8 @@ span.wpcf7-not-valid-tip {
     min-width: 170px;
     font-size: 12px;
     display: inline-block;
-    border: 2px solid #9d8f62;
-    color: #9d8f62;
+    border: 2px solid #22BCB8;
+    color: #22BCB8;
     background: transparent;
     text-transform: uppercase;
     width: auto;
@@ -2122,8 +2121,8 @@ div.wpcf7 img.ajax-loader {
 
 .wpcf7-form .wpcf7-submit:focus,
 .wpcf7-form .wpcf7-submit:hover {
-    background: #9d8f62;
-    color: #ffffff;
+    background: #fff;
+    color: #22BCB8;
 }
 
 div.wpcf7-validation-errors {
@@ -4645,7 +4644,7 @@ body .vc_btn3.vc_btn3-color-chino.vc_btn3-style-flat:hover {
 
 .footer_widget-area .contact-details_list li a:hover {
     text-decoration: none;
-    color: #333;
+    color: #22BCB8;
 }
 
 .widget_follow_us p {
@@ -4740,7 +4739,7 @@ body .vc_btn3.vc_btn3-color-chino.vc_btn3-style-flat:hover {
 
 .footer_widget-area .widget_recent_entries a:focus,
 .footer_widget-area .widget_recent_entries a:hover {
-    color: #333;
+    color: #22BCB8;
     text-decoration: none;
 }
 
@@ -5094,7 +5093,7 @@ body .vc_btn3.vc_btn3-color-chino.vc_btn3-style-flat:hover {
     .main-navbar li.current-menu-item > a:focus,
     .main-navbar .navbar-nav > li > a:focus {
         outline: 0 none;
-        border-color: #353535;
+        border-color: #22BCB8;
     }
 
     .main-navbar .navbar-nav li.current-menu-parent > a,
@@ -5103,12 +5102,12 @@ body .vc_btn3.vc_btn3-color-chino.vc_btn3-style-flat:hover {
     .main-navbar .navbar-nav li.current-menu-parent > a:focus,
     .main-navbar li.current-menu-item > a:focus,
     .main-navbar .navbar-nav > li > a:focus {
-        color: #9d8f62;
+        color: #22BCB8;
     }
 
     .main-navbar.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus,
     .main-navbar.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover {
-        color: #9d8f62;
+        color: #22BCB8;
     }
 
     .main-navbar .navbar-nav > li {
@@ -5396,10 +5395,6 @@ body .vc_btn3.vc_btn3-color-chino.vc_btn3-style-flat:hover {
 	margin-top: 50px;
 }
 
-.custom-table {
-	border: 1px solid red;
-}
-
 .custom-table thead > tr > th {
 	color: red;
 }
@@ -5489,4 +5484,21 @@ body .ult-carousel-wrapper.bullets-white .slick-dots li.slick-active i {
 	text-transform: uppercase;
 	text-align: center;
 	color: #22BCB8;
+}
+
+.custom-table {
+	/*border: 1px solid red;*/
+}
+
+.custom-table th {
+	/*border: 1px solid green!important;*/
+	width: 8.333%!important;
+	font-size: 14px!important;
+	padding: 4px 1px!important;
+	text-align: center;
+}
+
+.custom-table td {
+	/*border: 1px solid green!important;*/
+	width: 8.333%!important;
 }
