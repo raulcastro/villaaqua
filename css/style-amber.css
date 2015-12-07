@@ -2739,8 +2739,8 @@ table,
 .table thead > tr > th,
 table thead > tr > th {
     border-bottom: 0 none;
-    color: #9d8f62;
-    font-size: 18px;
+    color: #22BCB8;
+    font-size: 12px;
     font-weight: normal;
 }
 
@@ -2759,17 +2759,16 @@ table tbody > tr > th,
 
 table tbody > tr > th,
 .table > tbody > tr > th {
-    color: #2b2b2b;
-    font-size: 14px;
+    color: #525252;
+    font-size: 12px!important;
     font-weight: normal;
 }
 
 table tbody > tr > td,
 .table > tbody > tr > td {
     color: #7b7b7b;
-    font-size: 14px;
+    font-size: 12px;
     font-style: italic;
-    font-family: "Lora";
 }
 
 /* Table - Striped */
@@ -5502,3 +5501,9 @@ body .ult-carousel-wrapper.bullets-white .slick-dots li.slick-active i {
 	/*border: 1px solid green!important;*/
 	width: 8.333%!important;
 }
+
+
+
+
+
+

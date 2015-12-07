@@ -1,0 +1,143 @@
+
+
+.ui-widget-header {
+	background:none;
+	color: #636262;
+	font-weight: bold;
+	border:none;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #aaaaaa;
+}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+background: none;
+
+}
+
+.ui-widget-header a {
+    color: #525252!important;
+}
+
+.ulin{
+	float:left;
+	width:40%;
+	margin-right:30px;
+}
+.ulin ul{
+margin-left: 0px;
+padding-left: 20px;
+}
+.ulin  h3{
+margin-left: 0px;
+padding-left: 20px;
+color:#22BCB8;
+}
+h3{
+color:#22BCB8;
+}
+#bodytexto p{
+	margin-left:80px;
+	margin-right:80px;
+	
+	}
+	.ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+float: left;
+padding: 5px 5px;
+text-decoration: none;
+}
+	
+.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited {
+color: #212121;
+text-decoration: none;
+background-image:url(images/backtap.jpg);
+color: #000;
+}
+.ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+float: left;
+padding: 5px 5px;
+text-decoration: none;
+font-size: 95%;
+}
+#logo {
+float: left;
+width: 500px;
+position: absolute;
+left: 20px;
+}
+#apis {
+float: left;
+margin-right: 10px;
+border-right-width: 1px;
+border-right-style: solid;
+border-right-color: #CCC;
+text-align: right;
+height: 110px;
+}
+#apis img {
+margin: 5px;
+}
+#phones {
+float: left;
+margin-right: 10px;
+}
+#social {
+float: left;
+}
+
+    #titu{
+	background-color:#FFF;
+	opacity:0.7;
+	position:fixed;
+	bottom:0px;
+	width:100%;
+	margin-top:-47px;
+	padding-top:5px;
+	padding-bottom:5px;
+	
+}
+
+
+.intro h1{
+	
+	font-family: 'Raleway', sans-serif;
+	font-size:32px;
+}
+.intro h1 span{
+	
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:18px;
+}
+
+#inquiri{
+	float: right;
+	margin-right:80px;
+	text-align: center;
+	margin-top:10px;
+}
+.tituaqua{
+	color:#22BCB8;
+	font-size:18px;
+	margin-bottom:10px;
+	}
+.aqualink{
+	color:#22BCB8;
+	font-size:16px;
+	line-height:22px;
+	margin-bottom:10px;
+	}
+#h3masterbedroom,#h3living,#h3plans,#h3tv,#h3pool{
+	display:none;
+}
+#h3uno,#h3dos,#h3tres,#h3cuatro,#h3cinco,#h3seis,#h3siete,#h3ocho{
+	display:none;
+}
+.ui-tabs .ui-tabs-nav {
+margin: 0;
+padding: .2em .2em 0;
+margin-top: -35px;
+}
+#menuhome{
+	background-image:url(/images/home.png);
+	background-position:center;
+	background-repeat:no-repeat;
+}

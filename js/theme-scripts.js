@@ -1,6 +1,20 @@
 (function ($) {
     "use strict";
     
+    if ($("#arrival").length) {
+    	jQuery("#arrival").datepicker({ 
+		    minDate:'2', 
+		    maxDate: '+11M',	
+		});
+		
+		jQuery("#departure").datepicker({ 
+		    minDate:'2', 
+		    maxDate: '+11M',
+		  })
+    }
+    
+    	
+    
     // This is for the main slider
     jQuery("#layerslider_1").layerSlider({
         responsiveUnder: 1920,
@@ -218,6 +232,42 @@
                 },
                 768: {
                     items: 3
+                },
+                667: {
+                    items: 1
+                },
+                640: {
+                    items: 1
+                },
+                480: {
+                    items: 1
+                },
+                375: {
+                    items: 1
+                },
+                320: {
+                    items: 1
+                }
+            }
+        });
+    }
+    
+    // on the index - included -  not included - events
+    // Project carousel
+    if ($(".js-carousel-testimonials").length) {
+        $(".js-carousel-testimonials").owlCarousel({
+            margin: 30,
+            pagination: false,
+            //nav: true,
+            //navText: ['<i class="icon icomoon-arrowleft"></i>', '<i class="icon icomoon-arrowright"></i>'],
+            nav: false,
+            smartSpeed: 750,
+            responsive: {
+                1024: {
+                    items: 7
+                },
+                768: {
+                    items: 7
                 },
                 667: {
                     items: 1

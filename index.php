@@ -9,23 +9,18 @@
 
     switch ($lang)
     {
-        case 'es':
-            require_once ($root . '/views/Layout_Es.php');
-            $data['title'] 			= '';
-            $data['description'] 	= '';
-			$data['keywords'] 		= '';
-        break;
-
         case '':
             require_once ($root . '/views/Layout_En.php');
             $data['title'] 			= 'Home';
             $data['description'] 	= 'Des';
 			$data['keywords'] 		= 'Key';
         break;
-
-        case 'fr':
-            require_once ($root . '/views/Layout_Fr.php');
-            $title = 'FR';
+        
+        case 'es':
+        	require_once ($root . '/views/Layout_Es.php');
+        	$data['title'] 			= '';
+        	$data['description'] 	= '';
+        	$data['keywords'] 		= '';
         break;
     }
 

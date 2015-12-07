@@ -6,6 +6,11 @@
 	$lang = $_GET['lang'];
     $title = '';
     $data  = '';
+    
+    $testimonialsDir = 'images/guest/';
+    $testimonials = glob($testimonialsDir.'*.jpg');
+//     var_dump($testimonials);
+	$data['testimonials'] = $testimonials;
 
     switch ($lang)
     {

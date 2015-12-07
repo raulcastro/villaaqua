@@ -40,6 +40,7 @@ RewriteRule ^contact-us/$ 	/contact-us.php
 RewriteRule ^faq/$ 	/faq.php
 RewriteRule ^testimonials/$ 	/testimonials.php
 RewriteRule ^villa-rules-and-policies/$ 	/villa-rules-and-policies.php
+RewriteRule ^packages/$ 	/packages.php
 
 
 RewriteRule ^reservation-rental-rates-and-process/$ 	/reservation-rental-rates-and-process.php

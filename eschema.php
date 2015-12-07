@@ -8,6 +8,8 @@
                                             			</div>
                                             		</div>
                                             	</div>
+<a href="http://villaaqua.dev/images/staff-and-services/Menu_epic-experiences.pdf" target="_blank"></a>
+<a href="/contact-us/" target="_blank"></a>
 
 <?php 
 public function getHead()
