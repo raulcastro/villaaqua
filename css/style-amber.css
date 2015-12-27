@@ -5502,7 +5502,9 @@ body .ult-carousel-wrapper.bullets-white .slick-dots li.slick-active i {
 	width: 8.333%!important;
 }
 
-
+.gal {
+	margin: 10px auto;
+}
 
 
 

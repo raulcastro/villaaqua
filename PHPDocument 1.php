@@ -70,6 +70,5 @@ RewriteRule ^es/faq/$								/faq.php?lang=es
 RewriteRule ^es/info-del-destino/$ 					/arriving-to-the-villa-playacar-playa-del-carmen.php?lang=es
 RewriteRule ^es/cultura/$ 							/out-and-about-dining-culture-shopping.php?lang=es
 RewriteRule ^es/proceso-de-reserva/$ 				/reservation-rental-rates-and-process.php?lang=es
-RewriteRule ^es/reglas-y-politicas-de-la-villa/$ 			/villa-rules-and-policies.php?lang=es
 
 

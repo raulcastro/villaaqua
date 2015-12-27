@@ -116,7 +116,7 @@ class Layout_View
 				break;
 				
 				case 'private':
-					echo self ::getPrivateHead();
+					echo self :: getPrivateHead();
 				break;
 				
 				case 'weddings':
@@ -145,10 +145,6 @@ class Layout_View
 				
 				case 'packages':
 					echo self :: getPackagesHead();
-				break;
-				
-				case 'gallery':
-					echo self :: getGalleryHead();
 				break;
 				
 				default:
@@ -200,73 +196,68 @@ class Layout_View
 				break;
 				
 				case 'arriving':
-					echo self::getArrivingContent();
+					echo self :: getArrivingContent();
 				break;
 				
 				case 'riviera':
-					echo self::getRivieraContent();
+					echo self :: getRivieraContent();
 				break;
 				
 				case 'out':
-					echo self::getOutContent();
+					echo self :: getOutContent();
 				break;
 				
 				case 'culture':
-					echo self::getCultureContent();
+					echo self :: getCultureContent();
 				break;
 				
 				case 'contact':
-					echo self::getContactContent();
+					echo self :: getContactContent();
 				break;
 				
 				case 'corporate':
-					echo self::getCorporateContent();
+					echo self :: getCorporateContent();
 				break;
 				
 				case 'family':
-					echo self::getFamilyContent();
+					echo self :: getFamilyContent();
 				break;
 				
 				case 'photo':
-					echo self::getPhotoContent();
+					echo self :: getPhotoContent();
 				break;
 				
 				case 'private':
-					echo self::getPrivateContent();
+					echo self :: getPrivateContent();
 				break;
 				
 				case 'weddings':
-					echo self::getWeddingsContent();
+					echo self :: getWeddingsContent();
 				break;
 				
 				case 'events':
-					echo self::getEventsContent();
+					echo self :: getEventsContent();
 				break;
 				
 				case 'faq':
-					echo self::getFaqContent();
+					echo self :: getFaqContent();
 				break;
 				
 				case 'testimonials':
-					echo self::getTestimonialsContent();
+					echo self :: getTestimonialsContent();
 				break;
 				
 				case 'rental':
-					echo self::getRentalContent();
+					echo self :: getRentalContent();
 				break;
 				
 				case 'rules':
-					echo self::getRulesContent();
+					echo self :: getRulesContent();
 				break;
 				
 				case 'packages':
-					echo self::getPackagesContent();
+					echo self :: getPackagesContent();
 				break;
-				
-				case 'gallery':
-					echo self :: getGalleryContent();
-				break;
-				
 			}
 
 			echo self :: getFooter();
@@ -363,7 +354,7 @@ class Layout_View
     	ob_start();
     	?>
     	<div class="buy_theme_popup ">
-	        <a target="_blank " href="/contact-us/" class="buy_button ">Book Now</a>
+	        <a target="_blank " href="/contact-us/" class="buy_button ">RESERVAR AHORA</a>
 	    </div>
 	    <script type="text/javascript ">
         jQuery(document).ready(function ($) {
@@ -423,15 +414,15 @@ class Layout_View
 		ob_start();
 		?>
 		<script>
-          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-          ga('create', 'UA-66495909-1', 'auto');
-          ga('send', 'pageview');
+  ga('create', 'UA-71602794-1', 'auto');
+  ga('send', 'pageview');
 
-        </script>
+</script>
 		<?php
 		$google = ob_get_contents();
 		ob_end_clean();
@@ -454,8 +445,8 @@ class Layout_View
 			<div class="top-navbar navbar navbar-default">
 			    <div class="container">
 					<ul class="nav navbar-nav navbar-right">
-						<li><a href="#">English</a></li>
-		                <li><a href="/es/">Espa&ntilde;ol</a></li>
+							<li><a href="/">Ingl&eacute;s</a></li>
+			                <li><a href="/es/">Spanish</a></li>
 					</ul>
 				</div><!-- end .container -->
 			</div>
@@ -475,40 +466,40 @@ class Layout_View
                     <div class="collapse navbar-collapse navbar-responsive-collapse">
                     	<div class="user-navbar">
                             <ul class="user-menu">
-                                <li class="user-menu-item"><a class="login-button" href="/">English</a>
+                                <li class="user-menu-item"><a class="login-button" href="#">Ingl&eacute;s</a>
                                 </li>
-                                <li class="user-menu-item"><a class="singup-button" href="/es/">Espa&ntilde;ol</a>
+                                <li class="user-menu-item"><a class="singup-button" href="/es/">Spanish</a>
                                 </li>
                             </ul>
                         </div>
                         <ul id="menu-main_menu" class="nav navbar-nav  navbar-right">
                             <li id="menu-item-134" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-4 current_page_item">
-                                <a href="/">Home</a>
+                                <a href="/es/">Home</a>
                             </li>
                             
                             <li id="menu-item-843" class="dropdown menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children">
-                                <a href="/overview/" class="dropdown-toggle">Overview</a>
+                                <a href="/es/overview/" class="dropdown-toggle">Overview</a>
                                 <b class="caret"></b>
                                 <ul class="dropdown-menu">
-                                    <li class="menu-item"><a href="/overview/">General Features</a></li>
-                                    <li class="menu-item"><a href="/the-rooms/">The Rooms</a></li>
-                                    <li class="menu-item"><a href="/living-spaces/">Living Spaces</a></li>
-                                    <li class="menu-item"><a href="/pool-and-outdoor/">Pool &amp; Outdoor</a></li>
-                                    <li class="menu-item"><a href="/what-to-do/">What to do in the villa</a></li>
+                                    <li class="menu-item"><a href="/es/overview/">Especificaciones Generales</a></li>
+                                    <li class="menu-item"><a href="/es/las-habitaciones/">Las habitaciones</a></li>
+                                    <li class="menu-item"><a href="/es/areas-comunes/">Áreas Comunes</a></li>
+                                    <li class="menu-item"><a href="/es/piscina-y-exteriores/">Piscina y Exteriores</a></li>
+                                    <li class="menu-item"><a href="/es/que-hacer-en-la-villa/">Qué hacer en la villa? </a></li>
                                 </ul>
                             </li>
                             
                             <li class="dropdown menu-item">
-                                <a href="/staff-and-services/" class="dropdown-toggle">Staff &amp; Services</a>
+                                <a href="/es/servicios-y-staff/" class="dropdown-toggle">Servicios y Staff</a>
                                 <b class="caret"></b>
                                 <ul class="dropdown-menu">
-                                	<li class="menu-item"><a href="/included/">Included</a></li>
-                                    <li class="menu-item"><a href="/at-extra-cost/">At extra cost</a></li>
+                                	<li class="menu-item"><a href="/es/incluidos/">Inclu&iacute;dos</a></li>
+                                    <li class="menu-item"><a href="/es/con-costo-extra/">Con costo extra</a></li>
                                 </ul>
                             </li>
                             
                             <li class="dropdown menu-item menu-item-object-page">
-                                <a href="/arriving-to-the-villa-playacar-playa-del-carmen/">Location Info</a>
+                                <a href="/arriving-to-the-villa-playacar-playa-del-carmen/">Info del destino</a>
                                 <b class="caret"></b>
                                 <ul class="dropdown-menu">
                                 	<li class="menu-item"><a href="/arriving-to-the-villa-playacar-playa-del-carmen/">Arriving to the villa</a></li>
@@ -519,43 +510,43 @@ class Layout_View
                             </li>
                             
                             <li class="dropdown menu-item menu-item-object-page">
-                                <a href="/out-and-about/">Out &amp; About</a>
+                                <a href="/es/out-and-about/">Out &amp; About</a>
                                 <b class="caret"></b>
                                 <ul class="dropdown-menu">
-                                    <li class="menu-item"><a href="/out-and-about/">Beaches</a></li>
-                                    <li class="menu-item"><a href="/out-and-about/#water" class="to-section">In the water</a></li>
-                                    <li class="menu-item"><a href="/out-and-about/#golf" class="to-section">Golf</a></li>
-                                    <li class="menu-item"><a href="/out-and-about/#parks" class="to-section">Parks</a></li>
-                                    <li class="menu-item"><a href="/out-and-about-dining-culture-shopping/">Culture</a></li>
-                                    <li class="menu-item"><a href="/out-and-about-dining-culture-shopping/#dining" class="to-section">Dining</a></li>
-                                    <li class="menu-item"><a href="/out-and-about-dining-culture-shopping/#shopping" class="to-section">Shopping</a></li>
+                                    <li class="menu-item"><a href="/es/out-and-about/">Playas</a></li>
+                                    <li class="menu-item"><a href="/es/out-and-about/" class="to-section">Actividades Acuáticas</a></li>
+                                    <li class="menu-item"><a href="/es/out-and-about/" class="to-section">Golf</a></li>
+                                    <li class="menu-item"><a href="/es/out-and-about/" class="to-section">Parques</a></li>
+                                    <li class="menu-item"><a href="/es/cultura/">Cultura</a></li>
+                                    <li class="menu-item"><a href="es/cultura/#dining" class="to-section">Restaurants</a></li>
+                                    <li class="menu-item"><a href="es/cultura/#shopping" class="to-section">Compras</a></li>
                                 </ul>
                             </li>
                             
                             <li class="dropdown menu-item menu-item-object-page">
-                                <a href="/events/">Events</a>
+                                <a href="/es/eventos/">Eventos</a>
                                 <b class="caret"></b>
                                 <ul class="dropdown-menu">
-                                    <li class="menu-item"><a href="/events-weddings/">Weddings</a></li>
-                                    <li class="menu-item"><a href="/events-corporate-retreats/">Corporate retreats</a></li>
-                                    <li class="menu-item"><a href="/events-family-friends-reunion/">Family &amp; Friends Reunion</a></li>
-                                    <li class="menu-item"><a href="/events-private-events/">Private Events</a></li>
-                                    <li class="menu-item"><a href="/events-photo-shoots/">Photo Shoots</a></li>
+                                    <li class="menu-item"><a href="/es/bodas/">Bodas</a></li>
+                                    <li class="menu-item"><a href="/es/retiros-corporativos/">Retiros corporativos</a></li>
+                                    <li class="menu-item"><a href="/es/reuniones-de-familia-y-amigos/">Reuniones de familia y amigos</a></li>
+                                    <li class="menu-item"><a href="es/eventos-privados/">Eventos privados</a></li>
+                                    <li class="menu-item"><a href="/es/locacion/ ">Locaci&oacute;n</a></li>
                                 </ul>
                             </li>
                             
                             <li class="dropdown menu-item">
-                                <a href="/testimonials/" class="dropdown-toggle">Testimonials</a>
+                                <a href="/testimonials/" class="dropdown-toggle">Testimoniales</a>
                             </li>
                             
                             <li class="dropdown menu-item menu-item-object-page">
-                                <a href="/reservation-rental-rates-and-process/">Reservations</a>
+                                <a href="/es/proceso-de-reserva/">Reservaciones</a>
                                 <b class="caret"></b>
                                 <ul class="dropdown-menu">
-                                    <li class="menu-item"><a href="/reservation-rental-rates-and-process/">Reservation process</a></li>
-                                    <li class="menu-item"><a href="/reservation-rental-rates-and-process/">Rental Rates</a></li>
-                                    <li class="menu-item"><a href="/contact-us/">Contact Us</a></li>
-                                    <li class="menu-item"><a href="/faq/">FAQ</a></li>
+                                    <li class="menu-item"><a href="/es/proceso-de-reserva/">El proceso de reserva</a></li>
+                                    <li class="menu-item"><a href="/es/proceso-de-reserva/">Tarifas</a></li>
+                                    <li class="menu-item"><a href="/contact-us/">Formulario de contacto</a></li>
+                                    <li class="menu-item"><a href="/es/faq/">Preguntas frecuentes</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -563,7 +554,7 @@ class Layout_View
                 </div>
                 <!-- end .container -->
             </div>
-            <!-- end .main-navbar -->
+            <!-- end .main-navbar --> 
         </header>
 		<?php
 		$header = ob_get_contents();
@@ -616,23 +607,23 @@ class Layout_View
 									<div class="ls-slide" data-ls=" transition2d: 5">
 										<img src="/images/sliders/villa-aqua-slider-1.jpg" class="ls-bg" alt="Stay at Villa Aqua" />
 										<h1 class="ls-l" style="top:280px;left:50%;font-size:50px;color:#ffffff;white-space: nowrap;" data-ls="offsetxin:0;offset:100%;durationin:900;delayin:300;easingin:easeInOutSine;offsetxout:0;durationout:200;showuntil:3000;easingout:easeInOutSine;">
-											Stay at Villa Aqua
+											Disfruta de Villa Aqua
 										</h1>
 										<p class="ls-l" style="top:434px;left:50%;font-size:12px;color:#ffffff;white-space: nowrap;" data-ls="offsetxin:0;offset:100%;durationin:900;delayin:400;easingin:easeInOutSine;offsetxout:0;durationout:200;showuntil:3000;easingout:easeInOutSine;">
-										<a href="#" class="btn">Book Now</a>
+										<a href="/es/proceso-de-reserva/" class="btn">Reservar Ahora</a>
 										</p>
 									</div>
 									
 									<div class="ls-slide" data-ls=" transition2d: 5;">
-										<img src="/images/sliders/villa-aqua-slider-2.jpg" class="ls-bg" alt="Villa Aqua" />
+										<img src="/images/sliders/villa-aqua-slider-2.jpg" class="ls-bg" alt="Villa Aqua - Luxury Villa For rent in Playa del Carmen" />
 									</div>
 									
 									<div class="ls-slide" data-ls=" transition2d: 5;">
-										<img src="/images/sliders/villa-aqua-slider-3.jpg" class="ls-bg" alt="Villa Aqua" />
+										<img src="/images/sliders/villa-aqua-slider-3.jpg" class="ls-bg" alt="Villa Aqua - Luxury Villa For rent in Playa del Carmen" />
 									</div>
 									
 									<div class="ls-slide" data-ls=" transition2d: 5;">
-										<img src="/images/sliders/Villa_Aqua_slider4.jpg" class="ls-bg" alt="Villa Aqua" />
+										<img src="/images/sliders/Villa_Aqua_slider4.jpg" class="ls-bg" alt="Villa Aqua - Luxury Villa For rent in Playa del Carmen" />
 									</div>
 								</div>
 							</div>
@@ -681,27 +672,30 @@ class Layout_View
 							<div class="wpb_wrapper">
 								<p style="text-align: center;">
 									<span style="color: #525252;">
-										Is an exclusive 5 bedroom private villa that offers luxurious, spacious and modern 
-										accommodations with exceptional and personalized service.
+										Villa Aqua es una hermosa villa privada de diseño contemporáneo y acogedor. 
+                                        Sus 5 amplias y modernas habitaciones ofrecen confort y lujo en un ambiente 
+                                        cálido con servicio personalizado, simplemente excepcional. 
 									</span>
 									<br /><br />
 									<span style="color: #525252;">
-										Nestled in the heart of Playa del Carmen, inside the tranquil gated community of Playacar, 
-										just steps away from the famous "Quinta Avenida" and within walking distance to the pristine 
-										white sandy beaches of the Riviera Maya.
+										Su ubicación inmejorable en el corazón de Playa del Carmen, en 
+                                        un fraccionamiento seguro,  se encuentra muy cerca de la famosa 
+                                        “Quinta Avenida” y de las hermosas playas de arena blanca y 
+                                        aguas cristalinas, azul turquesa, de la Riviera Maya..
 									</span>
 									<br /><br />
 									<span style="color: #525252;">
-										Rated one of the best luxury vacation rentals in the region, Villa Aqua is the perfect place 
-										to enjoy a wonderful family vacation, friend's reunion, corporate retreat or even an 
-										unforgettable honeymoon!
+										Considerada lo mejor en rentas vacacionales de lujo 
+                                        y el lugar ideal para crear recuerdos inolvidables 
+                                        para vacaciones familiares, reuniones con amigos, 
+                                        viajes corporativos o una Luna de Miel.
 									</span>
 								</p>
 							</div>
 						</div>
 						<div class="ult-spacer spacer-561be2953972e" data-id="561be2953972e" data-height="52" data-height-mobile="52" data-height-tab="52" data-height-tab-portrait="52" data-height-mobile-landscape="52" style="clear:both;display:block;"></div>
 						<div class="vc_btn3-container vc_btn3-center">
-							<a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-square vc_btn3-style-outline vc_btn3-color-chino" href="/overview/" title="" target="_self">READ MORE</a>
+							<a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-square vc_btn3-style-outline vc_btn3-color-chino" href="/es/overview/" title="" target="_self">LEER MAS</a>
 						</div>
 					</div>
 				</div>
@@ -732,7 +726,7 @@ class Layout_View
 						<div class="ult-spacer spacer-561be2953b20c" data-id="561be2953b20c" data-height="5" data-height-mobile="5" data-height-tab="5" data-height-tab-portrait="5" data-height-mobile-landscape="5" style="clear:both;display:block;"></div>
 						<div class="vc_separator wpb_content_element vc_sep_width_100 vc_sep_pos_align_center">
 							<span class="vc_sep_holder vc_sep_holder_l"><span style="border-color:#22BCB8;" class="vc_sep_line"></span></span>
-							<h2 style="color:#22BCB8;font-weight: 300;">Staff &amp; Services</h2>
+							<h2 style="color:#22BCB8;font-weight: 300;">Staff &amp; Servicios</h2>
 							<span class="vc_sep_holder vc_sep_holder_r"><span style="border-color:#22BCB8;" class="vc_sep_line"></span></span>
 						</div>
 						
@@ -755,7 +749,7 @@ class Layout_View
 								</div>
 								
 								<div class="rs-item_inner">
-									<div class="rs-item_content"><img width="570" height="446" src="/images/Villa_Aqua_included.jpg" class="attachment-full wp-post-image" alt="Exellent-view" /></div>
+									<div class="rs-item_content"><img width="570" height="446" src="/images/HOME_Included_esp.jpg" class="attachment-full wp-post-image" alt="Exellent-view" /></div>
 								</div>
 							</div>
 							
@@ -766,7 +760,7 @@ class Layout_View
 											<i class="fa fa-eye"></i>
 										</a>
 									</div>
-									<div class="rs-item_content"><img width="570" height="446" src="/images/Villa_Aqua_not_included.jpg" class="attachment-full wp-post-image" alt="Strong-Wind" /></div>
+									<div class="rs-item_content"><img width="570" height="446" src="/images/HOME_Extracost_esp.jpg" class="attachment-full wp-post-image" alt="Strong-Wind" /></div>
 								</div>
 							</div>
 							
@@ -777,7 +771,7 @@ class Layout_View
 											<i class="fa fa-eye"></i>
 										</a>
 									</div>
-									<div class="rs-item_content"><img width="570" height="446" src="/images/Villa_Aqua_services_events.jpg" class="attachment-full wp-post-image" alt="Berth" /></div>
+									<div class="rs-item_content"><img width="570" height="446" src="/images/HOME_Events_esp.jpg" class="attachment-full wp-post-image" alt="Berth" /></div>
 								</div>
 							</div>
 						</div>
@@ -785,7 +779,10 @@ class Layout_View
 						<div class="wpb_text_column wpb_content_element ">
 							<div class="wpb_wrapper">
 								<p style="text-align: center;">
-									<span style="color: #525252;">Villa Aqua exceptional services, modern amenities and dedicated staff will make a blast of your Luxury Vacation Villa Rental.</span>
+									<span style="color: #525252;">Las excepcionales instalaciones de 
+                                        Villa Aqua y sobre todo, nuestro atento y dedicado personal, 
+                                        harán de sus renta vacacional de lujo una experiencia única e 
+                                        inolvidable.</span>
 								</p>
 							</div>
 						</div>
@@ -795,7 +792,7 @@ class Layout_View
 		</div>
 		<div class="ult-spacer spacer-561be2953972e" data-id="561be2953972e" data-height="52" data-height-mobile="52" data-height-tab="52" data-height-tab-portrait="52" data-height-mobile-landscape="52" style="clear:both;display:block;"></div>
 		<div class="ult-animation ult-animate-viewport ult-no-mobile " data-animate="fadeIn " data-animation-delay="0 " data-animation-duration="1.5 " data-animation-iteration="1 " style="opacity:0; " data-opacity_start_effect="95 ">
-			<div class="vc_btn3-container vc_btn3-center "><a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-square vc_btn3-style-outline vc_btn3-block vc_btn3-color-chino " href="/staff-and-services/" title=" ">VIEW ALL SERVICES</a></div>
+			<div class="vc_btn3-container vc_btn3-center "><a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-square vc_btn3-style-outline vc_btn3-block vc_btn3-color-chino " href="/staff-and-services/" title=" ">VER TODOS LOS SERVICIOS</a></div>
 		</div>
 		<div class="ult-spacer spacer-561be2953972e" data-id="561be2953972e" data-height="52" data-height-mobile="52" data-height-tab="52" data-height-tab-portrait="52" data-height-mobile-landscape="52" style="clear:both;display:block;"></div>
 		<div class="ult-spacer spacer-561be2953b81a" data-id="561be2953b81a" data-height="52" data-height-mobile="52" data-height-tab="52" data-height-tab-portrait="52" data-height-mobile-landscape="52" style="clear:both;display:block;"></div>
@@ -912,7 +909,7 @@ class Layout_View
 						<div class="ult-spacer spacer-561be295502ea " data-id="561be295502ea " data-height="0 " data-height-mobile="0 " data-height-tab="0 " data-height-tab-portrait="0 " data-height-mobile-landscape="0 " style="clear:both;display:block; "></div>
 						<div class="vc_custom_heading vc_custom_1425470118379 ">
 							<h2 style="color: #FFF;text-align: left; font-weight:300;
-									font-style:normal; margin-bottom: 30px;">Events</h2>
+									font-style:normal; margin-bottom: 30px;">Eventos</h2>
 						</div>
 						<div class="ult-spacer spacer-561be29550c48 " data-id="561be29550c48 " data-height="44 " data-height-mobile="44 " data-height-tab="44 " data-height-tab-portrait="44 " data-height-mobile-landscape="44 " style="clear:both;display:block; "></div>
 					</div>
@@ -924,12 +921,14 @@ class Layout_View
 									<div class="info_box ">
 										<div class="info-box_img " style="font-size:36px "><img src="/images/home/events-icons/Icon_wedding.svg " alt="Brilliant creative design " /></div>
 										<h4>
-											<a href="/events-weddings/">Weddings</a>
+											<a href="/events-weddings/">Bodas</a>
 										</h4>
 										<div class="info-box_separator ">
 											<div class="line "></div>
 										</div>
-										<p>Anything you need to make your wedding in paradise an absolutely unforgettable one!</p>
+										<p>Todo lo que necesitas para hacer de tu boda en 
+                                            el paraíso un evento absolutamente inolvidable!
+                                        </p>
 									</div>
 								</div>
 								<div class="ult-spacer spacer-561be29552cde " data-id="561be29552cde " data-height="32 " data-height-mobile="32 " data-height-tab="32 " data-height-tab-portrait="32 " data-height-mobile-landscape="32 " style="clear:both;display:block; "></div>
@@ -941,11 +940,12 @@ class Layout_View
 								<div class="ult-animation ult-animate-viewport ult-no-mobile " data-animate="fadeIn " data-animation-delay="0 " data-animation-duration=".5 " data-animation-iteration="1 " style="opacity:0; ">
 									<div class="info_box ">
 										<div class="info-box_img " style="font-size:36px "><img src="/images/home/events-icons/Icon_corporate.svg " alt="Brilliant creative design " /></div>
-										<h4><a href="/events-corporate-retreats/">Corporate retreats</a></h4>
+										<h4><a href="/events-corporate-retreats/">Retiros Corporativos</a></h4>
 										<div class="info-box_separator ">
 											<div class="line "></div>
 										</div>
-										<p>Whatever you think your team needs, we can help you out!</p>
+										<p>Cualquiera que sea la necesidad de tu equipo nosotros podemos ayudarte a resolverlo.
+</p>
 									</div>
 								</div>
 								<div class="ult-spacer spacer-561be29552cde " data-id="561be29552cde " data-height="32 " data-height-mobile="32 " data-height-tab="32 " data-height-tab-portrait="32 " data-height-mobile-landscape="32 " style="clear:both;display:block; "></div>
@@ -957,11 +957,11 @@ class Layout_View
 								<div class="ult-animation ult-animate-viewport ult-no-mobile " data-animate="fadeIn " data-animation-delay="0 " data-animation-duration=".5 " data-animation-iteration="1 " style="opacity:0; ">
 									<div class="info_box ">
 										<div class="info-box_img " style="font-size:36px "><img src="/images/home/events-icons/Icon_family.svg " alt="Brilliant creative design " /></div>
-										<h4><a href="/events-family-friends-reunion/">Family & Friends Reunion</a></h4>
+										<h4><a href="/events-family-friends-reunion/">Reunión de familia y amigos</a></h4>
 										<div class="info-box_separator ">
 											<div class="line "></div>
 										</div>
-										<p>Join your crowd for the perfect family vacation!</p>
+										<p>¡Reúne a los tuyos para unas vacaciones familiares perfectas!</p>
 									</div>
 								</div>
 								<div class="ult-spacer spacer-561be29552cde " data-id="561be29552cde " data-height="32 " data-height-mobile="32 " data-height-tab="32 " data-height-tab-portrait="32 " data-height-mobile-landscape="32 " style="clear:both;display:block; "></div>
@@ -975,12 +975,14 @@ class Layout_View
 								<div class="ult-animation ult-animate-viewport ult-no-mobile " data-animate="fadeIn " data-animation-delay="0 " data-animation-duration=".5 " data-animation-iteration="1 " style="opacity:0; ">
 									<div class="info_box ">
 										<div class="info-box_img " style="font-size:36px "><img src="/images/home/events-icons/Icon_private.svg" alt="Brilliant creative design " /></div>
-										<h4><a href="/events-family-friends-reunion/">Private Events</a></h4>
+										<h4><a href="/events-family-friends-reunion/">Eventos Privados</a></h4>
 										<div class="info-box_separator ">
 											<div class="line "></div>
 										</div>
-										<p>Celebrate your anniversary, birthday, personal achievement or just to gather special 
-										friends and enjoy an amazing vacation!</p>
+										<p>Celebra un aniversario, cumpleaños, un logro personal o 
+                                            sólo una reunión con amigos especiales, y disfruta de unas 
+                                            vacaciones increíbles.
+                                        </p>
 									</div>
 								</div>
 								<div class="ult-spacer spacer-561be29552cde " data-id="561be29552cde " data-height="32 " data-height-mobile="32 " data-height-tab="32 " data-height-tab-portrait="32 " data-height-mobile-landscape="32 " style="clear:both;display:block; "></div>
@@ -1054,54 +1056,56 @@ class Layout_View
                             <div class="vc_col-sm-6 wpb_column vc_column_container ">
                                 <div class="wpb_wrapper">
                                     <div class="vc_custom_heading">
-						            	<h2>General Features</h2>
+						            	<h2>Especificaciones Generales</h2>
 						            </div>
 						            <div class="ult-spacer spacer-56253aed5c7a5" data-id="56253aed5c7a5" data-height="25" data-height-mobile="25" data-height-tab="25" data-height-tab-portrait="25" data-height-mobile-landscape="25" style="clear:both;display:block;"></div>
                                     <div class="wpb_text_column wpb_content_element ">
                                         <div class="wpb_wrapper">
                                             <p class="paragraph ng-attr-widget">
                                                 <span class="ng-directive ng-binding">
-                                                    Your amazing Villa Aqua Caribbean holiday experience begins at the moment you 
-                                                    arrive to Cancun airport and get greeted by our representative, who will drive 
-                                                    you to the villa in Playa del Carmen, where our attentive staff will welcome you 
-                                                    with a refreshing Margarita.
+                                                    Su experiencia en el Caribe comienza desde el momento en que llega al 
+                                                    aeropuerto y es recibido por nuestro representante para conducirlo a su 
+                                                    transportación incluida, hasta el minuto en el que llega a la casa donde 
+                                                    los esperan unas refrescantes margaritas.<br>
+                                                    
+                                                    <strong>Nuestro amable personal lo consentirá con su excelente y complaciente servicio. Todos, desde el 
+                                                    chef privado hasta su anfitrión de villa - concierge bilingüe (español-inglés), 
+                                                    darán lo mejor de sí para cumplir sus deseos y requerimientos.</strong> Usted sólo 
+                                                    tendrá que relajarse y disfrutar de cada momento en la casa, así como en los 
+                                                    increíbles lugares que rodean este maravilloso paraíso del cual nunca querrá partir.
                                                 </span>
                                             </p>
                                             
                                             <p class="paragraph ng-attr-widget">
                                                 <span class="ng-directive ng-binding">
-                                                    Featuring <strong>modern and luxurious accommodations for up to 10 guests (or 
-                                                    12 including children)</strong>, the villa has 5 spacious air-conditioned bedrooms 
-                                                    that offer en suite bathrooms, modern amenities and comfortable interiors. 
+                                                    <strong>Villa Aqua está ubicada dentro de Playacar, un fraccionamiento privado, 
+                                                    exclusivo, seguro y tranquilo en el centro de Playa del Carmen, en la 
+                                                    Riviera Maya. Rodeado de un Campo de Golf profesional de 18 hoyos y a 
+                                                    unos cuantos minutos caminando la playa y la “Quinta Avenida” en donde 
+                                                    encontrará una gran variedad de tiendas, restaurantes y entretenimiento.</strong>
+
                                                 </span>
                                             </p>
                                             
                                             <p class="paragraph ng-attr-widget">
                                                 <span class="ng-directive ng-binding">
-                                                    Villa Aqua has a <strong>privileged location, inside a safe, tranquil, gated community 
-                                                    surrounded by a professional 18 hole Golf Course and just 10-15 minutes walking 
-                                                    distance to the beach and to "La Quinta", the heart of Playa</strong>, where you 
-                                                    will find great shopping, dining and entertainment.
+                                                    La casa cuenta con 5 espaciosas habitaciones de lujo,<strong> pudiendo alojar 10 
+                                                    adultos o hasta 12 huéspedes, incluyendo niños menores de 12 años.</strong> Cada 
+                                                    habitación cuenta con baño propio, aire acondicionado, modernas amenidades 
+                                                    y cómodos interiores.
+
                                                 </span>
                                             </p>
                                             
                                             <p class="paragraph ng-attr-widget">
                                                 <span class="ng-directive ng-binding">
-                                                    <strong>You will be pampered until the last minute by our staff, who provides 
-                                                    utmost and outstanding service, from the private chef to your bilingual 
-                                                    (English-Spanish) personal concierge or Villa Host</strong>, everyone will do their 
-                                                    best to fulfill all your desires and requirements so that you will enjoy every 
-                                                    moment when inside the villa or when visiting the amazing places surrounding this 
-                                                    incredible paradise. You will never want to leave!
+                                                   Villa Aqua, su segundo hogar en la Riviera Maya, le espera a usted y a sus invitados 
+                                                    para disfrutar de unas vacaciones inolvidables.
+
                                                 </span>
                                             </p>
                                             
-                                            <p class="paragraph ng-attr-widget">
-                                                <span class="ng-directive ng-binding">
-                                                    We are looking forward to welcome you and your guests at this luxury home away 
-                                                    from home.
-                                                </span>
-                                            </p>
+                                           
                                         </div>
 
                                         <div class="vc_col-sm-12 wpb_column vc_column_container ">
@@ -1111,7 +1115,7 @@ class Layout_View
                                                     <div class="wpb_wrapper wpb_accordion_wrapper ui-accordion">
 
                                                         <div class="wpb_accordion_section group">
-                                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post"><strong>ACCOMMODATIONS</strong></a></h3>
+                                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post"><strong>HABITACIONES</strong></a></h3>
                                                             <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
                                                                 <div class="wpb_single_image wpb_content_element vc_align_left">
                                                                     <div class="wpb_wrapper">
@@ -1124,21 +1128,26 @@ class Layout_View
                                                                         <div class="stm_item-features">
                                                                         	<div class="stm_item-features_inner">
                                                                         		<ul class="item-features_list">
-                                                                        			<li class="item-feature">5 bedrooms</li>
-                                                                        			<li class="item-feature">6 ½ bathrooms</li>
-                                                                        			<li class="item-feature">Family room & bar</li>
-                                                                        			<li class="item-feature">TV room – Library</li>
-                                                                        			<li class="item-feature">Gourmet kitchen</li>
-                                                                        			<li class="item-feature">Private gym & squash court</li>
-                                                                        			<li class="item-feature">Alfresco dining with gas grill</li>
+                                                                        			<li class="item-feature">5 habitaciones</li>
+                                                                        			<li class="item-feature">6 ½ baños</li>
+                                                                        			<li class="item-feature">Cuarto de juegos y Bar</li>
+                                                                        			<li class="item-feature">Sala de TV – Biblioteca</li>
+                                                                        			<li class="item-feature">Cocina Gourmet</li>
+                                                                        			<li class="item-feature">Gimnasio privado y Cancha de Squash</li>
+                                                                        			<li class="item-feature">Terraza y jardín con Parrilla de gas y horno de leña
+</li>
                                                                         		</ul>
                                                                         		<ul class="item-features_list">
-	                                                                        		<li class="item-feature">Wood fired oven</li>
-	                                                                        		<li class="item-feature">Outdoor living areas</li>
-	                                                                        		<li class="item-feature">Pool</li>
-	                                                                        		<li class="item-feature">Outdoor Jacuzzi</li>
-	                                                                        		<li class="item-feature">Indoor Jacuzzi in master bedroom</li>
-	                                                                        		<li class="item-feature">Laundry room</li>
+	                                                                        		<li class="item-feature">Salas de estar al aire libre
+</li>
+	                                                                        		<li class="item-feature">Piscina
+</li>
+	                                                                        		<li class="item-feature">Jacuzzi Exterior
+</li>
+	                                                                        		<li class="item-feature">Jacuzzi Interior en la habitación principal
+</li>
+	                                                                        		<li class="item-feature">Cuarto de lavado</li>
+	                                                                        		
                                                                         		</ul>
                                                                         	</div>
                                                                         </div>
@@ -1148,7 +1157,7 @@ class Layout_View
                                                         </div>
                                                         
                                                         <div class="wpb_accordion_section group">
-                                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#optimised-for-speed"><strong>INCLUDED SERVICES</strong></a></h3>
+                                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#optimised-for-speed"><strong>SERVICIOS INCLUIDOS:</strong></a></h3>
                                                             <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
 
                                                                 <div class="wpb_text_column wpb_content_element ">
@@ -1156,13 +1165,15 @@ class Layout_View
                                                                     	 <div class="stm_item-features">
                                                                         	<div class="stm_item-features_inner">
                                                                         		<ul class="item-features_list_extended">
-                                                                        			<li class="item-feature">1 Complimentary round trip Airport Transfer (with rentals of 4+ nights)</li>
-                                                                        			<li class="item-feature">24/7 Concierge service (telephone assistance and daily visits)</li>
-                                                                        			<li class="item-feature">Chef & kitchen assistant (daily from 8am to 4pm)  *No beverage service (bar tending) is provided</li>
-                                                                        			<li class="item-feature">Daily housekeeping (from 9am to 4pm)</li>
-                                                                        			<li class="item-feature">Maintenance (when required)</li>
-                                                                        			<li class="item-feature">Wireless Internet free of charge</li>
-                                                                        			<li class="item-feature">Free domestic, U.S. and Canada calls</li>
+                                                                        			<li class="item-feature">1 Traslado aeropuerto-villa-aeropuerto (en rentas de 4 noches o más)</li>
+                                                                        			<li class="item-feature">Anfitrión de Villa – concierge 24/7 (asistencia telefónica y visitas diarias)</li>
+                                                                        			<li class="item-feature">Chef y Asistente de cocina (todos los días de 8am a 4pm) *No incluye servicio de bar tender / preparación de bebidas</li>
+                                                                        			<li class="item-feature">Servicio de limpieza diario (de 9am a 4pm)</li>
+                                                                        			<li class="item-feature">Mantenimiento (cuando se requiera)</li>
+                                                                        			<li class="item-feature">Internet inalámbrico sin costo
+</li>
+                                                                        			<li class="item-feature">Llamadas locales, Nacionales, a Estados Unidos y Canadá gratis
+</li>
                                                                         		</ul>
                                                                         	</div>
                                                                         </div>
@@ -1172,32 +1183,38 @@ class Layout_View
                                                         </div>
 
 														<div class="wpb_accordion_section group">
-                                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#optimised-for-speed"><strong>SERVICES AVAILABLE FOR AN EXTRA COST</strong></a></h3>
+                                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#optimised-for-speed"><strong>SERVICIOS DISPONIBLES CON CARGO ADICIONAL:
+</strong></a></h3>
                                                             <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
                                                                 <div class="wpb_text_column wpb_content_element ">
                                                                     <div class="wpb_wrapper">
                                                                     	 <div class="stm_item-features">
                                                                         	<div class="stm_item-features_inner">
                                                                         		<ul class="item-features_list">
-                                                                        			<li class="item-feature">Food & Beverage</li>
-                                                                        			<li class="item-feature">Grocery Shopping (20% delivery fee)</li>
-                                                                        			<li class="item-feature">Chef Services for dinner</li>
-                                                                        			<li class="item-feature">Bartender</li>
-                                                                        			<li class="item-feature">Waiter</li>
-                                                                        			<li class="item-feature">Spa Services</li>
-                                                                        			<li class="item-feature">Extra maid</li>
+                                                                        			<li class="item-feature">Alimentos y Bebidas
+</li>
+                                                                        			<li class="item-feature">Compra y entrega de alimentos</li>
+                                                                        			<li class="item-feature">Servicios de chef y asistente para la cena</li>
+                                                                        			<li class="item-feature">Bar tender</li>
+                                                                        			<li class="item-feature">Mesero</li>
+                                                                        			<li class="item-feature">Servicios de Spa
+</li>
+                                                                        			<li class="item-feature">Personal de servicio extra</li>
                                                                         		</ul>
                                                                         		
                                                                         		<ul class="item-features_list">
-                                                                        			<li class="item-feature">Laundry & Dry Cleaning Service</li>
-                                                                        			<li class="item-feature">Babysitter</li>
-                                                                        			<li class="item-feature">Transportation services</li>
-                                                                        			<li class="item-feature"><strong><a href="/images/staff-and-services/Menu_epic-experiences.pdf" target="_blank">Villa Aqua Epic Experiences</a></strong></li>
-                                                                        			<li class="item-feature">Entertainment</li>
-                                                                        			<li class="item-feature">Tours & Activities</li>
+                                                                        			<li class="item-feature">Servicio de Lavandería y Tintorería</li>
+                                                                        			<li class="item-feature">Niñera 
+</li>
+                                                                        			<li class="item-feature">Chofer y renta de autos</li>
+                                                                        			<li class="item-feature"><strong><a href="/images/staff-and-services/Menu_epic-experiences.pdf" target="_blank">Experiencias Épicas Villa Aqua
+</a></strong></li>
+                                                                        			<li class="item-feature">Entretenimiento</li>
+                                                                        			<li class="item-feature">Tours y Actividades
+</li>
                                                                         		</ul>
                                                                         	</div>
-                                                                        	<p><i>*Contact your <a href="/contact-us/" target="_blank">Villa Host</a> for more info and pricing</i></p>
+                                                                        	<p><i>*Contacte a su  <a href="/contact-us/" target="_blank">Anfitrión de Villa</a> para obtener mayor información y precios.</i></p>
                                                                         </div>
 
                                                                     </div>
@@ -1206,20 +1223,31 @@ class Layout_View
                                                         </div>
 
                                                         <div class="wpb_accordion_section group">
-                                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#drag-drop-builder"><strong>FOOD & BEVERAGE</strong></a></h3>
+                                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#drag-drop-builder"><strong>ALIMENTOS y BEBIDAS
+</strong></a></h3>
                                                             <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
                                                                 <div class="wpb_text_column wpb_content_element ">
                                                                     <div class="wpb_wrapper">
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+
+
+
+
+
+
 
                                                                         <div class="stm_item-features">
                                                                         	<div class="stm_item-features_inner">
                                                                         		<ul class="item-features_list_extended">
-                                                                        			<li class="item-feature">Complimentary Welcome Snack</li>
-                                                                        			<li class="item-feature">Pre-stock and Grocery Shopping service (20% delivery fee)</li>
-                                                                        			<li class="item-feature">Bottled water, for a fee (2 bottles per room complimentary on arrival day)</li>
-                                                                        			<li class="item-feature">Wine and Liquor supply (charges apply)</li>
-                                                                        			<li class="item-feature">Honor Bar</li>
-                                                                        			<li class="item-feature"><strong> <a href="/images/staff-and-services/Menu_epic-experiences.pdf" target="_blank">Villa Aqua Epic Experiences</a></strong></li>
+                                                                        			<li class="item-feature">Snack de Bienvenida de cortesía</li>
+                                                                        			<li class="item-feature">Servicio de compra y surtido de alimentos previo a su llegada (costo de entrega del 20%)</li>
+                                                                        			<li class="item-feature">Agua embotellada (incluida sólo el día de su llegada)</li>
+                                                                        			<li class="item-feature">Surtido de vinos y licores (aplican cargos))</li>
+                                                                        			<li class="item-feature">Servicio de Bar de Honor</li>
+                                                                        			<li class="item-feature"><strong> <a href="/images/staff-and-services/Menu_epic-experiences.pdf" target="_blank">Experiencias Épicas Villa Aqua</a></strong></li>
                                                                         		</ul>
                                                                         	</div>
                                                                         </div>
@@ -1229,27 +1257,30 @@ class Layout_View
                                                         </div>
 
 														<div class="wpb_accordion_section group">
-                                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#drag-drop-builder"><strong>ENTERTAINMENT</strong></a></h3>
+                                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#drag-drop-builder"><strong>ENTRETENIMIENTO
+</strong></a></h3>
                                                             <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
                                                                 <div class="wpb_text_column wpb_content_element ">
                                                                     <div class="wpb_wrapper">
                                                                         <div class="stm_item-features">
                                                                         	<div class="stm_item-features_inner">
                                                                         		<ul class="item-features_list">
-	                                                                     			<li class="item-feature">TV features: 8 Flat Screen TVs throughout the villa.</li>
-	                                                                     			<li class="item-feature">2 home theaters</li>
-	                                                                     			<li class="item-feature">IPod docks</li>
-	                                                                     			<li class="item-feature">Game Consoles</li>
-	                                                                     			<li class="item-feature">Apple TV with Netflix</li>
-	                                                                     			<li class="item-feature">Cable TV in every bedroom</li>
+	                                                                     			<li class="item-feature">Televisores: 8 Pantallas planas en toda la villa.
+</li>
+	                                                                     			<li class="item-feature">Teatro en casa
+</li>
+	                                                                     			<li class="item-feature">Bases para IPod</li>
+	                                                                     			<li class="item-feature">Consola de videojuegos (Xbox)</li>
+	                                                                     			<li class="item-feature">Apple TV - Netflix</li>
+	                                                                     			<li class="item-feature">TV por Cable en las 5 habitaciones</li>
 	                                                                     		</ul>
 	                                                                     		<ul class="item-features_list">
-	                                                                     			<li class="item-feature">CNN and ESPN channels available </li>
-	                                                                     			<li class="item-feature">CD Stereo</li>
-	                                                                     			<li class="item-feature">Music (CD library)</li>
-	                                                                     			<li class="item-feature">Movies (DVD library)</li>
-	                                                                     			<li class="item-feature">Board Games</li>
-	                                                                     			<li class="item-feature">Books and Magazines</li>
+	                                                                     			<li class="item-feature">Estéreo con CD</li>
+	                                                                     			<li class="item-feature">Reproductor DVD</li>
+	                                                                     			<li class="item-feature">Música (biblioteca de CDs)</li>
+	                                                                     			<li class="item-feature">Películas (biblioteca de DVDs)</li>
+	                                                                     			<li class="item-feature">Juegos de mesa</li>
+	                                                                     			<li class="item-feature">Libros y Revistas</li>
 	                                                                     		</ul>
                                                                         	</div>
                                                                         </div>
@@ -1257,25 +1288,37 @@ class Layout_View
                                                                 </div>
                                                             </div>
                                                         </div>
+                                                        
+
 
 														<div class="wpb_accordion_section group">
-                                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#drag-drop-builder"><strong>AMENITIES & COMMUNICATION</strong></a></h3>
+                                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#drag-drop-builder"><strong>AMENIDADES Y COMUNICACIÓN
+</strong></a></h3>
                                                             <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
                                                                 <div class="wpb_text_column wpb_content_element ">
                                                                     <div class="wpb_wrapper">
 
+
+
+
+
+
+
+
+
+
                                                                         <div class="stm_item-features">
                                                                         	<div class="stm_item-features_inner">
                                                                         		<ul class="item-features_list_extended">
-	                                                                     			<li class="item-feature">Top brand toiletries</li>
-	                                                                     			<li class="item-feature">Bathrobes & slippers</li>
-	                                                                     			<li class="item-feature">Extra pillows</li>
-	                                                                     			<li class="item-feature">Welcome vanity package</li>
-	                                                                     			<li class="item-feature">Welcome bottled water in every room.</li>
-	                                                                     			<li class="item-feature">2 phone lines</li>
-	                                                                     			<li class="item-feature">Free domestic and U.S. / Canada calls</li>
-	                                                                     			<li class="item-feature">Wireless Internet free of charge</li>
-	                                                                     			<li class="item-feature">Fax and Packaging services (ask your <a href="/contact-us/" target="_blank">Villa Host</a>)</li>
+	                                                                     			<li class="item-feature">Artículos de tocador de las mejores marcas</li>
+	                                                                     			<li class="item-feature">Batas para baño y pantuflas</li>
+	                                                                     			<li class="item-feature">Almohadas extra</li>
+	                                                                     			<li class="item-feature">Espejos de aumento</li>
+	                                                                     			<li class="item-feature">Agua embotellada de cortesía en cada habitación (el día de llegada)</li>
+	                                                                     			<li class="item-feature">Teléfonos: 2 líneas (local + internacional)</li>
+	                                                                     			<li class="item-feature">Servicio telefónico: Servicio Local/Nacional y Llamadas gratuitas a Estados Unidos y Canadá a través de servicio VOIP (voz sobre IP)</li>
+	                                                                     			<li class="item-feature">Internet inalámbrico sin costo</li>
+	                                                                     			<li class="item-feature">Servicios de Fax y Paquetería.  <a href="/contact-us/" target="_blank">(Consulte con su Anfitrión de Villa)</a>)</li>
 	                                                                     		</ul>
                                                                         	</div>
                                                                         </div>
@@ -1285,26 +1328,49 @@ class Layout_View
                                                         </div>
 
                                                         <div class="wpb_accordion_section group">
-                                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#drag-drop-builder"><strong>ENVIRONMENTAL RESPONSIBILITY AND SUSTAINABILITY</strong></a></h3>
+                                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#drag-drop-builder"><strong>RESPONSABILIDAD AMBIENTAL Y SUSTENTABILIDAD:
+</strong></a></h3>
                                                             <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
                                                                 <div class="wpb_text_column wpb_content_element ">
                                                                     <div class="wpb_wrapper">
                                                                         <div class="stm_item-features">
-                                                                     	<p>We are dedicated to improving the villa's sustainability and have implemented many actions to ensure our ecological stewardship by creating the healthiest environment possible for our guests while also maintaining Playa del Carmen's beauty for future generations to experience and enjoy.</p>
+                                                                     	<p>En Villa Aqua nos preocupamos por cuidar el medio ambiente, 
+                                                                            por lo que trabajamos día a día para lograr que la casa sea 
+                                                                            sustentable. Es por esto que hemos implementado varias 
+                                                                            acciones ecológicas para asegurarnos de que nuestra administración 
+                                                                            de los recursos en la villa sea lo más amigable posible con la 
+                                                                            naturaleza. De esta manera también garantizamos que nuestros 
+                                                                            huéspedes disfruten de un ambiente saludable y al mismo tiempo 
+                                                                            mantenemos la belleza de Playa del Carmen, para las futuras 
+                                                                            generaciones.
+                                                                        </p>
+                                                                            
+                                                                            
+
+
+
+
+
+
+
+
+
+
+                                                                            
 	                                                                     	<div class="stm_item-features_inner">
 	                                                                     		<ul class="item-features_list_extended">
-	                                                                     			<li class="item-feature">Non-smoking environment</li>
-	                                                                     			<li class="item-feature">Garbage Recycling</li>
-	                                                                     			<li class="item-feature">Compost</li>
-	                                                                     			<li class="item-feature">Towel and sheet Re-use Program to reduce water and detergent consumption</li>
-	                                                                     			<li class="item-feature">Energy-efficient lighting</li>
-	                                                                     			<li class="item-feature">Water filtration and purification to reduce bottled water use</li>
-	                                                                     			<li class="item-feature">Bicycles are provided for green transportation</li>
-	                                                                     			<li class="item-feature">We serve organic and locally-grown food, if desired</li>
-	                                                                     			<li class="item-feature">Encourage our guest not to use disposable dishes/cups</li>
+	                                                                     			<li class="item-feature">Espacios libres de humo</li>
+	                                                                     			<li class="item-feature">Reciclaje de desechos</li>
+	                                                                     			<li class="item-feature">Composta</li>
+	                                                                     			<li class="item-feature">Programa de reutilización de blancos (es opcional, con el objetivo de reducir el consumo de agua y detergente)</li>
+	                                                                     			<li class="item-feature">Iluminación eficiente (LED)</li>
+	                                                                     			<li class="item-feature">Filtración y purificación de agua para reducir el uso del agua embotellada</li>
+	                                                                     			<li class="item-feature">Bicicletas disponibles para una transportación ecológica.</li>
+	                                                                     			<li class="item-feature">Contamos con servicio de compra de alimentos orgánicos / cultivados en la localidad (bajo solicitud).</li>
+	                                                                     			<li class="item-feature">Vajilla de cerámica, cristal y acrílico para evitar el uso de desechables. </li>
 	                                                                     		</ul>
 	                                                                     	</div>
-	                                                                     	<p>And we are working on many more.</p>
+	                                                                     	<p>Y seguimos trabajando en muchas cosas más…</p>
                                                                        </div>
                                                                     </div>
                                                                 </div>
@@ -1370,12 +1436,12 @@ class Layout_View
                             <div class="vc_col-sm-6 wpb_column vc_column_container ">
                                 <div class="wpb_wrapper vc_left_middle">
                                     <div class="vc_custom_heading ">
-                                        <h2 style="color: 333;text-align: left;font-weight:300;font-style:normal">The rooms</h2>
+                                        <h2 style="color: 333;text-align: left;font-weight:300;font-style:normal">Las Habitaciones</h2>
                                     </div>
                                     <div class="ult-spacer spacer-56253aed585bd" data-id="56253aed585bd" data-height="25" data-height-mobile="25" data-height-tab="25" data-height-tab-portrait="25" data-height-mobile-landscape="25" style="clear:both;display:block;"></div>
                                     <div class="wpb_text_column wpb_content_element ">
                                         <div class="wpb_wrapper">
-                                            <a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-square vc_btn3-style-outline vc_btn3-color-chino" href="/the-rooms/" title="" target="_self">READ MORE</a>
+                                            <a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-square vc_btn3-style-outline vc_btn3-color-chino" href="/the-rooms/" title="" target="_self">LEER MAS</a>
                                         </div>
                                     </div>
                                 </div>
@@ -1396,12 +1462,12 @@ class Layout_View
                             <div class="vc_col-sm-6 wpb_column vc_column_container ">
                                 <div class="wpb_wrapper vc_right_middle">
                                     <div class="vc_custom_heading">
-                                        <h2 style="color: #333;font-weight:300;font-style:normal; text-align: right;">Living Spaces</h2>
+                                        <h2 style="color: #333;font-weight:300;font-style:normal; text-align: right;">Áreas comunes </h2>
                                     </div>
                                     <div class="ult-spacer spacer-56253aed5c7a5" data-id="56253aed5c7a5" data-height="25" data-height-mobile="25" data-height-tab="25" data-height-tab-portrait="25" data-height-mobile-landscape="25" style="clear:both;display:block;"></div>
                                     <div class="wpb_text_column wpb_content_element ">
                                         <div class="wpb_wrapper">
-                                            <a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-square vc_btn3-style-outline vc_btn3-color-chino" href="/living-spaces/" title="" target="_self">READ MORE</a>
+                                            <a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-square vc_btn3-style-outline vc_btn3-color-chino" href="/living-spaces/" title="" target="_self">LEER MAS</a>
                                         </div>
                                     </div>
                                 </div>
@@ -1446,12 +1512,12 @@ class Layout_View
                             <div class="vc_col-sm-6 wpb_column vc_column_container ">
                                 <div class="wpb_wrapper vc_left_middle">
                                     <div class="vc_custom_heading">
-                                        <h2 style="color: 333;text-align: left;font-weight:300;font-style:normal">Pool & Outdoor</h2>
+                                        <h2 style="color: 333;text-align: left;font-weight:300;font-style:normal">Piscina y Exteriores</h2>
                                     </div>
                                     <div class="ult-spacer spacer-56253aed585bd" data-id="56253aed585bd" data-height="25" data-height-mobile="25" data-height-tab="25" data-height-tab-portrait="25" data-height-mobile-landscape="25" style="clear:both;display:block;"></div>
                                     <div class="wpb_text_column wpb_content_element ">
                                         <div class="wpb_wrapper">
-                                            <a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-square vc_btn3-style-outline vc_btn3-color-chino" href="/pool-and-outdoor/" title="" target="_self">READ MORE</a>
+                                            <a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-square vc_btn3-style-outline vc_btn3-color-chino" href="/pool-and-outdoor/" title="" target="_self">LEER MAS</a>
                                         </div>
                                     </div>
                                 </div>
@@ -1472,12 +1538,12 @@ class Layout_View
                             <div class="vc_col-sm-6 wpb_column vc_column_container ">
                                 <div class="wpb_wrapper vc_right_middle">
                                     <div class="vc_custom_heading">
-                                        <h2 style="color: #333; font-weight:300;font-style:normal; text-align: right;">What to do in the villa </h2>
+                                        <h2 style="color: #333; font-weight:300;font-style:normal; text-align: right;">Que hacer en La Villa </h2>
                                     </div>
                                     <div class="ult-spacer spacer-56253aed5c7a5" data-id="56253aed5c7a5" data-height="25" data-height-mobile="25" data-height-tab="25" data-height-tab-portrait="25" data-height-mobile-landscape="25" style="clear:both;display:block;"></div>
                                     <div class="wpb_text_column wpb_content_element ">
                                         <div class="wpb_wrapper">
-                                            <a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-square vc_btn3-style-outline vc_btn3-color-chino" href="/what-to-do/" title="" target="_self">READ MORE</a>
+                                            <a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-square vc_btn3-style-outline vc_btn3-color-chino" href="/what-to-do/" title="" target="_self">LEER MAS</a>
                                         </div>
                                     </div>
                                 </div>
@@ -1556,7 +1622,7 @@ class Layout_View
                             <div class="vc_col-sm-6 wpb_column vc_column_container ">
                                 <div class="wpb_wrapper">
                                     <div class="vc_custom_heading">
-                                        <h2 style="color: 333;text-align: left;font-weight:300;font-style:normal">Master bedroom</h2>
+                                        <h2 style="color: 333;text-align: left;font-weight:300;font-style:normal">Master Suite</h2>
                                     </div>
                                     <div class="ult-spacer spacer-56253aed4f277" data-id="56253aed4f277" data-height="25" data-height-mobile="25" data-height-tab="25" data-height-tab-portrait="25" data-height-mobile-landscape="25" style="clear:both;display:block;"></div>
                                     <div class="wpb_text_column wpb_content_element ">
@@ -1564,26 +1630,25 @@ class Layout_View
 
                                         <div class="vc_col-sm-12 wpb_column vc_column_container ">
                                             <div class="wpb_wrapper">
-
                                                 <div class="wpb_accordion wpb_content_element  not-column-inherit" data-collapsible="" data-vc-disable-keydown="false" data-active-tab="1">
                                                     <div class="wpb_wrapper wpb_accordion_wrapper ui-accordion">
                                                         <div class="wpb_accordion_section group">
-                                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post"><strong>ROOM FEATURES</strong></a></h3>
+                                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post"><strong>CARACTERÍSTICAS</strong></a></h3>
                                                             <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
                                                                 <div class="wpb_text_column wpb_content_element ">
                                                                     <div class="wpb_wrapper">
                                                                         <div class="stm_item-features">
                                                                         	<div class="stm_item-features_inner">
                                                                         		<ul class="item-features_list">
-                                                                        			<li class="item-feature">Maximum Occupancy: 2</li>
-                                                                        			<li class="item-feature">1,292 sq. ft. / 129 m</li>
-                                                                        			<li class="item-feature">Air-conditioned</li>
-                                                                        			<li class="item-feature">Private terrace: 137 sq. ft. / 13 m</li>
+                                                                        			<li class="item-feature">Máxima ocupación: 2 personas</li>
+                                                                        			<li class="item-feature">129 m2 / 1,292 pies2</li>
+                                                                        			<li class="item-feature">Aire acondicionado</li>
+                                                                        			<li class="item-feature">Terraza privada: 13 m2/ 137 pies2</li>
                                                                         		</ul>
                                                                         		<ul class="item-features_list">
-	                                                                        		<li class="item-feature">2 bathrooms (his and hers)</li>
-	                                                                        		<li class="item-feature">Living / sitting area</li>
-	                                                                        		<li class="item-feature">Windows may be opened</li>
+	                                                                        		<li class="item-feature">2 Baños (para él y para ella)</li>
+	                                                                        		<li class="item-feature">Sillón</li>
+	                                                                        		<li class="item-feature">Se pueden abrir las ventanas</li>
                                                                         		</ul>
                                                                         	</div>
                                                                         </div>
@@ -1592,19 +1657,19 @@ class Layout_View
                                                             </div>
                                                         </div>
                                                         <div class="wpb_accordion_section group">
-                                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#optimised-for-speed"><strong>BEDS & BEDDING</strong></a></h3>
+                                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#optimised-for-speed"><strong>CAMAS</strong></a></h3>
                                                             <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
                                                                 <div class="wpb_text_column wpb_content_element ">
                                                                     <div class="wpb_wrapper">
                                                                     	 <div class="stm_item-features">
                                                                         	<div class="stm_item-features_inner">
                                                                         		<ul class="item-features_list_extended">
-                                                                        			<li class="item-feature">1 King size Sleep Number bed</li>
-                                                                        			<li class="item-feature">Luxury Linens</li>
-                                                                        			<li class="item-feature">Cribs permitted: 1 (upon request)</li>
-	                                                                        		<li class="item-feature">Maximum cribs permitted in the villa: 2</li>
-	                                                                        		<li class="item-feature">Featherbed and Duvet</li>
-	                                                                        		<li class="item-feature">Extra Pillows</li>
+                                                                        			<li class="item-feature">1 cama King size marca “Sleep Number” </li>
+                                                                        			<li class="item-feature">Sábanas de lujo</li>
+                                                                        			<li class="item-feature">Cunas permitidas: 1 (bajo solicitud)</li>
+	                                                                        		<li class="item-feature">Máximo de cunas permitidas en la Villa: 2</li>
+	                                                                        		<li class="item-feature">Colchón de plumas y edredón</li>
+	                                                                        		<li class="item-feature">Variedad de Almohadas </li>
                                                                         		</ul>
                                                                         	</div>
                                                                         </div>
@@ -1614,7 +1679,8 @@ class Layout_View
                                                         </div>
 
                                                         <div class="wpb_accordion_section group">
-                                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#drag-drop-builder"><strong>BATHROOM FEATURES</strong></a></h3>
+                                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#drag-drop-builder"><strong>BAÑO
+</strong></a></h3>
                                                             <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
                                                                 <div class="wpb_text_column wpb_content_element ">
                                                                     <div class="wpb_wrapper">
@@ -1640,30 +1706,31 @@ class Layout_View
                                                         </div>
 
 														<div class="wpb_accordion_section group">
-                                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#drag-drop-builder"><strong>AMENITIES</strong></a></h3>
+                                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#drag-drop-builder"><strong>AMENIDADES</strong></a></h3>
                                                             <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
                                                                 <div class="wpb_text_column wpb_content_element ">
                                                                     <div class="wpb_wrapper">
                                                                         <div class="stm_item-features">
                                                                         	<div class="stm_item-features_inner">
                                                                         		<ul class="item-features_list">
-	                                                                     			<li class="item-feature">50" Led TV</li>
-	                                                                     			<li class="item-feature">Cable TV</li>
-	                                                                     			<li class="item-feature">DVD Player</li>
-	                                                                     			<li class="item-feature">Apple TV with Netflix</li>
-	                                                                     			<li class="item-feature">IPod dock</li>
+	                                                                     			<li class="item-feature">Televisor Led de 55”</li>
+	                                                                     			<li class="item-feature">TV por cable</li>
+	                                                                     			<li class="item-feature">Reproductor de DVD</li>
+	                                                                     			<li class="item-feature">Apple TV - Netflix</li>
+	                                                                     			<li class="item-feature">Base para IPod con reloj despertador</li>
 	                                                                     			<li class="item-feature">Stereo with alarm clock</li>
-	                                                                     			<li class="item-feature">Safe box</li>
+	                                                                     			<li class="item-feature">Caja de seguridad</li>
 	                                                                     		</ul>
 	                                                                     		<ul class="item-features_list">
-	                                                                     			<li class="item-feature">Desk</li>
+	                                                                     			<li class="item-feature">Escritorio</li>
 	                                                                     			<li class="item-feature">Laptop</li>
-	                                                                     			<li class="item-feature">Chaise lounge</li>
-	                                                                     			<li class="item-feature">Walk-in closet</li>
-	                                                                     			<li class="item-feature">Dressing stool</li>
-	                                                                     			<li class="item-feature">Body Mirror</li>
-	                                                                     			<li class="item-feature">Iron and ironing board upon request</li>
+	                                                                     			<li class="item-feature">2 Camastros en la terraza</li>
+	                                                                     			<li class="item-feature">Vestidor</li>
+	                                                                     			<li class="item-feature">Taburete en el vestidor</li>
+	                                                                     			<li class="item-feature">Espejo de cuerpo entero</li>
+	                                                                     			<li class="item-feature">Plancha y tabla para planchar, bajo solicitud</li>
 	                                                                     		</ul>
+                                        
                                                                         	</div>
                                                                         </div>
                                                                     </div>
@@ -1672,17 +1739,18 @@ class Layout_View
                                                         </div>
 
 														<div class="wpb_accordion_section group">
-                                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#drag-drop-builder"><strong>COMMUNICATION</strong></a></h3>
+                                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#drag-drop-builder"><strong>COMUNICACIÓN
+</strong></a></h3>
                                                             <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
                                                                 <div class="wpb_text_column wpb_content_element ">
                                                                     <div class="wpb_wrapper">
                                                                         <div class="stm_item-features">
                                                                         	<div class="stm_item-features_inner">
                                                                         		<ul class="item-features_list_extended">
-	                                                                     			<li class="item-feature">3 Phones</li>
-	                                                                     			<li class="item-feature">Phone features: Room to room, Domestic and International service (through VOIP)</li>
-	                                                                     			<li class="item-feature">Free domestic, U.S. and Canada calls</li>
-	                                                                     			<li class="item-feature">Wireless Internet, free of charge</li>
+	                                                                     			<li class="item-feature"> Teléfonos: 3</li>
+	                                                                     			<li class="item-feature">Servicio telefónico: De habitación a habitación, servicio local, nacional e internacional (a través de VOIP).</li>
+	                                                                     			<li class="item-feature">Llamadas locales, nacionales y a Estados Unidos y Canadá gratis.</li>
+	                                                                     			<li class="item-feature">Internet Inalámbrico sin costo.</li>
 	                                                                     		</ul>
                                                                         	</div>
                                                                         </div>
@@ -1690,19 +1758,19 @@ class Layout_View
                                                                 </div>
                                                             </div>
                                                         </div>
-
+                                      
                                                         <div class="wpb_accordion_section group">
-                                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#drag-drop-builder"><strong>HOSPITALITY SERVICES</strong></a></h3>
+                                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#drag-drop-builder"><strong>SERVICIOS EN LA HABITACIÓN</strong></a></h3>
                                                             <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
                                                                 <div class="wpb_text_column wpb_content_element ">
                                                                     <div class="wpb_wrapper">
                                                                         <div class="stm_item-features">
 	                                                                     	<div class="stm_item-features_inner">
 	                                                                     		<ul class="item-features_list_extended">
-	                                                                     			<li class="item-feature">Afternoon turndown service</li>
-	                                                                     			<li class="item-feature">Newspaper delivered to your room upon 
-	                                                                     			request (Please advice your Villa Host one week prior to arrival with your 
-	                                                                     			Newspaper preference to check availability).</li>
+	                                                                     			<li class="item-feature">Servicio de cortesía nocturna
+</li>
+	                                                                     			<li class="item-feature">Entrega de periódico a la habitación,                                                                                                             bajo solicitud(Favor de informar a su                                                                                                               Anfitrión de Villa sobre el periódico de                                                                                                            su preferencia, con una semana de
+                                                                                                            anticipación a su llegada, para                                                                                                                 verificar la disponibilidad del mismo).</li>
 	                                                                     		</ul>
 	                                                                     	</div>
                                                                        </div>
@@ -1726,7 +1794,7 @@ class Layout_View
                                         	<div class="rental-service_item">
                                             	<div class="rs-item_inner">
                                             		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="mb" href="/images/overview/the-rooms/Villa_Aqua_master_bedroom_5.jpg"><i class="fa fa-search-plus"></i></a>
+                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/the-rooms/Villa_Aqua_master_bedroom_5.jpg"><i class="fa fa-search-plus"></i></a>
                                             		</div>
                                             		<div class="rs-item_content">
                                             			<img width="1140" height="676" src="/images/overview/the-rooms/Villa_Aqua_master_bedroom_5.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
@@ -1737,7 +1805,7 @@ class Layout_View
                                             <div class="rental-service_item">
                                             	<div class="rs-item_inner">
                                             		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="mb" href="/images/overview/the-rooms/Villa_Aqua_master_bedroom_4.jpg"><i class="fa fa-search-plus"></i></a>
+                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/the-rooms/Villa_Aqua_master_bedroom_4.jpg"><i class="fa fa-search-plus"></i></a>
                                             		</div>
                                             		<div class="rs-item_content">
                                             			<img width="1140" height="676" src="/images/overview/the-rooms/Villa_Aqua_master_bedroom_4.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
@@ -1748,7 +1816,7 @@ class Layout_View
                                             <div class="rental-service_item">
                                             	<div class="rs-item_inner">
                                             		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="mb" href="/images/overview/the-rooms/Villa_Aqua_master_bedroom_1.jpg"><i class="fa fa-search-plus"></i></a>
+                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/the-rooms/Villa_Aqua_master_bedroom_1.jpg"><i class="fa fa-search-plus"></i></a>
                                             		</div>
                                             		<div class="rs-item_content">
                                             			<img width="1140" height="676" src="/images/overview/the-rooms/Villa_Aqua_master_bedroom_1.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
@@ -1759,7 +1827,7 @@ class Layout_View
                                             <div class="rental-service_item">
                                             	<div class="rs-item_inner">
                                             		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="mb" href="/images/overview/the-rooms/Villa_Aqua_master_bedroom_12_4ta_posicion.jpg"><i class="fa fa-search-plus"></i></a>
+                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/the-rooms/Villa_Aqua_master_bedroom_12_4ta_posicion.jpg"><i class="fa fa-search-plus"></i></a>
                                             		</div>
                                             		<div class="rs-item_content">
                                             			<img width="1140" height="676" src="/images/overview/the-rooms/Villa_Aqua_master_bedroom_12_4ta_posicion.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
@@ -1770,7 +1838,7 @@ class Layout_View
                                             <div class="rental-service_item">
                                             	<div class="rs-item_inner">
                                             		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="mb" href="/images/overview/the-rooms/Villa_Aqua_master_bedroom_10_5ta_pos.jpg"><i class="fa fa-search-plus"></i></a>
+                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/the-rooms/Villa_Aqua_master_bedroom_10_5ta_pos.jpg"><i class="fa fa-search-plus"></i></a>
                                             		</div>
                                             		<div class="rs-item_content">
                                             			<img width="1140" height="676" src="/images/overview/the-rooms/Villa_Aqua_master_bedroom_10_5ta_pos.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
@@ -1782,7 +1850,7 @@ class Layout_View
                                             <div class="rental-service_item">
                                             	<div class="rs-item_inner">
                                             		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="mb" href="/images/overview/the-rooms/Villa_Aqua_master_bedroom_3.jpg"><i class="fa fa-search-plus"></i></a>
+                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/the-rooms/Villa_Aqua_master_bedroom_3.jpg"><i class="fa fa-search-plus"></i></a>
                                             		</div>
                                             		<div class="rs-item_content">
                                             			<img width="1140" height="676" src="/images/overview/the-rooms/Villa_Aqua_master_bedroom_3.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
@@ -1793,7 +1861,7 @@ class Layout_View
                                             <div class="rental-service_item">
                                             	<div class="rs-item_inner">
                                             		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="mb" href="/images/overview/the-rooms/Villa_Aqua_master_bedroom_2da_bano.jpg"><i class="fa fa-search-plus"></i></a>
+                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/the-rooms/Villa_Aqua_master_bedroom_2da_bano.jpg"><i class="fa fa-search-plus"></i></a>
                                             		</div>
                                             		<div class="rs-item_content">
                                             			<img width="1140" height="676" src="/images/overview/the-rooms/Villa_Aqua_master_bedroom_2da_bano.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
@@ -1804,7 +1872,7 @@ class Layout_View
                                             <div class="rental-service_item">
                                             	<div class="rs-item_inner">
                                             		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="mb" href="/images/overview/the-rooms/Villa_Aqua_master_bedroom_15_3era_bano.jpg"><i class="fa fa-search-plus"></i></a>
+                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/the-rooms/Villa_Aqua_master_bedroom_15_3era_bano.jpg"><i class="fa fa-search-plus"></i></a>
                                             		</div>
                                             		<div class="rs-item_content">
                                             			<img width="1140" height="676" src="/images/overview/the-rooms/Villa_Aqua_master_bedroom_15_3era_bano.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
@@ -1815,7 +1883,7 @@ class Layout_View
                                             <div class="rental-service_item">
                                             	<div class="rs-item_inner">
                                             		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="mb" href="/images/overview/the-rooms/Villa_Aqua_master_bedroom_14_ultima.jpg"><i class="fa fa-search-plus"></i></a>
+                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/the-rooms/Villa_Aqua_master_bedroom_14_ultima.jpg"><i class="fa fa-search-plus"></i></a>
                                             		</div>
                                             		<div class="rs-item_content">
                                             			<img width="1140" height="676" src="/images/overview/the-rooms/Villa_Aqua_master_bedroom_14_ultima.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
@@ -1826,7 +1894,7 @@ class Layout_View
                                             <div class="rental-service_item">
                                             	<div class="rs-item_inner">
                                             		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="mb" href="/images/overview/the-rooms/Villa_Aqua_master_bedroom_6.jpg"><i class="fa fa-search-plus"></i></a>
+                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/the-rooms/Villa_Aqua_master_bedroom_6.jpg"><i class="fa fa-search-plus"></i></a>
                                             		</div>
                                             		<div class="rs-item_content">
                                             			<img width="1140" height="676" src="/images/overview/the-rooms/Villa_Aqua_master_bedroom_6.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
@@ -1857,7 +1925,7 @@ class Layout_View
                                         	<div class="rental-service_item">
                                             	<div class="rs-item_inner">
                                             		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="b2" href="/images/overview/the-rooms/Villa_Aqua_bedroom_2.jpg"><i class="fa fa-search-plus"></i></a>
+                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/the-rooms/Villa_Aqua_bedroom_2.jpg"><i class="fa fa-search-plus"></i></a>
                                             		</div>
                                             		<div class="rs-item_content">
                                             			<img width="1140" height="676" src="/images/overview/the-rooms/Villa_Aqua_bedroom_2.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
@@ -1868,7 +1936,7 @@ class Layout_View
                                             <div class="rental-service_item">
                                             	<div class="rs-item_inner">
                                             		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="b2" href="/images/overview/the-rooms/Villa_Aqua_bedroom_2.2.2.jpg"><i class="fa fa-search-plus"></i></a>
+                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/the-rooms/Villa_Aqua_bedroom_2.2.2.jpg"><i class="fa fa-search-plus"></i></a>
                                             		</div>
                                             		<div class="rs-item_content">
                                             			<img width="1140" height="676" src="/images/overview/the-rooms/Villa_Aqua_bedroom_2.2.2.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
@@ -1879,7 +1947,7 @@ class Layout_View
                                             <div class="rental-service_item">
                                             	<div class="rs-item_inner">
                                             		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="b2" href="/images/overview/the-rooms/Villa_Aqua_bedroom_2.3.jpg"><i class="fa fa-search-plus"></i></a>
+                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/the-rooms/Villa_Aqua_bedroom_2.3.jpg"><i class="fa fa-search-plus"></i></a>
                                             		</div>
                                             		<div class="rs-item_content">
                                             			<img width="1140" height="676" src="/images/overview/the-rooms/Villa_Aqua_bedroom_2.3.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
@@ -1890,7 +1958,7 @@ class Layout_View
                                             <div class="rental-service_item">
                                             	<div class="rs-item_inner">
                                             		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="b2" href="/images/overview/the-rooms/Villa_Aqua_bedroom_2.4.jpg"><i class="fa fa-search-plus"></i></a>
+                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/the-rooms/Villa_Aqua_bedroom_2.4.jpg"><i class="fa fa-search-plus"></i></a>
                                             		</div>
                                             		<div class="rs-item_content">
                                             			<img width="1140" height="676" src="/images/overview/the-rooms/Villa_Aqua_bedroom_2.4.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
@@ -1901,7 +1969,7 @@ class Layout_View
                                             <div class="rental-service_item">
                                             	<div class="rs-item_inner">
                                             		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="b2" href="/images/overview/the-rooms/Villa_Aqua_bedroom_2.2.jpg"><i class="fa fa-search-plus"></i></a>
+                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/the-rooms/Villa_Aqua_bedroom_2.2.jpg"><i class="fa fa-search-plus"></i></a>
                                             		</div>
                                             		<div class="rs-item_content">
                                             			<img width="1140" height="676" src="/images/overview/the-rooms/Villa_Aqua_bedroom_2.2.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
@@ -1916,7 +1984,7 @@ class Layout_View
                             <div class="vc_col-sm-6 wpb_column vc_column_container ">
                                 <div class="wpb_wrapper">
                                     <div class="vc_custom_heading ">
-                                        <h2 style="color: 333;text-align: left;font-weight:300;font-style:normal">Bedroom 2</h2>
+                                        <h2 style="color: 333;text-align: left;font-weight:300;font-style:normal">HABITACIÓN 2</h2>
                                     </div>
                                     <div class="ult-spacer spacer-56253aed585bd" data-id="56253aed585bd" data-height="25" data-height-mobile="25" data-height-tab="25" data-height-tab-portrait="25" data-height-mobile-landscape="25" style="clear:both;display:block;"></div>
                                     <div class="wpb_text_column wpb_content_element ">
@@ -1924,19 +1992,19 @@ class Layout_View
                                             <div class="wpb_accordion wpb_content_element  not-column-inherit" data-collapsible="" data-vc-disable-keydown="false" data-active-tab="1">
                                                 <div class="wpb_wrapper wpb_accordion_wrapper ui-accordion">
                                                     <div class="wpb_accordion_section group">
-                                                        <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post"><strong>ROOM FEATURES</strong></a></h3>
+                                                        <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post"><strong>CARACTERÍSTICAS</strong></a></h3>
                                                         <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
                                                             <div class="wpb_text_column wpb_content_element ">
                                                                 <div class="wpb_wrapper">
                                                                     <div class="stm_item-features">
                                                                      	<div class="stm_item-features_inner">
                                                                       		<ul class="item-features_list">
-                                                                       			<li class="item-feature">Maximum Occupancy: 2</li>
-                                                                       			<li class="item-feature">361 sq. ft. / 34m</li>
+                                                                       			<li class="item-feature">Máxima ocupación: 2 personas</li>
+                                                                       			<li class="item-feature">34 m2/ 361 pies2</li>
                                                                        		</ul>
                                                                        		<ul class="item-features_list">
-	                                                                       		<li class="item-feature">Living / sitting area</li>
-	                                                                       		<li class="item-feature">Windows may be opened</li>
+	                                                                       		<li class="item-feature">Aire acondicionado</li>
+	                                                                       		<li class="item-feature">Se pueden abrir las ventanas</li>
                                                                        		</ul>
                                                                        	</div>
                                                                     </div>
@@ -1946,21 +2014,21 @@ class Layout_View
                                                     </div>
 
                                                     <div class="wpb_accordion_section group">
-                                                        <h3 class="wpb_accordion_header ui-accordion-header"><a href="#optimised-for-speed"><strong>BEDS & BEDDING</strong></a></h3>
+                                                        <h3 class="wpb_accordion_header ui-accordion-header"><a href="#optimised-for-speed"><strong>CAMAS</strong></a></h3>
                                                         <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
                                                             <div class="wpb_text_column wpb_content_element ">
                                                                <div class="wpb_wrapper">
                                                                   	 <div class="stm_item-features">
                                                                        	<div class="stm_item-features_inner">
                                                                        		<ul class="item-features_list">
-                                                                       			<li class="item-feature">2 Double beds</li>
-                                                                       			<li class="item-feature">Featherbed and Duvet</li>
-                                                                       			<li class="item-feature">Luxury Linens</li>
+                                                                       			<li class="item-feature">2 Camas matrimoniales</li>
+                                                                       			<li class="item-feature">Colchón de plumas y edredón</li>
+                                                                       			<li class="item-feature">Sábanas de lujo</li>
                                                                        		</ul>
                                                                       		<ul class="item-features_list">
-                                                                       			<li class="item-feature">Extra Pillows</li>
-                                                                       			<li class="item-feature">Cribs permitted: 1 (upon request)</li>
-	                                                                       		<li class="item-feature">Maximum cribs permitted in the villa: 2</li>
+                                                                       			<li class="item-feature">Variedad de Almohadas</li>
+                                                                       			<li class="item-feature">Cunas permitidas: 1 (bajo solicitud)</li>
+	                                                                       		<li class="item-feature">Máximo de cunas permitidas en la villa: 2</li>
                                                                        		</ul>
                                                                        	</div>
                                                                     </div>
@@ -1969,8 +2037,9 @@ class Layout_View
                                                         </div>
                                                     </div>
 
+
                                                     <div class="wpb_accordion_section group">
-                                                        <h3 class="wpb_accordion_header ui-accordion-header"><a href="#drag-drop-builder"><strong>BATHROOM FEATURES</strong></a></h3>
+                                                        <h3 class="wpb_accordion_header ui-accordion-header"><a href="#drag-drop-builder"><strong>BAÑO</strong></a></h3>
                                                         <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
                                                             <div class="wpb_text_column wpb_content_element ">
                                                                 <div class="wpb_wrapper">
@@ -1978,14 +2047,14 @@ class Layout_View
                                                                     <div class="stm_item-features">
                                                                       	<div class="stm_item-features_inner">
                                                                        		<ul class="item-features_list">
-                                                                       			<li class="item-feature">Shower</li>
-                                                                       			<li class="item-feature">Top Brand Toiletries</li>
-                                                                       			<li class="item-feature">Robes: 2</li>
+                                                                       			<li class="item-feature">Ducha</li>
+                                                                       			<li class="item-feature">Artículos de tocador de las mejores marcas</li>
+                                                                       			<li class="item-feature">Batas: 2</li>
                                                                        		</ul>
                                                                        		<ul class="item-features_list">
-                                                                       			<li class="item-feature">Slippers</li>
-                                                                       			<li class="item-feature">Hair dryer</li>
-                                                                       			<li class="item-feature">Make-up mirror</li>
+                                                                       			<li class="item-feature">Pantuflas</li>
+                                                                       			<li class="item-feature">Secadora de cabello</li>
+                                                                       			<li class="item-feature">Espejo de aumento</li>
                                                                        		</ul>
                                                                        	</div>
                                                                     </div>
@@ -1995,21 +2064,21 @@ class Layout_View
                                                     </div>
 
 													<div class="wpb_accordion_section group">
-                                                        <h3 class="wpb_accordion_header ui-accordion-header"><a href="#drag-drop-builder"><strong>AMENITIES</strong></a></h3>
+                                                        <h3 class="wpb_accordion_header ui-accordion-header"><a href="#drag-drop-builder"><strong>AMENIDADES</strong></a></h3>
                                                         <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
                                                             <div class="wpb_text_column wpb_content_element ">
                                                                 <div class="wpb_wrapper">
                                                                     <div class="stm_item-features">
                                                                       	<div class="stm_item-features_inner">
                                                                        		<ul class="item-features_list">
-	                                                                   			<li class="item-feature">46" Led TV</li>
-	                                                                   			<li class="item-feature">Cable TV</li>
-	                                                                   			<li class="item-feature">DVD Player</li>
+	                                                                   			<li class="item-feature">Televisor Led de 46”</li>
+	                                                                   			<li class="item-feature">TV por cable</li>
+	                                                                   			<li class="item-feature">Reproductor de DVD</li>
 	                                                                   		</ul>
 	                                                                   		<ul class="item-features_list">
-	                                                                   			<li class="item-feature">In room Safe</li>
-	                                                                   			<li class="item-feature">IPod dock with alarm clock</li>
-	                                                                   			<li class="item-feature">Iron and ironing board upon request</li>
+	                                                                   			<li class="item-feature">Caja de seguridad en la habitación</li>
+	                                                                   			<li class="item-feature">Base para IPod con reloj despertador</li>
+	                                                                   			<li class="item-feature">Plancha y tabla para planchar, bajo solicitud</li>
 	                                                                   		</ul>
                                                                       	</div>
                                                                     </div>
@@ -2019,17 +2088,17 @@ class Layout_View
                                                    </div>
 
 													<div class="wpb_accordion_section group">
-                                                        <h3 class="wpb_accordion_header ui-accordion-header"><a href="#drag-drop-builder"><strong>COMMUNICATION</strong></a></h3>
+                                                        <h3 class="wpb_accordion_header ui-accordion-header"><a href="#drag-drop-builder"><strong>COMUNICACIÓN</strong></a></h3>
                                                         <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
                                                         	<div class="wpb_text_column wpb_content_element ">
                                                                 <div class="wpb_wrapper">
                                                                     <div class="stm_item-features">
                                                                       	<div class="stm_item-features_inner">
                                                                        		<ul class="item-features_list_extended">
-	                                                                   			<li class="item-feature">1 Phone</li>
-	                                                                   			<li class="item-feature">Phone features: Room to room, Domestic and International service (through VOIP)</li>
-	                                                                   			<li class="item-feature">Free domestic, U.S. and Canada calls</li>
-	                                                                   			<li class="item-feature">Wireless Internet, free of charge</li>
+	                                                                   			<li class="item-feature">Teléfonos: 1</li>
+	                                                                   			<li class="item-feature">Servicio telefónico: De habitación a habitación, servicio local, nacional e internacional (a través de VOIP).</li>
+	                                                                   			<li class="item-feature">Llamadas locales, nacionales y a Estados Unidos y Canadá gratis.</li>
+	                                                                   			<li class="item-feature">Internet Inalámbrico sin costo.</li>
 	                                                                   		</ul>
                                                                        	</div>
                                                                     </div>
@@ -2039,17 +2108,19 @@ class Layout_View
                                                     </div>
 
                                                     <div class="wpb_accordion_section group">
-                                                    	<h3 class="wpb_accordion_header ui-accordion-header"><a href="#drag-drop-builder"><strong>HOSPITALITY SERVICES</strong></a></h3>
+                                                    	<h3 class="wpb_accordion_header ui-accordion-header"><a href="#drag-drop-builder"><strong>SERVICIOS EN LA HABITACIÓN</strong></a></h3>
                                                        	<div class="wpb_accordion_content ui-accordion-content vc_clearfix">
                                                             <div class="wpb_text_column wpb_content_element ">
                                                                 <div class="wpb_wrapper">
                                                                     <div class="stm_item-features">
 	                                                                  	<div class="stm_item-features_inner">
 	                                                                   		<ul class="item-features_list_extended">
-	                                                                   			<li class="item-feature">Afternoon turndown service</li>
-	                                                                   			<li class="item-feature">Newspaper delivered to your room upon request (Please advice your Villa Host one week prior to arrival with your Newspaper preference to check availability).</li>
+	                                                                   			<li class="item-feature">Servicio de cortesía nocturna</li>
+	                                                                   			<li class="item-feature">Entrega de periódico a la habitación, bajo                                                                                      solicitud (Favor de informar a su anfitrión de villa sobre su                                                                                          periódico de preferencia para verificar la disponibilidad del                                                                                        mismo)
+                                                                                </li>
 	                                                                     	</ul>
 	                                                                   </div>
+
                                                                    	</div>
                                                                 </div>
                                                             </div>
@@ -2077,7 +2148,7 @@ class Layout_View
                             <div class="vc_col-sm-6 wpb_column vc_column_container ">
                                 <div class="wpb_wrapper">
                                     <div class="vc_custom_heading">
-                                        <h2 style="color: #333;font-weight:300;font-style:normal; text-align: right;">Bedroom 3</h2>
+                                        <h2 style="color: #333;font-weight:300;font-style:normal; text-align: right;">HABITACIÓN 3</h2>
                                     </div>
                                     <div class="ult-spacer spacer-56253aed5c7a5" data-id="56253aed5c7a5" data-height="25" data-height-mobile="25" data-height-tab="25" data-height-tab-portrait="25" data-height-mobile-landscape="25" style="clear:both;display:block;"></div>
                                     <div class="wpb_text_column wpb_content_element ">
@@ -2086,20 +2157,20 @@ class Layout_View
                                             <div class="wpb_accordion wpb_content_element  not-column-inherit" data-collapsible="" data-vc-disable-keydown="false" data-active-tab="1">
                                                     <div class="wpb_wrapper wpb_accordion_wrapper ui-accordion">
                                                         <div class="wpb_accordion_section group">
-                                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post"><strong>ROOM FEATURES</strong></a></h3>
+                                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post"><strong>CARACTERÍSTICAS</strong></a></h3>
                                                             <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
                                                                 <div class="wpb_text_column wpb_content_element ">
                                                                     <div class="wpb_wrapper">
                                                                         <div class="stm_item-features">
                                                                         	<div class="stm_item-features_inner">
                                                                         		<ul class="item-features_list">
-                                                                        			<li class="item-feature">Maximum Occupancy: 4</li>
-                                                                        			<li class="item-feature">401 sq. ft. / 37m</li>
-	                                                                        		<li class="item-feature">Air-conditioned</li>
+                                                                        			<li class="item-feature">Máxima ocupación: 4 personas</li>
+                                                                        			<li class="item-feature">37 m2/ 401 pies2</li>
+	                                                                        		<li class="item-feature">Aire acondicionado</li>
                                                                         		</ul>
                                                                         		<ul class="item-features_list">
-	                                                                        		<li class="item-feature">Sitting area</li>
-	                                                                        		<li class="item-feature">Windows may be opened</li>
+	                                                                        		<li class="item-feature">Escritorio y silla</li>
+	                                                                        		<li class="item-feature">Se pueden abrir las ventanas</li>
                                                                         		</ul>
                                                                         	</div>
                                                                         </div>
@@ -2109,21 +2180,21 @@ class Layout_View
                                                         </div>
 
                                                         <div class="wpb_accordion_section group">
-                                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#optimised-for-speed"><strong>BEDS & BEDDING</strong></a></h3>
+                                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#optimised-for-speed"><strong>CAMAS</strong></a></h3>
                                                             <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
                                                                 <div class="wpb_text_column wpb_content_element ">
                                                                     <div class="wpb_wrapper">
                                                                     	 <div class="stm_item-features">
                                                                         	<div class="stm_item-features_inner">
                                                                         		<ul class="item-features_list">
-                                                                        			<li class="item-feature">1 King + 2 twin beds (trundle)</li>
-                                                                        			<li class="item-feature">Featherbed and Duvet</li>
-                                                                        			<li class="item-feature">Luxury Linens</li>
+                                                                        			<li class="item-feature">1 cama King size + 2 camas individuales (litera baja)</li>
+                                                                        			<li class="item-feature">Cama de plumas y edredón</li>
+                                                                        			<li class="item-feature">Sábanas de lujo</li>
                                                                         		</ul>
                                                                         		<ul class="item-features_list">
-                                                                        			<li class="item-feature">Extra Pillows</li>
-                                                                        			<li class="item-feature">Cribs permitted: 1 (upon request)</li>
-	                                                                        		<li class="item-feature">Maximum cribs permitted in the villa: 2</li>
+                                                                        			<li class="item-feature">Almohadas adicionales</li>
+                                                                        			<li class="item-feature">Cunas permitidas: 1 (bajo solicitud)</li>
+	                                                                        		<li class="item-feature">Máximo de cunas permitidas en la Villa:  2</li>
                                                                         		</ul>
                                                                         	</div>
                                                                         </div>
@@ -2133,7 +2204,7 @@ class Layout_View
                                                         </div>
 
                                                         <div class="wpb_accordion_section group">
-                                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#drag-drop-builder"><strong>BATHROOM FEATURES</strong></a></h3>
+                                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#drag-drop-builder"><strong>BAÑOS</strong></a></h3>
                                                             <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
                                                                 <div class="wpb_text_column wpb_content_element ">
                                                                     <div class="wpb_wrapper">
@@ -2141,14 +2212,14 @@ class Layout_View
                                                                         <div class="stm_item-features">
                                                                         	<div class="stm_item-features_inner">
                                                                         		<ul class="item-features_list">
-                                                                        			<li class="item-feature">Shower</li>
-                                                                        			<li class="item-feature">Top Brand Toiletries</li>
-                                                                        			<li class="item-feature">Robes: 2</li>
+                                                                        			<li class="item-feature">Ducha</li>
+                                                                        			<li class="item-feature">Artículos de tocador de las mejores marcas</li>
+                                                                        			<li class="item-feature">Batas: 2</li>
                                                                         		</ul>
                                                                         		<ul class="item-features_list">
-                                                                        			<li class="item-feature">Slippers</li>
-                                                                        			<li class="item-feature">Hair dryer</li>
-                                                                        			<li class="item-feature">Make-up mirror</li>
+                                                                        			<li class="item-feature">Pantuflas</li>
+                                                                        			<li class="item-feature">Secadora de cabello</li>
+                                                                        			<li class="item-feature">Espejo de aumento</li>
                                                                         		</ul>
                                                                         	</div>
                                                                         </div>
@@ -2156,23 +2227,22 @@ class Layout_View
                                                                 </div>
                                                             </div>
                                                         </div>
-
 														<div class="wpb_accordion_section group">
-                                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#drag-drop-builder"><strong>AMENITIES</strong></a></h3>
+                                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#drag-drop-builder"><strong>AMENIDADES</strong></a></h3>
                                                             <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
                                                                 <div class="wpb_text_column wpb_content_element ">
                                                                     <div class="wpb_wrapper">
                                                                         <div class="stm_item-features">
                                                                         	<div class="stm_item-features_inner">
                                                                         		<ul class="item-features_list">
-	                                                                     			<li class="item-feature">46" Led TV</li>
-	                                                                     			<li class="item-feature">Cable TV</li>
-	                                                                     			<li class="item-feature">DVD Player</li>
+	                                                                     			<li class="item-feature">Televisor Led de 42”</li>
+	                                                                     			<li class="item-feature">Televisión por cable</li>
+	                                                                     			<li class="item-feature">Reproductor de DVD</li>
 	                                                                     		</ul>
 	                                                                     		<ul class="item-features_list">
-	                                                                     			<li class="item-feature">In room Safe</li>
-	                                                                     			<li class="item-feature">IPod dock with alarm clock</li>
-	                                                                     			<li class="item-feature">Iron and ironing board upon request</li>
+	                                                                     			<li class="item-feature">Caja de seguridad</li>
+	                                                                     			<li class="item-feature">Base para IPod con reloj despertador</li>
+	                                                                     			<li class="item-feature">Plancha y tabla para planchar, bajo solicitud</li>
 	                                                                     		</ul>
                                                                         	</div>
                                                                         </div>
@@ -2182,17 +2252,17 @@ class Layout_View
                                                         </div>
 
 														<div class="wpb_accordion_section group">
-                                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#drag-drop-builder"><strong>COMMUNICATION</strong></a></h3>
+                                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#drag-drop-builder"><strong>COMUNICACIÓN</strong></a></h3>
                                                             <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
                                                                 <div class="wpb_text_column wpb_content_element ">
                                                                     <div class="wpb_wrapper">
                                                                         <div class="stm_item-features">
                                                                         	<div class="stm_item-features_inner">
                                                                         		<ul class="item-features_list_extended">
-	                                                                     			<li class="item-feature">1 Phone</li>
-	                                                                     			<li class="item-feature">Phone features: Room to room, Domestic and International service (through VOIP)</li>
-	                                                                     			<li class="item-feature">Free domestic, U.S. and Canada calls</li>
-	                                                                     			<li class="item-feature">Wireless Internet, free of charge</li>
+	                                                                     			<li class="item-feature">Teléfonos: 1</li>
+	                                                                     			<li class="item-feature">Servicio telefónico: De habitación a habitación, servicio local, nacional e internacional (a través de VOIP).</li>
+	                                                                     			<li class="item-feature">Llamadas locales, nacionales y a Estados Unidos y Canadá gratis.</li>
+	                                                                     			<li class="item-feature">Internet Inalámbrico sin costo.</li>
 	                                                                     		</ul>
                                                                         	</div>
                                                                         </div>
@@ -2200,18 +2270,19 @@ class Layout_View
                                                                 </div>
                                                             </div>
                                                         </div>
+                                                        
 
                                                         <div class="wpb_accordion_section group">
-                                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#drag-drop-builder"><strong>HOSPITALITY SERVICES</strong></a></h3>
+                                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#drag-drop-builder"><strong>SERVICIOS EN LA HABITACIÓN</strong></a></h3>
                                                             <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
                                                                 <div class="wpb_text_column wpb_content_element ">
                                                                     <div class="wpb_wrapper">
                                                                         <div class="stm_item-features">
 	                                                                     	<div class="stm_item-features_inner">
 	                                                                     		<ul class="item-features_list_extended">
-	                                                                     			<li class="item-feature">Afternoon turndown service</li>
-	                                                                     			<li class="item-feature">Newspaper delivered to your room upon request (Please advice your Villa Host one week prior to arrival with your Newspaper preference to check availability).
-</li>
+	                                                                     			<li class="item-feature">Servicio de cortesía nocturna</li>
+	                                                                     			<li class="item-feature">Entrega de periódico a la habitación,                                                                                         bajo solicitud (Favor de informar a su anfitrión de villa                                                                                           sobre el periódico de su preferencia, con una semana de                                                                                             anticipación a su llegada, para verificar la disponibilidad                                                                                         del mismo. 
+                                                                                    </li>
 	                                                                     		</ul>
 	                                                                     	</div>
                                                                        </div>
@@ -2221,7 +2292,6 @@ class Layout_View
                                                         </div>
                                                     </div>
                                                 </div>
-                                            
                                         </div>
                                     </div>
                                 </div>
@@ -2234,7 +2304,7 @@ class Layout_View
                                         	<div class="rental-service_item">
                                             	<div class="rs-item_inner">
                                             		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="b3" href="/images/overview/the-rooms/Villa_Aqua_bedroom_3.jpg"><i class="fa fa-search-plus"></i></a>
+                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/the-rooms/Villa_Aqua_bedroom_3.jpg"><i class="fa fa-search-plus"></i></a>
                                             		</div>
                                             		<div class="rs-item_content">
                                             			<img width="1140" height="676" src="/images/overview/the-rooms/Villa_Aqua_bedroom_3.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
@@ -2245,7 +2315,7 @@ class Layout_View
                                             <div class="rental-service_item">
                                             	<div class="rs-item_inner">
                                             		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="b3" href="/images/overview/the-rooms/Villa_Aqua_bedroom_3.1.jpg"><i class="fa fa-search-plus"></i></a>
+                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/the-rooms/Villa_Aqua_bedroom_3.1.jpg"><i class="fa fa-search-plus"></i></a>
                                             		</div>
                                             		<div class="rs-item_content">
                                             			<img width="1140" height="676" src="/images/overview/the-rooms/Villa_Aqua_bedroom_3.1.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
@@ -2256,7 +2326,7 @@ class Layout_View
                                             <div class="rental-service_item">
                                             	<div class="rs-item_inner">
                                             		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="b3" href="/images/overview/the-rooms/Villa_Aqua_bedroom_3.2.jpg"><i class="fa fa-search-plus"></i></a>
+                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/the-rooms/Villa_Aqua_bedroom_3.2.jpg"><i class="fa fa-search-plus"></i></a>
                                             		</div>
                                             		<div class="rs-item_content">
                                             			<img width="1140" height="676" src="/images/overview/the-rooms/Villa_Aqua_bedroom_3.2.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
@@ -2267,7 +2337,7 @@ class Layout_View
                                             <div class="rental-service_item">
                                             	<div class="rs-item_inner">
                                             		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="b3" href="/images/overview/the-rooms/Villa_Aqua_bedroom_3.4_antes_mapa.jpg"><i class="fa fa-search-plus"></i></a>
+                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/the-rooms/Villa_Aqua_bedroom_3.4_antes_mapa.jpg"><i class="fa fa-search-plus"></i></a>
                                             		</div>
                                             		<div class="rs-item_content">
                                             			<img width="1140" height="676" src="/images/overview/the-rooms/Villa_Aqua_bedroom_3.4_antes_mapa.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
@@ -2278,7 +2348,7 @@ class Layout_View
                                             <div class="rental-service_item">
                                             	<div class="rs-item_inner">
                                             		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="b3" href="/images/overview/the-rooms/Villa_Aqua_bedroom_3.3.jpg"><i class="fa fa-search-plus"></i></a>
+                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/the-rooms/Villa_Aqua_bedroom_3.3.jpg"><i class="fa fa-search-plus"></i></a>
                                             		</div>
                                             		<div class="rs-item_content">
                                             			<img width="1140" height="676" src="/images/overview/the-rooms/Villa_Aqua_bedroom_3.3.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
@@ -2309,7 +2379,7 @@ class Layout_View
                                         	<div class="rental-service_item">
                                             	<div class="rs-item_inner">
                                             		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="b4" href="/images/overview/the-rooms/Villa_Aqua_bedroom_4_new.jpg"><i class="fa fa-search-plus"></i></a>
+                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/the-rooms/Villa_Aqua_bedroom_4_new.jpg"><i class="fa fa-search-plus"></i></a>
                                             		</div>
                                             		<div class="rs-item_content">
                                             			<img width="1140" height="676" src="/images/overview/the-rooms/Villa_Aqua_bedroom_4_new.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
@@ -2320,7 +2390,7 @@ class Layout_View
                                             <div class="rental-service_item">
                                             	<div class="rs-item_inner">
                                             		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="b4" href="/images/overview/the-rooms/Villa_Aqua_bedroom_4_new_02.jpg"><i class="fa fa-search-plus"></i></a>
+                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/the-rooms/Villa_Aqua_bedroom_4_new_02.jpg"><i class="fa fa-search-plus"></i></a>
                                             		</div>
                                             		<div class="rs-item_content">
                                             			<img width="1140" height="676" src="/images/overview/the-rooms/Villa_Aqua_bedroom_4_new_02.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
@@ -2331,7 +2401,7 @@ class Layout_View
                                             <div class="rental-service_item">
                                             	<div class="rs-item_inner">
                                             		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="b4" href="/images/overview/the-rooms/Villa_Aqua_bedroom_4_new_03.jpg"><i class="fa fa-search-plus"></i></a>
+                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/the-rooms/Villa_Aqua_bedroom_4_new_03.jpg"><i class="fa fa-search-plus"></i></a>
                                             		</div>
                                             		<div class="rs-item_content">
                                             			<img width="1140" height="676" src="/images/overview/the-rooms/Villa_Aqua_bedroom_4_new_03.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
@@ -2342,7 +2412,7 @@ class Layout_View
                                         	<div class="rental-service_item">
                                             	<div class="rs-item_inner">
                                             		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="b4" href="/images/overview/the-rooms/Villa_Aqua_bedroom_4.1.jpg"><i class="fa fa-search-plus"></i></a>
+                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/the-rooms/Villa_Aqua_bedroom_4.1.jpg"><i class="fa fa-search-plus"></i></a>
                                             		</div>
                                             		<div class="rs-item_content">
                                             			<img width="1140" height="676" src="/images/overview/the-rooms/Villa_Aqua_bedroom_4.1.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
@@ -2353,7 +2423,7 @@ class Layout_View
                                         	<div class="rental-service_item">
                                             	<div class="rs-item_inner">
                                             		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="b4" href="/images/overview/the-rooms/Villa_Aqua_bedroom_4.2.jpg"><i class="fa fa-search-plus"></i></a>
+                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/the-rooms/Villa_Aqua_bedroom_4.2.jpg"><i class="fa fa-search-plus"></i></a>
                                             		</div>
                                             		<div class="rs-item_content">
                                             			<img width="1140" height="676" src="/images/overview/the-rooms/Villa_Aqua_bedroom_4.2.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
@@ -2368,7 +2438,7 @@ class Layout_View
                             <div class="vc_col-sm-6 wpb_column vc_column_container ">
                                 <div class="wpb_wrapper">
                                     <div class="vc_custom_heading">
-                                        <h2 style="color: 333;text-align: left;font-weight:300;font-style:normal">Bedroom 4</h2>
+                                        <h2 style="color: 333;text-align: left;font-weight:300;font-style:normal">HABITACIÓN 4</h2>
                                     </div>
                                     <div class="ult-spacer spacer-56253aed585bd" data-id="56253aed585bd" data-height="25" data-height-mobile="25" data-height-tab="25" data-height-tab-portrait="25" data-height-mobile-landscape="25" style="clear:both;display:block;"></div>
                                     <div class="wpb_text_column wpb_content_element ">
@@ -2376,20 +2446,20 @@ class Layout_View
                                             <div class="wpb_accordion wpb_content_element  not-column-inherit" data-collapsible="" data-vc-disable-keydown="false" data-active-tab="1">
                                                     <div class="wpb_wrapper wpb_accordion_wrapper ui-accordion">
                                                         <div class="wpb_accordion_section group">
-                                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post"><strong>ROOM FEATURES</strong></a></h3>
+                                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post"><strong>Características</strong></a></h3>
                                                             <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
                                                                 <div class="wpb_text_column wpb_content_element ">
                                                                     <div class="wpb_wrapper">
                                                                         <div class="stm_item-features">
                                                                         	<div class="stm_item-features_inner">
                                                                         		<ul class="item-features_list">
-                                                                        			<li class="item-feature">Maximum Occupancy: 2</li>
-                                                                        			<li class="item-feature">246 sq. ft. / 23m</li>
-	                                                                        		<li class="item-feature">Air-conditioned</li>
+                                                                        			<li class="item-feature">Máxima ocupación: 2 personas</li>
+                                                                        			<li class="item-feature">23 m2/ 246 pies2</li>
+	                                                                        		<li class="item-feature">Aire acondicionado</li>
                                                                         		</ul>
                                                                         		<ul class="item-features_list">
-	                                                                        		<li class="item-feature">Access to terrace and pool</li>
-	                                                                        		<li class="item-feature">Glass sliding doors</li>
+	                                                                        		<li class="item-feature">Acceso a la terraza y piscina</li>
+	                                                                        		<li class="item-feature">Puertas de vidrio corredizas</li>
                                                                         		</ul>
                                                                         	</div>
                                                                         </div>
@@ -2397,23 +2467,24 @@ class Layout_View
                                                                 </div>
                                                             </div>
                                                         </div>
+                                          
 
                                                         <div class="wpb_accordion_section group">
-                                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#optimised-for-speed"><strong>BEDS & BEDDING</strong></a></h3>
+                                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#optimised-for-speed"><strong>Camas</strong></a></h3>
                                                             <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
                                                                 <div class="wpb_text_column wpb_content_element ">
                                                                     <div class="wpb_wrapper">
                                                                     	 <div class="stm_item-features">
                                                                         	<div class="stm_item-features_inner">
                                                                         		<ul class="item-features_list">
-                                                                        			<li class="item-feature">1 King bed</li>
-                                                                        			<li class="item-feature">Featherbed and Duvet</li>
-                                                                        			<li class="item-feature">Luxury Linens</li>
+                                                                        			<li class="item-feature">1 cama King size</li>
+                                                                        			<li class="item-feature">Cama de plumas y edredón</li>
+                                                                        			<li class="item-feature">Sábanas de lujo</li>
                                                                         		</ul>
                                                                         		<ul class="item-features_list">
-                                                                        			<li class="item-feature">Extra Pillows</li>
-                                                                        			<li class="item-feature">Cribs permitted: 1 (upon request)</li>
-	                                                                        		<li class="item-feature">Maximum cribs permitted in the villa: 2</li>
+                                                                        			<li class="item-feature">Almohadas adicionales</li>
+                                                                        			<li class="item-feature">Cunas permitidas: 1 (bajo solicitud)</li>
+	                                                                        		<li class="item-feature">Máximo de cunas permitidas en la Villa: 2</li>
                                                                         		</ul>
                                                                         	</div>
                                                                         </div>
@@ -2421,9 +2492,16 @@ class Layout_View
                                                                 </div>
                                                             </div>
                                                         </div>
+                                                        
+
+
+
+
+
+
 
                                                         <div class="wpb_accordion_section group">
-                                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#drag-drop-builder"><strong>BATHROOM FEATURES</strong></a></h3>
+                                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#drag-drop-builder"><strong>Baños</strong></a></h3>
                                                             <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
                                                                 <div class="wpb_text_column wpb_content_element ">
                                                                     <div class="wpb_wrapper">
@@ -2431,14 +2509,14 @@ class Layout_View
                                                                         <div class="stm_item-features">
                                                                         	<div class="stm_item-features_inner">
                                                                         		<ul class="item-features_list">
-                                                                        			<li class="item-feature">Shower</li>
-                                                                        			<li class="item-feature">Top Brand Toiletries</li>
-                                                                        			<li class="item-feature">Robes: 2</li>
+                                                                        			<li class="item-feature">Ducha</li>
+                                                                        			<li class="item-feature">Artículos de tocador de las mejores marcas</li>
+                                                                        			<li class="item-feature">Batas: 2</li>
                                                                         		</ul>
                                                                         		<ul class="item-features_list">
-                                                                        			<li class="item-feature">Slippers</li>
-                                                                        			<li class="item-feature">Hair dryer</li>
-                                                                        			<li class="item-feature">Make-up mirror</li>
+                                                                        			<li class="item-feature">Pantuflas</li>
+                                                                        			<li class="item-feature">Secadora de cabello</li>
+                                                                        			<li class="item-feature">Espejo de aumento</li>
                                                                         		</ul>
                                                                         	</div>
                                                                         </div>
@@ -2448,21 +2526,21 @@ class Layout_View
                                                         </div>
 
 														<div class="wpb_accordion_section group">
-                                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#drag-drop-builder"><strong>AMENITIES</strong></a></h3>
+                                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#drag-drop-builder"><strong>Amenidades</strong></a></h3>
                                                             <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
                                                                 <div class="wpb_text_column wpb_content_element ">
                                                                     <div class="wpb_wrapper">
                                                                         <div class="stm_item-features">
                                                                         	<div class="stm_item-features_inner">
                                                                         		<ul class="item-features_list">
-	                                                                     			<li class="item-feature">32" Led TV</li>
-	                                                                     			<li class="item-feature">Cable TV</li>
-	                                                                     			<li class="item-feature">DVD Player</li>
+	                                                                     			<li class="item-feature">Televisor Led de 32”</li>
+	                                                                     			<li class="item-feature">Televisión por cable</li>
+	                                                                     			<li class="item-feature">Reproductor de DVD</li>
 	                                                                     		</ul>
 	                                                                     		<ul class="item-features_list">
-	                                                                     			<li class="item-feature">Safe box</li>
-	                                                                     			<li class="item-feature">IPod dock with alarm clock</li>
-	                                                                     			<li class="item-feature">Iron and ironing board upon request</li>
+	                                                                     			<li class="item-feature">Caja de seguridad</li>
+	                                                                     			<li class="item-feature">Base para IPod con reloj despertador</li>
+	                                                                     			<li class="item-feature">Plancha y tabla para planchar, bajo solicitud</li>
 	                                                                     		</ul>
                                                                         	</div>
                                                                         </div>
@@ -2472,17 +2550,17 @@ class Layout_View
                                                         </div>
 
 														<div class="wpb_accordion_section group">
-                                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#drag-drop-builder"><strong>COMMUNICATION</strong></a></h3>
+                                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#drag-drop-builder"><strong>Comunicación</strong></a></h3>
                                                             <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
                                                                 <div class="wpb_text_column wpb_content_element ">
                                                                     <div class="wpb_wrapper">
                                                                         <div class="stm_item-features">
                                                                         	<div class="stm_item-features_inner">
                                                                         		<ul class="item-features_list_extended">
-	                                                                     			<li class="item-feature">1 Phone</li>
-	                                                                     			<li class="item-feature">Phone features: Room to room, Domestic and International service (through VOIP)</li>
-	                                                                     			<li class="item-feature">Free domestic, U.S. and Canada calls</li>
-	                                                                     			<li class="item-feature">Wireless Internet, free of charge</li>
+	                                                                     			<li class="item-feature">Teléfonos: 1</li>
+	                                                                     			<li class="item-feature">Servicio telefónico: De habitación a habitación, servicio local, nacional e internacional (a través de VOIP).</li>
+	                                                                     			<li class="item-feature">Llamadas locales, nacionales y a Estados Unidos y Canadá gratis.</li>
+	                                                                     			<li class="item-feature">Internet Inalámbrico sin costo.</li>
 	                                                                     		</ul>
                                                                         	</div>
                                                                         </div>
@@ -2490,18 +2568,18 @@ class Layout_View
                                                                 </div>
                                                             </div>
                                                         </div>
-
+                                       
                                                         <div class="wpb_accordion_section group">
-                                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#drag-drop-builder"><strong>HOSPITALITY SERVICES</strong></a></h3>
+                                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#drag-drop-builder"><strong>Servicios en la habitación</strong></a></h3>
                                                             <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
                                                                 <div class="wpb_text_column wpb_content_element ">
                                                                     <div class="wpb_wrapper">
                                                                         <div class="stm_item-features">
 	                                                                     	<div class="stm_item-features_inner">
 	                                                                     		<ul class="item-features_list_extended">
-	                                                                     			<li class="item-feature">Afternoon turndown service</li>
-	                                                                     			<li class="item-feature">Newspaper delivered to your room upon request (Please advice your Villa Host one week prior to arrival with your Newspaper preference to check availability).
-</li>
+	                                                                     			<li class="item-feature">Servicio de cortesía nocturna</li>
+	                                                                     			<li class="item-feature">Entrega de periódico a la habitación,                                                                                         bajo solicitud (Favor de informar a su anfitrión de villa                                                                                           sobre el periódico de su preferencia, con una semana de                                                                                             anticipación a su llegada, para verificar la disponibilidad                                                                                         del mismo).
+                                                                                    </li>
 	                                                                     		</ul>
 	                                                                     	</div>
                                                                        </div>
@@ -2531,7 +2609,7 @@ class Layout_View
                             <div class="vc_col-sm-6 wpb_column vc_column_container ">
                                 <div class="wpb_wrapper">
                                     <div class="vc_custom_heading">
-                                        <h2 style="color: #333; font-weight:300;font-style:normal; text-align: right;">Bedroom 5</h2>
+                                        <h2 style="color: #333; font-weight:300;font-style:normal; text-align: right;">HABITACIÓN 5</h2>
                                     </div>
                                     <div class="ult-spacer spacer-56253aed5c7a5" data-id="56253aed5c7a5" data-height="25" data-height-mobile="25" data-height-tab="25" data-height-tab-portrait="25" data-height-mobile-landscape="25" style="clear:both;display:block;"></div>
                                     <div class="wpb_text_column wpb_content_element ">
@@ -2540,20 +2618,20 @@ class Layout_View
                                             <div class="wpb_accordion wpb_content_element  not-column-inherit" data-collapsible="" data-vc-disable-keydown="false" data-active-tab="1">
                                                     <div class="wpb_wrapper wpb_accordion_wrapper ui-accordion">
                                                         <div class="wpb_accordion_section group">
-                                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post"><strong>ROOM FEATURES</strong></a></h3>
+                                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post"><strong>Características</strong></a></h3>
                                                             <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
                                                                 <div class="wpb_text_column wpb_content_element ">
                                                                     <div class="wpb_wrapper">
                                                                         <div class="stm_item-features">
                                                                         	<div class="stm_item-features_inner">
                                                                         		<ul class="item-features_list">
-                                                                        			<li class="item-feature">Maximum Occupancy: 2</li>
-                                                                        			<li class="item-feature">220 sq. ft. / 20m</li>
-	                                                                        		<li class="item-feature">Air-conditioned</li>
+                                                                        			<li class="item-feature">Máxima ocupación: 2 personas</li>
+                                                                        			<li class="item-feature">20 m2/ 220 pies2</li>
+	                                                                        		<li class="item-feature">Aire acondicionado</li>
                                                                         		</ul>
                                                                         		<ul class="item-features_list">
-	                                                                        		<li class="item-feature">Access to terrace and pool</li>
-	                                                                        		<li class="item-feature">Windows may be opened</li>
+	                                                                        		<li class="item-feature">Acceso a la terraza y la piscina</li>
+	                                                                        		<li class="item-feature">Se pueden abrir las ventanas</li>
                                                                         		</ul>
                                                                         	</div>
                                                                         </div>
@@ -2563,21 +2641,21 @@ class Layout_View
                                                         </div>
 
                                                         <div class="wpb_accordion_section group">
-                                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#optimised-for-speed"><strong>BEDS & BEDDING</strong></a></h3>
+                                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#optimised-for-speed"><strong>Camas</strong></a></h3>
                                                             <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
                                                                 <div class="wpb_text_column wpb_content_element ">
                                                                     <div class="wpb_wrapper">
                                                                     	 <div class="stm_item-features">
                                                                         	<div class="stm_item-features_inner">
                                                                         		<ul class="item-features_list">
-                                                                        			<li class="item-feature">1 King bed</li>
-                                                                        			<li class="item-feature">Featherbed and Duvet</li>
-                                                                        			<li class="item-feature">Luxury Linens</li>
+                                                                        			<li class="item-feature">1 cama King size</li>
+                                                                        			<li class="item-feature">Cama de plumas y edredón</li>
+                                                                        			<li class="item-feature">Sábanas de lujo</li>
                                                                         		</ul>
                                                                         		<ul class="item-features_list">
-                                                                        			<li class="item-feature">Extra Pillows</li>
-                                                                        			<li class="item-feature">Cribs permitted: 1 (upon request)</li>
-	                                                                        		<li class="item-feature">Maximum cribs permitted in the villa: 2</li>
+                                                                        			<li class="item-feature">Almohadas adicionales</li>
+                                                                        			<li class="item-feature">Cunas permitidas: 1 (bajo solicitud)</li>
+	                                                                        		<li class="item-feature">Máximo de cunas permitidas en la Villa: 2</li>
                                                                         		</ul>
                                                                         	</div>
                                                                         </div>
@@ -2587,7 +2665,7 @@ class Layout_View
                                                         </div>
 
                                                         <div class="wpb_accordion_section group">
-                                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#drag-drop-builder"><strong>BATHROOM FEATURES</strong></a></h3>
+                                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#drag-drop-builder"><strong>Baños</strong></a></h3>
                                                             <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
                                                                 <div class="wpb_text_column wpb_content_element ">
                                                                     <div class="wpb_wrapper">
@@ -2595,15 +2673,15 @@ class Layout_View
                                                                         <div class="stm_item-features">
                                                                         	<div class="stm_item-features_inner">
                                                                         		<ul class="item-features_list">
-                                                                        			<li class="item-feature">Shared bathroom with pool / gym area</li>
-                                                                        			<li class="item-feature">Shower</li>
-                                                                        			<li class="item-feature">Top Brand Toiletries</li>
-                                                                        			<li class="item-feature">Robes: 2</li>
+                                                                        			<li class="item-feature">Baño compartido con area de piscina/gimnasio</li>
+                                                                        			<li class="item-feature">Ducha</li>
+                                                                        			<li class="item-feature">Artículos de tocador de las mejores marcas</li>
+                                                                        			<li class="item-feature">Batas: 2</li>
                                                                         		</ul>
                                                                         		<ul class="item-features_list">
-                                                                        			<li class="item-feature">Slippers</li>
-                                                                        			<li class="item-feature">Hair dryer</li>
-                                                                        			<li class="item-feature">Make-up mirror</li>
+                                                                        			<li class="item-feature">Pantuflas</li>
+                                                                        			<li class="item-feature">Secadora de cabello</li>
+                                                                        			<li class="item-feature">Espejo de aumento</li>
                                                                         		</ul>
                                                                         	</div>
                                                                         </div>
@@ -2613,21 +2691,21 @@ class Layout_View
                                                         </div>
 
 														<div class="wpb_accordion_section group">
-                                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#drag-drop-builder"><strong>AMENITIES</strong></a></h3>
+                                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#drag-drop-builder"><strong>Amenidades</strong></a></h3>
                                                             <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
                                                                 <div class="wpb_text_column wpb_content_element ">
                                                                     <div class="wpb_wrapper">
                                                                         <div class="stm_item-features">
                                                                         	<div class="stm_item-features_inner">
                                                                         		<ul class="item-features_list">
-	                                                                     			<li class="item-feature">42" Led TV</li>
-	                                                                     			<li class="item-feature">Cable TV</li>
-	                                                                     			<li class="item-feature">Body Mirror</li>
+	                                                                     			<li class="item-feature">Televisor Led de 42”</li>
+	                                                                     			<li class="item-feature">Televisión por cable</li>
+	                                                                     			<li class="item-feature">Espejo de cuerpo entero</li>
 	                                                                     		</ul>
 	                                                                     		<ul class="item-features_list">
-	                                                                     			<li class="item-feature">Safe box</li>
-	                                                                     			<li class="item-feature">IPod dock with alarm clock</li>
-	                                                                     			<li class="item-feature">Iron and ironing board upon request</li>
+	                                                                     			<li class="item-feature">Caja de seguridad</li>
+	                                                                     			<li class="item-feature">Base para IPod con reloj despertador</li>
+	                                                                     			<li class="item-feature">Plancha y tabla para planchar, bajo solicitud</li>
 	                                                                     		</ul>
                                                                         	</div>
                                                                         </div>
@@ -2637,17 +2715,19 @@ class Layout_View
                                                         </div>
 
 														<div class="wpb_accordion_section group">
-                                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#drag-drop-builder"><strong>COMMUNICATION</strong></a></h3>
+                                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#drag-drop-builder"><strong>Comunicación</strong></a></h3>
                                                             <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
                                                                 <div class="wpb_text_column wpb_content_element ">
                                                                     <div class="wpb_wrapper">
                                                                         <div class="stm_item-features">
                                                                         	<div class="stm_item-features_inner">
                                                                         		<ul class="item-features_list_extended">
-	                                                                     			<li class="item-feature">1 Phone</li>
-	                                                                     			<li class="item-feature">Phone features: Room to room, Domestic and International service (through VOIP)</li>
-	                                                                     			<li class="item-feature">Free domestic, U.S. and Canada calls</li>
-	                                                                     			<li class="item-feature">Wireless Internet, free of charge</li>
+	                                                                     			<li class="item-feature">Teléfonos: 1</li>
+	                                                                     			<li class="item-feature">Servicio telefónico: De habitación a                                                                                                                 habitación, servicio local, nacional e                                                                                                               internacional (a través de VOIP).
+                                                                                    </li>
+	                                                                     			<li class="item-feature">Llamadas locales, nacionales y a                                                                                                                      Estados Unidos y Canadá gratis.
+                                                                                    </li>
+	                                                                     			<li class="item-feature">Internet Inalámbrico sin costo.</li>
 	                                                                     		</ul>
                                                                         	</div>
                                                                         </div>
@@ -2657,16 +2737,16 @@ class Layout_View
                                                         </div>
 
                                                         <div class="wpb_accordion_section group">
-                                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#drag-drop-builder"><strong>HOSPITALITY SERVICES</strong></a></h3>
+                                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#drag-drop-builder"><strong>Servicios en la habitación</strong></a></h3>
                                                             <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
                                                                 <div class="wpb_text_column wpb_content_element ">
                                                                     <div class="wpb_wrapper">
                                                                         <div class="stm_item-features">
 	                                                                     	<div class="stm_item-features_inner">
 	                                                                     		<ul class="item-features_list_extended">
-	                                                                     			<li class="item-feature">Afternoon turndown service</li>
-	                                                                     			<li class="item-feature">Newspaper delivered to your room upon request (Please advice your Villa Host one week prior to arrival with your Newspaper preference to check availability).
-</li>
+	                                                                     			<li class="item-feature"> Servicio de cortesía nocturna</li>
+	                                                                     			<li class="item-feature">Entrega de periódico a la habitación,                                                                                             bajo solicitud (Favor de informar a su anfitrión de villa                                                                                           sobre el periódico de su preferencia, con una semana de                                                                                             anticipación a su llegada, para verificar la                                                                                                         disponibilidad del mismo)
+                                                                                    </li>
 	                                                                     		</ul>
 	                                                                     	</div>
                                                                        </div>
@@ -2676,8 +2756,6 @@ class Layout_View
                                                         </div>
                                                     </div>
                                                 </div>
-                                            
-                                            
                                         </div>
                                     </div>
                                 </div>
@@ -2691,7 +2769,7 @@ class Layout_View
                                         	<div class="rental-service_item">
                                             	<div class="rs-item_inner">
                                             		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="b5" href="/images/overview/the-rooms/Villa_Aqua_bedroom_5.jpg"><i class="fa fa-search-plus"></i></a>
+                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/the-rooms/Villa_Aqua_bedroom_5.jpg"><i class="fa fa-search-plus"></i></a>
                                             		</div>
                                             		<div class="rs-item_content">
                                             			<img width="1140" height="676" src="/images/overview/the-rooms/Villa_Aqua_bedroom_5.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
@@ -2702,7 +2780,7 @@ class Layout_View
                                         	<div class="rental-service_item">
                                             	<div class="rs-item_inner">
                                             		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="b5" href="/images/overview/the-rooms/Villa_Aqua_bedroom_5.3.jpg"><i class="fa fa-search-plus"></i></a>
+                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/the-rooms/Villa_Aqua_bedroom_5.3.jpg"><i class="fa fa-search-plus"></i></a>
                                             		</div>
                                             		<div class="rs-item_content">
                                             			<img width="1140" height="676" src="/images/overview/the-rooms/Villa_Aqua_bedroom_5.3.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
@@ -2713,7 +2791,7 @@ class Layout_View
                                             <div class="rental-service_item">
                                             	<div class="rs-item_inner">
                                             		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="b5" href="/images/overview/the-rooms/Villa_Aqua_bedroom_5.1.jpg"><i class="fa fa-search-plus"></i></a>
+                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/the-rooms/Villa_Aqua_bedroom_5.1.jpg"><i class="fa fa-search-plus"></i></a>
                                             		</div>
                                             		<div class="rs-item_content">
                                             			<img width="1140" height="676" src="/images/overview/the-rooms/Villa_Aqua_bedroom_5.1.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
@@ -2724,7 +2802,7 @@ class Layout_View
                                             <div class="rental-service_item">
                                             	<div class="rs-item_inner">
                                             		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="b5" href="/images/overview/the-rooms/Villa_Aqua_bedroom_2.1.jpg"><i class="fa fa-search-plus"></i></a>
+                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/the-rooms/Villa_Aqua_bedroom_2.1.jpg"><i class="fa fa-search-plus"></i></a>
                                             		</div>
                                             		<div class="rs-item_content">
                                             			<img width="1140" height="676" src="/images/overview/the-rooms/Villa_Aqua_bedroom_2.1.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
@@ -2735,7 +2813,7 @@ class Layout_View
                                             <div class="rental-service_item">
                                             	<div class="rs-item_inner">
                                             		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="b5" href="/images/overview/the-rooms/Villa_Aqua_bedroom_5.4_antes_mapa.jpg"><i class="fa fa-search-plus"></i></a>
+                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/the-rooms/Villa_Aqua_bedroom_5.4_antes_mapa.jpg"><i class="fa fa-search-plus"></i></a>
                                             		</div>
                                             		<div class="rs-item_content">
                                             			<img width="1140" height="676" src="/images/overview/the-rooms/Villa_Aqua_bedroom_5.4_antes_mapa.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
@@ -2746,7 +2824,7 @@ class Layout_View
                                             <div class="rental-service_item">
                                             	<div class="rs-item_inner">
                                             		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="b5" href="/images/overview/the-rooms/Villa_Aqua_bedroom_5.2.jpg"><i class="fa fa-search-plus"></i></a>
+                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/the-rooms/Villa_Aqua_bedroom_5.2.jpg"><i class="fa fa-search-plus"></i></a>
                                             		</div>
                                             		<div class="rs-item_content">
                                             			<img width="1140" height="676" src="/images/overview/the-rooms/Villa_Aqua_bedroom_5.2.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
@@ -2765,12 +2843,6 @@ class Layout_View
                         <!-- Row Backgrounds -->
                     <!-- /Bedroom 5 -->
                     </article>
-                    <div class="ult-spacer spacer-561be2953972e" data-id="561be2953972e" data-height="52" data-height-mobile="52" data-height-tab="52" data-height-tab-portrait="52" data-height-mobile-landscape="52" style="clear:both;display:block;"></div>
-					<div class="ult-animation ult-animate-viewport ult-no-mobile " data-animate="fadeIn " data-animation-delay="0 " data-animation-duration="1.5 " data-animation-iteration="1 " style="opacity:0; " data-opacity_start_effect="95 ">
-					    <div class="vc_btn3-container vc_btn3-center ">
-					        <a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-square vc_btn3-style-outline vc_btn3-color-chino" href="/living-spaces/" title="" target="_self">LEARN MORE</a>
-					    </div>
-					</div>
                 </div>
             </div>
          </div>
@@ -2824,7 +2896,7 @@ class Layout_View
                             <div class="vc_col-sm-6 wpb_column vc_column_container ">
                                 <div class="wpb_wrapper">
                                     <div class="vc_custom_heading">
-                                        <h2 style="color: 333;text-align: left;font-weight:300;font-style:normal">Living Room</h2>
+                                        <h2 style="color: 333;text-align: left;font-weight:300;font-style:normal">SALA</h2>
                                     </div>
                                     <div class="ult-spacer spacer-56253aed4f277" data-id="56253aed4f277" data-height="25" data-height-mobile="25" data-height-tab="25" data-height-tab-portrait="25" data-height-mobile-landscape="25" style="clear:both;display:block;"></div>
                                     <div class="wpb_text_column wpb_content_element ">
@@ -2833,12 +2905,23 @@ class Layout_View
                                         <div class="wpb_column vc_column_container ">
                                             <div class="wpb_wrapper">
 												<p class="paragraph ng-attr-widget">
-													A wide front door swings open to its great room,<strong> an expansive air-conditioned area that creates the illusion 
-													of being outdoors by means of its interior garden, 39ft /12mt high ceiling and curved glass wall windows cover 
-													the entire side of the room with garden and pool views</strong>. The living room is the place to relax with your favorite music, 
-													read a book or plan the next day activities with the rest of your group. The interior garden and fountain gives 
-													this area a Zen touch that you will enjoy while sitting in the comfortable sofas.
+													La gran puerta exterior se abre para dar acceso al amplio y armonioso  
+                                                    espacio en donde se alberga la sala. <strong>El jardín interior, sus inmensos 
+                                                    ventanales con vista a la alberca y los jardines, así como su triple 
+                                                    altura (12m / 39 pies) nos hacen sentir que estamos afuera, pero con 
+                                                    la comodidad del aire acondicionado. </strong>
+
 	                                            </p>
+                                                
+                                                <p class="paragraph ng-attr-widget">
+													La sala de Villa Aqua es el lugar ideal para relajarse escuchando su música 
+                                                    favorita, leyendo un libro o simplemente planeando, junto a su familia o 
+                                                    amigos, las actividades del día siguiente.<strong>Déjese atrapar por el toque zen 
+                                                    que sus espacios y el sonido de la fuente le regalan</strong> , mientras disfruta 
+                                                    de la vista desde los confortables sofás.
+
+	                                            </p>
+       
                                             </div>
                                         </div>
                                     </div>
@@ -3017,26 +3100,34 @@ class Layout_View
                             <div class="vc_col-sm-6 wpb_column vc_column_container ">
                                 <div class="wpb_wrapper">
                                     <div class="vc_custom_heading ">
-                                        <h2 style="color: 333;text-align: left;font-weight:300;font-style:normal">Dining Room</h2>
+                                        <h2 style="color: 333;text-align: left;font-weight:300;font-style:normal">COMEDOR</h2>
                                     </div>
                                     <div class="ult-spacer spacer-56253aed585bd" data-id="56253aed585bd" data-height="25" data-height-mobile="25" data-height-tab="25" data-height-tab-portrait="25" data-height-mobile-landscape="25" style="clear:both;display:block;"></div>
                                     <div class="wpb_text_column wpb_content_element ">
                                         <div class="wpb_wrapper">
                                         	<p class="paragraph ng-attr-widget">
-												Its circular design gives a<strong> 180 degree views of the surrounding pool and garden</strong>, 
-												an inviting dining space full of light where you can enjoy an amazing breakfast or 
-												lunch watching the full array of wildlife that visits the backyard, from colorful birds, 
-												white tailed deer and iguanas to big Coati families or "Sereques", a small animal also called 
-												"Agouti" which mainly feeds on fruits and seeds.
+												<strong>Con un diseño circular vanguardista y espectacular que permite vistas 
+                                                de 180° hacia la piscina y el jardín</strong>, este luminoso espacio en Villa Aqua, 
+                                                invita a sentarse y deleitarse, junto a su familia y amigos,  los deliciosos 
+                                                desayunos y comidas que su chef privado les preparará durante su estancia, 
+                                                mientras ven pasar desde coloridas aves tropicales hasta venados de cola 
+                                                blanca, iguanas, familias de Coatíes o “Sereques” quienes visitan el jardín 
+                                                para alimentarse de frutos y semillas.
+
                                             </p>
 	                                            
 	                                        <p class="paragraph ng-attr-widget">
-												At night, the dining room turns into a light show when the<strong> big modern chandelier reflects its lights in 
-												all the windows</strong>. It is the perfect setting to savor all the chefs' specialties.
+												Por las noches, el <strong>efecto del moderno candelabro evoca un espectáculo de 
+                                                luces que se refleja en las ventanas creando el escenario perfecto para 
+                                                saborear una cena inigualable con las especialidades del chef.</strong>
+
+
                                             </p>
                                             
                                             <p class="paragraph ng-attr-widget">
-												<strong>The coffee bar is set all day long for enjoying your morning espresso or an afternoon tea.</strong>
+												También podrá disfrutar de la barra de café, disponible durante todo 
+                                                el día, ya sea para un café espresso por la mañana o bien un relajante 
+                                                té por la tarde.
                                             </p>
                                         </div>
                                     </div>
@@ -3056,21 +3147,29 @@ class Layout_View
                             <div class="vc_col-sm-6 wpb_column vc_column_container ">
                                 <div class="wpb_wrapper">
                                     <div class="vc_custom_heading">
-                                        <h2 style="color: #333;font-weight:300;font-style:normal; text-align: right;">Family Room &amp; Bar</h2>
+                                        <h2 style="color: #333;font-weight:300;font-style:normal; text-align: right;">CUARTO DE JUEGOS Y BAR</h2>
                                     </div>
                                     <div class="ult-spacer spacer-56253aed5c7a5" data-id="56253aed5c7a5" data-height="25" data-height-mobile="25" data-height-tab="25" data-height-tab-portrait="25" data-height-mobile-landscape="25" style="clear:both;display:block;"></div>
                                     <div class="wpb_text_column wpb_content_element ">
                                         <div class="wpb_wrapper">
                                             <p class="paragraph ng-attr-widget">
-												This is one of our guest's favorite corners.<strong> With deep sofas, sunken bar and great entertainment amenities 
-												that include a 75" Led TV, Bose home theater, Apple TV with Netflix, DVD and CD library, board games and more</strong>, 
-												this area is perfect for a cocktail before dinner or to watch your favorite sports game or movie!
+												¡Este es uno de los rincones favoritos de nuestros huéspedes!<strong>Por sus 
+                                                cómodos sillones, el bar ampliamente surtido y un sinnúmero de amenidades 
+                                                para su entretenimiento: comenzando por el Televisor Led de 75”, el teatro 
+                                                en casa marca “Bose”, la biblioteca de DVDs y CDs</strong> , los juegos de mesa y 
+                                                mucho más, acompañados de la vista a la piscina y los jardines. Este es 
+                                                el lugar perfecto para ver los deportes entre amigos, una película en 
+                                                familia o bien degustar un cóctel antes de la cena.
                                             </p>
                                             
                                             <p class="paragraph ng-attr-widget">
-												For your convenience we provide an<strong> "Honor bar" with a variety of open bottles </strong>from past guests or if you prefer to drink 
-												your own, take advantage of the selection of wines and liquors that we offer, you just have to replace them or pay the 
-												price before your leave.
+												Villa Aqua lo invita a continuar la tradición de nuestro <strong>“Bar de Honor” 
+                                                un programa en el que nuestros huéspedes pasados dejan las botellas que 
+                                                no se terminaron para que los huéspedes posteriores puedan disfrutar o 
+                                                probar un trago.</strong> O bien si prefiere abrir sus propias botellas, contamos 
+                                                con una amplia selección de vinos y licores los cuales puede reemplazar 
+                                                por una botella igual o pagar las que consuma.
+
                                             </p>
                                             
                                         </div>
@@ -3219,25 +3318,33 @@ class Layout_View
                             <div class="vc_col-sm-6 wpb_column vc_column_container ">
                                 <div class="wpb_wrapper">
                                     <div class="vc_custom_heading">
-                                        <h2 style="color: 333;text-align: left;font-weight:300;font-style:normal">Library &amp; TV Room</h2>
+                                        <h2 style="color: 333;text-align: left;font-weight:300;font-style:normal">SALA DE TV Y BIBLIOTECA</h2>
                                     </div>
                                     <div class="ult-spacer spacer-56253aed585bd" data-id="56253aed585bd" data-height="25" data-height-mobile="25" data-height-tab="25" data-height-tab-portrait="25" data-height-mobile-landscape="25" style="clear:both;display:block;"></div>
                                     <div class="wpb_text_column wpb_content_element ">
                                         <div class="wpb_wrapper">
                                         	<p class="paragraph ng-attr-widget">
-												This cozy living room located on the first floor common area, is the perfect place to take a time off. 
-												There is a small but interesting <strong>collection of books</strong>  that include top readings in different languages 
-												and beautiful books about the culture, architecture, history and flora & fauna of Mexico.
+												Sin duda uno de los espacios más acogedores de Villa Aqua. 
+                                                Relájese en su cómoda sala en donde encontrará una pequeña 
+                                                pero interesante <strong>colección de libros</strong> en diferentes idiomas, 
+                                                tanto obras literarias como libros acerca de la cultura, 
+                                                arquitectura, historia, y la flora y fauna de México.
+
                                             </p>
                                             
                                             <p class="paragraph ng-attr-widget">
-												For the youngest in the group, here is where they can escape from all the nature and connect again 
-												with technology with the<strong> X-box console and the DVD collection</strong> that include some titles for kids.
+												Para los más jóvenes (y a veces no tan jóvenes), este lugar será un 
+                                                refugio, ya que podrán escapar un rato de la naturaleza para conectarse 
+                                                de nuevo con la tecnología, jugando un poco de X-box o viendo alguna de 
+                                                las películas de <strong>nuestra colección de DVDs</strong>, que incluye algunos títulos 
+                                                para niños.
+
                                             </p>
                                             
                                             <p class="paragraph ng-attr-widget">
-												Guests can relax in this contemporary space with its comfortable furniture, air conditioning 
-												and Wi-Fi access.
+												Nuestros huéspedes encontrarán el lugar ideal para relajarse en este <strong>espacio 
+                                                de diseño contemporáneo con aire acondicionado y acceso Wi-Fi.</strong>
+
                                             </p>
                                         </div>
                                     </div>
@@ -3256,21 +3363,30 @@ class Layout_View
                             <div class="vc_col-sm-6 wpb_column vc_column_container ">
                                 <div class="wpb_wrapper">
                                     <div class="vc_custom_heading">
-                                        <h2 style="color: #333; font-weight:300;font-style:normal; text-align: right;">Kitchen</h2>
+                                        <h2 style="color: #333; font-weight:300;font-style:normal; text-align: right;">COCINA</h2>
                                     </div>
                                     <div class="ult-spacer spacer-56253aed5c7a5" data-id="56253aed5c7a5" data-height="25" data-height-mobile="25" data-height-tab="25" data-height-tab-portrait="25" data-height-mobile-landscape="25" style="clear:both;display:block;"></div>
                                     <div class="wpb_text_column wpb_content_element ">
                                         <div class="wpb_wrapper">
                                             <p class="paragraph ng-attr-widget">
-												Villa Aqua includes a<strong> fully equipped and efficient gourmet kitchen with all the appropriate 
-												amenities and appliances for your dining needs.</strong>
+												Villa Aqua cuenta con una <strong>cocina gourmet totalmente equipada con 
+                                                todos los utensilios, instrumentos y aparatos para sus necesidades culinarias.</strong>
+
                                             </p>
                                             <p class="paragraph ng-attr-widget">
-												Usually the chef takes care of all your meals but if you are a cook aficionado or just a food lover you can sit down and watch our chef 
-												in action or even take a class and learn how to prepare your favorite Mexican dish!
+												Normalmente nuestro chef privado es quien se ocupará de la preparación 
+                                                de sus alimentos, pero si usted es un cocinero aficionado o simplemente 
+                                                un amante de la comida, lo invitamos ya sea a observar al chef en acción, 
+                                                o bien,  aprender una des sus recetas favoritas en una clase de cocina 
+                                                privada.
+
                                             </p>
                                             <p class="paragraph ng-attr-widget">
-												Contact your <a href="/contact-us/" target="_blank">Villa Host</a> for any questions or review our  <a href="/images/staff-and-services/menu-food-and-beverage.pdf" target="_blank">Food & Beverages Menu</a>
+												Contacte a su
+<a href="/contact-us/" target="_blank">Anfitrión </a> de Villa para mayor información sobre nuestros Servicios 
+                                                de  
+                                                <a href="/images/staff-and-services/menu-food-and-beverage.pdf" target="_blank">Alimentos, 
+                                                   Bebidas y Menús.</a>
                                             </p>
                                         </div>
                                     </div>
@@ -3335,12 +3451,6 @@ class Layout_View
                         <div class="upb_color" data-bg-override="ex-full" data-bg-color="#ffffff" data-fadeout="" data-fadeout-percentage="30" data-parallax-content="" data-parallax-content-sense="30" data-row-effect-mobile-disable="true" data-img-parallax-mobile-disable="false" data-rtl="false" data-custom-vc-row="" data-vc="4.6.2" data-theme-support="" data-overlay="false" data-overlay-color="" data-overlay-pattern="" data-overlay-pattern-opacity="" data-overlay-pattern-size=""></div>
                         <!-- Row Backgrounds -->
                     </article>
-                    <div class="ult-spacer spacer-561be2953972e" data-id="561be2953972e" data-height="52" data-height-mobile="52" data-height-tab="52" data-height-tab-portrait="52" data-height-mobile-landscape="52" style="clear:both;display:block;"></div>
-					<div class="ult-animation ult-animate-viewport ult-no-mobile " data-animate="fadeIn " data-animation-delay="0 " data-animation-duration="1.5 " data-animation-iteration="1 " style="opacity:0; " data-opacity_start_effect="95 ">
-					    <div class="vc_btn3-container vc_btn3-center ">
-					        <a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-square vc_btn3-style-outline vc_btn3-color-chino" href="/pool-and-outdoor/" title="" target="_self">LEARN MORE</a>
-					    </div>
-					</div>
                     <!-- #post-## -->
                 </div>
             </div>
@@ -3395,7 +3505,7 @@ class Layout_View
                             <div class="vc_col-sm-6 wpb_column vc_column_container ">
                                 <div class="wpb_wrapper">
                                     <div class="vc_custom_heading">
-                                        <h2 style="color: 333;text-align: left;font-weight:300;font-style:normal">Pool</h2>
+                                        <h2 style="color: 333;text-align: left;font-weight:300;font-style:normal">PISCINA</h2>
                                     </div>
                                     <div class="ult-spacer spacer-56253aed4f277" data-id="56253aed4f277" data-height="25" data-height-mobile="25" data-height-tab="25" data-height-tab-portrait="25" data-height-mobile-landscape="25" style="clear:both;display:block;"></div>
                                     <div class="wpb_text_column wpb_content_element ">
@@ -3404,15 +3514,23 @@ class Layout_View
                                         <div class="wpb_column vc_column_container ">
                                             <div class="wpb_wrapper">
 												<p class="paragraph ng-attr-widget">
-													The reason why we call the property Villa Aqua is our<strong> secluded, turquoise swimming pool, 
-													which surrounds the house with its flowing curves and bathes the entire</strong> space with natural 
-													blue-greenish light.
+													<strong>El color cristalino de nuestra piscina privada, 
+                                                    es en realidad la razón por la que decidimos llamar 
+                                                    a la villa: “Villa Aqua”; ya que su diseño curvo, rodea 
+                                                    la casa y adorna cada espacio con una luz natural de 
+                                                    tonos azul turquesa.</strong> <br>
+                                                    Por sus dimensiones es ideal para dar unas buenas brazadas 
+                                                    o bien relajarse por horas y disfrutar de su agua templada 
+                                                    casi todo el año!
+
 	                                            </p>
 	                                            
 	                                            <p class="paragraph ng-attr-widget">
-													Certainly considered the location of serious action,<strong> the main patio with sun loungers shaded by umbrellas, 
-													the comfortable living area and the BBQ gas grill & dining table</strong>, naturally allure guests together.
-	                                            </p>
+													Considerada la zona de más acción, todos se reúnen alrededor 
+                                                    de la piscina, ya sea para tomar el sol en los camastros; 
+                                                    relajarse en la sala exterior bajo la sombra o bien disfrutar 
+                                                    de una rica parrillada al aire libre…
+                                                </p>
                                             </div>
                                             <div class="ult-spacer spacer-56253aed4f277" data-id="56253aed4f277" data-height="25" data-height-mobile="25" data-height-tab="25" data-height-tab-portrait="25" data-height-mobile-landscape="25" style="clear:both;display:block;"></div>
                                             <div class="vc_col-sm-12 wpb_column vc_column_container ">
@@ -3420,12 +3538,12 @@ class Layout_View
 													<div class="stm_item-features">
 	                                                	<div class="stm_item-features_inner">
 	                                                		<ul class="item-features_list">
-	                                                			<li class="item-feature">Swim lengths of 82ft / 25mts.</li>
-	                                                			<li class="item-feature">Pool depth 4ft / 1.20mts</li>
+	                                                			<li class="item-feature">Longitud de nado 25 m /82 pies</li>
+	                                                			<li class="item-feature">Profundidad de la piscina 1.20 m / 4 pies</li>
 	                                                		</ul>
 	                                                		<ul class="item-features_list">
-	                                                			<li class="item-feature">Not heated</li>
-	                                                			<li class="item-feature">No pool lighting</li>
+	                                                			<li class="item-feature">No cuenta con calefacción</li>
+	                                                			<li class="item-feature">No cuenta con iluminación subacuática</li>
 	                                                		</ul>
 	                                                	</div>
 	                                                </div>
@@ -3435,7 +3553,7 @@ class Layout_View
                                     </div>
                                 </div>
                             </div>
-
+ 
                             <div class="vc_col-sm-6 wpb_column vc_column_container ">
                                 <div class="wpb_wrapper">
 
@@ -3444,7 +3562,7 @@ class Layout_View
                                         	<div class="rental-service_item">
                                             	<div class="rs-item_inner">
                                             		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="g1" href="/images/overview/pool-and-outdoor/Villa_Aqua_outdoor_pool_1.jpg"><i class="fa fa-search-plus"></i></a>
+                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/pool-and-outdoor/Villa_Aqua_outdoor_pool_1.jpg"><i class="fa fa-search-plus"></i></a>
                                             		</div>
                                             		<div class="rs-item_content">
                                             			<img width="1140" height="676" src="/images/overview/pool-and-outdoor/Villa_Aqua_outdoor_pool_1.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
@@ -3455,7 +3573,7 @@ class Layout_View
                                         	<div class="rental-service_item">
                                             	<div class="rs-item_inner">
                                             		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="g1" href="/images/overview/pool-and-outdoor/Villa_Aqua_outdoor_pool_2.jpg"><i class="fa fa-search-plus"></i></a>
+                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/pool-and-outdoor/Villa_Aqua_outdoor_pool_2.jpg"><i class="fa fa-search-plus"></i></a>
                                             		</div>
                                             		<div class="rs-item_content">
                                             			<img width="1140" height="676" src="/images/overview/pool-and-outdoor/Villa_Aqua_outdoor_pool_2.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
@@ -3466,7 +3584,7 @@ class Layout_View
                                             <div class="rental-service_item">
                                             	<div class="rs-item_inner">
                                             		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="g1" href="/images/overview/pool-and-outdoor/Villa_Aqua_outdoor_pool_3.jpg"><i class="fa fa-search-plus"></i></a>
+                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/pool-and-outdoor/Villa_Aqua_outdoor_pool_3.jpg"><i class="fa fa-search-plus"></i></a>
                                             		</div>
                                             		<div class="rs-item_content">
                                             			<img width="1140" height="676" src="/images/overview/pool-and-outdoor/Villa_Aqua_outdoor_pool_3.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
@@ -3477,7 +3595,7 @@ class Layout_View
                                         	<div class="rental-service_item">
                                             	<div class="rs-item_inner">
                                             		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="g1" href="/images/overview/pool-and-outdoor/Villa_Aqua_outdoor_pool_4.jpg"><i class="fa fa-search-plus"></i></a>
+                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/pool-and-outdoor/Villa_Aqua_outdoor_pool_4.jpg"><i class="fa fa-search-plus"></i></a>
                                             		</div>
                                             		<div class="rs-item_content">
                                             			<img width="1140" height="676" src="/images/overview/pool-and-outdoor/Villa_Aqua_outdoor_pool_4.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
@@ -3488,7 +3606,7 @@ class Layout_View
                                             <div class="rental-service_item">
                                             	<div class="rs-item_inner">
                                             		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="g1" href="/images/overview/pool-and-outdoor/Villa_Aqua_outdoor_pool_5_penultima.jpg"><i class="fa fa-search-plus"></i></a>
+                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/pool-and-outdoor/Villa_Aqua_outdoor_pool_5_penultima.jpg"><i class="fa fa-search-plus"></i></a>
                                             		</div>
                                             		<div class="rs-item_content">
                                             			<img width="1140" height="676" src="/images/overview/pool-and-outdoor/Villa_Aqua_outdoor_pool_5_penultima.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
@@ -3499,7 +3617,7 @@ class Layout_View
                                             <div class="rental-service_item">
                                             	<div class="rs-item_inner">
                                             		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="g1" href="/images/overview/pool-and-outdoor/Villa_Aqua_outdoor_pool_6_ultima.jpg"><i class="fa fa-search-plus"></i></a>
+                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/pool-and-outdoor/Villa_Aqua_outdoor_pool_6_ultima.jpg"><i class="fa fa-search-plus"></i></a>
                                             		</div>
                                             		<div class="rs-item_content">
                                             			<img width="1140" height="676" src="/images/overview/pool-and-outdoor/Villa_Aqua_outdoor_pool_6_ultima.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
@@ -3528,7 +3646,7 @@ class Layout_View
                                         	<div class="rental-service_item">
                                             	<div class="rs-item_inner">
                                             		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="g2" href="/images/overview/pool-and-outdoor/Villa_Aqua_outdoor_jacuzzi_1.jpg"><i class="fa fa-search-plus"></i></a>
+                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/pool-and-outdoor/Villa_Aqua_outdoor_jacuzzi_1.jpg"><i class="fa fa-search-plus"></i></a>
                                             		</div>
                                             		<div class="rs-item_content">
                                             			<img width="1140" height="676" src="/images/overview/pool-and-outdoor/Villa_Aqua_outdoor_jacuzzi_1.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
@@ -3539,7 +3657,7 @@ class Layout_View
                                             <div class="rental-service_item">
                                             	<div class="rs-item_inner">
                                             		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="g2" href="/images/overview/pool-and-outdoor/Villa_Aqua_outdoor_jacuzzi_2.jpg"><i class="fa fa-search-plus"></i></a>
+                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/pool-and-outdoor/Villa_Aqua_outdoor_jacuzzi_2.jpg"><i class="fa fa-search-plus"></i></a>
                                             		</div>
                                             		<div class="rs-item_content">
                                             			<img width="1140" height="676" src="/images/overview/pool-and-outdoor/Villa_Aqua_outdoor_jacuzzi_2.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
@@ -3550,7 +3668,7 @@ class Layout_View
                                             <div class="rental-service_item">
                                             	<div class="rs-item_inner">
                                             		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="g2" href="/images/overview/pool-and-outdoor/Villa_Aqua_outdoor_jacuzzi_3.jpg"><i class="fa fa-search-plus"></i></a>
+                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/pool-and-outdoor/Villa_Aqua_outdoor_jacuzzi_3.jpg"><i class="fa fa-search-plus"></i></a>
                                             		</div>
                                             		<div class="rs-item_content">
                                             			<img width="1140" height="676" src="/images/overview/pool-and-outdoor/Villa_Aqua_outdoor_jacuzzi_3.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
@@ -3561,7 +3679,7 @@ class Layout_View
                                             <div class="rental-service_item">
                                             	<div class="rs-item_inner">
                                             		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="g2" href="/images/overview/pool-and-outdoor/Villa_Aqua_outdoor_jacuzzi_4.jpg"><i class="fa fa-search-plus"></i></a>
+                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/pool-and-outdoor/Villa_Aqua_outdoor_jacuzzi_4.jpg"><i class="fa fa-search-plus"></i></a>
                                             		</div>
                                             		<div class="rs-item_content">
                                             			<img width="1140" height="676" src="/images/overview/pool-and-outdoor/Villa_Aqua_outdoor_jacuzzi_4.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
@@ -3575,15 +3693,18 @@ class Layout_View
                             <div class="vc_col-sm-6 wpb_column vc_column_container ">
                                 <div class="wpb_wrapper">
                                     <div class="vc_custom_heading ">
-                                        <h2 style="color: 333;text-align: left;font-weight:300;font-style:normal">Jacuzzi</h2>
+                                        <h2 style="color: 333;text-align: left;font-weight:300;font-style:normal">JACUZZI</h2>
                                     </div>
                                     <div class="ult-spacer spacer-56253aed585bd" data-id="56253aed585bd" data-height="25" data-height-mobile="25" data-height-tab="25" data-height-tab-portrait="25" data-height-mobile-landscape="25" style="clear:both;display:block;"></div>
                                     <div class="wpb_text_column wpb_content_element ">
                                         <div class="wpb_wrapper">
                                         	<p class="paragraph ng-attr-widget">
-												Soak up the sun or enjoy the beautiful moon on our<strong> 10+ capacity heated Jacuzzi.</strong> During day it also 
-												turns into a<strong> nice plunge pool for the kids!</strong> Or just grab your Margarita and relax with the bubbles 
-												and massage after a great day on the beach!
+												Disfruta del sol o relájate bajo la luz de la luna, 
+                                                en el inmenso Jacuzzi con capacidad para 10 personas y calefacción. 
+                                                Durante el día, deja que los niños se diviertan convirtiéndolo 
+                                                en su chapoteadero personal o simplemente relájense todos con un 
+                                                burbujeante masaje después de un intenso día de playa.
+
                                             </p>
                                         </div>
                                     </div>
@@ -3595,7 +3716,8 @@ class Layout_View
                                                	<div class="stm_item-features_inner">
                                                		<ul class="item-features_list_extended">
                                                			<li class="item-feature">Heated (max temperature 95ºF / 35ºC)</li>
-                                               			<li class="item-feature">Lit up</li>
+                                               			<li class="item-feature">Cuenta con iluminación
+</li>
                                                		</ul>
                                                	</div>
                                            </div>
@@ -3617,16 +3739,20 @@ class Layout_View
                             <div class="vc_col-sm-6 wpb_column vc_column_container ">
                                 <div class="wpb_wrapper">
                                     <div class="vc_custom_heading">
-                                        <h2 style="color: #333;font-weight:300;font-style:normal; text-align: right;">Wood-Fired Oven</h2>
+                                        <h2 style="color: #333;font-weight:300;font-style:normal; text-align: right;">HORNO DE LEÑA</h2>
                                     </div>
                                     <div class="ult-spacer spacer-56253aed5c7a5" data-id="56253aed5c7a5" data-height="25" data-height-mobile="25" data-height-tab="25" data-height-tab-portrait="25" data-height-mobile-landscape="25" style="clear:both;display:block;"></div>
                                     <div class="wpb_text_column wpb_content_element ">
                                         <div class="wpb_wrapper">
                                             <p class="paragraph ng-attr-widget">
-												Ready for a Pizza Night? Choose your ingredients and put hands on to help the chef prepare fantastic 
-												crunchy crust pizzas and have a fun time! Or maybe you prefer something more gourmet like slowly 
-												cooked whole fish or an entire pig! Whatever you choose,<strong> you have to try our newest addition: 
-												the Wood-fired oven</strong> and enjoy a nice al fresco dining experience under the stars!
+												¿Listos para una noche de pizza? Elige tus ingredientes y 
+                                                pon manos en la masa o bien deja que el chef se encargue de 
+                                                todo para preparar unas deliciosas y crujientes pizzas y pasar 
+                                                una noche divertida! O tal vez se les antoje más algo más gourmet, 
+                                                como un pescado a la sal o un lechón cocinado lentamente. 
+                                                <strong>Cualquiera que sea su antojo, tienen que probar nuestro horno de 
+                                                leña y disfrutar de una cena fantástica bajo la luz de las estrellas.</strong>
+
                                             </p>
                                         </div>
                                     </div>
@@ -3640,7 +3766,7 @@ class Layout_View
                                         	<div class="rental-service_item">
                                             	<div class="rs-item_inner">
                                             		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="g3" href="/images/overview/pool-and-outdoor/Villa_Aqua_wood_fire_oven_new_02.jpg"><i class="fa fa-search-plus"></i></a>
+                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/pool-and-outdoor/Villa_Aqua_wood_fire_oven_new_02.jpg"><i class="fa fa-search-plus"></i></a>
                                             		</div>
                                             		<div class="rs-item_content">
                                             			<img width="1140" height="676" src="/images/overview/pool-and-outdoor/Villa_Aqua_wood_fire_oven_new_02.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
@@ -3651,7 +3777,7 @@ class Layout_View
                                             <div class="rental-service_item">
                                             	<div class="rs-item_inner">
                                             		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="g3" href="/images/overview/pool-and-outdoor/Villa_Aqua_wooden_oven_new.jpg"><i class="fa fa-search-plus"></i></a>
+                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/pool-and-outdoor/Villa_Aqua_wooden_oven_new.jpg"><i class="fa fa-search-plus"></i></a>
                                             		</div>
                                             		<div class="rs-item_content">
                                             			<img width="1140" height="676" src="/images/overview/pool-and-outdoor/Villa_Aqua_wooden_oven_new.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
@@ -3662,7 +3788,7 @@ class Layout_View
                                             <div class="rental-service_item">
                                             	<div class="rs-item_inner">
                                             		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="g3" href="/images/overview/pool-and-outdoor/Villa_aqua_outdoor_oven.jpg"><i class="fa fa-search-plus"></i></a>
+                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/pool-and-outdoor/Villa_aqua_outdoor_oven.jpg"><i class="fa fa-search-plus"></i></a>
                                             		</div>
                                             		<div class="rs-item_content">
                                             			<img width="1140" height="676" src="/images/overview/pool-and-outdoor/Villa_aqua_outdoor_oven.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
@@ -3691,7 +3817,7 @@ class Layout_View
                                         	<div class="rental-service_item">
                                             	<div class="rs-item_inner">
                                             		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="g4" href="/images/overview/pool-and-outdoor/Villa_Aqua_gym_new.jpg"><i class="fa fa-search-plus"></i></a>
+                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/pool-and-outdoor/Villa_Aqua_gym_new.jpg"><i class="fa fa-search-plus"></i></a>
                                             		</div>
                                             		<div class="rs-item_content">
                                             			<img width="1140" height="676" src="/images/overview/pool-and-outdoor/Villa_Aqua_gym_new.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
@@ -3702,7 +3828,7 @@ class Layout_View
                                         	<div class="rental-service_item">
                                             	<div class="rs-item_inner">
                                             		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="g4" href="/images/overview/pool-and-outdoor/Villa_aqua_fitness.jpg"><i class="fa fa-search-plus"></i></a>
+                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/pool-and-outdoor/Villa_aqua_fitness.jpg"><i class="fa fa-search-plus"></i></a>
                                             		</div>
                                             		<div class="rs-item_content">
                                             			<img width="1140" height="676" src="/images/overview/pool-and-outdoor/Villa_aqua_fitness.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
@@ -3713,7 +3839,7 @@ class Layout_View
                                             <div class="rental-service_item">
                                             	<div class="rs-item_inner">
                                             		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="g4" href="/images/overview/pool-and-outdoor/Villa_Aqua_indoor_gym_1.jpg"><i class="fa fa-search-plus"></i></a>
+                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/pool-and-outdoor/Villa_Aqua_indoor_gym_1.jpg"><i class="fa fa-search-plus"></i></a>
                                             		</div>
                                             		<div class="rs-item_content">
                                             			<img width="1140" height="676" src="/images/overview/pool-and-outdoor/Villa_Aqua_indoor_gym_1.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
@@ -3724,7 +3850,7 @@ class Layout_View
                                             <div class="rental-service_item">
                                             	<div class="rs-item_inner">
                                             		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="g4" href="/images/overview/pool-and-outdoor/GYM.jpg"><i class="fa fa-search-plus"></i></a>
+                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/pool-and-outdoor/GYM.jpg"><i class="fa fa-search-plus"></i></a>
                                             		</div>
                                             		<div class="rs-item_content">
                                             			<img width="1140" height="676" src="/images/overview/pool-and-outdoor/GYM.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
@@ -3740,25 +3866,32 @@ class Layout_View
                             <div class="vc_col-sm-6 wpb_column vc_column_container ">
                                 <div class="wpb_wrapper">
                                     <div class="vc_custom_heading">
-                                        <h2 style="color: 333;text-align: left;font-weight:300;font-style:normal">Gym &amp; Sports</h2>
+                                        <h2 style="color: 333;text-align: left;font-weight:300;font-style:normal">GIMNASIO Y DEPORTES
+</h2>
                                     </div>
                                     <div class="ult-spacer spacer-56253aed585bd" data-id="56253aed585bd" data-height="25" data-height-mobile="25" data-height-tab="25" data-height-tab-portrait="25" data-height-mobile-landscape="25" style="clear:both;display:block;"></div>
                                     <div class="wpb_text_column wpb_content_element ">
                                         <div class="wpb_wrapper">
                                         	<p class="paragraph ng-attr-widget">
-												We want to help our guests maintain their fitness while staying at Villa Aqua by 
-												taking advantage of our<strong> gym, squash court and sport gear</strong>.
+												En Villa Aqua queremos ayudar a nuestros huéspedes a mantenerse en forma, 
+                                                es por eso que ponemos a su disposición nuestro <strong>gimnasio privado con 
+                                                cancha de squash</strong>, así como equipo deportivo suficiente para complementar 
+                                                una rutina de ejercicios completa. <br>
+                                                Así mismo, contamos con entrenadores profesionales ya sea para una sesión 
+                                                de entrenamiento única o bien, un programa completo de acondicionamiento 
+                                                físico durante su estancia. Podrá relajarse con unas clases privadas de 
+                                                yoga* o ejercitarse intensamente con nuestro especialista de Crossfit, 
+                                                contacte a su <a href="/contact-us/" target="_blank">Anfitrión de Villa</a> para 
+                                                programar sus actividades.
+
                                             </p>
                                             
-                                            <p class="paragraph ng-attr-widget">
-												<strong>Trainers are available by request.</strong> You can book a session or arrange a sustained 
-												personal fitness program during your stay. From private Yoga classes to Cross Fit 
-												specialists, contact your <a href="/contact-us/" target="_blank">Villa Host</a> to help you arrange your desired activity.
-                                            </p>
+                                            
                                             
                                             <p class="paragraph ng-attr-widget">
-												We also offer many sports gear that will help you keep fit while enjoying family 
-												fun and the amazing setting of this tropical Paradise!
+												También contamos con equipo deportivo para divertirse en familia mientras 
+                                                disfruta de este paraíso tropical.
+
                                             </p>
                                         </div>
                                         
@@ -3768,19 +3901,19 @@ class Layout_View
 												<div class="stm_item-features">
 	                                               	<div class="stm_item-features_inner">
 	                                               		<ul class="item-features_list">
-	                                               			<li class="item-feature">4 bicycles (2 adult and 2 for children)</li>
-	                                               			<li class="item-feature">Snorkeling gear (for 4, different sizes)</li>
-	                                               			<li class="item-feature">Squash gear</li>
-	                                               			<li class="item-feature">Free weights & bands</li>
-	                                               			<li class="item-feature">Yoga mats</li>
-	                                               			<li class="item-feature">Volley ball / badminton net and gear</li>
+	                                               			<li class="item-feature">4 bicicletas (2 para adultos y 2 para niños)</li>
+	                                               			<li class="item-feature">Equipo para hacer snorkel (4 tamaños diferentes)</li>
+	                                               			<li class="item-feature">Equipo de squash</li>
+	                                               			<li class="item-feature">Pesas y bandas elásticas </li>
+	                                               			<li class="item-feature">Tapetes para yoga</li>
+	                                               			<li class="item-feature">Red y equipo de voleibol y bádminton</li>
 	                                               		</ul>
 	                                               		<ul class="item-features_list">
-	                                               			<li class="item-feature">Basketball hoop and ball (on the street)</li>
-	                                               			<li class="item-feature">Flag Football gear</li>
-	                                               			<li class="item-feature">Bocce ball set (Petanque) </li>
-	                                               			<li class="item-feature">Pool toys</li>
-	                                               			<li class="item-feature">Soccer ball & more</li>
+	                                               			<li class="item-feature">Canasta y balón de básquetbol (en el exterior de la casa)</li>
+	                                               			<li class="item-feature">Equipo para jugar tocho bandera </li>
+	                                               			<li class="item-feature">Petanca</li>
+	                                               			<li class="item-feature">Juguetes y accesorios para la piscina </li>
+	                                               			<li class="item-feature">Pelotas de fútbol soccer y más…</li>
 	                                               		</ul>
 	                                               	</div>
 	                                           </div>
@@ -3803,20 +3936,23 @@ class Layout_View
                             <div class="vc_col-sm-6 wpb_column vc_column_container ">
                                 <div class="wpb_wrapper">
                                     <div class="vc_custom_heading">
-                                        <h2 style="color: #333; font-weight:300;font-style:normal; text-align: right;">Squash</h2>
+                                        <h2 style="color: #333; font-weight:300;font-style:normal; text-align: right;">SQUASH</h2>
                                     </div>
                                     <div class="ult-spacer spacer-56253aed5c7a5" data-id="56253aed5c7a5" data-height="25" data-height-mobile="25" data-height-tab="25" data-height-tab-portrait="25" data-height-mobile-landscape="25" style="clear:both;display:block;"></div>
                                     <div class="wpb_text_column wpb_content_element ">
                                         <div class="wpb_wrapper">
                                             <p class="paragraph ng-attr-widget">
-												There is no other Villa within the Riviera Maya that has its<strong> own private 
-												air-conditioned Squash Court</strong>. With laminated wood floors and glass doors it is 
-												a good place to loose some of the extra pounds you may gain after eating all 
-												the chef's delicacies.
+												No existe otra villa en toda la Riviera Maya que cuente con su 
+                                                propia Cancha de Squash con aire acondicionado y no hay mejor 
+                                                lugar en Villa Aqua, para perder los kilos extras que seguramente 
+                                                ganarán tras probar las delicias que nuestro chef privado les preparará!
+                                                
+
                                             </p>
                                             <p class="paragraph ng-attr-widget">
-												Even though the court does not have the official size, it is perfect for learning, 
-												practicing your skills or just have some fun and sweat!
+												Aun cuando la cancha no cuenta con las medidas oficiales, es perfecta 
+                                                para aprender a jugar, practicar sus habilidades o sólo divertirse 
+                                                y sudar.
                                             </p>
                                             <ul>
                                             	
@@ -3829,13 +3965,13 @@ class Layout_View
 												<div class="stm_item-features">
 	                                               	<div class="stm_item-features_inner">
 	                                               		<ul class="item-features_list">
-	                                               			<li class="item-feature">Racquets and balls are available</li>
-                                            				<li class="item-feature">Air-conditioned and lit up</li>
-	                                               			<li class="item-feature">W - 15.74 ft / 4.80 mts</li>
+	                                               			<li class="item-feature">Raquetas y pelotas disponibles</li>
+                                            				<li class="item-feature">Cuenta con aire acondicionado e iluminación</li>
+	                                               			<li class="item-feature">Ancho: 4.80 m / 15.74 pies</li>
 	                                               		</ul>
 	                                               		<ul class="item-features_list">
-	                                               			<li class="item-feature">L - 32.80 ft / 10 mts</li>
-	                                               			<li class="item-feature">H - 39.37 ft / 12 mts</li>
+	                                               			<li class="item-feature">Largo: 10 m / 32.80 pies</li>
+	                                               			<li class="item-feature">Altura: 12 m / 39.37 pies</li>
 	                                               		</ul>
 	                                               	</div>
 	                                           </div>
@@ -3852,7 +3988,7 @@ class Layout_View
                                         	<div class="rental-service_item">
                                             	<div class="rs-item_inner">
                                             		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="g5" href="/images/overview/pool-and-outdoor/Villa_Aqua_indoor_squash_court_1.jpg"><i class="fa fa-search-plus"></i></a>
+                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/pool-and-outdoor/Villa_Aqua_indoor_squash_court_1.jpg"><i class="fa fa-search-plus"></i></a>
                                             		</div>
                                             		<div class="rs-item_content">
                                             			<img width="1140" height="676" src="/images/overview/pool-and-outdoor/Villa_Aqua_indoor_squash_court_1.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
@@ -3862,20 +3998,10 @@ class Layout_View
                                             <div class="rental-service_item">
                                             	<div class="rs-item_inner">
                                             		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="g5" href="/images/overview/pool-and-outdoor/Villa_Aqua_indoor_squash_court_3.jpg"><i class="fa fa-search-plus"></i></a>
+                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/pool-and-outdoor/Villa_Aqua_indoor_squash_court_3.jpg"><i class="fa fa-search-plus"></i></a>
                                             		</div>
                                             		<div class="rs-item_content">
                                             			<img width="1140" height="676" src="/images/overview/pool-and-outdoor/Villa_Aqua_indoor_squash_court_3.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-                                            		</div>
-                                            	</div>
-                                            </div>
-                                            <div class="rental-service_item">
-                                            	<div class="rs-item_inner">
-                                            		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="g5" href="/images/overview/pool-and-outdoor/plano-squash.jpg"><i class="fa fa-search-plus"></i></a>
-                                            		</div>
-                                            		<div class="rs-item_content">
-                                            			<img width="1140" height="676" src="/images/overview/pool-and-outdoor/plano-squash.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
                                             		</div>
                                             	</div>
                                             </div>
@@ -3889,12 +4015,6 @@ class Layout_View
                         <div class="upb_color" data-bg-override="ex-full" data-bg-color="#ffffff" data-fadeout="" data-fadeout-percentage="30" data-parallax-content="" data-parallax-content-sense="30" data-row-effect-mobile-disable="true" data-img-parallax-mobile-disable="false" data-rtl="false" data-custom-vc-row="" data-vc="4.6.2" data-theme-support="" data-overlay="false" data-overlay-color="" data-overlay-pattern="" data-overlay-pattern-opacity="" data-overlay-pattern-size=""></div>
                         <!-- Row Backgrounds -->
                     </article>
-                    <div class="ult-spacer spacer-561be2953972e" data-id="561be2953972e" data-height="52" data-height-mobile="52" data-height-tab="52" data-height-tab-portrait="52" data-height-mobile-landscape="52" style="clear:both;display:block;"></div>
-					<div class="ult-animation ult-animate-viewport ult-no-mobile " data-animate="fadeIn " data-animation-delay="0 " data-animation-duration="1.5 " data-animation-iteration="1 " style="opacity:0; " data-opacity_start_effect="95 ">
-					    <div class="vc_btn3-container vc_btn3-center ">
-					        <a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-square vc_btn3-style-outline vc_btn3-color-chino" href="/what-to-do/" title="" target="_self">LEARN MORE</a>
-					    </div>
-					</div>
                     <!-- #post-## -->
                 </div>
             </div>
@@ -3952,7 +4072,7 @@ class Layout_View
 <!------------------- Master Bedroom  -------------------->                            
                                 <div class="wpb_wrapper">
                                     <div class="vc_custom_heading">
-                                        <h2>Activities</h2>
+                                        <h2> ¿QUÉ HACER EN LA VILLA?</h2>
                                     </div>
                                     <div class="ult-spacer spacer-56253aed4f277" data-id="56253aed4f277" data-height="25" data-height-mobile="25" data-height-tab="25" data-height-tab-portrait="25" data-height-mobile-landscape="25" style="clear:both;display:block;"></div>
                                     
@@ -3962,10 +4082,12 @@ class Layout_View
                                         <div class="wpb_column vc_column_container ">
                                             <div class="wpb_wrapper">
 												<p class="paragraph ng-attr-widget">
-													There are so many things to do in Riviera Maya that sometimes it is hard 
-													to find time to enjoy your villa, but if you are looking to relax and have 
-													some restful time, then Villa Aqua can make your vacation without setting 
-													your feet out!
+													Hay tantas cosas por hacer en la Riviera Maya que a 
+                                                    veces es difícil encontrar el tiempo para disfrutar 
+                                                    de su estancia en Villa Aqua, pero si lo que busca es 
+                                                    relajarse y tener tiempo para descansar, entonces puede 
+                                                    vacacionar sin poner un pie fuera de la casa.
+
 	                                            </p>
                                             </div>
                                             <div class="ult-spacer spacer-56253aed4f277" data-id="56253aed4f277" data-height="25" data-height-mobile="25" data-height-tab="25" data-height-tab-portrait="25" data-height-mobile-landscape="25" style="clear:both;display:block;"></div>
@@ -3975,7 +4097,7 @@ class Layout_View
                                                     <div class="wpb_wrapper wpb_accordion_wrapper ui-accordion">
                                                     
                                                     	<div class="wpb_accordion_section group">
-                                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#drag-drop-builder"><strong>SPA SERVICES</strong></a></h3>
+                                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#drag-drop-builder"><strong>SPA</strong></a></h3>
                                                             <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
                                                                 <div class="wpb_text_column wpb_content_element ">
                                                                     <div class="wpb_wrapper">
@@ -3983,7 +4105,8 @@ class Layout_View
                                                                         <div class="stm_item-features">
                                                                         	<div class="stm_item-features_inner">
                                                                         		<ul class="item-features_list_extended">
-                                                                        			<li class="item-feature">Delight yourself with the available treatments. <a href="/images/staff-and-services/menu_spa-services.pdf" target="_blank">Review our menu</a></li>
+                                                                        			<li class="item-feature">- Deléitate con los tratamientos  
+ <a href="/images/staff-and-services/menu_spa-services.pdf" target="_blank">disponibles en el menú.</a></li>
                                                                         		</ul>
                                                                         	</div>
                                                                         </div>
@@ -3993,24 +4116,23 @@ class Layout_View
                                                         </div>
                                                     
                                                     	<div class="wpb_accordion_section group">
-                                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#optimised-for-speed"><strong>OUTDOOR ACTIVITIES</strong></a></h3>
+                                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#optimised-for-speed"><strong>Actividades fuera de Villa Aqua</strong></a></h3>
                                                             <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
                                                                 <div class="wpb_text_column wpb_content_element ">
                                                                     <div class="wpb_wrapper">
                                                                     	 <div class="stm_item-features">
                                                                         	<div class="stm_item-features_inner">
                                                                         		<ul class="item-features_list">
-                                                                        			<li class="item-feature">Bocce ball (Petanque)</li>
-                                                                        			<li class="item-feature">Badminton / Volleyball</li>
-                                                                        			<li class="item-feature">SCUBA Dive Introduction in the pool *</li>
-                                                                        			<li class="item-feature">Sunken Trampoline</li>
-                                                                        			<li class="item-feature">Flag football</li>
+                                                                        			<li class="item-feature">- Petanca</li>
+                                                                        			<li class="item-feature">- Bádminton / Voleibol</li>
+                                                                        			<li class="item-feature">- Trampolín hundido</li>
+                                                                        			<li class="item-feature">- Tocho bandera (Tochito)</li>
+                                                                        			<li class="item-feature">- Básquetbol </li>
                                                                         		</ul>
                                                                         		<ul class="item-features_list">
-                                                                        			<li class="item-feature">Basketball</li>
-                                                                        			<li class="item-feature">Soccer</li>
-	                                                                        		<li class="item-feature">Biking</li>
-	                                                                        		<li class="item-feature">Ping pong</li>
+                                                                        			<li class="item-feature">- Soccer</li>
+                                                                        			<li class="item-feature">- Ciclismo</li>
+	                                                                        		<li class="item-feature">- Introducción de BUCEO en la piscina*</li>
                                                                         		</ul>
                                                                         	</div>
                                                                         </div>
@@ -4018,37 +4140,39 @@ class Layout_View
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        
+
                                                         <div class="wpb_accordion_section group">
-                                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post"><strong>INDOOR ACTIVITIES</strong></a></h3>
+                                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post"><strong>Actividades dentro de Villa Aqua</strong></a></h3>
                                                             <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
                                                                 <div class="wpb_text_column wpb_content_element ">
                                                                     <div class="wpb_wrapper">
                                                                         <div class="stm_item-features">
                                                                         	<div class="stm_item-features_inner">
                                                                         		<ul class="item-features_list_extended">
-                                                                        			<li class="item-feature"> Squash Court</li>
-                                                                        			<li class="item-feature">Gym</li>
-	                                                                        		<li class="item-feature">Large Flat screen TVs</li>
-	                                                                        		<li class="item-feature">DVD players</li>
-	                                                                        		<li class="item-feature">Movies (DVD) & Music (CD) Library</li>
-	                                                                        		<li class="item-feature">Game Console</li>
-	                                                                        		<li class="item-feature"> Books in different languages</li>
-	                                                                        		<li class="item-feature">Board games</li>
-	                                                                        		<li class="item-feature">Poker set</li>
-	                                                                        		<li class="item-feature">Chess</li>
-	                                                                        		<li class="item-feature">Ping pong</li>
-	                                                                        		<li class="item-feature">Private Lessons
+                                                                        			<li class="item-feature">- Cancha de Squash</li>
+                                                                        			<li class="item-feature">- Gimnasio</li>
+	                                                                        		<li class="item-feature">- TVs de pantalla plana </li>
+	                                                                        		<li class="item-feature">- Reproductores de DVD</li>
+	                                                                        		<li class="item-feature">- Biblioteca de Películas (DVD) y Música (CD)</li>
+	                                                                        		<li class="item-feature">- Consola de videojuegos</li>
+	                                                                        		<li class="item-feature">- Libros en diferentes idiomas</li>
+	                                                                        		<li class="item-feature">- Juegos de mesa</li>
+	                                                                        		<li class="item-feature">- Set de póker</li>
+	                                                                        		<li class="item-feature">- Ajedrez</li>
+	                                                                        		
+	                                                                        		<li class="item-feature">Clases privadas:*
 	                                                                        			<ul>
-	                                                                        				<li class="item-feature">Exercise Instructors (Yoga, Cross fit, Pilates, etc.)</li>
-	                                                                        				<li>Dance classes (Salsa, Merengue, Tango, Flamenco, etc.)</li>
-	                                                                        				<li>Cooking Classes</li>
-	                                                                        				<li>Spanish lessons</li>
+	                                                                        				<li class="item-feature">- Instructores (Yoga, Crossfit, Pilates…) </li>
+	                                                                        				<li>- Clases de baile (Salsa, Merengue, Tango, Flamenco…)</li>
+	                                                                        				<li>- Clases de cocina</li>
+	                                                                        				<li>- Clases de español</li>
 	                                                                        			</ul>
 	                                                                        		</li>
-	                                                                        		<li class="item-feature">Live music entertainment (Mariachi, Trio, Marimba, guitar player, etc.)*</li>
-	                                                                        		<li class="item-feature">Private celebrations (Weddings/ Villa Aqua Epic Experiences / Corporate Retreats, etc.) *</li>
+	                                                                        		<li class="item-feature">- Entretenimiento musical en vivo (Mariachi, Trio, Marimba, guitarristas…)*</li>
+	                                                                        		<li class="item-feature">- Eventos privados (Bodas / Experiencias Épicas Villa Aqua/ Retiros Corporativos…) *</li>
+                                                                                    <li class="item-feature">-Servicios de SPA</li>
                                                                         		</ul>
+                                      
                                                                         	</div>
                                                                         </div>
                                                                     </div>
@@ -4059,7 +4183,7 @@ class Layout_View
                                                 </div>
                                         	</div>
                                             
-                                            <p style="text-align: right; "><i>*extra fees apply</i></p>
+                                            <p style="text-align: right; "><i>*Aplican costos extra</i></p>
                                         </div>
                                     </div>
                                 </div>
@@ -4102,18 +4226,18 @@ class Layout_View
                                             		</div>
                                             	</div>
                                             </div>
-
+                                        
                                         	<div class="rental-service_item">
                                             	<div class="rs-item_inner">
                                             		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/pool-and-outdoor/Villa_Aqua_gym_new.jpg"><i class="fa fa-search-plus"></i></a>
+                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/pool-and-outdoor/what-to-do/Villa_Aqua_gym_new.jpg"><i class="fa fa-search-plus"></i></a>
                                             		</div>
                                             		<div class="rs-item_content">
                                             			<img width="1140" height="676" src="/images/overview/pool-and-outdoor/Villa_Aqua_gym_new.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
                                             		</div>
                                             	</div>
                                             </div>
-
+                                        
                                             <div class="rental-service_item">
                                             	<div class="rs-item_inner">
                                             		<div class="rs-item_actions">
@@ -4124,7 +4248,7 @@ class Layout_View
                                             		</div>
                                             	</div>
                                             </div>
-
+                                            
                                             <div class="rental-service_item">
                                             	<div class="rs-item_inner">
                                             		<div class="rs-item_actions">
@@ -4135,7 +4259,7 @@ class Layout_View
                                             		</div>
                                             	</div>
                                             </div>
-
+                                            
                                             <div class="rental-service_item">
                                             	<div class="rs-item_inner">
                                             		<div class="rs-item_actions">
@@ -4182,12 +4306,6 @@ class Layout_View
                         <div class="upb_color" data-bg-override="ex-full" data-bg-color="#ffffff" data-fadeout="" data-fadeout-percentage="30" data-parallax-content="" data-parallax-content-sense="30" data-row-effect-mobile-disable="true" data-img-parallax-mobile-disable="false" data-rtl="false" data-custom-vc-row="" data-vc="4.6.2" data-theme-support="" data-overlay="false" data-overlay-color="" data-overlay-pattern="" data-overlay-pattern-opacity="" data-overlay-pattern-size=""></div>
                         <!-- Row Backgrounds -->
                     </article>
-                    <div class="ult-spacer spacer-561be2953972e" data-id="561be2953972e" data-height="52" data-height-mobile="52" data-height-tab="52" data-height-tab-portrait="52" data-height-mobile-landscape="52" style="clear:both;display:block;"></div>
-					<div class="ult-animation ult-animate-viewport ult-no-mobile " data-animate="fadeIn " data-animation-delay="0 " data-animation-duration="1.5 " data-animation-iteration="1 " style="opacity:0; " data-opacity_start_effect="95 ">
-					    <div class="vc_btn3-container vc_btn3-center ">
-					        <a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-square vc_btn3-style-outline vc_btn3-color-chino" href="/overview/" title="" target="_self">LEARN MORE</a>
-					    </div>
-					</div>
                     <!-- #post-## -->
                 </div>
             </div>
@@ -4206,7 +4324,7 @@ class Layout_View
             <div class="container">
                 <div class="page-header_wrap">
                     <div class="page-header_in">
-                        <h2 class="page-title">WHAT TO DO IN THE VILLA</h2>
+                        <h2 class="page-title"> Qué hacer en la villa? </h2>
                     </div>
                 </div>
             </div>
@@ -4799,7 +4917,7 @@ You can recognize our maintenance team for their uniform.
 		?>
 		<div class="container vc-page-container" style="margin: 35px auto 45px auto;">
         	<div class="vc_custom_heading">
-             	<h2 style="color: 333;text-align: left;font-weight:300;font-style:normal">At Extra Cost </h2>
+             	<h2 style="color: 333;text-align: left;font-weight:300;font-style:normal">SERVICIOS CON COSTO EXTRA </h2>
             </div>
             <div class="ult-spacer spacer-56253aed4f277" data-id="56253aed4f277" data-height="25" data-height-mobile="25" data-height-tab="25" data-height-tab-portrait="25" data-height-mobile-landscape="25" style="clear:both;display:block;"></div>
             <div class="container-inner">
@@ -4815,22 +4933,25 @@ You can recognize our maintenance team for their uniform.
 												<div class="stm_item-features">
                                                 	<div class="stm_item-features_inner">
                                                 		<ul class="item-features_list_extended">
-                                                			<li class="item-feature">Food & Beverage</li>
-                                                			<li class="item-feature">Wine and Liquor supply (charges apply)</li>
-                                                			<li class="item-feature">Pre-stock and Grocery Shopping service (20% delivery fee)</li>
-                                                			<li class="item-feature">Chef Services for dinner</li>
-                                                			<li class="item-feature">Bartender</li>
-                                                			<li class="item-feature">Waiter</li>
-                                                			<li class="item-feature">Spa Services</li>
-                                                			<li class="item-feature">Extra maid</li>
-                                                 			<li class="item-feature">Laundry & Dry Cleaning Service</li>
-                                                 			<li class="item-feature">Babysitter</li>
-                                                 			<li class="item-feature">Car rental & Driver (transportation services)</li>
-                                                 			<li class="item-feature"><strong><a href="/images/staff-and-services/Menu_epic-experiences.pdf" target="_blank">Villa Aqua Epic Experiences</a></strong></li>
-                                                 			<li class="item-feature">Entertainment (music, lessons, shows, etc.)</li>
-                                                 			<li class="item-feature">Tours & Activities</li>
+                                                			<li class="item-feature"> Alimentos y Bebidas</li>
+                                                			<li class="item-feature">Surtido de Vinos y licores (aplican cargos) </li>
+                                                			<li class="item-feature">Servicio de compra y surtido de alimentos previo a su llegada y durante su estancia (cargo de entrega: 20%)</li>
+                                                			<li class="item-feature">Servicios de chef para la cena </li>
+                                                			<li class="item-feature">Bartender </li>
+                                                			<li class="item-feature">Mesero</li>
+                                                			<li class="item-feature">Servicios de Spa </li>
+                                                			<li class="item-feature">Personal de servicio extra </li>
+                                                 			<li class="item-feature">Servicio de Lavandería y Tintorería</li>
+                                                 			<li class="item-feature">Niñera</li>
+                                                 			<li class="item-feature">Chofer y renta de autos </li>
+                                                            <li class="item-feature">Transportación privada y taxis </li>
+                                                 			<li class="item-feature"><strong><a href="/images/staff-and-services/Menu_epic-experiences.pdf" target="_blank">Experiencias Épicas Villa Aqua</a></strong></li>
+                                                 			<li class="item-feature">Entretenimiento </li>
+                                                 			<li class="item-feature">Tours y Actividades</li>
                                                 		</ul>
-                                                		<p><i>*Contact your <a href="/contact-us/" target="_blank">Villa Host</a> for more info and pricing</i></p>
+                                                		<p><i>*Contacte a su <a href="/contact-us/" target="_blank">Villa Host</a> para más información y precios</i></p>
+                                                        
+       
                                                 	</div>
                                                 </div>
                                             </div>
@@ -4891,7 +5012,7 @@ You can recognize our maintenance team for their uniform.
                             <div class="vc_col-sm-6 wpb_column vc_column_container ">
                                 <div class="wpb_wrapper">
                                     <div class="vc_custom_heading ">
-                                        <h2 style="color: 333;text-align: left;font-weight:300;font-style:normal">Food & Beverage</h2>
+                                        <h2 style="color: 333;text-align: left;font-weight:300;font-style:normal">ALIMENTOS Y BEBIDAS</h2>
                                     </div>
                                     
                                     <div class="ult-spacer spacer-56253aed585bd" data-id="56253aed585bd" data-height="25" data-height-mobile="25" data-height-tab="25" data-height-tab-portrait="25" data-height-mobile-landscape="25" style="clear:both;display:block;"></div>
@@ -4899,12 +5020,14 @@ You can recognize our maintenance team for their uniform.
                                         <div class="wpb_wrapper">
                                             <p class="paragraph ng-attr-widget">
                                                 <span class="ng-directive ng-binding" style="">
-                                                    The cost of food and beverage is not included with your<strong> Luxury Vacation Rental</strong>. If you have 
-                                                    interest on visiting the local supermarkets and grocery shops you can bring whatever you like 
-                                                    and ask the chef to prepare your favorite dish but If you want to enjoy your vacation at the most, 
-                                                    we recommend you let the chef take care of everything, having the best providers for the 
-                                                    freshest ingredients will make a big difference in your meals preparation.
-                                                </span>
+                                                    TEl costo de alimentos y bebidas no está incluido en su Renta Vacacional 
+                                                    de Lujo en Villa Aqua. Si usted prefiere visitar los supermercados locales 
+                                                    y tiendas de autoservicio, puede traer sus compras y pedirle al chef que 
+                                                    prepare su platillo favorito, pero si lo que busca es disfrutar de sus 
+                                                    vacaciones al máximo, le recomendamos que permita que el chef se ocupe de 
+                                                    todo, ya que el contar con los mejores proveedores de los ingredientes más 
+                                                    frescos, hará una gran diferencia al momento de preparar sus alimentos.
+
                                             </p>
                                         </div>
                                         
@@ -4913,19 +5036,23 @@ You can recognize our maintenance team for their uniform.
                                             	<div class="wpb_accordion wpb_content_element  not-column-inherit" data-collapsible="" data-vc-disable-keydown="false" data-active-tab="1">
                                                     <div class="wpb_wrapper wpb_accordion_wrapper ui-accordion">
                                                         <div class="wpb_accordion_section group">
-                                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post"><strong>PRE-STOCK & GROCERY SHOPPING SERVICE</strong></a></h3>
+                                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post"><strong>SERVICIO DE COMPRA Y SURTIDO DE VÍVERES</strong></a></h3>
                                                             <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
                                                                 <div class="wpb_text_column wpb_content_element ">
                                                                     <div class="wpb_wrapper">
                                                                         
                                                                         <p class="paragraph ng-attr-widget">
 							                                                <span class="ng-directive ng-binding" style="">
-							                                                   Take advantage of our grocery shopping service and let us stock your 
-							                                                   kitchen for you. Just fill out the Grocery Shopping List and we will 
-							                                                   pre-stock the villa before your arrival or during your stay. 
-							                                                   A 20% surcharge will be added to your total and you can pay at the 
-							                                                   end of your stay <strong>(we do not accept Credit Cards so please be prepared 
-							                                                   to pay in cash)</strong>.
+							                                                   Aproveche nuestro Servicio de compra de víveres y 
+                                                                                permítanos surtir su alacena por usted. Lo único 
+                                                                                que tiene que hacer es llenar la Lista de Compra de 
+                                                                                Víveres y nosotros los compraremos y los llevaremos 
+                                                                                a la villa antes de su llegada o durante su estancia. 
+                                                                                Este servicio tiene un costo extra del 20%, mismo que 
+                                                                                deberá pagar al final de su estancia. (Por el momento 
+                                                                                <strong>no aceptamos Tarjetas de Crédito, por lo que le pedimos                                                                                             atentamente tener listo su pago en efectivo)
+                                                                                </strong>
+
 							                                                </span>
 							                                            </p>
                                                                         
@@ -4935,17 +5062,16 @@ You can recognize our maintenance team for their uniform.
                                                         </div>
 
                                                         <div class="wpb_accordion_section group">
-                                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#optimised-for-speed"><strong style="text-transform: uppercase;">Organic & Local Produce</strong></a></h3>
+                                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#optimised-for-speed"><strong style="text-transform: uppercase;">PRODUCTOS ORGÁNICOS Y LOCALES</strong></a></h3>
                                                             <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
                                                                 <div class="wpb_text_column wpb_content_element ">
                                                                     <div class="wpb_wrapper">
 							                                            <p class="paragraph ng-attr-widget">
 							                                                <span class="ng-directive ng-binding" style="">
-							                                                    Let the chef know if you are interested in healthy choices such as 
-							                                                    organic products and local produce (fruit, herbs, vegetables, eggs 
-							                                                    & chicken). Please just take in mind that these products may be 
-							                                                    subject to availability.
-							
+							                                                    Si usted es alguien consciente de su alimentación y está                                                                                           interesado en opciones saludables con productos orgánicos 
+                                                                                y de producción local (fruta, hierbas, vegetales, huevo, 
+                                                                                carne y pollo), por favor comuníquelo al chef, quien intentará                                                                                      conseguir la mejor opción para usted. Por favor, tome en cuenta,                                                                                  que estos productos están sujetos a disponibilidad.
+
 							                                                </span>
 							                                            </p>
                                                                     </div>
@@ -4954,16 +5080,14 @@ You can recognize our maintenance team for their uniform.
                                                         </div>
 
                                                         <div class="wpb_accordion_section group">
-                                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#drag-drop-builder"><strong style="text-transform: uppercase;">Allergies & Dietary Restrictions</strong></a></h3>
+                                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#drag-drop-builder"><strong style="text-transform: uppercase;">ALERGIAS Y RESTRICCIONES ALIMENTICIAS</strong></a></h3>
                                                             <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
                                                                 <div class="wpb_text_column wpb_content_element ">
                                                                     <div class="wpb_wrapper">
 							                                            <p class="paragraph ng-attr-widget">
 							                                                <span class="ng-directive ng-binding" style="">
-							                                                    Please communicate your <a href="/contact-us/" target="_blank">Villa Host</a> and/or chef about any allergies, 
-							                                                    dietary restrictions or food preferences prior to your arrival in 
-							                                                    order to customize your meal preparations. 
-							                                                </span>
+							                                                   Es de suma importancia que nos haga saber acerca de cualquier                                                                                      alergia, restricción o preferencia alimenticia antes de su llegada,                                                                                para poder personalizar la preparación de sus alimentos.
+                                                                            </span>
 							                                            </p>
                                                                     </div>
                                                                 </div>
@@ -4971,23 +5095,36 @@ You can recognize our maintenance team for their uniform.
                                                         </div>
                                                         
                                                         <div class="wpb_accordion_section group">
-                                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#drag-drop-builder"><strong style="text-transform: uppercase;">Family Style Service</strong></a></h3>
+                                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#drag-drop-builder"><strong style="text-transform: uppercase;">SERVICIO ESTILO FAMILIAR</strong></a></h3>
                                                             <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
                                                                 <div class="wpb_text_column wpb_content_element ">
                                                                     <div class="wpb_wrapper">
                                                                         <h6></h6>
 							                                            <p class="paragraph ng-attr-widget">
 							                                                <span class="ng-directive ng-binding" style="">
-							                                                    Even though you have a professional chef at Villa Aqua, please take 
-							                                                    in mind that this is a villa not a restaurant or hotel. We serve 
-							                                                    "Family Style"; this means you choose the same menu for all in your
-							                                                     party. We can make exceptions for children or people with allergies 
-							                                                     or dietary restrictions. The chef and the kitchen assistant are in 
-							                                                     charge of grocery shopping, food preparation, serving and cleaning.
-							                                                      We make our best effort to attend our guests as they deserve but 
-							                                                      we do not offer "formal serving". If you require this type of 
-							                                                      service, please ask your Villa Host about "waiter service" options 
-							                                                      and fees.
+							                                                    Aun cuando Villa Aqua cuenta con un chef profesional, es                                                                                           importante que considere que está en una “casa” no en un                                                                                           restaurante o un hotel. El servicio que ofrecemos es “Estilo                                                                                       Familiar”, donde usted elije un mismo menú para todos los 
+                                                                                miembros comensales. Podemos hacer excepciones para los niños, o                                                                                   personas con alergias o restricciones alimenticias.
+                                                                               <br>
+                                                                                Tome en cuenta que el chef y el asistente de cocina están                                                                                         encargados tanto de comprar los víveres, preparar y servir los                                                                                     alimentos, así como de hacer la limpieza de lo que esto conlleva.                                                                                  Hacemos lo posible por atender a nuestros huéspedes como se                                                                                         merecen, sin embargo no contamos con un servicio formal. Si                                                                                     requiere de este tipo de servicio, por favor pregunte a su                                                                                          Anfitrión de Villa acerca de las opciones disponibles (mesero,                                                                                      bar tender, etc.) y costos.
+
+                                                                            </span>
+							                                            </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                        <div class="wpb_accordion_section group">
+                                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#drag-drop-builder"><strong style="text-transform: uppercase;">BEBIDAS</strong></a></h3>
+                                                            <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
+                                                                <div class="wpb_text_column wpb_content_element ">
+                                                                    <div class="wpb_wrapper">
+							                                            <p class="paragraph ng-attr-widget">
+							                                                <span class="ng-directive ng-binding" style="">
+							                                                    Villa Aqua cuenta con una gran variedad de vinos y licores.                                                                                      Nuestros huéspedes pueden pagar por las botellas que abran y                                                                                        consuman, o bien, reemplazarlas antes de su partida.<br>
+
+                                                                                Aun cuando el personal de la villa puede preparar cócteles en                                                                                     cierto momento, a veces resulta complicado, sobretodo durante el                                                                                   proceso de preparación de los alimentos. Si usted requiere                                                                                         servicio de bar personalizado durante su estancia, le recomendamos                                                                                 ampliamente, contrate el servicio de bartender. Por favor contacte                                                                                 a su Anfitrión de Villa para obtener mayor información acerca del                                                                                 servicio y sus costos.
+
 							                                                </span>
 							                                            </p>
                                                                     </div>
@@ -4996,38 +5133,17 @@ You can recognize our maintenance team for their uniform.
                                                         </div>
                                                         
                                                         <div class="wpb_accordion_section group">
-                                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#drag-drop-builder"><strong style="text-transform: uppercase;">Beverages</strong></a></h3>
+                                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#drag-drop-builder"><strong style="text-transform: uppercase;">MENÚ</strong></a></h3>
                                                             <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
                                                                 <div class="wpb_text_column wpb_content_element ">
                                                                     <div class="wpb_wrapper">
 							                                            <p class="paragraph ng-attr-widget">
 							                                                <span class="ng-directive ng-binding" style="">
-							                                                    Villa Aqua is stocked with a wide variety of wines & spirits. You can 
-							                                                    pay for the bottles that you open or simply replace the ones you took
-							                                                     before your departure.
-																					Even though the villa staff can prepare some cocktails randomly, 
-																					during meal preparation it is very hard to attend the drinks.
-																					 If you require bar service during your stay, we highly recommend 
-																					 you to hire a bartender. Please contact your Villa Host for more 
-																					 info about service and fees. 
-							                                                </span>
-							                                            </p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        
-                                                        <div class="wpb_accordion_section group">
-                                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#drag-drop-builder"><strong style="text-transform: uppercase;">Menu</strong></a></h3>
-                                                            <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
-                                                                <div class="wpb_text_column wpb_content_element ">
-                                                                    <div class="wpb_wrapper">
-							                                            <p class="paragraph ng-attr-widget">
-							                                                <span class="ng-directive ng-binding" style="">
-							                                                    <a href="/images/staff-and-services/menu-food-and-beverage.pdf" target="_blank">Follow the link</a> 
-							                                                    to see a list of some of the different food options that the chef can prepare for you. 
-							                                                    Usually we ask you to plan, at least, the meals for the first 2 days. Then, 
-							                                                    upon arrival, you can sit down with your chef and discuss the rest of the meals.  
+							                                                    <a href="/images/staff-and-services/menu-food-and-beverage.pdf" target="_blank">Este menú,</a> 
+							                                                    es una muestra de algunos de los platillos que su 
+                                                                                chef puede preparar durante su estancia en Villa Aqua.                                                                                              Generalmente recomendamos que nuestros huéspedes programen,                                                                                         por lo menos, el menú para los primeros dos días. A su llegada                                                                                      podrán planear el resto de sus alimentos junto con el chef.
+                                                                                
+
 							                                                </span>
 							                                            </p>
                                                                     </div>
@@ -5063,29 +5179,30 @@ You can recognize our maintenance team for their uniform.
                                         <div class="wpb_wrapper">
                                             <p class="paragraph ng-attr-widget">
                                                 <span class="ng-directive ng-binding" style="">
-                                               	 Just relax and treat yourself to a day of pampering with our signature services and treatments right from the 
-                                               	 comfort of your Luxury Vacation Rental.
+                                               	 En el menú de nuestro Spa encontrará masajes relajantes, faciales y otros tratamientos 
+                                                de belleza.
                                                 </span>
                                             </p>
                                             
                                             <p class="paragraph ng-attr-widget">
                                                 <span class="ng-directive ng-binding" style="">
-                                               	 Villa Aqua <a href="/images/staff-and-services/menu_spa-services.pdf" target="_blank">SPA Menu</a> includes 
-                                               	 facials, massages, manicures, pedicures and other beauty treatments that will enhance your overall experience. 
-                                              
-                                               	Whether you need to unwind after a day of fun & adventure in the Riviera Maya, or jump-start your vacation, 
-                                               	our highly skilled professional providers can banish stress and tension. Both male and female therapists are 
-                                               	available, with treatments that can be applied inside your bedroom or outdoors breathing the fresh air. From 
-                                               	a Sport Massage, great for athletes, to restore and relax the sore muscles  leaving you feeling fit and ready 
-                                               	to hit the gym again to a relaxing or invigorating massage with aromatherapy to help you indulge in the health 
-                                               	and wellness you need.
+                                               	 En el  <a href="/images/staff-and-services/menu_spa-services.pdf" target="_blank">menú de 
+                                                 nuestro Spa</a> encontrará masajes relajantes, faciales y otros tratamientos 
+                                                de belleza. 
+                                                    
+                                                Villa Aqua cuenta con terapeutas, tanto del sexo masculino como del sexo femenino, 
+                                                que podrán aplicar los tratamientos que elija, desde la comodidad de su habitación 
+                                                o bien al aire libre.
+
                                                 </span>
                                             </p>
                                             
                                             <p class="paragraph ng-attr-widget">
                                                 <span class="ng-directive ng-binding" style="">
-                                               	 Contact your <a href="/contact-us/" target="_blank">Villa Host</a> for more info and reservations. We recommend a<strong> minimum of 24 hour</strong> notice to guarantee 
-                                               	 availability.
+                                               	 Contacte su <a href="/contact-us/" target="_blank">Anfitrión de Villa para más información
+                                                o reservas.</a> Recomendamos ampliamente reservar con al menos 24 horas de anticipación para
+                                                garantizar la disponibilidad de los servicios.
+                                      
                                                 </span>
                                             </p>
                                         </div>
@@ -5142,7 +5259,7 @@ You can recognize our maintenance team for their uniform.
                             <div class="vc_col-sm-6 wpb_column vc_column_container ">
                                 <div class="wpb_wrapper">
                                     <div class="vc_custom_heading ">
-                                        <h2 style="color: 333;text-align: left;font-weight:300;font-style:normal">Transportation</h2>
+                                        <h2 style="color: 333;text-align: left;font-weight:300;font-style:normal">TRANSPORTACIÓN</h2>
                                     </div>
                                     
                                     <div class="ult-spacer spacer-56253aed585bd" data-id="56253aed585bd" data-height="25" data-height-mobile="25" data-height-tab="25" data-height-tab-portrait="25" data-height-mobile-landscape="25" style="clear:both;display:block;"></div>
@@ -5150,21 +5267,29 @@ You can recognize our maintenance team for their uniform.
                                         <div class="wpb_wrapper">
                                             <p class="paragraph ng-attr-widget">
                                                 <span class="ng-directive ng-binding" style="">
-                                                    Villa Aqua offers a complimentary round trip airport transfer for your convenience (with rentals of 4+ nights). 
+                                                    Villa Aqua ofrece 1 (un) traslado aeropuerto-villa-aeropuerto 
+                                                    incluido en rentas de 4 noches o más para su comodidad.
+
                                                 </span>
                                             </p>
                                             <p class="paragraph ng-attr-widget">
                                                 <span class="ng-directive ng-binding" style="">
-                                                    Moving around Playa del Carmen from Villa Aqua is very easy. We are located walking distance 
-                                                    from downtown and the beach, getting a taxi just takes a call and a 15 min wait in the villa, 
-                                                    but if you have plans of visiting the Riviera Maya and take advantage of the amazing things this 
-                                                    wonderful paradise has to offer, then we highly recommend that you consider renting a car or hire 
-                                                    a driver or private transfer for your day trips. 
+                                                    Moverse alrededor de Playa del Carmen desde Villa 
+                                                    Aqua es muy sencillo, ya que estamos a unos minutos 
+                                                    caminando del centro y la playa, o bien, llamar a un taxi, 
+                                                    demora unos 15 minutos en llegar a la villa, pero sí en sus 
+                                                    planes está visitar la Riviera Maya y aprovechar todas las 
+                                                    cosas increíbles que este paraíso tropical ofrece, entonces 
+                                                    le recomendamos ampliamente que considere rentar un auto o 
+                                                    contratar servicio de chofer con transportación privada para 
+                                                    su estancia. 
+
                                                 </span>
                                             </p>
                                             <p class="paragraph ng-attr-widget">
                                                 <span class="ng-directive ng-binding" style="">
-                                                   Contact your <a href="/contact-us/" target="_blank">Villa Host</a> for options and pricing.
+                                                   Contacte a su <a href="/contact-us/" target="_blank">Anfitrión de Villa 
+                                                    para conocer las </a> opciones y costos.
                                                 </span>
                                             </p>
                                         </div>
@@ -5189,31 +5314,41 @@ You can recognize our maintenance team for their uniform.
                             <div class="vc_col-sm-6 wpb_column vc_column_container ">
                                 <div class="wpb_wrapper">
                                     <div class="vc_custom_heading">
-                                        <h2 style="color: #333;font-weight:300;font-style:normal; text-align: right;">Entertainment</h2>
+                                        <h2 style="color: #333;font-weight:300;font-style:normal; text-align: right;">ENTRETENIMIENTO</h2>
                                     </div>
                                     <div class="ult-spacer spacer-56253aed5c7a5" data-id="56253aed5c7a5" data-height="25" data-height-mobile="25" data-height-tab="25" data-height-tab-portrait="25" data-height-mobile-landscape="25" style="clear:both;display:block;"></div>
                                     <div class="wpb_text_column wpb_content_element ">
                                         <div class="wpb_wrapper">
+                                            
                                             <p class="paragraph ng-attr-widget">
                                                 <span class="ng-directive ng-binding" style="">
-                                                    Villa Aqua guests will never feel bored while staying with us! 
-                                                </span>
-                                            </p>
-                                            <p class="paragraph ng-attr-widget">
-                                                <span class="ng-directive ng-binding" style="">
-                                                    Starting with the IN villa entertainment that goes from private squash court, gym equipment, 
-                                                    sunken trampoline, outdoor hot tub, volleyball, badminton, snorkeling gear, bicycles, 
-                                                    indoor/outdoor surround sound, flat screen TVs and IPod docks in every room, Xbox and Wii 
-                                                    consoles, Home Theater, movie and music library, fully stocked bar, board games and more. 
-													Then you have a wide variety of activities in the wonderful surroundings, from water 
-													activities, archeological sites, eco-parks, shopping & dining. We can even bring musicians, 
-													entertainers or even teach you how to dance, cook Mexican food or speak some Spanish!
+                                                   ¿Si le preocupa aburrirse durante su estancia en Villa Aqua? 
+                                                    Despreocúpese! ya que contamos con una buena variedad de actividades 
+                                                    tanto dentro, como fuera de la villa. Comenzando con la cancha privada 
+                                                    de squash, un gimnasio totalmente equipado, el trampolín hundido, 
+                                                    jacuzzi al aire libre, red de voleibol / bádminton, equipo para hacer 
+                                                    snorkel, bicicletas, equipos de sonido en interior y exterior, pantallas 
+                                                    planas y bases para IPod en cada habitación, consola de juegos (Xbox), 
+                                                    Teatro en casa, Apple TV-Netflix, biblioteca de música y películas, 
+                                                    un bar bien surtido, juegos de mesa y mucho más… <br>
+                                                    Esto sin tomar en cuenta la infinidad de atracciones que encontrará en 
+                                                    los alrededores de Playa del carmen, como actividades acuáticas únicas, 
+                                                    visitas a sitios arqueológicos,  parques ecoturísticos, o simplemente 
+                                                    salir a dar un paseo para ir de compras o a cenar a unos cuantos pasos 
+                                                    de la casa. <br>
+                                                    Y si esto no fuera suficiente… incluso podemos traer más diversión a 
+                                                    Villa Aqua, ya que contamos con músicos, artistas diversos y hasta 
+                                                    instructores que podrán enseñarle a bailar, cocinar comida mexicana 
+                                                    y hasta bucear!
+
  
                                                 </span>
                                             </p>
                                             <p class="paragraph ng-attr-widget">
                                                 <span class="ng-directive ng-binding" style="">
-                                                    The options are endless. Just think of something you would like to do and our <a href="/contact-us/" target="_blank">Villa Host</a> will try to get it for you!
+                                                    ¡Las opciones son infinitas! ¡Usted sólo piense en lo que le gustaría 
+                                                    hacer y nuestro  hará <a href="/contact-us/" target="_blank">Anfitrión 
+                                                    de Villa</a> hasta lo imposible para hacer que suceda!
                                                 </span>
                                             </p>
                                         </div>
@@ -5253,7 +5388,7 @@ You can recognize our maintenance team for their uniform.
             <div class="ult-spacer spacer-56253aed4f277" data-id="56253aed4f277" data-height="25" data-height-mobile="25" data-height-tab="25" data-height-tab-portrait="25" data-height-mobile-landscape="25" style="clear:both;display:block;"></div>
             <div class="ult-spacer spacer-56253aed4f277" data-id="56253aed4f277" data-height="25" data-height-mobile="25" data-height-tab="25" data-height-tab-portrait="25" data-height-mobile-landscape="25" style="clear:both;display:block;"></div>
             <div class="vc_btn3-container vc_btn3-center animated fadeIn" style="opacity:1;-webkit-animation-delay:0s;-webkit-animation-duration:1s;-webkit-animation-iteration-count:1; -moz-animation-delay:0s;-moz-animation-duration:1s;-moz-animation-iteration-count:1; animation-delay:0s;animation-duration:1s;animation-iteration-count:1;test">
-				<a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-square vc_btn3-style-outline vc_btn3-color-chino" href="/included/" title="" target="_self">MORE SERVICES</a>
+				<a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-square vc_btn3-style-outline vc_btn3-color-chino" href="/included/" title="" target="_self">MAS SERVICIOS</a>
 			</div>
         </div>
 	    <?php 
@@ -5300,7 +5435,7 @@ You can recognize our maintenance team for their uniform.
 		?>
 		<div class="container vc-page-container" style="margin: 35px auto 45px auto;">
             <div class="vc_custom_heading">
-                <h2 style="color: 333;text-align: left;font-weight:300;font-style:normal">Arriving to Villa Aqua</h2>
+                <h2 style="color: 333;text-align: left;font-weight:300;font-style:normal">CÓMO LLEGAR</h2>
             </div>
             <div class="ult-spacer spacer-56253aed4f277" data-id="56253aed4f277" data-height="25" data-height-mobile="25" data-height-tab="25" data-height-tab-portrait="25" data-height-mobile-landscape="25" style="clear:both;display:block;"></div>
             <div class="container-inner">
@@ -5314,30 +5449,29 @@ You can recognize our maintenance team for their uniform.
                                         <div class="wpb_wrapper">
                                             <p class="paragraph ng-attr-widget">
                                                 <span class="ng-directive ng-binding" style="">
-                                                    Getting to the Riviera Maya is very easy. Cancun International Airport (code CUN) is 
-                                                    located 52 km north of Villa Aqua (Playa del Carmen) and is served by all major International 
-                                                    Airlines with direct or nonstop service from almost anywhere around the world.
+                                                    Es muy fácil llegar a la Riviera Maya ya que el Aeropuerto Internacional de Cancún 
+                                                    (código CUN) ubicado a 52 km al norte de Villa Aqua (Playa del Carmen), brinda 
+                                                    servicio a la mayoría de las principales Aerolíneas Internacionales, con vuelos 
+                                                    directos y continuos desde prácticamente todas las partes del mundo. 
                                                 </span>
                                             </p>
 
                                             <p class="paragraph ng-attr-widget">
                                                 <span class="ng-directive ng-binding" style="">
-                                                    Once you arrive to Cancun airport, we provide complimentary transportation to the villa 
-                                                    (1 round trip for stays of 4 or more nights). 
+                                                    El Aeropuerto de Cozumel (código CZM) también puede considerarse para llegadas 
+                                                    tanto nacionales como internacionales a esta región, pero se debe tomar en 
+                                                    cuenta que se encuentra en la isla de Cozumel y será necesario hacer un viaje 
+                                                    de 30 minutos (aprox.) en ferry para llegar a Playa del Carmen,  además de un 
+                                                    taxi, que tomará otros 5 minutos, del muelle a Villa Aqua.
+
                                                 </span>
                                             </p>
 
-                                            <p class="paragraph ng-attr-widget">
-                                                <span class="ng-directive ng-binding" style="">
-                                                    Cozumel Airport (code CZM) may also be considered an international access to this region 
-                                                    but it is on the island and you will need to take a 30 min ferry to Playa del Carmen where 
-                                                    Villa Aqua is located and we can arrange your transportation from the dock to the house. 
-                                                </span>
-                                            </p>
+                                            
 
                                             <p class="paragraph ng-attr-widget">
                                                 <span class="ng-directive ng-binding" style="">
-                                                    Cancun International Airport: 
+                                                    AEROPUERTO INTERNACIONAL DE CANCÚN:
                                                     <br />
                                                     <a href="http://www.cancun-airport.com/" target="_blank">http://www.cancun-airport.com/</a>
                                                 </span>
@@ -5445,7 +5579,7 @@ You can recognize our maintenance team for their uniform.
                                             	</div>
                                             </div>
                                             
-                                            <!-- <div class="rental-service_item">
+                                            <div class="rental-service_item">
                                             	<div class="rs-item_inner">
                                             		<div class="rs-item_actions">
                                             			<a class="rs-item_action_zoom js-fancybox" rel="gr3" href="/images/location-info/Villa_Aqua_Location_info_06.5_playacar.jpg"><i class="fa fa-search-plus"></i></a>
@@ -5454,7 +5588,7 @@ You can recognize our maintenance team for their uniform.
                                             			<img width="1140" height="676" src="/images/location-info/Villa_Aqua_Location_info_06.5_playacar.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
                                             		</div>
                                             	</div>
-                                            </div> -->
+                                            </div>
                                             
                                         </div>
                                     </div>
@@ -5471,8 +5605,10 @@ You can recognize our maintenance team for their uniform.
                                         <div class="wpb_wrapper">
                                         	<p class="paragraph ng-attr-widget">
                                                 <span class="ng-directive ng-binding" style="">
-                                                    Villa Aqua is located just a few minutes walking distance to the beautiful beaches of 
-                                                    Playacar Phase I and Playa del Carmen downtown.
+                                                    Playacar es un lujoso complejo residencial localizado justo al sur de 
+                                                    Playa del Carmen, a unos 40 minutos del Aeropuerto Internacional 
+                                                    de Cancún.
+
                                                 </span>
                                             </p>
                                             <p class="paragraph ng-attr-widget">
@@ -5483,21 +5619,35 @@ You can recognize our maintenance team for their uniform.
                                             </p>
                                             <p class="paragraph ng-attr-widget">
                                                 <span class="ng-directive ng-binding" style="">
-                                                    The resort of Playacar is the ideal spot for families wanting a little bit of everything. 
-                                                    It is divided into two phases, the first borders the ocean, the second, where Villa Aqua is 
-                                                    located, lining the 18 hole golf course designed by Robert Von Hagge, and exposes luxury 
-                                                    resorts, private homes and a couple of small shopping centers.
+                                                   Playacar es el lugar ideal para los que desean tener un poco de todo en sus vacaciones. 
+                                                    El fraccionamiento se encuentra dividido en dos fases: Fase I,  se encuentra frente 
+                                                    al mar; mientras que la Fase II, en donde se encuentra Villa Aqua, rodea un campo 
+                                                    de golf de 18 hoyos, diseñado por Robert Von Hagge, y aloja resorts de lujo, residencias
+                                                    privadas y un par de centros comerciales.
+
                                                 </span>
                                             </p>
                                             <p class="paragraph ng-attr-widget">
                                                 <span class="ng-directive ng-binding" style="">
-                                                    The Xaman-Ha Aviary is also located within Playacar Phase II, and contains more than 200 
-                                                    animals of 45 different species; besides birds they also have butterflies, iguanas and small mammals.
+                                                    El aviario Xaman-Ha también está ubicado dentro de Playacar Fase II, y alberga 
+                                                    a más de 200 animales de 45 especies diferentes, entre aves, mariposas, iguanas 
+                                                    y pequeños mamíferos.
+
                                                 </span>
                                             </p>
                                             <p class="paragraph ng-attr-widget">
                                                 <span class="ng-directive ng-binding" style="">
-                                                    You will also find some remains of Mayan Ruins along Playacar Phase I and Phase II. 
+                                                   También encontrará vestigios arqueológicos tanto en Playacar Fase I como en la II.
+ 
+                                                </span>
+                                            </p>
+                                            
+                                            <p class="paragraph ng-attr-widget">
+                                                <span class="ng-directive ng-binding" style="">
+                                                  Villa Aqua se localiza muy cerca de las hermosas playas de Playacar Fase I y 
+                                                    del centro de Playa del Carmen, por lo que nuestros huéspedes sólo tienen 
+                                                    que dar un breve paseo caminando o bien tomar un taxi que los llevará en 
+                                                    un par de minutos.
                                                 </span>
                                             </p>
                                             
@@ -5529,39 +5679,51 @@ You can recognize our maintenance team for their uniform.
                                         <div class="wpb_wrapper">
                                             <p class="paragraph ng-attr-widget">
                                                 <span class="ng-directive ng-binding" style="">
-                                                    Situated right in the heart of the Riviera Maya, just 50 km south from Cancun's International 
-                                                    Airport, Playa del Carmen is the region's top destination for shopping, dining and nightlife. 
-                                                    Playa, as everybody calls it, provides everything one could wish for, in a Caribbean location: 
-                                                    White sand beaches, amazing golf, water sports, nature adventure, cultural and recreational 
-                                                    centers and much more.
+                                                    Ubicada en el corazón de la Riviera Maya a sólo 50 km al sur del Aeropuerto 
+                                                    Internacional de Cancún, Playa del Carmen es reconocida como uno de los mejores 
+                                                    destinos turísticos del mundo.  <br>
+                                                    Playa, como todos le dicen, tiene todo lo que se necesita para pasar unas 
+                                                    vacaciones inolvidables en el Caribe, desde playas de arena blanca, impresionantes 
+                                                    campos de golf, infinidad de opciones de actividades acuáticas, tours ecoturísticos
+                                                    y de aventura, centros recreativos y culturales, así como una amplia gama de 
+                                                    restaurantes que ofrecen experiencias culinarias únicas, tiendas para ir de compras,
+                                                    y por supuesto, su increíble vida nocturna.
                                                 </span>
                                             </p>
                                             <p class="paragraph ng-attr-widget">
                                                 <span class="ng-directive ng-binding" style="">
-                                                    After your day at the beach, head into town and take a stroll along the pedestrian Fifth Avenue 
-                                                    strip, locally known as Quinta Avenida. La Quinta is the place to see and be seen, with its 
-                                                    cosmopolitan atmosphere of joy, security, and harmony, by day it's packed with people browsing 
-                                                    the shops and boutiques; by night roving musicians entertain diners in the many restaurants and 
-                                                    bars. Playa del Carmen is one of the Riviera Maya's top culinary destinations where you'll find 
-                                                    everything from street tacos to five-star establishments serving up their own unique takes on 
-                                                    traditional Mayan and international cuisine. As the evening progresses, La Quinta gyrates to the 
-                                                    sounds of rock, salsa and reggae as people flock to the bars and nightclubs. The beach clubs get 
-                                                    in on the action too, hosting dance parties that rage on until the early morning hours and Villa 
-                                                    Aqua is just minutes walking distance to all this fun, right in Playacar, a high-end development 
-                                                    complete with golf course, all-inclusive luxury resorts and gated residences. 
+                                                    Después de pasar un día en la playa, no olvide dar un paseo por la Quinta Avenida, 
+                                                    en donde siempre encontrará algo que ver, comprar o comer. La Quinta es un lugar 
+                                                    muy seguro y su atmósfera cosmopolita, llena de vida y armonía, es adornada por 
+                                                    las multitudes de visitantes y locales; por las tardes, en esta alegre calle se 
+                                                    puede escuchar a los músicos que entretienen a los comensales en los múltiples 
+                                                    restaurantes y bares que van desde los típicos tacos mexicanos, hasta restaurantes 
+                                                    cinco estrellas que ofrecen desde comida internacional hasta cocina tradicional Maya.<br>
+                                                    Conforme cae la noche, la Quinta se convierte en el escenario perfecto en el que el rock, 
+                                                    la salsa y el reggae atrae mágicamente a los visitantes hacia los bares y clubes 
+                                                    nocturnos. 
+                                                    Los clubes de playa también entran en acción de noche organizando fiestas que duran 
+                                                    hasta el amanecer.<br>
+                                                    Villa Aqua se encuentra a sólo unos minutos de toda esta diversión, sólo hay 
+                                                    que dar un paseo caminando desde Playacar, un lujoso complejo residencial con 
+                                                    campo de golf, hoteles todo incluido y residencias privadas. 
                                                 </span>
                                             </p>
                                             <p class="paragraph ng-attr-widget">
                                                 <span class="ng-directive ng-binding" style="">
-                                                    Ferry service connects the Caribbean island of Cozumel with Playa del Carmen so you can easily 
-                                                    enjoy a day trip out to the island for some scuba diving or snorkeling. You can also arrange day 
-                                                    trips to visit ancient archaeological sites, ecological parks and cenotes.
+                                                    Un viaje de media hora en ferry conecta a Playa del Carmen  con la isla de Cozumel, 
+                                                    una excelente opción para pasar el día y en donde podrá bucear, practicar snorkel 
+                                                    o visitar sitios arqueológicos, parques ecológicos y cenotes. 
+
                                                 </span>
                                             </p>
                                             <p class="paragraph ng-attr-widget">
                                                 <span class="ng-directive ng-binding" style="">
-                                                    Whether you are here to relax and unravel, or to immerse yourself in an abundance of cultural or 
-                                                    adrenaline filled activities, the possibilities are endless and will definitely exceed your expectations. 
+                                                    Ya sea que desee relajarse, sumergirse en la abundancia cultural de la Riviera 
+                                                    Maya o realizar actividades llenas de adrenalina, Playa del Carmen es una opción 
+                                                    llena de posibilidades que definitivamente hará que sus vacaciones en el Caribe 
+                                                    excedan sus expectativas.
+
                                                 </span>
                                             </p>
                                         </div>
@@ -5590,13 +5752,13 @@ You can recognize our maintenance team for their uniform.
 			            <div class="ult-spacer spacer-56253aed4f277" data-id="56253aed4f277" data-height="25" data-height-mobile="25" data-height-tab="25" data-height-tab-portrait="25" data-height-mobile-landscape="25" style="clear:both;display:block;"></div>
 			            <div class="ult-spacer spacer-56253aed4f277" data-id="56253aed4f277" data-height="25" data-height-mobile="25" data-height-tab="25" data-height-tab-portrait="25" data-height-mobile-landscape="25" style="clear:both;display:block;"></div>
 			            <div class="vc_btn3-container vc_btn3-center animated fadeIn" style="opacity:1;-webkit-animation-delay:0s;-webkit-animation-duration:1s;-webkit-animation-iteration-count:1; -moz-animation-delay:0s;-moz-animation-duration:1s;-moz-animation-iteration-count:1; animation-delay:0s;animation-duration:1s;animation-iteration-count:1;test">
-							<a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-square vc_btn3-style-outline vc_btn3-color-chino" href="/riviera-maya/" title="" target="_self">LEARN MORE ABOUT RIVIERA MAYA</a>
+							<a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-square vc_btn3-style-outline vc_btn3-color-chino" href="/riviera-maya/" title="" target="_self">CONOZCA MAS ACERCA DE LA RIVIERA MAYA</a>
 						</div>
 						<div class="ult-spacer spacer-56253aed4f277" data-id="56253aed4f277" data-height="25" data-height-mobile="25" data-height-tab="25" data-height-tab-portrait="25" data-height-mobile-landscape="25" style="clear:both;display:block;"></div>
 						<div class="ult-spacer spacer-56253aed4f277" data-id="56253aed4f277" data-height="25" data-height-mobile="25" data-height-tab="25" data-height-tab-portrait="25" data-height-mobile-landscape="25" style="clear:both;display:block;"></div>
 						
                         <div class="vc_col-sm-12 wpb_column vc_column_container ">
-                        <h5>Distance from Villa Aqua to: </h5>
+                        <h5>Distancia desde Villa Aqua a: </h5>
                         <br />
                         	<div class="vc_col-sm-6 wpb_column vc_column_container ">
                         		<div class="wpb_wrapper">
@@ -5606,14 +5768,14 @@ You can recognize our maintenance team for their uniform.
 	                                        <table class="table table-striped">
 	                                            <thead>
 	                                                <tr>
-	                                                    <th>Destination</th>
+	                                                    <th>Destino</th>
 	                                                    <th>Km</th>
 	                                                    <th>Miles</th>
 	                                                </tr>
 	                                            </thead>
 	                                            <tbody>
 	                                                <tr>
-	                                                    <th>Cancun Airport</th>
+	                                                    <th>Aeropuerto de Cancún</th>
 	                                                    <td>53</td>
 	                                                    <td>33</td>
 	                                                </tr>
@@ -5686,7 +5848,7 @@ You can recognize our maintenance team for their uniform.
 	                                        <table class="table table-striped">
 	                                            <thead>
 	                                                <tr>
-	                                                    <th>Destination</th>
+	                                                    <th>Destino</th>
 	                                                    <th>Km</th>
 	                                                    <th>Miles</th>
 	                                                </tr>
@@ -5791,7 +5953,7 @@ You can recognize our maintenance team for their uniform.
             <div class="container">
                 <div class="page-header_wrap">
                     <div class="page-header_in">
-                        <h2 class="page-title">Location Info</h2>
+                        <h2 class="page-title">Información del destino</h2>
                     </div>
                 </div>
             </div>
@@ -5836,7 +5998,16 @@ You can recognize our maintenance team for their uniform.
                                     <!-- .entry-header -->
                                     <div class="entry-holder">
                                         <div class="entry-content">
-                                            The Riviera Maya, located in the State of Quintana Roo, Mexico, in the famous Yucatan Peninsula, geographically extends along the coast from Punta Brava to the town of Punta Allen south, about 120 km long, spanning the City of "Solidaridad" (Playa del Carmen) and Tulum. Bordered to the east by the turquoise waters of the Caribbean Sea and to the west by lush vegetation full of flora and fauna, unique geological formations and archaeological sites that hide remarkable vestiges of Mayan civilization, is the ideal place to enjoy a great vacation.
+                                            La Riviera Maya se encuentra en el estado de Quintana Roo, México, 
+                                            en la famosa Península de Yucatán. Se extiende a lo largo de la costa 
+                                            de Punta Brava, hasta el pueblo de Punta Allen y recorre cerca de 120 
+                                            km abarcando los Municipios de “Solidaridad” (Playa del Carmen) y Tulum. 
+                                            Colinda al Este con las cristalinas aguas color turquesa del Mar Caribe 
+                                            y al Oeste con la exuberante vegetación y la abundante y diversa fauna 
+                                            de la región; sus formaciones geológicas y sitios arqueológicos, esconden 
+                                            vestigios impresionantes de la ancestral civilización Maya, y son el lugar 
+                                            ideal para disfrutar de las mejores vacaciones junto al mar.
+
                                         </div>
                                         <!-- .entry-content -->
                                     </div>
@@ -5844,7 +6015,7 @@ You can recognize our maintenance team for their uniform.
                                     <div class="wpb_accordion wpb_content_element  not-column-inherit" data-collapsible="" data-vc-disable-keydown="false" data-active-tab="1">
                                         <div class="wpb_wrapper wpb_accordion_wrapper ui-accordion">
                                             <div class="wpb_accordion_section group">
-                                                <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post"><strong>LANGUAGE</strong></a></h3>
+                                                <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post"><strong>IDIOMA</strong></a></h3>
                                                 <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
                                                     <div class="wpb_text_column wpb_content_element ">
                                                         <div class="wpb_wrapper">
@@ -5854,7 +6025,12 @@ You can recognize our maintenance team for their uniform.
 					                                                	<div class="stm_item-features_inner">
 					                                                		<ul class="item-features_list_extended">
 					                                                			<li class="item-feature">
-					                                                				The official language of Mexico is Spanish. In this region the indigenous population speaks Mayan. But as the Riviera Maya is a popular touristic destination you won't have trouble finding English speaking almost all around and even other languages.
+					                                                				El idioma oficial en México es el español. En esta 
+                                                                                    región la población indígena habla la lengua maya, 
+                                                                                    pero en la Riviera Maya, que es un destino turístico 
+                                                                                    muy popular, es muy común que las personas hablen 
+                                                                                    inglés e incluso otros idiomas.
+
 					                                                			</li>
 					                                                		</ul>
 					                                                	</div>
@@ -5869,7 +6045,7 @@ You can recognize our maintenance team for their uniform.
                                             </div>
 
                                             <div class="wpb_accordion_section group">
-                                                <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post"><strong>CURRENCY</strong></a></h3>
+                                                <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post"><strong>MONEDA</strong></a></h3>
                                                 <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
                                                     <div class="wpb_text_column wpb_content_element ">
                                                         <div class="wpb_wrapper">
@@ -5879,7 +6055,22 @@ You can recognize our maintenance team for their uniform.
 					                                                	<div class="stm_item-features_inner">
 					                                                		<ul class="item-features_list_extended">
 					                                                			<li class="item-feature">
-					                                                				The official currency is the Mexican Peso. The exchange rate is between 14 and 17 pesos per American dollar varying according to fluctuations in the foreign exchange market, but US Dollars and credit cards are accepted in most places. There are many exchange offices and banks where you can get pesos. The first generally give better exchange rate but you may have to wait in long lines and they usually ask for documents. Be aware that some only accept few currencies. If you need to change Euros, you must bring your passport.
+					                                                				La moneda oficial de México es el peso mexicano. 
+                                                                                    El tipo de cambio está entre los 14 y 17 pesos por 
+                                                                                    dólar estadounidense, pero varía de acuerdo con las
+                                                                                    fluctuaciones en el mercado de divisas extranjeras. Sin
+                                                                                    embargo, la mayoría de los lugares y comercios en la 
+                                                                                    Riviera Maya y Cancún, aceptan pagos con dólares 
+                                                                                    americanos y tarjetas de crédito. <BR>
+                                                                                    Cerca de Villa Aqua existen varias casas de cambio y 
+                                                                                    bancos en donde cambiar divisas, generalmente las primeras
+                                                                                    tienen un mejor tipo de cambio, pero es probable que haya 
+                                                                                    que esperar un largo rato en la fila para ser atendido, y
+                                                                                    usualmente solicitan documentación. También es importante
+                                                                                    tener en cuenta que algunas casas de cambio no algún tipo de
+                                                                                    monedas, por ejemplo, si necesita cambiar Euros, generalmente
+                                                                                    deberá traer consigo su pasaporte.
+
 					                                                			</li>
 					                                                		</ul>
 					                                                	</div>
@@ -5892,8 +6083,9 @@ You can recognize our maintenance team for their uniform.
                                                 </div>
                                             </div>
 
+
                                             <div class="wpb_accordion_section group">
-                                                <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post"><strong>WEATHER</strong></a></h3>
+                                                <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post"><strong>CLIMA</strong></a></h3>
                                                 <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
                                                     <div class="wpb_text_column wpb_content_element ">
                                                         <div class="wpb_wrapper">
@@ -5903,7 +6095,21 @@ You can recognize our maintenance team for their uniform.
 					                                                	<div class="stm_item-features_inner">
 					                                                		<ul class="item-features_list_extended">
 					                                                			<li class="item-feature">
-					                                                				The average annual temperature in Riviera Maya is 24–25 °C (75–77 °F) but can reach 35-40 °C during summer months. Usually the weather is hot and humid but the higher temperatures are registered between the months of May and August with frequent night showers. The climate is dominated by a rainy season from May through November, and within the dry season there is a period dominated by northerly winds, which usually occurs in the months of January and February when the weather is sunny and cool. Groundwater and therefore "cenote" (sink holes) water temperatures are 25°C (77°F) year round. Coastal waters range from 26°C (79°F) in January to 29°C (84°F) in August.
+					                                                				La temperatura promedio en la Riviera Maya es de 
+                                                                                    entre 24 y 25 °C (75-77 °F), pero puede alcanzar los 
+                                                                                    35-40 °C durante el verano. Generalmente el clima es 
+                                                                                    cálido y húmedo, y las temperaturas más altas, se 
+                                                                                    registran entre los meses de mayo y agosto con frecuentes
+                                                                                    lluvias por la noche. El clima es predominantemente lluvioso
+                                                                                    en la temporada de mayo a noviembre, y en la temporada seca
+                                                                                    predominan los vientos del norte, que usualmente se 
+                                                                                    presentan en los meses de enero y febrero, cuando el clima 
+                                                                                    es soleado y fresco.<BR>
+                                                                                    Las aguas freáticas, y por lo tanto las aguas de los
+                                                                                    “Cenotes”, tienen una temperatura de 25 °C (77 °F) durante
+                                                                                    todo el año. Mientras que la temperatura de las aguas de la
+                                                                                    costa va desde los 26 °C (79 °F) hasta  los 29 °C (84 °F) 
+                                                                                    en agosto.
 					                                                			</li>
 					                                                		</ul>
 					                                                	</div>
@@ -5919,8 +6125,12 @@ You can recognize our maintenance team for their uniform.
                                                 </div>
                                             </div>
 
+
+                                            
+
+
                                             <div class="wpb_accordion_section group">
-                                                <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post"><strong>LOCAL TIME</strong></a></h3>
+                                                <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post"><strong>HORA LOCAL</strong></a></h3>
                                                 <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
                                                     <div class="wpb_text_column wpb_content_element ">
                                                         <div class="wpb_wrapper">
@@ -5930,7 +6140,13 @@ You can recognize our maintenance team for their uniform.
 					                                                	<div class="stm_item-features_inner">
 					                                                		<ul class="item-features_list_extended">
 					                                                			<li class="item-feature">
-					                                                				In Riviera Maya applies the Eastern Standard Time EST UTC/GMT-5 hours or the same time of Miami, FL.
+					                                                				En la Riviera Maya aplica el Horario Estándar del Este 
+                                                                                    o EST UTC/GMT-5 horas. El horario en la zona se adapta 
+                                                                                    en base al ciclo solar, por lo que ha tenido cambios
+                                                                                    constantes en los últimos años; por esta razón, recomendamos
+                                                                                    informarse sobre el horario actual antes de realizar su 
+                                                                                    viaje. 
+
 					                                                			</li>
 					                                                		</ul>
 					                                                	</div>
@@ -5945,7 +6161,7 @@ You can recognize our maintenance team for their uniform.
                                             </div>
 
                                             <div class="wpb_accordion_section group">
-                                                <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post"><strong>WATER</strong></a></h3>
+                                                <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post"><strong>AGUA</strong></a></h3>
                                                 <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
                                                     <div class="wpb_text_column wpb_content_element ">
                                                         <div class="wpb_wrapper">
@@ -5955,16 +6171,27 @@ You can recognize our maintenance team for their uniform.
 					                                                	<div class="stm_item-features_inner">
 					                                                		<ul class="item-features_list_extended">
 					                                                			<li class="item-feature">
-					                                                				The water that comes out of the sinks and showers at Villa Aqua is treated and desalinated. Please help to conserve local water by using only the water that you need. Even though the water in the villa is treated we do not recommend you drink it from the faucets as it has many minerals that your stomach may not tolerate. For drinking water please use bottle water or the blue large water jugs that we provide in the kitchen, it is complimentary.
+					                                                				El agua de la llave y las regaderas en Villa Aqua es agua
+                                                                                    tratada y suavizada, sin embargo no recomendamos que la beba
+                                                                                    directamente del grifo, ya que contiene muchos minerales que
+                                                                                    su estómago podría no tolerar. Por favor, beba agua
+                                                                                    embotellada o sírvase de los garrafones que proporcionamos en
+                                                                                    la cocina de la villa (sin costo). Ayúdenos a cuidar el agua
+                                                                                    de la región, no desperdiciando y usando sólo la necesaria.
+                                                                            
 					                                                			</li>
 					                                                			
 					                                                			<li class="item-feature">
-					                                                				Almost all restaurants in Playa will only serve purified water and use purified ice so do not worry about dining out!
+					                                                				Si come fuera de la casa, no se preocupe, prácticamente todos
+                                                                                    los restaurantes en Playa del Carmen sirven sólo agua
+                                                                                    purificada y utilizan hielos con agua pura. Sin embargo, si 
+                                                                                    va a pasar el día en la playa o visitando los diversos
+                                                                                    atractivos turísticos de la región, le recomendamos que lleve
+                                                                                    consigo agua embotellada o que compre y beba únicamente
+                                                                                    bebidas en botella.
 					                                                			</li>
 					                                                			
-					                                                			<li class="item-feature">
-					                                                				If you are going to spend your day out on the beach or visiting the different attractions, we recommend you to bring a supply of bottled water and/or drink only bottled beverages.
-					                                                			</li>
+					                                                			
 					                                                		</ul>
 					                                                	</div>
 					                                                </div>
@@ -5979,7 +6206,7 @@ You can recognize our maintenance team for their uniform.
 
 
                                             <div class="wpb_accordion_section group">
-                                                <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post"><strong>ELECTRICITY</strong></a></h3>
+                                                <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post"><strong>ELECTRICIDAD</strong></a></h3>
                                                 <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
                                                     <div class="wpb_text_column wpb_content_element ">
                                                         <div class="wpb_wrapper">
@@ -5989,7 +6216,13 @@ You can recognize our maintenance team for their uniform.
 					                                                	<div class="stm_item-features_inner">
 					                                                		<ul class="item-features_list_extended">
 					                                                			<li class="item-feature">
-					                                                				Mexico uses the conventional 110/220 electrical powers, the same as the United States. Electricity is very precious here in the Riviera Maya, please remember to keep all doors and windows closed while using the air conditioning to maintain the villa cool and conserve electricity. If you are to open doors and windows please be aware of the fact that it will take time to cool the room and villa again.
+					                                                				En México se utiliza el voltaje convencional de 110/220, 
+                                                                                    igual que en Estados Unidos. La electricidad es muy costosa 
+                                                                                    en la Riviera Maya, por lo que le rogamos procurar mantener
+                                                                                    todas las puertas y ventanas cerradas mientras usa el aire
+                                                                                    acondicionado. Si no sigue esta recomendación, tomará más
+                                                                                    tiempo enfriar las habitaciones y la casa.
+
 					                                                			</li>
 					                                                		</ul>
 					                                                	</div>
@@ -6004,7 +6237,7 @@ You can recognize our maintenance team for their uniform.
                                             </div>
 
                                             <div class="wpb_accordion_section group">
-                                                <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post"><strong>BUGS & FAUNA</strong></a></h3>
+                                                <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post"><strong>INSECTOS Y FAUNA LOCAL</strong></a></h3>
                                                 <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
                                                     <div class="wpb_text_column wpb_content_element ">
                                                         <div class="wpb_wrapper">
@@ -6014,7 +6247,15 @@ You can recognize our maintenance team for their uniform.
 					                                                	<div class="stm_item-features_inner">
 					                                                		<ul class="item-features_list_extended">
 					                                                			<li class="item-feature">
-					                                                				Playa del Carmen is a tropical destination, with that comes sporadic rain showers and high humidity. It might be helpful to buy mosquito repellent because of the wet and humid conditions. We would also like you to note that there are all types of wildlife in our surroundings. Even though we are in a populated area you can still see large iguanas, squirrels, local mammals, exotic birds, as well as various tropical insects.
+					                                                				Playa del Carmen es un destino turístico tropical y eso
+                                                                                    implica que haya mucha humedad y en  algunas épocas del año
+                                                                                    proliferan los mosquitos, por lo que recomendamos siempre
+                                                                                    tenga a la mano repelente. De igual manera, esta región cuenta
+                                                                                    con una exuberante vida salvaje y aunque Villa Aqua está
+                                                                                    ubicada en una zona poblada, todavía es posible encontrar
+                                                                                    grandes iguanas, ardillas, mamíferos endémicos de la zona, 
+                                                                                    así como aves exóticas y varios tipos de insectos.
+
 					                                                			</li>
 					                                                		</ul>
 					                                                	</div>
@@ -6029,7 +6270,7 @@ You can recognize our maintenance team for their uniform.
                                             </div>
 
                                             <div class="wpb_accordion_section group">
-                                                <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post"><strong>ATM'S</strong></a></h3>
+                                                <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post"><strong>CAJEROS AUTOMÁTICOS (ATM)</strong></a></h3>
                                                 <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
                                                     <div class="wpb_text_column wpb_content_element ">
                                                         <div class="wpb_wrapper">
@@ -6039,10 +6280,19 @@ You can recognize our maintenance team for their uniform.
 	                                                                	<div class="stm_item-features_inner">
 					                                                		<ul class="item-features_list_extended">
 					                                                			<li class="item-feature">
-					                                                				There are many ATMs throughout Playa del Carmen where you can receive Pesos but take in mind that sometimes you will be charge a double commission: the ATM's bank and yours! There are some ATMs that provide US dollars but have in mind that sometimes the commission can be up to 10% of the amount you retire.
+					                                                				Playa del Carmen cuenta con varios cajeros automáticos 
+                                                                                    (ATM) de diferentes bancos internacionales en donde podrá
+                                                                                    retirar pesos mexicanos. Existen también algunos que disponen
+                                                                                    de dólares americanos, pero tome en cuenta que en ocasiones
+                                                                                    pueden cargarle doble comisión, una por parte del banco en
+                                                                                    donde retire y otra por parte de su banco.
+
 					                                                			</li>
 					                                                			<li class="item-feature">
-					                                                				If you go on tours outside of the city remember to take plenty of cash with you because it is not common to find an ATM or even a place that will accept credit cards in rural areas.
+					                                                				Si va a salir de la ciudad, considere llevar con usted
+                                                                                    suficiente efectivo, ya que en las áreas rurales no es común
+                                                                                    encontrar cajeros automáticos o incluso lugares o comercios
+                                                                                    que acepten tarjetas de crédito.
 					                                                			</li>
 					                                                		</ul>
 					                                                	</div>
@@ -6102,7 +6352,7 @@ You can recognize our maintenance team for their uniform.
                                             </div>
 
                                             <div class="wpb_accordion_section group">
-                                                <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post"><strong>TAX & TIPS</strong></a></h3>
+                                                <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post"><strong>IMPUESTOS Y PROPINAS</strong></a></h3>
                                                 <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
                                                     <div class="wpb_text_column wpb_content_element ">
                                                         <div class="wpb_wrapper">
@@ -6112,14 +6362,26 @@ You can recognize our maintenance team for their uniform.
 	                                                                	<div class="stm_item-features_inner">
 					                                                		<ul class="item-features_list_extended">
 					                                                			<li class="item-feature">
-					                                                				In Riviera Maya, which belongs to the State of Quintana Roo, there is a 16% VAT (Value Added Tax) that is added to most products and services.
+					                                                				En Riviera Maya, Quintana Roo, al igual que en el resto del
+                                                                                    país, existe un impuesto IVA (impuesto al valor agregado) del
+                                                                                    16%, que se añade a la mayoría de los productos y servicios.
+
 					                                                			</li>
 					                                                			<li class="item-feature">
-					                                                				Tips are very common in Mexico. The amount you tip is at your discretion and should be based on the quality of service you received. Tips to service personnel (ie: Chef, kitchen assistant, housekeepers, server, maintenance, villa host, etc…) are not included in the cost of your villa rental.
+					                                                				Dar propinas es muy común en México. El monto o porcentaje es
+                                                                                    totalmente opcional y debe basarse en la calidad del servicio
+                                                                                    recibido. Las propinas para el personal de servicio de Villa
+                                                                                    Aqua (chef, ayudante de cocina, camaristas, meseros,
+                                                                                    mantenimiento, anfitrión de villa, etc...) no están incluidos
+                                                                                    en el costo del alquiler de la casa.
+
 					                                                			</li>
 					                                                			<li class="item-feature">
 					                                                			
-					                                                				To give you an idea of how much is usually tipped, and which service providers will expect a tip from you, here is a rundown of who and how much to tip in Mexico:
+					                                                				A continuación encontrará una guía o sugerencia sobre montos 
+                                                                                    o porcentajes estándar y el tipo de proveedores que esperan
+                                                                                    recibir una gratificación por sus servicios:
+
 					                                                			</li>
 					                                                		</ul>
 					                                                	</div>
@@ -6127,40 +6389,95 @@ You can recognize our maintenance team for their uniform.
                                                                 
                                                                     <ul>
                                                                         <li>
-                                                                            Waiters and Waitresses in Restaurants: it is customary to leave a tip equal to 10 to 20% of the total of the bill. In some restaurants service is included, particularly if you're part of a large group, but this is not usually the case. Always check the bill to see if service is included or if there are errors in the calculation. If a service charge is included, you may choose to tip extra for superior service.
-                                                                            <br /> In bars and at all-inclusive resorts it is appropriate to tip the equivalent of one dollar per drink, or 10 to 15% of the total.
+                                                                           Meseros en restaurantes: Se acostumbra dejar una propina del 10 al 20%
+                                                                            sobre el total de la cuenta. En algunos restaurantes el servicio está
+                                                                            incluido, especialmente si se es parte de un grupo grande, pero
+                                                                            generalmente este no es el caso. Siempre revise su cuenta para
+                                                                            verificar que esté correcta y confirmar si el servicio está incluido.
+                                                                            Si el cargo por servicio está incluido, puede elegir dejar una propina
+                                                                            extra si el servicio fue excelente. 
+
+                                                                            <br /> Guías y choferes: Si está contento con el servicio del guía del
+                                                                            tour, es apropiado dejar una propina del 10 al 20% con base en el
+                                                                            costo del tour. No se acostumbra dar propinas a los taxistas a menos
+                                                                            que le ayuden con el equipaje, en cuyo caso diez pesos o un dólar
+                                                                            americano por maleta, es una cantidad adecuada.
+
                                                                         </li>
                                                                         <li>
-                                                                            Guides and Drivers: If you are pleased with your tour guide, it is appropriate to tip 10 to 20% of the cost of a day tour. For multi-day group tours, tip the tour leader a minimum of two or three dollars per day, and coach driver’s one dollar per day. It is not customary to tip taxi drivers, unless they assist you with your luggage, in which case $1 USD or its equivalent in pesos per suitcase is a good rule of thumb.
+                                                                            Terapeutas o masajistas: Se acostumbra dar una propina de entre 
+                                                                            el 15-20% del costo del tratamiento o los servicios de Spa.
                                                                         </li>
                                                                         <li>
-                                                                            Spa Service Providers: It is customary to tip spa service providers 15-20% of the cost of the spa treatment.
+                                                                           Gasolineras: En las estaciones de gasolina en México, se brinda un
+                                                                            servicio completo, por lo que usualmente se les da una propina a los
+                                                                            despachadores de la estación, especialmente si proporcionan algún
+                                                                            servicio extra como limpiar su parabrisas; una propina de 5 a 10 
+                                                                            pesos o 1usd es suficiente, pero si también comprueban la presión del
+                                                                            aire de sus neumáticos o revisan los niveles de aceite del auto, es
+                                                                            adecuado agregar un poco más de propina.
+
                                                                         </li>
                                                                         <li>
-                                                                            Gas Station Attendants: Pemex stations in Mexico are full service. Gas station attendants are usually tipped, specially if they provide some extra service such as cleaning your windshield; 50 cents 1 USD or its equivalent in pesos is sufficient but if they also check the air in your tires or check the oil, you should tip more.
+                                                                            Empacadores de supermercados: En los supermercados generalmente hay
+                                                                            adolescentes o personas mayores que ayudan a embolsar las compras.
+                                                                            Estas personas no reciben un sueldo por su labor y su único ingreso
+                                                                            son las propinas de los clientes. Puede darles unos cuantos pesos 
+                                                                            (1 ó 2 pesos por bolsa generalmente es adecuado). También puede 
+                                                                            añadir 10 pesos más, si le ayudan a llevar las bolsas a su coche.
                                                                         </li>
+                                                                        
                                                                         <li>
-                                                                            Grocery Baggers: In grocery stores there are usually teens or seniors who will bag your purchases. These people do not receive any payment other than the tips they are given. Tip them a few pesos (1 or 2 pesos per shopping bag is a good rule of thumb) add on 1 USD or its equivalent in pesos more if they help you take the bags out to your car.
-                                                                        </li>
-                                                                        <li>
-                                                                            Villa Staff: Tipping is personal, private and 100% up to your discretion. There are many people who have questions on how to tip the staff who worked hard to make their vacations ones to remember. As a basic guideline for general tipping we recommend a minimum of $10 to $15 USD per person staying in the villa per day.
-                                                                            <br /> The total amount should be divided between the number of staff members that served you. The % for each staff is up to your discretion.
-                                                                            <br /> Some important things to take into consideration when tipping:
+                                                                            El Personal de Villa Aqua: Dejar propina es algo 100% personal y a
+                                                                            discresión. A petición de varios huéspedes, quienes nos pidieron
+                                                                            recomendaciones de cómo y cuánto dejar de propina al personal que 
+                                                                            se esfuerza diariamente para atenderlos y lograr que sus vacaciones
+                                                                            sean inolvidables, creamos estos parámetros que pueden servirle como
+                                                                            guía general para mostrar su agradecimiento al personal de servicio.
+
+                                                                            <br /> TBásicamente se recomienda dejar un mínimo de $10 a $15 dólares
+                                                                            por huésped por día. Esta cantidad puede ser dividida como usted lo
+                                                                            crea más conveniente , entre todo el staff que lo atendió durante su
+                                                                            estancia.
+
+                                                                            <br /> Algunos puntos importantes a tomar en cuenta cuando 
+                                                                                    deje propina:
+
                                                                             <ul>
                                                                                 <li>
-                                                                                    The quality of services that were provided.
-                                                                                </li>
-                                                                                <li>
-                                                                                    Were there children? You should consider an additional amount due to the fact that children tend to be more disorderly, eat on specific schedules and from different menus.
-                                                                                </li>
-                                                                                <li>
-                                                                                    The total number of days of your stay: if you stay in your villa for more than a week you should consider discounting 20% and for more than 2 weeks up to 30%.
-                                                                                </li>
-                                                                                <li>Hours of service – Were you provided with services outside of the normal hours offered?</li>
+                                                                                    ¿La calidad del servicio que recibió cumplió sus expectativas?
 
-                                                                                <li>Were services arranged for you such as transportation and outings?</li>
+                                                                                </li>
+                                                                                <li>
+                                                                                    ¿Hay niños en su grupo o familia? Si viaja con niños, debe
+                                                                                    considerar un extra en la propina ya que generalmente
+                                                                                    representa más trabajo del personal al tener horarios y menús
+                                                                                    especiales, así como ser más desordenados...
+
+                                                                                </li>
+                                                                                <li>
+                                                                                    El total de noches de su estancia. Si se hospedó con nosotros
+                                                                                    más de una semana, entonces puede descontar, por ejemplo, el
+                                                                                    20% o bien si es por más de 15 días hasta un 30%.
+
+                                                                                </li>
+                                                                                <li>Horarios de Servicio - Si lo atendieron fuera de los 
+                                                                                    horarios establecidos, deberá considerar un extra en la
+                                                                                    propina.
+                                                                                </li>
+
+                                                                                <li>Servicios Extra- Si solicitó servicios externos como
+                                                                                    transportación, reservas, excursiones y nuestro personal de
+                                                                                    servicio le ayudó a organizarlo, puede ser un motivo para
+                                                                                    incrementar la propina.
+                                                                                </li>
                                                                             </ul>
-                                                                            If for some reason you are unsatisfied with the service of any of our staff members, please report it immediately to your Villa Host. In case you prefer to contact the villa manager please e-mail rentals@villaaqua.com or call 044 (984) 8079475 from a local number or 1(866) 460 3159 from the US.
+                                                                            Si por alguna razón, el servicio que recibe de alguno de los miembros
+                                                                            de nuestro staff no fuera satisfactorio, le agradeceremos lo reporte
+                                                                            inmediatamente a su Anfitrión(a) de Villa (Villa Host). En caso que
+                                                                            prefiera contactar al Administrados de la Villa, favor de escribir a:
+                                                                            rentals@villaaqua.com o llamar al: 044 (984) 807 94 75.
+
                                                                         </li>
                                                                     </ul>
                                                                 </div>
@@ -6172,7 +6489,7 @@ You can recognize our maintenance team for their uniform.
                                             </div>
 
                                             <div class="wpb_accordion_section group">
-                                                <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post"><strong>TIPS FOR TIPPING </strong></a></h3>
+                                                <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post"><strong>Sugerencias para las propinas: </strong></a></h3>
                                                 <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
                                                     <div class="wpb_text_column wpb_content_element ">
                                                         <div class="wpb_wrapper">
@@ -6182,22 +6499,29 @@ You can recognize our maintenance team for their uniform.
 	                                                                	<div class="stm_item-features_inner">
 					                                                		<ul class="item-features_list_extended">
 					                                                			<li class="item-feature">
-					                                                				Plan ahead for tipping: include tips in your vacation budget.
+					                                                				Planee con tiempo la propina e inclúyalo dentro de su
+                                                                                    presupuesto de viaje.
+                                                                                </li>
+					                                                			<li class="item-feature">
+					                                                				Villa Aqua no tiene ninguna política sobre propinas 
+                                                                                    pero la mayoría del staff las agradece.
+                                                                                </li>
+					                                                			<li class="item-feature">
+					                                                				La propina se aprecia mucho, sin embargo un simple 
+                                                                                    “gracias” y una sonrisa pueden ser tan importantes y
+                                                                                    significativos como muestra de agradecimiento para los 
+                                                                                    que le sirvieron en sus vacaciones.
+
 					                                                			</li>
 					                                                			<li class="item-feature">
-					                                                				Change can be hard to come by in Mexico. Use larger bills when making purchases and hang on to your change so that you’ll have it on-hand for tips.
-					                                                			</li>
+					                                                				Las propinas son voluntarias y USTED es el único que 
+                                                                                    puede decidir cómo compensar al personal por su servicio.
+                                                                                </li>
+					                                                			
 					                                                			<li class="item-feature">
-					                                                				Villa Aqua has no-tipping policies but most staff is happy to receive tips.
-					                                                			</li>
-					                                                			<li class="item-feature">
-					                                                				Leaving a tip is important, but a smile and a “gracias” can be just as important in showing your appreciation to someone who has provided you with a service
-					                                                			</li>
-					                                                			<li class="item-feature">
-					                                                				Tips are voluntary, NOT an obligation. You will make the final decision on how you will compensate the service personal.
-					                                                			</li>
-					                                                			<li class="item-feature">
-					                                                				Please do not feel obligated to tip. This information is being provided because we have encountered a lot of questions about tipping and would like to leave this decision 100% private and up to your discretion.
+					                                                				Por favor no se sienta obligado a dejar propina, estos
+                                                                                    parámetros únicamente son a modo informativo.
+
 					                                                			</li>
 					                                                		</ul>
 					                                                	</div>
@@ -6220,12 +6544,6 @@ You can recognize our maintenance team for their uniform.
 
                                     <!-- .entry-footer -->
                                 </article>
-                                <div class="ult-spacer spacer-561be2953972e" data-id="561be2953972e" data-height="52" data-height-mobile="52" data-height-tab="52" data-height-tab-portrait="52" data-height-mobile-landscape="52" style="clear:both;display:block;"></div>
-								<div class="ult-animation ult-animate-viewport ult-no-mobile " data-animate="fadeIn " data-animation-delay="0 " data-animation-duration="1.5 " data-animation-iteration="1 " style="opacity:0; " data-opacity_start_effect="95 ">
-									<div class="vc_btn3-container vc_btn3-center ">
-										<a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-square vc_btn3-style-outline vc_btn3-color-chino" href="/arriving-to-the-villa-playacar-playa-del-carmen/" title="" target="_self">LEARN MORE</a>
-									</div>
-								</div>
                                 <!-- #post-## -->
                             </div>
                         </div>
@@ -6245,7 +6563,7 @@ You can recognize our maintenance team for their uniform.
 	{
 		ob_start();
 	    ?>
-	    <div class="page-header" style="background-image:url(/images/location-info/Villa_Aqua_location_info_HEADER_.jpg);text-align:center">
+	    <div class="page-header" style="background-image:url(/images/location-info/Header_location_info.jpg);text-align:center">
             <div class="container">
                 <div class="page-header_wrap">
                     <div class="page-header_in">
@@ -6286,25 +6604,31 @@ You can recognize our maintenance team for their uniform.
 <!------------------- Master Bedroom  -------------------->                            
                                 <div class="wpb_wrapper">
                                     <div class="vc_custom_heading">
-                                        <h2 style="color: 333;text-align: left;font-weight:300;font-style:normal">Beaches & Beach Clubs</h2>
+                                        <h2 style="color: 333;text-align: left;font-weight:300;font-style:normal">Playas & Clubes de Playa</h2>
                                     </div>
                                     <div class="ult-spacer spacer-56253aed4f277" data-id="56253aed4f277" data-height="25" data-height-mobile="25" data-height-tab="25" data-height-tab-portrait="25" data-height-mobile-landscape="25" style="clear:both;display:block;"></div>
                                     <div class="wpb_text_column wpb_content_element ">
                                         <div class="wpb_wrapper">
-                                        	<h6>PLAYACAR BEACH</h6>
+                                        	<h6>LA PLAYA DE PLAYACAR</h6>
                                         	<p class="paragraph ng-attr-widget">
-												One of the most exclusive and beautiful beaches along the Riviera Maya is located right 
-												in Playacar just a short walk from Villa Aqua (15-20 min). The beach at Playacar 
-												Phase I is a stretch of soft white sand and turquoise waters protected by the coral 
-												reef that runs along the coast and which is short distance off shore perfect for snorkeling.
+												A corta distancia de Villa Aqua (15-20 minutos caminando), se localiza una de 
+                                                las más hermosas y exclusivas playas de la Riviera Maya, justo en Playacar 
+                                                Fase I. Esta bella playa de arena blanca se extiende frente a las aguas turquesa 
+                                                del Caribe mexicano y se encuentra protegida por un arrecife de coral que recorre 
+                                                la costa y que está a pocos metros de la orilla, lo cual crea el ambiente perfecto 
+                                                para practicar snorkel.
+
                                             </p>
-                                            <h6>BEACH CLUBS</h6>
+                                            <h6>CLUBES DE PLAYA</h6>
                                             <p class="paragraph ng-attr-widget">
-                                            	Playa del Carmen is famous for its stylish beach clubs. Offering a pampering alternative to 
-												the public beaches, these clubs offer food and beverage services, a variety of spa treatments 
-												and aquatic sports, plus access to restrooms, showers and pools. Usually fees apply for the use 
-												of lounges and shade (umbrellas and palapas) or in some there is a minimum F&B consumption or 
-												even Day Pass costs.
+                                            	Playa del Carmen es famosa por sus modernos clubes de playa que ofrecen una 
+                                                excelente alternativa para los que gustan de tomar el sol y nadar en el mar. 
+                                                La mayoría de los clubes cuentan con servicio de alimentos y bebidas, 
+                                                tratamientos de spa, opciones para realizar actividades acuáticas, además de 
+                                                acceso a los servicios de baños, regaderas y piscina. Usualmente aplican un 
+                                                cargo por el uso de camastros, palapas y sombrillas, y en algunos se maneja 
+                                                un consumo mínimo de alimentos y bebidas o incluso un Day Pass.
+
                                             </p>
                                         
                                         </div>
@@ -6315,52 +6639,60 @@ You can recognize our maintenance team for their uniform.
 	                                            <div class="wpb_accordion wpb_content_element  not-column-inherit" data-collapsible="" data-vc-disable-keydown="false" data-active-tab="1">
                                                     <div class="wpb_wrapper wpb_accordion_wrapper ui-accordion">
                                                         <div class="wpb_accordion_section group">
-                                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post"><strong>REEF CLUB AT PLAYACAR</strong></a></h3>
+                                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post"><strong>THE REEF PLAYACAR</strong></a></h3>
                                                             <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
                                                                 <div class="wpb_text_column wpb_content_element ">
                                                                     <div class="wpb_wrapper">
                                                                         <p class="paragraph ng-attr-widget">
-																			Just a couple of minutes driving from Villa Aqua you will find The Reef Playacar Club, a 
-																			Resort that hosts the beach club for Playacar Community. You just need to present your VIP 
-																			cards at the hotel's reception and then you can spend a nice day at the beach, which includes 
-																			the usage of beach lounges, swimming pools, kids club, daily activities and more from 9am until 5pm.
+																			Tan sólo a unos minutos de Villa Aqua se encuentra The Reef 
+                                                                            Playacar, un Resort en el que se encuentra el club de playa del
+                                                                            fraccionamiento. Sólo deberá presentar sus tarjetas VIP en la
+                                                                            recepción del hotel para poder pasar el día en la playa. Esto 
+                                                                            incluye el uso de camastros, las piscinas, el kids Club, las
+                                                                            actividades de entretenimiento y mucho más. Abierto de 9 am a 
+                                                                            5 pm.
 							                                            </p>
 							                                            
-							                                            <p class="paragraph ng-attr-widget">Be aware that due to the fact that The Playacar Reef is 
-							                                            actually an ALL INCLUSIVE Resort you cannot drink or eat a la carte so If you are willing to
-							                                             take some drinks or eat something there is a Day pass for 50 usd per adult and 25usd per
-							                                              children (which is a 50% discounted rate) for Playacar's VIP card holders.
+							                                            <p class="paragraph ng-attr-widget">Tome en cuenta que debido a que 
+                                                                            The Reef Playacar es en realidad un hotel TODO INCLUIDO, no puede
+                                                                            consumir bebidas y alimentos a la carta. Si lo desea, puede adquirir
+                                                                            un Day Pass con un costo de 50 dólares por adulto y 25 dólares por
+                                                                            niño presentando la tarjeta Playacar VIP.
+
 							                                            </p>
-							                                            <p class="paragraph ng-attr-widget">Some of the amenities and activities that the Day Pass may include from 9pm to 4pm are:</p>
+							                                            <p class="paragraph ng-attr-widget">Algunas amenidades y actividades 
+                                                                            que incluye el Day Pass de 9 am a 4 pm, son:</p>
 							                                            <ul>
-							                                            	<li>All meals, snacks, drinks </li>
-							                                            	<li>2 Swimming pools</li>
+							                                            	<li>Alimentos, snacks, bebidas </li>
+							                                            	<li>2 piscinas</li>
 							                                            	<li>1 Jacuzzi</li>
-							                                            	<li>1 Kid's pool</li>
-							                                            	<li>1 Kid´s Club (ages 4-12)</li>
-							                                            	<li>Aerobics</li>
+							                                            	<li>1 Piscina para niños</li>
+							                                            	<li>Kids Club (4-12 años de edad)</li>
 							                                            	<li>Aquaerobics</li>
-							                                            	<li>Stretching</li>
-							                                            	<li>Spanish lessons</li>
-							                                            	<li>Dance lessons</li>
-							                                            	<li>Water Basketball</li>
-							                                            	<li>Beach Volleyball </li>
+							                                            	<li>Aquaerobics</li>
+							                                            	<li>Estiramientos (clases de stretching)</li>
+							                                            	<li>Lecciones de español</li>
+							                                            	<li>Lecciones de baile</li>
+							                                            	<li>Básquetbol acuático</li>
+							                                            	<li>Voleibol acuático </li>
 							                                            	<li>Waterpolo</li>
-							                                            	<li>Board games</li>
-							                                            	<li>Basic equipped Gym</li>
-							                                            	<li>1 Tennis court (day use only)</li>
+							                                            	<li>Juegos de mesa</li>
+							                                            	<li>Gimnasio con equipo básico</li>
+							                                            	<li>1 Cancha de tenis (sólo durante el día)</li>
 							                                            	<li>Reef Marina Dive Shop</li>
-							                                            	<li>Sailboats</li>
-							                                            	<li>Kayaking</li>
-							                                            	<li>Scuba demo in pool</li>
-							                                            	<li>Windsurfing</li>
-							                                            	<li>Snorkeling gear</li>
-							                                            	<li>Bicycles </li>
-							                                            	<li>All tips and taxes</li>
+							                                            	<li>Veleros</li>
+							                                            	<li>Kayaks</li>
+							                                            	<li>Demostración de buceo en la piscina</li>
+							                                            	<li>Windsurf</li>
+							                                            	<li>Equipo de snorkel</li>
+							                                            	<li>Bicicletas </li>
+							                                            	<li>Todas las propinas e impuestos</li>
 							                                            </ul>
 							                                            <p class="paragraph ng-attr-widget">
-							                                            	<strong>Note: </strong>It may get very crowded in some seasons of the year, so we recommend other 
-							                                            	beach clubs to receive a better service.
+							                                            	<strong>Note: </strong>Hay temporadas durante el año 
+                                                                            en las que llegan muchos visitantes, por lo que le recomendamos
+                                                                            asistir a otros clubes de playa para recibir un mejor servicio.
+
 							                                            </p>
                                                                     </div>
                                                                 </div>
@@ -6373,27 +6705,33 @@ You can recognize our maintenance team for their uniform.
                                                                 <div class="wpb_text_column wpb_content_element ">
                                                                     <div class="wpb_wrapper">
                                                                     	<p class="paragraph ng-attr-widget">
-                                                                    		Coralina Daylight Club is a private, exclusive and VIP beach club for adults over 18. With 
-                                                                    		entertainment and music, beach and sea breeze this club is a little different than others in 
-                                                                    		Playa Del Carmen. This is considered a “daylight club” which takes notes from places like Ibiza,
-                                                                    		 Spain; where they started the party early and enjoy DJ’s and a club like atmosphere, only this 
-                                                                    		 time when the sun is out. 
+                                                                    		Coralina Daylight Club es un exclusivo club de playa sólo 
+                                                                            para mayores de edad, que ofrece entretenimiento y música 
+                                                                            con la playa y la brisa marina de fondo. Este club es un 
+                                                                            poco diferente a los demás en Playa del Carmen, pues se le 
+                                                                            considera un “Club a la luz del día”, concepto que proviene 
+                                                                            de lugares como Ibiza, España, en donde la fiesta comienza 
+                                                                            desde temprano disfrutando de la música de los DJs y de un 
+                                                                            ambiente parecido al de un club nocturno, sólo que durante 
+                                                                            el día y bajo el sol.
+
                                                                     	</p>
                                                                     	<p class="paragraph ng-attr-widget">
-                                                                    		Coralina has upped the game and created a beach club that is less about being in the sand and 
-                                                                    		more about being near the pool and drinking with friends while listening to electronica and 
-                                                                    		dance music.
+                                                                    		Coralina, ha cambiado los estereotipos creando un club en 
+                                                                            donde la playa no es el actor principal, sino la piscina, 
+                                                                            donde se reúnen todos a tomar un trago y disfrutar la música
+                                                                            electrónica y dance, así como en las zonas privadas con 
+                                                                            carpas que se pueden rentar para obtener una experiencia 
+                                                                            más exclusiva y lujosa, acompañada con botellas de champaña.
+
                                                                     	</p>
                                                                     	<p class="paragraph ng-attr-widget">
-                                                                    		There are private tent areas that you can rent for a more luxurious and private affair complete 
-                                                                    		with champagne buckets.
+                                                                    		Coralina es “El Lugar” para admirar y ser admirado…
+                                                                            Recomendamos ampliamente que solicite a su Anfitrión 
+                                                                            de Villa lo asista para hacer una reservación.
+
                                                                     	</p>
-                                                                    	<p class="paragraph ng-attr-widget">
-                                                                    		It is a place to be seen and see others. 
-                                                                    	</p>
-                                                                    	<p class="paragraph ng-attr-widget">
-                                                                    		Ask your Villa Host to help you place a reservation, which are highly recommended.
-                                                                    	</p>
+                                                                    	
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -6405,10 +6743,33 @@ You can recognize our maintenance team for their uniform.
                                                                 <div class="wpb_text_column wpb_content_element ">
                                                                     <div class="wpb_wrapper">
                                                                         <p class="paragraph ng-attr-widget">
-                                                                        	A treasure of Playa del Carmen, Mamitas Beach Club is the perfect blend of a glamorous setting, 
-                                                                        	beautiful scenery and modern, chilled music. With an extensive stretch of sandy beaches, stylish 
-                                                                        	canopy sunbeds and fantastic DJ mixes, Mamitas Beach Club gives another level to the beach lounge 
-                                                                        	experience.
+                                                                        	Mamita’s Beach Club es, sin duda alguna, uno de los mejores 
+                                                                            lugares para disfrutar la belleza de Playa del Carmen. Con
+                                                                            aproximadamente doscientos metros de la mejor playa de la zona, 
+                                                                            podrás deleitarte con los extraordinarios colores del Caribe 
+                                                                            mexicano, su arena blanca y suave, y una increíble vista 
+                                                                            panorámica hacia la isla de Cozumel.
+                                                                            <br>
+                                                                            En su restaurante, podrás disfrutar de un delicioso desayuno o
+                                                                            almuerzo. Si prefieres, en su bar ofrecen una gran variedad de 
+                                                                            bebidas nacionales e internacionales que podrás tomar a la orilla 
+                                                                            del mar, escuchando la mejor música de los DJs residentes.   
+                                                                            Puedes pasar el día tomando el sol, refrescándote en la alberca
+                                                                            familiar o VIP, o simplemente relajándote con un masaje.   
+                                                                            Además, en Mamita´s Beach Club encontrarás los mejores servicios, 
+                                                                            como toallas para renta, regaderas, baños modernos y equipados 
+                                                                            con aire acondicionado, y hasta una boutique.  
+                                                                            Para tu comodidad también cuentan con servicio de Valet Parking,
+                                                                            seguridad privada y WiFi.
+                                                                            <br>
+                                                                            El lounge de Mamita´s Beach Club, es un área exclusiva pensada para
+                                                                            divertirse y pasarla realmente muy bien. Con elegantes camas de playa,
+                                                                            camastros y sombrillas, podrás disfrutar de la alberca VIP al ritmo de
+                                                                            la música electrónica de los mejores DJs. En sus renovadas y modernas
+                                                                            instalaciones, cuenta con un restaurante que ofrece un nuevo menú de
+                                                                            fusión asiática, fresca y frutal, ideal para la playa.  El lounge de
+                                                                            Mamita’s Beach Club, es definitivamente el mejor lugar para tener una
+                                                                            verdadera beach party.
                                                                         </p>
                                                                     </div>
                                                                 </div>
@@ -6421,14 +6782,20 @@ You can recognize our maintenance team for their uniform.
                                                                 <div class="wpb_text_column wpb_content_element ">
                                                                     <div class="wpb_wrapper">
                                                                         <p class="paragraph ng-attr-widget">
-                                                                        	At the heart of Playa del Carmen and the Caribbean Sea, Indigo Beach catches you with a different 
-                                                                        	proposal, which converges delicate and casual atmosphere with its idyllic beach setting and the 
-                                                                        	unique flavors; a conceptual menu based on a delicate fusion of Asian and Mexican cuisine, with 
-                                                                        	special emphasis on seafood and the Italian touch of native Sicily.
+                                                                        	En el corazón de Playa del Carmen, en el Mar Caribe, Indigo 
+                                                                            Beach trae una nueva propuesta en la que convergen una atmósfera
+                                                                            delicada y casual, una idílica playa y sabores únicos; con un menú
+                                                                            conceptual basado en una fusión delicada de cocina asiática y
+                                                                            mexicana, con énfasis especialmente en los mariscos y el toque
+                                                                            italiano de Sicilia.
+
                                                                         </p>
                                                                         <p class="paragraph ng-attr-widget">
-                                                                        	The evening goes off into the sunset, enlivened with tropical and "guapachoso" beats from our 
-                                                                        	resident Djs in the comfort of our beach beds and lounges.
+                                                                        	La tarde se pierde en el atardecer para darle vida a los sonidos
+                                                                            tropicales y “guapachosos” de los DJs residentes, mientras los 
+                                                                            amantes de la noche disfrutan cómodamente en nuestros camastros y
+                                                                            camas de playa.
+
                                                                         </p>
                                                                     </div>
                                                                 </div>
@@ -6441,10 +6808,12 @@ You can recognize our maintenance team for their uniform.
                                                                 <div class="wpb_text_column wpb_content_element ">
                                                                     <div class="wpb_wrapper">
                                                                         <p class="paragraph ng-attr-widget">
-                                                                        	Come visit this new and unique club that offers stimulus for each of your 5 senses! Great tasting 
-                                                                        	food and drinks, a different DJ every day, the best natural scenery that Playa del Carmen beach 
-                                                                        	clubs have to offer! You will surely leave happy after an uniquely different day at this retro 
-                                                                        	funky hot spot.
+                                                                        	Venga a visitar este peculiar club de playa que ofrece estimular 
+                                                                            los 5 sentidos. Con deliciosa comida y bebidas, un DJ diferente 
+                                                                            cada día y el mejor escenario natural que los clubes de Playa del
+                                                                            Carmen pueden tener, le aseguramos que se irá feliz después de vivir
+                                                                            una experiencia diferente en este increíble lugar estilo retro.
+
                                                                         </p>
                                                                     </div>
                                                                 </div>
@@ -6457,10 +6826,14 @@ You can recognize our maintenance team for their uniform.
                                                                 <div class="wpb_text_column wpb_content_element ">
                                                                     <div class="wpb_wrapper">
                                                                     	<p class="paragraph ng-attr-widget">
-	                                                                        Zenzi Beach Club, Sports Bar and Restaurant has everything you could want for a great day or evening 
-	                                                                        in Playa del Carmen. Bright Sunshine, the turquoise Caribbean Sea, gentle ocean breezes, International 
-	                                                                        and Mexican Cuisine, live music, and a friendly relaxed atmosphere on one of the world's greatest beaches. 
-	                                                                        And if that isn't enough, how about watching your favorite sporting event while enjoying the view.
+	                                                                        Zenzi Beach Club, Sports Bar y Restaurante tiene todo lo que 
+                                                                            podría desear para tener un gran día o una tarde magnífica en 
+                                                                            la playa. Permita que los cálidos rayos del sol, el turquesa 
+                                                                            del Mar Caribe, la gentil brisa del mar y una atmósfera relajada 
+                                                                            en una de las mejores playas del mundo, lo inunden y llenen 
+                                                                            sus sentidos. Y si eso no fuera suficiente, ¿qué le parece 
+                                                                            disfrutar todo esto viendo su deporte favorito?
+
                                                                         </p>
                                                                     </div>
                                                                 </div>
@@ -6473,8 +6846,12 @@ You can recognize our maintenance team for their uniform.
                                                                 <div class="wpb_text_column wpb_content_element ">
                                                                     <div class="wpb_wrapper">
                                                                     	<p class="paragraph ng-attr-widget">
-	                                                                        Enjoy a worry free day at this full service beach club including a restaurant, 2 bars, lounge, pool, massages, 
-	                                                                        sun deck, showers lockers and private restrooms! You will have all of your needs met and more at this hip & chic club!.
+	                                                                        Disfrute de un día libre de preocupaciones en este club de playa 
+                                                                            con servicio completo que cuenta con un restaurante, 2 bares, sala
+                                                                            lounge, piscina, servicio de masajes, solario, regaderas, lockers y
+                                                                            sanitarios privados. Todo lo que necesite y más, al alcance de su
+                                                                            mano, en este moderno club.
+
 	                                                                    </p>
                                                                     </div>
                                                                 </div>
@@ -6485,17 +6862,30 @@ You can recognize our maintenance team for their uniform.
                                                 </div>
                                                 <br>
                                                 <p class="paragraph ng-attr-widget">
-                                                	Always heed beach warning flags, which alert visitors to undertows and jellyfish problems. It is important to know and respect the meaning of 
-                                                	the colored flags that are on the beach and indicate the state of the tide:
+                                                	Preste atención a las banderas de advertencia, pues estas dan aviso sobre 
+                                                    corrientes de resaca y aguamalas. Es muy importante respetar y conocer el 
+                                                    significado de los colores en las banderas que encontrará en la playa, ya 
+                                                    que indican el estado de la marea:
+
                                                 	<br />
-                                                	<strong><span style="color: red;">Red</span>-<span style="color: black;">Black:</span></strong> danger <br>
-													<strong><span style="color: orange;">Yellow:</span></strong> caution <br>
-													<strong><span style="color: green;">Green</span> or <span style="color: blue;">Blue</span>:</strong> calm waters.<br>
+                                                	<strong><span style="color: red;">Roja</span>-<span style="color: black;">Negra:</span>                                                            </strong> peligro
+                                                    <br>
+													<strong><span style="color: orange;">
+                                                        Amarilla:</span></strong> precaución
+                                                    <br>
+													<strong><span style="color: green;">
+                                                        Verde</span> or <span style="color: blue;">
+                                                        Azul</span>:</strong> aguas en calma.
+
+                                                    <br>
                                                 </p>
-                                                <p class="paragraph ng-attr-widget"><strong>Never walk on the beach alone at night. </strong>
-                                                	<br>
-                                                	Years ago, topless sunbathing was a crime in Mexico, but the law is not enforced these days in Playa; however, women should be aware that 
-                                                	provocative clothes or nudity might invite unwanted attention/comments in a country where nudism is not common.
+                                                
+                                                <p class="paragraph ng-attr-widget">Hace unos años, asolearse “top-less” (sin sostén) 
+                                                    en las playas de México era un crimen, pero esta ley ya no se cumple hoy en día; 
+                                                    sin embargo, las mujeres deben ser conscientes de que usar ropa provocativa o 
+                                                    estar desnuda parcialmente puede atraer comentarios no deseados en un país en 
+                                                    el que el desnudismo no es común.
+
                                                 </p>
                                                 
                                             </div>
@@ -6553,26 +6943,36 @@ You can recognize our maintenance team for their uniform.
                             <div class="vc_col-sm-6 wpb_column vc_column_container ">
                                 <div class="wpb_wrapper">
                                     <div class="vc_custom_heading ">
-                                        <h2 style="color: 333;text-align: left;font-weight:300;font-style:normal">In the Water</h2>
+                                        <h2 style="color: 333;text-align: left;font-weight:300;font-style:normal">EN EL AGUA</h2>
                                     </div>
                                     <div class="ult-spacer spacer-56253aed585bd" data-id="56253aed585bd" data-height="25" data-height-mobile="25" data-height-tab="25" data-height-tab-portrait="25" data-height-mobile-landscape="25" style="clear:both;display:block;"></div>
                                     <div class="wpb_text_column wpb_content_element ">
                                         <div class="wpb_wrapper">
                                         	<p class="paragraph ng-attr-widget">
-												Hundreds of miles of spectacular beaches stretch along the coastline of the Riviera Maya. Backed by the crystal 
-												clear turquoise waters of the Caribbean Sea, Mexico's Riviera Maya is an ideal destination for aquatic sports and 
-												adventures both above and under the water.
+												La Riviera Maya, en México, es el destino ideal para los amantes de los 
+                                                deportes acuáticos y de la aventur. Kilómetros de espectaculares playas 
+                                                se extienden a lo largo de la costa, con aguas cristalinas color turquesa 
+                                                como escenario de fondo.
+
                                             </p>
 	                                            
 	                                        <p class="paragraph ng-attr-widget">
-												The Mexican Caribbean is catalogued world-class<strong> scuba diving and snorkeling destination</strong>. The world's second largest 
-												coral reef system extends the length of the coastline and a stunning array of colorful corals; tropical fish and 
-												marine life thrive just below the ocean's surface.
+												El Caribe mexicano es catalogado como un destino turístico en el que se 
+                                                puede practicar buceo de clase mundial, además, cuenta con el segundo 
+                                                sistema de arrecife de coral más grande del mundo, mismo que se extiende 
+                                                a lo largo de la costa y nos regala una impresionante variedad de corales 
+                                                multicolor, peces tropicales y demás vida marina.
+
                                             </p>
                                             
                                             <p class="paragraph ng-attr-widget">
-												You can also enjoy snorkeling and<strong> cave diving</strong> in the thousands of cenotes (underground sinkholes) that are scattered throughout 
-												the region. Exploring this underground network of freshwater pools and rivers is one of the more unique things to do in Riviera Maya Mexico.
+												Y para los más aventureros, está el espeleobuceo en los miles de 
+                                                cenotes (ríos subterráneos) que se encuentran por toda la región. 
+                                                Esta es una de las actividades que no deben perderse al venir a la 
+                                                Riviera Maya, explore las profundidades de esta red de ríos 
+                                                subterráneos y piscinas de agua dulce y sumérjase en el esplendor 
+                                                de la cultura Maya.
+
                                             </p>
                                         </div>
                                     </div>
@@ -6581,22 +6981,28 @@ You can recognize our maintenance team for their uniform.
                                     <div class="wpb_accordion wpb_content_element  not-column-inherit" data-collapsible="" data-vc-disable-keydown="false" data-active-tab="1">
                                         <div class="wpb_wrapper wpb_accordion_wrapper ui-accordion">
                                             <div class="wpb_accordion_section group">
-                                                <h3 class="wpb_accordion_header ui-accordion-header"><a href="#optimised-for-speed"><strong>SNORKELING</strong></a></h3>
+                                                <h3 class="wpb_accordion_header ui-accordion-header"><a href="#optimised-for-speed"><strong>SNORKEL</strong></a></h3>
                                                 <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
                                                     <div class="wpb_text_column wpb_content_element ">
                                                         <div class="wpb_wrapper">
                                                         	<p class="paragraph ng-attr-widget">
-                                                        		Snorkeling allows everyone, to explore the underwater world. This activity has become extremely popular 
-                                                        		among tourists from all over the world. It is such safe aquatic sports that even kids can participate, 
-                                                        		and makes it the perfect activity to enjoy with your family. Between the wonderful coral reef and 
-                                                        		"cenotes" (sinkholes) in the region there is always an unexplored spot.
+                                                        		La práctica del snorkel permite que cualquier persona pueda explorar el
+                                                                maravilloso mundo submarino. Esta actividad se ha vuelto muy popular entre
+                                                                los turistas de todas partes del mundo pues es un deporte acuático tan 
+                                                                seguro que incluso los niños pueden participar, y es la actividad perfecta 
+                                                                para disfrutar en familia. Explore el maravilloso mundo subacuático en el 
+                                                                segundo arrecife de coral más grande del mundo; adéntrese en los místicos
+                                                                "cenotes" de la región y déjese cautivar por las bellezas naturales.
+
                                                         	</p> 
                                                         	
                                                         	<p class="paragraph ng-attr-widget">
-                                                        		Snorkeling in Playa del Carmen is far better from a boat than off shore, so chartering a boat is recommended. 
-                                                        		Trips out to some of the local reefs give snorkelers the chance to explore a variety of ocean life. 
-                                                        		The reefs that can be explored when snorkeling in Playa are ideal for this activity because they have 
-                                                        		a maximum depth of 15 feet, meaning that the best is near the surface.
+                                                        		Practicar snorkel en Playa del Carmen es mucho mejor desde un barco mar 
+                                                                adentro que desde la playa, le recomendamos ampliemente, considere esta 
+                                                                actividad como un “must” durante su estancia. Los arrecifes de Playa son 
+                                                                ideales para esta actividad porque tienen una profundidad máxima de 4.5 
+                                                                metros, lo que significa que la mejor vista está cerca de la superficie. 
+
                                                         	</p> 
                                                         </div>
                                                     </div>
@@ -6604,20 +7010,28 @@ You can recognize our maintenance team for their uniform.
                                             </div>
                                             
                                             <div class="wpb_accordion_section group">
-                                                <h3 class="wpb_accordion_header ui-accordion-header"><a href="#optimised-for-speed"><strong>DIVING</strong></a></h3>
+                                                <h3 class="wpb_accordion_header ui-accordion-header"><a href="#optimised-for-speed"><strong>BUCEO</strong></a></h3>
                                                 <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
                                                     <div class="wpb_text_column wpb_content_element ">
                                                         <div class="wpb_wrapper">
                                                         	<p class="paragraph ng-attr-widget">
-                                                        		The turquoise waters of the Caribbean Sea are great for scuba diving to experience underwater life on the Great 
-                                                        		Mayan Reef. The coral formations extending along a large portion of the coast are an unforgettable sight, which 
-                                                        		allows you to explore the largest coral reef in the Northern Hemisphere. The numerous subterranean rivers and 
-                                                        		"cenotes", formed by water filtering through the limestone, provide another option for those who love diving. 
-                                                        		Many locations within the jungle provide rental equipment as well as guides and instructors for cave diving.
+                                                        		Las aguas turquesas del mar Caribe son excelentes para disfrutar 
+                                                                de la vida submarina que habita en el Gran Arrecife Maya. 
+                                                                Las formaciones de coral que se extienden a lo largo de gran parte 
+                                                                de la costa son un espectáculo inolvidable, que le permite explorar 
+                                                                el arrecife de coral más grande en el hemisferio norte. Los numerosos 
+                                                                ríos subterráneos y "cenotes", formados por el agua que se filtra a 
+                                                                través de la piedra caliza, ofrecen otra opción para los amantes del 
+                                                                buceo. 
+
                                                         	</p> 
                                                         	<p class="paragraph ng-attr-widget">
-                                                        		If you are interested on learning how to dive, we can organize some classes for you or even help you obtain 
-                                                        		your certification. Just contact your Villa Host for more information.
+                                                        		Si usted está interesado en aprender a bucear, podemos organizar 
+                                                                algunas clases o incluso ayudarle a obtener su certificación. 
+                                                                Contacte a su Anfitrión de Villa para obtener más información 
+                                                                sobre paseos e instructores de buceo y buceo en caverna (espeleobuceo).
+
+
                                                         	</p>
                                                         </div>
                                                     </div>
@@ -6625,27 +7039,36 @@ You can recognize our maintenance team for their uniform.
                                             </div>
 	                                        
 	                                        <div class="wpb_accordion_section group">
-                                                <h3 class="wpb_accordion_header ui-accordion-header"><a href="#optimised-for-speed"><strong>YACHTING</strong></a></h3>
+                                                <h3 class="wpb_accordion_header ui-accordion-header"><a href="#optimised-for-speed"><strong>PASEOS EN YATE</strong></a></h3>
                                                 <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
                                                     <div class="wpb_text_column wpb_content_element ">
                                                         <div class="wpb_wrapper">
                                                         	<p class="paragraph ng-attr-widget">
-                                                        		Enjoy a memorable day on the Caribbean waters sailing in a luxury yacht. The most recommended option for a 
-                                                        		great day with family and friends. 
+                                                        		Disfrute de un día inolvidable en las aguas del Caribe abordo de un 
+                                                                yate de lujo y pase momentos maravillosos en compañía de la familia 
+                                                                y los amigos.
+ 
                                                         	</p> 
                                                         	<p class="paragraph ng-attr-widget">
-                                                        		Discover the extraordinary turquoise waters of the Riviera Maya Coast, all aboard a luxurious yacht, the perfect 
-                                                        		place to have fun snorkeling, sun tanning, fishing or drinking margaritas with a luxurious lunch served in the 
-                                                        		flybridge lounge area by your onboard chef.
+                                                        		Naveguen por las extraordinarias aguas turquesa de la costa de la Riviera 
+                                                                Maya a bordo de un espectacular yate, el lugar perfecto para divertirse, 
+                                                                practicar snorkel, broncearse en la cubierta, pescar o simplemente beber
+                                                                margaritas acompañadas por un delicioso almuerzo servido por su chef 
+                                                                personal.
+
                                                         	</p> 
                                                         	<p class="paragraph ng-attr-widget">
-                                                        		Ask your Villa Host about the different charter yacht tours that fit almost any budget, from "good-value-for-the-money" 
-                                                        		tours that include excellent shrimp and fish ceviche or delicious cheeseburgers and an open bar, to "top-of-the-line" 
-                                                        		VIP tours with your very own onboard chef, specialty menus, premium bar and bartender.
+                                                        		Consulte con su Anfitrión de Villa sobre las diferentes opciones y 
+                                                                paseos en yate disponibles. Desde tours que incluyen ceviche o ricas 
+                                                                hamburguesas y bar abierto; hasta tours VIP con chef personal a bordo, 
+                                                                menús especiales, barra premium y bartender.
+
                                                         	</p> 
                                                         	<p class="paragraph ng-attr-widget">
-                                                        		Note: Yacht trips depart from Puerto Aventuras. Transportation from Villa Aqua to the dock and back is not included but 
-                                                        		can be arranged by your Villa Host.
+                                                        		Nota: Los paseos en yate salen de Puerto Aventuras. 
+                                                                La transportación desde Villa Aqua no está incluida 
+                                                                pero puede solicitar este servicio con su Anfitrión de Villa.
+
                                                         	</p> 
                                                         </div>
                                                     </div>
@@ -6653,20 +7076,28 @@ You can recognize our maintenance team for their uniform.
                                             </div>
                                             
                                             <div class="wpb_accordion_section group">
-                                                <h3 class="wpb_accordion_header ui-accordion-header"><a href="#optimised-for-speed"><strong>FISHING</strong></a></h3>
+                                                <h3 class="wpb_accordion_header ui-accordion-header"><a href="#optimised-for-speed"><strong>PESCA</strong></a></h3>
                                                 <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
                                                     <div class="wpb_text_column wpb_content_element ">
                                                         <div class="wpb_wrapper">
                                                         	<p class="paragraph ng-attr-widget">
-                                                        		The quality of deep-sea fishing in the Playa del Carmen area may come as a surprise to you. This area is perhaps more 
-                                                        		famous for its fantastic diving and it's amazing Mayan ruins, but the truth is that fishing in the Riviera Maya is 
-                                                        		an activity that draws thousands of visitors a year and ranked extremely high by serious anglers from all over 
-                                                        		the world.
+                                                        		La calidad de la pesca en Playa del Carmen definitivamente 
+                                                                lo sorprenderá. Aun cuando esta zona es más reconocida por 
+                                                                el fantástico buceo que se puede realizar en sus aguas y por 
+                                                                sus impresionantes sitios arqueológicos Mayas, la realidad es 
+                                                                que  también la pesca en la Riviera Maya es una actividad 
+                                                                que atrae a miles de visitantes al año y es uno de los 
+                                                                lugares favoritos de pescadores profesionales de todo el 
+                                                                mundo.
+
                                                         	</p> 
                                                         	<p class="paragraph ng-attr-widget">
-                                                        		After all, this is the Caribbean and many of the world's most wanted fish swim in the waters off the coast of Playa 
-                                                        		del Carmen. Sailfish are particularly prevalent. Throughout the year there are frequent fishing tournaments held with 
-                                                        		lovers of the sport.
+                                                        		Después de todo, esto es el Caribe Mexicano y muchos de los 
+                                                                peces más buscados del mundo nadan en las aguas de las costas 
+                                                                de Playa del Carmen, por el ejemplo el pez vela, que predomina 
+                                                                en el área. Los amantes de la pesca deportiva pueden disfrutar 
+                                                                de torneos de pesca a lo largo del año.
+
                                                         	</p>
                                                         </div>
                                                     </div>
@@ -6674,25 +7105,35 @@ You can recognize our maintenance team for their uniform.
                                             </div>
                                             
                                             <div class="wpb_accordion_section group">
-                                                <h3 class="wpb_accordion_header ui-accordion-header"><a href="#optimised-for-speed"><strong>SAILING & CATAMARAN TRIPS</strong></a></h3>
+                                                <h3 class="wpb_accordion_header ui-accordion-header"><a href="#optimised-for-speed"><strong>PASEOS EN VELERO Y CATAMARÁN</strong></a></h3>
                                                 <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
                                                     <div class="wpb_text_column wpb_content_element ">
                                                         <div class="wpb_wrapper">
                                                         	<p class="paragraph ng-attr-widget">
-                                                        		Set sail on your own private catamaran charter. You can enjoy the morning breezes of the Mexican Caribbean or spend an 
-                                                        		afternoon surrounded by your family and friends aboard. You can snorkel, swim, or just enjoy the tropical beauty of the 
-                                                        		Riviera Maya. 
+                                                        		Navegue por los mares en un charter privado en catamarán, 
+                                                                ya sea para disfrutar la brisa del Caribe mexicano por la 
+                                                                mañana o bien pasar una bella tarde sobre las olas rodeado 
+                                                                de la familia y amigos. Desde el velero o catamarán puede 
+                                                                practicar snorkel, nadar o simplemente disfrutar de la 
+                                                                belleza tropical de la Riviera Maya.
+
                                                         	</p>
                                                         	<p class="paragraph ng-attr-widget">
-                                                        		If you like Sunsets, there's no better place to soak up the last rays of the tropical sun than a graceful catamaran as 
-                                                        		you cruise up the Caribbean coastline.
+                                                        		Si le encantan las puestas de sol, no hay mejor lugar para 
+                                                                disfrutar los últimos rayos del sol tropical, que a bordo de
+                                                                un catamarán surcando las aguas caribeñas.
                                                         	</p> 
                                                         	<p class="paragraph ng-attr-widget">
-                                                        		It is the perfect plan for<strong> family reunions, corporate events</strong>, and other occasions to remember such as<strong> weddings or 
-                                                        		even memorial services.</strong>
+                                                        		Es el plan perfecto para celebrar reuniones 
+                                                                familiares, eventos corporativos y otras ocasiones 
+                                                                especiales para recordar, tales como bodas o incluso 
+                                                                homenajes póstumos.
+
                                                         	</p> 
                                                         	<p class="paragraph ng-attr-widget">
-                                                        		Tours leave from Puerto Aventuras or Cancun and generally last 4 hours.
+                                                        		Los tours en catamaran y velero salen desde Puerto Aventuras o 
+                                                                Cancún y generalmente duran 4 horas.
+
                                                         	</p> 
                                                         </div>
                                                     </div>
@@ -6705,36 +7146,49 @@ You can recognize our maintenance team for their uniform.
                                                     <div class="wpb_text_column wpb_content_element ">
                                                         <div class="wpb_wrapper">
                                                         	<p class="paragraph ng-attr-widget">
-                                                        		The natural wonders of this Region are innumerable and some of the most important and unusual are the Cenotes, 
-                                                        		or sinkholes. It is estimated that there are more than 6000 in the Yucatan Peninsula, although only 2400 are
-                                                        		 registered. The Mayans called them “dzonot”, which the conquering Spaniards translated as Cenote.
+                                                        		Las maravillas naturales de esta región son innumerables y una de 
+                                                                las más importantes y representativas son los Cenotes, palabra que 
+                                                                viene del vocablo maya “dzonot” y que más tarde fue traducido por 
+                                                                los españoles como cenote. Se estima que hay más de 6,000 en la 
+                                                                península de Yucatán, aunque sólo están registrados 2,400. En 
+                                                                tiempos ancestrales se creía que eran lugares mágicos pues fueron 
+                                                                la única fuente de agua dulce de la selva en ese tiempo y por eso 
+                                                                eran considerados como lugares sagrados para los Mayas, pero también 
+                                                                porque representaban la entrada al inframundo. 
+
                                                         	</p>
                                                         	
                                                         	<p class="paragraph ng-attr-widget">
-                                                        		Cenotes are magical, enigmatic and unique in the world and were once the only resource for fresh, 
-                                                        		sweet water in the local jungle. 
+                                                        		Las estalactitas y estalagmitas que se forman dentro son verdaderas 
+                                                                obras de arte de la naturaleza. En muchos cenotes, los agujeros que 
+                                                                hay en el techo permiten que la luz del sol se filtre, convirtiéndolos 
+                                                                en un escenario maravilloso.
                                                         	</p>
                                                         	
                                                         	<p class="paragraph ng-attr-widget">
-                                                        		They were the sacred places of the Mayas for that reason, but also because they represented the entrance to the 
-                                                        		underworld. The stalactites and stalagmites that form inside are true natural works of art. In many, holes in the 
-                                                        		ceiling allow the sunlight to filter, giving the scene a magical feeling. The Cenotes are a natural treasure that 
-                                                        		should be seen by all, keeping in mind that they should be protected so that man does not destroy in a few days 
-                                                        		what nature took millions of years to create. The many Cenotes that are in the Riviera Maya are a good choice for 
-                                                        		swimming, snorkeling and, for the more experienced, even diving.
+                                                        		Cenotes son un tesoro natural que nadie debe perderse, teniendo siempre 
+                                                                en cuenta que hay que cuidarlos para que el hombre no destruya en unos 
+                                                                cuantos días, lo que a la naturaleza le ha tomado millones de años crear. 
+                                                                Los diversos cenotes que hay en la Riviera Maya son una buena opción para 
+                                                                nadar, practicar snorkel y para los más experimentados, incluso bucear.
+
                                                         	</p>
                                                         	
                                                         	<p class="paragraph ng-attr-widget">
-                                                        		<strong>Important:</strong> 
-																Do not touch any of the funds and walls in the dive, and please do not use suntan lotion before the bath as they 
-																can seriously pollute the pristine waters of the cenotes, destroying plant and animal species that are only found i
-																n them.
+                                                        		<strong>Importante:</strong> 
+																No toque el fondo o las paredes durante su inmersión y no utilice bronceador
+                                                                antes de nadar en el cenote ya que puede contaminar gravemente las aguas
+                                                                cristalinas del mismo y propiciar la  destrucción de especies vegetales y 
+                                                                animales que habitan únicamente ahí.
+
                                                         	</p>
                                                         	
                                                         	<p class="paragraph ng-attr-widget">
-                                                        		<strong>Recommendations:</strong>
-																Bring: swimsuit, sandals or sneakers, towel, insect repellent (biodegradable), shirt and long pants if you are walking 
-																through the jungle and snorkel if you don't want to rent it.
+                                                        		<strong>Recommendaciones:</strong>
+																Traer: traje de baño, sandalias o zapatos deportivos para el agua, toalla,
+                                                                repelente contra insectos (biodegradable), camisa y pantalones largos si 
+                                                                desea caminar por la selva y su equipo de snorkel si no quiere alquilarlo.
+
                                                         	</p>
                                                         </div>
                                                     </div>
@@ -6742,22 +7196,28 @@ You can recognize our maintenance team for their uniform.
                                             </div>
                                             
                                             <div class="wpb_accordion_section group">
-                                                <h3 class="wpb_accordion_header ui-accordion-header"><a href="#optimised-for-speed"><strong>SWIM WITH DOLPHINS</strong></a></h3>
+                                                <h3 class="wpb_accordion_header ui-accordion-header"><a href="#optimised-for-speed"><strong>NADO CON DELFINES</strong></a></h3>
                                                 <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
                                                     <div class="wpb_text_column wpb_content_element ">
                                                         <div class="wpb_wrapper">
                                                         	<p class="paragraph ng-attr-widget">
-                                                        		The Swimming with dolphins activity includes several activities such as jumping, hugging, kissing, markings, swirls, 
-                                                        		foot push and free interaction. In addition, throughout the programs trainers outlined interesting information 
-                                                        		about animal behavior, diet, health and care. Trainers should be always open to answer all questions about dolphin's 
-                                                        		world.
+                                                        		El tour de nado con delfines incluye varias actividades que el delfín 
+                                                                realiza tales como saltos,  tiernos abrazos y cariños, remolinos, foot 
+                                                                push y nado libre. Además, a lo largo del programa, los entrenadores 
+                                                                proporcionan información interesante acerca de la conducta, dieta, 
+                                                                salud y cuidados de los delfines, y siempre contestan las preguntas que 
+                                                                los participantes tengan sobre el increíble mundo de los delfines.
                                                         	</p> 
                                                         	<p class="paragraph ng-attr-widget">
-                                                        		If you have done this before, maybe you would like to experience two types of Swimming with dolphins that are 
-                                                        		entirely new and unique in the global market: one is called Dolphin Trek, a scuba diving with dolphins program 
-                                                        		(no diving experience required and is totally safe), and the other, The One, which is a unique program where 
-                                                        		you will live this experience only by yourself for an hour with a dolphin. And for the ones that are really 
-                                                        		into the dolphin's world, maybe you would like to experience a day as a trainer!
+                                                        		Si ya ha nadado con delfines antes, tal vez desee experimentar dos nuevos 
+                                                                tipos de nado, únicos en el mundo: el primero se llama Dolphin Trek, y es 
+                                                                un programa de buceo con delfines (no se necesita experiencia en buceo, ya 
+                                                                que es totalmente seguro); y el segundo, The One, que es un programa exclusivo 
+                                                                en el que se encontrarán únicamente usted y el delfín para vivir una 
+                                                                experiencia inolvidable durante una hora. ¡Y para los que realmente son 
+                                                                fanáticos del mundo de los delfines, tal vez les gustaría experimentar 
+                                                                un día como un entrenador!
+
                                                         	</p> 
                                                         </div>
                                                     </div>
@@ -6765,53 +7225,84 @@ You can recognize our maintenance team for their uniform.
                                             </div>
                                             
                                             <div class="wpb_accordion_section group">
-                                                <h3 class="wpb_accordion_header ui-accordion-header"><a href="#optimised-for-speed"><strong>SWIM WITH WHALE SHARKS</strong></a></h3>
+                                                <h3 class="wpb_accordion_header ui-accordion-header"><a href="#optimised-for-speed"><strong>NADO CON TIBURONES BALLENA</strong></a></h3>
                                                 <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
                                                     <div class="wpb_text_column wpb_content_element ">
                                                         <div class="wpb_wrapper">
                                                         	<p class="paragraph ng-attr-widget">
-                                                        		Swimming (snorkel only) with the ocean's largest fish the "whale shark" is one of the most exciting things 
-                                                        		you'll do while in Riviera Maya and probably in your life! 
+                                                        		Nadar (sólo snorkel) con uno de los peces más grandes del océano, el 
+                                                                "tiburón ballena" es una de las experiencias más emocionantes que puede
+                                                                experimentar en la Riviera Maya y probablemente en toda su vida!
+
                                                         	</p> 
                                                         	 
                                                         	<p class="paragraph ng-attr-widget">
-                                                        		The annual migration of whale sharks, actually the largest such concentration in the world, begins in May as 
-                                                        		the whale sharks return again for their summer feeding season here near the top tip of the Yucatan Peninsula. 
-                                                        		They come every year to "eat" nature's buffet of algae, plankton, krill, fish eggs, & tiny brine shrimp. 
+                                                        		La migración anual de tiburones ballena, la concentración más grande 
+                                                                de estos bellos animales en el mundo, comienza en mayo, cuando los 
+                                                                tiburones ballena regresan para su temporada de alimentación en el 
+                                                                verano, cerca de la punta de la península de Yucatán. Cada año vuelven 
+                                                                para "comerse" el gran buffet de algas, plancton, kril, huevos de peces 
+                                                                y pequeños camarones, que la naturaleza les regala.
+
                                                         	</p> 
                                                         	
                                                         	<p class="paragraph ng-attr-widget">
-                                                        		While feeding on this bountiful buffet the whale sharks swim along the surface of the sea with "mouths wide open" 
-                                                        		(mouths big enough to swallow a grown man in one gulp but...they're harmless "vegetarians" who are no threat to man, 
-                                                        		woman or child). Kids from 4 yrs & up can swim; it is perfectly safe for the whole family! 
+                                                        		Mientras se alimentan de este abundante festín, los tiburones ballena 
+                                                                nadan sobre la superficie con la "boca abierta" (lo suficientemente 
+                                                                grande como para tragarse a un adulto de un solo bocado, pero son 
+                                                                inofensivos "vegetarianos" que no representan una amenaza para el 
+                                                                hombre). Incluso los niños de 4 años en adelante pueden nadar con 
+                                                                ellos, ya que es perfectamente seguro para toda la familia.
+
                                                         	</p> 
                                                         	
                                                         	<p class="paragraph ng-attr-widget">
-                                                        		If you stay in Villa Aqua between the months of May and September don't miss the opportunity to do this activity 
-                                                        		which we are sure will be the "highlight of your vacation".
+                                                        		Si se hospeda en Villa Aqua entre los meses de mayo y septiembre 
+                                                                no puede perderse la oportunidad de realizar esta actividad que 
+                                                                estamos seguros, será la “cereza del pastel” en sus vacaciones.
+
                                                         	</p> 
-                                                        	
+                                                            
+                                                            <p class="paragraph ng-attr-widget">
+                                                        		Contacte a su Anfitrión de Villa para obtener más información y precios.
+
+                                                        	</p>
+
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                             
                                             <div class="wpb_accordion_section group">
-                                                <h3 class="wpb_accordion_header ui-accordion-header"><a href="#optimised-for-speed"><strong>DIVE WITH BULL SHARKS</strong></a></h3>
+                                                <h3 class="wpb_accordion_header ui-accordion-header"><a href="#optimised-for-speed"><strong>BUCEO CON TIBURONES TORO</strong></a></h3>
                                                 <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
                                                     <div class="wpb_text_column wpb_content_element ">
                                                         <div class="wpb_wrapper">
                                                         	<p class="paragraph ng-attr-widget">
-                                                        		Dare to dive with these mysterious rulers of the sea! From November to February every year the Bull Sharks 
-                                                        		come to Playa to feed and to breed. They are thought by many to be one of the most dangerous sharks. 
-                                                        		See the other side to these magnificent fish, showing just how little there is to be feared and giving 
-                                                        		you one of the most incredible experiences possible, up close and personal with the Bull Sharks.
+                                                        		¡Atrévase a bucear con estos misteriosos “goliats” marinos! Los 
+                                                                tiburones toro nos visitan en Playa del Carmen durante los meses 
+                                                                de noviembre a febrero de cada año para alimentarse y reproducirse. 
+                                                                Esta especie de tiburón es considerada por muchos como uno de los 
+                                                                tiburones más peligrosos, por lo que conocer el otro lado de estos 
+                                                                magníficos peces nos muestra que en realidad no hay mucho que temer, 
+                                                                y  nos regala una de las experiencias más increíbles estando, cara a 
+                                                                cara, con estos titanes del océano.
+
                                                         	</p> 
                                                         	<p class="paragraph ng-attr-widget">
-                                                        		They are naturally curious animals and will pass within 2-3 feet sometimes in order to get a good look 
-                                                        		at the divers. In order to participate in this experience, you need to be a certified diver with experience 
-                                                        		and good buoyancy control and air consumption.
+                                                        		Los tiburones toro son animales curiosos por naturaleza y suelen 
+                                                                pasar a una distancia de entre 60 y 90 cm de los buzos para obtener 
+                                                                un buen vistazo de ellos. Para participar en este tour, se necesita 
+                                                                ser un buzo certificado con experiencia, buen control de flotación y 
+                                                                de consumo de aire.
+
                                                         	</p> 
+                                                            
+                                                            <p class="paragraph ng-attr-widget">
+                                                        		Contacte a su Anfitrión de Villa para obtener más información y precios.
+
+                                                        	</p>
+                                                            
                                                         </div>
                                                     </div>
                                                 </div>
@@ -6823,17 +7314,25 @@ You can recognize our maintenance team for their uniform.
                                                     <div class="wpb_text_column wpb_content_element ">
                                                         <div class="wpb_wrapper">
                                                         	<p class="paragraph ng-attr-widget">
-                                                        		Kiteboarding, or kitesurfing, is just about the coolest sport on the planet! This exhilarating sport 
-                                                        		combines aspects of surfing, wakeboarding, paragliding, and more. Imagine being able to pull off all 
-                                                        		your favorite wakeboard moves without the assistance of a boat. Ride wherever you want with only the 
-                                                        		tranquil sound of the wind in your ears. Jump 30-feet off flat water without a ramp, surf more waves 
-                                                        		in one day than you ever thought possible. Your age, weight, or past experiences are no-excuses. As 
-                                                        		long as have the desire to learn, and are willing to follow recommendations then you'll be able to 
-                                                        		learn Kite boarding and enjoy it!!!
+                                                        		¡Kiteboarding o kite surf, es considerado uno de los deportes más 
+                                                                geniales del planeta! Combina aspectos del surf, esquí acuático y 
+                                                                parapente, entre otros. Imagine que es capaz de realizar todos sus 
+                                                                movimientos favoritos de esquí acuático sin la ayuda de una lancha.<br>
+                                                                Diríjase a donde quiera con sólo el tranquilo soplo del viento como 
+                                                                guía. De un salto de casi 10 metros de altura sin necesidad de una 
+                                                                rampa, surfee más olas de las que alguna vez soñó en un solo día.<br>
+                                                                ¡La edad, el peso o las experiencias pasadas son simplemente excusas, 
+                                                                ya que mientras tenga el deseo de aprender y esté dispuesto a seguir 
+                                                                las recomendaciones del instructor, podrá aprender Kiteboarding y 
+                                                                disfrutar al máximo de las olas del mar!!!
+
                                                         	</p> 
                                                         	<p class="paragraph ng-attr-widget">
-                                                        		Normally the best period is from mid of November until the end of May but even summertime 
-                                                        		(June/July/August) can give some very good windy kiteboarding days.
+                                                        		Generalmente la mejor época para practicar este deporte es 
+                                                                desde mediados de noviembre hasta finales de mayo, pero incluso 
+                                                                durante el verano (junio/julio/agosto) puede haber días buenos, 
+                                                                con mucho viento para practicar este deporte.
+
                                                         	</p>
                                                         	 
                                                         </div>
@@ -6844,7 +7343,10 @@ You can recognize our maintenance team for their uniform.
                                         </div>
                                     </div>
                                     <br>
-	                                    <p class="paragraph ng-attr-widget">Contact your Villa Host for more information, reservations, pricing and rates.</p> 
+	                                    <p class="paragraph ng-attr-widget">
+                                                        		Contacte a su Anfitrión de Villa para obtener más información y precios.
+
+                                                        	</p>
                                 </div>
                             </div>
                         </div>
@@ -6868,19 +7370,23 @@ You can recognize our maintenance team for their uniform.
                                     <div class="wpb_text_column wpb_content_element ">
                                         <div class="wpb_wrapper">
                                             <p class="paragraph ng-attr-widget">
-                                            	If you love golf, we invite you to try the Mayan Trail.
+                                            	Si es un amante del golf, lo invitamos a probar la ruta maya. 
                                             </p>
                                             
                                             <p class="paragraph ng-attr-widget">
-                                            	Experience the magnificent natural scenery located in tropical forests and bordering the 
-                                            	Caribbean Sea, with beautiful lagoons, natural wells and mangrove swamps, all of them 
-                                            	with their characteristic turquoise blue water color.
+                                            	Experimente el magnífico escenario natural enclavado en la selva tropical 
+                                                y rodeado por el mar Caribe, con hermosas lagunas, cenotes y manglares, 
+                                                todo en las caracteírsticas tonalidades azul de esta zona.
+
                                             </p>
                                             <p class="paragraph ng-attr-widget">
-                                            	The existing courses extend from the Riviera Maya towards Cancun, including a Golf Course 
-                                            	on the island of Cozumel, all of them designed by recognized architects like Jack Nicklaus, 
-                                            	Greg Norman, Robert Trent Jones Jr., P.B. Dye, Tom Fazio, Tom Weiskopf and Robert Von Hagge, 
-                                            	who have obtained the attention and respect of players of all levels and abilities.
+                                            	Los diferentes campos de golf de la región se extienden por toda la Riviera Maya 
+                                                hasta Cancún, incluyendo un campo de golf en la isla de Cozumel, todos diseñados 
+                                                por reconocidos arquitectos como Jack Nicklaus, Greg Norman, Robert Trent Jones 
+                                                Jr., P.B. Dye, Tom Fazio, Tom Weiskopf y Robert Von Hagge, por lo que han conseguido 
+                                                ganarse la atención y el respeto de jugadores de todos los niveles, provenientes 
+                                                de todas partes del mundo.
+
                                             </p>
                                             
                                         </div>
@@ -6889,26 +7395,35 @@ You can recognize our maintenance team for their uniform.
 	                                    <div class="wpb_accordion wpb_content_element  not-column-inherit" data-collapsible="" data-vc-disable-keydown="false" data-active-tab="1">
 	                                        <div class="wpb_wrapper wpb_accordion_wrapper ui-accordion">
 	                                            <div class="wpb_accordion_section group">
-	                                                <h3 class="wpb_accordion_header ui-accordion-header"><a href="#optimised-for-speed"><strong>HARD ROCK GOLF CLUB RIVIERA MAYA (PLAYACAR GOLF CLUB)</strong></a></h3>
+	                                                <h3 class="wpb_accordion_header ui-accordion-header"><a href="#optimised-for-speed"><strong>HARD ROCK GOLF CLUB RIVIERA MAYA (CLUB DE GOLF PLAYACAR)</strong></a></h3>
 	                                                <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
 	                                                    <div class="wpb_text_column wpb_content_element ">
 	                                                        <div class="wpb_wrapper">
 	                                                        	<p class="paragraph ng-attr-widget">
-	                                                        		The Golf Club at Playacar is a 7202 yards, par 72, championship golf course, designed and built by Robert Von Hagge. 
-	                                                        		With a slope rating of 148 from the championship tees, 136 from the white tees, and 134 from the red tees, it is 
-	                                                        		as challenging to play as it is beautiful to view. The Club has an innovative all-inclusive system where you will
-	                                                        		 be treated with excellent service from your arrival to the Clubhouse until you leave the course. 
-	                                                        		 Snack and beverage carts circulate the course for your convenience. 
+	                                                        		El Club de Golf Playacar es un campo de golf de 7144 metros, 
+                                                                    par 72, diseñado y construido por Robert Von Hagge; con una 
+                                                                    pendiente de 148 desde los tees de campeonato, 136 desde los 
+                                                                    tees blancos y 134 desde los tees rojos. Este campo es tanto 
+                                                                    un deleite a los ojos como un reto para cualquier jugador. El 
+                                                                    Club cuenta con un innovador sistema todo incluido en el que 
+                                                                    se le dará un servicio excelente desde que llegua a la Casa 
+                                                                    Club, hasta que termina su juego. Hay carritos con snacks y 
+                                                                    bebidas que circulan por el campo para que disfrute aún más.
+
 	                                                        	</p> 
 	                                                        	
 	                                                        	<p class="paragraph ng-attr-widget">
-	                                                        		The Club provides a first class practice area, complete with a spectacular driving range, and a large putting 
-	                                                        		green including chipping, pitching, and greenside bunker areas.
+	                                                        		El Club dispone de una zona de práctica de primera categoría, 
+                                                                    con un espectacular campo de prácticas y un putting green grande, 
+                                                                    incluyendo áreas para practicar chips (golpes rodados), pitching 
+                                                                    y una trampa de arena junto al green.
 	                                                        	</p>
 	                                                        	
 	                                                        	<p class="paragraph ng-attr-widget">
-	                                                        		Villa Aqua is located right between the 13th and 14th greens and just a couple of minutes driving distance 
-	                                                        		from the Club House (transportation is included with your green fee). 
+	                                                        		Villa Aqua se encuentra entre los greens 13 y 14, y a sólo unos 
+                                                                    minutos en auto de la Casa Club (el transporte está incluido en 
+                                                                    la tarifa del green).
+
 	                                                        	</p>
 	                                                        </div>
 	                                                    </div>
@@ -6921,18 +7436,27 @@ You can recognize our maintenance team for their uniform.
 	                                                    <div class="wpb_text_column wpb_content_element ">
 	                                                        <div class="wpb_wrapper">
 	                                                        	<p class="paragraph ng-attr-widget">
-	                                                        		A Greg Norman design, El Camaleón Golf Club boasts a spectacular layout winding about the tropical jungle 
-	                                                        		and the mangrove before boldly stretching to the sea. Well reputed among golf's finest players, El Camaleón 
-	                                                        		was the PGA TOUR site for the Mayakoba Classic, the only official PGA TOUR event held outside the U.S.A. or 
-	                                                        		Canada. Here, golf enthusiasts of all skill levels can experience the essence of a pristine and natural 
-	                                                        		landscape, recognized by the Audubon Society. 
+	                                                        		Diseñado por Greg Norman, El Camaleón Golf Club presume de espectaculares
+                                                                    trazos serpenteantes que se abren paso entre la selva tropical y el manglar,
+                                                                    extendiéndose audazmente hasta el mar. El Camaleón  se ha ganado una magnífica
+                                                                    reputación entre los mejores golfistas del mundo ya que en él se llevaba a
+                                                                    cabo el PGA TOUR del Mayakoba Classic, el único evento oficial  del PGA TOUR
+                                                                    que se celebra fuera de los Estados Unidos o Canadá. Aquí, los amantes del
+                                                                    golf de todos los niveles pueden experimentar la esencia de un paisaje
+                                                                    prístino y natural, reconocido por la Sociedad Audubon.
+
 	                                                        	</p> 
 	                                                        	
 	                                                        	<p class="paragraph ng-attr-widget">
-	                                                        		Like the chameleon from which it takes its name, the course offers up ever-changing challenges and alluring 
-	                                                        		vistas: fairways lined with sand dunes and mangroves, distinctive hazards such as cenotes (subterranean caves), 
-	                                                        		crystal-clear lagoons, and greens perched on the edge of the Caribbean Sea. At 7,024 yards, PAR 72 and open daily 
-	                                                        		from 6:30 a.m. to 6:00 p.m., El Camaleón offers a day filled with exhilarating play.
+	                                                        		Tal como sucede con el camaleón, animal del que toma su nombre, 
+                                                                    este campo siempre tiene un nuevo reto para los jugadores al tiempo 
+                                                                    que les regala vistas hipnotizantes con fairways bordeados por dunas 
+                                                                    de arena y manglares, trampas peculiares tales como cenotes (cuevas
+                                                                    subterráneas), lagunas de aguas cristalinas y greens a orillas del 
+                                                                    mar Caribe. El Camaleón, con sus casi 6,500 m, par 72 y con un horario 
+                                                                    de atención de 6:30 a 18:00 hr., todos los días, le brindará días enteros 
+                                                                    de golf con el mar Caribe de fondo.
+
 	                                                        	</p> 
 	                                                        	 
 	                                                        </div>
@@ -6946,10 +7470,18 @@ You can recognize our maintenance team for their uniform.
 	                                                    <div class="wpb_text_column wpb_content_element ">
 	                                                        <div class="wpb_wrapper">
 	                                                        	<p class="paragraph ng-attr-widget">
-	                                                        		Grand Coral Golf Club is a Nick Price's golfer-friendly creation where everyone will enjoy playing this 
-	                                                        		18 hole; par 71 Course that is 7,043 yards long. It offers a modern Clubhouse and exclusive Beach Club. 
-	                                                        		The Green fee includes: Round trip transportation, golf cart, 2 bottles of water, golf tees, divot 
-	                                                        		repair tool, fresh towels, dressing room with lockers and safe deposit box.
+	                                                        		Grand Coral Golf Club es una creación que el afamado Nick Price 
+                                                                    diseñó para los amantes del golf. En este hermoso campo con sus 
+                                                                    casi 6,500 m, con par 71 y 18 hoyos los golfistas podrán disfrutar 
+                                                                    tanto de juegos con interesantes retos, como de vistas maravillosas. 
+                                                                    El campo también cuenta con una moderna Casa Club y un Club de Playa 
+                                                                    exclusivo que satisface hasta los gustos más exigentes.
+	                                                        	</p>
+                                                                <p class="paragraph ng-attr-widget">
+	                                                        		 El costo del green incluye: transportación, carrito de golf, 
+                                                                    2 botellas de agua, tees de golf, herramienta de reparación divot, 
+                                                                    toallas frescas, vestidor con lockers y caja de seguridad.
+
 	                                                        	</p> 
 	                                                        </div>
 	                                                    </div>
@@ -6962,15 +7494,25 @@ You can recognize our maintenance team for their uniform.
 	                                                    <div class="wpb_text_column wpb_content_element ">
 	                                                        <div class="wpb_wrapper">
 	                                                        	<p class="paragraph ng-attr-widget">
-	                                                        		In the proud tradition of the world-renowned Dye family golf courses, architect P.B. Dye's latest masterpiece: 
-	                                                        		The Iberostar Playa Paraiso Golf Club, is truly unique.
+	                                                        		Entrando en la orgullosa tradición de la familia de renombrados 
+                                                                    campos de golf diseñados por el arquitecto P.B. Dye, se encuentra 
+                                                                    su última obra maestra, el Iberostar Playa Paraiso Golf Club, una 
+                                                                    creación realmente única que encantará a aquellos que gustan de 
+                                                                    pasar tardes enteras jugando este apasionante deporte.
+
 	                                                        	</p> 
 	                                                        	 
 	                                                        	<p class="paragraph ng-attr-widget">
-	                                                        		On a landscape that is relatively flat, rises a golf course like no other in the Mexican Caribbean. 
-	                                                        		Carved out of the ancient Mayan jungle, the Iberostar Playa Paraiso Golf Club has many of the traits 
-	                                                        		of a typical Dye Design: narrow fairways, deep bunkers, extreme vertical movement and untraditional 
-	                                                        		hazards such as a rock riverbed are facts that make the course distinctively different from others in the area.
+	                                                        		En un paisaje relativamente plano, se levanta un campo de golf 
+                                                                    sin precedente en el Caribe mexicano. Enclavado en la antigua 
+                                                                    selva maya, el Iberostar Playa Paraiso Golf Club cuenta con 
+                                                                    varios de los rasgos de diseño que Dye imprime en sus creaciones, 
+                                                                    desde calles estrechas, profundas trampas de arena y movimientos 
+                                                                    verticales extremos, hasta peligros poco convencionales como un 
+                                                                    lecho de rocas, los cuales hacen de este campo, un lugar 
+                                                                    particularmente diferente de los otros en el área.
+
+
 	                                                        	</p> 
 	                                                        </div>
 	                                                    </div>
@@ -6983,15 +7525,25 @@ You can recognize our maintenance team for their uniform.
 	                                                    <div class="wpb_text_column wpb_content_element ">
 	                                                        <div class="wpb_wrapper">
 	                                                        	<p class="paragraph ng-attr-widget">
-	                                                        		The golf course of Puerto Aventuras is an exciting and challenging activity. A beautiful 36-hole course designed 
-	                                                        		in 1991 by Thomas Leman and is still one of the best-kept secrets in this area. A smooth carpet of Bermuda grass, 
-	                                                        		surrounded by palm trees, bougainvillea, tropical trees and lush foliage, covers all the Greens. In their daily 
-	                                                        		rounds you may encounter iguanas, deer, various tropical birds and other wildlife. 
+	                                                        		El campo de golf de Puerto Aventuras presenta desafíos que hacen 
+                                                                    que el golf se convierta en una emocionante actividad que todos 
+                                                                    querrán realizar. Diseñado en 1991 por Thomas Leman, esta hermosa 
+                                                                    creación de 36 hoyos aún es uno de los secretos mejor guardados de 
+                                                                    la región.<br>
+                                                                    Una suave alfombra de césped Bermuda cubre los greens y se 
+                                                                    extiende sobre el campo rodeado de palmeras, buganvilias, árboles 
+                                                                    tropicales y la exuberante vegetación que caracteriza el Caribe 
+                                                                    mexicano. En sus rondas diarias podrá disfrutar de la fauna de la 
+                                                                    zona y jugar entre iguanas, venados, diversos tipos de aves y otros 
+                                                                    animales salvajes.
+
 	                                                        	</p> 
 	                                                        	
 	                                                        	<p class="paragraph ng-attr-widget">
-	                                                        		The Golf course opens every day year round from 7:30 AM until dark. Golf Carts are not mandatory and no reservations 
-	                                                        		are necessary.
+	                                                        		El campo de golf abre todos los días del año, de 7:30 hasta el 
+                                                                    anochecer. Los carritos de golf no son obligatorios y no se requiere 
+                                                                    hacer reservación.
+
 	                                                        	</p>
 	                                                        	 
 	                                                        </div>
@@ -7005,16 +7557,25 @@ You can recognize our maintenance team for their uniform.
 	                                                    <div class="wpb_text_column wpb_content_element ">
 	                                                        <div class="wpb_wrapper">
 	                                                        	<p class="paragraph ng-attr-widget">
-	                                                        		It is perhaps here; in the executive golf course at El Manglar Vidanta Golf Riviera Maya that Jack Nicklaus 
-	                                                        		developed the world's foremost golf course, in which his design firm achieves to project the creative, 
-	                                                        		revolutionary, and cutting edge stamp that distinguished it. With 18 Holes – Par 54 in an area of 2,923 yards 
-	                                                        		long filled with radiant white sand traps, dark tones of natural stone lining pristine lakes, deep lush hue of 
-	                                                        		the greens, and waste bunkers, this course is a garden of delights for golf lovers.
+	                                                        		Es probablemente, El Manglar Vidanta Golf Riviera Maya, el campo 
+                                                                    de golf ejecutivo en el que Jack Nicklaus logró desarrollar el más 
+                                                                    importante de sus proyectos. Este campo es un reflejo de lo que 
+                                                                    Nicklaus, en conjunto con su empresa de diseño, logra para proyectar 
+                                                                    su distintivo sello creativo, revolucionario y vanguardista. Es un 
+                                                                    jardín del edén para los amantes del golf ya que cuenta con 18 
+                                                                    hoyos, par 54, en un área de poco más de 2,500 m de longitud llena 
+                                                                    de trampas de arena blanca, lagos prístinos, greens con matices 
+                                                                    exuberantes y áreas rústicas de arena (waste areas). 
+
 	                                                        	</p> 
 	                                                        	 
 	                                                        	<p class="paragraph ng-attr-widget">
-	                                                        		The insignia of the course, the 17th —named Donna-Green—, boasts three bunkers on each side of the green and one 
-	                                                        		more at its center, making it a one of a kind, so it is notoriously difficult to get out of it with a par.
+	                                                        		La insignia del campo es el hoyo 17, llamado Donna Green, 
+                                                                    y cuenta con tres trampas de arena a cada lado del green y una 
+                                                                    más en el centro, convirtiéndolo en un hoyo único entre los demás 
+                                                                    ya que es difícil salir de él con un par.
+
+
 	                                                        	</p> 
 	                                                        </div>
 	                                                    </div>
@@ -7025,7 +7586,9 @@ You can recognize our maintenance team for their uniform.
 	                                        </div>
 	                                    </div>
 	                                    <br>
-	                                    <p class="paragraph ng-attr-widget">Contact your Villa Host for reservations, tee times and rates.</p> 
+	                                    <p class="paragraph ng-attr-widget">Contacte a su Anfitrión de Villa para obtener información 
+                                            sobre horarios, tarifas y reservas.
+                                        </p> 
                                     </div>
                                 </div>
                             </div>
@@ -7069,15 +7632,18 @@ You can recognize our maintenance team for their uniform.
                             <div class="vc_col-sm-6 wpb_column vc_column_container ">
                                 <div class="wpb_wrapper">
                                     <div class="vc_custom_heading">
-                                        <h2 style="color: 333;text-align: left;font-weight:300;font-style:normal">Parks & Adventure</h2>
+                                        <h2 style="color: 333;text-align: left;font-weight:300;font-style:normal">PARQUES Y AVENTURA</h2>
                                     </div>
                                     <div class="ult-spacer spacer-56253aed585bd" data-id="56253aed585bd" data-height="25" data-height-mobile="25" data-height-tab="25" data-height-tab-portrait="25" data-height-mobile-landscape="25" style="clear:both;display:block;"></div>
                                     <div class="wpb_text_column wpb_content_element ">
                                         <div class="wpb_wrapper">
                                         	<p class="paragraph ng-attr-widget">
-												Quintana Roo is one of Mexico's wildest and most singular States within Mexico. It is the gateway 
-												to amazing animal diversity, exuberant flowers and trees, and traces of the Mayan magnificent civilization. 
-												Don’t miss the chance to explore many of these things, which you can find in the parks in the area.
+												Quintana Roo es uno de los Estados más hermosos y singulares de México. Es la 
+                                                puerta de entrada para disfrutar de la increíble diversidad de fauna y flora 
+                                                exuberante, y por supuesto, el lugar en el que residen los vestigios de la 
+                                                magnífica civilización Maya. No se pierda la oportunidad de vivir y explorar  
+                                                este mágico lugar, en los parques que podrá encontrar en la zona.
+
                                             </p>
                                         </div>
                                         
@@ -7085,13 +7651,17 @@ You can recognize our maintenance team for their uniform.
 	                                    <div class="wpb_accordion wpb_content_element  not-column-inherit" data-collapsible="" data-vc-disable-keydown="false" data-active-tab="1">
 	                                        <div class="wpb_wrapper wpb_accordion_wrapper ui-accordion">
 	                                        	<div class="wpb_accordion_section group">
-	                                                <h3 class="wpb_accordion_header ui-accordion-header"><a href="#optimised-for-speed"><strong>ATV'S</strong></a></h3>
+	                                                <h3 class="wpb_accordion_header ui-accordion-header"><a href="#optimised-for-speed"><strong>TOUR DE ATVs (VEHÍCULOS TODO TERRENO)</strong></a></h3>
 	                                                <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
 	                                                    <div class="wpb_text_column wpb_content_element ">
 	                                                        <div class="wpb_wrapper">
 	                                                        	<p class="paragraph ng-attr-widget">
-	                                                        		Ride an ATV through jungle paths, swim in a clear 60-foot deep Cenote, explore caves, 
-	                                                        		climb ancient Mayan ruins on this 2-hour tour, just a few minutes drive from Villa Aqua.
+	                                                        		Conduzca un ATV a toda velocidad a través de los sinuosos senderos de 
+                                                                    la selva, nade en un Cenote de aguas cristalinas con una profundidad 
+                                                                    de 18 m, explore cuevas labradas por la naturaleza, y disfrute de las 
+                                                                    zonas arqueológicas mayas en este tour de 2 horas, a pocos minutos de 
+                                                                    Villa Aqua. 
+
 	                                                        	</p> 
 	                                                        </div>
 	                                                    </div>
@@ -7104,12 +7674,16 @@ You can recognize our maintenance team for their uniform.
 	                                                    <div class="wpb_text_column wpb_content_element ">
 	                                                        <div class="wpb_wrapper">
 	                                                        	<p class="paragraph ng-attr-widget">
-	                                                        		Xcaret, the largest and most impressive theme park in the Riviera Maya, offers a wide variety of 
-	                                                        		activities and diversions in a spectacular natural setting. Here you can snorkel in an underground river, 
-	                                                        		learn about marine life in a living aquarium, walk through a butterfly pavilion, see jaguars and pumas, 
-	                                                        		swim with dolphins and manatees, and learn about sea turtles. If you are interested on Mexican culture, 
-	                                                        		this is the place to find folk art expression  (art craft, shows, food, music and more…).
-	                                                        	</p> 
+	                                                        		Xcaret, el parque temático más grande e impresionante de la 
+                                                                    Riviera Maya, ofrece una amplia variedad de actividades y mucha 
+                                                                    diversión en un entorno natural espectacular. Aquí podrá practicar 
+                                                                    snorkel en un río subterráneo, aprender sobre la vida marina en un 
+                                                                    acuario viviente, caminar a través de un mariposario, ver jaguares 
+                                                                    y pumas, nadar con delfines y manatíes y aprender sobre las tortugas 
+                                                                    marinas. Si lo que le interesa es la cultura mexicana, este es el 
+                                                                    lugar ideal para encontrar bellas expresiones del arte popular 
+                                                                    mexicano (artesanía, espectáculos, comida, música y más...)
+                                                                </p> 
 	                                                        	 
 	                                                        	 
 	                                                        </div>
@@ -7123,15 +7697,22 @@ You can recognize our maintenance team for their uniform.
 	                                                    <div class="wpb_text_column wpb_content_element ">
 	                                                        <div class="wpb_wrapper">
 	                                                        	<p class="paragraph ng-attr-widget">
-	                                                        		Xplor is a unique underground paradise, with 7 amazing circuits that invite you to rediscover your 
-	                                                        		emotions and senses within nature.
+	                                                        		Xplor es un paraíso subterráneo único, que cuenta con 7 
+                                                                    circuitos increíbles que lo invitan a redescubrir sus 
+                                                                    emociones y sentidos para estar en contacto con la naturaleza.
+
 	                                                        	</p> 
 	                                                        	<p class="paragraph ng-attr-widget">
-	                                                        		Dare to ride the 13 zip lines among the Caribbean's lively nature and enjoy refreshing water landings 
-	                                                        		and amazing suspension bridges; take a trip through the jungle on unstoppable amphibious vehicles, 
-	                                                        		explore an underground paradise where you can swim surrounded by amazing stalactites and stalagmites, 
-	                                                        		discover a matchless raft route across stunning subterranean caverns while paddling with your own hands, 
-	                                                        		and to complete your feat, a nutritious and light buffet, that will recharge your energy.
+	                                                        		Atrévase a deslizarse por 13 divertidas y emocionantes tirolesas, 
+                                                                    ubicadas entre la vívida naturaleza del Caribe y disfrute de refrescantes
+                                                                    acuatizajes e increíbles puentes colgantes; dé un paseo por la selva en 
+                                                                    los imparables vehículos anfibios, explore en un paraíso subterráneo en 
+                                                                    el que podrá nadar rodeado de impresionantes estalactitas y estalagmitas;
+                                                                    descubra una ruta incomparable sobre una balsa que lo llevará a través de
+                                                                    impresionantes cavernas subterráneas mientras rema con sus propias manos y
+                                                                    para finalizar la proeza, deleite su paladar con un nutritivo, ligero pero
+                                                                    abundante buffet que recargará sus energías.
+
 	                                                        	</p> 
 	                                                        	 
 	                                                        </div>
@@ -7145,10 +7726,17 @@ You can recognize our maintenance team for their uniform.
 	                                                    <div class="wpb_text_column wpb_content_element ">
 	                                                        <div class="wpb_wrapper">
 	                                                        	<p class="paragraph ng-attr-widget">
-	                                                        		Xel-Ha is a natural aquarium park, where fresh water from underground rivers meets the saltwater 
-	                                                        		of the ocean, forming a particularly diverse environment for snorkeling. Admire the impressive 
-	                                                        		variety of brightly colored tropical fish, or enjoy tubing, biking or walking around the park. 
-	                                                        		It's a wonderland of Cenotes, mangroves and lagoons where nature lovers will find plenty to do.
+	                                                        		Xel-Há es un parque ecoturístico en el que el agua dulce 
+                                                                    de los ríos subterráneos se une con el agua salada del 
+                                                                    océano, formando un entorno lleno de diversidad, ideal para 
+                                                                    practicar snorkel.<BR>
+                                                                    Admire la impresionante variedad de coloridos peces tropicales 
+                                                                    o disfrute de la vista paseando por el río en llantas inflables, 
+                                                                    dé un paseo en bicicleta o recorra el parque en una agradable caminata.<BR>
+                                                                    Xel há es la tierra de los cenotes, manglares y lagunas, ahí, los
+                                                                    amantes de la naturaleza encontrarán muchas actividades divertidas y
+                                                                    relajantes.
+
 	                                                        	</p> 
 	                                                        </div>
 	                                                    </div>
@@ -7161,18 +7749,29 @@ You can recognize our maintenance team for their uniform.
 	                                                    <div class="wpb_text_column wpb_content_element ">
 	                                                        <div class="wpb_wrapper">
 	                                                        	<p class="paragraph ng-attr-widget">
-	                                                        		This magical place with an ambiance of fiesta, music and tradition captures the imagination of everyone 
-	                                                        		who visits by conjuring up memories of Mexico in its golden age. Decorated with motifs from the 32 States 
-	                                                        		of Mexico, the famous trajineras, that were once used for transporting flowers, fruits and vegetables grown 
-	                                                        		in floating gardens, have become a means of transportation and a cause of joy for all those who come to 
-	                                                        		Xoximilco searching for a unique moment they can only experience here, in a modern version of the legendary 
-	                                                        		cruise through the canals, with the colors and the charm of those magical moments we hold dear. 
+	                                                        		Este mágico lugar nos regala un ambiente de fiesta, música y 
+                                                                    tradición, evocando a la perfección los recuerdos de la época 
+                                                                    dorada de México para el deleite de todos sus visitantes. 
+                                                                    Decoradas con motivos de los 32 Estados de la República Mexicana, 
+                                                                    las famosas trajineras que una vez fueron utilizados para el 
+                                                                    transporte de flores, frutas y vegetales cultivados en jardines 
+                                                                    flotantes conocidos como “chinampas”, se han convertido en un 
+                                                                    medio de transporte y una causa de alegría para todos aquellos 
+                                                                    que vienen a Xoximilco buscando pasar un rato agradable y único.
 	                                                        	</p> 
 	                                                        	
 	                                                        	<p class="paragraph ng-attr-widget">
-	                                                        		Park entrance includes: nighttime cruise on board a trajinera, dinner, open bar with tequila, beer, fruit 
-	                                                        		flavored beverages and sodas, different ensembles playing traditional live music such as: mariachi, bolero trio, 
-	                                                        		jarocho quartet and marimba. Approximate duration: 3 hours
+	                                                        		Este paseo en trajinera es una versión moderna del legendario 
+                                                                    viaje a través de canales que se realizaba en la época 
+                                                                    prehispánica y que continuó años más tarde con fines comerciales, 
+                                                                    sólo que aquí en Xoximilco los colores y el ambiente alegre son 
+                                                                    el ingrediente especial que crea momentos mágicos para los paseantes.<BR>
+                                                                    
+                                                                    La entrada al parque incluye: Un paseo a bordo de una trajinera, cena, 
+                                                                    bar abierto con tequila, cerveza, aguas de fruta y refrescos, diferentes
+                                                                    grupos de música en vivo, tales como mariachis, trío de bolero, cuarteto
+                                                                    jarocho, marimba y más. Duración aproximada: 3 horas.
+
 	                                                        	</p> 
 	                                                        	 
 	                                                        </div>
@@ -7186,28 +7785,41 @@ You can recognize our maintenance team for their uniform.
 	                                                    <div class="wpb_text_column wpb_content_element ">
 	                                                        <div class="wpb_wrapper">
 	                                                        	<p class="paragraph ng-attr-widget">
-	                                                        		Río Secreto could very well be one of the great wonders of the world. Experience this stunning underground 
-	                                                        		river with thousands of dramatic stalactites and stalagmites. It's like stepping back in time to witness 
-	                                                        		something mysterious and truly spectacular.
+	                                                        		Río Secreto bien podría ser una de las nuevas maravillas del mundo 
+                                                                    y usted puede disfrutar de este impresionante río subterráneo con 
+                                                                    miles de espectaculares estalactitas y estalagmitas en la Riviera Maya.
+                                                                    <br>
+                                                                    Imagine retroceder en el tiempo para ser testigo de los misterios de
+                                                                    la creación de este espectacular milagro de la naturaleza.
+
 	                                                        	</p> 
 	                                                        	<p class="paragraph ng-attr-widget">
-	                                                        		This system of caves, formed over centuries by an underground river, is located only a few miles from 
-	                                                        		Villa Aqua. It is by far the longest partially flooded cave in the Yucatan Peninsula, but what makes 
-	                                                        		Río Secreto even more special is the fact that it has more than 12 kilometers (7.5 miles) of semi-sunken 
-	                                                        		cave mapped out with 15 natural outlets located in different areas. There's nothing else like it! 
+	                                                        		Este sistema de cavernas se ha ido formando durante siglos gracias 
+                                                                    a la erosión de las aguas de un río subterráneo, se encuentra a pocos
+                                                                    kilómetros de Villa Aqua y es por mucho, la caverna parcialmente inundada, 
+                                                                    más larga en la Península de Yucatán. Pero lo que hace de Río Secreto un 
+                                                                    lugar más especial, es el hecho de que cuenta con más de 12 km (7,5 millas) 
+                                                                    de cuevas semi-inundadas trazadas con 15 salidas naturales ubicadas en
+                                                                    distintos puntos. ¡Nadar en él es simplemente una experiencia impresionante!
+
 	                                                        	</p>
 	                                                        	<p class="paragraph ng-attr-widget">
-	                                                        		Keep in mind, this exotic and fragile geological formation requires an incredible amount of 
-	                                                        		eco-awareness and sensitivity. The size of tour groups is limited to minimize impact on the cave. 
-	                                                        		This will ensure that many generations get to see our planet's natural history carved in mineral 
-	                                                        		substances.
+	                                                        		Tome en cuenta que esta exótica pero frágil formación geológica requiere de
+                                                                    una conciencia ecológica y sensible. Por esta razón, el tamaño de los grupos
+                                                                    de visitantes es limitado para minimizar el impacto ambiental en la caverna.                                                                        <br>
+                                                                    Esto permitirá que muchas generaciones puedan constatar la historia de 
+                                                                    nuestro planeta a través de sus maravillas naturales.
+
 	                                                        	</p>
 	                                                        	<p class="paragraph ng-attr-widget">
-	                                                        		A journey through Río Secreto is surreal, mystical and memorable. Whether you're an adventurer, 
-	                                                        		world traveler, or simply a curious soul, you should experience one of the most intriguing natural 
-	                                                        		attractions in the Riviera Maya. 
+	                                                        		El viaje a través de Río Secreto es una experiencia surreal, mística e
+                                                                    inolvidable. Si usted es un aventurero, viajero del mundo o simplemente
+                                                                    un alma curiosa, no puede perderse la oportunidad de explorar uno de los
+                                                                    atractivos naturales más fascinantes de la Riviera Maya.
+
 	                                                        		<br>
-																	It is a great option for a rainy day!
+																	¡Además, es una gran opción para un día de lluvia!
+
 	                                                        	</p>
 	                                                        	 
 	                                                        </div>
@@ -7216,16 +7828,20 @@ You can recognize our maintenance team for their uniform.
 	                                            </div>
 	                                            
 	                                            <div class="wpb_accordion_section group">
-	                                                <h3 class="wpb_accordion_header ui-accordion-header"><a href="#optimised-for-speed"><strong>THE JUNGLE MAYAN EXPEDITION (ALLTOURNATIVE)</strong></a></h3>
+	                                                <h3 class="wpb_accordion_header ui-accordion-header"><a href="#optimised-for-speed"><strong>EXCURSIÓN A LA SELVA MAYA (ALLTOURNATIVE)</strong></a></h3>
 	                                                <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
 	                                                    <div class="wpb_text_column wpb_content_element ">
 	                                                        <div class="wpb_wrapper">
 	                                                        	<p class="paragraph ng-attr-widget">
-	                                                        		Live a great experience rappelling into a beautiful cenote and fly over the jungle's foliage on exciting 
-	                                                        		zip-lines and participate in a traditional Mayan purification ceremony.
+	                                                        		Viva una experiencia increíble haciendo rappel en un hermoso cenote
+                                                                    y vuele sobre la exuberante selva en una aventura extrema de tirolesas 
+                                                                    para luego relajarse participando en una tradicional ceremonia maya 
+                                                                    de purificación.<br>
+                                                                    
+
 	                                                        	</p> 
 	                                                        	<p class="paragraph ng-attr-widget">
-	                                                        		A complete Mayan-adventure experience that you should not miss!
+	                                                        		¡Una aventura extrema, en la jungla maya, que no se debe perder!
 	                                                        	</p>  
 	                                                        	 
 	                                                        </div>
@@ -7234,16 +7850,20 @@ You can recognize our maintenance team for their uniform.
 	                                            </div>
 	                                            
 	                                            <div class="wpb_accordion_section group">
-	                                                <h3 class="wpb_accordion_header ui-accordion-header"><a href="#optimised-for-speed"><strong>SIAN KA'AN BIOSPHERE RESERVE</strong></a></h3>
+	                                                <h3 class="wpb_accordion_header ui-accordion-header"><a href="#optimised-for-speed"><strong>RESERVA DE LA BIÓSFERA DE SIAN KA'AN</strong></a></h3>
 	                                                <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
 	                                                    <div class="wpb_text_column wpb_content_element ">
 	                                                        <div class="wpb_wrapper">
 	                                                        	<p class="paragraph ng-attr-widget">
-	                                                        		At Sian Ka'an you can kayak through narrow canals between mangroves, climb an ancient pyramid, 
-	                                                        		float in a crystal clear cenote, or try your hand at saltwater fly fishing, visit Muyil lagoon 
-	                                                        		and its ruins, savor the sunrise here and you'll understand why the ancient Maya named this 
-	                                                        		place Sian Ka'an, which in their language means, "where the sky is born." —all within a lush 
-	                                                        		protected environment south of Playa del Carmen and Tulum.
+	                                                        		En la hermosa biósfera de Sian Ka’an tendrá la oportunidad de practicar 
+                                                                    kayak a través de los canales angostos que atraviesan los manglares, 
+                                                                    subir una antigua pirámide, nadar en un cenote de aguas cristalinas;o 
+                                                                    probar la pesca con mosca. Visite la zona arqueológica de Muyil y su 
+                                                                    laguna, disfrute del amanecer en este bello lugar y entenderá por 
+                                                                    qué los antiguos Mayas lo nombraron Sian Ka’an, que significa “donde 
+                                                                    nace el cielo”.  Todo esto y más, dentro de un ambiente seguro y tranquilo 
+                                                                    al sur de Playa del Carmen y Tulum.
+
 	                                                        	</p> 
 	                                                        </div>
 	                                                    </div>
@@ -7256,8 +7876,10 @@ You can recognize our maintenance team for their uniform.
 	                                                    <div class="wpb_text_column wpb_content_element ">
 	                                                        <div class="wpb_wrapper">
 	                                                        	<p class="paragraph ng-attr-widget">
-	                                                        		Jumping out of a plane with the Caribbean below will certainly be an electric and 
-	                                                        		vivid memory that you will cherish forever.
+	                                                        		Salte desde un avión con el Caribe mexicano como escenario, 
+                                                                    le aseguramos que será una experiencia que avivará sus sentidos 
+                                                                    y permanecerá en su memoria por siempre.
+
 	                                                        	</p> 
 	                                                        </div>
 	                                                    </div>
@@ -7270,8 +7892,13 @@ You can recognize our maintenance team for their uniform.
 	                                                    <div class="wpb_text_column wpb_content_element ">
 	                                                        <div class="wpb_wrapper">
 	                                                        	<p class="paragraph ng-attr-widget">
-	                                                        		More of a cultural experience than a spa treatment, the Temazcal ceremony purifies your mind, body, 
-	                                                        		and spirit. Dating back to pre-Hispanic times, the Temazcal is believed to have been used widely among the ancient Aztec and Mayan cultures in Mexico. The name Temazcal translates to "house of steam".
+	                                                        		El baño de temazcal es más una experiencia cultural que 
+                                                                    un tratamiento de spa, pues se trata de una ceremonia en 
+                                                                    la que se purifica el cuerpo, la mente y el espíritu. <br>
+                                                                    Este antiguo ritual data de tiempos prehispánicos y se 
+                                                                    cree que se utilizaba mucho entre las culturas Azteca y 
+                                                                    Maya, en México. La palabra temazcal significa “casa de vapor”.
+
 	                                                        	</p> 
 	                                                        </div>
 	                                                    </div>
@@ -7297,7 +7924,7 @@ You can recognize our maintenance team for their uniform.
             <div class="ult-spacer spacer-56253aed4f277" data-id="56253aed4f277" data-height="25" data-height-mobile="25" data-height-tab="25" data-height-tab-portrait="25" data-height-mobile-landscape="25" style="clear:both;display:block;"></div>
             <div class="ult-spacer spacer-56253aed4f277" data-id="56253aed4f277" data-height="25" data-height-mobile="25" data-height-tab="25" data-height-tab-portrait="25" data-height-mobile-landscape="25" style="clear:both;display:block;"></div>
             <div class="vc_btn3-container vc_btn3-center animated fadeIn" style="opacity:1;-webkit-animation-delay:0s;-webkit-animation-duration:1s;-webkit-animation-iteration-count:1; -moz-animation-delay:0s;-moz-animation-duration:1s;-moz-animation-iteration-count:1; animation-delay:0s;animation-duration:1s;animation-iteration-count:1;test">
-				<a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-square vc_btn3-style-outline vc_btn3-color-chino" href="/out-and-about-dining-culture-shopping/" title="" target="_self">VIEW MORE ACTIVITIES</a>
+				<a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-square vc_btn3-style-outline vc_btn3-color-chino" href="/out-and-about-dining-culture-shopping/" title="" target="_self">VEER MAS ACTIVIDADES</a>
 			</div>
         </div>
 	    <?php 
@@ -7351,18 +7978,20 @@ You can recognize our maintenance team for their uniform.
 <!------------------- Master Bedroom  -------------------->                            
                                 <div class="wpb_wrapper">
                                     <div class="vc_custom_heading">
-                                        <h2 style="color: 333;text-align: left;font-weight:300;font-style:normal">Culture & Archeology</h2>
+                                        <h2 style="color: 333;text-align: left;font-weight:300;font-style:normal">CULTURA Y ARQUEOLOGÍA</h2>
                                     </div>
                                     <div class="ult-spacer spacer-56253aed4f277" data-id="56253aed4f277" data-height="25" data-height-mobile="25" data-height-tab="25" data-height-tab-portrait="25" data-height-mobile-landscape="25" style="clear:both;display:block;"></div>
                                     <div class="wpb_text_column wpb_content_element ">
                                         <div class="wpb_wrapper">
                                         	<p class="paragraph ng-attr-widget">
-												The archaeological sites of Quintana Roo enclosed within its walls stories of the past, 
-												transporting us back in time to imagine what daily life of the Maya used to be.
+												Las paredes de los sitios arqueológicos de Quintana Roo encierran 
+                                                historias enigmáticas del pasado, que nos transportan tiempo atrás para 
+                                                imaginar cómo vivían los Mayas día a día.
                                             </p>
                                             <p class="paragraph ng-attr-widget">
-                                            	There are hundreds of Mayan settlements and ruins within the area, but these are the most 
-                                            	important and worth to visit:
+                                            	Existen cientos de asentamientos y zonas arqueológicas mayas en la región, 
+                                                pero estas son las más recomendables:
+
                                             </p>
                                         </div>
 
@@ -7377,13 +8006,21 @@ You can recognize our maintenance team for their uniform.
                                                                 <div class="wpb_text_column wpb_content_element ">
                                                                     <div class="wpb_wrapper">
                                                                         <p class="paragraph ng-attr-widget">
-																			Easily the best known and well restored of all Mayan archaeological sites, Chichen Itza 
-																			is a<strong> UNESCO World Heritage</strong> Site and was named one of the<strong> "New Seven Wonders of the World." </strong>
-																			The ruins at Chichen Itza cover an area of 6.5 sq km (2.5 sq miles) and can be toured in a day.
+																			Chichen Itzá es sin duda uno de los sitios arqueológicos mayas 
+                                                                            más conocidos y mejor conservados en la región, y fue nombrado
+                                                                            Patrimonio Mundial por la UNESCO y una de las “Nuevas 7 Maravillas 
+                                                                            del Mundo”. La zona arqueológica de Chichen Itzá abarca un área de 
+                                                                            6.5 km2 (2.5 sq miles) por lo que es posible recorrerla en un solo
+                                                                            día.
+
 							                                            </p>
 							                                            
 							                                            <p class="paragraph ng-attr-widget">
-							                                            	You can visit these marvelous ruins on a day trip or tour. It takes a 3-4hr drive from Villa Aqua. 
+							                                            	Puede visitar este maravilloso lugar contratando un tour de un 
+                                                                            día. Actualmente cuenta con un sorprendente show de luz y sonido 
+                                                                            al anochecer. <br>
+                                                                            Chichen Itzá queda a 3-4 horas en auto desde Villa Aqua.
+                                                                            Contacte a su Anfitrión de Villa para más información y opciones.
 							                                            </p>
                                                                     </div>
                                                                 </div>
@@ -7397,9 +8034,10 @@ You can recognize our maintenance team for their uniform.
                                                                 <div class="wpb_text_column wpb_content_element ">
                                                                     <div class="wpb_wrapper">
                                                                     	<p class="paragraph ng-attr-widget">
-                                                                    		Tulum holds the honor of being the most picturesque archaeological site in the Riviera Maya and 
-                                                                    		the only one to have been built overlooking the ocean. A visit here offers spectacular views 
-                                                                    		of the Caribbean Sea and surrounding coastal region. 
+                                                                    		Tulum es el sitio arqueológico más pintoresco de la Riviera Maya 
+                                                                            y el único que fue construido frente al mar. Visite este enigmático 
+                                                                            y bello lugar y disfrute de vistas espectaculares del Caribe y 
+                                                                            la playa.
                                                                     	</p>
                                                                     </div>
                                                                 </div>
@@ -7412,10 +8050,16 @@ You can recognize our maintenance team for their uniform.
                                                                 <div class="wpb_text_column wpb_content_element ">
                                                                     <div class="wpb_wrapper">
                                                                         <p class="paragraph ng-attr-widget">
-                                                                        	Visitors who brave the steep climb up the highest pyramid in Mexico's Mayan world reap the reward 
-                                                                        	of a breathtaking view. At more than 130 feet in height, Nohuch Mul, which means "large mound" in 
-                                                                        	the Mayan language, is the tallest pyramid at Coba archaeological site and in the Yucatán Peninsula. 
-                                                                        	Coba, an easy 45min. drive from Playa del Carmen, is well worth a visit.
+                                                                        	Los visitantes que tengan el valor de subir la pirámide más 
+                                                                            alta que los Mayas hayan construido en México se llevarán como
+                                                                            recompensa las vistas más hermosas de la región. Nohuch Mul se
+                                                                            encuentra a más de 30 metros de altura; su nombre significa 
+                                                                            "montículo grande" en lengua maya, y es la pirámide más alta en 
+                                                                            el sitio arqueológico de Cobá y en la península de Yucatán.<br> 
+                                                                            Es muy sencillo llegar a Cobá, ya que se encuentra a 45 minutos 
+                                                                            de Playa del Carmen en auto. Le aseguramos que vale la pena 
+                                                                            visitar este mágico lugar.
+
                                                                         </p>
                                                                     </div>
                                                                 </div>
@@ -7428,9 +8072,13 @@ You can recognize our maintenance team for their uniform.
                                                                 <div class="wpb_text_column wpb_content_element ">
                                                                     <div class="wpb_wrapper">
                                                                         <p class="paragraph ng-attr-widget">
-                                                                        	Witness the incredible decoration of temples and plazas, admire the unique sculptures in high relief 
-                                                                        	that have surprised archaeologists, imagine the rituals that took place in the ball game (Pok Ta Pok) 
-                                                                        	and walk through the false arch, one of the architectural icons of the Maya culture.
+                                                                        	Sea testigo de la increíble forma en la que los Mayas decoraban 
+                                                                            sus templos y plazas, admire las únicas esculturas en alto relieve y
+                                                                            descubra la razón por la que estas obras de arte han sorprendido a 
+                                                                            los arqueólogos; visualice los rituales que los Mayas llevaban a 
+                                                                            cabo durante el juego de pelota (Pok Ta Pok) y atraviese el Arco
+                                                                            Falso (Arco Maya), uno de los iconos arquitectónicos de esta
+                                                                            misteriosa y cautivadora cultura.
                                                                         </p>
                                                                     </div>
                                                                 </div>
@@ -7438,14 +8086,23 @@ You can recognize our maintenance team for their uniform.
                                                         </div>
                                                         
                                                         <div class="wpb_accordion_section group">
-                                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post"><strong>XCARET MEXICO ESPECTACULAR (NIGHT SHOW)</strong></a></h3>
+                                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post"><strong>XCARET MÉXICO ESPECTACULAR (ESPECTÁCULO NOCTURNO)</strong></a></h3>
                                                             <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
                                                                 <div class="wpb_text_column wpb_content_element ">
                                                                     <div class="wpb_wrapper">
                                                                         <p class="paragraph ng-attr-widget">
-                                                                        	More than 300 artists on stage will amaze you with a vibrant journey through the history of Mexico and Mayan 
-                                                                        	culture bringing to life colorful Mexico traditions in the Gran Tlachco Theater at Xcaret eco theme park.
+                                                                        	Más de 300 artistas en escena lo sorprenderán con un 
+                                                                            vibrante recorrido por la historia de la cultura de México 
+                                                                            y la magia de los Mayas, dándole vida a las coloridas tradiciones 
+                                                                            de México, en el teatro Gran Tlachco, ubicado en el ecoparque Xcaret.
+
                                                                         </p>
+                                                                        <p class="paragraph ng-attr-widget">
+                                                                        	Pregunte a su Anfitrión de Villa sobre la opción del show + cena.
+
+
+                                                                        </p>
+                                                                        
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -7497,27 +8154,34 @@ You can recognize our maintenance team for their uniform.
                             <div class="vc_col-sm-6 wpb_column vc_column_container ">
                                 <div class="wpb_wrapper">
                                     <div class="vc_custom_heading ">
-                                        <h2 style="color: 333;text-align: left;font-weight:300;font-style:normal">Dining</h2>
+                                        <h2 style="color: 333;text-align: left;font-weight:300;font-style:normal">RESTAURANTES</h2>
                                     </div>
                                     <div class="ult-spacer spacer-56253aed585bd" data-id="56253aed585bd" data-height="25" data-height-mobile="25" data-height-tab="25" data-height-tab-portrait="25" data-height-mobile-landscape="25" style="clear:both;display:block;"></div>
                                     <div class="wpb_text_column wpb_content_element ">
                                         <div class="wpb_wrapper">
                                         	<p class="paragraph ng-attr-widget">
-												Dining in Villa Aqua is a wonderful choice but if you prefer to enjoy something different and the exciting vibe of Playa 
-												then you have a wide array of choices, from small local joints serving traditional regional food to fine dine restaurants 
-												run by world-renown chefs.
+												Comer en Villa Aqua es una excelente elección pero si prefiere disfrutar de 
+                                                algo diferente y desea pasar un rato agradable en el emocionante ambiente de 
+                                                Playa, entonces prepárese para conocer la amplia gama de opciones culinarias 
+                                                que el Caribe le presenta, desde los pequeños restaurantes que sirven comida 
+                                                tradicional de la región, hasta lugares trendy atendidos por chefs de renombre 
+                                                mundial.
+
                                             </p>
 	                                            
 	                                        <p class="paragraph ng-attr-widget">
-												As Playa del Carmen has grown from tranquil village to world famous beach town, so have the number, diversity and quality 
-												of its restaurants. Playa is now a city of the world as far as cuisine is concerned. The major international influence is 
-												apparent in Playa's restaurants. You won't run the risk of being bored of the food when in town. You can go Mexican, 
-												Mayan (Yucatecan), Italian, Thai, German, Japanese, Cuban, Chinese, Argentinean, Swedish, Spanish, Indian, Seafood, 
-												Steaks and much more!
+												La influencia internacional en los restaurantes de la zona es evidente y 
+                                                podemos asegurarle que no se aburrirá de la comida, pues siempre tendrá una 
+                                                opción diferente para elegir; desde comida mexicana, tradicional maya (yucateca), 
+                                                italiana, alemana, tailandesa, japonesa, cubana, china, argentina, sueca, 
+                                                española, hasta carnes, mariscos y mucho más.
+
                                             </p>
                                             
                                             <p class="paragraph ng-attr-widget">
-												Contact your Villa Host for a list of our favorite restaurants and for reservations.
+												Contacte a su Anfitrión de Villa para conocer la lista de nuestros restaurantes 
+                                                favoritos y hacer sus reservaciones.
+
                                             </p>
                                         </div>
                                     </div>
@@ -7539,39 +8203,46 @@ You can recognize our maintenance team for their uniform.
                             <div class="vc_col-sm-6 wpb_column vc_column_container ">
                                 <div class="wpb_wrapper">
                                     <div class="vc_custom_heading">
-                                        <h2 style="color: #333;font-weight:300;font-style:normal; text-align: right;">Shopping</h2>
+                                        <h2 style="color: #333;font-weight:300;font-style:normal; text-align: right;">COMPRAS</h2>
                                     </div>
                                     <div class="ult-spacer spacer-56253aed5c7a5" data-id="56253aed5c7a5" data-height="25" data-height-mobile="25" data-height-tab="25" data-height-tab-portrait="25" data-height-mobile-landscape="25" style="clear:both;display:block;"></div>
                                     <div class="wpb_text_column wpb_content_element ">
                                         <div class="wpb_wrapper">
                                             <p class="paragraph ng-attr-widget">
-                                            	In Playa del Carmen you'll come across everything from modern shopping malls to 
-                                            	traditional and colorful markets, where you can buy all kind of souvenirs. La 
-                                            	Quinta or 5th avenue is one of the most famous attractions; lined with shops, 
-                                            	bars, restaurants, cafes, gellato shops, convenience stores, pharmacies and more.... 
+                                            	En Playa del Carmen encontrará una gran variedad de lugares para ir de compras, 
+                                                desde modernos centros comerciales hasta los coloridos mercados tradicionales 
+                                                donde se puede comprar todo tipo de souvenirs. La Quinta (5ta Avenida) es una 
+                                                de las atracciones más famosas pues está repleta de tiendas, bares, restaurantes, 
+                                                cafeterías, heladerías, tiendas de conveniencia, farmacias y más...
+
                                             </p>
                                             
                                             <p class="paragraph ng-attr-widget">
-                                            	This main strip is a pedestrian walkway that runs for about 5 kilometers (3 miles) 
-                                            	through Playa del Carmen town and is continually expanding and getting longer. It 
-                                            	is located 1 block west of the beach and just few minutes walking distance from Villa Aqua.
+                                            	Esta calle principal es un paseo peatonal que abarca cerca de 5 kilómetros (3 millas) 
+                                                a lo largo de Playa del Carmen y continuamente está en expansión, por lo que cada vez 
+                                                es más larga. Se encuentra a 1 (una) cuadra al oeste de la playa y a pocos minutos de 
+                                                Villa Aqua.
+
                                             </p>
                                             <p class="paragraph ng-attr-widget">
-                                            	Shops here range from the name-brand Lacoste, and Hurley to flea market type stalls and 
-                                            	now there are 3 small shopping malls:
+                                            	En Playa, encontrará todo tipo de tiendas, desde las que venden ropa de marca como 
+                                                Lacoste, Hurley, Michael Kors, etc. hasta puestos estilo mercado de pulgas, y 3 
+                                                centros comerciales pequeños:
+
                                             </p>
                                             <br>
                                             <div class="wpb_accordion wpb_content_element  not-column-inherit" data-collapsible="" data-vc-disable-keydown="false" data-active-tab="1">
                                              <div class="wpb_wrapper wpb_accordion_wrapper ui-accordion">
                                                  <div class="wpb_accordion_section group">
-                                                     <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post"><strong style="text-transform: uppercase;">Paseo del Carmen</strong></a></h3>
+                                                     <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post"><strong style="text-transform: uppercase;">PASEO DEL CARMEN</strong></a></h3>
                                                      <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
                                                          <div class="wpb_text_column wpb_content_element ">
                                                              <div class="wpb_wrapper">
                                                              	<p>
-					                                                				Paseo del Carmen minutes away from Villa Aqua, at the far south end past the ferry 
-									                                            	dock and which includes shops such as Zara, Womens Secrets, Pull&Bear, Corte Fiel, 
-									                                            	Ultrafemme and the official Harley Davidson store.
+					                                              se encuentra a unos minutos de Villa Aqua, en el extremo sur, 
+                                                                    pasando el puerto del ferry. Allí encontrará tiendas como Zara, 
+                                                                    Womens Secrets, Pull&Bear, Corte Fiel, Ultrafemme y la tienda 
+                                                                    oficial de Harley Davidson.
 					                                                	
                                                              </p>
                                                              </div>
@@ -7585,8 +8256,10 @@ You can recognize our maintenance team for their uniform.
                                                          <div class="wpb_text_column wpb_content_element ">
                                                              <div class="wpb_wrapper">
                                                              	<p>
-					                                                				Quinta Alegria, was the talk of the town when it opened in 2014 and it that includes a 
-                                            										Forever 21, Victoria's Secret, L’Occitane, The Body Shop, American Eagle, BCBG and more. 
+					                                              fue el lugar más famoso de Playa cuando abrió sus puertas en 2014; 
+                                                                    aquí encontrará tiendas como Forever 21, Victoria’s Secret, L'Occitane, 
+                                                                    The Body Shop, American Eagle, BCBG y más.
+
 					                                                </p>
                                                              
                                                              </div>
@@ -7600,11 +8273,13 @@ You can recognize our maintenance team for their uniform.
                                                          <div class="wpb_text_column wpb_content_element ">
                                                              <div class="wpb_wrapper">
                                                              	<p>
-					                                                				Calle Corazon, located in the Hot Spot of Playa del Carmen (right on 5th Avenue and 12th 
-									                                            	St) this brand new shopping center is considered a Lifestyle retail that includes International 
-									                                            	Fashion brands such as: H&M, Steve Madden, Vince Camuto, Sunglass Hut, Gran Vía, Hollister, 
-									                                            	Bath & Body Works, Victoria's Secret, Swarovski, Sephora, Michael Kors, Puma, Onda de Mar 
-									                                            	and many more.
+					                                             se localiza en la zona más concurrida de Playa del Carmen (en la 
+                                                                    5ta con Calle 12). Este nuevo centro comercial es considerado como un
+                                                                    “Lifestyle retail” ya que cuenta con tiendas con las marcas de moda 
+                                                                    como son  H & M, Steve Madden, Vince Camuto, Sunglass Hut, Gran Vía,
+                                                                    Hollister, Bath & Body Works, Victoria’s Secret, Swarovski, Sephora, 
+                                                                    Michael Kors, Puma, Onda de Mar y muchas amenidades más.
+
 					                                             </p>
                                                              
                                                              </div>
@@ -7615,9 +8290,10 @@ You can recognize our maintenance team for their uniform.
                                          </div>
                                             <br>
                                             <p class="paragraph ng-attr-widget">
-                                            	But if you are looking for something more traditional, there are flea market type stalls and 
-                                            	stores selling handicrafts and knick-knacks the whole way along. Shops have also expanded into 
-                                            	the surrounding areas, so you can also wonder to 1st Avenue and 10th Avenue to find many more options. 
+                                            	Si busca algo más tradicional, tipo mercado con puestos y tiendas de venta de artesanías y
+                                                baratijas, éstas las podrá encontrar en los alrededores, sobre todo si va a la Avenida 1ª o 
+                                                en la Avenida 10.
+
                                             </p>
                                             
                                         </div>
@@ -7626,7 +8302,7 @@ You can recognize our maintenance team for their uniform.
                                         <div class="wpb_accordion wpb_content_element  not-column-inherit" data-collapsible="" data-vc-disable-keydown="false" data-active-tab="1">
                                              <div class="wpb_wrapper wpb_accordion_wrapper ui-accordion">
                                                  <div class="wpb_accordion_section group">
-                                                     <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post"><strong>SOME IDEAS OF THE THINGS YOU CAN BUY AS SOUVENIR</strong></a></h3>
+                                                     <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post"><strong>Estas son algunas ideas que puede comprar como souvenir:</strong></a></h3>
                                                      <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
                                                          <div class="wpb_text_column wpb_content_element ">
                                                              <div class="wpb_wrapper">
@@ -7634,46 +8310,68 @@ You can recognize our maintenance team for their uniform.
 	                                                                	<div class="stm_item-features_inner">
 					                                                		<ul class="item-features_list_extended">
 					                                                			<li class="item-feature">
-					                                                				Tequila, the national Mexican drink is distilled from the agave plant. Beware: all tequilas are not created equal! Always Look for the 100% Agave" label.
+					                                                				Tequila, la bebida nacional por excelencia. Se trata de un
+                                                                                    destilado de la planta de agave. Cuidado: No todos los
+                                                                                    tequilas son iguales. Busque siempre el que tenga la etiqueta
+                                                                                    con la leyenda “100% Agave ".
+
 					                                                			</li>
 					                                                			<li class="item-feature">
-					                                                				Xtabentun (pronounced shta-ben-TUNE) makes a beautiful gift. The subtle, honey-based, anise-flavored liqueur made locally in the Yucatan, comes packaged in elegant glass bottles.
+					                                                				Xtabentun (se pronuncia shta-ben-tun) siempre será un bonito                                                                                       detalle para regalar. Es un suave licor que proviene de la
+                                                                                    combinación entre la miel de abeja y el anís; se elabora en
+                                                                                    la península de Yucatán, y viene en botellas de vidrio muy
+                                                                                    elegantes.
+
 					                                                			</li>
 					                                                			<li class="item-feature">
-					                                                				Silverwork is inexpensive and abundant in Playa. Look for the silver content indicated by the stamp,.925, which means that the metal is 92.5% pure.
+					                                                				La plata: es barata y abundante en Playa. Siempre busque la
+                                                                                    etiqueta que indique la concentración de plata que debe ser 
+                                                                                    de .925, lo que significa que el metal es 92.5% puro.
+
 					                                                			</li>
 					                                                			<li class="item-feature">
-					                                                				Huipiles (cool, cotton dresses with colorful designs embroidered around the neck and hem).
+					                                                				Huipiles: son vestidos frescos de algodón, con bordados
+                                                                                    coloridos alrededor del cuello y del dobladillo.
 					                                                			</li>
 					                                                			<li class="item-feature">
-					                                                				Guayaberas (short or long-sleeved shirts in white or pastels, usually made of cotton and linen).
+					                                                				Guayaberas: se trata de camisas de manga corta o larga, en
+                                                                                    color blanco o tonos pastel; generalmente están hechas de
+                                                                                    algodón y lino y muy comunes en la vestimenta de esta región.
+
 					                                                			</li>
 					                                                			<li class="item-feature">
-					                                                				Hammocks made of natural or synthetic fiber.
+					                                                				Hamacas hechas de fibra natural o sintética.
+
 					                                                			</li>
 					                                                			<li class="item-feature">
-					                                                				Braided Palm Baskets
+					                                                				Cestos de palma trenzada
+
 					                                                			</li>
 					                                                			<li class="item-feature">
-					                                                				Sarapes (multi-colored woven shawls)
+					                                                				Sarapes (chales de tejido multicolor)
+
 					                                                			</li>
 					                                                			<li class="item-feature">
-					                                                				Sombreros (very wide-brimmed traditional hats)
+					                                                				Nacimientos 
+
 					                                                			</li>
 					                                                			<li class="item-feature">
-					                                                				Nacimientos (terra-cotta nativity figurines)
+					                                                				Sombreros (sombreros tradicionales de ala muy ancha)
 					                                                			</li>
 					                                                			<li class="item-feature">
-					                                                				Painted Pottery
+					                                                				Cerámica pintada
+
 					                                                			</li>
 					                                                			<li class="item-feature">
-					                                                				Hand-Painted Ceramic Tiles
+					                                                				Azulejos de cerámica pintados a mano
 					                                                			</li>
 					                                                			<li class="item-feature">
-					                                                				Leather (stamped and plain)
+					                                                				Cuero (estampado y liso)
+
 					                                                			</li>
 					                                                			<li class="item-feature">
-					                                                				Perfumes in one of the Tax Free shops
+					                                                				Perfumes en una de las tiendas libres de impuestos.
+
 					                                                			</li>
 					                                                		</ul>
 					                                                	</div>
@@ -7688,10 +8386,12 @@ You can recognize our maintenance team for their uniform.
                                          <br>
                                          <div class="wpb_wrapper">
 	                                        <p class="paragraph ng-attr-widget">
-                                            	And if you are a serious shopper, and Playa del Carmen options are not your style, you may want 
-                                            	to consider a<strong> day trip to Cancun, considered an Ultra Trendy shopper’s Paradise</strong> where you can 
-                                            	find the latest designs in jewelry, gifts, accessories and fashion from brands such as 
-                                            	Louis Vuitton, Bvlgari, Carolina Herrera, Cartier and more.
+                                            	Pero si usted es un comprador serio y las tiendas que hay en Playa del Carmen no 
+                                                son su estilo, entonces puede que desee <strong>pasar un día en Cancún, una ciudad considerada 
+                                                como el paraíso de la moda</strong>, donde podrá encontrar lo último en joyería de diseñador, 
+                                                obsequios, accesorios y artículos de moda de marcas como Louis Vuitton, Bvlgari, 
+                                                Carolina Herrera, Cartier y mucho más.
+
                                          	</p>
                                          </div>
                                     </div>
@@ -7812,7 +8512,7 @@ You can recognize our maintenance team for their uniform.
                                     <div class="ult-spacer spacer-563bc65e38c9e" data-id="563bc65e38c9e" data-height="30" data-height-mobile="30" data-height-tab="30" data-height-tab-portrait="30" data-height-mobile-landscape="30" style="clear:both;display:block;"></div>
                                     <div role="form" class="wpcf7" id="wpcf7-f338-p323-o1" lang="en-US" dir="ltr">
                                         <div class="screen-reader-response"></div>
-                                        <form action="/contact-us/#" method="post" class="wpcf7-form" novalidate="novalidate">
+                                        <form action="/contact-us/#wpcf7-f338-p323-o1" method="post" class="wpcf7-form" novalidate="novalidate">
                                             <div style="display: none;">
                                                 <input type="hidden" name="_wpcf7" value="338" />
                                                 <input type="hidden" name="_wpcf7_version" value="4.2.2" />
@@ -7942,48 +8642,59 @@ You can recognize our maintenance team for their uniform.
                                         <div class="wpb_column vc_column_container ">
                                             <div class="wpb_wrapper">
 												<p class="paragraph ng-attr-widget">
-													Looking to improve communication in your company? Promoting more creative 
-													and expansive thinking? Reducing the distractions of day-to-day business 
-													issues? Celebrating your year's success? Or just incentivizing your team 
-													with a great change of scenery for your next achievement goal setting?
+													¿Busca mejorar la comunicación en su empresa? ¿Promover la creatividad y 
+                                                    el pensamiento de mente abierta? ¿Reducir las distracciones de los problemas 
+                                                    empresariales del día a día? ¿Celebrar años de éxito? ¿o sólo incentivar a 
+                                                    su equipo para lograr sus próximos objetivos con un genial cambio de ambiente?
+
 	                                            </p>
 	                                            
 	                                            <p class="paragraph ng-attr-widget">
-													<strong>A retreat is the chance to see things from a different perspective.</strong> A 
-													well-designed and run incentive program is one of the most effective ways 
-													to reward great performers. After a few days of "business" in Villa Aqua, 
-													we guarantee that your team will return home re-energized and focused, ready 
-													to take on the future with your Company!
+													<strong>Los retiros son la oportunidad de ver las cosas desde otra perspectiva y un 
+                                                    programa de incentivos bien diseñado es una de las maneras más efectivas de 
+                                                    recompensar a los empleados más eficientes</strong>. Le aseguramos que después de unos 
+                                                    cuantos días de “trabajo” en Villa Aqua, su equipo regresará a casa con energías 
+                                                    renovadas, concentrado y listo para aceptar los retos del futuro para la compañía.
+
 	                                            </p>
 	                                            
 	                                            <p class="paragraph ng-attr-widget">
-													We can assist you in finding the perfect activities or excursions for your team, 
-													whether it is to boost company morale or just take a load off after a very 
-													stressful (poolside) workday. Who knows? Perhaps, zip lining through the jungle 
-													is the key to success! Or going beyond their limits diving with Bull Sharks? 
-													You can give them an experience of a lifetime by swimming with Whale Sharks or 
-													reach their deepest fibers with a Mayan Ceremony inside a Temazcal.
+													Nosotros podemos asistirlo para encontrar las actividades perfectas para su equipo, 
+                                                    ya sea para elevar la confianza de los empleados o únicamente para quitar el peso 
+                                                    de un estresante día de trabajo (junto a la piscina)… quizá un paseo en tirolesa 
+                                                    por la jungla sea el camino hacia el éxito; o ¿qué tal ir más allá de los límites 
+                                                    nadando con Tiburones Toro? Puede darles la mejor experiencia de su vida al nadar 
+                                                    con Tiburones Ballena, o tocar fibras profundas en una Ceremonia Maya dentro de un 
+                                                    Temazcal.
+
 	                                            </p>
 	                                            
 	                                            <p class="paragraph ng-attr-widget">
-													<strong>Whatever you think your team needs, we can help you out!</strong> What could be better 
-													than to successfully hold your corporate event at an exceptionally unique location 
-													in the Mexican Caribbean?
+													Sin importar lo que usted piense que su equipo necesita, <strong>nosotros podemos ayudarle a
+                                                    conseguirlo. ¿Qué mejor que realizar exitosamente su evento corporativo en una locación
+                                                    excepcionalmente única en el Caribe mexicano?</strong>
+
 	                                            </p>
 	                                            
 	                                            <p class="paragraph ng-attr-widget">
-													We welcome special guests and their groups: Trainers, Yoga Teachers, Artists, Speakers, Chefs, etc. 
+													Capacitadores, maestros de Yoga, artistas, oradores, chefs, etc., sea cual
+                                                    sea el tipo de grupo que maneje, en Villa Aqua todos son ¡Bienvenidos! 
+
 	                                            </p>
 	                                            
 	                                            <p class="paragraph ng-attr-widget">
-													Contact us to plan your Corporate Event.
+													¡Contáctenos y le ayudaremos a planear su Retiro o Evento Corporativo!
 	                                            </p>
                                             </div>
                                             <div class="ult-spacer spacer-56253aed4f277" data-id="56253aed4f277" data-height="25" data-height-mobile="25" data-height-tab="25" data-height-tab-portrait="25" data-height-mobile-landscape="25" style="clear:both;display:block;"></div>
                                             
                                             
-                                            <p><i>*extra fees apply</i></p>
+                                            <p><i>* Aplican cargos por evento.</i></p>
                                             
+                                            <div class="ult-spacer spacer-56253aed4f277" data-id="56253aed4f277" data-height="25" data-height-mobile="25" data-height-tab="25" data-height-tab-portrait="25" data-height-mobile-landscape="25" style="clear:both;display:block;"></div>
+								            <div class="vc_btn3-container vc_btn3-left animated fadeIn" style="opacity:1;-webkit-animation-delay:0s;-webkit-animation-duration:1s;-webkit-animation-iteration-count:1; -moz-animation-delay:0s;-moz-animation-duration:1s;-moz-animation-iteration-count:1; animation-delay:0s;animation-duration:1s;animation-iteration-count:1;test">
+												<a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-square vc_btn3-style-outline vc_btn3-color-chino" href="/events/" title="" target="_self">VER TODO</a>
+											</div>
                                         </div>
                                     </div>
                                 </div>
@@ -8035,12 +8746,6 @@ You can recognize our maintenance team for their uniform.
                         <!-- Row Backgrounds -->
                     </article>
                     <!-- #post-## -->
-                    <div class="ult-spacer spacer-561be2953972e" data-id="561be2953972e" data-height="52" data-height-mobile="52" data-height-tab="52" data-height-tab-portrait="52" data-height-mobile-landscape="52" style="clear:both;display:block;"></div>
-					<div class="ult-animation ult-animate-viewport ult-no-mobile " data-animate="fadeIn " data-animation-delay="0 " data-animation-duration="1.5 " data-animation-iteration="1 " style="opacity:0; " data-opacity_start_effect="95 ">
-						<div class="vc_btn3-container vc_btn3-center ">
-							<a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-square vc_btn3-style-outline vc_btn3-color-chino" href="/events/" title="" target="_self">VIEW ALL</a>
-						</div>
-					</div>
                 </div>
             </div>
         </div>
@@ -8058,7 +8763,7 @@ You can recognize our maintenance team for their uniform.
             <div class="container">
                 <div class="page-header_wrap">
                     <div class="page-header_in">
-                        <h2 class="page-title">CORPORATE RETREATS</h2>
+                        <h2 class="page-title">RETIROS Y EVENTOS CORPORATIVOS </h2>
                     </div>
                 </div>
             </div>
@@ -8099,21 +8804,27 @@ You can recognize our maintenance team for their uniform.
                                         <div class="wpb_column vc_column_container ">
                                             <div class="wpb_wrapper">
 												<p class="paragraph ng-attr-widget">
-													If you are searching for the<strong> Perfect Family Vacation</strong> spot then Villa 
-													Aqua is the answer you have been looking for.
+													Si está planeando las <strong>perfectas Vacaciones Familiares</strong>, 
+                                                    entonces Villa Aqua es la respuesta para usted.
 	                                            </p>
 	                                            
 	                                            <p class="paragraph ng-attr-widget">
-													Offering spaciousness to gather all the family together but allowing 
-													everyone to have their private space too, you can accommodate up to 12 guests 
-													(including children 12 and younger) and let your Villa Host plan wonderful activities
-													 that will capture the whole family…maybe a simple bocce ball tournament or an 
-													 amazing excursion that will fascinate the entire family.
+													Le ofrecemos amplios espacios para reunir a toda la familia, permitiendo 
+                                                    que todos tengan su privacidad también, ya que puede hospedar hasta 10 adultos 
+                                                    o bien 12 personas (cuando 2 o más son menores de 12 años) y dejar que su 
+                                                    Anfitrión de Villa planeé maravillosas actividades que le encantarán a todo 
+                                                    el grupo… desde un simple juego de vóley o un torneo de petanca , hasta una 
+                                                    increíble excursión por la selva, que fascinará a toda la familia.
+
 	                                            </p>
                                             </div>
                                             <div class="ult-spacer spacer-56253aed4f277" data-id="56253aed4f277" data-height="25" data-height-mobile="25" data-height-tab="25" data-height-tab-portrait="25" data-height-mobile-landscape="25" style="clear:both;display:block;"></div>
                                             
-                                            <p><i>*extra fees apply</i></p>
+                                            <p><i>*Aplíca costo extra</i></p>
+                                            <div class="ult-spacer spacer-56253aed4f277" data-id="56253aed4f277" data-height="25" data-height-mobile="25" data-height-tab="25" data-height-tab-portrait="25" data-height-mobile-landscape="25" style="clear:both;display:block;"></div>
+								            <div class="vc_btn3-container vc_btn3-left animated fadeIn" style="opacity:1;-webkit-animation-delay:0s;-webkit-animation-duration:1s;-webkit-animation-iteration-count:1; -moz-animation-delay:0s;-moz-animation-duration:1s;-moz-animation-iteration-count:1; animation-delay:0s;animation-duration:1s;animation-iteration-count:1;test">
+												<a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-square vc_btn3-style-outline vc_btn3-color-chino" href="/events/" title="" target="_self">VER TODO</a>
+											</div>
                                         </div>
                                     </div>
                                 </div>
@@ -8137,12 +8848,6 @@ You can recognize our maintenance team for their uniform.
                         <div class="upb_color" data-bg-override="ex-full" data-bg-color="#ffffff" data-fadeout="" data-fadeout-percentage="30" data-parallax-content="" data-parallax-content-sense="30" data-row-effect-mobile-disable="true" data-img-parallax-mobile-disable="false" data-rtl="false" data-custom-vc-row="" data-vc="4.6.2" data-theme-support="" data-overlay="false" data-overlay-color="" data-overlay-pattern="" data-overlay-pattern-opacity="" data-overlay-pattern-size=""></div>
                         <!-- Row Backgrounds -->
                     </article>
-                    <div class="ult-spacer spacer-561be2953972e" data-id="561be2953972e" data-height="52" data-height-mobile="52" data-height-tab="52" data-height-tab-portrait="52" data-height-mobile-landscape="52" style="clear:both;display:block;"></div>
-					<div class="ult-animation ult-animate-viewport ult-no-mobile " data-animate="fadeIn " data-animation-delay="0 " data-animation-duration="1.5 " data-animation-iteration="1 " style="opacity:0; " data-opacity_start_effect="95 ">
-						<div class="vc_btn3-container vc_btn3-center ">
-							<a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-square vc_btn3-style-outline vc_btn3-color-chino" href="/events/" title="" target="_self">VIEW ALL</a>
-						</div>
-					</div>
                     <!-- #post-## -->
                 </div>
             </div>
@@ -8161,7 +8866,7 @@ You can recognize our maintenance team for their uniform.
             <div class="container">
                 <div class="page-header_wrap">
                     <div class="page-header_in">
-                        <h2 class="page-title">FAMILY & FRIENDS REUNION</h2>
+                        <h2 class="page-title">REUNIONES FAMILIARES Y DE AMIGOS</h2>
                     </div>
                 </div>
             </div>
@@ -8206,49 +8911,53 @@ You can recognize our maintenance team for their uniform.
 
                                         <div class="wpb_column vc_column_container ">
                                             <div class="wpb_wrapper">
-												<p class="paragraph ng-attr-widget">
-													Villa Aqua is available to rent for films and photoshoots.
+												
+	                                            <p class="paragraph ng-attr-widget">
+													Si busca una excelente locación para filmaciones y/o sesiones fotográficas, 
+                                                    Villa Aqua es la opción. Su privacidad, sus espacios interiores contemporáneos, 
+                                                    áreas exteriores llenas de color además del sinnúmero de días soleados en el 
+                                                    año, garantizan el éxito de su producción. Cada rincón de Villa Aqua provee de 
+                                                    una luz natural que sin duda le ayudará a conseguir los mejores resultados para 
+                                                    su filmación y/o sesión fotográfica. 
+
 	                                            </p>
 	                                            
 	                                            <p class="paragraph ng-attr-widget">
-													With countless days of sun,<strong> contemporary interiors and full privacy</strong>, 
-													your production is a guarantee success.
-	                                            </p>
-	                                            
-	                                            <p class="paragraph ng-attr-widget">
-													Whether you have a photo shoot combined with a film shoot or not, exterior and 
-													interior locations are there with its many possibilities. <strong>Great spots and fantastic 
-													natural light</strong> are a plus to the result you are looking for.
-	                                            </p>
-	                                            
-	                                            <p class="paragraph ng-attr-widget">
-													Villa Aqua <strong>offers bilingual assistance and contacts of crew for your production.</strong> 
-													People who have worked for many years in Riviera Maya production projects from professional
-													 photographers, make-up stylists, costume designers to catering services, transportation 
-													 arrangements and everything you need to do your job easier.
+													Villa Aqua ofrece <strong>asistencia bilingüe y cuenta con una lista de personal
+                                                    altamente capacitado y con años de experiencia en todas las áreas de producción</strong>;
+                                                    nuestros contactos han trabajado en proyectos importantes dentro de este rubro en la 
+                                                    Riviera Maya; desde fotógrafos, estilistas, maquillistas, diseñadores de vestuario 
+                                                    hasta servicios de catering, transportación y todo lo que necesite para desarrollar 
+                                                    su proyecto.
+
 	                                            </p>
                                             </div>
                                             <div class="ult-spacer spacer-56253aed4f277" data-id="56253aed4f277" data-height="25" data-height-mobile="25" data-height-tab="25" data-height-tab-portrait="25" data-height-mobile-landscape="25" style="clear:both;display:block;"></div>
                                             
-                                            <p><i>*extra fees apply</i></p>
+                                            <p><i>*cargos extras aplícan</i></p>
                                             
+                                            <div class="ult-spacer spacer-56253aed4f277" data-id="56253aed4f277" data-height="25" data-height-mobile="25" data-height-tab="25" data-height-tab-portrait="25" data-height-mobile-landscape="25" style="clear:both;display:block;"></div>
+								            <div class="vc_btn3-container vc_btn3-left animated fadeIn" style="opacity:1;-webkit-animation-delay:0s;-webkit-animation-duration:1s;-webkit-animation-iteration-count:1; -moz-animation-delay:0s;-moz-animation-duration:1s;-moz-animation-iteration-count:1; animation-delay:0s;animation-duration:1s;animation-iteration-count:1;test">
+												<a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-square vc_btn3-style-outline vc_btn3-color-chino" href="/events/" title="" target="_self">VER TODO</a>
+											</div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
                             <div class="vc_col-sm-6 wpb_column vc_column_container ">
+                                
                                 <div class="wpb_wrapper ult-carousel">
-                                	<div class="rental-service_item">
-                                      	<div class="rs-item_inner">
-                                       		<div class="rs-item_actions">
-                                      			<a class="rs-item_action_zoom js-fancybox" rel="gr3" href="/images/events/Villa_Aqua_photo_shooting_01.jpg"><i class="fa fa-search-plus"></i></a>
-                                       		</div>
-                                       		<div class="rs-item_content">
-                                       			<img width="1140" height="676" src="/images/events/Villa_Aqua_photo_shooting_01.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-                                       		</div>
-                                       	</div>
-                                    </div>
+                                        	<div class="rental-service_item">
+                                            	<div class="rs-item_inner">
+                                            		<div class="rs-item_actions">
+                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr3" href="/images/events/Villa_Aqua_photo_shooting_01.jpg"><i class="fa fa-search-plus"></i></a>
+                                            		</div>
+                                            		<div class="rs-item_content">
+                                            			<img width="1140" height="676" src="/images/events/Villa_Aqua_photo_shooting_01.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
+                                            		</div>
+                                            	</div>
+                                            </div>
                                             
                                             <div class="rental-service_item">
                                             	<div class="rs-item_inner">
@@ -8261,6 +8970,7 @@ You can recognize our maintenance team for their uniform.
                                             	</div>
                                             </div>
                                             
+                                            
                                         </div>
                             </div>
                         </div>
@@ -8269,12 +8979,6 @@ You can recognize our maintenance team for their uniform.
                         <div class="upb_color" data-bg-override="ex-full" data-bg-color="#ffffff" data-fadeout="" data-fadeout-percentage="30" data-parallax-content="" data-parallax-content-sense="30" data-row-effect-mobile-disable="true" data-img-parallax-mobile-disable="false" data-rtl="false" data-custom-vc-row="" data-vc="4.6.2" data-theme-support="" data-overlay="false" data-overlay-color="" data-overlay-pattern="" data-overlay-pattern-opacity="" data-overlay-pattern-size=""></div>
                         <!-- Row Backgrounds -->
                     </article>
-                    <div class="ult-spacer spacer-561be2953972e" data-id="561be2953972e" data-height="52" data-height-mobile="52" data-height-tab="52" data-height-tab-portrait="52" data-height-mobile-landscape="52" style="clear:both;display:block;"></div>
-					<div class="ult-animation ult-animate-viewport ult-no-mobile " data-animate="fadeIn " data-animation-delay="0 " data-animation-duration="1.5 " data-animation-iteration="1 " style="opacity:0; " data-opacity_start_effect="95 ">
-						<div class="vc_btn3-container vc_btn3-center ">
-							<a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-square vc_btn3-style-outline vc_btn3-color-chino" href="/events/" title="" target="_self">VIEW ALL</a>
-						</div>
-					</div>
                 </div>
             </div>
         </div>
@@ -8292,7 +8996,7 @@ You can recognize our maintenance team for their uniform.
             <div class="container">
                 <div class="page-header_wrap">
                     <div class="page-header_in">
-                        <h2 class="page-title">Photo Shoots</h2>
+                        <h2 class="page-title">Locación</h2>
                     </div>
                 </div>
             </div>
@@ -8333,37 +9037,48 @@ You can recognize our maintenance team for their uniform.
                                         <div class="wpb_column vc_column_container ">
                                             <div class="wpb_wrapper">
 												<p class="paragraph ng-attr-widget">
-													Whether it is to celebrate your<strong> anniversary, a birthday, a personal achievement, 
-													to surprise a client or, just to gather special friends</strong> and enjoy an amazing vacation,
-													we can help you customize your private event and make lifetime memories for everyone.
+											     Ya sea para celebrar su <strong>aniversario, cumpleaños, un logro personal, 
+                                                  sorprender a un cliente o sólo reunir a esos amigos especiales y 
+                                                    disfrutar unas vacaciones increíbles</strong>, nosotros le ayudaremos a 
+                                                    personalizar su evento privado* y crear recuerdos que permanezcan 
+                                                    por siempre.
+
 	                                            </p>
 	                                            
 	                                            <h6 style="color: #22BCB8;">
-	                                            	<a href="/images/staff-and-services/Menu_epic-experiences.pdf" target="_blank">VILLA AQUA EPIC EXPERIENCES*</a> 
+	                                            	<a href="/images/staff-and-services/Menu_epic-experiences.pdf" target="_blank">EXPERIENCIAS ÉPICAS VILLA AQUA*</a> 
 	                                            </h6>
 	                                            <p class="paragraph ng-attr-widget">
-													From simple kid's birthday celebrations with the classical "Piñata" to
-													 exotic Mayan Rituals, we can organize many <strong>epic experiences that will 
-													 remain on your guest's memories for a lifetime!</strong> 
+													Desde sencillas celebraciones de cumpleaños, con la clásica “piñata”, 
+                                                    hasta exóticos Rituales Mayas, en Villa Aqua organizamos <strong>“Experiencias 
+                                                    Épicas” que permanecerán en la memoria de sus invitados por siempre.</strong>
+
 	                                            </p>
 	                                            
 	                                            <p class="paragraph ng-attr-widget">
-													<strong>Have fun and learn about the most famous Mexican beverage in our “Tequila 
-													Tasting Experience” or discover Mexico through its gastronomy</strong>, which is World 
-													Heritage, though our tasting menu including famous dishes from each region of 
-													the Country<strong> with the sound of Mariachi</strong>. And if you are more adventurous,<strong> do not 
-													miss Villa Aqua Molecular Dinner! A 19 course menu prepared by our chef Bernardo
-													 Bautista.</strong>
+													Diviértanse aprendiendo todo sobre la bebida mexicana más famosa del mundo 
+                                                    en nuestra experiencia: <strong>“Cata de Tequila”, descubra México y su gastronomía,</strong> 
+                                                    Patrimonio de la Humanidad, a través de nuestro menú degustación, el cual 
+                                                    incluye platillos representativos de cada región, los cuales saboreara <strong>al 
+                                                    son del Mariachi</strong>…o bien, si son más aventureros, no pueden perderse nuestra 
+                                                    famosa <strong>“Cena Molecular Villa Aqua”, un menú de 19 tiempos preparado por nuestro 
+                                                    chef Bernardo Bautista</strong>, usando las técnicas más vanguardistas para sorprender 
+                                                    todos sus sentidos!
 	                                            </p>
 	                                            
 	                                            <p class="paragraph ng-attr-widget">
-													Ask your Villa Host for more information or contact us to share your ideas 
-													and we'll do our best to make your wishes come true!
+													Consulte a su Anfitrión de Villa para más información o cuéntenos sus ideas 
+                                                    y haremos lo posible por cumplir todos sus caprichos.
+
 	                                            </p>
                                             </div>
                                             <div class="ult-spacer spacer-56253aed4f277" data-id="56253aed4f277" data-height="25" data-height-mobile="25" data-height-tab="25" data-height-tab-portrait="25" data-height-mobile-landscape="25" style="clear:both;display:block;"></div>
                                             
-                                            <p><i>*extra fees apply</i></p>
+                                            <p><i>* Aplican costos por evento.</i></p>
+                                            <div class="ult-spacer spacer-56253aed4f277" data-id="56253aed4f277" data-height="25" data-height-mobile="25" data-height-tab="25" data-height-tab-portrait="25" data-height-mobile-landscape="25" style="clear:both;display:block;"></div>
+								            <div class="vc_btn3-container vc_btn3-left animated fadeIn" style="opacity:1;-webkit-animation-delay:0s;-webkit-animation-duration:1s;-webkit-animation-iteration-count:1; -moz-animation-delay:0s;-moz-animation-duration:1s;-moz-animation-iteration-count:1; animation-delay:0s;animation-duration:1s;animation-iteration-count:1;test">
+												<a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-square vc_btn3-style-outline vc_btn3-color-chino" href="/events/" title="" target="_self">VER TODO</a>
+											</div>
                                         </div>
                                     </div>
                                 </div>
@@ -8385,6 +9100,8 @@ You can recognize our maintenance team for their uniform.
                                             	</div>
                                             </div>
                                             
+                                            
+                                            
                                             <div class="rental-service_item">
                                             	<div class="rs-item_inner">
                                             		<div class="rs-item_actions">
@@ -8395,6 +9112,8 @@ You can recognize our maintenance team for their uniform.
                                             		</div>
                                             	</div>
                                             </div>
+                                            
+                                            
                                         </div>
                                     </div>
                                 </div>
@@ -8405,12 +9124,6 @@ You can recognize our maintenance team for their uniform.
                         <div class="upb_color" data-bg-override="ex-full" data-bg-color="#ffffff" data-fadeout="" data-fadeout-percentage="30" data-parallax-content="" data-parallax-content-sense="30" data-row-effect-mobile-disable="true" data-img-parallax-mobile-disable="false" data-rtl="false" data-custom-vc-row="" data-vc="4.6.2" data-theme-support="" data-overlay="false" data-overlay-color="" data-overlay-pattern="" data-overlay-pattern-opacity="" data-overlay-pattern-size=""></div>
                         <!-- Row Backgrounds -->
                     </article>
-                    <div class="ult-spacer spacer-561be2953972e" data-id="561be2953972e" data-height="52" data-height-mobile="52" data-height-tab="52" data-height-tab-portrait="52" data-height-mobile-landscape="52" style="clear:both;display:block;"></div>
-					<div class="ult-animation ult-animate-viewport ult-no-mobile " data-animate="fadeIn " data-animation-delay="0 " data-animation-duration="1.5 " data-animation-iteration="1 " style="opacity:0; " data-opacity_start_effect="95 ">
-						<div class="vc_btn3-container vc_btn3-center ">
-							<a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-square vc_btn3-style-outline vc_btn3-color-chino" href="/events/" title="" target="_self">VIEW ALL</a>
-						</div>
-					</div>
                     <!-- #post-## -->
                 </div>
             </div>
@@ -8429,7 +9142,7 @@ You can recognize our maintenance team for their uniform.
             <div class="container">
                 <div class="page-header_wrap">
                     <div class="page-header_in">
-                        <h2 class="page-title">Private Events</h2>
+                        <h2 class="page-title">Eventos Privados</h2>
                     </div>
                 </div>
             </div>
@@ -8470,41 +9183,56 @@ You can recognize our maintenance team for their uniform.
                                         <div class="wpb_column vc_column_container ">
                                             <div class="wpb_wrapper">
 												<p class="paragraph ng-attr-widget">
-													Who hasn't dreamed on a beach wedding?
+													¿Quién no ha soñado con una boda en la playa?
 	                                            </p>
 	                                            
 	                                            <p class="paragraph ng-attr-widget">
-													 It is almost sure you are picturing the soft white sand, cool ocean breeze and gorgeous 
-													 sunset in the distance. But do your dreams include crowds of nosy onlookers? Or gusts of 
-													 wind ruining your wedding hair and veil?
+													 Seguramente estés visualizando la suave arena blanca, la brisa fresca 
+                                                    del océano y un atardecer precioso a la distancia… Pero, ¿tu sueño también 
+                                                    incluye espectadores ruidosos que van pasando por ahí?, 
+                                                    ¿o molestas ráfagas de viento arruinando tu velo y tu peinado? 
 	                                            </p>
 	                                            
 	                                            <p class="paragraph ng-attr-widget">
-													Oceanfront affairs come with their own special set of considerations, so we have the perfect 
-													answer for your Dream Caribbean Wedding!
+													Los eventos 
+                                                    frente al mar siempre traen consigo todo un conjunto de consideraciones, 
+                                                    por lo que Villa Aqua es la respuesta perfecta para tu Boda de Ensueño en el Caribe. 
+
 	                                            </p>
 	                                            
 	                                            <p class="paragraph ng-attr-widget">
-													Even though Villa Aqua is not a<strong> beachfront property, we can arrange that you have a romantic 
-													short ceremony in one of the most beautiful beaches in the world</strong>, but to avoid any of the 
-													inconveniences of hosting a wedding reception in the sand we provide the most spectacular 
-													set for your dreamed wedding: Villa Aqua premises!
+													Aunque Villa Aqua no está frente al mar, podemos hacer los arreglos 
+                                                    necesarios para que tengan una hermosa ceremonia en una de las playas 
+                                                    más bellas del mundo, pero para evitar los inconvenientes de una recepción 
+                                                    en la arena, les ofrecemos el escenario más espectacular para la boda de 
+                                                    sus sueños: Villa Aqua.
 	                                            </p>
 	                                            
 	                                            <p class="paragraph ng-attr-widget">
-													So relax and enjoy your family and friends gathered together to share this special time 
-													with you and let us take care of everything while you exchange vows on a private and exclusive 
-													celebration with lots of style. Our<strong> Villa Host will assist you with anything you may need in 
-													order to make of your event a complete success!</strong> From help you plan pre-wedding arrangements 
-													such as your<strong> guests lodging, transportation and special amenities during their stay, to dinner 
-													rehearsals, spa-wellness treatments</strong> and, of course, all the special details for your wedding 
-													day such as<strong> catering, music, live performers, flowers, decoration, ceremony, paperwork, 
-													professional photography & video, wedding cake, beauty salon services and even special rituals.</strong> 
-													Anything you need to make sure your destination wedding in Paradise will be an absolutely unforgettable one.
+													Sólo tendrán que relajarse y compartir este momento tan especial con su 
+                                                    familia y amigos ya que nosotros nos haremos cargo de todo mientras ustedes 
+                                                    intercambian sus votos en una celebración, con la exclusividad, lujo y estilo
+                                                    que se merecen.<br>
+                                                    Nuestro <strong>Anfitrión de Villa le ayudará con todo lo que necesite para que 
+                                                    su evento sea un rotundo éxito. Desde afinar los detalles previos a la 
+                                                    boda, tales como el alojamiento, transportación y amenidades especiales 
+                                                    para sus invitados, hasta organizar un “día de spa” para la novia y sus 
+                                                    damas o el ensayo para la recepción. Sin omitir, obviamente, todos los 
+                                                    detalles para el Gran día: el catering, la música y entretenimiento, 
+                                                    las flores, la decoración, fotografía y video profesionales, el pastel, 
+                                                    maquillistas y peinadoras, los trámites para la ceremonia (juez) o incluso 
+                                                    rituales especiales…</strong> Haremos lo posible para que su boda, en el Paraíso, 
+                                                    sea absolutamente inolvidable.
+
+
 	                                            </p>
                                             </div>
                                             <div class="ult-spacer spacer-56253aed4f277" data-id="56253aed4f277" data-height="25" data-height-mobile="25" data-height-tab="25" data-height-tab-portrait="25" data-height-mobile-landscape="25" style="clear:both;display:block;"></div>
-                                            <p><i>*extra fees apply</i></p>
+                                            <p><i>*aplíca costo extra</i></p>
+                                            <div class="ult-spacer spacer-56253aed4f277" data-id="56253aed4f277" data-height="25" data-height-mobile="25" data-height-tab="25" data-height-tab-portrait="25" data-height-mobile-landscape="25" style="clear:both;display:block;"></div>
+								            <div class="vc_btn3-container vc_btn3-left animated fadeIn" style="opacity:1;-webkit-animation-delay:0s;-webkit-animation-duration:1s;-webkit-animation-iteration-count:1; -moz-animation-delay:0s;-moz-animation-duration:1s;-moz-animation-iteration-count:1; animation-delay:0s;animation-duration:1s;animation-iteration-count:1;test">
+												<a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-square vc_btn3-style-outline vc_btn3-color-chino" href="/events/" title="" target="_self">VER TODO</a>
+											</div>
                                         </div>
                                     </div>
                                 </div>
@@ -8587,12 +9315,6 @@ You can recognize our maintenance team for their uniform.
                         <div class="upb_color" data-bg-override="ex-full" data-bg-color="#ffffff" data-fadeout="" data-fadeout-percentage="30" data-parallax-content="" data-parallax-content-sense="30" data-row-effect-mobile-disable="true" data-img-parallax-mobile-disable="false" data-rtl="false" data-custom-vc-row="" data-vc="4.6.2" data-theme-support="" data-overlay="false" data-overlay-color="" data-overlay-pattern="" data-overlay-pattern-opacity="" data-overlay-pattern-size=""></div>
                         <!-- Row Backgrounds -->
                     </article>
-                    <div class="ult-spacer spacer-561be2953972e" data-id="561be2953972e" data-height="52" data-height-mobile="52" data-height-tab="52" data-height-tab-portrait="52" data-height-mobile-landscape="52" style="clear:both;display:block;"></div>
-					<div class="ult-animation ult-animate-viewport ult-no-mobile " data-animate="fadeIn " data-animation-delay="0 " data-animation-duration="1.5 " data-animation-iteration="1 " style="opacity:0; " data-opacity_start_effect="95 ">
-						<div class="vc_btn3-container vc_btn3-center ">
-							<a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-square vc_btn3-style-outline vc_btn3-color-chino" href="/events/" title="" target="_self">VIEW ALL</a>
-						</div>
-					</div>
                     <!-- #post-## -->
                 </div>
             </div>
@@ -8624,11 +9346,19 @@ You can recognize our maintenance team for their uniform.
 			
 			<div class="entry-holder">
 				<div class="entry-content">
-					<p>Create a lasting impression by hosting group gatherings, small meetings or special events at Villa Aqua, a Contemporary Ambience with the most intimate space and comfort.
+					<p>Villa Aqua es la locación ideal para realizar todo tipo de eventos, 
+                        desde pequeñas reuniones, hasta eventos especiales. 
+
 					<br>
-					The Villa's elegant, modern areas and beautiful outdoor spaces are ideal venues for weddings, uncommon private affairs, receptions, parties, press events, photo shoots, sales presentations, outdoor cocktails, receptions and events for up to 80, featuring casual minimalist atmosphere around the vintage curved pool.
+					Su diseño contemporáneo con espacios modernos y elegantes, así como su 
+                        bello y amplio jardín exterior, son el escenario perfecto para 
+                        celebrar bodas, eventos privados, corporativos, recepciones y 
+                        fiestas de cumpleaños; ruedas de prensa, sesiones fotográficas o 
+                        presentaciones de ventas hasta para 80 invitados.
 					<br>
-					Villa Aqua is a state-of-the-art facility. Excellent location and impeccable service set the stage for the success of any group meeting or singular event.
+					Su excelente ubicación, instalaciones vanguardistas, su piscina estilo 
+                    vintage, y un servicio impecable le otorgan una atmósfera casual y 
+                        única a sus reuniones y eventos, haciéndolos especiales e inolvidables. 
 					</p>
 				</div>
 			</div>
@@ -8636,43 +9366,49 @@ You can recognize our maintenance team for their uniform.
 			<div class="ult-spacer spacer-56253aed4f277" data-id="56253aed4f277" data-height="25" data-height-mobile="25" data-height-tab="25" data-height-tab-portrait="25" data-height-mobile-landscape="25" style="clear:both;display:block;"></div>
 			<div class="wpb_wrapper">
 				<div class="vc_custom_heading">
-					<h6 style="color: #22BCB8">SPACES</h6>
+					<h6 style="color: #22BCB8">ESPACIOS</h6>
 				</div>
 			</div>
 			<div class="ult-spacer spacer-56253aed4f277" data-id="56253aed4f277" data-height="25" data-height-mobile="25" data-height-tab="25" data-height-tab-portrait="25" data-height-mobile-landscape="25" style="clear:both;display:block;"></div>
 			<div class="entry-holder">
 				<div class="entry-content">
-					<p>Our event indoor and outdoor spaces fitted with full modern facilities are designed for small intimate groups or larger formal events for up to 80 guests 
+					<p>Los espacios interiores y exteriores cuentan con instalaciones 
+                        modernas, diseñadas para albergar desde íntimas reuniones, hasta 
+                        eventos formales para 80 invitados. 
+ 
 						<br>
-						Impressive façade to welcome your guests
-						<br>
-						Vast lawn area with surrounding lush vegetation and golf course background.
-						<br>
-						Poolside Terrace ideal for a cocktail or as a dancing floor
-						<br>
-						Large indoor space with floor to ceiling window walls with beautiful views of the garden, perfect to use as Plan B (in case of bad weather) or as part of your even
-						<br>
-						Subtle and elegant ambient lighting.
-					</p>
+						La villa cuenta con una impresionante fachada que da una cálida bienvenida 
+                        a los invitados; amplias áreas verdes con exuberante vegetación de la región 
+                        y un campo de golf como escenario de fondo.  La terraza, a un costado de la 
+                        piscina, es ideal para tener una reunión tipo cóctel e incluso como pista 
+                        de baile.<BR>
+                        El amplio espacio interior, con ventanas de piso a techo y maravillosas vistas 
+                        al jardín, es perfecto como plan B en caso de mal tiempo o simplemente como 
+                        otra área en la que sus invitados pueden disfrutar del evento. Asimismo, en 
+                        Villa Aqua contamos con una iluminación ambiental elegante y sutil, para darle 
+                        a sus reuniones y eventos un toque romántico y sofisticado.
+
 				</div>
 			</div>
 			
 			<div class="ult-spacer spacer-56253aed4f277" data-id="56253aed4f277" data-height="25" data-height-mobile="25" data-height-tab="25" data-height-tab-portrait="25" data-height-mobile-landscape="25" style="clear:both;display:block;"></div>
 			<div class="wpb_wrapper">
 				<div class="vc_custom_heading">
-					<h6 style="color: #22BCB8">SERVICES</h6>
+					<h6 style="color: #22BCB8">SERVICIOS</h6>
 				</div>
 			</div>
 			<div class="ult-spacer spacer-56253aed4f277" data-id="56253aed4f277" data-height="25" data-height-mobile="25" data-height-tab="25" data-height-tab-portrait="25" data-height-mobile-landscape="25" style="clear:both;display:block;"></div>
 			<div class="entry-holder">
 				<div class="entry-content">
-					<p>As one of the best event venues in the Riviera Maya, Villa Aqua has a great relation 
-					with the best event planners and has a vast list of trusted providers that work together 
-					with our Villa Host to make of your event a complete success!
+					<p>Al ser una de las mejores locaciones para eventos en la Riviera Maya, Villa 
+                        Aqua cuenta con una vasta lista de proveedores profesionales y organizadores 
+                        de eventos, quienes trabajarán en conjunto con nuestro anfitrión de villa 
+                        para garantizar el éxito rotundo de su evento.
+
 					<br>
-					Check out: 
+					Visita: 
 					</p>
-					 <a href="http://www.corazon-mm.com" target="_blank" style="color: #22BCB8">CORAZON by Pasteleteria</a>   and <a href="http://www.gourmetevents.com.mx/the-events/" style="color: #22BCB8" target="_blank"> GOURMET EVENTS </a>
+					 <a href="http://www.corazon-mm.com" target="_blank" style="color: #22BCB8">CORAZON por Pasteleteria</a>  y <a href="http://www.gourmetevents.com.mx/the-events/" style="color: #22BCB8" target="_blank"> GOURMET EVENTS </a>
 				</div>
 			</div>
 			
@@ -8688,7 +9424,7 @@ You can recognize our maintenance team for their uniform.
                                     <div class="rs-item_content"><img width="570" height="446" src="/images/events/Villa_Aqua_events_weddings.jpg" class="attachment-full wp-post-image" alt="Exellent-view" />
                                     </div>
                                     <div class="rs-item_caption">
-                                        <div class="rs-item_title">Weddings</div>
+                                        <div class="rs-item_title">Bodas</div>
                                     </div>
                                 </div>
                             </div>
@@ -8702,7 +9438,7 @@ You can recognize our maintenance team for their uniform.
                                     <div class="rs-item_content"><img width="570" height="446" src="/images/events/Villa_Aqua_events_corporate_retreats.jpg" class="attachment-full wp-post-image" alt="Berth" />
                                     </div>
                                     <div class="rs-item_caption">
-                                        <div class="rs-item_title">Corporate Retreats</div>
+                                        <div class="rs-item_title">Retiros corporativos</div>
                                     </div>
                                 </div>
                             </div>
@@ -8716,7 +9452,7 @@ You can recognize our maintenance team for their uniform.
                                     <div class="rs-item_content"><img width="570" height="446" src="/images/events/Villa_Aqua_events_family_reunion.jpg" class="attachment-full wp-post-image" alt="Big-Yacht" />
                                     </div>
                                     <div class="rs-item_caption">
-                                        <div class="rs-item_title">Family &amp; Frieds reunion</div>
+                                        <div class="rs-item_title">Reuniones de familia y amigos</div>
                                     </div>
                                 </div>
                             </div>
@@ -8730,7 +9466,7 @@ You can recognize our maintenance team for their uniform.
                                     <div class="rs-item_content"><img width="570" height="446" src="/images/events/Villa_Aqua_private_events.jpg" class="attachment-full wp-post-image" alt="Villas-near-the-beach" />
                                     </div>
                                     <div class="rs-item_caption">
-                                        <div class="rs-item_title">Private Events</div>
+                                        <div class="rs-item_title">Eventos privados</div>
                                     </div>
                                 </div>
                             </div>
@@ -8744,7 +9480,7 @@ You can recognize our maintenance team for their uniform.
                                     <div class="rs-item_content"><img width="570" height="446" src="/images/events/Villa_Aqua_photo_shooting_01.jpg" class="attachment-full wp-post-image" alt="Over-the-Sea" />
                                     </div>
                                     <div class="rs-item_caption">
-                                        <div class="rs-item_title">Photo Shoots</div>
+                                        <div class="rs-item_title">Locación</div>
                                     </div>
                                 </div>
                             </div>
@@ -8767,7 +9503,7 @@ You can recognize our maintenance team for their uniform.
             <div class="container">
                 <div class="page-header_wrap">
                     <div class="page-header_in">
-                        <h2 class="page-title">Events</h2>
+                        <h2 class="page-title">Eventos</h2>
                     </div>
                 </div>
             </div>
@@ -8786,7 +9522,7 @@ You can recognize our maintenance team for their uniform.
             <div class="container">
                 <div class="page-header_wrap">
                     <div class="page-header_in">
-                        <h2 class="page-title">WEDDINGS</h2>
+                        <h2 class="page-title">BODAS</h2>
                     </div>
                 </div>
             </div>
@@ -8824,26 +9560,35 @@ You can recognize our maintenance team for their uniform.
                                 <div class="wpb_wrapper">
                                     
                                     <div class="vc_custom_heading">
-                                        <h2 style="color: #333;text-align: left;font-weight:400;font-style:normal">ABOUT THE EXPERIENCE</h2>
+                                        <h2 style="color: #333;text-align: left;font-weight:400;font-style:normal">ACERCA DE LA EXPERIENCIA</h2>
                                     </div>
                                     <div class="ult-spacer spacer-5633a4efa59d6" data-id="5633a4efa59d6" data-height="18" data-height-mobile="18" data-height-tab="18" data-height-tab-portrait="18" data-height-mobile-landscape="18" style="clear:both;display:block;"></div>
                                     
                                     <div class="wpb_accordion wpb_content_element  not-column-inherit" data-collapsible="" data-vc-disable-keydown="false" data-active-tab="1">
 	                                    <div class="wpb_wrapper wpb_accordion_wrapper ui-accordion">
 	                                        <div class="wpb_accordion_section group">
-	                                            <h3 class="wpb_accordion_header ui-accordion-header" style="text-transform:uppercase"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post"><strong>What is a private luxury villa rental?</strong></a></h3>
+	                                            <h3 class="wpb_accordion_header ui-accordion-header" style="text-transform:uppercase"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post"><strong>¿QUÉ ESPERAR DE LA RENTA DE UNA VILLA VACACIONAL DE LUJO? </strong></a></h3>
 	                                            <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
 	                                                <div class="wpb_text_column wpb_content_element ">
 	                                                    <div class="wpb_wrapper">
 															<p class="paragraph ng-attr-widget">
-																It is your home away from home. It means exclusive! Villa Aqua is the ultimate of all Mexican Caribbean vacation rental options and experiences.
+																Rentar una villa Vacacional de lujo es sinónimo de exclusividad. 
+                                                                Esto significa que solamente usted y sus invitados se hospedarán 
+                                                                en la propiedad y podrán disfrutar de los beneficios, características, 
+                                                                amenidades y servicios que la villa ofrece y sin preocuparse por saber 
+                                                                con qué desconocidos tendrá que compartir sus vacaciones. Lo 
+                                                                consentiremos y le brindaremos un servicio excelente, siempre de acuerdo 
+                                                                con sus necesidades. Es como estar en su segundo hogar! 
+
 																<br>
-							                                   	This means only you and your guests reside together at a stunning property benefiting from full access to all the features, amenities and services Villa Aqua has to offer. 
-							                                	<br>
-							                                	You don't need to worry about knowing who will be with you on your vacation.
-																You will be pampered and served to your needs.
-							                                	<br>
-							                                	Everyone from families seeking adventure to friends and couples searching for that relaxing hideaway to newlyweds looking for romance, will find this Mexican vacation rental to stage their unforgettable experience.
+							                                   	Si desea pasar unas vacaciones en familia para vivir aventuras nuevas, 
+                                                                viajar con amigos o con otras parejas en busca de relajación y de una 
+                                                                escapada romántica, o si está recién casado y busca un poco de romance 
+                                                                junto al mar, Villa Aqua es lo mejor en rentas vacacionales de villas de 
+                                                                lujo en México y será el escenario perfecto para crear una experiencia 
+                                                                única e inolvidable.
+
+							                                	
 							                                </p>
 	                                                    </div>
 	                                                </div>
@@ -8852,18 +9597,43 @@ You can recognize our maintenance team for their uniform.
 	                                        
 	                                        
 	                                        <div class="wpb_accordion_section group">
-	                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post" style="text-transform: uppercase;"><strong>Traveling to Mexico, is it safe?</strong></a></h3>
+	                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post" style="text-transform: uppercase;"><strong>¿ ES SEGURO VIAJAR A MÉXICO?</strong></a></h3>
 	                                            <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
 	                                                <div class="wpb_text_column wpb_content_element ">
 	                                                    <div class="wpb_wrapper">
 	                                                    	<p class="paragraph ng-attr-widget">
-	                                                    		The short answer is: YES! Although certain parts of the country have seen a rise in drug-related violence in the last few years and the gruesome news reports have done little to help the country's image in the minds of tourists, the fact is that most parts of Mexico are still safe to travel to and the Riviera Maya is known to be Mexico's Softer Side.
+	                                                    		La respuesta corta es: SÍ. Aunque algunas partes del país han presentado un
+                                                                incremento en la violencia relacionada con la guerra contra el narco en los
+                                                                últimos años y los reportes negativos de noticias han hecho poco para ayudar
+                                                                a la buena imagen del país en la mente de los turistas, el hecho es que en la
+                                                                mayor parte de México, aún es seguro viajar, y la Riviera Maya es conocida 
+                                                                por ser uno de los destinos más seguros de México.
+
 	                                                    	<br>
-	                                                    		As with any foreign country you go to, it is important to be informed and to take appropriate safety precautions. By making informed decisions, taking simple precautions, and exercising common sense, travelers can continue to take advantage of all that Mexico has to offer. As one of the features of our numerous guest amenities we have supplied personal safes in each guestroom so please use them to keep your valuable belongings.
+	                                                    		Tal como pasa cuando se viaja a cualquier otro país, es importante estar 
+                                                                informado y tomar las medidas de seguridad necesarias. Al estar debidamente
+                                                                informados, tomar simples precauciones y ejercer el sentido común, los viajeros
+                                                                pueden aprovechar al máximo todo lo que México tiene para ofrecerles.
+
 	                                                    	<br>
-	                                                    		With its breathtaking beaches, historical landmarks, and rich culture, it's no wonder that so many people have an interest in visiting Mexico. The country's beauty and diversity of attractions has made it a consistent draw for resort-goers, outdoor-adventurers, and culture-seekers alike, and has helped cement it as one of the top international tourist destinations.
+	                                                    		Como una de las características de nuestras numerosas amenidades, hemos colocado
+                                                                cajas de seguridad en cada habitación, por lo que le pedimos usarlas para guardar
+                                                                sus objetos de valor. 
+
 	                                                    	<br>
-	                                                    		Mexico deserves its place on vacationer wish lists, and despite some troubled areas (mainly in the border with the U.S.), travelers need not avoid the country as a whole.
+	                                                    		Sin duda alguna, México es uno de los países más visitados gracias a sus
+                                                                maravillosas playas, sus emblemáticos lugares históricos y su rica cultura.
+                                                                La belleza del país y la diversidad de atracciones lo han convertido en uno
+                                                                de los destinos turísticos favoritos en el mundo, tanto para quienes gustan
+                                                                de relajarse en los grandes resorts, los que buscan aventuras en contacto 
+                                                                con la naturaleza como para los amantes de la cultura. 
+                                                            <br>
+                                                                
+                                                                México se ha ganado un lugar especial en la lista de lugares preferidos de
+                                                                los vacacionistas, pues a pesar de tener zonas conflictivas (mayormente en
+                                                                la frontera con Estados Unidos), las demás zonas del país son seguras y sin
+                                                                duda, son sitios que los turistas no deben dejar de visitar.
+
 	                                                    	</p>
 	                                                    </div>
 	                                                </div>
@@ -8871,37 +9641,51 @@ You can recognize our maintenance team for their uniform.
 	                                        </div>
 	                                        
 	                                        <div class="wpb_accordion_section group">
-	                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post" style="text-transform: uppercase;"><strong>Do I need passport or Visa to visit Mexico?</strong></a></h3>
+	                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post" style="text-transform: uppercase;"><strong>¿NECESITO PASAPORTE O VISA PARA VISITAR MÉXICO?</strong></a></h3>
 	                                            <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
 	                                                <div class="wpb_text_column wpb_content_element ">
 	                                                    <div class="wpb_wrapper">
 	                                                        <p class="paragraph ng-attr-widget">
-	                                                        	Visitors who brave the steep climb up the highest pyramid in Mexico's Mayan world reap the reward 
-	                                                        	of a breathtaking view. At more than 130 feet in height, Nohuch Mul, which means "large mound" in 
-	                                                        	the Mayan language, is the tallest pyramid at Coba archaeological site and in the Yucatán Peninsula. 
-	                                                        	Coba, an easy 45min. drive from Playa del Carmen, is well worth a visit.
+	                                                        	
+	                                                        	Sólo para los ciudadanos estadounidenses:
+
 	                                                        <br>
-	                                                        	For USA citizens only:
+	                                                        	Desde el año 2007, TODAS las personas, incluyendo los ciudadanos 
+                                                                estadounidenses, que viajen por avión entre Estados Unidos, Canadá, 
+                                                                México, Centro América, América del Sur, el Caribe y las Bermudas, 
+                                                                deberán presentar un Pasaporte vigente, una tarjeta Air NEXUS, una 
+                                                                tarjeta de marino mercante del Servicio de Guardacostas de los Estados 
+                                                                Unidos o una tarjeta de registro de extranjero, Forma I-551, en caso de 
+                                                                ser aplicable.
+
 	                                                        <br>
-	                                                        	Since 2007, ALL persons, including U.S. citizens, traveling by air between the United States and Canada, 
-	                                                        	Mexico, Central and South America, the Caribbean, and Bermuda will be required to present a valid passport, 
-	                                                        	Air NEXUS card, or U.S. Coast Guard Merchant Mariner Document, or an Alien Registration Card, Form I-551, if applicable.
-	                                                        
-	                                                        	If traveling by land or sea (including ferries), ALL persons, including U.S. citizens, may be required to present 
-	                                                        	a valid passport or other documents as determined by the Department of Homeland Security. 
+                                                                
+                                                                Si viaja por mar o por tierra (incluyendo ferris), TODAS las personas, 
+                                                                incluyendo ciudadanos estadounidenses, deberán presentar un Pasaporte 
+                                                                vigente u otro documento, tal como lo determina el Departamento de 
+                                                                Seguridad Nacional. 
+                                                                
+                                                             <br>
+
+	                                                        	Otros Países:
 	                                                        <br>
-	                                                        	Other Countries:
-	                                                        <br>
-	                                                        	If you are a citizen of Andorra, Argentina, Australia, Austria, Belgium, Canada, Chile, Costa Rica, the Czech Republic, 
-	                                                        	Denmark, Finland, France, Germany, Great Britain, Greece, Hungary, Iceland, Ireland, Israel, Italy, Japan, Liechtenstein, 
-	                                                        	Luxembourg, Monaco, Netherlands, New Zealand, Norway, Poland, Portugal, Puerto Rico, San Marino, Singapore, Slovenia, Spain, 
-	                                                        	South Korea, Sweden, Switzerland, United States of America, Uruguay or Venezuela, you don't need a visa to enter Mexico, 
-	                                                        	although you must present a valid passport and fill out an immigration form for tourists and business trips, which can be 
-	                                                        	obtained in travel agencies, airlines or at the point where you enter Mexico.
-	                                                        
-	                                                        	The immigration officer at your point of entry into Mexico can also request that you demonstrate that you have sufficient 
-	                                                        	funds and a return ticket to your country.
-																If you are a citizen of any other Country, you need to go to a Mexican Consulate to request a visa.
+	                                                        	Si es ciudadano de Andorra, Argentina, Australia, Austria, Bélgica, 
+                                                                Canadá, Chile, Costa Rica, la República Checa, Dinamarca, Finlandia, 
+                                                                Francia, Alemania, Gran Bretaña, Grecia, Hungría, Irlanda, isla, Israel, 
+                                                                Italia, Japón, Liechtenstein, Luxemburgo, Mónaco, Países Bajos, Nueva 
+                                                                Zelanda, Noruega, Polonia, Portugal, Puerto Rico, San Marino, Singapur, 
+                                                                Eslovenia, España, Corea del sur, Suecia, Suiza, Estados Unidos, Uruguay
+                                                                o Venezuela, no necesita visa para entrar a México, aunque deberá presentar
+                                                                un Pasaporte vigente y llenar un formato de inmigración para turistas y 
+                                                                viajes de negocios, la cual puede obtener en las agencias de viajes, 
+                                                                aerolíneas o en el punto de entrada a México.
+                                                                <br>
+                                                                El oficial de inmigración en el punto de entrada a México también puede 
+                                                                solicitar que demuestre que cuenta con fondos suficientes para su estadía
+                                                                y un boleto de regreso a su país.
+                                                                <br>
+                                                                Si usted es ciudadano de cualquier otro país, necesitará ir al Consulado 
+                                                                mexicano para solicitar una visa.
 	                                                        </p>
 	                                                        
 	                                                    </div>
@@ -8909,22 +9693,7 @@ You can recognize our maintenance team for their uniform.
 	                                            </div>
 	                                        </div>
 	                                        
-	                                        <div class="wpb_accordion_section group">
-	                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post" style="text-transform: uppercase;"><strong>Do I need to speak/understand Spanish?</strong></a></h3>
-	                                            <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
-	                                                <div class="wpb_text_column wpb_content_element ">
-	                                                    <div class="wpb_wrapper">
-	                                                        <p class="paragraph ng-attr-widget">
-	                                                        	Please don't worry! Even though Spanish is the official language in Mexico, English is widely spoken in vacationing destinations such as Playa del Carmen and Riviera Maya.
-	                                                        <br>
-	                                                        	Villa Aqua has an English speaking concierge at your service 24/7 and also the chef speaks very well.
-	                                                        <br>
-	                                                        	We definitely appreciate people who make an effort to speak our language and are generally helpful in coaching you how to say words properly and if you are interested in learning more your concierge can even arrange for private Spanish classes!
-	                                                        </p>
-	                                                    </div>
-	                                                </div>
-	                                            </div>
-	                                        </div>
+	                                       
 	                                        
 	                                    </div>
 	                                </div>
@@ -8933,21 +9702,30 @@ You can recognize our maintenance team for their uniform.
                                     
                                     
                                     <div class="vc_custom_heading">
-                                        <h2 style="color: #333;text-align: left;font-weight:400;font-style:normal">ABOUT VILLA AQUA</h2>
+                                        <h2 style="color: #333;text-align: left;font-weight:400;font-style:normal">ACERCA DE VILLA AQUA</h2>
                                     </div>
                                     <div class="ult-spacer spacer-5633a4efa59d6" data-id="5633a4efa59d6" data-height="18" data-height-mobile="18" data-height-tab="18" data-height-tab-portrait="18" data-height-mobile-landscape="18" style="clear:both;display:block;"></div>
                                     
                                     <div class="wpb_accordion wpb_content_element  not-column-inherit" data-collapsible="" data-vc-disable-keydown="false" data-active-tab="1">
 	                                    <div class="wpb_wrapper wpb_accordion_wrapper ui-accordion">
 	                                        <div class="wpb_accordion_section group">
-	                                            <h3 class="wpb_accordion_header ui-accordion-header" style="text-transform:uppercase"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post"><strong>How many guests can Villa Aqua accommodate?</strong></a></h3>
+	                                            <h3 class="wpb_accordion_header ui-accordion-header" style="text-transform:uppercase"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post"><strong>¿CUÁNTOS HUÉSPEDES PUEDEN HOSPEDARSE EN VILLA AQUA?</strong></a></h3>
 	                                            <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
 	                                                <div class="wpb_text_column wpb_content_element ">
 	                                                    <div class="wpb_wrapper">
 															<p class="paragraph ng-attr-widget">
-																Villa Aqua maximum capacity is 10 adults but if 2 or more in the group are younger than 12 years old, we can accept up to 12 guests. There are 5 guest rooms; 3 King size bed, 1 with 2 full size beds and 1 with King and a trundle with 2 twin size beds. In addition, the villa is equipped with 1 crib for babies. If you require more cribs or pack & play, please contact your concierge for rental options and pricing.
+																La capacidad máxima en Villa Aqua es de 10 adultos, pero si 2 o más del grupo, 
+                                                                son menores de 12 años, podemos aceptar hasta 12 huéspedes. La casa cuenta con 
+                                                                5 habitaciones; 3 con cama King size, 1 con 2 camas matrimoniales y 1 con una 
+                                                                cama king size  y una litera baja con dos camas individuales. <br>
+                                                                Además, la casa cuenta con 1 cuna y otros accesorios para bebé que están a su
+                                                                disposición sin cargo alguno. Si requiere más cunas o equipo especial, por favor
+                                                                contacte a su Anfitrión de Villa para conocer opciones y precios en renta.
+
 																<br>
-							                                   	If your group is bigger than 12, please contact us for other Luxury Villa options in the area. 
+							                                   	Si su grupo es mayor a 12 personas, por favor contáctenos para obtener 
+                                                                información sobre otras opciones de Villas de lujo en la zona.
+
 							                                </p>
 	                                                    </div>
 	                                                </div>
@@ -8956,14 +9734,27 @@ You can recognize our maintenance team for their uniform.
 	                                        
 	                                        
 	                                        <div class="wpb_accordion_section group">
-	                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post" style="text-transform: uppercase;"><strong>Is Villa Aqua suitable for children?</strong></a></h3>
+	                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post" style="text-transform: uppercase;"><strong>¿VILLA AQUA ES ADECUADA PARA NIÑOS?</strong></a></h3>
 	                                            <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
 	                                                <div class="wpb_text_column wpb_content_element ">
 	                                                    <div class="wpb_wrapper">
 	                                                    	<p class="paragraph ng-attr-widget">
-	                                                    		Yes, absolutely! Although Villa Aqua has an architecture and design that do not seem as a kid friendly place, we love having families with kids stay with us and we do offer many amenities for our younger guests! From volleyball / badminton net, flag football, any sort of balls, a basketball hoop, pool floats and toys, Frisbee, many board games, X-box and Wii with games, TV w/Sat and much more…in addition to many excursions available to suit all ages.
+	                                                    		¡Sí, por supuesto! Aunque Villa Aqua tiene una arquitectura y diseño 
+                                                                que no parece amigable para niños, a nosotros nos encanta recibir 
+                                                                familias y ofrecemos varias amenidades para nuestros huéspedes más jóvenes.
+
 	                                                    		<br>
-	                                                    		We also provide complimentary: 1 crib, 1 car seat (booster) and 1 high chair. Pack and play, car seats and more baby equipment are available to rent with an external provider.
+	                                                    		Desde red de voleibol / bádminton, juegos de pelota, un aro de básquetbol,
+                                                                flotadores y juguetes para la piscina hasta juegos de mesa, una consola 
+                                                                X-box, TV satelital, películas, Apple TV (Netflix)  y mucho más… además 
+                                                                de todas las excursiones y actividades ideales para todas las edades que 
+                                                                su Anfitrión de Villa puede sugerirles.
+                                                                <br>
+                                                                
+                                                                También proporcionamos gratuitamente: 1 cuna, 1 asiento de bebé para el 
+                                                                auto y una silla alta para niños. Otro tipo de equipo y más accesorios 
+                                                                para bebé,  están disponibles para su renta a través de un proveedor 
+                                                                externo.
 	                                                    	</p>
 	                                                    </div>
 	                                                </div>
@@ -8971,12 +9762,17 @@ You can recognize our maintenance team for their uniform.
 	                                        </div>
 	                                        
 	                                        <div class="wpb_accordion_section group">
-	                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post" style="text-transform: uppercase;"><strong>How far is the villa from the beach?</strong></a></h3>
+	                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post" style="text-transform: uppercase;"><strong>¿QUÉ TAN LEJOS ESTÁ LA VILLA DE LA PLAYA?</strong></a></h3>
 	                                            <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
 	                                                <div class="wpb_text_column wpb_content_element ">
 	                                                    <div class="wpb_wrapper">
 	                                                        <p class="paragraph ng-attr-widget">
-	                                                        	Villa Aqua is just a few minutes (10 to 20 min) walking distance to the amazing turquoise water and white sand beach of Playacar Phase I. There is a paved road but if you want to save a couple of minutes take the shortcut through an uneven pathway where you will find Mayan Ruins!
+	                                                        	Villa Aqua está a sólo unos minutos caminando (10-20 min) de las 
+                                                                increíbles aguas turquesa  y la arena blanca de las playas de 
+                                                                Playacar Fase 1. Hay un camino pavimentado pero si quiere ahorrar 
+                                                                unos cuantos minutos, tome el atajo a través de un camino de 
+                                                                terracería en el que encontrará vestigios Mayas.
+
 	                                                        </p>
 	                                                        
 	                                                    </div>
@@ -8985,12 +9781,16 @@ You can recognize our maintenance team for their uniform.
 	                                        </div>
 	                                        
 	                                        <div class="wpb_accordion_section group">
-	                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post" style="text-transform: uppercase;"><strong>Is Villa Aqua close to downtown and la 5ta Avenida?</strong></a></h3>
+	                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post" style="text-transform: uppercase;"><strong>¿VILLA AQUA ESTÁ CERCA DEL CENTRO DE PLAYA DEL CARMEN Y DE LA QUINTA AVENIDA?
+</strong></a></h3>
 	                                            <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
 	                                                <div class="wpb_text_column wpb_content_element ">
 	                                                    <div class="wpb_wrapper">
 	                                                        <p class="paragraph ng-attr-widget">
-	                                                        	Take a nice 15 minute walk and you will be right at the corner of the 2nd Street and 5ta Ave.
+	                                                        	¡Una linda y corta caminata de 15 minutos y estará justo en 
+                                                                la esquina de la Calle 2 y la Quinta Avenida de donde empieza 
+                                                                el corazón de Playa! 
+
 	                                                        </p>
 	                                                    </div>
 	                                                </div>
@@ -8998,14 +9798,29 @@ You can recognize our maintenance team for their uniform.
 	                                        </div>
 	                                        
 	                                        <div class="wpb_accordion_section group">
-	                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post" style="text-transform: uppercase;"><strong>Is there access to a telephone?</strong></a></h3>
+	                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post" style="text-transform: uppercase;"><strong>¿TENGO ACCESO A LLAMADAS TELEFÓNICAS?</strong></a></h3>
 	                                            <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
 	                                                <div class="wpb_text_column wpb_content_element ">
 	                                                    <div class="wpb_wrapper">
 	                                                        <p class="paragraph ng-attr-widget">
-	                                                        	Yes of course! Villa Aqua offers local and International calls (US and Canada and just landline calls to the other countries) for free. We provide our guests with a US number and a Toll Free US line where your friends and family can contact you. This service is provided through Vonage (VOIP) and Internet service is needed. We do not guarantee the quality or failure on this service. There is a local line too where you can make local calls for free but all long distance calls made through this line will be charged to your bill.
+	                                                        	Sí, claro. Villa Aqua ofrece llamadas locales, nacionales e internacionales
+                                                                (Estados Unidos y Canadá y sólo llamadas a teléfonos fijos a otros países) 
+                                                                GRATIS.<br>
+                                                                Nuestros huéspedes contarán con un número telefónico de Estados Unidos y 
+                                                                una línea telefónica gratuita también de Estados Unidos en la que sus amigos
+                                                                y familiares podrán contactarlos. Este servicio es proporcionado a través de
+                                                                Vonage (VOIP) por lo que se requiere una conexión a internet. Dado lo anterior,
+                                                                no garantizamos la calidad o falla del servicio. También tenemos una línea
+                                                                telefónica local en la que puede realizar llamadas locales gratis, pero 
+                                                                cualquier llamada de larga distancia, realizada a través de esta línea, 
+                                                                será cargada a su cuenta.
+
 	                                                        	<br>
-	                                                        	If you require service to your personal mobile then it is important that you verify with your service provider that you have the proper plan or coverage for our location. If you need further info please contact your Concierge.
+	                                                        	Si requiere servicio para su teléfono móvil, es importante que verifique 
+                                                                con su proveedor de servicios para que tenga cobertura o un plan apropiados
+                                                                durante su estancia en México. Si necesita más información por favor contacte
+                                                                a nuestro Anfitrión de Villa.
+
 	                                                        </p>
 	                                                    </div>
 	                                                </div>
@@ -9013,14 +9828,23 @@ You can recognize our maintenance team for their uniform.
 	                                        </div>
 	                                        
 	                                        <div class="wpb_accordion_section group">
-	                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post" style="text-transform: uppercase;"><strong>Is there Wi-Fi and Ethernet Internet at the villa?</strong></a></h3>
+	                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post" style="text-transform: uppercase;"><strong>¿HAY INTERNET EN LA VILLA?</strong></a></h3>
 	                                            <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
 	                                                <div class="wpb_text_column wpb_content_element ">
 	                                                    <div class="wpb_wrapper">
 	                                                        <p class="paragraph ng-attr-widget">
-	                                                        	Yes. Villa Aqua provides free high speed Wi-Fi. All you need is a wireless connection or an Ethernet cable. Please consult your manual or an IT professional for configuration prior to arrival as no one at the villa is trained in these type of technical support issues. 
+	                                                        	Sí. Villa Aqua ofrece Wi-Fi de alta velocidad gratuito. Lo único que 
+                                                                necesita es una conexión inalámbrica. Por favor, consulte el manual 
+                                                                de su dispositivo o a un profesional en tecnología para realizar la 
+                                                                configuración antes de su llegada, ya que no hay personal en la villa 
+                                                                que esté capacitado para este tipo de asistencia técnica.
+
 	                                                        	<br>
-	                                                        	Even with several routers distributed throughout the different areas of the house, you may experience a variation of signal quality. We appreciate your understanding, as there are big concrete walls that affect communication.
+	                                                        	Por favor tome en cuenta que incluso con varios ruteadores dispuestos a 
+                                                                lo largo de diferentes áreas de la casa, podría experimentar una variación 
+                                                                en la calidad de la señal. Apreciamos su comprensión, ya que la villa 
+                                                                tiene muros de concreto muy gruesos que afectan la conectividad.
+
 	                                                        </p>
 	                                                    </div>
 	                                                </div>
@@ -9028,12 +9852,16 @@ You can recognize our maintenance team for their uniform.
 	                                        </div>
 	                                        
 	                                        <div class="wpb_accordion_section group">
-	                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post" style="text-transform: uppercase;"><strong>Can I host a special event at the villa such as a wedding, anniversary or corporate retreat?</strong></a></h3>
+	                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post" style="text-transform: uppercase;"><strong>¿PUEDO RESERVAR EVENTOS ESPECIALES EN LA VILLA, TALES COMO BODAS, ANIVERSARIOS O RETIROS CORPORATIVOS?</strong></a></h3>
 	                                            <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
 	                                                <div class="wpb_text_column wpb_content_element ">
 	                                                    <div class="wpb_wrapper">
 	                                                        <p class="paragraph ng-attr-widget">
-	                                                        	Sure! Villa Aqua is the perfect location for hosting that special event. We do have different policies and pricing. Please check our Events section for more information.
+	                                                        	¡Seguro! Villa Aqua es el lugar perfecto para realizar ese evento tan 
+                                                                especial. Tenemos diferentes políticas y precios. Por favor, revise 
+                                                                nuestra sección de Bodas y Eventos (link a esa parte) para obtener 
+                                                                mayor información.
+
 	                                                        </p>
 	                                                    </div>
 	                                                </div>
@@ -9041,16 +9869,31 @@ You can recognize our maintenance team for their uniform.
 	                                        </div>
 	                                        
 	                                        <div class="wpb_accordion_section group">
-	                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post" style="text-transform: uppercase;"><strong>What is the reservation policy?</strong></a></h3>
+	                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post" style="text-transform: uppercase;"><strong>¿CUÁL ES LA POLÍTICA DE RESERVACIÓN?</strong></a></h3>
 	                                            <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
 	                                                <div class="wpb_text_column wpb_content_element ">
 	                                                    <div class="wpb_wrapper">
 	                                                        <p class="paragraph ng-attr-widget">
-	                                                        	Your reservation is confirmed when we receive your Rental Agreement filled and signed, together with copy of ID and deposit of 50% of the rental fee which should be made no more than 7 days after your booking request. The 50% balance of the rental must be paid 45 days prior to the arrival. Damage deposit is paid in cash upon your arrival to the Villa, if you prefer to put your Credit Card as damage guarantee, please fill out the proper information and send a copy of your plastic (front and back) together with your Rental Agreement and ID.
+	                                                        	Tan pronto como recibamos su solicitud, nos pondremos en contacto con 
+                                                                usted para proporcionarle la información de disponibilidad y precios 
+                                                                solicitados. Una vez que esté de acuerdo, reservaremos la fecha en 
+                                                                nuestro calendario y enviaremos la documentación y las instrucciones 
+                                                                de pago. Su reservación quedará confirmada una vez que recibamos su 
+                                                                Contrato de Arrendamiento firmado junto con la copia de su identificación 
+                                                                y el comprobante de pago del anticipo (50% del costo de la renta, el 
+                                                                cual deberá efectuarse no más de 7 días después de su solicitud de 
+                                                                reserva. El 50% restante deberá pagarse dentro de los 45 días previos 
+                                                                a su fecha de llegada a la villa (check in). 
+
 	                                                        	<br>
-	                                                        	For reservations made less than 45 days before arrival then the booking is confirmed and guaranteed when the full (100%) payment is received within one week of your booking request.
+	                                                        	El depósito por garantía se pagará en efectivo a su llegada; si prefiere 
+                                                                que su Tarjeta de Crédito quede en garantía del depósito de daños, por 
+                                                                favor llene la información pertinente en su Contrato de Arrendamiento 
+                                                                y envíe una copia de su tarjeta (frente y reverso) junto con su 
+                                                                identificación. 
 	                                                        	<br>
-	                                                        	Inland expenses such as transportation, tours, meals and other services must be paid in cash one day prior to your departure date.
+	                                                        	Para reservaciones hechas con menos de 45 días de anticipación, requerimos
+                                                                la liquidación total del pago (100%) para confirmar la reserva. 
 	                                                        </p>
 	                                                    </div>
 	                                                </div>
@@ -9058,26 +9901,50 @@ You can recognize our maintenance team for their uniform.
 	                                        </div>
 	                                        
 	                                        <div class="wpb_accordion_section group">
-	                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post" style="text-transform: uppercase;"><strong>What is the cancellation policy?</strong></a></h3>
+	                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post" style="text-transform: uppercase;"><strong>¿CUÁL ES LA POLÍTICA DE CANCELACIÓN?</strong></a></h3>
 	                                            <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
 	                                                <div class="wpb_text_column wpb_content_element ">
 	                                                    <div class="wpb_wrapper">
 	                                                        <p class="paragraph ng-attr-widget">
-	                                                        	For cancellations 70 or more days prior to arrival date, a full refund shall be rewarded.
+	                                                        	En cancelaciones con 70 días o más, previos a su llegada, se otorgará 
+                                                                un reembolso total.
+
 	                                                        	<br>
-	                                                        	For cancellations 45-70 days prior to arrival date, a 30% of the weekly rental rate is forfeited.
+	                                                        	En cancelaciones con 45-70 días, antes de su llegada, habrá una sanción 
+                                                                del 30% del costo total de la renta.
+
 	                                                       		<br>
-	                                                        	For cancellations less than 45 days prior to arrival date, 100% of the weekly rental rate is forfeited.
+	                                                        	En cancelaciones de menos de 45 días antes de su llegada, se retendrá 
+                                                                el 100% del monto de la renta.
+
 	                                                        	<br>
-	                                                        	No cancellations are permitted for HOLIDAY BOOKINGS or EVENTS, 100% of the rental rate is forfeited. If a cancellation is required a credit of any payments will be given towards a future rental if booked within the period of one year. 
+	                                                        	No se permite cancelación en Reservas de EVENTOS o en TEMPORADAS ESPECIALES
+                                                                (Navidad, Año Nuevo, Semana Santa, Thanksgiving, etc…), en este caso se 
+                                                                retendrá el 100% del monto de la renta. Si llegara a ser una emergencia y
+                                                                requiere de cancelación, se otorgará un crédito por el monto de los pagos ya
+                                                                realizados para que el cliente lo utilice en una renta posterior, reservando
+                                                                dentro de un período de un año. 
+
 	                                                        	<br>
-	                                                        	All cancellations must be received in writing (fax / email are acceptable).
+	                                                        	Todas las cancelaciones deberán realizarse por escrito 
+                                                                (fax / correo electrónico)
+
 	                                                        	<br>
-	                                                        	There will be no refunds for late arrivals or early departures.
+	                                                        	No se otorgará ningún reembolso si el huésped llega después de 
+                                                                su fecha de reserva (check-in) o si debe partir antes de la fecha 
+                                                                de salida (check-out).
+
 	                                                        	<br>
-	                                                        	If for any unseen reasons the villa becomes unavailable for your rental a full refund of any payments you have made will be provided.
+	                                                        	Si por alguna razón imprevista, la villa no estuviera disponible para 
+                                                                la fecha en la que el huésped hizo su reservación, se le otorgará el 
+                                                                reembolso total de los pagos que haya realizado.
+
 	                                                        	<br>
-	                                                        	If because of weather conditions (hurricane, flood or other) you have to leave the property before your departure date we will credit the unused nights for a future stay. No monetary refunds will be provided.
+	                                                        	Si el huésped debiera dejar la propiedad antes de su fecha de salida 
+                                                                por causas de fuerza mayor (huracán, inundación, otros), se le otorgará 
+                                                                un crédito por las noches que no haya usado para que lo utilice en futuras
+                                                                estancias en la villa. No habrá reembolsos monetarios.
+
 	                                                        </p>
 	                                                    </div>
 	                                                </div>
@@ -9085,16 +9952,24 @@ You can recognize our maintenance team for their uniform.
 	                                        </div>
 	                                        
 	                                        <div class="wpb_accordion_section group">
-	                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post" style="text-transform: uppercase;"><strong>Are there any other additional costs to consider?</strong></a></h3>
+	                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post" style="text-transform: uppercase;"><strong>¿HAY ALGÚN COSTO ADICIONAL QUE DEBA CONSIDERAR?</strong></a></h3>
 	                                            <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
 	                                                <div class="wpb_text_column wpb_content_element ">
 	                                                    <div class="wpb_wrapper">
 	                                                        <p class="paragraph ng-attr-widget">
-	                                                        	Yes, all your incidentals such as food & beverage costs, grocery shopping fees (20% of receipt), Spa services, laundry & dry cleaning, tours and excursions, transportation, etc… are not included in the rental costs.
+	                                                        	Sí, todos sus gastos secundarios tales como comida, bebidas, cargo 
+                                                                por compra y entrega de alimentos (20% del recibo), Servicios de SPA, 
+                                                                lavandería / tintorería, tours, excursiones, transportación, etc., 
+                                                                no están incluidos en los costos de arrendamiento.
+
 	                                                        	<br>
-	                                                        	Also consider that there is a 17% tax charge on top of the Villa Rates. 
+	                                                        	Las tarifas de renta NO incluyen los impuestos gubernamentales ni de hospedaje.
+ 
 	                                                        	<br>
-	                                                        	Tips are not included but not mandatory. This is under each guest's consideration but is highly appreciated by the staff.
+	                                                        	Las propinas no están incluidas pero no son obligatorias. Esto es a 
+                                                                consideración de cada huésped, sin embargo son sumamente apreciadas por 
+                                                                el personal que trabaja arduamente en atenderlo como se merece.
+
 	                                                        </p>
 	                                                    </div>
 	                                                </div>
@@ -9102,12 +9977,18 @@ You can recognize our maintenance team for their uniform.
 	                                        </div>
 	                                        
 	                                        <div class="wpb_accordion_section group">
-	                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post" style="text-transform: uppercase;"><strong>Do you provide any discount for the length of stay or an early booking discount?</strong></a></h3>
+	                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post" style="text-transform: uppercase;"><strong>¿DAN ALGÚN DESCUENTO EN ESTANCIAS LARGAS O POR RESERVA ANTICIPADA?
+</strong></a></h3>
 	                                            <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
 	                                                <div class="wpb_text_column wpb_content_element ">
 	                                                    <div class="wpb_wrapper">
 	                                                        <p class="paragraph ng-attr-widget">
-	                                                        	The rates throughout the web are the same. But we guarantee that we will give you the BEST AVAILABLE RATE as this is the owner's direct website. Please inquire and any special rates or discount will be taking in consideration depending availability and dates.
+	                                                        	Los costos que se muestran en la página web son los mismos. Pero 
+                                                                garantizamos que le daremos la MEJOR TARIFA DISPONIBLE, ya que 
+                                                                somos proveedor directo. Por favor, pregunte, cualquier descuento 
+                                                                o tarifa especial será tomada en consideración dependiendo la 
+                                                                disponibilidad y fechas.
+
 	                                                        </p>
 	                                                    </div>
 	                                                </div>
@@ -9115,12 +9996,23 @@ You can recognize our maintenance team for their uniform.
 	                                        </div>
 	                                        
 	                                        <div class="wpb_accordion_section group">
-	                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post" style="text-transform: uppercase;"><strong>Do you accept credit cards for reservation or incidental expenses?</strong></a></h3>
+	                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post" style="text-transform: uppercase;"><strong>¿ACEPTAN TARJETAS DE CRÉDITO PARA HACER LA RESERVACIÓN O PARA GASTOS SECUNDARIOS?</strong></a></h3>
 	                                            <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
 	                                                <div class="wpb_text_column wpb_content_element ">
 	                                                    <div class="wpb_wrapper">
 	                                                        <p class="paragraph ng-attr-widget">
-	                                                        	We are sorry but we do not accept CC payments for the moment. For reservations a Wire Transfer to a US bank account is required. For incidentals and inland expenses you will need to pay in cash (US dollars and Mxn pesos are accepted). In case you do not want to carry too much cash or do not want to use the ATM's, which usually charge a high fee for foreign cards, we offer the option to send a Wire-Transfer of a fix amount to cover all your expenses. If at the end of your vacation there is a positive balance, we will send it back to your account. (There is a 25 usd charge for this service)
+	                                                        	Lo sentimos mucho, pero por el momento NO aceptamos pagos con tarjetas de 
+                                                                crédito. Para reservar se requiere una transferencia electrónica. Para 
+                                                                gastos secundarios y servicios durante su estancia, es necesario pagar 
+                                                                en EFECTIVO (se aceptan dólares estadounidenses y pesos mexicanos). En 
+                                                                caso de que no quiera traer mucho efectivo con usted o no desee usar 
+                                                                los cajeros automáticos (ATM), los cuales generalmente cobran una tarifa 
+                                                                alta para  tarjetas extranjeras o tipos de cambio muy castigados, le 
+                                                                ofrecemos la opción de enviar, previo a su llegada, una transferencia 
+                                                                electrónica con la cantidad que usted establezca para cubrir sus gastos 
+                                                                de estancia. Si al final de sus vacaciones, hay un saldo positivo lo 
+                                                                devolveremos a su cuenta. (aplica un cargo de 45 dólares por este servicio).
+
 	                                                        </p>
 	                                                    </div>
 	                                                </div>
@@ -9128,18 +10020,28 @@ You can recognize our maintenance team for their uniform.
 	                                        </div>
 	                                        
 	                                        <div class="wpb_accordion_section group">
-	                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post" style="text-transform: uppercase;"><strong>Do you provide towels and amenities?</strong></a></h3>
+	                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post" style="text-transform: uppercase;"><strong>¿PROPORCIONAN TOALLAS Y AMENIDADES?</strong></a></h3>
 	                                            <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
 	                                                <div class="wpb_text_column wpb_content_element ">
 	                                                    <div class="wpb_wrapper">
 	                                                        <p class="paragraph ng-attr-widget">
-	                                                        	Yes, all linens including bath and beach towels are provided. 
+	                                                        	Sí. Todos los blancos, incluyendo toallas de baño y de playa están incluidos.
+
 	                                                        	<br>
-	                                                        	Top brand toiletries are also included: soap, shampoo, hair conditioner and moisturizer.
+	                                                        	Sí. Todos los blancos, incluyendo toallas de baño y de playa están incluidos.
+
 		                                                        <br>
-	                                                        	Every bathroom is equipped with hair dryers and magnifying mirrors. 
+	                                                        	También contamos con artículos de tocador de las mejores marcas: jabón, 
+                                                                champú, acondicionador y loción hidratante.
+                                                                <br>
+                                                                Cada baño está equipado con secadoras de cabello y espejos de aumento. 
+
+ 
 	                                                        	<br>
-	                                                        	This is a full service villa, similar to a boutique hotel. Daily room attendants will refresh your linens and amenities.
+	                                                        	Esta es una villa con servicio completo, similar a un hotel boutique. 
+                                                                Nuestras camaristas cambiarán  la ropa de cama cada tercer día a menos 
+                                                                que usted solicite un servicio diferente.
+
 	                                                        </p>
 	                                                    </div>
 	                                                </div>
@@ -9151,7 +10053,7 @@ You can recognize our maintenance team for their uniform.
                                     <div class="ult-spacer spacer-5633a4efa6329" data-id="5633a4efa6329" data-height="52" data-height-mobile="52" data-height-tab="52" data-height-tab-portrait="52" data-height-mobile-landscape="52" style="clear:both;display:block;"></div>
                                     
                                     <div class="vc_custom_heading">
-                                        <h2 style="color: #333;text-align: left;font-weight:400;font-style:normal">FOOD & BEVERAGE</h2>
+                                        <h2 style="color: #333;text-align: left;font-weight:400;font-style:normal">ALIMENTOS Y BEBIDAS</h2>
                                     </div>
                                     <div class="ult-spacer spacer-5633a4efa59d6" data-id="5633a4efa59d6" data-height="18" data-height-mobile="18" data-height-tab="18" data-height-tab-portrait="18" data-height-mobile-landscape="18" style="clear:both;display:block;"></div>
                                     
@@ -9159,14 +10061,22 @@ You can recognize our maintenance team for their uniform.
 	                                    <div class="wpb_wrapper wpb_accordion_wrapper ui-accordion">
 	                                        
 	                                        <div class="wpb_accordion_section group">
-	                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post" style="text-transform: uppercase;"><strong>Can I drink the water? </strong></a></h3>
+	                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post" style="text-transform: uppercase;"><strong>¿PUEDO BEBER EL AGUA DEL GRIFO? </strong></a></h3>
 	                                            <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
 	                                                <div class="wpb_text_column wpb_content_element ">
 	                                                    <div class="wpb_wrapper">
 	                                                        <p class="paragraph ng-attr-widget">
-	                                                        	At the villa: yes. Villa Aqua has purified, filtered water throughout the villa. We also provide complimentary bottled water for your arrival and unlimited purified water on the kitchen dispenser.
+	                                                        	En la villa: Sí. Villa Aqua cuenta con un sistema de purificado y filtrado 
+                                                                de agua, sin embargo, en caso que usted prefiera tomar agua embotellada,
+                                                                proporcionamos botellas de agua en cada habitación el día de su llegada 
+                                                                (sin costo el primer día), y agua purificada ilimitada en el dispensador 
+                                                                de la cocina.
+
 	                                                        	<br>
-	                                                        	If you are going to spend your day out on the beach or visiting the different attractions, we recommend that you bring a supply of bottled water and-or drink only bottled beverages.
+	                                                        	Si va a pasar el día fuera en la playa o visitando diferentes atracciones,
+                                                                le recomendamos que lleve su propia agua embotellada y/o beba solo bebidas
+                                                                embotelladas.
+
 	                                                        </p>
 	                                                    </div>
 	                                                </div>
@@ -9174,14 +10084,23 @@ You can recognize our maintenance team for their uniform.
 	                                        </div>
 	                                        
 	                                        <div class="wpb_accordion_section group">
-	                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post" style="text-transform: uppercase;"><strong>How does the pre-stock and grocery shopping work?</strong></a></h3>
+	                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post" style="text-transform: uppercase;"><strong>¿CÓMO FUNCIONA EL SERVICIO DE COMPRA Y SURTIDO DE VÍVERES/ALIMENTOS PREVIO Y DURANTE LA ESTANCIA?</strong></a></h3>
 	                                            <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
 	                                                <div class="wpb_text_column wpb_content_element ">
 	                                                    <div class="wpb_wrapper">
 	                                                        <p class="paragraph ng-attr-widget">
-	                                                        	As soon as your reservation is confirmed, you will be contacted by the Villa Concierge who will help you with all your vacation planning, including your meals! It is very important that you let your concierge know about any allergies and / or dietary restrictions / preferences in your group with time so that the chef can take proper precautions. 
+	                                                        	Tan pronto como su reservación sea confirmada, nuestro Anfitrión de Villa
+                                                                lo contactará y le ayudará con la planeación de sus vacaciones, incluyendo
+                                                                sus alimentos. Es muy importante que nos notifique previamente acerca de 
+                                                                cualquier alergia y /o restricción/preferencias alimenticias en su grupo, 
+                                                                para que el chef pueda tomar las medidas necesarias. 
+
 	                                                        <br>
-	                                                        	We provide a Grocery Shopping List and a Sample Menu just as a guideline but take in mind that our chef is always open to special requests.
+	                                                        	Proporcionamos una Lista de Compra de Víveres y un Menú como referencia, 
+                                                                pero tenga en cuenta que contamos con un chef profesional que siempre 
+                                                                está abierto a peticiones especiales si el tiempo y los ingredientes lo 
+                                                                permiten.
+
 	                                                        </p>
 	                                                    </div>
 	                                                </div>
@@ -9189,16 +10108,27 @@ You can recognize our maintenance team for their uniform.
 	                                        </div>
 	                                        
 	                                        <div class="wpb_accordion_section group">
-	                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post" style="text-transform: uppercase;"><strong>How are alcohol beverages invoiced?</strong></a></h3>
+	                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post" style="text-transform: uppercase;"><strong>¿CÓMO SE COBRAN LAS BEBIDAS ALCOHÓLICAS?</strong></a></h3>
 	                                            <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
 	                                                <div class="wpb_text_column wpb_content_element ">
 	                                                    <div class="wpb_wrapper">
 	                                                        <p class="paragraph ng-attr-widget">
-	                                                        	We keep an inventory of wine and liquors, and you will be charged any bottles that you open. There is very little markup but if you prefer you can also replace them for new bottles. Bar Menu is available upon request. We can also pre-stock your favorite spirits (if available in the market) before your arrival.
+	                                                        	Tenemos un inventario de vinos y licores a su disposición; únicamente se le
+                                                                cobrarán las botellas que abra. Los precios son muy accesibles pero si lo
+                                                                prefiere, puede remplazar las botellas consumidas por otras de la misma 
+                                                                marca y capacidad. El acceso a este inventario está disponible bajo solicitud.<br>
+                                                                También podemos surtir previamente sus licores favoritos (de estar disponibles
+                                                                en el mercado) antes de su llegada aplicando únicamente el cargo por entrega
+                                                                (20%).
+
 	                                                        <br>
-	                                                        	For your convenience, we have our Honor Bar, these are all opened bottles left by past guests. Maybe it is just you in the mood for drinking one tequila shot, If so; then you are more than welcome to grab it from the honor bar. 
-	                                                        <br>
-	                                                        	We encourage all our guests to keep this tradition by not emptying the entire honor bar and leaving your opened bottled for the next guests.
+	                                                        	Para su conveniencia, contamos con el servicio de Bar de Honor, que está 
+                                                                compuesto por botellas abiertas que dejaron huéspedes anteriores. Alentamos
+                                                                a todos nuestros huéspedes a que mantengan esta tradición, respetando el 
+                                                                consumo medido del Bar de Honor y dejando en éste, las botellas que no se 
+                                                                terminó para que los siguientes huéspedes puedan disfrutarlo también.
+ 
+	                                                        
 	                                                        </p>
 	                                                    </div>
 	                                                </div>
@@ -9206,7 +10136,8 @@ You can recognize our maintenance team for their uniform.
 	                                        </div>
 	                                        
 	                                        <div class="wpb_accordion_section group">
-	                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post" style="text-transform: uppercase;"><strong>Do the staff prepare beverages during our stay?</strong></a></h3>
+	                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post" style="text-transform: uppercase;"><strong>¿EL PERSONAL PREPARA BEBIDAS DURANTE LA ESTANCIA?
+</strong></a></h3>
 	                                            <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
 	                                                <div class="wpb_text_column wpb_content_element ">
 	                                                    <div class="wpb_wrapper">
@@ -9544,7 +10475,7 @@ You can recognize our maintenance team for their uniform.
             <div class="container">
                 <div class="page-header_wrap">
                     <div class="page-header_in">
-                        <h2 class="page-title">Testimonials</h2>
+                        <h2 class="page-title">Testimoniales</h2>
                     </div>
                 </div>
             </div>
@@ -9582,7 +10513,7 @@ You can recognize our maintenance team for their uniform.
                             <div class="vc_col-sm-12 wpb_column vc_column_container ">
                                 <div class="wpb_wrapper">
                                     <div class="vc_custom_heading">
-                                        <h2 style="color: #525252;text-align: left;font-weight:300;font-style:normal">RENTAL RATES</h2>
+                                        <h2 style="color: #525252;text-align: left;font-weight:300;font-style:normal">Tarifas</h2>
                                     </div>
                                     <div class="ult-spacer spacer-5633a4efa59d6" data-id="5633a4efa59d6" data-height="18" data-height-mobile="18" data-height-tab="18" data-height-tab-portrait="18" data-height-mobile-landscape="18" style="clear:both;display:block;"></div>
                                     <div class="wpb_text_column wpb_content_element  content-style">
@@ -9590,20 +10521,23 @@ You can recognize our maintenance team for their uniform.
 											<table class="table table-striped custom-table">
 	                                            <thead>
 	                                                <tr>
-	                                                    <th><strong>Seasons</strong><br> 2015-2016 <br><br></th>
-	                                                    <th><strong>Low </strong><br>May 09 <br>until <br>Dec 19</th>
-	                                                    <th><strong>Thanksgiving </strong><br>Nov 21 <br> until<br>Nov 29</th>
-														<th><strong>Christmas</strong><br> Dec 19<br> until<br> Dec 26</th>
-														<th><strong>New Year</strong><br> Dec 26 <br> until<br>Jan 02</th>
-														<th><strong>High </strong><br> Jan 02 <br> until<br>May 07</th>
+	                                                    <th><strong>Temporada</strong><br> 2015-2016 <br><br></th>
+	                                                    <th><strong>Baja </strong><br>May 09 <br>until <br>Dec 19</th>
+	                                                    <th><strong>Accion de Gracias </strong>Nov 21 <br> until<br>Nov 29</th>
+														<th><strong>Navidad</strong><br> Dec 19<br> until<br> Dec 26</th>
+														<th><strong>Año Nuevo</strong><br> Dec 26 <br> until<br>Jan 02</th>
+														<th><strong>Alta </strong><br> Jan 02 <br> until<br>May 07</th>
 														<th><strong>Easter 1</strong><br>  Mar 19 <br>until <br>Mar 26</th>
 														<th><strong>Easter 2</strong><br>  Mar 26 <br>until <br>Apr 02</th>
-														<th><strong>Summer</strong><br> May 07 <br> until<br>Dec 19</th>
+														<th><strong>Verano</strong><br> May 07 <br> until<br>Dec 19</th>
+														<th><strong>Thanksgiving</strong><br> Nov 19 <br> until<br>Nov 26</th>
+														<th><strong>Christmas</strong><br> Dec 19<br> until <br>Dec 26</th>
+														<th><strong>New Year</strong><br> Dec 26<br> until <br>Jan 02</th>
 	                                                </tr>
 	                                            </thead>
 	                                            <tbody>
 	                                                <tr>
-	                                                    <th>1 Bedroom <br>(1-2 guests)</th>
+	                                                    <th>1 Recámara <br>(1-2 huéspedes)</th>
 	                                                    <td>$1,300</td>
 	                                                    <td>$1,650</td>
 	                                                    <td>$4,000</td>
@@ -9612,9 +10546,12 @@ You can recognize our maintenance team for their uniform.
 	                                                    <td>$2,050</td>
 	                                                    <td>$2,050</td>
 	                                                    <td>$1,300</td>
+	                                                    <td>$1,650</td>
+	                                                    <td>$4,000</td>
+	                                                    <td>$4,500</td>
 	                                                </tr>
 	                                                <tr>
-	                                                    <th>2 Bedrooms <br>(2-3 guests)</th>
+	                                                    <th>2 Recámara <br>(2-3 huéspedes)</th>
 	                                                    <td>$1,300</td>
 	                                                    <td>$1,650</td>
 	                                                    <td>$4,000</td>
@@ -9623,9 +10560,12 @@ You can recognize our maintenance team for their uniform.
 	                                                    <td>$2,050</td>
 	                                                    <td>$2,050</td>
 	                                                    <td>$1,300</td>
+	                                                    <td>$1,650</td>
+	                                                    <td>$4,000</td>
+	                                                    <td>$4,500</td>
 	                                                </tr>
 	                                                <tr>
-	                                                    <th>3 Bedrooms <br>(3-4 guests)</th>
+	                                                    <th>3 Recámaras <br>(3-4 Huespedes)</th>
 	                                                    <td>$1,300</td>
 	                                                    <td>$1,650</td>
 	                                                    <td>$4,000</td>
@@ -9634,9 +10574,12 @@ You can recognize our maintenance team for their uniform.
 	                                                    <td>$2,050</td>
 	                                                    <td>$2,050</td>
 	                                                    <td>$1,300</td>
+	                                                    <td>$1,650</td>
+	                                                    <td>$4,000</td>
+	                                                    <td>$4,500</td>
 	                                                </tr>
 	                                                <tr>
-	                                                    <th>4 bedrooms <br> (4-5 guests)</th>
+	                                                    <th>4 bedrooms <br> (4-5 Huespedes)</th>
 	                                                    <td>$1,450</td>
 	                                                    <td>$1,900</td>
 	                                                    <td>$4,000</td>
@@ -9645,9 +10588,12 @@ You can recognize our maintenance team for their uniform.
 	                                                    <td>$2,050</td>
 	                                                    <td>$2,050</td>
 	                                                    <td>$1,450</td>
+	                                                    <td>$1,900</td>
+	                                                    <td>$4,000</td>
+	                                                    <td>$4,500</td>
 	                                                </tr>
 	                                                <tr>
-	                                                    <th>5 bedrooms <br>(5-6 guests)</th>
+	                                                    <th>5 bedrooms <br>(5-6 Huespedes)</th>
 	                                                    <td>$1,600</td>
 	                                                    <td>$2,050</td>
 	                                                    <td>$4,000</td>
@@ -9656,9 +10602,12 @@ You can recognize our maintenance team for their uniform.
 	                                                    <td>$2,050</td>
 	                                                    <td>$2,050</td>
 	                                                    <td>$1,600</td>
+	                                                    <td>$2,050</td>
+	                                                    <td>$4,000</td>
+	                                                    <td>$4,500</td>
 	                                                </tr>
 	                                                <tr>
-	                                                    <th>Minimum nights</th>
+	                                                    <th>Noches Mínimas</th>
 	                                                    <td>4</td>
 	                                                    <td>4</td>
 	                                                    <td>7</td>
@@ -9667,6 +10616,9 @@ You can recognize our maintenance team for their uniform.
 	                                                    <td>7</td>
 	                                                    <td>7</td>
 	                                                    <td>4</td>
+	                                                    <td>4</td>
+	                                                    <td>7</td>
+	                                                    <td>7</td>
 	                                                </tr>
 	                                            </tbody>
 	                                        </table>
@@ -9674,12 +10626,18 @@ You can recognize our maintenance team for their uniform.
                                     </div>
                                     <br>
                                     <p>
-                                    	Taxes are not included. (16% + 3%)<br>
-										All rates are subject to change without notice.<br>
-										Rates are for the entire villa rental per night based on a double occupancy per room.<br>
-										If rent less bedrooms, the vacant rooms will remain locked.<br>
-										Maximum occupancy: 10 adults (If there are 2 or more children 12 years old or yournger, we accept up to 12 guests)<br>
-										No pets allowed.<br>
+                                    	Impuestos no incluidos (16% + 3%)<br>
+										Todas las tarifas están sujetas a cambios sin previo aviso.<br>
+										Los precios de renta son por toda la casa, por noche, en base a 
+                                        ocupación doble por habitación.
+                                        <br>
+										Si se paga tarifa prorrateada, las habitaciones libres permanecerán 
+                                        cerradas y no serán rentadas a otros huéspedes.
+                                        <br>
+										Máxima ocupación: 10 adultos (si hay  2 o más niños menores de 12 
+                                        años de edad en el grupo, se aceptan hasta 12 personas)
+                                        <br>
+										No se permiten mascotas.<br>
 										No smoking inside property.<br>
                                     </p>
                                     <div class="ult-spacer spacer-5633a4efa6329" data-id="5633a4efa6329" data-height="52" data-height-mobile="52" data-height-tab="52" data-height-tab-portrait="52" data-height-mobile-landscape="52" style="clear:both;display:block;"></div>
@@ -9699,7 +10657,7 @@ You can recognize our maintenance team for their uniform.
         </div>
 		<div class="container vc-page-container" style="margin: 15px auto 45px auto;">
         	<div class="vc_custom_heading">
-             	<h2 style="color: #525252;text-align: left;font-weight:300;font-style:normal">HOW TO RESERVE</h2>
+             	<h2 style="color: #525252;text-align: left;font-weight:300;font-style:normal">CÓMO RESERVAR</h2>
             </div>
             <div class="ult-spacer spacer-56253aed4f277" data-id="56253aed4f277" data-height="25" data-height-mobile="25" data-height-tab="25" data-height-tab-portrait="25" data-height-mobile-landscape="25" style="clear:both;display:block;"></div>
             <div class="container-inner">
@@ -9711,25 +10669,50 @@ You can recognize our maintenance team for their uniform.
                                     
                                     <div class="wpb_text_column wpb_content_element ">
                                         <div class="wpb_wrapper">
-                                        	<h6>Reservation Process</h6>
+                                        	<h6>Proceso de reservación</h6>
                                         
                                             <p class="paragraph ng-attr-widget">
                                                 <span class="ng-directive ng-binding" style="">
-                                                	To place a reservation fill out our <a href="/contact-us/">contact form</a> whenever you feel ready.
+                                                	Para hacer una reservación, dé click en el siguiente 
+                                                    ícono cuando esté listo para llenar nuestro <a href="/contact-us/">Formato de Contacto:</a>
                                                 </span>
                                             </p>
                                             <div class="stm_item-features">
                                                 	<div class="stm_item-features_inner">
                                                 		<ul class="item-features_list_extended">
-                                                			<li class="item-feature">As soon as we receive your request, we will contact you with availability and pricing.</li>
-                                                			<li class="item-feature">Once you agree, we will place a hold in our calendar and send all the paperwork and payment instructions. </li>
-                                                			<li class="item-feature">Your reservation will be confirmed when we receive your Rental Agreement filled and signed, together with copy of your ID and the receipt of the 50% deposit of the rental fee which should be made no more than 7 days after your booking request. The 50% balance of the rental must be paid 45 days prior to your check in date. </li>
-                                                			<li class="item-feature">Damage deposit is paid in cash upon arrival at the Villa; if you prefer to put your Credit Card as damage guarantee, please fill out the proper information on your Rental Agreement and send a copy of your plastic (front and back) together with your ID.</li>
-                                                			<li class="item-feature">For reservations made less than 45 days before arrival, we require full (100%) payment to confirm the booking.</li>
-                                                			<li class="item-feature">Inland expenses such as transportation, tours, meals and other services must be paid in<strong> cash</strong> one day prior to your departure date.</li>
+                                                			<li class="item-feature">Tan pronto como recibamos su solicitud, nos 
+                                                                pondremos en contacto con usted para proporcionarle la información 
+                                                                de disponibilidad y precios solicitados..
+                                                            </li>
+                                                			<li class="item-feature">Una vez que esté de acuerdo, reservaremos la 
+                                                                fecha en nuestro calendario y enviaremos la documentación y las 
+                                                                instrucciones de pago. 
+                                                            </li>
+                                                			<li class="item-feature"> Su reservación quedará confirmada una vez 
+                                                                que recibamos su Contrato de Arrendamiento firmado junto con la 
+                                                                copia de su identificación y el comprobante de pago del anticipo 
+                                                                (50% del costo de la renta, el cual deberá efectuarse no más de 
+                                                                7 días después de su solicitud de reserva. El 50% restante deberá 
+                                                                pagarse dentro de los 45 días previos a su fecha de llegada (check in).
+                                                            </li>
+                                                                
+                                                			<li class="item-feature">El depósito de garantía se pagará en efectivo a 
+                                                                su llegada; si prefiere que su Tarjeta de Crédito quede en garantía 
+                                                                del depósito de daños, por favor llene la información pertinente en 
+                                                                su Contrato de Arrendamiento y envíe una copia de su tarjeta 
+                                                                (frente y reverso) junto con su identificación. 
+                                                            </li>
+                                                			<li class="item-feature">Para reservaciones hechas con menos de 45 días 
+                                                                de anticipación, requerimos la liquidación total del pago (100%) para 
+                                                                confirmar la reserva. 
+                                                            </li>
+                                                			<li class="item-feature">Otros gastos como transportación, tours, alimentos
+                                                                y otros servicios deberán pagarse en efectivo, un día antes de su fecha 
+                                                                de salida (check out).
+                                                            </li>
                                                 		</ul>
                                                 	</div>
-                                            </div>
+                                                </div>
                                                                                         
                                             <br />
                                         </div>
@@ -9785,7 +10768,7 @@ You can recognize our maintenance team for their uniform.
             <div class="container">
                 <div class="page-header_wrap">
                     <div class="page-header_in">
-                        <h2 class="page-title">Rates &amp; Reservation</h2>
+                        <h2 class="page-title">Tarifas &amp; Reservaciones</h2>
                     </div>
                 </div>
             </div>
@@ -10231,7 +11214,7 @@ You can recognize our maintenance team for their uniform.
             <div class="ult-spacer spacer-56253aed4f277" data-id="56253aed4f277" data-height="25" data-height-mobile="25" data-height-tab="25" data-height-tab-portrait="25" data-height-mobile-landscape="25" style="clear:both;display:block;"></div>
             <div class="ult-spacer spacer-56253aed4f277" data-id="56253aed4f277" data-height="25" data-height-mobile="25" data-height-tab="25" data-height-tab-portrait="25" data-height-mobile-landscape="25" style="clear:both;display:block;"></div>
             <div class="vc_btn3-container vc_btn3-center animated fadeIn" style="opacity:1;-webkit-animation-delay:0s;-webkit-animation-duration:1s;-webkit-animation-iteration-count:1; -moz-animation-delay:0s;-moz-animation-duration:1s;-moz-animation-iteration-count:1; animation-delay:0s;animation-duration:1s;animation-iteration-count:1;test">
-				<a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-square vc_btn3-style-outline vc_btn3-color-chino" href="/at-extra-cost/" title="" target="_self">MORE SERVICES</a>
+				<a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-square vc_btn3-style-outline vc_btn3-color-chino" href="/at-extra-cost/" title="" target="_self">MÁS SERVICIOS</a>
 			</div>
         </div>
         
@@ -10260,1104 +11243,6 @@ You can recognize our maintenance team for their uniform.
 	    return $header;
 	}
 	
-	public function getGalleryHead()
-	{
-	ob_start();
-	?>
-	    <?php echo self::getCommonDocuments(); ?>
-	    <?php echo self::getGoogleAnalytics(); ?>
-		<?php
-		$head = ob_get_contents();
-		ob_end_clean();
-		return $head;
-	}
-			
-	public function getGalleryContent()
-	{
-		ob_start();
-		echo self::getGalleryHeader();
-		?>
-		<div class="container vc-page-container" style="margin: 35px auto 45px auto;">
-            <div class="ult-spacer spacer-56253aed4f277" data-id="56253aed4f277" data-height="25" data-height-mobile="25" data-height-tab="25" data-height-tab-portrait="25" data-height-mobile-landscape="25" style="clear:both;display:block;"></div>
-            <div class="container-inner">
-            	<div class="vc_col-sm-12 wpb_column vc_column_container ">
-					<div class="wpb_wrapper">
-						<div class="wpb_single_image wpb_content_element vc_align_center">
-							<div class="wpb_wrapper">
-								<!-- /overview first two pictures -->
-								<div class="vc_col-sm-3 wpb_column vc_column_container gal">
-								    <div class="rental-service_item">
-								        <div class="rs-item_inner">
-								            <div class="rs-item_actions">
-								                <a class="rs-item_action_zoom js-fancybox" rel="gr3" href="/images/overview/Villa_Aqua_general_overview.jpg"><i class="fa fa-search-plus"></i></a>
-								            </div>
-								            <div class="rs-item_content">
-								                <img width="1140" height="676" src="/images/overview/Villa_Aqua_general_overview.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua" />
-								            </div>
-								        </div>
-								    </div>
-								</div>
-								
-								<div class="vc_col-sm-3 wpb_column vc_column_container gal">
-								    <div class="rental-service_item">
-								        <div class="rs-item_inner">
-								            <div class="rs-item_actions">
-								                <a class="rs-item_action_zoom js-fancybox" rel="gr3" href="/images/overview/Villa_Aqua_general_overview_02_new.jpg"><i class="fa fa-search-plus"></i></a>
-								            </div>
-								            <div class="rs-item_content">
-								                <img width="1140" height="676" src="/images/overview/Villa_Aqua_general_overview_02_new.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua" />
-								            </div>
-								        </div>
-								    </div>
-								</div>
-								
-								<!--Master Bedroom-->
-								<div class="vc_col-sm-3 wpb_column vc_column_container gal">
-								    <div class="rental-service_item">
-								        <div class="rs-item_inner">
-								            <div class="rs-item_actions">
-								                <a class="rs-item_action_zoom js-fancybox" rel="mb" href="/images/overview/the-rooms/Villa_Aqua_master_bedroom_5.jpg"><i class="fa fa-search-plus"></i></a>
-								            </div>
-								            <div class="rs-item_content">
-								                <img width="1140" height="676" src="/images/overview/the-rooms/Villa_Aqua_master_bedroom_5.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-								            </div>
-								        </div>
-								    </div>
-								</div>
-								
-								<div class="vc_col-sm-3 wpb_column vc_column_container gal">
-								    <div class="rental-service_item">
-								        <div class="rs-item_inner">
-								            <div class="rs-item_actions">
-								                <a class="rs-item_action_zoom js-fancybox" rel="mb" href="/images/overview/the-rooms/Villa_Aqua_master_bedroom_4.jpg"><i class="fa fa-search-plus"></i></a>
-								            </div>
-								            <div class="rs-item_content">
-								                <img width="1140" height="676" src="/images/overview/the-rooms/Villa_Aqua_master_bedroom_4.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-								            </div>
-								        </div>
-								    </div>
-								</div>
-								
-								<div class="vc_col-sm-3 wpb_column vc_column_container gal">
-								    <div class="rental-service_item">
-								        <div class="rs-item_inner">
-								            <div class="rs-item_actions">
-								                <a class="rs-item_action_zoom js-fancybox" rel="mb" href="/images/overview/the-rooms/Villa_Aqua_master_bedroom_1.jpg"><i class="fa fa-search-plus"></i></a>
-								            </div>
-								            <div class="rs-item_content">
-								                <img width="1140" height="676" src="/images/overview/the-rooms/Villa_Aqua_master_bedroom_1.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-								            </div>
-								        </div>
-								    </div>
-								</div>
-								
-								<div class="vc_col-sm-3 wpb_column vc_column_container gal">
-								    <div class="rental-service_item">
-								        <div class="rs-item_inner">
-								            <div class="rs-item_actions">
-								                <a class="rs-item_action_zoom js-fancybox" rel="mb" href="/images/overview/the-rooms/Villa_Aqua_master_bedroom_12_4ta_posicion.jpg"><i class="fa fa-search-plus"></i></a>
-								            </div>
-								            <div class="rs-item_content">
-								                <img width="1140" height="676" src="/images/overview/the-rooms/Villa_Aqua_master_bedroom_12_4ta_posicion.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-								            </div>
-								        </div>
-								    </div>
-								</div>
-								
-								<div class="vc_col-sm-3 wpb_column vc_column_container gal">
-								    <div class="rental-service_item">
-								        <div class="rs-item_inner">
-								            <div class="rs-item_actions">
-								                <a class="rs-item_action_zoom js-fancybox" rel="mb" href="/images/overview/the-rooms/Villa_Aqua_master_bedroom_10_5ta_pos.jpg"><i class="fa fa-search-plus"></i></a>
-								            </div>
-								            <div class="rs-item_content">
-								                <img width="1140" height="676" src="/images/overview/the-rooms/Villa_Aqua_master_bedroom_10_5ta_pos.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-								            </div>
-								        </div>
-								    </div>
-								</div>
-								
-								<div class="vc_col-sm-3 wpb_column vc_column_container gal">
-								    <div class="rental-service_item">
-								        <div class="rs-item_inner">
-								            <div class="rs-item_actions">
-								                <a class="rs-item_action_zoom js-fancybox" rel="mb" href="/images/overview/the-rooms/Villa_Aqua_master_bedroom_3.jpg"><i class="fa fa-search-plus"></i></a>
-								            </div>
-								            <div class="rs-item_content">
-								                <img width="1140" height="676" src="/images/overview/the-rooms/Villa_Aqua_master_bedroom_3.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-								            </div>
-								        </div>
-								    </div>
-								</div>
-								
-								<div class="vc_col-sm-3 wpb_column vc_column_container gal">
-								    <div class="rental-service_item">
-								        <div class="rs-item_inner">
-								            <div class="rs-item_actions">
-								                <a class="rs-item_action_zoom js-fancybox" rel="mb" href="/images/overview/the-rooms/Villa_Aqua_master_bedroom_2da_bano.jpg"><i class="fa fa-search-plus"></i></a>
-								            </div>
-								            <div class="rs-item_content">
-								                <img width="1140" height="676" src="/images/overview/the-rooms/Villa_Aqua_master_bedroom_2da_bano.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-								            </div>
-								        </div>
-								    </div>
-								</div>
-								
-								<div class="vc_col-sm-3 wpb_column vc_column_container gal">
-								    <div class="rental-service_item">
-								        <div class="rs-item_inner">
-								            <div class="rs-item_actions">
-								                <a class="rs-item_action_zoom js-fancybox" rel="mb" href="/images/overview/the-rooms/Villa_Aqua_master_bedroom_15_3era_bano.jpg"><i class="fa fa-search-plus"></i></a>
-								            </div>
-								            <div class="rs-item_content">
-								                <img width="1140" height="676" src="/images/overview/the-rooms/Villa_Aqua_master_bedroom_15_3era_bano.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-								            </div>
-								        </div>
-								    </div>
-								</div>
-								
-								<div class="vc_col-sm-3 wpb_column vc_column_container gal">
-								    <div class="rental-service_item">
-								        <div class="rs-item_inner">
-								            <div class="rs-item_actions">
-								                <a class="rs-item_action_zoom js-fancybox" rel="mb" href="/images/overview/the-rooms/Villa_Aqua_master_bedroom_14_ultima.jpg"><i class="fa fa-search-plus"></i></a>
-								            </div>
-								            <div class="rs-item_content">
-								                <img width="1140" height="676" src="/images/overview/the-rooms/Villa_Aqua_master_bedroom_14_ultima.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-								            </div>
-								        </div>
-								    </div>
-								</div>
-								
-								<!-- <div class="vc_col-sm-3 wpb_column vc_column_container gal">
-								    <div class="rental-service_item">
-								        <div class="rs-item_inner">
-								            <div class="rs-item_actions">
-								                <a class="rs-item_action_zoom js-fancybox" rel="b2" href="/images/overview/the-rooms/Villa_Aqua_master_bedroom_6.jpg"><i class="fa fa-search-plus"></i></a>
-								            </div>
-								            <div class="rs-item_content">
-								                <img width="1140" height="676" src="/images/overview/the-rooms/Villa_Aqua_master_bedroom_6.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-								            </div>
-								        </div>
-								    </div>
-								</div> -->
-											<!--Bedroom 2-->
-								
-								<div class="vc_col-sm-3 wpb_column vc_column_container gal">
-								    <div class="rental-service_item">
-								        <div class="rs-item_inner">
-								            <div class="rs-item_actions">
-								                <a class="rs-item_action_zoom js-fancybox" rel="b2" href="/images/overview/the-rooms/Villa_Aqua_bedroom_2.jpg"><i class="fa fa-search-plus"></i></a>
-								            </div>
-								            <div class="rs-item_content">
-								                <img width="1140" height="676" src="/images/overview/the-rooms/Villa_Aqua_bedroom_2.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-								            </div>
-								        </div>
-								    </div>
-								</div>
-								
-								<div class="vc_col-sm-3 wpb_column vc_column_container gal">
-								    <div class="rental-service_item">
-								        <div class="rs-item_inner">
-								            <div class="rs-item_actions">
-								                <a class="rs-item_action_zoom js-fancybox" rel="b2" href="/images/overview/the-rooms/Villa_Aqua_bedroom_2.2.2.jpg"><i class="fa fa-search-plus"></i></a>
-								            </div>
-								            <div class="rs-item_content">
-								                <img width="1140" height="676" src="/images/overview/the-rooms/Villa_Aqua_bedroom_2.2.2.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-								            </div>
-								        </div>
-								    </div>
-								</div>
-								
-								<div class="vc_col-sm-3 wpb_column vc_column_container gal">
-								    <div class="rental-service_item">
-								        <div class="rs-item_inner">
-								            <div class="rs-item_actions">
-								                <a class="rs-item_action_zoom js-fancybox" rel="b2" href="/images/overview/the-rooms/Villa_Aqua_bedroom_2.3.jpg"><i class="fa fa-search-plus"></i></a>
-								            </div>
-								            <div class="rs-item_content">
-								                <img width="1140" height="676" src="/images/overview/the-rooms/Villa_Aqua_bedroom_2.3.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-								            </div>
-								        </div>
-								    </div>
-								</div>
-								
-								<div class="vc_col-sm-3 wpb_column vc_column_container gal">
-								    <div class="rental-service_item">
-								        <div class="rs-item_inner">
-								            <div class="rs-item_actions">
-								                <a class="rs-item_action_zoom js-fancybox" rel="b2" href="/images/overview/the-rooms/Villa_Aqua_bedroom_2.4.jpg"><i class="fa fa-search-plus"></i></a>
-								            </div>
-								            <div class="rs-item_content">
-								                <img width="1140" height="676" src="/images/overview/the-rooms/Villa_Aqua_bedroom_2.4.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-								            </div>
-								        </div>
-								    </div>
-								</div>
-								
-								<!-- <div class="vc_col-sm-3 wpb_column vc_column_container gal">
-								
-								    <div class="rental-service_item">
-								        <div class="rs-item_inner">
-								            <div class="rs-item_actions">
-								                <a class="rs-item_action_zoom js-fancybox" rel="b2" href="/images/overview/the-rooms/Villa_Aqua_bedroom_2.2.jpg"><i class="fa fa-search-plus"></i></a>
-								            </div>
-								            <div class="rs-item_content">
-								                <img width="1140" height="676" src="/images/overview/the-rooms/Villa_Aqua_bedroom_2.2.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-								            </div>
-								        </div>
-								    </div>
-								</div> -->		
-								
-								<!--Bedroom 3-->
-								
-								<div class="vc_col-sm-3 wpb_column vc_column_container gal">
-								    <div class="rental-service_item">
-								        <div class="rs-item_inner">
-								            <div class="rs-item_actions">
-								                <a class="rs-item_action_zoom js-fancybox" rel="b3" href="/images/overview/the-rooms/Villa_Aqua_bedroom_3.jpg"><i class="fa fa-search-plus"></i></a>
-								            </div>
-								            <div class="rs-item_content">
-								                <img width="1140" height="676" src="/images/overview/the-rooms/Villa_Aqua_bedroom_3.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-								            </div>
-								        </div>
-								    </div>
-								</div>
-								
-								<div class="vc_col-sm-3 wpb_column vc_column_container gal">
-								    <div class="rental-service_item">
-								        <div class="rs-item_inner">
-								            <div class="rs-item_actions">
-								                <a class="rs-item_action_zoom js-fancybox" rel="b3" href="/images/overview/the-rooms/Villa_Aqua_bedroom_3.1.jpg"><i class="fa fa-search-plus"></i></a>
-								            </div>
-								            <div class="rs-item_content">
-								                <img width="1140" height="676" src="/images/overview/the-rooms/Villa_Aqua_bedroom_3.1.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-								            </div>
-								        </div>
-								    </div>
-								</div>
-								<div class="vc_col-sm-3 wpb_column vc_column_container gal">
-								
-								    <div class="rental-service_item">
-								        <div class="rs-item_inner">
-								            <div class="rs-item_actions">
-								                <a class="rs-item_action_zoom js-fancybox" rel="b3" href="/images/overview/the-rooms/Villa_Aqua_bedroom_3.2.jpg"><i class="fa fa-search-plus"></i></a>
-								            </div>
-								            <div class="rs-item_content">
-								                <img width="1140" height="676" src="/images/overview/the-rooms/Villa_Aqua_bedroom_3.2.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-								            </div>
-								        </div>
-								    </div>
-								</div>
-								
-								<div class="vc_col-sm-3 wpb_column vc_column_container gal">
-								    <div class="rental-service_item">
-								        <div class="rs-item_inner">
-								            <div class="rs-item_actions">
-								                <a class="rs-item_action_zoom js-fancybox" rel="b3" href="/images/overview/the-rooms/Villa_Aqua_bedroom_3.4_antes_mapa.jpg"><i class="fa fa-search-plus"></i></a>
-								            </div>
-								            <div class="rs-item_content">
-								                <img width="1140" height="676" src="/images/overview/the-rooms/Villa_Aqua_bedroom_3.4_antes_mapa.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-								            </div>
-								        </div>
-								    </div>
-								</div>
-								
-								<!-- <div class="vc_col-sm-3 wpb_column vc_column_container gal"> -->
-								<!--     <div class="rental-service_item"> -->
-								<!--         <div class="rs-item_inner"> -->
-								<!--             <div class="rs-item_actions"> -->
-								<!--                 <a class="rs-item_action_zoom js-fancybox" rel="b3" href="/images/overview/the-rooms/Villa_Aqua_bedroom_3.3.jpg"><i class="fa fa-search-plus"></i></a> -->
-								<!--             </div> -->
-								<!--             <div class="rs-item_content"> -->
-								<!--                 <img width="1140" height="676" src="/images/overview/the-rooms/Villa_Aqua_bedroom_3.3.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" /> -->
-								<!--             </div> -->
-								<!--         </div> -->
-								<!--     </div> -->
-								<!-- </div> -->
-														
-								<!--bedroom 4-->
-								
-								<div class="vc_col-sm-3 wpb_column vc_column_container gal">
-								    <div class="rental-service_item">
-								        <div class="rs-item_inner">
-								            <div class="rs-item_actions">
-								                <a class="rs-item_action_zoom js-fancybox" rel="b4" href="/images/overview/the-rooms/Villa_Aqua_bedroom_4_new.jpg"><i class="fa fa-search-plus"></i></a>
-								            </div>
-								            <div class="rs-item_content">
-								                <img width="1140" height="676" src="/images/overview/the-rooms/Villa_Aqua_bedroom_4_new.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-								            </div>
-								        </div>
-								    </div>
-								</div>
-								
-								<div class="vc_col-sm-3 wpb_column vc_column_container gal">
-								
-								    <div class="rental-service_item">
-								        <div class="rs-item_inner">
-								            <div class="rs-item_actions">
-								                <a class="rs-item_action_zoom js-fancybox" rel="b4" href="/images/overview/the-rooms/Villa_Aqua_bedroom_4_new_02.jpg"><i class="fa fa-search-plus"></i></a>
-								            </div>
-								            <div class="rs-item_content">
-								                <img width="1140" height="676" src="/images/overview/the-rooms/Villa_Aqua_bedroom_4_new_02.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-								            </div>
-								        </div>
-								    </div>
-								</div>
-								
-								<div class="vc_col-sm-3 wpb_column vc_column_container gal">
-								    <div class="rental-service_item">
-								        <div class="rs-item_inner">
-								            <div class="rs-item_actions">
-								                <a class="rs-item_action_zoom js-fancybox" rel="b4" href="/images/overview/the-rooms/Villa_Aqua_bedroom_4_new_03.jpg"><i class="fa fa-search-plus"></i></a>
-								            </div>
-								            <div class="rs-item_content">
-								                <img width="1140" height="676" src="/images/overview/the-rooms/Villa_Aqua_bedroom_4_new_03.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-								            </div>
-								        </div>
-								    </div>
-								</div>
-								
-								<div class="vc_col-sm-3 wpb_column vc_column_container gal">
-								    <div class="rental-service_item">
-								        <div class="rs-item_inner">
-								            <div class="rs-item_actions">
-								                <a class="rs-item_action_zoom js-fancybox" rel="b4" href="/images/overview/the-rooms/Villa_Aqua_bedroom_4.1.jpg"><i class="fa fa-search-plus"></i></a>
-								            </div>
-								            <div class="rs-item_content">
-								                <img width="1140" height="676" src="/images/overview/the-rooms/Villa_Aqua_bedroom_4.1.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-								            </div>
-								        </div>
-								    </div>
-								</div>
-								
-
-
-<div class="vc_col-sm-3 wpb_column vc_column_container gal">
-    <div class="rental-service_item">
-        <div class="rs-item_inner">
-            <div class="rs-item_actions">
-                <a class="rs-item_action_zoom js-fancybox" rel="b5" href="/images/overview/the-rooms/Villa_Aqua_bedroom_5.jpg"><i class="fa fa-search-plus"></i></a>
-            </div>
-            <div class="rs-item_content">
-                <img width="1140" height="676" src="/images/overview/the-rooms/Villa_Aqua_bedroom_5.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="vc_col-sm-3 wpb_column vc_column_container gal">
-    <div class="rental-service_item">
-        <div class="rs-item_inner">
-            <div class="rs-item_actions">
-                <a class="rs-item_action_zoom js-fancybox" rel="b5" href="/images/overview/the-rooms/Villa_Aqua_bedroom_5.3.jpg"><i class="fa fa-search-plus"></i></a>
-            </div>
-            <div class="rs-item_content">
-                <img width="1140" height="676" src="/images/overview/the-rooms/Villa_Aqua_bedroom_5.3.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="vc_col-sm-3 wpb_column vc_column_container gal">
-    <div class="rental-service_item">
-        <div class="rs-item_inner">
-            <div class="rs-item_actions">
-                <a class="rs-item_action_zoom js-fancybox" rel="b5" href="/images/overview/the-rooms/Villa_Aqua_bedroom_5.1.jpg"><i class="fa fa-search-plus"></i></a>
-            </div>
-            <div class="rs-item_content">
-                <img width="1140" height="676" src="/images/overview/the-rooms/Villa_Aqua_bedroom_5.1.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="vc_col-sm-3 wpb_column vc_column_container gal">
-    <div class="rental-service_item">
-        <div class="rs-item_inner">
-            <div class="rs-item_actions">
-                <a class="rs-item_action_zoom js-fancybox" rel="b5" href="/images/overview/the-rooms/Villa_Aqua_bedroom_2.1.jpg"><i class="fa fa-search-plus"></i></a>
-            </div>
-            <div class="rs-item_content">
-                <img width="1140" height="676" src="/images/overview/the-rooms/Villa_Aqua_bedroom_2.1.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="vc_col-sm-3 wpb_column vc_column_container gal">
-    <div class="rental-service_item">
-        <div class="rs-item_inner">
-            <div class="rs-item_actions">
-                <a class="rs-item_action_zoom js-fancybox" rel="b5" href="/images/overview/the-rooms/Villa_Aqua_bedroom_5.4_antes_mapa.jpg"><i class="fa fa-search-plus"></i></a>
-            </div>
-            <div class="rs-item_content">
-                <img width="1140" height="676" src="/images/overview/the-rooms/Villa_Aqua_bedroom_5.4_antes_mapa.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<!-- living spaces -->
-
-<div class="vc_col-sm-3 wpb_column vc_column_container gal">
-    <div class="rental-service_item">
-        <div class="rs-item_inner">
-            <div class="rs-item_actions">
-                <a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/living-spaces/Villa_Aqua_living_room_1.jpg"><i class="fa fa-search-plus"></i></a>
-            </div>
-            <div class="rs-item_content">
-                <img width="1140" height="676" src="/images/overview/living-spaces/Villa_Aqua_living_room_1.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="vc_col-sm-3 wpb_column vc_column_container gal">
-    <div class="rental-service_item">
-        <div class="rs-item_inner">
-            <div class="rs-item_actions">
-                <a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/living-spaces/Villa_Aqua_living_room_2.jpg"><i class="fa fa-search-plus"></i></a>
-            </div>
-            <div class="rs-item_content">
-                <img width="1140" height="676" src="/images/overview/living-spaces/Villa_Aqua_living_room_2.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="vc_col-sm-3 wpb_column vc_column_container gal">
-    <div class="rental-service_item">
-        <div class="rs-item_inner">
-            <div class="rs-item_actions">
-                <a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/living-spaces/Villa_Aqua_living_room_3.jpg"><i class="fa fa-search-plus"></i></a>
-            </div>
-            <div class="rs-item_content">
-                <img width="1140" height="676" src="/images/overview/living-spaces/Villa_Aqua_living_room_3.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="vc_col-sm-3 wpb_column vc_column_container gal">
-    <div class="rental-service_item">
-        <div class="rs-item_inner">
-            <div class="rs-item_actions">
-                <a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/living-spaces/Villa_Aqua_living_room_5.jpg"><i class="fa fa-search-plus"></i></a>
-            </div>
-            <div class="rs-item_content">
-                <img width="1140" height="676" src="/images/overview/living-spaces/Villa_Aqua_living_room_5.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="vc_col-sm-3 wpb_column vc_column_container gal">
-    <div class="rental-service_item">
-        <div class="rs-item_inner">
-            <div class="rs-item_actions">
-                <a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/living-spaces/Villa_Aqua_living_room_6.jpg"><i class="fa fa-search-plus"></i></a>
-            </div>
-            <div class="rs-item_content">
-                <img width="1140" height="676" src="/images/overview/living-spaces/Villa_Aqua_living_room_6.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="vc_col-sm-3 wpb_column vc_column_container gal">
-    <div class="rental-service_item">
-        <div class="rs-item_inner">
-            <div class="rs-item_actions">
-                <a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/living-spaces/Villa_Aqua_living_room_7_ultima.jpg"><i class="fa fa-search-plus"></i></a>
-            </div>
-            <div class="rs-item_content">
-                <img width="1140" height="676" src="/images/overview/living-spaces/Villa_Aqua_living_room_7_ultima.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-            </div>
-        </div>
-    </div>
-</div>
-
-<!--dinning room-->
-
-<div class="vc_col-sm-3 wpb_column vc_column_container gal">
-    <div class="rental-service_item">
-        <div class="rs-item_inner">
-            <div class="rs-item_actions">
-                <a class="rs-item_action_zoom js-fancybox" rel="gr2" href="/images/overview/living-spaces/Villa_Aqua_dining_room_1.jpg"><i class="fa fa-search-plus"></i></a>
-            </div>
-            <div class="rs-item_content">
-                <img width="1140" height="676" src="/images/overview/living-spaces/Villa_Aqua_dining_room_1.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="vc_col-sm-3 wpb_column vc_column_container gal">
-    <div class="rental-service_item">
-        <div class="rs-item_inner">
-            <div class="rs-item_actions">
-                <a class="rs-item_action_zoom js-fancybox" rel="gr2" href="/images/overview/living-spaces/Villa_Aqua_dining_room_2.jpg"><i class="fa fa-search-plus"></i></a>
-            </div>
-            <div class="rs-item_content">
-                <img width="1140" height="676" src="/images/overview/living-spaces/Villa_Aqua_dining_room_2.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="vc_col-sm-3 wpb_column vc_column_container gal">
-    <div class="rental-service_item">
-        <div class="rs-item_inner">
-            <div class="rs-item_actions">
-                <a class="rs-item_action_zoom js-fancybox" rel="gr2" href="/images/overview/living-spaces/Villa_Aqua_dining_room_3.jpg"><i class="fa fa-search-plus"></i></a>
-            </div>
-            <div class="rs-item_content">
-                <img width="1140" height="676" src="/images/overview/living-spaces/Villa_Aqua_dining_room_3.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="vc_col-sm-3 wpb_column vc_column_container gal">
-    <div class="rental-service_item">
-        <div class="rs-item_inner">
-            <div class="rs-item_actions">
-                <a class="rs-item_action_zoom js-fancybox" rel="gr2" href="/images/overview/living-spaces/Villa_Aqua_dining_room_9_antes_mascaras.jpg"><i class="fa fa-search-plus"></i></a>
-            </div>
-            <div class="rs-item_content">
-                <img width="1140" height="676" src="/images/overview/living-spaces/Villa_Aqua_dining_room_9_antes_mascaras.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="vc_col-sm-3 wpb_column vc_column_container gal">
-    <div class="rental-service_item">
-        <div class="rs-item_inner">
-            <div class="rs-item_actions">
-                <a class="rs-item_action_zoom js-fancybox" rel="gr2" href="/images/overview/living-spaces/Villa_Aqua_dining_room_4.jpg"><i class="fa fa-search-plus"></i></a>
-            </div>
-            <div class="rs-item_content">
-                <img width="1140" height="676" src="/images/overview/living-spaces/Villa_Aqua_dining_room_4.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="vc_col-sm-3 wpb_column vc_column_container gal">
-    <div class="rental-service_item">
-        <div class="rs-item_inner">
-            <div class="rs-item_actions">
-                <a class="rs-item_action_zoom js-fancybox" rel="gr2" href="/images/overview/living-spaces/Villa_Aqua_dining_room_5.jpg"><i class="fa fa-search-plus"></i></a>
-            </div>
-            <div class="rs-item_content">
-                <img width="1140" height="676" src="/images/overview/living-spaces/Villa_Aqua_dining_room_5.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="vc_col-sm-3 wpb_column vc_column_container gal">
-    <div class="rental-service_item">
-        <div class="rs-item_inner">
-            <div class="rs-item_actions">
-                <a class="rs-item_action_zoom js-fancybox" rel="gr2" href="/images/overview/living-spaces/Villa_Aqua_dining_room_6.jpg"><i class="fa fa-search-plus"></i></a>
-            </div>
-            <div class="rs-item_content">
-                <img width="1140" height="676" src="/images/overview/living-spaces/Villa_Aqua_dining_room_6.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-            </div>
-        </div>
-    </div>
-</div>
-
-<!--family room-->
-<div class="vc_col-sm-3 wpb_column vc_column_container gal">
-    <div class="rental-service_item">
-        <div class="rs-item_inner">
-            <div class="rs-item_actions">
-                <a class="rs-item_action_zoom js-fancybox" rel="gr3" href="/images/overview/living-spaces/Villa_Aqua_family_room_bar_1.jpg"><i class="fa fa-search-plus"></i></a>
-            </div>
-            <div class="rs-item_content">
-                <img width="1140" height="676" src="/images/overview/living-spaces/Villa_Aqua_family_room_bar_1.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="vc_col-sm-3 wpb_column vc_column_container gal">
-    <div class="rental-service_item">
-        <div class="rs-item_inner">
-            <div class="rs-item_actions">
-                <a class="rs-item_action_zoom js-fancybox" rel="gr3" href="/images/overview/living-spaces/Villa_Aqua_family_room_new.jpg"><i class="fa fa-search-plus"></i></a>
-            </div>
-            <div class="rs-item_content">
-                <img width="1140" height="676" src="/images/overview/living-spaces/Villa_Aqua_family_room_new.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<div class="vc_col-sm-3 wpb_column vc_column_container gal">
-    <div class="rental-service_item">
-        <div class="rs-item_inner">
-            <div class="rs-item_actions">
-                <a class="rs-item_action_zoom js-fancybox" rel="gr3" href="/images/overview/living-spaces/Villa_Aqua_family_room_bar_3.jpg"><i class="fa fa-search-plus"></i></a>
-            </div>
-            <div class="rs-item_content">
-                <img width="1140" height="676" src="/images/overview/living-spaces/Villa_Aqua_family_room_bar_3.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="vc_col-sm-3 wpb_column vc_column_container gal">
-    <div class="rental-service_item">
-        <div class="rs-item_inner">
-            <div class="rs-item_actions">
-                <a class="rs-item_action_zoom js-fancybox" rel="gr3" href="/images/overview/living-spaces/Villa_Aqua_family_room_bar_5_4ra_posicion.jpg"><i class="fa fa-search-plus"></i></a>
-            </div>
-            <div class="rs-item_content">
-                <img width="1140" height="676" src="/images/overview/living-spaces/Villa_Aqua_family_room_bar_5_4ra_posicion.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="vc_col-sm-3 wpb_column vc_column_container gal">
-    <div class="rental-service_item">
-        <div class="rs-item_inner">
-            <div class="rs-item_actions">
-                <a class="rs-item_action_zoom js-fancybox" rel="gr3" href="/images/overview/living-spaces/Villa_Aqua_family_room_bar_2.jpg"><i class="fa fa-search-plus"></i></a>
-            </div>
-            <div class="rs-item_content">
-                <img width="1140" height="676" src="/images/overview/living-spaces/Villa_Aqua_family_room_bar_2.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-            </div>
-        </div>
-    </div>
-</div>
-
-<!--LIBRARY-->
-
-<div class="vc_col-sm-3 wpb_column vc_column_container gal">
-    <div class="rental-service_item">
-        <div class="rs-item_inner">
-            <div class="rs-item_actions">
-                <a class="rs-item_action_zoom js-fancybox" rel="gr4" href="/images/overview/living-spaces/Villa_Aqua_library_tv_1.jpg"><i class="fa fa-search-plus"></i></a>
-            </div>
-            <div class="rs-item_content">
-                <img width="1140" height="676" src="/images/overview/living-spaces/Villa_Aqua_library_tv_1.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="vc_col-sm-3 wpb_column vc_column_container gal">
-    <div class="rental-service_item">
-        <div class="rs-item_inner">
-            <div class="rs-item_actions">
-                <a class="rs-item_action_zoom js-fancybox" rel="gr4" href="/images/overview/living-spaces/Villa_Aqua_library_tv_5_2da_pos.jpg"><i class="fa fa-search-plus"></i></a>
-            </div>
-            <div class="rs-item_content">
-                <img width="1140" height="676" src="/images/overview/living-spaces/Villa_Aqua_library_tv_5_2da_pos.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="vc_col-sm-3 wpb_column vc_column_container gal">
-    <div class="rental-service_item">
-        <div class="rs-item_inner">
-            <div class="rs-item_actions">
-                <a class="rs-item_action_zoom js-fancybox" rel="gr4" href="/images/overview/living-spaces/Villa_Aqua_library_tv_3.jpg"><i class="fa fa-search-plus"></i></a>
-            </div>
-            <div class="rs-item_content">
-                <img width="1140" height="676" src="/images/overview/living-spaces/Villa_Aqua_library_tv_3.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="vc_col-sm-3 wpb_column vc_column_container gal">
-    <div class="rental-service_item">
-        <div class="rs-item_inner">
-            <div class="rs-item_actions">
-                <a class="rs-item_action_zoom js-fancybox" rel="gr4" href="/images/overview/living-spaces/Villa_Aqua_library_tv_4_4ta.jpg"><i class="fa fa-search-plus"></i></a>
-            </div>
-            <div class="rs-item_content">
-                <img width="1140" height="676" src="/images/overview/living-spaces/Villa_Aqua_library_tv_4_4ta.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="vc_col-sm-3 wpb_column vc_column_container gal">
-    <div class="rental-service_item">
-        <div class="rs-item_inner">
-            <div class="rs-item_actions">
-                <a class="rs-item_action_zoom js-fancybox" rel="gr4" href="/images/overview/living-spaces/Villa_Aqua_library_tv_2.jpg"><i class="fa fa-search-plus"></i></a>
-            </div>
-            <div class="rs-item_content">
-                <img width="1140" height="676" src="/images/overview/living-spaces/Villa_Aqua_library_tv_2.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-            </div>
-        </div>
-    </div>
-</div>
-
-<!--kitchen-->
-
-<div class="vc_col-sm-3 wpb_column vc_column_container gal">
-    <div class="rs-item_inner">
-        <div class="rs-item_actions">
-            <a class="rs-item_action_zoom js-fancybox" rel="gr5" href="/images/overview/living-spaces/Villa_Aqua_kitchen_1.jpg"><i class="fa fa-search-plus"></i></a>
-        </div>
-        <div class="rs-item_content">
-            <img width="1140" height="676" src="/images/overview/living-spaces/Villa_Aqua_kitchen_1.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-        </div>
-    </div>
-</div>
-
-<div class="vc_col-sm-3 wpb_column vc_column_container gal">
-    <div class="rental-service_item">
-        <div class="rs-item_inner">
-            <div class="rs-item_actions">
-                <a class="rs-item_action_zoom js-fancybox" rel="gr5" href="/images/overview/living-spaces/Villa_Aqua_kitchen_2.jpg"><i class="fa fa-search-plus"></i></a>
-            </div>
-            <div class="rs-item_content">
-                <img width="1140" height="676" src="/images/overview/living-spaces/Villa_Aqua_kitchen_2.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="vc_col-sm-3 wpb_column vc_column_container gal">
-    <div class="rental-service_item">
-        <div class="rs-item_inner">
-            <div class="rs-item_actions">
-                <a class="rs-item_action_zoom js-fancybox" rel="gr5" href="/images/overview/living-spaces/Villa_Aqua_kitchen_5_penultima.jpg"><i class="fa fa-search-plus"></i></a>
-            </div>
-            <div class="rs-item_content">
-                <img width="1140" height="676" src="/images/overview/living-spaces/Villa_Aqua_kitchen_5_penultima.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="vc_col-sm-3 wpb_column vc_column_container gal">
-    <div class="rental-service_item">
-        <div class="rs-item_inner">
-            <div class="rs-item_actions">
-                <a class="rs-item_action_zoom js-fancybox" rel="gr5" href="/images/overview/living-spaces/Villa_Aqua_kitchen_3.jpg"><i class="fa fa-search-plus"></i></a>
-            </div>
-            <div class="rs-item_content">
-                <img width="1140" height="676" src="/images/overview/living-spaces/Villa_Aqua_kitchen_3.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-            </div>
-        </div>
-    </div>
-</div>
-
-<!--pool-->
-<div class="vc_col-sm-3 wpb_column vc_column_container gal">
-    <div class="rental-service_item">
-        <div class="rs-item_inner">
-            <div class="rs-item_actions">
-                <a class="rs-item_action_zoom js-fancybox" rel="g1" href="/images/overview/pool-and-outdoor/Villa_Aqua_outdoor_pool_1.jpg"><i class="fa fa-search-plus"></i></a>
-            </div>
-            <div class="rs-item_content">
-                <img width="1140" height="676" src="/images/overview/pool-and-outdoor/Villa_Aqua_outdoor_pool_1.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="vc_col-sm-3 wpb_column vc_column_container gal">
-    <div class="rental-service_item">
-        <div class="rs-item_inner">
-            <div class="rs-item_actions">
-                <a class="rs-item_action_zoom js-fancybox" rel="g1" href="/images/overview/pool-and-outdoor/Villa_Aqua_outdoor_pool_2.jpg"><i class="fa fa-search-plus"></i></a>
-            </div>
-            <div class="rs-item_content">
-                <img width="1140" height="676" src="/images/overview/pool-and-outdoor/Villa_Aqua_outdoor_pool_2.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="vc_col-sm-3 wpb_column vc_column_container gal">
-    <div class="rental-service_item">
-        <div class="rs-item_inner">
-            <div class="rs-item_actions">
-                <a class="rs-item_action_zoom js-fancybox" rel="g1" href="/images/overview/pool-and-outdoor/Villa_Aqua_outdoor_pool_3.jpg"><i class="fa fa-search-plus"></i></a>
-            </div>
-            <div class="rs-item_content">
-                <img width="1140" height="676" src="/images/overview/pool-and-outdoor/Villa_Aqua_outdoor_pool_3.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="vc_col-sm-3 wpb_column vc_column_container gal">
-    <div class="rental-service_item">
-        <div class="rs-item_inner">
-            <div class="rs-item_actions">
-                <a class="rs-item_action_zoom js-fancybox" rel="g1" href="/images/overview/pool-and-outdoor/Villa_Aqua_outdoor_pool_4.jpg"><i class="fa fa-search-plus"></i></a>
-            </div>
-            <div class="rs-item_content">
-                <img width="1140" height="676" src="/images/overview/pool-and-outdoor/Villa_Aqua_outdoor_pool_4.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="vc_col-sm-3 wpb_column vc_column_container gal">
-    <div class="rental-service_item">
-        <div class="rs-item_inner">
-            <div class="rs-item_actions">
-                <a class="rs-item_action_zoom js-fancybox" rel="g1" href="/images/overview/pool-and-outdoor/Villa_Aqua_outdoor_pool_5_penultima.jpg"><i class="fa fa-search-plus"></i></a>
-            </div>
-            <div class="rs-item_content">
-                <img width="1140" height="676" src="/images/overview/pool-and-outdoor/Villa_Aqua_outdoor_pool_5_penultima.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="vc_col-sm-3 wpb_column vc_column_container gal">
-    <div class="rental-service_item">
-        <div class="rs-item_inner">
-            <div class="rs-item_actions">
-                <a class="rs-item_action_zoom js-fancybox" rel="g1" href="/images/overview/pool-and-outdoor/Villa_Aqua_outdoor_pool_6_ultima.jpg"><i class="fa fa-search-plus"></i></a>
-            </div>
-            <div class="rs-item_content">
-                <img width="1140" height="676" src="/images/overview/pool-and-outdoor/Villa_Aqua_outdoor_pool_6_ultima.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<!--jacuzzy-->
-
-<div class="vc_col-sm-3 wpb_column vc_column_container gal">
-    <div class="rental-service_item">
-        <div class="rs-item_inner">
-            <div class="rs-item_actions">
-                <a class="rs-item_action_zoom js-fancybox" rel="g2" href="/images/overview/pool-and-outdoor/Villa_Aqua_outdoor_jacuzzi_1.jpg"><i class="fa fa-search-plus"></i></a>
-            </div>
-            <div class="rs-item_content">
-                <img width="1140" height="676" src="/images/overview/pool-and-outdoor/Villa_Aqua_outdoor_jacuzzi_1.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="vc_col-sm-3 wpb_column vc_column_container gal">
-    <div class="rental-service_item">
-        <div class="rs-item_inner">
-            <div class="rs-item_actions">
-                <a class="rs-item_action_zoom js-fancybox" rel="g2" href="/images/overview/pool-and-outdoor/Villa_Aqua_outdoor_jacuzzi_2.jpg"><i class="fa fa-search-plus"></i></a>
-            </div>
-            <div class="rs-item_content">
-                <img width="1140" height="676" src="/images/overview/pool-and-outdoor/Villa_Aqua_outdoor_jacuzzi_2.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="vc_col-sm-3 wpb_column vc_column_container gal">
-    <div class="rental-service_item">
-        <div class="rs-item_inner">
-            <div class="rs-item_actions">
-                <a class="rs-item_action_zoom js-fancybox" rel="g2" href="/images/overview/pool-and-outdoor/Villa_Aqua_outdoor_jacuzzi_3.jpg"><i class="fa fa-search-plus"></i></a>
-            </div>
-            <div class="rs-item_content">
-                <img width="1140" height="676" src="/images/overview/pool-and-outdoor/Villa_Aqua_outdoor_jacuzzi_3.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="vc_col-sm-3 wpb_column vc_column_container gal">
-    <div class="rental-service_item">
-        <div class="rs-item_inner">
-            <div class="rs-item_actions">
-                <a class="rs-item_action_zoom js-fancybox" rel="g2" href="/images/overview/pool-and-outdoor/Villa_Aqua_outdoor_jacuzzi_4.jpg"><i class="fa fa-search-plus"></i></a>
-            </div>
-            <div class="rs-item_content">
-                <img width="1140" height="676" src="/images/overview/pool-and-outdoor/Villa_Aqua_outdoor_jacuzzi_4.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-            </div>
-        </div>
-    </div>
-</div>
-
-<!--fire oven-->
-
-<div class="vc_col-sm-3 wpb_column vc_column_container gal">
-    <div class="rental-service_item">
-        <div class="rs-item_inner">
-            <div class="rs-item_actions">
-                <a class="rs-item_action_zoom js-fancybox" rel="g3" href="/images/overview/pool-and-outdoor/Villa_Aqua_wood_fire_oven_new_02.jpg"><i class="fa fa-search-plus"></i></a>
-            </div>
-            <div class="rs-item_content">
-                <img width="1140" height="676" src="/images/overview/pool-and-outdoor/Villa_Aqua_wood_fire_oven_new_02.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="vc_col-sm-3 wpb_column vc_column_container gal">
-    <div class="rental-service_item">
-        <div class="rs-item_inner">
-            <div class="rs-item_actions">
-                <a class="rs-item_action_zoom js-fancybox" rel="g3" href="/images/overview/pool-and-outdoor/Villa_Aqua_wooden_oven_new.jpg"><i class="fa fa-search-plus"></i></a>
-            </div>
-            <div class="rs-item_content">
-                <img width="1140" height="676" src="/images/overview/pool-and-outdoor/Villa_Aqua_wooden_oven_new.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="vc_col-sm-3 wpb_column vc_column_container gal">
-    <div class="rental-service_item">
-        <div class="rs-item_inner">
-            <div class="rs-item_actions">
-                <a class="rs-item_action_zoom js-fancybox" rel="g3" href="/images/overview/pool-and-outdoor/Villa_aqua_outdoor_oven.jpg"><i class="fa fa-search-plus"></i></a>
-            </div>
-            <div class="rs-item_content">
-                <img width="1140" height="676" src="/images/overview/pool-and-outdoor/Villa_aqua_outdoor_oven.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<!--gym-->
-<div class="vc_col-sm-3 wpb_column vc_column_container gal">
-    <div class="rental-service_item">
-        <div class="rs-item_inner">
-            <div class="rs-item_actions">
-                <a class="rs-item_action_zoom js-fancybox" rel="g4" href="/images/overview/pool-and-outdoor/Villa_Aqua_gym_new.jpg"><i class="fa fa-search-plus"></i></a>
-            </div>
-            <div class="rs-item_content">
-                <img width="1140" height="676" src="/images/overview/pool-and-outdoor/Villa_Aqua_gym_new.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="vc_col-sm-3 wpb_column vc_column_container gal">
-    <div class="rental-service_item">
-        <div class="rs-item_inner">
-            <div class="rs-item_actions">
-                <a class="rs-item_action_zoom js-fancybox" rel="g4" href="/images/overview/pool-and-outdoor/Villa_aqua_fitness.jpg"><i class="fa fa-search-plus"></i></a>
-            </div>
-            <div class="rs-item_content">
-                <img width="1140" height="676" src="/images/overview/pool-and-outdoor/Villa_aqua_fitness.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="vc_col-sm-3 wpb_column vc_column_container gal">
-    <div class="rental-service_item">
-        <div class="rs-item_inner">
-            <div class="rs-item_actions">
-                <a class="rs-item_action_zoom js-fancybox" rel="g4" href="/images/overview/pool-and-outdoor/Villa_Aqua_indoor_gym_1.jpg"><i class="fa fa-search-plus"></i></a>
-            </div>
-            <div class="rs-item_content">
-                <img width="1140" height="676" src="/images/overview/pool-and-outdoor/Villa_Aqua_indoor_gym_1.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-            </div>
-        </div>
-    </div>
-</div>
-
-<!--squash-->
-
-<div class="vc_col-sm-3 wpb_column vc_column_container gal">
-    <div class="rental-service_item">
-        <div class="rs-item_inner">
-            <div class="rs-item_actions">
-                <a class="rs-item_action_zoom js-fancybox" rel="g5" href="/images/overview/pool-and-outdoor/Villa_Aqua_indoor_squash_court_1.jpg"><i class="fa fa-search-plus"></i></a>
-            </div>
-            <div class="rs-item_content">
-                <img width="1140" height="676" src="/images/overview/pool-and-outdoor/Villa_Aqua_indoor_squash_court_1.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="vc_col-sm-3 wpb_column vc_column_container gal">
-    <div class="rental-service_item">
-        <div class="rs-item_inner">
-            <div class="rs-item_actions">
-                <a class="rs-item_action_zoom js-fancybox" rel="g5" href="/images/overview/pool-and-outdoor/Villa_Aqua_indoor_squash_court_3.jpg"><i class="fa fa-search-plus"></i></a>
-            </div>
-            <div class="rs-item_content">
-                <img width="1140" height="676" src="/images/overview/pool-and-outdoor/Villa_Aqua_indoor_squash_court_3.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="vc_col-sm-3 wpb_column vc_column_container gal">
-    <div class="rental-service_item">
-        <div class="rs-item_inner">
-            <div class="rs-item_actions">
-                <a class="rs-item_action_zoom js-fancybox" rel="g5" href="/images/planta_alta_plano.jpg"><i class="fa fa-search-plus"></i></a>
-            </div>
-            <div class="rs-item_content">
-                <img width="1140" height="676" src="/images/planta_alta_plano.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="vc_col-sm-3 wpb_column vc_column_container gal">
-    <div class="rental-service_item">
-        <div class="rs-item_inner">
-            <div class="rs-item_actions">
-                <a class="rs-item_action_zoom js-fancybox" rel="g5" href="/images/planta_baja_plano.jpg"><i class="fa fa-search-plus"></i></a>
-            </div>
-            <div class="rs-item_content">
-                <img width="1140" height="676" src="/images/planta_baja_plano.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-            </div>
-        </div>
-    </div>
-</div>
-
-
-							</div>
-						</div>
-					</div>
-				</div>
-        	</div>
-        </div>
-        <div class="ult-spacer spacer-56253aed4f277" data-id="56253aed4f277" data-height="25" data-height-mobile="25" data-height-tab="25" data-height-tab-portrait="25" data-height-mobile-landscape="25" style="clear:both;display:block;"></div>
-		<?php 
-	}
-
-	public function getGalleryHeader()
-	{
-		ob_start();
-		?>
-	    <div class="page-header" style="background-image:url(/images/Villa_Aqua_Header_gallery.jpg);text-align:center">
-            <div class="container">
-                <div class="page-header_wrap">
-                    <div class="page-header_in">
-                        <h2 class="page-title">Gallery</h2>
-                    </div>
-                </div>
-            </div>
-        </div>	
-	    <?php 
-	    $header = ob_get_contents();
-	    ob_end_clean();
-	    return $header;
-	}
-	
     /**
 	 * getFooter
 	 *
@@ -11375,46 +11260,46 @@ You can recognize our maintenance team for their uniform.
                 <div class="footer_widget-area ">
                     <div class="row ">
                         <aside id="contact_us-2 " class="widget widget_contact_us col-xs-12 col-sm-6 col-md-3 col-lg-3 ">
-                            <h4 class="widget-title ">Get in touch</h4>
+                            <h4 class="widget-title ">Contactanos</h4>
                             <ul class="contact-details_list left-icon ">
-                                <li class="phone">Phone USA: 1 (866) 460 31 59</li>
-                                <li class="phone">Phone USA: 1 (956) 465 44 59</li>
-                                <li class="phone">Phone MX: +52 1 (984) 807 94 75</li>
-                                <li class="phone">Phone MX: +52 1 (984) 803 27 19</li>
+                                <li class="phone">Teléfono USA: 1 (866) 460 31 59</li>
+                                <li class="phone">Teléfono USA: 1 (956) 465 44 59</li>
+                                <li class="phone">Teléfono MX: +52 1 (984) 807 94 75</li>
+                                <li class="phone">Teléfono MX: +52 1 (984) 803 27 19</li>
                                 <li class="email">E-Mail: <a href="/contact-us/">rentals@villaaqua.com</a></li>
                             </ul>
                         </aside>
                         
                         <aside id="follow_us-3 " class="widget widget_follow_us col-xs-12 col-sm-6 col-md-3 col-lg-3 ">
                             <h4 class="widget-title ">Follow us</h4>
-                            <p class="follow_fb "><span class="follow-icon_holder "><a href="https://www.facebook.com/villaaquamexico/" target="_blank"><i class="fa fa-facebook "></i></a></span><span class="follow_label ">Like us on Facebook</span>
+                            <p class="follow_fb "><span class="follow-icon_holder "><a href="https://www.facebook.com/villaaquamexico/" target="_blank"><i class="fa fa-facebook "></i></a></span><span class="follow_label ">Siguenos en Facebook</span>
                             </p>
-                            <p class="follow_ins "><span class="follow-icon_holder "><a href="https://instagram.com/villaaquapdc/" target="_blank"><i class="fa fa-instagram "></i></a></span><span class="follow_label ">Follow us on Instagram</span>
+                            <p class="follow_ins "><span class="follow-icon_holder "><a href="https://instagram.com/villaaquapdc/" target="_blank"><i class="fa fa-instagram "></i></a></span><span class="follow_label ">Siguenos on Instagram</span>
                             </p>
-                            <p class="follow_tw "><span class="follow-icon_holder "><a href="https://twitter.com/villaaqua" target="_blank"><i class="fa fa-twitter "></i></a></span><span class="follow_label ">Follow us on Twitter</span>
+                            <p class="follow_tw "><span class="follow-icon_holder "><a href="https://twitter.com/villaaqua" target="_blank"><i class="fa fa-twitter "></i></a></span><span class="follow_label ">Siguenos on Twitter</span>
                             </p>
                         </aside>
                         
                         <aside id="recent-posts-3 " class="widget widget_recent_entries col-xs-12 col-sm-6 col-md-3 col-lg-3 ">
-                            <h4 class="widget-title ">Important Info</h4>
+                            <h4 class="widget-title ">Información Importante</h4>
                             <ul>
                             	<li>
-                                    <a href="/gallery/">Photo Gallery</a>
+                                    <a href="/gallery/">Foto Galería</a>
                                 </li>
                                 <li>
                                     <a href="/villa-rules-and-policies/">Villa Rules & Policies </a>
                                 </li>
                                 <li>
-                                    <a href="/riviera-maya/">Travel Tips </a>
+                                    <a href="/es/riviera-maya/">Tips de Viaje </a>
                                 </li>
                                 <li>
-                                    <a href="/faq/">FAQ</a>
+                                    <a href="/es/faq/">FAQ</a>
                                 </li>
                             </ul>
                         </aside>
                         
                         <aside id="stm_tweets-3 " class="widget widget_stm_tweets col-xs-12 col-sm-6 col-md-3 col-lg-3 ">
-                        	<h4 class="widget-title " style="text-align: center;">Weather</h4>
+                        	<h4 class="widget-title " style="text-align: center;">Clíma</h4>
                             <div style="margin-top:20px">
 								<div id="ww_2">
 								    <ul id="weather02_body_3531673" style="position: relative; width: 177px; height: 73px; margin: 0px auto 10px; list-style: none;">
@@ -11437,9 +11322,9 @@ You can recognize our maintenance team for their uniform.
             </div>
             <div class="container ">
                 <div class="site-info ">
-                    <p class="copyright ">Copyright © 2015 <a target="_blank " href="http://www.villaaquacom/ ">Villa Aqua</a>
+                    <p class="copyright ">Copyright © 2015 <a target="_blank " href="http://www.villaaquacom/ ">Villa Aqua - Luxury Villa For rent </a>
                     </p>
-                    <a href="#site-start " class="move-top"><span class="move-top_text">Back to top of page<i class="fa fa-angle-up "></i></span></a>
+                    <a href="#site-start " class="move-top"><span class="move-top_text">Subir<i class="fa fa-angle-up "></i></span></a>
                 </div>
             </div>
         </footer>
