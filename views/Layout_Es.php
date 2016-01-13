@@ -354,7 +354,7 @@ class Layout_View
     	ob_start();
     	?>
     	<div class="buy_theme_popup ">
-	        <a target="_blank " href="/contact-us/" class="buy_button ">RESERVAR AHORA</a>
+	        <a target="_blank " href="/es/contacto/" class="buy_button ">RESERVAR AHORA</a>
 	    </div>
 	    <script type="text/javascript ">
         jQuery(document).ready(function ($) {
@@ -406,7 +406,7 @@ class Layout_View
     	<?php
     	$footerCommon = ob_get_contents();
     	ob_end_clean();
-    	return $footerCommon;
+    	return $footerCommon; 
     }
 
     public function getGoogleAnalytics()
@@ -4531,7 +4531,7 @@ class Layout_View
 		?>
 		<div class="container vc-page-container" style="margin: 35px auto 45px auto;">
         	<div class="vc_custom_heading">
-             	<h2 style="color: 333;text-align: left;font-weight:300;font-style:normal">Included Services</h2>
+             	<h2 style="color: 333;text-align: left;font-weight:300;font-style:normal">SERVICIOS INCLUIDOS</h2> 
             </div>
             <div class="ult-spacer spacer-56253aed4f277" data-id="56253aed4f277" data-height="25" data-height-mobile="25" data-height-tab="25" data-height-tab-portrait="25" data-height-mobile-landscape="25" style="clear:both;display:block;"></div>
             <div class="container-inner">
@@ -4545,16 +4545,30 @@ class Layout_View
                                         <div class="wpb_wrapper">
                                             <p class="paragraph ng-attr-widget">
                                                 <span class="ng-directive ng-binding" style="">
-                                                    <strong>Villa Aqua exceptional services, modern amenities and dedicated staff</strong> will make a blast of your Luxury Vacation Villa Rental.
+                                                    <strong>Villa Aqua es reconocida no solo por sus instalaciones 
+                                                        de lujo y su arquitectura moderna, sino por sus servicios 
+                                                        excepcionales y el personal atento y dedicado </strong> quienes 
+                                                    harán de sus renta vacacional una experiencia única e inolvidable.
                                                 </span>
                                             </p>
                                             
                                             <p class="paragraph ng-attr-widget">
                                                 <span class="ng-directive ng-binding" style="">
-                                                    Whether you're here on a dream family vacation in the Caribbean, a luxury friends break, an inspiring corporate retreat, on a romantic beach holiday or, simply for a relaxed weekend away from work, our team is here to help you. 
-                                                </span>
+                                                    Ya sea  para ayudarle a vivir unas vacaciones familiares de ensueño en el 
+                                                    Caribe, para escaparse con los amigos en un viaje lleno de lujos y excentricidades, 
+                                                    un viaje corporativo inspirador, una escapada romántica a la playa o simplemente un 
+                                                    fin de semana para alejarse de la monotonía del trabajo, nuestro equipo se ocupará 
+                                                    de cada detalle y se encargará de consentirlos, para que disfruten aún más de sus 
+                                                    vacaciones. 
+
                                             </p>
                                             <br />
+                                                <p class="paragraph ng-attr-widget">
+                                                <span class="ng-directive ng-binding" style="">
+                                                    <strong>SU RENTA EN VILLA AQUA INCLUYE:
+
+                                                </span>
+                                            </p>
                                         </div>
 
                                         <div class="vc_col-sm-12 wpb_column vc_column_container ">
@@ -4562,18 +4576,23 @@ class Layout_View
 												<div class="stm_item-features">
                                                 	<div class="stm_item-features_inner">
                                                 		<ul class="item-features_list_extended">
-                                                			<li class="item-feature">1 Complimentary round trip Airport Transfer (with rentals of 4+ nights)</li>
-                                                			<li class="item-feature">Complimentary Welcome Snack</li>
-                                                			<li class="item-feature">Bottled water on arrival day (2 bottles per room)</li>
-                                                			<li class="item-feature">Honor Bar (limited to open bottles)</li>
-                                                			<li class="item-feature">Villa Host (Concierge 24/7 service: daily visits and telephone assistance during the night)</li>
-                                                			<li class="item-feature">Chef & Kitchen Assistant * (daily from 8am to 4pm)</li>
-                                                			<li class="item-feature">Daily housekeeping (from 9am to 4pm)</li>
-                                                			<li class="item-feature">Property Maintenance Team (when required)</li>
-	                                                 		<li class="item-feature">Wireless Internet free of charge</li>
-	                                                 		<li class="item-feature">Free domestic, U.S. and Canada calls</li>
+                                                			<li class="item-feature">1 Traslado Aeropuerto-villa-aeropuerto gratuito (con la renta de 4 o más noches)</li>
+                                                			<li class="item-feature">Snack de Bienvenida de cortesía</li>
+                                                			<li class="item-feature">Anfitrión de Villa / Conserje 24/7 (visitas diarias y asistencia telefónica durante la noche)</li>
+                                                			<li class="item-feature">Chef Profesional y Asistente de cocina (todos los días de 8am a 4pm)*</li>
+                                                			<li class="item-feature">Servicio de limpieza / 2 camaristas, diario (de 9 am a 4 pm)
+</li>
+                                                			<li class="item-feature">Servicio de Mantenimiento (cuando se requiera) 
+</li>
+                                                			<li class="item-feature">Internet inalámbrico sin costo
+</li>
+                                                			<li class="item-feature">Llamadas locales, Nacionales, a Estados Unidos y a Canadá gratis</li>
+	                                                 		<li class="item-feature">Agua embotellada el día de su llegada (2 botellas por habitación) </li>
+	                                                 		<li class="item-feature">Servicio de Bar de Honor (limitado a botellas abiertas)
+</li>
                                                 		</ul>
-                                                		<p><i>*No beverage service (bar tending) is provided</i></p>
+                                                		<p><i>*No incluye servicio de preparación de bebidas (bartender).
+</i></p>
                                                 	</div>
                                                 </div>
                                             </div>
@@ -4633,7 +4652,7 @@ class Layout_View
                             <div class="vc_col-sm-6 wpb_column vc_column_container ">
                                 <div class="wpb_wrapper">
                                     <div class="vc_custom_heading ">
-                                        <h2 style="color: 333;text-align: left;font-weight:300;font-style:normal">Villa Host</h2>
+                                        <h2 style="color: 333;text-align: left;font-weight:300;font-style:normal">ANFITRIÓN DE VILLA</h2>
                                     </div>
                                     
                                     <div class="ult-spacer spacer-56253aed585bd" data-id="56253aed585bd" data-height="25" data-height-mobile="25" data-height-tab="25" data-height-tab-portrait="25" data-height-mobile-landscape="25" style="clear:both;display:block;"></div>
@@ -4641,22 +4660,43 @@ class Layout_View
                                         <div class="wpb_wrapper">
                                             <p class="paragraph ng-attr-widget">
                                                 <span class="ng-directive ng-binding" style="">
-                                                    From the moment your reservation is completed, you will be assigned to your<strong> personal English/Spanish speaking Villa Host who will assist you with all</strong> your pre-arrival arrangements from meal planning to organizing activities and transportation, finding special requests or help planning your dream vacation. Our Villa Host will answer any questions you may have about the villa itself or the surroundings.
+                                                    Desde el momento en el que se completa el trámite de su reservación,<strong> se le 
+                                                    asignará un Anfitrión de Villa bilingüe, quien le ayudará con todos los arreglos 
+                                                    previos a su llegada, desde la planeación de los alimentos, organización de 
+                                                    actividades y transportación hasta intentar cumplir solicitudes excéntricas o 
+                                                    caprichos especiales, que convertirán en realidad sus vacaciones soñadas. </strong>
+                                                    
+                                                    Su Anfitrión de Villa responderá cualquier duda acerca de la villa y sus 
+                                                    instalaciones, así como de Playa del carmen y sus alrededores. 
+
                                                 </span>
                                             </p>
                                             <p class="paragraph ng-attr-widget">
                                                 <span class="ng-directive ng-binding" style="">
-                                                    <strong>Your Host will welcome and assist you and your group with settling into Villa Aqua and will make sure that your vacation begins as quickly as possible, taking care of all your villa needs.</strong>
+                                                    <strong>Desde su llegada,  le ayudará a instalarse en Villa Aqua para asegurarse 
+                                                        de que comience a disfrutar sus vacaciones tan pronto como sea posible.
+                                                    </strong>
                                                 </span>
                                             </p>
                                             <p class="paragraph ng-attr-widget">
                                                 <span class="ng-directive ng-binding" style="">
-                                                    Villa Aqua Host can give you <strong>guidance on the best restaurants, boutiques, guides and drivers.</strong> We can help you with water sports, fishing, boat charters, and suggest 1000 ideas to keep the children smiling, from zip-lining to kayaking. We want to share all that Mexico has to offer, including its unique culture, food, spectacular history and natural sites, to help you make the most of your Riviera Maya vacation.
+                                                    <strong>El Anfitrión de Villa Aqua lo orientará respecto a los mejores 
+                                                        restaurantes, boutiques, guías y choferes en la zona.</strong> 
+                                                    También podrá recomendarle los mejores lugares para realizar deportes 
+                                                    acuáticos, pesca, paseos en Yate, además de sugerirle miles de ideas 
+                                                    para mantener a los niños siempre felices; desde llevarlos a una tirolesa, 
+                                                    hasta dar un paseo en Kayak.<br>
+                                                    En Villa Aqua queremos compartir con usted todo lo que México tiene para 
+                                                    ofrecer, incluyendo su increíble cultura, su espectacular historia, su 
+                                                    comida y sus maravillas naturales; para que aproveche al máximo sus 
+                                                    vacaciones en la Riviera Maya. 
+
                                                 </span>
                                             </p>
                                             <p class="paragraph ng-attr-widget">
                                                 <span class="ng-directive ng-binding" style="">
-                                                    Please contact your <a href="/contact-us/" target="_blank">Villa Aqua Host</a>, who is always at your service! 
+                                                    Contacte a su <a href="/contact-us/" target="_blank">Asistente de 
+                                                    Villa</a>, quien le atenderá con gusto.
                                                 </span>
                                             </p>
                                         </div>
@@ -4678,35 +4718,53 @@ class Layout_View
                             <div class="vc_col-sm-6 wpb_column vc_column_container ">
                                 <div class="wpb_wrapper">
                                     <div class="vc_custom_heading">
-                                        <h2 style="color: #333;font-weight:300;font-style:normal; text-align: right;">Chef & Kitchen Assistance</h2>
+                                        <h2 style="color: #333;font-weight:300;font-style:normal; text-align: right;">CHEF Y ASISTENTE DE COCINA
+</h2>
                                     </div>
                                     <div class="ult-spacer spacer-56253aed5c7a5" data-id="56253aed5c7a5" data-height="25" data-height-mobile="25" data-height-tab="25" data-height-tab-portrait="25" data-height-mobile-landscape="25" style="clear:both;display:block;"></div>
                                     <div class="wpb_text_column wpb_content_element ">
                                         <div class="wpb_wrapper">
                                             <p class="paragraph ng-attr-widget">
                                                 <span class="ng-directive ng-binding" style="">
-                                                    At Villa Aqua we know meals are a crucial element to the enjoyment of your <strong> Luxury Vacation Rental</strong> experience and for that reason as our value guest, <strong> you are provided with Professional Chef Service and a kitchen assistant for breakfast and lunch (8am to 4pm).</strong> Discover a variety of fresh fish, seafood, beef and chicken cooked with savory herbs, regional spices, fruits and vegetables that the Mexican Caribbean has to offer.
+                                                    En Villa Aqua sabemos que los alimentos son parte esencial en la experiencia 
+                                                    de una  <strong> renta vacacional de lujo, por esta razón, contamos con Servicio 
+                                                    de Chef Profesional y Asistente de Cocina para el desayuno y el almuerzo 
+                                                    (8am a 4pm). </strong> Descubra nuestra variedad de platillos preparados con 
+                                                    ingredientes frescos de la región y cocinados con hierbas aromáticas, especias, 
+                                                    vegetales y frutos del Caribe Mexicano.
+
+                                                </span>
+                                            </p>
+                                            
+                                            <p class="paragraph ng-attr-widget">
+                                                <span class="ng-directive ng-binding" style="">
+                                                    Considerando que muchos de nuestros huéspedes prefieren explorar las múltiples 
+                                                    propuestas gastronómicas que Playa del Carmen ofrece, decidimos no incluir el 
+                                                    servicio de chef para cenas, sin embargo, si usted prefiere cenar en la villa, 
+                                                    podemos ofrecerle este servicio con cargo adicional. Podrá disfrutar desde 
+                                                    parrilladas bajo las estrellas hasta nuestras afamadas<strong>
+                                                    <a href="/images/staff-and-services/Menu_epic-experiences.pdf" target="_blank"> 
+                                                    Experiencias Épicas,</a></strong> las cuales incluyen música y entretenimiento; 
+                                                    estamos seguros que no se arrepentirá de no haber salido de casa.
+
                                                 </span>
                                             </p>
                                             <p class="paragraph ng-attr-widget">
                                                 <span class="ng-directive ng-binding" style="">
-                                                    As many of our guests prefer to try all the dining options that Playa del Carmen has to offer,<strong> we do not include dinner service,</strong> but if you choose to stay home, we will be more than happy to serve any of the chef's specialties for an extra service fee. 
-                                                </span>
-                                            </p>
-                                            <p class="paragraph ng-attr-widget">
-                                                <span class="ng-directive ng-binding" style="">
-                                                    From casual barbecues under the stars to<strong><a href="/images/staff-and-services/Menu_epic-experiences.pdf" target="_blank"> epic dining experiences</a></strong> that include live music & entertainment, you will never regret of not going out!
-                                                </span>
-                                            </p>
-                                            <p class="paragraph ng-attr-widget">
-                                                <span class="ng-directive ng-binding" style="">
-                                                    Please take in mind that the food service provided is<strong> "Family Style" where everyone eats from the same menu.</strong> It is very important that you communicate your Villa Host and/or Chef about any food allergies, dietary restriction-preferences prior to your arrival in order to customize your meal preparations. 
+                                                    Por favor,<strong> considere que el servicio que ofrecemos es de 
+                                                    “Estilo Familiar”, es decir, que a todos los comensales se les 
+                                                    sirve el mismo menú.</strong> Es muy importante que comunique a su 
+                                                    Anfitrión de Villa y/o chef sobre cualquier alergia o restricciones/preferencias 
+                                                    alimenticias antes de su llegada, de esta forma personalizamos la preparación 
+                                                    de sus alimentos.
+
                                                 </span>
                                             </p>
                                            
                                            <p class="paragraph ng-attr-widget">
                                                 <span class="ng-directive ng-binding" style="">
-                                                    Check out our <a href="/images/staff-and-services/menu-food-and-beverage.pdf" target="_blank"> sample menu</a> which can be customized to your taste.  
+                                                   Contacte a su <a href="/es/contacto/" target="_blank">                                                                                           Anfitrión de Villa</a> para cualquier duda sobre el servicio de alimentos.
+  
                                                 </span>
                                             </p>
                                         </div>
@@ -4764,7 +4822,7 @@ class Layout_View
                             <div class="vc_col-sm-6 wpb_column vc_column_container ">
                                 <div class="wpb_wrapper">
                                     <div class="vc_custom_heading ">
-                                        <h2 style="color: 333;text-align: left;font-weight:300;font-style:normal">Housekeeping Service</h2>
+                                        <h2 style="color: 333;text-align: left;font-weight:300;font-style:normal">SERVICIO DE LIMPIEZA</h2>
                                     </div>
                                     
                                     <div class="ult-spacer spacer-56253aed585bd" data-id="56253aed585bd" data-height="25" data-height-mobile="25" data-height-tab="25" data-height-tab-portrait="25" data-height-mobile-landscape="25" style="clear:both;display:block;"></div>
@@ -4772,17 +4830,24 @@ class Layout_View
                                         <div class="wpb_wrapper">
                                             <p class="paragraph ng-attr-widget">
                                                 <span class="ng-directive ng-binding" style="">
-                                                    As we know how important it is for you to relax during your vacation, Villa Aqua <strong>provides daily housekeeping service</strong> to keep our guests' peace of mind.
+                                                   En Villa Aqua sabemos lo importante que es relajarse durante las 
+                                                    vacaciones, por ello y para su comodidad,</strong> ofrecemos Servicio de Camarista diario.
                                                 </span>
                                             </p>
                                             <p class="paragraph ng-attr-widget">
                                                 <span class="ng-directive ng-binding" style="">
-                                                    These efficient and important members of our staff are there to meticulously attend to all your accommodation needs and they will make sure that the villa is spotless.<strong> Late afternoon turn down service is provided as well.</strong> 
+                                                   Nuestro eficiente personal de limpieza estará pendiente en todo momento de cubrir
+                                                    meticulosamente las necesidades de nuestros huéspedes y se asegurará de que<strong>  
+                                                    la villa esté impecable.</strong> Al final de la 
+                                                    tarde, se proporciona el servicio de cortesía nocturna.
                                                 </span>
                                             </p>
                                             <p class="paragraph ng-attr-widget">
                                                 <span class="ng-directive ng-binding" style="">
-                                                    <strong> Laundry Service is offered for an extra fee.</strong> Dry Cleaning and press service is outsourced so take in mind it can take a couple of days to return your garments.
+                                                    <strong> El Servicio de Lavandería tiene un costo extra.</strong> Tome en cuenta 
+                                                    también que el Servicio de Tintorería es externo, por lo que sus prendas pueden 
+                                                    tardar unos cuantos días en ser entregadas. 
+
                                                 </span>
                                             </p>
                                         </div>
@@ -4807,31 +4872,47 @@ class Layout_View
                             <div class="vc_col-sm-6 wpb_column vc_column_container ">
                                 <div class="wpb_wrapper">
                                     <div class="vc_custom_heading">
-                                        <h2 style="color: #333;font-weight:300;font-style:normal; text-align: right;">Maintenance</h2>
+                                        <h2 style="color: #333;font-weight:300;font-style:normal; text-align: right;">MANTENIMIENTO</h2>
                                     </div>
                                     <div class="ult-spacer spacer-56253aed5c7a5" data-id="56253aed5c7a5" data-height="25" data-height-mobile="25" data-height-tab="25" data-height-tab-portrait="25" data-height-mobile-landscape="25" style="clear:both;display:block;"></div>
                                     <div class="wpb_text_column wpb_content_element ">
                                         <div class="wpb_wrapper">
                                             <p class="paragraph ng-attr-widget">
                                                 <span class="ng-directive ng-binding" style="">
-                                                    These part time members of Villa Aqua staff are responsible to<strong> maintain the villa in optimal 
-                                                    conditions.</strong> Their activities go from taking care of the pool and Jacuzzi, to maintaining the 
-                                                    landscape and garden impeccable.
+                                                    El personal de mantenimiento de Villa Aqua es el responsable de 
+                                                    mantener la casa en óptimas condiciones. Sus tareas van desde la 
+                                                    limpieza de la piscina y el jacuzzi, hasta el mantenimiento de 
+                                                    los jardines, para que todo esté impecable.
+
                                                 </span>
                                             </p>
                                             <p class="paragraph ng-attr-widget">
                                                 <span class="ng-directive ng-binding" style="">
-                                                    They are discreetly attending to any maintenance requirements that may arise, whether part of the daily 
-                                                    schedule or unprompted, always assuring that everything in Villa Aqua works properly.
-You can recognize our maintenance team for their uniform. 
+                                                    Ellos trabajan discretamente para cubrir las necesidades de mantenimiento 
+                                                    de la propiedad; ya sea como parte de sus tareas diarias o situaciones 
+                                                    imprevistas que pueden surgir, siempre asegurándose que todo en Villa 
+                                                    Aqua funcione adecuadamente.
+
                                                 </span>
                                             </p>
                                             <p class="paragraph ng-attr-widget">
                                                 <span class="ng-directive ng-binding" style="">
-                                                    <strong>If there is anything that does not work properly at the villa, please advice your Villa Host</strong> 
-                                                    and we will do our best to solve any problems immediately.
+                                                    <strong>Todo nuestro personal cuenta con uniforme para que pueda reconocerlo
+
                                                 </span>
                                             </p>
+                                                
+                                                
+                                            <p class="paragraph ng-attr-widget">
+                                                <span class="ng-directive ng-binding" style="">
+                                                    <strong>Si algo en la casa no funciona apropiadamente, favor de informar a 
+                                                        su Anfitrión de Villa quien intentará resolver cualquier inconveniente lo 
+                                                        antes posible.
+
+
+                                                </span>
+                                            </p>    
+                                                
                                         </div>
                                     </div>
                                 </div>
@@ -4869,7 +4950,7 @@ You can recognize our maintenance team for their uniform.
             <div class="ult-spacer spacer-56253aed4f277" data-id="56253aed4f277" data-height="25" data-height-mobile="25" data-height-tab="25" data-height-tab-portrait="25" data-height-mobile-landscape="25" style="clear:both;display:block;"></div>
             <div class="ult-spacer spacer-56253aed4f277" data-id="56253aed4f277" data-height="25" data-height-mobile="25" data-height-tab="25" data-height-tab-portrait="25" data-height-mobile-landscape="25" style="clear:both;display:block;"></div>
             <div class="vc_btn3-container vc_btn3-center animated fadeIn" style="opacity:1;-webkit-animation-delay:0s;-webkit-animation-duration:1s;-webkit-animation-iteration-count:1; -moz-animation-delay:0s;-moz-animation-duration:1s;-moz-animation-iteration-count:1; animation-delay:0s;animation-duration:1s;animation-iteration-count:1;test">
-				<a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-square vc_btn3-style-outline vc_btn3-color-chino" href="/at-extra-cost/" title="" target="_self">MORE SERVICES</a>
+				<a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-square vc_btn3-style-outline vc_btn3-color-chino" href="/at-extra-cost/" title="" target="_self">MAS SERVICIOS</a>
 			</div>
         </div>
         
@@ -4887,7 +4968,7 @@ You can recognize our maintenance team for their uniform.
             <div class="container">
                 <div class="page-header_wrap">
                     <div class="page-header_in">
-                        <h2 class="page-title">Staff and services</h2>
+                        <h2 class="page-title">Servicios y Staff </h2>
                     </div>
                 </div>
             </div>
@@ -5020,7 +5101,7 @@ You can recognize our maintenance team for their uniform.
                                         <div class="wpb_wrapper">
                                             <p class="paragraph ng-attr-widget">
                                                 <span class="ng-directive ng-binding" style="">
-                                                    TEl costo de alimentos y bebidas no está incluido en su Renta Vacacional 
+                                                    El costo de alimentos y bebidas no está incluido en su Renta Vacacional 
                                                     de Lujo en Villa Aqua. Si usted prefiere visitar los supermercados locales 
                                                     y tiendas de autoservicio, puede traer sus compras y pedirle al chef que 
                                                     prepare su platillo favorito, pero si lo que busca es disfrutar de sus 
@@ -6435,7 +6516,7 @@ You can recognize our maintenance team for their uniform.
                                                                             sean inolvidables, creamos estos parámetros que pueden servirle como
                                                                             guía general para mostrar su agradecimiento al personal de servicio.
 
-                                                                            <br /> TBásicamente se recomienda dejar un mínimo de $10 a $15 dólares
+                                                                            <br />Básicamente se recomienda dejar un mínimo de $10 a $15 dólares
                                                                             por huésped por día. Esta cantidad puede ser dividida como usted lo
                                                                             crea más conveniente , entre todo el staff que lo atendió durante su
                                                                             estancia.
@@ -6475,8 +6556,8 @@ You can recognize our maintenance team for their uniform.
                                                                             Si por alguna razón, el servicio que recibe de alguno de los miembros
                                                                             de nuestro staff no fuera satisfactorio, le agradeceremos lo reporte
                                                                             inmediatamente a su Anfitrión(a) de Villa (Villa Host). En caso que
-                                                                            prefiera contactar al Administrados de la Villa, favor de escribir a:
-                                                                            rentals@villaaqua.com o llamar al: 044 (984) 807 94 75.
+                                                                            prefiera contactar al Administrador de la Villa, favor de escribir a:
+                                                                            rentals@villaaqua.com o llamar al: tel: +521 984 807 94 75.
 
                                                                         </li>
                                                                     </ul>
@@ -9859,8 +9940,8 @@ You can recognize our maintenance team for their uniform.
 	                                                        <p class="paragraph ng-attr-widget">
 	                                                        	¡Seguro! Villa Aqua es el lugar perfecto para realizar ese evento tan 
                                                                 especial. Tenemos diferentes políticas y precios. Por favor, revise 
-                                                                nuestra sección de Bodas y Eventos (link a esa parte) para obtener 
-                                                                mayor información.
+                                                                nuestra sección de  <a href="http://villaaqua.com/es/eventos/"><strong>Bodas 
+                                                                y Eventos</strong></a>para obtener mayor información.
 
 	                                                        </p>
 	                                                    </div>
@@ -9966,7 +10047,7 @@ You can recognize our maintenance team for their uniform.
 	                                                        	Las tarifas de renta NO incluyen los impuestos gubernamentales ni de hospedaje.
  
 	                                                        	<br>
-	                                                        	Las propinas no están incluidas pero no son obligatorias. Esto es a 
+	                                                        	Las propinas NO están incluidas pero no son obligatorias. Esto es a 
                                                                 consideración de cada huésped, sin embargo son sumamente apreciadas por 
                                                                 el personal que trabaja arduamente en atenderlo como se merece.
 
@@ -9987,7 +10068,7 @@ You can recognize our maintenance team for their uniform.
                                                                 garantizamos que le daremos la MEJOR TARIFA DISPONIBLE, ya que 
                                                                 somos proveedor directo. Por favor, pregunte, cualquier descuento 
                                                                 o tarifa especial será tomada en consideración dependiendo la 
-                                                                disponibilidad y fechas.
+                                                                disponibilidad y fechas. 
 
 	                                                        </p>
 	                                                    </div>
@@ -10027,9 +10108,7 @@ You can recognize our maintenance team for their uniform.
 	                                                        <p class="paragraph ng-attr-widget">
 	                                                        	Sí. Todos los blancos, incluyendo toallas de baño y de playa están incluidos.
 
-	                                                        	<br>
-	                                                        	Sí. Todos los blancos, incluyendo toallas de baño y de playa están incluidos.
-
+	                                                        	
 		                                                        <br>
 	                                                        	También contamos con artículos de tocador de las mejores marcas: jabón, 
                                                                 champú, acondicionador y loción hidratante.
@@ -10112,7 +10191,7 @@ You can recognize our maintenance team for their uniform.
 	                                            <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
 	                                                <div class="wpb_text_column wpb_content_element ">
 	                                                    <div class="wpb_wrapper">
-	                                                        <p class="paragraph ng-attr-widget">
+	                                                        <p class="paragraph ng-attr-widget"> 
 	                                                        	Tenemos un inventario de vinos y licores a su disposición; únicamente se le
                                                                 cobrarán las botellas que abra. Los precios son muy accesibles pero si lo
                                                                 prefiere, puede remplazar las botellas consumidas por otras de la misma 
@@ -10142,7 +10221,15 @@ You can recognize our maintenance team for their uniform.
 	                                                <div class="wpb_text_column wpb_content_element ">
 	                                                    <div class="wpb_wrapper">
 	                                                        <p class="paragraph ng-attr-widget">
-	                                                        	This may occur randomly. As usually our chef and kitchen assistant are very busy with all the meal preparation, this includes shopping, food preparation, table setting, serving and cleaning, they cannot attend all your beverage requests so if you need this service please contact your concierge for Bartender service and pricing options.
+	                                                        	Esto puede ocurrir aleatoriamente. Generalmente nuestro chef 
+                                                                y el asistente de cocina están muy ocupados con la preparación 
+                                                                de los alimentos, esto incluye hacer las compras, preparar la 
+                                                                comida, poner la mesa, servir y limpiar, por lo que no pueden 
+                                                                atender todas sus solicitudes de preparación de bebidas, así 
+                                                                que si requiere de este servicio, por favor contacte a su 
+                                                                Anfitrión de Villa para conocer las opciones y precios del servicio 
+                                                                de Bartender.
+
 	                                                        </p>
 	                                                    </div>
 	                                                </div>
@@ -10150,12 +10237,20 @@ You can recognize our maintenance team for their uniform.
 	                                        </div>
 	                                        
 	                                        <div class="wpb_accordion_section group">
-	                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post" style="text-transform: uppercase;"><strong>We know that the Chef working hours are from 8AM to 4PM, can he leave our dinner prepared and we reheat it later?</strong></a></h3>
+	                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post" style="text-transform: uppercase;"><strong>SABEMOS QUE EL HORARIO DE TRABAJO DEL CHEF ES DE 8AM A 4PM, 
+                                                    ¿PUEDE DEJAR NUESTRA COMIDA PREPARADA Y NOSOTROS LA RE-CALENTEMOS DESPUÉS? </strong></a>
+                                                </h3>
 	                                            <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
 	                                                <div class="wpb_text_column wpb_content_element ">
 	                                                    <div class="wpb_wrapper">
 	                                                        <p class="paragraph ng-attr-widget">
-	                                                        	This is possible just when you do not take lunch at the villa. If that is the case, the chef will use that time frame to prepare your dinner, otherwise you can request Dinner Chef Service (extra fees apply depending the number in your group) or choose any of our Epic Dinner Experiences which include delicious menus and entertainment.
+	                                                        	Esto es posible sólo cuando no se sirva almuerzo en la villa. Si ese es 
+                                                                el caso, el chef usará ese período para preparar su comida, de otra manera 
+                                                                puede solicitar el Servicio de Chef para la Cena (aplica cargo extra 
+                                                                dependiendo del número de personas en su grupo) o elegir cualquiera de 
+                                                                nuestras Experiencias Épicas Villa Aqua que incluyen deliciosos menús y
+                                                                entretenimiento.
+
 	                                                        </p>
 	                                                    </div>
 	                                                </div>
@@ -10163,12 +10258,18 @@ You can recognize our maintenance team for their uniform.
 	                                        </div>
 	                                        
 	                                        <div class="wpb_accordion_section group">
-	                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post" style="text-transform: uppercase;"><strong>We are early risers, can the Chef serve us breakfast before 8AM?</strong></a></h3>
+	                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post" style="text-transform: uppercase;"><strong>NOS LEVANTAMOS TEMPRANO, ¿PUEDE EL CHEF SERVIRNOS EL DESAYUNO ANTES DE  LAS 8AM?
+</strong></a></h3>
 	                                            <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
 	                                                <div class="wpb_text_column wpb_content_element ">
 	                                                    <div class="wpb_wrapper">
 	                                                        <p class="paragraph ng-attr-widget">
-	                                                        	We always try to fulfill your needs. If you are early risers or have an early excursion, the chef can adjust the service schedule and move it a couple of hours. We need at least 24 hours notice and it is subject to consideration.
+	                                                        	Siempre tratamos de cubrir sus necesidades. Si usted es un madrugador o 
+                                                                irá a una excursión temprano, el chef puede ajustar el horario de servicio y
+                                                                moverlo un par de horas. Es necesario que nos informe con al menos 24 horas 
+                                                                de anticipación, asimismo, el servicio estará sujeto a consideración. Tome en
+                                                                cuenta que al recorrer su horario de servicio para el desayuno, es probable 
+                                                                que no pueda servir el almuerzo o comida o bien aplicar un cargo por horas extra.
 	                                                        </p>
 	                                                    </div>
 	                                                </div>
@@ -11288,13 +11389,13 @@ You can recognize our maintenance team for their uniform.
                                     <a href="/gallery/">Foto Galería</a>
                                 </li>
                                 <li>
-                                    <a href="/villa-rules-and-policies/">Reglas & Politicas de La Villa </a>
+                                    <a href="/es/reglas-y-politicas-de-la-villa/">Reglas & Políticas de La Villa </a>
                                 </li>
                                 <li>
                                     <a href="/es/riviera-maya/">Tips de Viaje </a>
                                 </li>
                                 <li>
-                                    <a href="/es/faq/">FAQ</a>
+                                    <a href="/es/faq/">Preguntas Frecuentes</a>
                                 </li>
                             </ul>
                         </aside>
@@ -11323,7 +11424,7 @@ You can recognize our maintenance team for their uniform.
             </div>
             <div class="container ">
                 <div class="site-info ">
-                    <p class="copyright ">Copyright © 2015 <a target="_blank " href="http://www.villaaquacom/ ">Villa Aqua - Luxury Villa For rent </a>
+                    <p class="copyright ">Copyright © 2015 <a target="_blank " href="http://www.villaaqua.com/ ">Villa Aqua - Luxury Villa For rent </a>
                     </p>
                     <a href="#site-start " class="move-top"><span class="move-top_text">Subir<i class="fa fa-angle-up "></i></span></a>
                 </div>
