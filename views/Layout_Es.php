@@ -11270,8 +11270,9 @@ You can recognize our maintenance team for their uniform.
                             </ul>
                         </aside>
                         
+                        
                         <aside id="follow_us-3 " class="widget widget_follow_us col-xs-12 col-sm-6 col-md-3 col-lg-3 ">
-                            <h4 class="widget-title ">Follow us</h4>
+                            <h4 class="widget-title ">Siguenos</h4>
                             <p class="follow_fb "><span class="follow-icon_holder "><a href="https://www.facebook.com/villaaquamexico/" target="_blank"><i class="fa fa-facebook "></i></a></span><span class="follow_label ">Siguenos en Facebook</span>
                             </p>
                             <p class="follow_ins "><span class="follow-icon_holder "><a href="https://instagram.com/villaaquapdc/" target="_blank"><i class="fa fa-instagram "></i></a></span><span class="follow_label ">Siguenos on Instagram</span>
@@ -11287,7 +11288,7 @@ You can recognize our maintenance team for their uniform.
                                     <a href="/gallery/">Foto Galería</a>
                                 </li>
                                 <li>
-                                    <a href="/villa-rules-and-policies/">Villa Rules & Policies </a>
+                                    <a href="/villa-rules-and-policies/">Reglas & Politicas de La Villa </a>
                                 </li>
                                 <li>
                                     <a href="/es/riviera-maya/">Tips de Viaje </a>
