@@ -47,6 +47,8 @@ RewriteRule ^reservation-rental-rates-and-process/$ 			/reservation-rental-rates
 RewriteRule ^out-and-about-dining-culture-shopping/$ 			/out-and-about-dining-culture-shopping.php
 RewriteRule ^arriving-to-the-villa-playacar-playa-del-carmen/$ 	/arriving-to-the-villa-playacar-playa-del-carmen.php
 
+# Reviews
+RewriteRule ^reviews/$ 								/back-working/reviews/
 
 # Espagnol
 RewriteRule ^es/overview/$ 							/overview.php?lang=es
