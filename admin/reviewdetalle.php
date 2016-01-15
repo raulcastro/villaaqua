@@ -47,6 +47,9 @@ $reviewShare=$_POST["reviewShare"];
 
 $sql="insert into reviews (name, date, city, email, phone, villaMaintenance, villaAmenities, villaWorking, villaCleanliness, villaPool, villaGarden, villaComments, houseFriendliness, houseService, houseCleanliness, houseComments, conciergeFriendliness, conciergeService, conciergeLanguages, conciergeActivities, conciergeRestaurants, conciergeComments, chefFriendliness, chefService, chefCleanliness, chefPresentation, chefFalvor, chefFood, chefComments, generalRate, generalFuture, bestFeature, worst, lacking, receiveInformation, reviewShare)";
 $sql=$sql." values ('$name', now(), '$city', '$email', '$phone', '$villaMaintenance', '$villaAmenities', '$villaWorking', '$villaCleanliness', '$villaPool', '$villaGarden', '$villaComments', '$houseFriendliness', '$houseService', '$houseCleanliness', '$houseComments', '$conciergeFriendliness', '$conciergeService', '$conciergeLanguages', '$conciergeActivities', '$conciergeRestaurants', '$conciergeComments', '$chefFriendliness', '$chefService', '$chefCleanliness', '$chefPresentation', '$chefFalvor', '$chefFood', '$chefComments', '$generalRate', '$generalFuture', '$bestFeature', '$worst', '$lacking', '$receiveInformation', '$reviewShare')";
+
+
+
 mysql_query ($sql);
 $inserto=1;
 }
@@ -330,7 +333,7 @@ if(parseInt(navigator.appVersion)>=4){win.window.focus();}}
 </head>
 
 <body>
-<div style="text-align:center"><img src="../images/logo-villaaqua.png" width="340" height="90" /></div>
+<div style="text-align:center"><img src="images/logo-villaaqua.png" width="340" height="90" /></div>
 <div class="cuadro">
 <?php if ($inserto==1){?>
 <?php }else{?>
@@ -375,9 +378,9 @@ $result = mysql_query($query);
    
     <tr>
       <td width="300"><span class="verdebig">VILLA</span></td>
-      <td align="center"><img src="../images/triste.png" width="17" height="17" /></td>
+      <td align="center"><img src="images/triste.png" width="17" height="17" /></td>
       <td colspan="3" align="center">&nbsp;</td>
-      <td align="center"><img src="../images/feliz.png" width="17" height="17" /></td>
+      <td align="center"><img src="images/feliz.png" width="17" height="17" /></td>
     </tr>
     <tr>
       <td class="puntos"><div class="renglon">Maintenance<input name="villaMaintenance" type="hidden" id="villaMaintenance" value="0" /></div></td>
@@ -438,9 +441,9 @@ $result = mysql_query($query);
    
     <tr>
       <td width="300"><span class="verdebig">HOUSE KEEPING</span></td>
-      <td align="center"><img src="../images/triste.png" width="17" height="17" /></td>
+      <td align="center"><img src="images/triste.png" width="17" height="17" /></td>
       <td colspan="3" align="center">&nbsp;</td>
-      <td align="center"><img src="../images/feliz.png" width="17" height="17" /></td>
+      <td align="center"><img src="images/feliz.png" width="17" height="17" /></td>
     </tr>
     <tr>
       <td class="puntos"><div class="renglon">Friendliness of the staff <input name="houseFriendliness" type="hidden" id="houseFriendliness" value="0" /></div></td>
@@ -477,9 +480,9 @@ $result = mysql_query($query);
    
     <tr>
       <td width="300"><span class="verdebig">CONCIERGE</span></td>
-      <td align="center"><img src="../images/triste.png" width="17" height="17" /></td>
+      <td align="center"><img src="images/triste.png" width="17" height="17" /></td>
       <td colspan="3" align="center">&nbsp;</td>
-      <td align="center"><img src="../images/feliz.png" width="17" height="17" /></td>
+      <td align="center"><img src="images/feliz.png" width="17" height="17" /></td>
     </tr>
     <tr>
       <td class="puntos"><div class="renglon">Friendliness of the concierge 
@@ -536,9 +539,9 @@ $result = mysql_query($query);
    
     <tr>
       <td width="300"><span class="verdebig">CHEF</span></td>
-      <td align="center"><img src="../images/triste.png" width="17" height="17" /></td>
+      <td align="center"><img src="images/triste.png" width="17" height="17" /></td>
       <td colspan="3" align="center">&nbsp;</td>
-      <td align="center"><img src="../images/feliz.png" width="17" height="17" /></td>
+      <td align="center"><img src="images/feliz.png" width="17" height="17" /></td>
     </tr>
     <tr>
       <td class="puntos"><div class="renglon">Friendliness of the Chef 
@@ -601,9 +604,9 @@ $result = mysql_query($query);
    
     <tr>					
       <td width="300"><span class="verdebig">GENERAL SATISFACTION </span></td>
-      <td align="center"><img src="../images/triste.png" width="17" height="17" /></td>
+      <td align="center"><img src="images/triste.png" width="17" height="17" /></td>
       <td colspan="3" align="center">&nbsp;</td>
-      <td align="center"><img src="../images/feliz.png" width="17" height="17" /></td>
+      <td align="center"><img src="images/feliz.png" width="17" height="17" /></td>
     </tr>
     <tr>
       <td class="puntos"><div class="renglon">How would you rate your stay?
@@ -681,9 +684,21 @@ of deals and promotions?
   <table width="100%" border="0" cellpadding="2" cellspacing="2">
   </table>
   <?php }}?>
+  <div class="publish-reviews">
+  <br>
+  	<span class="verdebig">PULISH REVIEW </span>
+  	<br><br>
+  	<form action="reviewdetalle.php" method="get">
+  		<input type="hidden" name="idr" value="<?php echo $idr; ?>" >
+	  	<div class="left"><input type="checkbox" name="onIndex" value="Bike">On the index</div>
+	  	<div class="right"><input type="checkbox" name="onReviews" value="Bike">On reviews</div>
+	  	<br>
+	  	<input type="submit" value="Save">
+	</form>
+  </div>
 </div>
 <?php }?>
- <p align="center"><img src="../images/textura.png" width="100%" height="129" /></p>
+ <p align="center"><img src="images/textura.png" width="100%" height="129" /></p>
 </body>
 </html>
 <?php

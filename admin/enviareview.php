@@ -21,7 +21,7 @@ body{
 <body>
 <p>
   <?php if (!$_POST["correo"]){?>
-<img src="../images/logo-villaaqua.png" width="340" height="90" /></p>
+<img src="images/logo-villaaqua.png" width="340" height="90" /></p>
 <div style="padding:10px;">
 <h3>Envío de reviews</h3>
 <form id="form1" name="form1" method="post" action="enviareview.php?idr=<?php echo $_REQUEST["idr"];?>">
