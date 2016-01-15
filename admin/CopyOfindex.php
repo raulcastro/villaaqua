@@ -395,13 +395,7 @@ function validar(formulario) {
           <td width="56%"><div align="right">
             <table width="300px" border="0" cellpadding="4" cellspacing="1">
               <tr>
-                <td align="right" nowrap="nowrap">
-                	<a href="villarate.php" class="Aqua">Rates</a>&nbsp;&nbsp;
-                	<a href="reviews.php" class="Aqua">Reviews</a>&nbsp;&nbsp;
-                	<a href="reviews.php" class="Aqua">Main Slider</a>&nbsp;&nbsp;
-                	<a href="reviews.php" class="Aqua">Sections</a>&nbsp;&nbsp;
-                	<a href="login.php" class="Aqua">Log out</a>
-                </td>
+                <td align="right" nowrap="nowrap"><a href="villarate.php" class="Aqua">Rates</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="reviews.php" class="Aqua">Reviews</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="login.php" class="Aqua">Log out</a></td>
               </tr>
               </table>
           </div></td>

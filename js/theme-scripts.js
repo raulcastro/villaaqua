@@ -257,10 +257,9 @@
     if ($(".js-carousel-testimonials").length) {
         $(".js-carousel-testimonials").owlCarousel({
             margin: 30,
-            pagination: false,
-            //nav: true,
-            //navText: ['<i class="icon icomoon-arrowleft"></i>', '<i class="icon icomoon-arrowright"></i>'],
-            nav: false,
+            pagination: true,
+            nav: true,
+            navText: ['<i class="icon icomoon-arrowleft"></i>', '<i class="icon icomoon-arrowright"></i>'],
             smartSpeed: 750,
             responsive: {
                 1024: {

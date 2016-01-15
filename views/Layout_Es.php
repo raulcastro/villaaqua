@@ -478,7 +478,7 @@ class Layout_View
                             </li>
                             
                             <li id="menu-item-843" class="dropdown menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children">
-                                <a href="/es/overview/" class="dropdown-toggle">Overview</a>
+                                <a href="/es/overview/" class="dropdown-toggle">La Villa</a>
                                 <b class="caret"></b>
                                 <ul class="dropdown-menu">
                                     <li class="menu-item"><a href="/es/overview/">Especificaciones Generales</a></li>
@@ -490,7 +490,7 @@ class Layout_View
                             </li>
                             
                             <li class="dropdown menu-item">
-                                <a href="/es/servicios-y-staff/" class="dropdown-toggle">Servicios y Staff</a>
+                                <a href="/es/servicios-y-staff/" class="dropdown-toggle">Los Servicios</a>
                                 <b class="caret"></b>
                                 <ul class="dropdown-menu">
                                 	<li class="menu-item"><a href="/es/incluidos/">Inclu&iacute;dos</a></li>
@@ -499,22 +499,22 @@ class Layout_View
                             </li>
                             
                             <li class="dropdown menu-item menu-item-object-page">
-                                <a href="/arriving-to-the-villa-playacar-playa-del-carmen/">Info del destino</a>
+                                <a href="/es/info-del-destino/">El Destino</a>
                                 <b class="caret"></b>
                                 <ul class="dropdown-menu">
-                                	<li class="menu-item"><a href="/arriving-to-the-villa-playacar-playa-del-carmen/">Arriving to the villa</a></li>
-                                    <li class="menu-item"><a href="/arriving-to-the-villa-playacar-playa-del-carmen/#playacar" class="to-section">Playacar</a></li>
-                                    <li class="menu-item"><a href="/arriving-to-the-villa-playacar-playa-del-carmen/#playadelcarmen" class="to-section">Playa del Carmen</a></li>
-                                    <li class="menu-item"><a href="/riviera-maya/">Riviera Maya</a></li>
+                                	<li class="menu-item"><a href="/es/info-del-destino/">Cómo llegar</a></li>
+                                    <li class="menu-item"><a href="/es/info-del-destino/#playacar" class="to-section">Playacar</a></li>
+                                    <li class="menu-item"><a href="/es/info-del-destino/#playadelcarmen">Playa del Carmen</a></li>
+                                    <li class="menu-item"><a href="/es/riviera-maya/">Riviera Maya</a></li>
                                 </ul>
                             </li>
                             
                             <li class="dropdown menu-item menu-item-object-page">
-                                <a href="/es/out-and-about/">Out &amp; About</a>
+                                <a href="/es/out-and-about/">Actividades</a>
                                 <b class="caret"></b>
                                 <ul class="dropdown-menu">
                                     <li class="menu-item"><a href="/es/out-and-about/">Playas</a></li>
-                                    <li class="menu-item"><a href="/es/out-and-about/" class="to-section">Actividades Acuáticas</a></li>
+                                    <li class="menu-item"><a href="/es/out-and-about/#actividadesacuaticas" class="to-section">Actividades Acuáticas</a></li>
                                     <li class="menu-item"><a href="/es/out-and-about/" class="to-section">Golf</a></li>
                                     <li class="menu-item"><a href="/es/out-and-about/" class="to-section">Parques</a></li>
                                     <li class="menu-item"><a href="/es/cultura/">Cultura</a></li>
@@ -530,8 +530,8 @@ class Layout_View
                                     <li class="menu-item"><a href="/es/bodas/">Bodas</a></li>
                                     <li class="menu-item"><a href="/es/retiros-corporativos/">Retiros corporativos</a></li>
                                     <li class="menu-item"><a href="/es/reuniones-de-familia-y-amigos/">Reuniones de familia y amigos</a></li>
-                                    <li class="menu-item"><a href="es/eventos-privados/">Eventos privados</a></li>
-                                    <li class="menu-item"><a href="/es/locacion/ ">Locaci&oacute;n</a></li>
+                                    <li class="menu-item"><a href="/es/eventos-privados/">Eventos privados</a></li>
+                                    <li class="menu-item"><a href="/es/locacion/ ">Locaci&oacute;n</a></li> 
                                 </ul>
                             </li>
                             
@@ -540,12 +540,12 @@ class Layout_View
                             </li>
                             
                             <li class="dropdown menu-item menu-item-object-page">
-                                <a href="/es/proceso-de-reserva/">Reservaciones</a>
+                                <a href="/es/proceso-de-reserva/">Reservas</a>
                                 <b class="caret"></b>
                                 <ul class="dropdown-menu">
                                     <li class="menu-item"><a href="/es/proceso-de-reserva/">El proceso de reserva</a></li>
                                     <li class="menu-item"><a href="/es/proceso-de-reserva/">Tarifas</a></li>
-                                    <li class="menu-item"><a href="/contact-us/">Formulario de contacto</a></li>
+                                    <li class="menu-item"><a href="/es/contacto/">Formulario de contacto</a></li>
                                     <li class="menu-item"><a href="/es/faq/">Preguntas frecuentes</a></li>
                                 </ul>
                             </li>
@@ -672,24 +672,25 @@ class Layout_View
 							<div class="wpb_wrapper">
 								<p style="text-align: center;">
 									<span style="color: #525252;">
-										Villa Aqua es una hermosa villa privada de diseño contemporáneo y acogedor. 
-                                        Sus 5 amplias y modernas habitaciones ofrecen confort y lujo en un ambiente 
-                                        cálido con servicio personalizado, simplemente excepcional. 
+										Villa Aqua es una hermosa villa privada que presume de un diseño 
+                                        contemporáneo y a la vez acogedor. Sus 5 amplias y modernas habitaciones 
+                                        ofrecen confort y lujo en un ambiente cálido con servicio personalizado, 
+                                        simplemente excepcional. Su ubicación inmejorable en el corazón de Playa 
+                                        del Carmen, dentro del exclusivo fraccionamiento privado Playacar, permite 
+                                        a nuestros huéspedes realizar diversas actividades dentro y fuera de la villa, 
+                                        ya que además de contar con amenidades increíbles, también se encuentra muy 
+                                        cerca de la famosa “Quinta Avenida” y de las hermosas playas de arena blanca 
+                                        y aguas cristalinas, azul turquesa, de la Riviera Maya.
 									</span>
 									<br /><br />
 									<span style="color: #525252;">
-										Su ubicación inmejorable en el corazón de Playa del Carmen, en 
-                                        un fraccionamiento seguro,  se encuentra muy cerca de la famosa 
-                                        “Quinta Avenida” y de las hermosas playas de arena blanca y 
-                                        aguas cristalinas, azul turquesa, de la Riviera Maya..
+										Si desea disfrutar de unas inolvidables vacaciones familiares, reuniones con
+                                        amigos, viajes corporativos o una Luna de Miel de ensueño en la Riviera Maya, 
+                                        Villa Aqua, en Playa del Carmen, es lo mejor en rentas vacacionales de lujo y 
+                                        el lugar ideal para crear recuerdos que perduren.
 									</span>
-									<br /><br />
-									<span style="color: #525252;">
-										Considerada lo mejor en rentas vacacionales de lujo 
-                                        y el lugar ideal para crear recuerdos inolvidables 
-                                        para vacaciones familiares, reuniones con amigos, 
-                                        viajes corporativos o una Luna de Miel.
-									</span>
+									
+									
 								</p>
 							</div>
 						</div>
@@ -742,8 +743,8 @@ class Layout_View
 					<div class="ult-animation  ult-animate-viewport  ult-no-mobile" data-animate="fadeIn" data-animation-delay="0" data-animation-duration="3" data-animation-iteration="1" style="opacity:0;" data-opacity_start_effect="">
 						<div class="rental-service_latest js-carousel">
 							<div class="rental-service_item">
-								<div class="rs-item_actions">
-									<a class="rs-item_action_link" href="/included/">
+								<div class="rs-item_actions"> 
+									<a class="rs-item_action_link" href="/es/incluidos/">
 										<i class="fa fa-eye"></i>
 									</a>
 								</div>
@@ -756,7 +757,7 @@ class Layout_View
 							<div class="rental-service_item">
 								<div class="rs-item_inner">
 									<div class="rs-item_actions">
-										<a class="rs-item_action_link" href="/at-extra-cost/">
+										<a class="rs-item_action_link" href="/es/con-costo-extra/">
 											<i class="fa fa-eye"></i>
 										</a>
 									</div>
@@ -767,7 +768,7 @@ class Layout_View
 							<div class="rental-service_item">
 								<div class="rs-item_inner">
 									<div class="rs-item_actions">
-										<a class="rs-item_action_link" href="/events/">
+										<a class="rs-item_action_link" href="/es/eventos/">
 											<i class="fa fa-eye"></i>
 										</a>
 									</div>
@@ -781,7 +782,7 @@ class Layout_View
 								<p style="text-align: center;">
 									<span style="color: #525252;">Las excepcionales instalaciones de 
                                         Villa Aqua y sobre todo, nuestro atento y dedicado personal, 
-                                        harán de sus renta vacacional de lujo una experiencia única e 
+                                        harán de su renta vacacional de lujo una experiencia única e 
                                         inolvidable.</span>
 								</p>
 							</div>
@@ -792,7 +793,7 @@ class Layout_View
 		</div>
 		<div class="ult-spacer spacer-561be2953972e" data-id="561be2953972e" data-height="52" data-height-mobile="52" data-height-tab="52" data-height-tab-portrait="52" data-height-mobile-landscape="52" style="clear:both;display:block;"></div>
 		<div class="ult-animation ult-animate-viewport ult-no-mobile " data-animate="fadeIn " data-animation-delay="0 " data-animation-duration="1.5 " data-animation-iteration="1 " style="opacity:0; " data-opacity_start_effect="95 ">
-			<div class="vc_btn3-container vc_btn3-center "><a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-square vc_btn3-style-outline vc_btn3-block vc_btn3-color-chino " href="/staff-and-services/" title=" ">VER TODOS LOS SERVICIOS</a></div>
+			<div class="vc_btn3-container vc_btn3-center "><a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-square vc_btn3-style-outline vc_btn3-block vc_btn3-color-chino " href="/es/servicios-y-staff/" title=" ">VER TODOS LOS SERVICIOS</a></div>
 		</div>
 		<div class="ult-spacer spacer-561be2953972e" data-id="561be2953972e" data-height="52" data-height-mobile="52" data-height-tab="52" data-height-tab-portrait="52" data-height-mobile-landscape="52" style="clear:both;display:block;"></div>
 		<div class="ult-spacer spacer-561be2953b81a" data-id="561be2953b81a" data-height="52" data-height-mobile="52" data-height-tab="52" data-height-tab-portrait="52" data-height-mobile-landscape="52" style="clear:both;display:block;"></div>
@@ -921,7 +922,7 @@ class Layout_View
 									<div class="info_box ">
 										<div class="info-box_img " style="font-size:36px "><img src="/images/home/events-icons/Icon_wedding.svg " alt="Brilliant creative design " /></div>
 										<h4>
-											<a href="/events-weddings/">Bodas</a>
+											<a href="/es/bodas/">Bodas</a>
 										</h4>
 										<div class="info-box_separator ">
 											<div class="line "></div>
@@ -940,7 +941,7 @@ class Layout_View
 								<div class="ult-animation ult-animate-viewport ult-no-mobile " data-animate="fadeIn " data-animation-delay="0 " data-animation-duration=".5 " data-animation-iteration="1 " style="opacity:0; ">
 									<div class="info_box ">
 										<div class="info-box_img " style="font-size:36px "><img src="/images/home/events-icons/Icon_corporate.svg " alt="Brilliant creative design " /></div>
-										<h4><a href="/events-corporate-retreats/">Retiros Corporativos</a></h4>
+										<h4><a href="/es/retiros-corporativos/">Retiros Corporativos</a></h4>
 										<div class="info-box_separator ">
 											<div class="line "></div>
 										</div>
@@ -957,14 +958,14 @@ class Layout_View
 								<div class="ult-animation ult-animate-viewport ult-no-mobile " data-animate="fadeIn " data-animation-delay="0 " data-animation-duration=".5 " data-animation-iteration="1 " style="opacity:0; ">
 									<div class="info_box ">
 										<div class="info-box_img " style="font-size:36px "><img src="/images/home/events-icons/Icon_family.svg " alt="Brilliant creative design " /></div>
-										<h4><a href="/events-family-friends-reunion/">Reunión de familia y amigos</a></h4>
+										<h4><a href="/es/reuniones-de-familia-y-amigos/">Reunión de familia y amigos</a></h4>
 										<div class="info-box_separator ">
 											<div class="line "></div>
 										</div>
 										<p>¡Reúne a los tuyos para unas vacaciones familiares perfectas!</p>
 									</div>
 								</div>
-								<div class="ult-spacer spacer-561be29552cde " data-id="561be29552cde " data-height="32 " data-height-mobile="32 " data-height-tab="32 " data-height-tab-portrait="32 " data-height-mobile-landscape="32 " style="clear:both;display:block; "></div>
+								<div class="ult-spacer spacer-561be29552cde " data-id="561be29552cde " data-height="32 " data-height-mobile="32 " data-height-tab="32 " data-height-tab-portrait="32 " data-height-mobile-landscape="32 " style="clear:both;display:block; "></div> 
 							</div>
 						</div>
 					</div>
@@ -975,7 +976,7 @@ class Layout_View
 								<div class="ult-animation ult-animate-viewport ult-no-mobile " data-animate="fadeIn " data-animation-delay="0 " data-animation-duration=".5 " data-animation-iteration="1 " style="opacity:0; ">
 									<div class="info_box ">
 										<div class="info-box_img " style="font-size:36px "><img src="/images/home/events-icons/Icon_private.svg" alt="Brilliant creative design " /></div>
-										<h4><a href="/events-family-friends-reunion/">Eventos Privados</a></h4>
+										<h4><a href="/es/eventos-privados/">Eventos Privados</a></h4>
 										<div class="info-box_separator ">
 											<div class="line "></div>
 										</div>
@@ -994,11 +995,13 @@ class Layout_View
 								<div class="ult-animation ult-animate-viewport ult-no-mobile " data-animate="fadeIn " data-animation-delay="0 " data-animation-duration=".5 " data-animation-iteration="1 " style="opacity:0; ">
 									<div class="info_box ">
 										<div class="info-box_img " style="font-size:36px "><img src="/images/home/events-icons/Icon_photo.svg" alt="Brilliant creative design " /></div>
-										<h4><a href="/events-photo-shoots/">Photo shoots</a></h4>
+										<h4><a href="/es/locacion/">Sesiones de Foto & Producciones</a></h4>
 										<div class="info-box_separator ">
 											<div class="line "></div>
 										</div>
-										<p>Countless days of sun in a private contemporary location.</p>
+										<p>Sesiones de foto y producciones. Innumerables días 
+                                            soleados en una moderna locación privada.
+                                        </p>
 									</div>
 								</div>
 								<div class="ult-spacer spacer-561be29552cde " data-id="561be29552cde " data-height="32 " data-height-mobile="32 " data-height-tab="32 " data-height-tab-portrait="32 " data-height-mobile-landscape="32 " style="clear:both;display:block; "></div>
@@ -1318,7 +1321,7 @@ class Layout_View
 	                                                                     			<li class="item-feature">Teléfonos: 2 líneas (local + internacional)</li>
 	                                                                     			<li class="item-feature">Servicio telefónico: Servicio Local/Nacional y Llamadas gratuitas a Estados Unidos y Canadá a través de servicio VOIP (voz sobre IP)</li>
 	                                                                     			<li class="item-feature">Internet inalámbrico sin costo</li>
-	                                                                     			<li class="item-feature">Servicios de Fax y Paquetería.  <a href="/contact-us/" target="_blank">(Consulte con su Anfitrión de Villa)</a>)</li>
+	                                                                     			<li class="item-feature">Servicios de Fax y Paquetería.  <a href="/es/contacto/">(Consulte con su Anfitrión de Villa)</a>)</li>
 	                                                                     		</ul>
                                                                         	</div>
                                                                         </div>
@@ -1344,18 +1347,7 @@ class Layout_View
                                                                             mantenemos la belleza de Playa del Carmen, para las futuras 
                                                                             generaciones.
                                                                         </p>
-                                                                            
-                                                                            
-
-
-
-
-
-
-
-
-
-
+                                                         
                                                                             
 	                                                                     	<div class="stm_item-features_inner">
 	                                                                     		<ul class="item-features_list_extended">
@@ -1441,7 +1433,7 @@ class Layout_View
                                     <div class="ult-spacer spacer-56253aed585bd" data-id="56253aed585bd" data-height="25" data-height-mobile="25" data-height-tab="25" data-height-tab-portrait="25" data-height-mobile-landscape="25" style="clear:both;display:block;"></div>
                                     <div class="wpb_text_column wpb_content_element ">
                                         <div class="wpb_wrapper">
-                                            <a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-square vc_btn3-style-outline vc_btn3-color-chino" href="/the-rooms/" title="" target="_self">LEER MAS</a>
+                                            <a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-square vc_btn3-style-outline vc_btn3-color-chino" href="/es/las-habitaciones/" title="" target="_self">LEER MAS</a>
                                         </div>
                                     </div>
                                 </div>
@@ -1467,7 +1459,7 @@ class Layout_View
                                     <div class="ult-spacer spacer-56253aed5c7a5" data-id="56253aed5c7a5" data-height="25" data-height-mobile="25" data-height-tab="25" data-height-tab-portrait="25" data-height-mobile-landscape="25" style="clear:both;display:block;"></div>
                                     <div class="wpb_text_column wpb_content_element ">
                                         <div class="wpb_wrapper">
-                                            <a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-square vc_btn3-style-outline vc_btn3-color-chino" href="/living-spaces/" title="" target="_self">LEER MAS</a>
+                                            <a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-square vc_btn3-style-outline vc_btn3-color-chino" href="/es/areas-comunes/" title="" target="_self">LEER MAS</a>
                                         </div>
                                     </div>
                                 </div>
@@ -1517,7 +1509,7 @@ class Layout_View
                                     <div class="ult-spacer spacer-56253aed585bd" data-id="56253aed585bd" data-height="25" data-height-mobile="25" data-height-tab="25" data-height-tab-portrait="25" data-height-mobile-landscape="25" style="clear:both;display:block;"></div>
                                     <div class="wpb_text_column wpb_content_element ">
                                         <div class="wpb_wrapper">
-                                            <a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-square vc_btn3-style-outline vc_btn3-color-chino" href="/pool-and-outdoor/" title="" target="_self">LEER MAS</a>
+                                            <a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-square vc_btn3-style-outline vc_btn3-color-chino" href="/es/piscina-y-exteriores/" title="" target="_self">LEER MAS</a>
                                         </div>
                                     </div>
                                 </div>
@@ -1543,7 +1535,7 @@ class Layout_View
                                     <div class="ult-spacer spacer-56253aed5c7a5" data-id="56253aed5c7a5" data-height="25" data-height-mobile="25" data-height-tab="25" data-height-tab-portrait="25" data-height-mobile-landscape="25" style="clear:both;display:block;"></div>
                                     <div class="wpb_text_column wpb_content_element ">
                                         <div class="wpb_wrapper">
-                                            <a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-square vc_btn3-style-outline vc_btn3-color-chino" href="/what-to-do/" title="" target="_self">LEER MAS</a>
+                                            <a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-square vc_btn3-style-outline vc_btn3-color-chino" href="/es/que-hacer-en-la-villa/" title="" target="_self">LEER MAS</a>
                                         </div>
                                     </div>
                                 </div>
@@ -1585,7 +1577,7 @@ class Layout_View
             <div class="container">
                 <div class="page-header_wrap">
                     <div class="page-header_in">
-                        <h2 class="page-title">Overview</h2>
+                        <h2 class="page-title">La Villa</h2>
                     </div>
                 </div>
             </div>
@@ -2860,7 +2852,7 @@ class Layout_View
             <div class="container">
                 <div class="page-header_wrap">
                     <div class="page-header_in">
-                        <h2 class="page-title">The Rooms</h2>
+                        <h2 class="page-title">HABITACIONES</h2>
                     </div>
                 </div>
             </div>
@@ -3469,7 +3461,7 @@ class Layout_View
             <div class="container">
                 <div class="page-header_wrap">
                     <div class="page-header_in">
-                        <h2 class="page-title">Living Spaces</h2>
+                        <h2 class="page-title">Áreas comunes</h2>
                     </div>
                 </div>
             </div>
@@ -4035,7 +4027,7 @@ class Layout_View
             <div class="container">
                 <div class="page-header_wrap">
                     <div class="page-header_in">
-                        <h2 class="page-title">Pool &amp; Outdoor</h2>
+                        <h2 class="page-title">Piscina &amp; Exteriores</h2>
                     </div>
                 </div>
             </div>
@@ -4357,9 +4349,9 @@ class Layout_View
                 <div class="content">
                     <div class="rental-services_filter">
                         <div class="rs_filter-inner">
-                            <a href="#" class="active" data-filter="all">All</a>
-                            <a href="#" data-filter="included">Included</a>
-                            <a href="#" data-filter="at-extra">At extra cost</a>
+                            <a href="#" class="active" data-filter="all">Todo</a>
+                            <a href="#" data-filter="included">Incluido</a>
+                            <a href="#" data-filter="at-extra">Con costo extra</a>
                         </div>
                     </div>
                     <div class="rental-services-grid">
@@ -4367,13 +4359,13 @@ class Layout_View
                             <div class="rental-service_item">
                                 <div class="rs-item_inner">
                                     <div class="rs-item_actions">
-                                        <a class="rs-item_action_link" href="/included/"><i class="fa fa-eye"></i></a>
+                                        <a class="rs-item_action_link" href="/es/incluidos/"><i class="fa fa-eye"></i></a>
                                     </div>
                                     <div class="rs-item_content"><img width="570" height="446" src="/images/staff-and-services/Villa_Aqua_services_included_villa_host.jpg" class="attachment-full wp-post-image" alt="Exellent-view" />
                                     </div>
                                     <div class="rs-item_caption">
-                                        <div class="rs-item_title">Villa Host</div>
-                                        <div class="rs-item_price">Included</div>
+                                        <div class="rs-item_title">ANFITRIÓN DE VILLA</div>
+                                        <div class="rs-item_price">Incluido</div>
                                     </div>
                                 </div>
                             </div>
@@ -4382,13 +4374,13 @@ class Layout_View
                             <div class="rental-service_item">
                                 <div class="rs-item_inner">
                                     <div class="rs-item_actions">
-                                        <a class="rs-item_action_link" href="/included/"><i class="fa fa-eye"></i></a>
+                                        <a class="rs-item_action_link" href="/es/incluidos/"><i class="fa fa-eye"></i></a>
                                     </div>
                                     <div class="rs-item_content"><img width="570" height="446" src="/images/staff-and-services/Villa_Aqua_services_included_chef.jpg" class="attachment-full wp-post-image" alt="Berth" />
                                     </div>
                                     <div class="rs-item_caption">
                                         <div class="rs-item_title">Chef</div>
-                                        <div class="rs-item_price">Included</div>
+                                        <div class="rs-item_price">Incluido</div>
                                     </div>
                                 </div>
                             </div>
@@ -4397,13 +4389,13 @@ class Layout_View
                             <div class="rental-service_item">
                                 <div class="rs-item_inner">
                                     <div class="rs-item_actions">
-                                        <a class="rs-item_action_link" href="/included/"><i class="fa fa-eye"></i></a>
+                                        <a class="rs-item_action_link" href="/es/incluidos/"><i class="fa fa-eye"></i></a>
                                     </div>
                                     <div class="rs-item_content"><img width="570" height="446" src="/images/staff-and-services/Villa_Aqua_services_included_housekeeping.jpg" class="attachment-full wp-post-image" alt="Big-Yacht" />
                                     </div>
                                     <div class="rs-item_caption">
-                                        <div class="rs-item_title">Housekeeping</div>
-                                        <div class="rs-item_price">Included</div>
+                                        <div class="rs-item_title">SERVICIO DE LIMPIEZA</div>
+                                        <div class="rs-item_price">Incluido</div>
                                     </div>
                                 </div>
                             </div>
@@ -4412,13 +4404,13 @@ class Layout_View
                             <div class="rental-service_item">
                                 <div class="rs-item_inner">
                                     <div class="rs-item_actions">
-                                        <a class="rs-item_action_link" href="/included/"><i class="fa fa-eye"></i></a>
+                                        <a class="rs-item_action_link" href="/es/incluidos/"><i class="fa fa-eye"></i></a>
                                     </div>
                                     <div class="rs-item_content"><img width="570" height="446" src="/images/staff-and-services/Villa_Aqua_services_included_mantainance.jpg" class="attachment-full wp-post-image" alt="Villas-near-the-beach" />
                                     </div>
                                     <div class="rs-item_caption">
-                                        <div class="rs-item_title">Maintenance</div>
-                                        <div class="rs-item_price">Included</div>
+                                        <div class="rs-item_title">MANTENIMIENTO</div>
+                                        <div class="rs-item_price">Incluido</div>
                                     </div>
                                 </div>
                             </div>
@@ -4427,13 +4419,13 @@ class Layout_View
                             <div class="rental-service_item">
                                 <div class="rs-item_inner">
                                     <div class="rs-item_actions">
-                                        <a class="rs-item_action_link" href="/at-extra-cost/"><i class="fa fa-eye"></i></a>
+                                        <a class="rs-item_action_link" href="/es/con-costo-extra/"><i class="fa fa-eye"></i></a>
                                     </div>
                                     <div class="rs-item_content"><img width="570" height="446" src="/images/staff-and-services/Villa_Aqua_services_not_included_food_&_beverage.jpg" class="attachment-full wp-post-image" alt="Over-the-Sea" />
                                     </div>
                                     <div class="rs-item_caption">
-                                        <div class="rs-item_title">Food & Beverage </div>
-                                        <div class="rs-item_price">At an extra cost</div>
+                                        <div class="rs-item_title">ALIMENTOS Y BEBIDAS </div>
+                                        <div class="rs-item_price">Con costo Extra</div>
                                     </div>
                                 </div>
                             </div>
@@ -4442,13 +4434,13 @@ class Layout_View
                             <div class="rental-service_item">
                                 <div class="rs-item_inner">
                                     <div class="rs-item_actions">
-                                        <a class="rs-item_action_link" href="/at-extra-cost/"><i class="fa fa-eye"></i></a>
+                                        <a class="rs-item_action_link" href="/es/con-costo-extra/"><i class="fa fa-eye"></i></a>
                                     </div>
                                     <div class="rs-item_content"><img width="570" height="446" src="/images/staff-and-services/Villa_Aqua_services_extra_cost_spa.jpg" class="attachment-full wp-post-image" alt="Above-the-clouds" />
                                     </div>
                                     <div class="rs-item_caption">
                                         <div class="rs-item_title">Spa</div>
-                                        <div class="rs-item_price">At an extra cost</div>
+                                        <div class="rs-item_price">Con costo Extra</div>
                                     </div>
                                 </div>
                             </div>
@@ -4457,13 +4449,13 @@ class Layout_View
                             <div class="rental-service_item">
                                 <div class="rs-item_inner">
                                     <div class="rs-item_actions">
-                                        <a class="rs-item_action_link" href="/at-extra-cost/"><i class="fa fa-eye"></i></a>
+                                        <a class="rs-item_action_link" href="/es/con-costo-extra/"><i class="fa fa-eye"></i></a>
                                     </div>
                                     <div class="rs-item_content"><img width="570" height="446" src="/images/staff-and-services/Villa_Aqua_services_not_included_transportation.jpg" class="attachment-full wp-post-image" alt="Ready-to-way" />
                                     </div>
                                     <div class="rs-item_caption">
-                                        <div class="rs-item_title">Transportation</div>
-                                        <div class="rs-item_price">At an extra cost</div>
+                                        <div class="rs-item_title">TRANSPORTACIÓN</div>
+                                        <div class="rs-item_price">Con costo Extra</div>
                                     </div>
                                 </div>
                             </div>
@@ -4472,13 +4464,14 @@ class Layout_View
                             <div class="rental-service_item">
                                 <div class="rs-item_inner">
                                     <div class="rs-item_actions">
-                                        <a class="rs-item_action_link" href="/at-extra-cost/"><i class="fa fa-eye"></i></a>
+                                        <a class="rs-item_action_link" href="/es/con-costo-extra/"><i class="fa fa-eye"></i></a>
                                     </div>
                                     <div class="rs-item_content"><img width="570" height="446" src="/images/staff-and-services/Villa_aqua_entertainment.jpg" class="attachment-full wp-post-image" alt="Stylish-convertible" />
                                     </div>
                                     <div class="rs-item_caption">
-                                        <div class="rs-item_title">Entertainment</div>
-                                        <div class="rs-item_price">At an extra cost</div>
+                                        <div class="rs-item_title">ENTRETENIMIENTO</div>
+                                        <div class="rs-item_price">Con costo Extra</div>
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -4501,7 +4494,7 @@ class Layout_View
             <div class="container">
                 <div class="page-header_wrap">
                     <div class="page-header_in">
-                        <h2 class="page-title">Staff and Services</h2>
+                        <h2 class="page-title">Servicios & Staff </h2>
                     </div>
                 </div>
             </div>
@@ -4950,7 +4943,7 @@ class Layout_View
             <div class="ult-spacer spacer-56253aed4f277" data-id="56253aed4f277" data-height="25" data-height-mobile="25" data-height-tab="25" data-height-tab-portrait="25" data-height-mobile-landscape="25" style="clear:both;display:block;"></div>
             <div class="ult-spacer spacer-56253aed4f277" data-id="56253aed4f277" data-height="25" data-height-mobile="25" data-height-tab="25" data-height-tab-portrait="25" data-height-mobile-landscape="25" style="clear:both;display:block;"></div>
             <div class="vc_btn3-container vc_btn3-center animated fadeIn" style="opacity:1;-webkit-animation-delay:0s;-webkit-animation-duration:1s;-webkit-animation-iteration-count:1; -moz-animation-delay:0s;-moz-animation-duration:1s;-moz-animation-iteration-count:1; animation-delay:0s;animation-duration:1s;animation-iteration-count:1;test">
-				<a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-square vc_btn3-style-outline vc_btn3-color-chino" href="/at-extra-cost/" title="" target="_self">MAS SERVICIOS</a>
+				<a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-square vc_btn3-style-outline vc_btn3-color-chino" href="/es/con-costo-extra/" title="" target="_self">MAS SERVICIOS</a>
 			</div>
         </div>
         
@@ -4968,7 +4961,7 @@ class Layout_View
             <div class="container">
                 <div class="page-header_wrap">
                     <div class="page-header_in">
-                        <h2 class="page-title">Servicios y Staff </h2>
+                        <h2 class="page-title">Servicios &  Staff</h2>
                     </div>
                 </div>
             </div>
@@ -5469,7 +5462,7 @@ class Layout_View
             <div class="ult-spacer spacer-56253aed4f277" data-id="56253aed4f277" data-height="25" data-height-mobile="25" data-height-tab="25" data-height-tab-portrait="25" data-height-mobile-landscape="25" style="clear:both;display:block;"></div>
             <div class="ult-spacer spacer-56253aed4f277" data-id="56253aed4f277" data-height="25" data-height-mobile="25" data-height-tab="25" data-height-tab-portrait="25" data-height-mobile-landscape="25" style="clear:both;display:block;"></div>
             <div class="vc_btn3-container vc_btn3-center animated fadeIn" style="opacity:1;-webkit-animation-delay:0s;-webkit-animation-duration:1s;-webkit-animation-iteration-count:1; -moz-animation-delay:0s;-moz-animation-duration:1s;-moz-animation-iteration-count:1; animation-delay:0s;animation-duration:1s;animation-iteration-count:1;test">
-				<a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-square vc_btn3-style-outline vc_btn3-color-chino" href="/included/" title="" target="_self">MAS SERVICIOS</a>
+				<a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-square vc_btn3-style-outline vc_btn3-color-chino" href="/es/incluidos/" title="" target="_self">MAS SERVICIOS</a>
 			</div>
         </div>
 	    <?php 
@@ -5486,7 +5479,7 @@ class Layout_View
             <div class="container">
                 <div class="page-header_wrap">
                     <div class="page-header_in">
-                        <h2 class="page-title">Staff and services</h2>
+                        <h2 class="page-title">Servicios & Staff</h2>
                     </div>
                 </div>
             </div>
@@ -5833,7 +5826,7 @@ class Layout_View
 			            <div class="ult-spacer spacer-56253aed4f277" data-id="56253aed4f277" data-height="25" data-height-mobile="25" data-height-tab="25" data-height-tab-portrait="25" data-height-mobile-landscape="25" style="clear:both;display:block;"></div>
 			            <div class="ult-spacer spacer-56253aed4f277" data-id="56253aed4f277" data-height="25" data-height-mobile="25" data-height-tab="25" data-height-tab-portrait="25" data-height-mobile-landscape="25" style="clear:both;display:block;"></div>
 			            <div class="vc_btn3-container vc_btn3-center animated fadeIn" style="opacity:1;-webkit-animation-delay:0s;-webkit-animation-duration:1s;-webkit-animation-iteration-count:1; -moz-animation-delay:0s;-moz-animation-duration:1s;-moz-animation-iteration-count:1; animation-delay:0s;animation-duration:1s;animation-iteration-count:1;test">
-							<a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-square vc_btn3-style-outline vc_btn3-color-chino" href="/riviera-maya/" title="" target="_self">CONOZCA MAS ACERCA DE LA RIVIERA MAYA</a>
+							<a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-square vc_btn3-style-outline vc_btn3-color-chino" href="/es/riviera-maya/" title="" target="_self">CONOZCA MAS ACERCA DE LA RIVIERA MAYA</a>
 						</div>
 						<div class="ult-spacer spacer-56253aed4f277" data-id="56253aed4f277" data-height="25" data-height-mobile="25" data-height-tab="25" data-height-tab-portrait="25" data-height-mobile-landscape="25" style="clear:both;display:block;"></div>
 						<div class="ult-spacer spacer-56253aed4f277" data-id="56253aed4f277" data-height="25" data-height-mobile="25" data-height-tab="25" data-height-tab-portrait="25" data-height-mobile-landscape="25" style="clear:both;display:block;"></div>
@@ -5841,7 +5834,7 @@ class Layout_View
                         <div class="vc_col-sm-12 wpb_column vc_column_container ">
                         <h5>Distancia desde Villa Aqua a: </h5>
                         <br />
-                        	<div class="vc_col-sm-6 wpb_column vc_column_container ">
+                        	<div class="vc_col-sm-6 wpb_column vc_column_container "> 
                         		<div class="wpb_wrapper">
 	                                <div class="wpb_text_column wpb_content_element ">
 	                                    <div class="wpb_wrapper">
@@ -6387,40 +6380,63 @@ class Layout_View
                                             </div>
 
                                             <div class="wpb_accordion_section group">
-                                                <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post"><strong>PASSPORT & VISA</strong></a></h3>
+                                                <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post"><strong>PASAPORTE & VISA</strong></a></h3>
                                                 <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
                                                     <div class="wpb_text_column wpb_content_element ">
                                                         <div class="wpb_wrapper">
                                                             <div class="entry-holder has-padd">
                                                                 <div class="entry-content">
-                                                                    <h6>For USA citizens only:</h6> 
+                                                                    <h6>Sólo para los ciudadanos estadounidenses: :</h6> 
                                                                     <div class="stm_item-features">
 					                                                	<div class="stm_item-features_inner">
 					                                                		<ul class="item-features_list_extended">
 					                                                			<li class="item-feature">
-					                                                				Since 2007, ALL persons, including U.S. citizens, traveling by air between the United States and Canada, Mexico, Central and South America, the Caribbean, and Bermuda will be required to present a valid passport, Air NEXUS card, or U.S. Coast Guard Merchant Mariner Document, or an Alien Registration Card, Form I-551, if applicable. If traveling by land or sea (including ferries), ALL persons, including U.S. citizens, may be required to present a valid passport or other documents as determined by the Department of Homeland Security.
+					                                                				Desde el año 2007, TODAS las personas, incluyendo los
+                                                                                    ciudadanos estadounidenses, que viajen por avión entre Estados
+                                                                                    Unidos, Canadá, México, Centro América, América del Sur, el
+                                                                                    Caribe y las Bermudas, deberán presentar un Pasaporte vigente,
+                                                                                    una tarjeta Air NEXUS, una tarjeta de marino mercante del
+                                                                                    Servicio de Guardacostas de los Estados Unidos o una tarjeta
+                                                                                    de registro de extranjero, Forma I-551, en caso de ser
+                                                                                    aplicable.<br> 
+                                                                                    Si viaja por mar o por tierra (incluyendo ferris), TODAS las
+                                                                                    personas, incluyendo ciudadanos estadounidenses, deberán
+                                                                                    presentar un Pasaporte vigente u otro documento, tal como lo
+                                                                                    determina el Departamento de Seguridad Nacional. 
 					                                                			</li>
 					                                                		</ul>
 					                                                	</div>
 					                                                </div>
                                                                     <br />
                                                                     <br />
-                                                                    <h6>Other Countries:</h6> 
+                                                                    <h6>Otros Países: </h6> 
                                                                     <div class="stm_item-features">
 					                                                	<div class="stm_item-features_inner">
 					                                                		<ul class="item-features_list_extended">
 					                                                			<li class="item-feature">
-					                                                				If you are a citizen of Andorra, Argentina, Australia, Austria, Belgium, Canada, Chile, Costa Rica, the Czech Republic, Denmark, Finland, France, Germany, Great Britain, Greece, Hungary, Iceland, Ireland, Israel, Italy, Japan, Liechtenstein, Luxembourg, Monaco, Netherlands, New Zealand, Norway, Poland, Portugal, Puerto Rico, San Marino, Singapore, Slovenia, Spain, South Korea, Sweden, Switzerland, United States of America, Uruguay or Venezuela, you don't need a visa to enter Mexico, although you must present a valid passport and fill out an immigration form for tourists and business trips, which can be obtained in travel agencies, airlines or at the point where you enter Mexico.
+					                                                				Si es ciudadano de Andorra, Argentina, Australia, Austria,
+                                                                                    Bélgica, Canadá, Chile, Costa Rica, la República Checa,
+                                                                                    Dinamarca, Finlandia, Francia, Alemania, Gran Bretaña, Grecia,
+                                                                                    Hungría, Irlanda, isla, Israel, Italia, Japón, Liechtenstein,
+                                                                                    Luxemburgo, Mónaco, Países Bajos, Nueva Zelanda, Noruega,
+                                                                                    Polonia, Portugal, Puerto Rico, San Marino, Singapur,
+                                                                                    Eslovenia, España, Corea del sur, Suecia, Suiza, Estados
+                                                                                    Unidos, Uruguay o Venezuela, no necesita visa para entrar a
+                                                                                    México, aunque deberá presentar un Pasaporte vigente y llenar
+                                                                                    un formato de inmigración para turistas y viajes de negocios,
+                                                                                    la cual puede obtener en las agencias de viajes, aerolíneas o
+                                                                                    en el punto de entrada a México. 
 					                                                			</li>
 					                                                			<li class="item-feature">
-					                                                				The immigration officer at your point of entry into Mexico can also request that you demonstrate that you have sufficient funds and a return ticket to your country. If you are a citizen of any other country, you need to go to a Mexican consulate to request a visa.
+					                                                				El oficial de inmigración en el punto de entrada a México
+                                                                                    también puede solicitar que demuestre que cuenta con fondos
+                                                                                    suficientes para su estadía y un boleto de regreso a su país. 
 					                                                			</li>
 					                                                			<li class="item-feature">
-					                                                				If you have a family member, friend or acquaintance in Mexico, he or she can do this at the INM.
+					                                                				Si usted es ciudadano de cualquier otro país, necesitará ir al
+                                                                                    Consulado mexicano para solicitar una visa.
 					                                                			</li>
-					                                                			<li class="item-feature">
-					                                                				Visa Airport Departure Tax is approximately $17.00 USD. Children under 2 years of age are exempt.
-					                                                			</li>
+					                                                			
 					                                                		</ul>
 					                                                	</div>
 					                                                </div>
@@ -7021,7 +7037,7 @@ class Layout_View
                                 </div>
                             </div>
 <!------------------- Bedroom 2 --------------------->
-                            <div class="vc_col-sm-6 wpb_column vc_column_container ">
+                            <div class="vc_col-sm-6 wpb_column vc_column_container" id="actividadesacuaticas">
                                 <div class="wpb_wrapper">
                                     <div class="vc_custom_heading ">
                                         <h2 style="color: 333;text-align: left;font-weight:300;font-style:normal">EN EL AGUA</h2>
@@ -8005,7 +8021,7 @@ class Layout_View
             <div class="ult-spacer spacer-56253aed4f277" data-id="56253aed4f277" data-height="25" data-height-mobile="25" data-height-tab="25" data-height-tab-portrait="25" data-height-mobile-landscape="25" style="clear:both;display:block;"></div>
             <div class="ult-spacer spacer-56253aed4f277" data-id="56253aed4f277" data-height="25" data-height-mobile="25" data-height-tab="25" data-height-tab-portrait="25" data-height-mobile-landscape="25" style="clear:both;display:block;"></div>
             <div class="vc_btn3-container vc_btn3-center animated fadeIn" style="opacity:1;-webkit-animation-delay:0s;-webkit-animation-duration:1s;-webkit-animation-iteration-count:1; -moz-animation-delay:0s;-moz-animation-duration:1s;-moz-animation-iteration-count:1; animation-delay:0s;animation-duration:1s;animation-iteration-count:1;test">
-				<a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-square vc_btn3-style-outline vc_btn3-color-chino" href="/out-and-about-dining-culture-shopping/" title="" target="_self">VEER MAS ACTIVIDADES</a>
+				<a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-square vc_btn3-style-outline vc_btn3-color-chino" href="/es/cultura/" title="" target="_self">VEER MAS ACTIVIDADES</a>
 			</div>
         </div>
 	    <?php 
@@ -8022,7 +8038,7 @@ class Layout_View
             <div class="container">
                 <div class="page-header_wrap">
                     <div class="page-header_in">
-                        <h2 class="page-title">Out and About</h2>
+                        <h2 class="page-title">Actividades</h2> 
                     </div>
                 </div>
             </div>
@@ -8506,7 +8522,7 @@ class Layout_View
             <div class="ult-spacer spacer-56253aed4f277" data-id="56253aed4f277" data-height="25" data-height-mobile="25" data-height-tab="25" data-height-tab-portrait="25" data-height-mobile-landscape="25" style="clear:both;display:block;"></div>
             <div class="ult-spacer spacer-56253aed4f277" data-id="56253aed4f277" data-height="25" data-height-mobile="25" data-height-tab="25" data-height-tab-portrait="25" data-height-mobile-landscape="25" style="clear:both;display:block;"></div>
             <div class="vc_btn3-container vc_btn3-center animated fadeIn" style="opacity:1;-webkit-animation-delay:0s;-webkit-animation-duration:1s;-webkit-animation-iteration-count:1; -moz-animation-delay:0s;-moz-animation-duration:1s;-moz-animation-iteration-count:1; animation-delay:0s;animation-duration:1s;animation-iteration-count:1;test">
-				<a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-square vc_btn3-style-outline vc_btn3-color-chino" href="/out-and-about/" title="" target="_self">VIEW MORE ACTIVITIES</a>
+				<a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-square vc_btn3-style-outline vc_btn3-color-chino" href="/es/out-and-about/" title="" target="_self">VER MÁS ACTIVIDADES</a>
 			</div>
         </div>
 	    <?php 
@@ -8523,7 +8539,7 @@ class Layout_View
             <div class="container">
                 <div class="page-header_wrap">
                     <div class="page-header_in">
-                        <h2 class="page-title">Out and About</h2>
+                        <h2 class="page-title">ACTIVIDADES</h2>
                     </div>
                 </div>
             </div>
@@ -8582,11 +8598,11 @@ class Layout_View
                                     
                                     <div class="vc_separator wpb_content_element vc_sep_width_100 vc_sep_pos_align_center">
                                         <span class="vc_sep_holder vc_sep_holder_l"><span style="border-color:#22BCB8;" class="vc_sep_line"></span></span>
-                                        <h2 style="color:#525252;font-weight: 300;">Contact Us</h2>
+                                        <h2 style="color:#525252;font-weight: 300;">Contacto</h2>
                                         <span class="vc_sep_holder vc_sep_holder_r"><span style="border-color:#22BCB8;" class="vc_sep_line"></span></span>
                                     </div>
                                     <div class="ult-spacer spacer-563bc65e386dc" data-id="563bc65e386dc" data-height="60" data-height-mobile="60" data-height-tab="60" data-height-tab-portrait="60" data-height-mobile-landscape="60" style="clear:both;display:block;"></div>
-									<h5 style="color: #22BCB8; text-align: center;" >Thank you for your interest in reserving Villa Aqua!</h5>
+									<h5 style="color: #22BCB8; text-align: center;" >Gracias por su interes en Villa Aqua!</h5>
                                     </div>
                                     <div class="ult-spacer spacer-563bc65e386dc" data-id="563bc65e386dc" data-height="60" data-height-mobile="60" data-height-tab="60" data-height-tab-portrait="60" data-height-mobile-landscape="60" style="clear:both;display:block;"></div>
 
@@ -10308,7 +10324,7 @@ class Layout_View
             <div class="container">
                 <div class="page-header_wrap">
                     <div class="page-header_in">
-                        <h2 class="page-title">FAQ</h2>
+                        <h2 class="page-title">PREGUNTAS FRECUENTES</h2>
                     </div>
                 </div>
             </div>
@@ -10917,39 +10933,51 @@ class Layout_View
                                     <div class="ult-spacer spacer-5633a4efa59d6" data-id="5633a4efa59d6" data-height="18" data-height-mobile="18" data-height-tab="18" data-height-tab-portrait="18" data-height-mobile-landscape="18" style="clear:both;display:block;"></div>
                                     <div class="wpb_text_column wpb_content_element  content-style">
                                         <div class="wpb_wrapper">
-                                            <p>At Villa Aqua we encourage our guests to respect and treat the property with responsibility and courtesy by following some basic rules:</p>
-                                            <p><strong>Check-In time: 3pm <br>	Check-Out time: 12pm</strong></p>
-                                            <h6>IT IS STRICTLY FORBIDDEN TO:</h6>
+                                            <p>En Villa Aqua invitamos a todos nuestros huéspedes a tratar la propiedad con 
+                                                cortesía y responsabilidad, respetando las siguientes reglas básicas:
+                                            </p>
+                                            <p><strong>Hora de Check In: 3pm <br>	Hora de Check Out: 12 pm</strong></p>
+                                            <h6>QUEDA ESTRICTAMENTE PROHIBIDO: </h6>
                                             <ul>
-                                            	<li>Smoke inside the house.</li>
-                                            	<li>Use any illegal or prohibited substance inside the property</li>
-                                            	<li>Make loud noise after 11pm.</li>
-                                            	<li>Deteriorate furniture, decoration or property itself.</li>
-                                            	<li>Remove anything from this property at any time for any reason.</li>
+                                            	<li>Fumar dentro de la casa.</li>
+                                            	<li>El uso de drogas dentro de la propiedad.</li>
+                                            	<li>Hacer ruido después de las 11pm.</li>
+                                            	<li>Deteriorar el mobiliario, la decoración o la propiedad. </li>
+                                            	<li>Sustraer cualquier artículo, propiedad de Villa Aqua. </li>
                                             </ul>
-                                            <h6>WE KINDLY ASK YOU TO:</h6>
+                                            <h6>AMABLEMENTE LES PEDIMOS: </h6>
                                             <ul>
-                                            	<li>Respect the maximum number of occupants at all times: 10 adults or up to 12 guests if there are 2 or more children 12 years old or younger in the group.</li>
-                                            	<li>Turn off AC units while room windows/doors are open.</li>
-                                            	<li>Keep exterior doors locked.</li>
-                                            	<li>Place all your valuable items in safe boxes.</li>
-                                            	<li>Use the garage or park in front of the front door but please do not block the street or park in the lawn for any reason.</li>
-                                            	<li>Do not leave valuables in your car.</li>
+                                            	<li>Respetar el número máximo de ocupantes en la villa: 10 adultos o bien, 
+                                                    hasta 12 huéspedes en caso de haber 2 o más niños menores de 12 años en el grupo. </li>
+                                            	<li>Apagar las unidades de aire acondicionado mientras  permanezcan abiertas puertas/ventanas. </li>
+                                            	<li>Mantener las puertas de acceso cerradas en todo momento. </li>
+                                            	<li>Colocar sus artículos de valor en las cajas de seguridad. </li>
+                                            	<li>Favor de no bloquear la calle o estacionarse en el césped. Use la cochera o puede estacionarse frente a la puerta de entrada.</li>
+                                            	<li>No dejar objetos de valor en su auto.</li>
                                             </ul>
-                                            <h6>POOL RULES:</h6>
+                                            <h6>REGLAS DE LA PISCINA: </h6>
                                             <ul>
-                                            	<li>Children are to be supervised at all times.</li>
-                                            	<li>Swim at your own risk.</li>
-                                            	<li>No lifeguard on duty.</li>
-                                            	<li>Shower before swimming.</li>
-                                            	<li>No running / No diving</li>
-                                            	<li>No horseplay or ball play</li>
-                                            	<li>No glass in pool area.</li>
-                                            	<li>No foreign objects in pool / whirlpool. </li>
-                                            	<li>No bubble bath, shampoo or foam in pool/ whirlpool.</li>
+                                            	<li>Los menores de edad deberán contar con supervisión de un adulto en la piscina.</li>
+                                            	<li>Nade bajo su propia responsabilidad. </li>
+                                            	<li>No hay guardavidas.</li>
+                                            	<li>Ducharse antes de nadar.</li>
+                                            	<li>No correr / No clavados</li>
+                                            	<li>No se permiten juegos de forcejeo (caballito) dentro de la piscina.</li>
+                                            	<li>No se permite ningún artículo de vidrio en las áreas de la piscina.</li>
+                                            	<li>No se permite introducir objetos que puedan ensuciar o dañar la piscina / jacuzzi.</li>
+                                            	<li>No se permite el uso de jabón para burbujas, shampoos o espumas en la piscina / jacuzzi.</li>
                                             </ul>
-                                            <p>These and some other simple rules that will be specified in detailed upon your arrival will be courteously but firmly enforced and supervised by the villa staff. We ask your cooperation in maintaining an environment that encourages relaxation and enjoyment.</p>
-                                            <p>Villa Aqua is located inside a family neighborhood so we ask you to respect the neighbors and the use of the facilities so that our next guests can enjoy their vacation as you do. Villa Aqua staff members have the authority to maintain order, to ensure the safety of staff and property, and to enforce these and other regulations. Directions given by villa staff must be followed. Disruptive behavior will not be tolerated and may result in the police being notified.</p>
+                                            <p>A su llegada se le informará sobre otras posibles reglas que deberá seguir durante su estancia. 
+                                                El personal supervisará el cumplimiento de las mismas, por lo que solicitamos de su entera
+                                                cooperación para mantener un ambiente armonioso y relajado para todos.
+                                            </p>
+                                            <p>Villa Aqua está ubicada dentro de un complejo residencial familiar, por lo que le pedimos 
+                                                que respete a los vecinos y utilice adecuadamente las instalaciones, para que nuestros 
+                                                próximos huéspedes puedan disfrutar de sus vacaciones de igual manera. El personal de 
+                                                Villa Aqua tiene la autoridad para hacer cumplir dichas reglas y salvaguardar la integridad 
+                                                física de los huéspedes, el personal y la propiedad, por lo que le sugerimos seguir las
+                                                instrucciones que cualquier colaborador le proporcione.
+                                            </p>
 
                                         </div>
                                     </div>
@@ -10982,7 +11010,7 @@ class Layout_View
             <div class="container">
                 <div class="page-header_wrap">
                     <div class="page-header_in">
-                        <h2 class="page-title">Villa Rules &amp; Policies</h2>
+                        <h2 class="page-title">Reglas  &amp; Políticas de La Villa</h2>
                     </div>
                 </div>
             </div>

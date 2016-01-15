@@ -1197,7 +1197,7 @@ class Layout_View
                                                                         			<li class="item-feature">Tours & Activities</li>
                                                                         		</ul>
                                                                         	</div>
-                                                                        	<p><i>*Contact your <a href="/contact-us/" target="_blank">Villa Host</a> for more info and pricing</i></p>
+                                                                        	<p><i>*Contact your <a href="mailto:villahost@villaaqua.com?Subject=Contact%20from%20Villa%20Aqua" target="_top">Villa Host</a> for more info and pricing</i></p>
                                                                         </div>
 
                                                                     </div>
@@ -1275,7 +1275,7 @@ class Layout_View
 	                                                                     			<li class="item-feature">2 phone lines</li>
 	                                                                     			<li class="item-feature">Free domestic and U.S. / Canada calls</li>
 	                                                                     			<li class="item-feature">Wireless Internet free of charge</li>
-	                                                                     			<li class="item-feature">Fax and Packaging services (ask your <a href="/contact-us/" target="_blank">Villa Host</a>)</li>
+	                                                                     			<li class="item-feature">Fax and Packaging services (ask your <a href="mailto:villahost@villaaqua.com?Subject=Contact%20from%20Villa%20Aqua" target="_top">Villa Host</a>)</li>
 	                                                                     		</ul>
                                                                         	</div>
                                                                         </div>
@@ -3270,7 +3270,7 @@ class Layout_View
 												in action or even take a class and learn how to prepare your favorite Mexican dish!
                                             </p>
                                             <p class="paragraph ng-attr-widget">
-												Contact your <a href="/contact-us/" target="_blank">Villa Host</a> for any questions or review our  <a href="/images/staff-and-services/menu-food-and-beverage.pdf" target="_blank">Food & Beverages Menu</a>
+												Contact your <a href="mailto:villahost@villaaqua.com?Subject=Contact%20from%20Villa%20Aqua" target="_top">Villa Host</a> for any questions or review our  <a href="/images/staff-and-services/menu-food-and-beverage.pdf" target="_blank">Food & Beverages Menu</a>
                                             </p>
                                         </div>
                                     </div>
@@ -3753,7 +3753,7 @@ class Layout_View
                                             <p class="paragraph ng-attr-widget">
 												<strong>Trainers are available by request.</strong> You can book a session or arrange a sustained 
 												personal fitness program during your stay. From private Yoga classes to Cross Fit 
-												specialists, contact your <a href="/contact-us/" target="_blank">Villa Host</a> to help you arrange your desired activity.
+												specialists, contact your <a href="mailto:villahost@villaaqua.com?Subject=Contact%20from%20Villa%20Aqua" target="_top">Villa Host</a> to help you arrange your desired activity.
                                             </p>
                                             
                                             <p class="paragraph ng-attr-widget">
@@ -4249,7 +4249,7 @@ class Layout_View
                             <div class="rental-service_item">
                                 <div class="rs-item_inner">
                                     <div class="rs-item_actions">
-                                        <a class="rs-item_action_link" href="/included/"><i class="fa fa-eye"></i></a>
+                                        <a class="rs-item_action_link" href="/included/#villahost"><i class="fa fa-eye"></i></a>
                                     </div>
                                     <div class="rs-item_content"><img width="570" height="446" src="/images/staff-and-services/Villa_Aqua_services_included_villa_host.jpg" class="attachment-full wp-post-image" alt="Exellent-view" />
                                     </div>
@@ -4264,7 +4264,7 @@ class Layout_View
                             <div class="rental-service_item">
                                 <div class="rs-item_inner">
                                     <div class="rs-item_actions">
-                                        <a class="rs-item_action_link" href="/included/"><i class="fa fa-eye"></i></a>
+                                        <a class="rs-item_action_link" href="/included/#chef"><i class="fa fa-eye"></i></a>
                                     </div>
                                     <div class="rs-item_content"><img width="570" height="446" src="/images/staff-and-services/Villa_Aqua_services_included_chef.jpg" class="attachment-full wp-post-image" alt="Berth" />
                                     </div>
@@ -4279,7 +4279,7 @@ class Layout_View
                             <div class="rental-service_item">
                                 <div class="rs-item_inner">
                                     <div class="rs-item_actions">
-                                        <a class="rs-item_action_link" href="/included/"><i class="fa fa-eye"></i></a>
+                                        <a class="rs-item_action_link" href="/included/#housekeeping"><i class="fa fa-eye"></i></a>
                                     </div>
                                     <div class="rs-item_content"><img width="570" height="446" src="/images/staff-and-services/Villa_Aqua_services_included_housekeeping.jpg" class="attachment-full wp-post-image" alt="Big-Yacht" />
                                     </div>
@@ -4294,7 +4294,7 @@ class Layout_View
                             <div class="rental-service_item">
                                 <div class="rs-item_inner">
                                     <div class="rs-item_actions">
-                                        <a class="rs-item_action_link" href="/included/"><i class="fa fa-eye"></i></a>
+                                        <a class="rs-item_action_link" href="/included/#maintenance"><i class="fa fa-eye"></i></a>
                                     </div>
                                     <div class="rs-item_content"><img width="570" height="446" src="/images/staff-and-services/Villa_Aqua_services_included_mantainance.jpg" class="attachment-full wp-post-image" alt="Villas-near-the-beach" />
                                     </div>
@@ -4309,7 +4309,7 @@ class Layout_View
                             <div class="rental-service_item">
                                 <div class="rs-item_inner">
                                     <div class="rs-item_actions">
-                                        <a class="rs-item_action_link" href="/at-extra-cost/"><i class="fa fa-eye"></i></a>
+                                        <a class="rs-item_action_link" href="/at-extra-cost/#foodandbeverage"><i class="fa fa-eye"></i></a>
                                     </div>
                                     <div class="rs-item_content"><img width="570" height="446" src="/images/staff-and-services/Villa_Aqua_services_not_included_food_&_beverage.jpg" class="attachment-full wp-post-image" alt="Over-the-Sea" />
                                     </div>
@@ -4324,7 +4324,7 @@ class Layout_View
                             <div class="rental-service_item">
                                 <div class="rs-item_inner">
                                     <div class="rs-item_actions">
-                                        <a class="rs-item_action_link" href="/at-extra-cost/"><i class="fa fa-eye"></i></a>
+                                        <a class="rs-item_action_link" href="/at-extra-cost/#spa"><i class="fa fa-eye"></i></a>
                                     </div>
                                     <div class="rs-item_content"><img width="570" height="446" src="/images/staff-and-services/Villa_Aqua_services_extra_cost_spa.jpg" class="attachment-full wp-post-image" alt="Above-the-clouds" />
                                     </div>
@@ -4339,7 +4339,7 @@ class Layout_View
                             <div class="rental-service_item">
                                 <div class="rs-item_inner">
                                     <div class="rs-item_actions">
-                                        <a class="rs-item_action_link" href="/at-extra-cost/"><i class="fa fa-eye"></i></a>
+                                        <a class="rs-item_action_link" href="/at-extra-cost/#transportation"><i class="fa fa-eye"></i></a>
                                     </div>
                                     <div class="rs-item_content"><img width="570" height="446" src="/images/staff-and-services/Villa_Aqua_services_not_included_transportation.jpg" class="attachment-full wp-post-image" alt="Ready-to-way" />
                                     </div>
@@ -4354,7 +4354,7 @@ class Layout_View
                             <div class="rental-service_item">
                                 <div class="rs-item_inner">
                                     <div class="rs-item_actions">
-                                        <a class="rs-item_action_link" href="/at-extra-cost/"><i class="fa fa-eye"></i></a>
+                                        <a class="rs-item_action_link" href="/at-extra-cost/#entertainment"><i class="fa fa-eye"></i></a>
                                     </div>
                                     <div class="rs-item_content"><img width="570" height="446" src="/images/staff-and-services/Villa_aqua_entertainment.jpg" class="attachment-full wp-post-image" alt="Stylish-convertible" />
                                     </div>
@@ -4512,7 +4512,7 @@ class Layout_View
                                     </div>
                                 </div>
                             </div>
-                            <div class="vc_col-sm-6 wpb_column vc_column_container ">
+                            <div class="vc_col-sm-6 wpb_column vc_column_container" id="villahost">
                                 <div class="wpb_wrapper">
                                     <div class="vc_custom_heading ">
                                         <h2 style="color: 333;text-align: left;font-weight:300;font-style:normal">Villa Host</h2>
@@ -4538,7 +4538,7 @@ class Layout_View
                                             </p>
                                             <p class="paragraph ng-attr-widget">
                                                 <span class="ng-directive ng-binding" style="">
-                                                    Please contact your <a href="/contact-us/" target="_blank">Villa Aqua Host</a>, who is always at your service! 
+                                                    Please contact your <a href="mailto:villahost@villaaqua.com?Subject=Contact%20from%20Villa%20Aqua" target="_blank">Villa Aqua Host</a>, who is always at your service! 
                                                 </span>
                                             </p>
                                         </div>
@@ -4556,7 +4556,7 @@ class Layout_View
 						</div>
 						
                         <!-- Row Backgrounds -->
-                        <div class="vc_row wpb_row vc_row-fluid top-margin horizontal-block">
+                        <div class="vc_row wpb_row vc_row-fluid top-margin horizontal-block" id="chef">
                             <div class="vc_col-sm-6 wpb_column vc_column_container ">
                                 <div class="wpb_wrapper">
                                     <div class="vc_custom_heading">
@@ -4643,7 +4643,7 @@ class Layout_View
                                     </div>
                                 </div>
                             </div>
-                            <div class="vc_col-sm-6 wpb_column vc_column_container ">
+                            <div class="vc_col-sm-6 wpb_column vc_column_container " id="housekeeping">
                                 <div class="wpb_wrapper">
                                     <div class="vc_custom_heading ">
                                         <h2 style="color: 333;text-align: left;font-weight:300;font-style:normal">Housekeeping Service</h2>
@@ -4683,9 +4683,10 @@ class Layout_View
 								<div class="stm-separator"><span class="stm-separator_holder __line"><span class="stm-separator_line"></span></span><span class="stm-separator_holder __icon"></span><span class="stm-separator_holder __line"><span class="stm-separator_line"></span></span></div>
 							</div> 
 						</div>
+						
                         <!-- Row Backgrounds -->
                         <div class="upb_color" data-bg-override="ex-full" data-bg-color="#ffffff" data-fadeout="" data-fadeout-percentage="30" data-parallax-content="" data-parallax-content-sense="30" data-row-effect-mobile-disable="true" data-img-parallax-mobile-disable="false" data-rtl="false" data-custom-vc-row="" data-vc="4.6.2" data-theme-support="" data-overlay="false" data-overlay-color="" data-overlay-pattern="" data-overlay-pattern-opacity="" data-overlay-pattern-size=""></div>
-                        <div class="vc_row wpb_row vc_row-fluid top-margin">
+                        <div class="vc_row wpb_row vc_row-fluid top-margin" id="maintenance">
                             <div class="vc_col-sm-6 wpb_column vc_column_container ">
                                 <div class="wpb_wrapper">
                                     <div class="vc_custom_heading">
@@ -4830,7 +4831,7 @@ You can recognize our maintenance team for their uniform.
                                                  			<li class="item-feature">Entertainment (music, lessons, shows, etc.)</li>
                                                  			<li class="item-feature">Tours & Activities</li>
                                                 		</ul>
-                                                		<p><i>*Contact your <a href="/contact-us/" target="_blank">Villa Host</a> for more info and pricing</i></p>
+                                                		<p><i>*Contact your <a href="mailto:villahost@villaaqua.com?Subject=Contact%20from%20Villa%20Aqua" target="_top">Villa Host</a> for more info and pricing</i></p>
                                                 	</div>
                                                 </div>
                                             </div>
@@ -4888,7 +4889,7 @@ You can recognize our maintenance team for their uniform.
                                     </div>
                                 </div>
                             </div>
-                            <div class="vc_col-sm-6 wpb_column vc_column_container ">
+                            <div class="vc_col-sm-6 wpb_column vc_column_container" id="foodandbeverage">
                                 <div class="wpb_wrapper">
                                     <div class="vc_custom_heading ">
                                         <h2 style="color: 333;text-align: left;font-weight:300;font-style:normal">Food & Beverage</h2>
@@ -4960,7 +4961,7 @@ You can recognize our maintenance team for their uniform.
                                                                     <div class="wpb_wrapper">
 							                                            <p class="paragraph ng-attr-widget">
 							                                                <span class="ng-directive ng-binding" style="">
-							                                                    Please communicate your <a href="/contact-us/" target="_blank">Villa Host</a> and/or chef about any allergies, 
+							                                                    Please communicate your <a href="mailto:villahost@villaaqua.com?Subject=Contact%20from%20Villa%20Aqua" target="_top">Villa Host</a> and/or chef about any allergies, 
 							                                                    dietary restrictions or food preferences prior to your arrival in 
 							                                                    order to customize your meal preparations. 
 							                                                </span>
@@ -5052,7 +5053,7 @@ You can recognize our maintenance team for their uniform.
 						</div>
 						
                         <!-- Row Backgrounds -->
-                        <div class="vc_row wpb_row vc_row-fluid top-margin horizontal-block">
+                        <div class="vc_row wpb_row vc_row-fluid top-margin horizontal-block" id="spa">
                             <div class="vc_col-sm-6 wpb_column vc_column_container ">
                                 <div class="wpb_wrapper">
                                     <div class="vc_custom_heading">
@@ -5084,7 +5085,7 @@ You can recognize our maintenance team for their uniform.
                                             
                                             <p class="paragraph ng-attr-widget">
                                                 <span class="ng-directive ng-binding" style="">
-                                               	 Contact your <a href="/contact-us/" target="_blank">Villa Host</a> for more info and reservations. We recommend a<strong> minimum of 24 hour</strong> notice to guarantee 
+                                               	 Contact your <a href="mailto:villahost@villaaqua.com?Subject=Contact%20from%20Villa%20Aqua" target="_top">Villa Host</a> for more info and reservations. We recommend a<strong> minimum of 24 hour</strong> notice to guarantee 
                                                	 availability.
                                                 </span>
                                             </p>
@@ -5139,7 +5140,7 @@ You can recognize our maintenance team for their uniform.
                                     </div>
                                 </div>
                             </div>
-                            <div class="vc_col-sm-6 wpb_column vc_column_container ">
+                            <div class="vc_col-sm-6 wpb_column vc_column_container" id="transportation">
                                 <div class="wpb_wrapper">
                                     <div class="vc_custom_heading ">
                                         <h2 style="color: 333;text-align: left;font-weight:300;font-style:normal">Transportation</h2>
@@ -5164,7 +5165,7 @@ You can recognize our maintenance team for their uniform.
                                             </p>
                                             <p class="paragraph ng-attr-widget">
                                                 <span class="ng-directive ng-binding" style="">
-                                                   Contact your <a href="/contact-us/" target="_blank">Villa Host</a> for options and pricing.
+                                                   Contact your <a href="mailto:villahost@villaaqua.com?Subject=Contact%20from%20Villa%20Aqua" target="_top">Villa Host</a> for options and pricing.
                                                 </span>
                                             </p>
                                         </div>
@@ -5185,7 +5186,7 @@ You can recognize our maintenance team for their uniform.
 						</div>
                         <!-- Row Backgrounds -->
                         <div class="upb_color" data-bg-override="ex-full" data-bg-color="#ffffff" data-fadeout="" data-fadeout-percentage="30" data-parallax-content="" data-parallax-content-sense="30" data-row-effect-mobile-disable="true" data-img-parallax-mobile-disable="false" data-rtl="false" data-custom-vc-row="" data-vc="4.6.2" data-theme-support="" data-overlay="false" data-overlay-color="" data-overlay-pattern="" data-overlay-pattern-opacity="" data-overlay-pattern-size=""></div>
-                        <div class="vc_row wpb_row vc_row-fluid top-margin">
+                        <div class="vc_row wpb_row vc_row-fluid top-margin" id="entertainment">
                             <div class="vc_col-sm-6 wpb_column vc_column_container ">
                                 <div class="wpb_wrapper">
                                     <div class="vc_custom_heading">
@@ -5213,7 +5214,7 @@ You can recognize our maintenance team for their uniform.
                                             </p>
                                             <p class="paragraph ng-attr-widget">
                                                 <span class="ng-directive ng-binding" style="">
-                                                    The options are endless. Just think of something you would like to do and our <a href="/contact-us/" target="_blank">Villa Host</a> will try to get it for you!
+                                                    The options are endless. Just think of something you would like to do and our <a href="mailto:villahost@villaaqua.com?Subject=Contact%20from%20Villa%20Aqua" target="_top">Villa Host</a> will try to get it for you!
                                                 </span>
                                             </p>
                                         </div>
@@ -6314,58 +6315,6 @@ You can recognize our maintenance team for their uniform.
 	                                            
 	                                            <div class="wpb_accordion wpb_content_element  not-column-inherit" data-collapsible="" data-vc-disable-keydown="false" data-active-tab="1">
                                                     <div class="wpb_wrapper wpb_accordion_wrapper ui-accordion">
-                                                        <div class="wpb_accordion_section group">
-                                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post"><strong>REEF CLUB AT PLAYACAR</strong></a></h3>
-                                                            <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
-                                                                <div class="wpb_text_column wpb_content_element ">
-                                                                    <div class="wpb_wrapper">
-                                                                        <p class="paragraph ng-attr-widget">
-																			Just a couple of minutes driving from Villa Aqua you will find The Reef Playacar Club, a 
-																			Resort that hosts the beach club for Playacar Community. You just need to present your VIP 
-																			cards at the hotel's reception and then you can spend a nice day at the beach, which includes 
-																			the usage of beach lounges, swimming pools, kids club, daily activities and more from 9am until 5pm.
-							                                            </p>
-							                                            
-							                                            <p class="paragraph ng-attr-widget">Be aware that due to the fact that The Playacar Reef is 
-							                                            actually an ALL INCLUSIVE Resort you cannot drink or eat a la carte so If you are willing to
-							                                             take some drinks or eat something there is a Day pass for 50 usd per adult and 25usd per
-							                                              children (which is a 50% discounted rate) for Playacar's VIP card holders.
-							                                            </p>
-							                                            <p class="paragraph ng-attr-widget">Some of the amenities and activities that the Day Pass may include from 9pm to 4pm are:</p>
-							                                            <ul>
-							                                            	<li>All meals, snacks, drinks </li>
-							                                            	<li>2 Swimming pools</li>
-							                                            	<li>1 Jacuzzi</li>
-							                                            	<li>1 Kid's pool</li>
-							                                            	<li>1 Kid´s Club (ages 4-12)</li>
-							                                            	<li>Aerobics</li>
-							                                            	<li>Aquaerobics</li>
-							                                            	<li>Stretching</li>
-							                                            	<li>Spanish lessons</li>
-							                                            	<li>Dance lessons</li>
-							                                            	<li>Water Basketball</li>
-							                                            	<li>Beach Volleyball </li>
-							                                            	<li>Waterpolo</li>
-							                                            	<li>Board games</li>
-							                                            	<li>Basic equipped Gym</li>
-							                                            	<li>1 Tennis court (day use only)</li>
-							                                            	<li>Reef Marina Dive Shop</li>
-							                                            	<li>Sailboats</li>
-							                                            	<li>Kayaking</li>
-							                                            	<li>Scuba demo in pool</li>
-							                                            	<li>Windsurfing</li>
-							                                            	<li>Snorkeling gear</li>
-							                                            	<li>Bicycles </li>
-							                                            	<li>All tips and taxes</li>
-							                                            </ul>
-							                                            <p class="paragraph ng-attr-widget">
-							                                            	<strong>Note: </strong>It may get very crowded in some seasons of the year, so we recommend other 
-							                                            	beach clubs to receive a better service.
-							                                            </p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
                                                         
                                                         <div class="wpb_accordion_section group">
                                                             <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post"><strong>CORALINA</strong></a></h3>
@@ -6481,7 +6430,62 @@ You can recognize our maintenance team for their uniform.
                                                             </div>
                                                         </div>
                                                         
+                                                        <div class="wpb_accordion_section group">
+                                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post"><strong>REEF CLUB AT PLAYACAR</strong></a></h3>
+                                                            <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
+                                                                <div class="wpb_text_column wpb_content_element ">
+                                                                    <div class="wpb_wrapper">
+                                                                        <p class="paragraph ng-attr-widget">
+																			Just a couple of minutes driving from Villa Aqua you will find The Reef Playacar Club, a 
+																			Resort that hosts the beach club for Playacar Community. You just need to present your VIP 
+																			cards at the hotel's reception and then you can spend a nice day at the beach, which includes 
+																			the usage of beach lounges, swimming pools, kids club, daily activities and more from 9am until 5pm.
+							                                            </p>
+							                                            
+							                                            <p class="paragraph ng-attr-widget">Be aware that due to the fact that The Playacar Reef is 
+							                                            actually an ALL INCLUSIVE Resort you cannot drink or eat a la carte so If you are willing to
+							                                             take some drinks or eat something there is a Day pass for 50 usd per adult and 25usd per
+							                                              children (which is a 50% discounted rate) for Playacar's VIP card holders.
+							                                            </p>
+							                                            <p class="paragraph ng-attr-widget">Some of the amenities and activities that the Day Pass may include from 9pm to 4pm are:</p>
+							                                            <ul>
+							                                            	<li>All meals, snacks, drinks </li>
+							                                            	<li>2 Swimming pools</li>
+							                                            	<li>1 Jacuzzi</li>
+							                                            	<li>1 Kid's pool</li>
+							                                            	<li>1 Kid´s Club (ages 4-12)</li>
+							                                            	<li>Aerobics</li>
+							                                            	<li>Aquaerobics</li>
+							                                            	<li>Stretching</li>
+							                                            	<li>Spanish lessons</li>
+							                                            	<li>Dance lessons</li>
+							                                            	<li>Water Basketball</li>
+							                                            	<li>Beach Volleyball </li>
+							                                            	<li>Waterpolo</li>
+							                                            	<li>Board games</li>
+							                                            	<li>Basic equipped Gym</li>
+							                                            	<li>1 Tennis court (day use only)</li>
+							                                            	<li>Reef Marina Dive Shop</li>
+							                                            	<li>Sailboats</li>
+							                                            	<li>Kayaking</li>
+							                                            	<li>Scuba demo in pool</li>
+							                                            	<li>Windsurfing</li>
+							                                            	<li>Snorkeling gear</li>
+							                                            	<li>Bicycles </li>
+							                                            	<li>All tips and taxes</li>
+							                                            </ul>
+							                                            <p class="paragraph ng-attr-widget">
+							                                            	<strong>Note: </strong>It may get very crowded in some seasons of the year, so we recommend other 
+							                                            	beach clubs to receive a better service.
+							                                            </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        
                                                     </div>
+                                                    
+                                                    
                                                 </div>
                                                 <br>
                                                 <p class="paragraph ng-attr-widget">
@@ -11416,20 +11420,19 @@ You can recognize our maintenance team for their uniform.
                         <aside id="stm_tweets-3 " class="widget widget_stm_tweets col-xs-12 col-sm-6 col-md-3 col-lg-3 ">
                         	<h4 class="widget-title " style="text-align: center;">Weather</h4>
                             <div style="margin-top:20px">
+								
+								
+								<link rel="StyleSheet" href="http://weatherandtime.net/new_wid/w_2/style.css" type="text/css" media="screen">
 								<div id="ww_2">
-								    <ul id="weather02_body_3531673" style="position: relative; width: 177px; height: 73px; margin: 0px auto 10px; list-style: none;">
-								    	<li style="position:absolute; margin:0px auto 10px auto; left:10px;">
-								    		<img width="60px" height="60px" src="http://www.weatherandtime.net/images/icons/5/10d.png">
-								    	</li>
-								    	<li style="position:absolute; margin:0px auto 10px auto; left:10px;">
-								    		<img width="60px" height="60px" src="http://www.weatherandtime.net/images/icons/5/04d.png">
-								    	</li>
-								        <li id="weather02_t_3531673" class="weather02_t">+25°C</li>
-								        <li id="weather02_city_3531673" class="weather02_city">Playacar, Mex.</li>
-								        <li id="weather02_date_3531673" class="weather02_date">2015-12-19</li>
+								    <ul id="weather02_body_3521342" style="position: relative; width: 177px; height: 73px; margin: 0px auto 10px; list-style: none;"><li style="position:absolute; margin:0px auto 10px auto; left:10px;"><img width="60px" height="60px" src="http://weatherandtime.net/images/icons/5/10d.png"></li>
+								        <li id="weather02_t_3521342" class="weather02_t">+23°C</li>
+								        <li id="weather02_city_3521342" class="weather02_city"><a href="http://weatherandtime.net/en/North-America/mexico/playa-del-carmen-weather.html" title="Playa del Carmen">Playa del Carmen</a></li>
+								        <li id="weather02_date_3521342" class="weather02_date">2016-01-15</li>
+								        
 								    </ul>
 								</div>
-								<script type="text/javascript" src="http://www.weatherandtime.net/w_4.js?city=3531673&amp;lang=en&amp;cf=C&amp;icon=5"></script>
+								<script type="text/javascript" src="http://weatherandtime.net/w_4.js?city=3521342&amp;lang=en&amp;cf=C&amp;icon=5"></script>
+								
 						      </div>
                         </aside>
                     </div>

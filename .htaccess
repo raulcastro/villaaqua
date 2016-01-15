@@ -50,6 +50,7 @@ RewriteRule ^arriving-to-the-villa-playacar-playa-del-carmen/$ 	/arriving-to-the
 # Reviews
 RewriteRule ^reviews/$ 								/back-working/reviews/
 
+
 # Espagnol
 RewriteRule ^es/overview/$ 							/overview.php?lang=es
 RewriteRule ^es/las-habitaciones/$ 					/the-rooms.php?lang=es

@@ -6,6 +6,21 @@ $owneridses=1;
 $dateres=date("Y-m-d");?>
 
 <?php
+
+ function cleanQuery($string){ 
+           if(get_magic_quotes_gpc())  // prevents duplicate backslashes 
+           { 
+           $string = stripslashes($string); 
+           } 
+           $badWords = array("/delete/i", "/update/i","/union/i","/insert/i","/drop/i","/http/i","/--/i","/script/i","/.css/i"); 
+           $string = preg_replace($badWords, "", $string); 
+
+           
+          $string = mysql_escape_string($string); 
+          return $string; 
+           } 
+		   
+		   
 	  $villaname="Villa Aqua";
 
 
@@ -31,17 +46,52 @@ $bdeparture=$_POST["departure"];
 $departure=date("Y-m-d",strtotime($bdeparture));
 $villa=$villaid;
 $owner=$owneridses;
-$staffcomments=$_POST["comments"];
-$suppliersnote=$_POST["notes"];
+$staffcomments=cleanQuery($_POST["comments"]);
+$suppliersnote=cleanQuery($_POST["notes"]);
 $emailcontact=$_POST["email"];
 $agencia=$_POST["agencia"];
+if  ($_POST["payment1"]!=""){
+$bpago1=$_POST["payment1"];
+$vpago1=date("Y-m-d",strtotime($bpago1));
+	}
+if  ($_POST["payment2"]!=""){
+$bpago2=$_POST["payment2"];
+$vpago2=date("Y-m-d",strtotime($bpago2));
+}
+
+if  (is_numeric($_POST["rooms"])){
+$vrooms=$_POST["rooms"];
+}else{
+$vrooms="NULL";
+	}		
+if  (is_numeric($_POST["pax"])){
+$vpax=$_POST["pax"];
+}else{
+$vpax="NULL";
+	}			
 
 $connection = mysql_connect($servername,$username, $password);
 if (!$connection){
   die('Could not connect: ' . mysql_error()); }
 mysql_select_db($db, $connection);
-$sql = "update availability set estatus=$estatus, client='$client', agencia='$agencia', arrival='$arrival', emailcontact='$emailcontact', departure='$departure', staffcomments='$staffcomments', suppliersnote='$suppliersnote' where idres=".$idreserva;
+$sql = "update availability set estatus=$estatus, client='$client', agencia='$agencia', arrival='$arrival', emailcontact='$emailcontact', departure='$departure', staffcomments='$staffcomments', suppliersnote='$suppliersnote',  pax=$vpax, rooms=$vrooms";
+if ($vpago1){
+$sql =$sql .", payment1='$vpago1'";
+}else{
+	$sql =$sql .", payment1=NULL";
+	}
+if ($vpago2){
+$sql =$sql .", payment2='$vpago2'";
+}else{
+$sql =$sql .", payment2=NULL";	
+	}
+
+$sql =$sql . " where idres=".$idreserva;
+
+
 mysql_query ($sql);
+
+
 mysql_close ($connection);
 $actualizo=1;
 }
@@ -57,10 +107,29 @@ $villa=$villaid;
 $owner=$owneridses;
 $estatus=$_POST["estatus"];
 $dateres=date("Y-m-d");
-$staffcomments=$_POST["comments"];
-$suppliersnote=$_POST["notes"];
+$staffcomments=cleanQuery($_POST["comments"]);
+$suppliersnote=cleanQuery($_POST["notes"]);
 $emailcontact=$_POST["email"];
 $agencia=$_POST["agencia"];
+if  ($_POST["payment1"]!=""){
+$bpago1=$_POST["payment1"];
+$vpago1=date("Y-m-d",strtotime($bpago1));
+}
+if  ($_POST["payment2"]!=""){
+$bpago2=$_POST["payment2"];
+$vpago2=date("Y-m-d",strtotime($bpago2));
+}
+if  (is_numeric($_POST["rooms"])){
+$vrooms=$_POST["rooms"];
+}else{
+$vrooms="NULL";
+	}		
+if  (is_numeric($_POST["pax"])){
+$vpax=$_POST["pax"];
+}else{
+$vpax="NULL";
+	}			
+
 
 $connection = mysql_connect($servername,$username, $password);
 if (!$connection)
@@ -69,9 +138,23 @@ if (!$connection)
   }
 mysql_select_db($db, $connection);
 
-$sql = "INSERT INTO availability (client, arrival, departure, villa, owner, agencia, estatus, dateres, staffcomments, suppliersnote, emailcontact)";
-$sql = $sql." VALUES('$client', '$arrival', '$departure', '$villa', '$owner', '$agencia', '$estatus', '$dateres', '$staffcomments', '$suppliersnote','$emailcontact')";
+$sql = "INSERT INTO availability (client, arrival, departure, villa, owner, agencia, estatus, dateres, staffcomments, suppliersnote, emailcontact, pax, rooms)";
+$sql = $sql." VALUES('$client', '$arrival', '$departure', '$villa', '$owner', '$agencia', '$estatus', '$dateres', '$staffcomments', '$suppliersnote','$emailcontact' , $vpax, $vrooms)";
 mysql_query ($sql);
+
+$last = mysql_insert_id(); 
+
+if ($vpago1){
+$sql ="update availability set payment1='$vpago1' where idres=".$last;
+mysql_query ($sql);
+}
+if ($vpago2){
+$sql ="update availability set payment2='$vpago2' where idres=".$last;
+mysql_query ($sql);
+	}
+
+
+
 mysql_close ($connection);
 $inserto=1;
 }
@@ -254,11 +337,6 @@ function validar(formulario) {
 }
 
 </script>
-<script type="text/javascript">
-function NewWindow(mypage,myname,w,h,scroll){var winl=(screen.width-w)/2;var wint=(screen.height-h)/2;winprops='height='+h+',width='+w+',top='+wint+',left='+winl+',scrollbars='+scroll+',resizable'
-win=window.open(mypage,myname,winprops)
-if(parseInt(navigator.appVersion)>=4){win.window.focus();}}
-</script>
 <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.1/themes/base/jquery-ui.css" />
   <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
   <script src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
@@ -290,67 +368,67 @@ if(parseInt(navigator.appVersion)>=4){win.window.focus();}}
       buttonImageOnly: true
     });
   });
+  $(function() {
+    $( "#payment1" ).datepicker({
+      showOn: "button",
+      buttonImage: "images/calendarb.png",
+      buttonImageOnly: true
+    });
+  });
+  $(function() {
+    $( "#payment2" ).datepicker({
+      showOn: "button",
+      buttonImage: "images/calendarb.png",
+      buttonImageOnly: true
+    });
+  });
   </script>
 </head>
 
 <body>
-<table width="945" border="0" align="center" cellpadding="10" cellspacing="0" bgcolor="#FFFFFF">
+<table width="1045" border="0" align="center" cellpadding="10" cellspacing="0" bgcolor="#FFFFFF">
     
     <tr>
       <td valign="bottom"><table width="100%" border="0" cellspacing="0" cellpadding="0">
         <tr>
-          <td width="44%" height="99"><a href="/admin/"><img src="images/logo-villaaqua.png" width="340" height="90" border="0" /></a></td>
+          <td width="44%" height="99"><img src="images/logo-villaaqua.png" width="340" height="90" /></td>
           <td width="56%"><div align="right">
             <table width="300px" border="0" cellpadding="4" cellspacing="1">
               <tr>
                 <td align="right" nowrap="nowrap"><a href="villarate.php" class="Aqua">Rates</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="reviews.php" class="Aqua">Reviews</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="login.php" class="Aqua">Log out</a></td>
               </tr>
-            </table>
-          </div></td>
+              </table>
+          </div>
+          </td>
         </tr>
-      </table></td>
+      </table>        </td>
     </tr>
   <tr>
-    <td width="925"><table width="803" border="0" cellpadding="2" cellspacing="1" bgcolor="#CCCCCC">
-      <tr>
-        <td width="33" bgcolor="#003366">&nbsp;</td>
-        <td width="106" bgcolor="#003366"><div align="center" class="style11">Fecha</div></td>
-        <td width="130" bgcolor="#003366"><div align="center" class="style11">Cliente</div></td>
-        <td width="129" bgcolor="#003366"><div align="center" class="style11">Email</div></td>
-        <td width="180" bgcolor="#003366"><div align="center" class="style11">Calificación Gral</div></td>
-        <td width="144" bgcolor="#003366"><div align="center" class="style11">Publicar</div></td>
-        <td width="45" bgcolor="#003366">&nbsp;</td>
-      </tr>
-      <?php $connection = mysql_connect($servername,$username, $password);
-mysql_select_db($db, $connection);
-
-$query="select * from reviews where borrado=0 order by idreview desc";
-$result = mysql_query($query);
-	while($row = mysql_fetch_array($result)){
-		$fecha=date("M d, y",strtotime($row['date']));
-		?>
-      <tr id="res<?php echo $row["idres"];?>" class="bablanco">
-        <td ><div align="center"><a href="reviewdetalle.php?idr=<?php echo $row["idreview"];?>" onclick="NewWindow(this.href,'Review','450','650','yes');return false;" ><img src="images/icon_edit.png" width="16" height="16" border="0" /></a></div></td>
-        <td align="center"><?php echo $fecha;?></td>
-        <td align="left" nowrap="nowrap"><?php echo $row["name"];?></td>
-        <td align="left" nowrap="nowrap"><?php echo $row["email"];?></td>
-        <td align="center"><img src="images/cali<?php echo $row["generalRate"];?>.png" width="126" height="11" /></td>
-        <td align="center"><?php if ($row["publicar"]==1){?>Si<?php }?>
-          <?php if ($row["publicar"]==0){?>
-          NO
-  <?php }?></td>
-        <td align="center"><a href="enviareview.php?idr=<?php echo $row["idreview"];?>" onclick="NewWindow(this.href,'Review','450','300','yes');return false;" ><img src="images/mail.gif" width="25" height="15" border="0" /></a></td>
-      </tr>
-      <?php }
-?>
-    </table>
-      <br />
-      <?php if(!$_REQUEST["edita"]){ ?>
-    <?php } //termina forma de inserción ?></td>
-  </tr>
-  <tr>
-    <td>&nbsp;</td>
-  </tr>
-</table>
-</body>
-</html>
+    <td width="925"><br />
+      <?php if(!$_REQUEST["edita"]){ ?>  
+    
+<table width="100%" border="0" cellpadding="6" cellspacing="1" bgcolor="#999999">
+        <tr>
+          <td bgcolor="#FFFFFF"><table border="0" cellpadding="0" cellspacing="0" bgcolor="#999999">
+        <tr>
+          <td width="400" valign="top" bgcolor="#FFFFFF">
+          <?php if (! is_numeric($_REQUEST["id"])){?>
+          <form id="form1" name="form1" method="post" onSubmit = "return validar(this)" action="index.php"><table width="390" border="0" cellpadding="3" cellspacing="0" bgcolor="#FFFFFF">
+            <tbody>
+              <tr>
+                <td width="92" class="leftMargin_10"><span >Property:</span></td>
+                <td width="264"><strong><span id="villadiv"><?php echo $villaname; ?></span><input name="villa" type="hidden" id="villa" value="1"/></strong></td>
+              </tr>
+              <tr>
+                <td class="leftMargin_10"><span >Reserved By:</span> <br />
+                  Agency/Direct </td>
+                <td><div id="ownerdiv"></div> <input  id="agencia" name="agencia"  style="width:200px" />
+                <input name="owner" type="hidden" id="owner" value="1"/></td>
+              </tr>
+              <tr>
+                <td class="leftMargin_10">Client Name:</td>
+                <td><input  id="client" name="client"  style="width:200px" /></td>
+              </tr>
+              <tr>
+                <td class="leftMargin_10">Contact Email:</td>
+             
