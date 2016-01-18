@@ -54,6 +54,40 @@ mysql_query ($sql);
 $inserto=1;
 }
 
+if ($_GET['onIndex'] == on)
+{
+	$sql = 'UPDATE reviews SET onIndex = 1 WHERE idreview= '.$idr;
+	mysql_query ($sql);
+	
+}
+else 
+{
+	$sql = 'UPDATE reviews SET onIndex = 0 WHERE idreview= '.$idr;
+	mysql_query ($sql);
+}
+
+if ($_GET['onReviews'] == on)
+{
+	$sql = 'UPDATE reviews SET onSection = 1 WHERE idreview= '.$idr;
+	mysql_query ($sql);
+
+}
+else
+{
+	$sql = 'UPDATE reviews SET onSection = 0 WHERE idreview= '.$idr;
+	mysql_query ($sql);
+}
+
+if ($_GET['idr'])
+{
+	$query = 'SELECT * FROM reviews WHERE idreview = '.$idr;
+	$result = mysql_query($query);
+	$row = mysql_fetch_assoc($result);
+	$publish = $row;
+	echo $row['onIndex'].'<br>'.$row['onSection'];
+}
+
+
 ?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -690,8 +724,8 @@ of deals and promotions?
   	<br><br>
   	<form action="reviewdetalle.php" method="get">
   		<input type="hidden" name="idr" value="<?php echo $idr; ?>" >
-	  	<div class="left"><input type="checkbox" name="onIndex" value="Bike">On the index</div>
-	  	<div class="right"><input type="checkbox" name="onReviews" value="Bike">On reviews</div>
+	  	<div class="left"><input type="checkbox" name="onIndex" value="on" <?php if ($publish['onIndex'] == 1) echo 'checked'; ?>>On the index</div>
+	  	<div class="right"><input type="checkbox" name="onReviews" value="on" <?php if ($publish['onSection'] == 1) echo 'checked'; ?>>On reviews</div>
 	  	<br>
 	  	<input type="submit" value="Save">
 	</form>

@@ -330,7 +330,7 @@ $result = mysql_query($query);
 		$fecha=date("M d, y",strtotime($row['date']));
 		?>
       <tr id="res<?php echo $row["idres"];?>" class="bablanco">
-        <td ><div align="center"><a href="reviewdetalle.php?idr=<?php echo $row["idreview"];?>" onclick="NewWindow(this.href,'Review','450','650','yes');return false;" ><img src="images/icon_edit.png" width="16" height="16" border="0" /></a></div></td>
+        <td ><div align="center"><a href="reviewdetalle.php?idr=<?php echo $row["idreview"];?>&onIndex<?php echo $row['onIndex'];?>" onclick="NewWindow(this.href,'Review','450','650','yes');return false;" ><img src="images/icon_edit.png" width="16" height="16" border="0" /></a></div></td>
         <td align="center"><?php echo $fecha;?></td>
         <td align="left" nowrap="nowrap"><?php echo $row["name"];?></td>
         <td align="left" nowrap="nowrap"><?php echo $row["email"];?></td>
