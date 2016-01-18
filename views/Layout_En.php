@@ -6482,10 +6482,7 @@ You can recognize our maintenance team for their uniform.
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        
                                                     </div>
-                                                    
-                                                    
                                                 </div>
                                                 <br>
                                                 <p class="paragraph ng-attr-widget">
@@ -6501,7 +6498,6 @@ You can recognize our maintenance team for their uniform.
                                                 	Years ago, topless sunbathing was a crime in Mexico, but the law is not enforced these days in Playa; however, women should be aware that 
                                                 	provocative clothes or nudity might invite unwanted attention/comments in a country where nudism is not common.
                                                 </p>
-                                                
                                             </div>
                                         </div>
                                     </div>

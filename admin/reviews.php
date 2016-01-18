@@ -311,14 +311,15 @@ if(parseInt(navigator.appVersion)>=4){win.window.focus();}}
       </table></td>
     </tr>
   <tr>
-    <td width="925"><table width="803" border="0" cellpadding="2" cellspacing="1" bgcolor="#CCCCCC">
+    <td width="925"><table width="900" border="0" cellpadding="2" cellspacing="1" bgcolor="#CCCCCC">
       <tr>
         <td width="33" bgcolor="#003366">&nbsp;</td>
         <td width="106" bgcolor="#003366"><div align="center" class="style11">Fecha</div></td>
         <td width="130" bgcolor="#003366"><div align="center" class="style11">Cliente</div></td>
         <td width="129" bgcolor="#003366"><div align="center" class="style11">Email</div></td>
         <td width="180" bgcolor="#003366"><div align="center" class="style11">Calificación Gral</div></td>
-        <td width="144" bgcolor="#003366"><div align="center" class="style11">Publicar</div></td>
+        <td width="144" bgcolor="#003366"><div align="center" class="style11">Inicio</div></td>
+        <td width="144" bgcolor="#003366"><div align="center" class="style11">Comentarios</div></td>
         <td width="45" bgcolor="#003366">&nbsp;</td>
       </tr>
       <?php $connection = mysql_connect($servername,$username, $password);
@@ -328,17 +329,30 @@ $query="select * from reviews where borrado=0 order by idreview desc";
 $result = mysql_query($query);
 	while($row = mysql_fetch_array($result)){
 		$fecha=date("M d, y",strtotime($row['date']));
+		$onIndex = "off";
+		$onReview = "off";
+		
+		if ($row['onIndex'] == 1)
+			$onIndex = "on";
+		
+		if ($row['onSection'] == 1)
+			$onReview = 'on';
 		?>
       <tr id="res<?php echo $row["idres"];?>" class="bablanco">
-        <td ><div align="center"><a href="reviewdetalle.php?idr=<?php echo $row["idreview"];?>&onIndex<?php echo $row['onIndex'];?>" onclick="NewWindow(this.href,'Review','450','650','yes');return false;" ><img src="images/icon_edit.png" width="16" height="16" border="0" /></a></div></td>
+        <td ><div align="center"><a href="reviewdetalle.php?idr=<?php echo $row["idreview"];?>&onIndex=<?php echo $onIndex;?>&onReviews=<?php echo $onReview;?>" onclick="NewWindow(this.href,'Review','450','650','yes');return false;" ><img src="images/icon_edit.png" width="16" height="16" border="0" /></a></div></td>
         <td align="center"><?php echo $fecha;?></td>
         <td align="left" nowrap="nowrap"><?php echo $row["name"];?></td>
         <td align="left" nowrap="nowrap"><?php echo $row["email"];?></td>
         <td align="center"><img src="images/cali<?php echo $row["generalRate"];?>.png" width="126" height="11" /></td>
-        <td align="center"><?php if ($row["publicar"]==1){?>Si<?php }?>
-          <?php if ($row["publicar"]==0){?>
-          NO
-  <?php }?></td>
+        <td align="center">
+          <?php if ($row["onIndex"]==1){?>
+          SI
+  <?php }else{echo "NO";}?></td>
+  		<td align="center">
+          <?php if ($row["onSection"]==1){?>
+          SI
+  <?php }else{echo "NO";}?>
+  		</td>
         <td align="center"><a href="enviareview.php?idr=<?php echo $row["idreview"];?>" onclick="NewWindow(this.href,'Review','450','300','yes');return false;" ><img src="images/mail.gif" width="25" height="15" border="0" /></a></td>
       </tr>
       <?php }
