@@ -466,15 +466,15 @@ class Layout_View
                     <div class="collapse navbar-collapse navbar-responsive-collapse">
                     	<div class="user-navbar">
                             <ul class="user-menu">
-                                <li class="user-menu-item"><a class="login-button" href="#">Ingl&eacute;s</a>
+                                <li class="user-menu-item"><a class="login-button" href="#">English</a>
                                 </li>
-                                <li class="user-menu-item"><a class="singup-button" href="/es/">Spanish</a>
+                                <li class="user-menu-item"><a class="singup-button" href="/es/">Español</a>
                                 </li>
                             </ul>
                         </div>
                         <ul id="menu-main_menu" class="nav navbar-nav  navbar-right">
                             <li id="menu-item-134" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-4 current_page_item">
-                                <a href="/es/">Home</a>
+                                <a href="/es/">Home</a> 
                             </li>
                             
                             <li id="menu-item-843" class="dropdown menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children">
@@ -999,8 +999,7 @@ class Layout_View
 										<div class="info-box_separator ">
 											<div class="line "></div>
 										</div>
-										<p>Sesiones de foto y producciones. Innumerables días 
-                                            soleados en una moderna locación privada.
+										<p>Innumerables días soleados en una moderna locación privada.
                                         </p>
 									</div>
 								</div>
@@ -1656,7 +1655,7 @@ class Layout_View
                                                                     	 <div class="stm_item-features">
                                                                         	<div class="stm_item-features_inner">
                                                                         		<ul class="item-features_list_extended">
-                                                                        			<li class="item-feature">1 cama King size marca “Sleep Number” </li>
+                                                                        			<li class="item-feature">1 cama King size </li>
                                                                         			<li class="item-feature">Sábanas de lujo</li>
                                                                         			<li class="item-feature">Cunas permitidas: 1 (bajo solicitud)</li>
 	                                                                        		<li class="item-feature">Máximo de cunas permitidas en la Villa: 2</li>
@@ -1680,15 +1679,15 @@ class Layout_View
                                                                         <div class="stm_item-features">
                                                                         	<div class="stm_item-features_inner">
                                                                         		<ul class="item-features_list">
-                                                                        			<li class="item-feature">Jacuzzi</li>
-                                                                        			<li class="item-feature">Shower</li>
-                                                                        			<li class="item-feature">Top Brand Toiletries</li>
-                                                                        			<li class="item-feature">Robes: 2</li>
+                                                                        			<li class="item-feature">Ducha </li>
+                                                                        			<li class="item-feature">jacuzzi</li>
+                                                                        			<li class="item-feature">Artículos de tocador de las mejores marcas</li>
+                                                                        			<li class="item-feature">Batas: 2</li>
                                                                         		</ul>
                                                                         		<ul class="item-features_list">
-                                                                        			<li class="item-feature">Slippers</li>
-                                                                        			<li class="item-feature">Hair dryer</li>
-                                                                        			<li class="item-feature">Make-up mirror</li>
+                                                                        			<li class="item-feature">Pantuflas</li>
+                                                                        			<li class="item-feature">Secadora de cabello</li>
+                                                                        			<li class="item-feature">Espejo de aumento</li>
                                                                         		</ul>
                                                                         	</div>
                                                                         </div>
@@ -2908,7 +2907,7 @@ class Layout_View
                                                 <p class="paragraph ng-attr-widget">
 													La sala de Villa Aqua es el lugar ideal para relajarse escuchando su música 
                                                     favorita, leyendo un libro o simplemente planeando, junto a su familia o 
-                                                    amigos, las actividades del día siguiente.<strong>Déjese atrapar por el toque zen 
+                                                    amigos, las actividades del día siguiente.<strong> Déjese atrapar por el toque zen 
                                                     que sus espacios y el sonido de la fuente le regalan</strong> , mientras disfruta 
                                                     de la vista desde los confortables sofás.
 
@@ -3145,10 +3144,10 @@ class Layout_View
                                     <div class="wpb_text_column wpb_content_element ">
                                         <div class="wpb_wrapper">
                                             <p class="paragraph ng-attr-widget">
-												¡Este es uno de los rincones favoritos de nuestros huéspedes!<strong>Por sus 
+												¡Este es uno de los rincones favoritos de nuestros huéspedes!<strong> Por sus 
                                                 cómodos sillones, el bar ampliamente surtido y un sinnúmero de amenidades 
                                                 para su entretenimiento: comenzando por el Televisor Led de 75”, el teatro 
-                                                en casa marca “Bose”, la biblioteca de DVDs y CDs</strong> , los juegos de mesa y 
+                                                en casa marca “Bose”, la biblioteca de DVDs y CDs , los juegos de mesa</strong> y 
                                                 mucho más, acompañados de la vista a la piscina y los jardines. Este es 
                                                 el lugar perfecto para ver los deportes entre amigos, una película en 
                                                 familia o bien degustar un cóctel antes de la cena.
@@ -3161,7 +3160,7 @@ class Layout_View
                                                 probar un trago.</strong> O bien si prefiere abrir sus propias botellas, contamos 
                                                 con una amplia selección de vinos y licores los cuales puede reemplazar 
                                                 por una botella igual o pagar las que consuma.
-
+ 
                                             </p>
                                             
                                         </div>
@@ -3369,16 +3368,15 @@ class Layout_View
 												Normalmente nuestro chef privado es quien se ocupará de la preparación 
                                                 de sus alimentos, pero si usted es un cocinero aficionado o simplemente 
                                                 un amante de la comida, lo invitamos ya sea a observar al chef en acción, 
-                                                o bien,  aprender una des sus recetas favoritas en una clase de cocina 
-                                                privada.
+                                                o bien,  aprender una des sus recetas favoritas en una  clase particular 
+                                                de cocina.
 
                                             </p>
                                             <p class="paragraph ng-attr-widget">
 												Contacte a su
-<a href="/contact-us/" target="_blank">Anfitrión </a> de Villa para mayor información sobre nuestros Servicios 
-                                                de  
-                                                <a href="/images/staff-and-services/menu-food-and-beverage.pdf" target="_blank">Alimentos, 
-                                                   Bebidas y Menús.</a>
+<a href="/contact-us/" target="_blank">Anfitrión de Villa</a>  para mayor información sobre nuestros Servicios 
+                                                de Alimentos, Bebidas y 
+                                                <a href="/images/staff-and-services/menu-food-and-beverage.pdf" target="_blank">Menús.</a>
                                             </p>
                                         </div>
                                     </div>
@@ -3518,7 +3516,7 @@ class Layout_View
 	                                            </p>
 	                                            
 	                                            <p class="paragraph ng-attr-widget">
-													Considerada la zona de más acción, todos se reúnen alrededor 
+													Considerada la zona de más acción de la casa, todos se reúnen alrededor 
                                                     de la piscina, ya sea para tomar el sol en los camastros; 
                                                     relajarse en la sala exterior bajo la sombra o bien disfrutar 
                                                     de una rica parrillada al aire libre…
@@ -3868,11 +3866,11 @@ class Layout_View
 												En Villa Aqua queremos ayudar a nuestros huéspedes a mantenerse en forma, 
                                                 es por eso que ponemos a su disposición nuestro <strong>gimnasio privado con 
                                                 cancha de squash</strong>, así como equipo deportivo suficiente para complementar 
-                                                una rutina de ejercicios completa. <br>
+                                                una rutina de ejercicios. <br>
                                                 Así mismo, contamos con entrenadores profesionales ya sea para una sesión 
-                                                de entrenamiento única o bien, un programa completo de acondicionamiento 
+                                                única o bien, un programa completo de acondicionamiento 
                                                 físico durante su estancia. Podrá relajarse con unas clases privadas de 
-                                                yoga* o ejercitarse intensamente con nuestro especialista de Crossfit, 
+                                                yoga o ejercitarse intensamente con nuestro especialista de Crossfit, 
                                                 contacte a su <a href="/contact-us/" target="_blank">Anfitrión de Villa</a> para 
                                                 programar sus actividades.
 
@@ -3935,7 +3933,7 @@ class Layout_View
                                         <div class="wpb_wrapper">
                                             <p class="paragraph ng-attr-widget">
 												No existe otra villa en toda la Riviera Maya que cuente con su 
-                                                propia Cancha de Squash con aire acondicionado y no hay mejor 
+                                                propia <strong>Cancha de Squash</strong> con aire acondicionado y no hay mejor 
                                                 lugar en Villa Aqua, para perder los kilos extras que seguramente 
                                                 ganarán tras probar las delicias que nuestro chef privado les preparará!
                                                 
@@ -6407,8 +6405,7 @@ class Layout_View
 					                                                		</ul>
 					                                                	</div>
 					                                                </div>
-                                                                    <br />
-                                                                    <br />
+                                                                  
                                                                     <h6>Otros Países: </h6> 
                                                                     <div class="stm_item-features">
 					                                                	<div class="stm_item-features_inner">
@@ -6586,7 +6583,7 @@ class Layout_View
                                             </div>
 
                                             <div class="wpb_accordion_section group">
-                                                <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post"><strong>Sugerencias para las propinas: </strong></a></h3>
+                                                <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post"><strong>SUGERENCIAS PARA LAS PROPINAS: </strong></a></h3>
                                                 <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
                                                     <div class="wpb_text_column wpb_content_element ">
                                                         <div class="wpb_wrapper">
@@ -8658,7 +8655,7 @@ class Layout_View
                                                     <span class="wpcf7-form-control-wrap message"><textarea name="message" cols="40" rows="5" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Purpose of my trip"></textarea></span>
                                                     <span class="wpcf7-form-control-wrap message"><textarea name="message" cols="40" rows="5" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="I need more info about"></textarea></span>
                                                     <div class="wpcf7-submit_wrap">
-                                                        <input type="submit" value="Send Message" class="wpcf7-form-control wpcf7-submit" />
+                                                        <input type="submit" value="Enviar mensaje" class="wpcf7-form-control wpcf7-submit" />
                                                     </div>
                                                 </div>
                                             </div>
@@ -9957,7 +9954,7 @@ class Layout_View
 	                                                        	¡Seguro! Villa Aqua es el lugar perfecto para realizar ese evento tan 
                                                                 especial. Tenemos diferentes políticas y precios. Por favor, revise 
                                                                 nuestra sección de  <a href="http://villaaqua.com/es/eventos/"><strong>Bodas 
-                                                                y Eventos</strong></a>para obtener mayor información.
+                                                                y Eventos</strong></a> para obtener mayor información. 
 
 	                                                        </p>
 	                                                    </div>
@@ -11395,7 +11392,7 @@ class Layout_View
                                 <li class="phone">Teléfono USA: 1 (956) 465 44 59</li>
                                 <li class="phone">Teléfono MX: +52 1 (984) 807 94 75</li>
                                 <li class="phone">Teléfono MX: +52 1 (984) 803 27 19</li>
-                                <li class="email">E-Mail: <a href="/contact-us/">rentals@villaaqua.com</a></li>
+                                <li class="email">E-Mail: <a href="/es/contacto/">rentals@villaaqua.com</a></li> 
                             </ul>
                         </aside>
                         
