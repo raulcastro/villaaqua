@@ -65,6 +65,21 @@ class generalFrontBackend
 		);
 		
 		$data['appInfo'] = $appInfo;
+		
+		switch ($section)
+		{
+			case 'mainSection':
+// 				get Reviews for the index
+				$reviewsArray = $this->model->getIndexReviews();
+				$data['reviews'] = $reviewsArray;
+			break;
+		
+			case 'reviews':
+				// 				get Reviews for the section
+				$reviewsArray = $this->model->getSectionReviews();
+				$data['reviews'] = $reviewsArray;
+				break;
+		}
 
 		return $data;
 	}

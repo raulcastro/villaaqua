@@ -331,7 +331,7 @@ class Tools
      */
     public static function formatMYSQLToFront($date)
     {
-		return @date('d-M-Y', strtotime($date));
+		return @date('F Y', strtotime($date));
     }
 
     /**

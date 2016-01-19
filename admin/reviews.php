@@ -346,11 +346,11 @@ $result = mysql_query($query);
         <td align="center"><img src="images/cali<?php echo $row["generalRate"];?>.png" width="126" height="11" /></td>
         <td align="center">
           <?php if ($row["onIndex"]==1){?>
-          SI
+          <strong>SI</strong>
   <?php }else{echo "NO";}?></td>
   		<td align="center">
           <?php if ($row["onSection"]==1){?>
-          SI
+          <strong>SI</strong>
   <?php }else{echo "NO";}?>
   		</td>
         <td align="center"><a href="enviareview.php?idr=<?php echo $row["idreview"];?>" onclick="NewWindow(this.href,'Review','450','300','yes');return false;" ><img src="images/mail.gif" width="25" height="15" border="0" /></a></td>
