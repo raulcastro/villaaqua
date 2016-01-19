@@ -518,7 +518,7 @@ class Layout_View
                                     <li class="menu-item"><a href="/es/out-and-about/" class="to-section">Golf</a></li>
                                     <li class="menu-item"><a href="/es/out-and-about/" class="to-section">Parques</a></li>
                                     <li class="menu-item"><a href="/es/cultura/">Cultura</a></li>
-                                    <li class="menu-item"><a href="es/cultura/#dining" class="to-section">Restaurants</a></li>
+                                    <li class="menu-item"><a href="es/cultura/#dining" class="to-section">Restaurantes</a></li>
                                     <li class="menu-item"><a href="es/cultura/#shopping" class="to-section">Compras</a></li>
                                 </ul>
                             </li>
@@ -2908,7 +2908,7 @@ class Layout_View
 													La sala de Villa Aqua es el lugar ideal para relajarse escuchando su música 
                                                     favorita, leyendo un libro o simplemente planeando, junto a su familia o 
                                                     amigos, las actividades del día siguiente.<strong> Déjese atrapar por el toque zen 
-                                                    que sus espacios y el sonido de la fuente le regalan</strong> , mientras disfruta 
+                                                    que sus espacios y el sonido de la fuente le regalan</strong>  mientras disfruta 
                                                     de la vista desde los confortables sofás.
 
 	                                            </p>
@@ -4106,7 +4106,7 @@ class Layout_View
                                                         </div>
                                                     
                                                     	<div class="wpb_accordion_section group">
-                                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#optimised-for-speed"><strong>Actividades fuera de Villa Aqua</strong></a></h3>
+                                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#optimised-for-speed"><strong>Actividades en la casa</strong></a></h3>
                                                             <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
                                                                 <div class="wpb_text_column wpb_content_element ">
                                                                     <div class="wpb_wrapper">
@@ -6724,6 +6724,7 @@ class Layout_View
                                                 un consumo mínimo de alimentos y bebidas o incluso un Day Pass.
 
                                             </p>
+                                            <br>
                                         
                                         </div>
 
@@ -6732,6 +6733,176 @@ class Layout_View
 	                                            
 	                                            <div class="wpb_accordion wpb_content_element  not-column-inherit" data-collapsible="" data-vc-disable-keydown="false" data-active-tab="1">
                                                     <div class="wpb_wrapper wpb_accordion_wrapper ui-accordion">
+                                                        
+                                                        
+                                                        <div class="wpb_accordion_section group">
+                                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post"><strong>CORALINA</strong></a></h3>
+                                                            <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
+                                                                <div class="wpb_text_column wpb_content_element ">
+                                                                    <div class="wpb_wrapper">
+                                                                    	<p class="paragraph ng-attr-widget">
+                                                                    		Coralina Daylight Club es un exclusivo club de playa sólo 
+                                                                            para mayores de edad, que ofrece entretenimiento y música 
+                                                                            con la playa y la brisa marina de fondo. Este club es un 
+                                                                            poco diferente a los demás en Playa del Carmen, pues se le 
+                                                                            considera un “Club a la luz del día”, concepto que proviene 
+                                                                            de lugares como Ibiza, España, en donde la fiesta comienza 
+                                                                            desde temprano disfrutando de la música de los DJs y de un 
+                                                                            ambiente parecido al de un club nocturno, sólo que durante 
+                                                                            el día y bajo el sol.
+
+                                                                    	</p>
+                                                                    	<p class="paragraph ng-attr-widget">
+                                                                    		Coralina, ha cambiado los estereotipos creando un club en 
+                                                                            donde la playa no es el actor principal, sino la piscina, 
+                                                                            donde se reúnen todos a tomar un trago y disfrutar la música
+                                                                            electrónica y dance, así como en las zonas privadas con 
+                                                                            carpas que se pueden rentar para obtener una experiencia 
+                                                                            más exclusiva y lujosa, acompañada con botellas de champaña.
+
+                                                                    	</p>
+                                                                    	<p class="paragraph ng-attr-widget">
+                                                                    		Coralina es “El Lugar” para admirar y ser admirado…
+                                                                            Recomendamos ampliamente que solicite a su Anfitrión 
+                                                                            de Villa lo asista para hacer una reservación.
+
+                                                                    	</p>
+                                                                        <br>
+                                                                    	
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                        <div class="wpb_accordion_section group">
+                                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post"><strong>MAMITAS</strong></a></h3>
+                                                            <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
+                                                                <div class="wpb_text_column wpb_content_element ">
+                                                                    <div class="wpb_wrapper">
+                                                                        <p class="paragraph ng-attr-widget">
+                                                                        	Mamita’s Beach Club es, sin duda alguna, uno de los mejores 
+                                                                            lugares para disfrutar la belleza de Playa del Carmen. Con
+                                                                            aproximadamente doscientos metros de la mejor playa de la zona, 
+                                                                            podrás deleitarte con los extraordinarios colores del Caribe 
+                                                                            mexicano, su arena blanca y suave, y una increíble vista 
+                                                                            panorámica hacia la isla de Cozumel.
+                                                                            <br>
+                                                                            En su restaurante, podrás disfrutar de un delicioso desayuno o
+                                                                            almuerzo. Si prefieres, en su bar ofrecen una gran variedad de 
+                                                                            bebidas nacionales e internacionales que podrás tomar a la orilla 
+                                                                            del mar, escuchando la mejor música de los DJs residentes.   
+                                                                            Puedes pasar el día tomando el sol, refrescándote en la alberca
+                                                                            familiar o VIP, o simplemente relajándote con un masaje.   
+                                                                            Además, en Mamita´s Beach Club encontrarás los mejores servicios, 
+                                                                            como toallas para renta, regaderas, baños modernos y equipados 
+                                                                            con aire acondicionado, y hasta una boutique.  
+                                                                            Para tu comodidad también cuentan con servicio de Valet Parking,
+                                                                            seguridad privada y WiFi.
+                                                                            <br>
+                                                                            El lounge de Mamita´s Beach Club, es un área exclusiva pensada para
+                                                                            divertirse y pasarla realmente muy bien. Con elegantes camas de playa,
+                                                                            camastros y sombrillas, podrás disfrutar de la alberca VIP al ritmo de
+                                                                            la música electrónica de los mejores DJs. En sus renovadas y modernas
+                                                                            instalaciones, cuenta con un restaurante que ofrece un nuevo menú de
+                                                                            fusión asiática, fresca y frutal, ideal para la playa.  El lounge de
+                                                                            Mamita’s Beach Club, es definitivamente el mejor lugar para tener una
+                                                                            verdadera beach party.
+                                                                        </p>
+                                                                        <br>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                        <div class="wpb_accordion_section group">
+                                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post"><strong>INDIGO</strong></a></h3>
+                                                            <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
+                                                                <div class="wpb_text_column wpb_content_element ">
+                                                                    <div class="wpb_wrapper">
+                                                                        <p class="paragraph ng-attr-widget">
+                                                                        	En el corazón de Playa del Carmen, en el Mar Caribe, Indigo 
+                                                                            Beach trae una nueva propuesta en la que convergen una atmósfera
+                                                                            delicada y casual, una idílica playa y sabores únicos; con un menú
+                                                                            conceptual basado en una fusión delicada de cocina asiática y
+                                                                            mexicana, con énfasis especialmente en los mariscos y el toque
+                                                                            italiano de Sicilia.
+
+                                                                        </p>
+                                                                        <p class="paragraph ng-attr-widget">
+                                                                        	La tarde se pierde en el atardecer para darle vida a los sonidos
+                                                                            tropicales y “guapachosos” de los DJs residentes, mientras los 
+                                                                            amantes de la noche disfrutan cómodamente en nuestros camastros y
+                                                                            camas de playa.
+
+                                                                        </p>
+                                                                        <br>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                        <div class="wpb_accordion_section group">
+                                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post"><strong>CANIBAL ROYAL</strong></a></h3>
+                                                            <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
+                                                                <div class="wpb_text_column wpb_content_element ">
+                                                                    <div class="wpb_wrapper">
+                                                                        <p class="paragraph ng-attr-widget">
+                                                                        	Venga a visitar este peculiar club de playa que ofrece estimular 
+                                                                            los 5 sentidos. Con deliciosa comida y bebidas, un DJ diferente 
+                                                                            cada día y el mejor escenario natural que los clubes de Playa del
+                                                                            Carmen pueden tener, le aseguramos que se irá feliz después de vivir
+                                                                            una experiencia diferente en este increíble lugar estilo retro.
+
+                                                                        </p>
+                                                                        <br>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                        <div class="wpb_accordion_section group">
+                                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post"><strong>ZENZI</strong></a></h3>
+                                                            <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
+                                                                <div class="wpb_text_column wpb_content_element ">
+                                                                    <div class="wpb_wrapper">
+                                                                    	<p class="paragraph ng-attr-widget">
+	                                                                        Zenzi Beach Club, Sports Bar y Restaurante tiene todo lo que 
+                                                                            podría desear para tener un gran día o una tarde magnífica en 
+                                                                            la playa. Permita que los cálidos rayos del sol, el turquesa 
+                                                                            del Mar Caribe, la gentil brisa del mar y una atmósfera relajada 
+                                                                            en una de las mejores playas del mundo, lo inunden y llenen 
+                                                                            sus sentidos. Y si eso no fuera suficiente, ¿qué le parece 
+                                                                            disfrutar todo esto viendo su deporte favorito?
+
+                                                                        </p>
+                                                                        <br>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                        <div class="wpb_accordion_section group">
+                                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post"><strong>KOOL BEACH</strong></a></h3>
+                                                            <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
+                                                                <div class="wpb_text_column wpb_content_element ">
+                                                                    <div class="wpb_wrapper">
+                                                                    	<p class="paragraph ng-attr-widget">
+	                                                                        Disfrute de un día libre de preocupaciones en este club de playa 
+                                                                            con servicio completo que cuenta con un restaurante, 2 bares, sala
+                                                                            lounge, piscina, servicio de masajes, solario, regaderas, lockers y
+                                                                            sanitarios privados. Todo lo que necesite y más, al alcance de su
+                                                                            mano, en este moderno club.
+
+	                                                                    </p>
+                                                                        <br>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                        
+                                                        
+                                                        
                                                         <div class="wpb_accordion_section group">
                                                             <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post"><strong>THE REEF PLAYACAR</strong></a></h3>
                                                             <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
@@ -6783,170 +6954,12 @@ class Layout_View
 							                                            	<li>Todas las propinas e impuestos</li>
 							                                            </ul>
 							                                            <p class="paragraph ng-attr-widget">
-							                                            	<strong>Note: </strong>Hay temporadas durante el año 
+							                                            	<strong>Nota: </strong>Hay temporadas durante el año 
                                                                             en las que llegan muchos visitantes, por lo que le recomendamos
                                                                             asistir a otros clubes de playa para recibir un mejor servicio.
 
 							                                            </p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        
-                                                        <div class="wpb_accordion_section group">
-                                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post"><strong>CORALINA</strong></a></h3>
-                                                            <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
-                                                                <div class="wpb_text_column wpb_content_element ">
-                                                                    <div class="wpb_wrapper">
-                                                                    	<p class="paragraph ng-attr-widget">
-                                                                    		Coralina Daylight Club es un exclusivo club de playa sólo 
-                                                                            para mayores de edad, que ofrece entretenimiento y música 
-                                                                            con la playa y la brisa marina de fondo. Este club es un 
-                                                                            poco diferente a los demás en Playa del Carmen, pues se le 
-                                                                            considera un “Club a la luz del día”, concepto que proviene 
-                                                                            de lugares como Ibiza, España, en donde la fiesta comienza 
-                                                                            desde temprano disfrutando de la música de los DJs y de un 
-                                                                            ambiente parecido al de un club nocturno, sólo que durante 
-                                                                            el día y bajo el sol.
-
-                                                                    	</p>
-                                                                    	<p class="paragraph ng-attr-widget">
-                                                                    		Coralina, ha cambiado los estereotipos creando un club en 
-                                                                            donde la playa no es el actor principal, sino la piscina, 
-                                                                            donde se reúnen todos a tomar un trago y disfrutar la música
-                                                                            electrónica y dance, así como en las zonas privadas con 
-                                                                            carpas que se pueden rentar para obtener una experiencia 
-                                                                            más exclusiva y lujosa, acompañada con botellas de champaña.
-
-                                                                    	</p>
-                                                                    	<p class="paragraph ng-attr-widget">
-                                                                    		Coralina es “El Lugar” para admirar y ser admirado…
-                                                                            Recomendamos ampliamente que solicite a su Anfitrión 
-                                                                            de Villa lo asista para hacer una reservación.
-
-                                                                    	</p>
-                                                                    	
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        
-                                                        <div class="wpb_accordion_section group">
-                                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post"><strong>MAMITAS</strong></a></h3>
-                                                            <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
-                                                                <div class="wpb_text_column wpb_content_element ">
-                                                                    <div class="wpb_wrapper">
-                                                                        <p class="paragraph ng-attr-widget">
-                                                                        	Mamita’s Beach Club es, sin duda alguna, uno de los mejores 
-                                                                            lugares para disfrutar la belleza de Playa del Carmen. Con
-                                                                            aproximadamente doscientos metros de la mejor playa de la zona, 
-                                                                            podrás deleitarte con los extraordinarios colores del Caribe 
-                                                                            mexicano, su arena blanca y suave, y una increíble vista 
-                                                                            panorámica hacia la isla de Cozumel.
-                                                                            <br>
-                                                                            En su restaurante, podrás disfrutar de un delicioso desayuno o
-                                                                            almuerzo. Si prefieres, en su bar ofrecen una gran variedad de 
-                                                                            bebidas nacionales e internacionales que podrás tomar a la orilla 
-                                                                            del mar, escuchando la mejor música de los DJs residentes.   
-                                                                            Puedes pasar el día tomando el sol, refrescándote en la alberca
-                                                                            familiar o VIP, o simplemente relajándote con un masaje.   
-                                                                            Además, en Mamita´s Beach Club encontrarás los mejores servicios, 
-                                                                            como toallas para renta, regaderas, baños modernos y equipados 
-                                                                            con aire acondicionado, y hasta una boutique.  
-                                                                            Para tu comodidad también cuentan con servicio de Valet Parking,
-                                                                            seguridad privada y WiFi.
-                                                                            <br>
-                                                                            El lounge de Mamita´s Beach Club, es un área exclusiva pensada para
-                                                                            divertirse y pasarla realmente muy bien. Con elegantes camas de playa,
-                                                                            camastros y sombrillas, podrás disfrutar de la alberca VIP al ritmo de
-                                                                            la música electrónica de los mejores DJs. En sus renovadas y modernas
-                                                                            instalaciones, cuenta con un restaurante que ofrece un nuevo menú de
-                                                                            fusión asiática, fresca y frutal, ideal para la playa.  El lounge de
-                                                                            Mamita’s Beach Club, es definitivamente el mejor lugar para tener una
-                                                                            verdadera beach party.
-                                                                        </p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        
-                                                        <div class="wpb_accordion_section group">
-                                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post"><strong>INDIGO</strong></a></h3>
-                                                            <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
-                                                                <div class="wpb_text_column wpb_content_element ">
-                                                                    <div class="wpb_wrapper">
-                                                                        <p class="paragraph ng-attr-widget">
-                                                                        	En el corazón de Playa del Carmen, en el Mar Caribe, Indigo 
-                                                                            Beach trae una nueva propuesta en la que convergen una atmósfera
-                                                                            delicada y casual, una idílica playa y sabores únicos; con un menú
-                                                                            conceptual basado en una fusión delicada de cocina asiática y
-                                                                            mexicana, con énfasis especialmente en los mariscos y el toque
-                                                                            italiano de Sicilia.
-
-                                                                        </p>
-                                                                        <p class="paragraph ng-attr-widget">
-                                                                        	La tarde se pierde en el atardecer para darle vida a los sonidos
-                                                                            tropicales y “guapachosos” de los DJs residentes, mientras los 
-                                                                            amantes de la noche disfrutan cómodamente en nuestros camastros y
-                                                                            camas de playa.
-
-                                                                        </p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        
-                                                        <div class="wpb_accordion_section group">
-                                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post"><strong>CANIBAL ROYAL</strong></a></h3>
-                                                            <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
-                                                                <div class="wpb_text_column wpb_content_element ">
-                                                                    <div class="wpb_wrapper">
-                                                                        <p class="paragraph ng-attr-widget">
-                                                                        	Venga a visitar este peculiar club de playa que ofrece estimular 
-                                                                            los 5 sentidos. Con deliciosa comida y bebidas, un DJ diferente 
-                                                                            cada día y el mejor escenario natural que los clubes de Playa del
-                                                                            Carmen pueden tener, le aseguramos que se irá feliz después de vivir
-                                                                            una experiencia diferente en este increíble lugar estilo retro.
-
-                                                                        </p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        
-                                                        <div class="wpb_accordion_section group">
-                                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post"><strong>ZENZI</strong></a></h3>
-                                                            <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
-                                                                <div class="wpb_text_column wpb_content_element ">
-                                                                    <div class="wpb_wrapper">
-                                                                    	<p class="paragraph ng-attr-widget">
-	                                                                        Zenzi Beach Club, Sports Bar y Restaurante tiene todo lo que 
-                                                                            podría desear para tener un gran día o una tarde magnífica en 
-                                                                            la playa. Permita que los cálidos rayos del sol, el turquesa 
-                                                                            del Mar Caribe, la gentil brisa del mar y una atmósfera relajada 
-                                                                            en una de las mejores playas del mundo, lo inunden y llenen 
-                                                                            sus sentidos. Y si eso no fuera suficiente, ¿qué le parece 
-                                                                            disfrutar todo esto viendo su deporte favorito?
-
-                                                                        </p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        
-                                                        <div class="wpb_accordion_section group">
-                                                            <h3 class="wpb_accordion_header ui-accordion-header"><a href="#unique-featured-slider-for-pages-blog-and-portfolio-post"><strong>KOOL BEACH</strong></a></h3>
-                                                            <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
-                                                                <div class="wpb_text_column wpb_content_element ">
-                                                                    <div class="wpb_wrapper">
-                                                                    	<p class="paragraph ng-attr-widget">
-	                                                                        Disfrute de un día libre de preocupaciones en este club de playa 
-                                                                            con servicio completo que cuenta con un restaurante, 2 bares, sala
-                                                                            lounge, piscina, servicio de masajes, solario, regaderas, lockers y
-                                                                            sanitarios privados. Todo lo que necesite y más, al alcance de su
-                                                                            mano, en este moderno club.
-
-	                                                                    </p>
+                                                                        <br>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -7097,7 +7110,8 @@ class Layout_View
                                                                 ideales para esta actividad porque tienen una profundidad máxima de 4.5 
                                                                 metros, lo que significa que la mejor vista está cerca de la superficie. 
 
-                                                        	</p> 
+                                                        	</p>
+                                                              <br>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -7127,6 +7141,7 @@ class Layout_View
 
 
                                                         	</p>
+                                                            <br>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -7159,11 +7174,12 @@ class Layout_View
 
                                                         	</p> 
                                                         	<p class="paragraph ng-attr-widget">
-                                                        		Nota: Los paseos en yate salen de Puerto Aventuras. 
+                                                        		Nota: Los paseos en yate salen de Puerto Aventuras y/o Cancún. 
                                                                 La transportación desde Villa Aqua no está incluida 
                                                                 pero puede solicitar este servicio con su Anfitrión de Villa.
-
+ 
                                                         	</p> 
+                                                            <br>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -7193,6 +7209,7 @@ class Layout_View
                                                                 de torneos de pesca a lo largo del año.
 
                                                         	</p>
+                                                             <br>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -7228,7 +7245,8 @@ class Layout_View
                                                         		Los tours en catamaran y velero salen desde Puerto Aventuras o 
                                                                 Cancún y generalmente duran 4 horas.
 
-                                                        	</p> 
+                                                        	</p>
+                                                            <br>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -7284,6 +7302,7 @@ class Layout_View
                                                                 desea caminar por la selva y su equipo de snorkel si no quiere alquilarlo.
 
                                                         	</p>
+                                                            <br>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -7313,6 +7332,7 @@ class Layout_View
                                                                 un día como un entrenador!
 
                                                         	</p> 
+                                                            <br>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -7361,6 +7381,7 @@ class Layout_View
                                                         		Contacte a su Anfitrión de Villa para obtener más información y precios.
 
                                                         	</p>
+                                                            <br>
 
                                                         </div>
                                                     </div>
@@ -7396,7 +7417,7 @@ class Layout_View
                                                         		Contacte a su Anfitrión de Villa para obtener más información y precios.
 
                                                         	</p>
-                                                            
+                                                            <br>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -7428,6 +7449,7 @@ class Layout_View
                                                                 con mucho viento para practicar este deporte.
 
                                                         	</p>
+                                                            <br>
                                                         	 
                                                         </div>
                                                     </div>
@@ -7519,6 +7541,7 @@ class Layout_View
                                                                     la tarifa del green).
 
 	                                                        	</p>
+                                                                <br>
 	                                                        </div>
 	                                                    </div>
 	                                                </div>
@@ -7551,7 +7574,8 @@ class Layout_View
                                                                     de atención de 6:30 a 18:00 hr., todos los días, le brindará días enteros 
                                                                     de golf con el mar Caribe de fondo.
 
-	                                                        	</p> 
+	                                                        	</p>
+                                                                <br>
 	                                                        	 
 	                                                        </div>
 	                                                    </div>
@@ -7576,7 +7600,8 @@ class Layout_View
                                                                     2 botellas de agua, tees de golf, herramienta de reparación divot, 
                                                                     toallas frescas, vestidor con lockers y caja de seguridad.
 
-	                                                        	</p> 
+	                                                        	</p>
+                                                                <br>
 	                                                        </div>
 	                                                    </div>
 	                                                </div>
@@ -7608,6 +7633,7 @@ class Layout_View
 
 
 	                                                        	</p> 
+                                                                <br>
 	                                                        </div>
 	                                                    </div>
 	                                                </div>
@@ -7639,6 +7665,7 @@ class Layout_View
                                                                     hacer reservación.
 
 	                                                        	</p>
+                                                                <br>
 	                                                        	 
 	                                                        </div>
 	                                                    </div>
@@ -7671,6 +7698,7 @@ class Layout_View
 
 
 	                                                        	</p> 
+                                                                <br>
 	                                                        </div>
 	                                                    </div>
 	                                                </div>
@@ -7757,6 +7785,7 @@ class Layout_View
                                                                     Villa Aqua. 
 
 	                                                        	</p> 
+                                                                <br>
 	                                                        </div>
 	                                                    </div>
 	                                                </div>
@@ -7778,7 +7807,7 @@ class Layout_View
                                                                     lugar ideal para encontrar bellas expresiones del arte popular 
                                                                     mexicano (artesanía, espectáculos, comida, música y más...)
                                                                 </p> 
-	                                                        	 
+	                                                        	 <br>
 	                                                        	 
 	                                                        </div>
 	                                                    </div>
@@ -7808,7 +7837,7 @@ class Layout_View
                                                                     abundante buffet que recargará sus energías.
 
 	                                                        	</p> 
-	                                                        	 
+	                                                        	 <br>
 	                                                        </div>
 	                                                    </div>
 	                                                </div>
@@ -7832,6 +7861,7 @@ class Layout_View
                                                                     relajantes.
 
 	                                                        	</p> 
+                                                                    <br>
 	                                                        </div>
 	                                                    </div>
 	                                                </div>
@@ -7867,7 +7897,7 @@ class Layout_View
                                                                     jarocho, marimba y más. Duración aproximada: 3 horas.
 
 	                                                        	</p> 
-	                                                        	 
+	                                                        	 <br>
 	                                                        </div>
 	                                                    </div>
 	                                                </div>
@@ -7915,7 +7945,7 @@ class Layout_View
 																	¡Además, es una gran opción para un día de lluvia!
 
 	                                                        	</p>
-	                                                        	 
+	                                                        	 <br>
 	                                                        </div>
 	                                                    </div>
 	                                                </div>
@@ -7937,7 +7967,7 @@ class Layout_View
 	                                                        	<p class="paragraph ng-attr-widget">
 	                                                        		¡Una aventura extrema, en la jungla maya, que no se debe perder!
 	                                                        	</p>  
-	                                                        	 
+	                                                        	 <br>
 	                                                        </div>
 	                                                    </div>
 	                                                </div>
@@ -7958,7 +7988,8 @@ class Layout_View
                                                                     nace el cielo”.  Todo esto y más, dentro de un ambiente seguro y tranquilo 
                                                                     al sur de Playa del Carmen y Tulum.
 
-	                                                        	</p> 
+	                                                        	</p>
+                                                                <br>
 	                                                        </div>
 	                                                    </div>
 	                                                </div>
@@ -7974,7 +8005,8 @@ class Layout_View
                                                                     le aseguramos que será una experiencia que avivará sus sentidos 
                                                                     y permanecerá en su memoria por siempre.
 
-	                                                        	</p> 
+	                                                        	</p>
+                                                                <br>
 	                                                        </div>
 	                                                    </div>
 	                                                </div>
@@ -7994,6 +8026,7 @@ class Layout_View
                                                                     Maya, en México. La palabra temazcal significa “casa de vapor”.
 
 	                                                        	</p> 
+                                                                <br>
 	                                                        </div>
 	                                                    </div>
 	                                                </div>
@@ -8087,6 +8120,7 @@ class Layout_View
                                                 pero estas son las más recomendables:
 
                                             </p>
+                                            <br>
                                         </div>
 
                                         <div class="wpb_column vc_column_container ">
@@ -8116,6 +8150,7 @@ class Layout_View
                                                                             Chichen Itzá queda a 3-4 horas en auto desde Villa Aqua.
                                                                             Contacte a su Anfitrión de Villa para más información y opciones.
 							                                            </p>
+                                                                        <br>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -8133,6 +8168,7 @@ class Layout_View
                                                                             y bello lugar y disfrute de vistas espectaculares del Caribe y 
                                                                             la playa.
                                                                     	</p>
+                                                                        <br>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -8155,6 +8191,7 @@ class Layout_View
                                                                             visitar este mágico lugar.
 
                                                                         </p>
+                                                                        <br>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -8174,6 +8211,7 @@ class Layout_View
                                                                             Falso (Arco Maya), uno de los iconos arquitectónicos de esta
                                                                             misteriosa y cautivadora cultura.
                                                                         </p>
+                                                                        <br>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -8196,6 +8234,7 @@ class Layout_View
 
 
                                                                         </p>
+                                                                        <br>
                                                                         
                                                                     </div>
                                                                 </div>
@@ -8339,6 +8378,7 @@ class Layout_View
                                                                     oficial de Harley Davidson.
 					                                                	
                                                              </p>
+                                                                 <br>
                                                              </div>
                                                          </div>
                                                      </div>
@@ -8355,6 +8395,7 @@ class Layout_View
                                                                     The Body Shop, American Eagle, BCBG y más.
 
 					                                                </p>
+                                                                 <br>
                                                              
                                                              </div>
                                                          </div>
@@ -8375,6 +8416,7 @@ class Layout_View
                                                                     Michael Kors, Puma, Onda de Mar y muchas amenidades más.
 
 					                                             </p>
+                                                                 <br>
                                                              
                                                              </div>
                                                          </div>
@@ -8787,7 +8829,7 @@ class Layout_View
                                             
                                             <div class="ult-spacer spacer-56253aed4f277" data-id="56253aed4f277" data-height="25" data-height-mobile="25" data-height-tab="25" data-height-tab-portrait="25" data-height-mobile-landscape="25" style="clear:both;display:block;"></div>
 								            <div class="vc_btn3-container vc_btn3-left animated fadeIn" style="opacity:1;-webkit-animation-delay:0s;-webkit-animation-duration:1s;-webkit-animation-iteration-count:1; -moz-animation-delay:0s;-moz-animation-duration:1s;-moz-animation-iteration-count:1; animation-delay:0s;animation-duration:1s;animation-iteration-count:1;test">
-												<a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-square vc_btn3-style-outline vc_btn3-color-chino" href="/events/" title="" target="_self">VER TODO</a>
+												<a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-square vc_btn3-style-outline vc_btn3-color-chino" href="/es/eventos/" title="" target="_self">VER TODO</a>
 											</div>
                                         </div>
                                     </div>
@@ -8917,7 +8959,7 @@ class Layout_View
                                             <p><i>*Aplíca costo extra</i></p>
                                             <div class="ult-spacer spacer-56253aed4f277" data-id="56253aed4f277" data-height="25" data-height-mobile="25" data-height-tab="25" data-height-tab-portrait="25" data-height-mobile-landscape="25" style="clear:both;display:block;"></div>
 								            <div class="vc_btn3-container vc_btn3-left animated fadeIn" style="opacity:1;-webkit-animation-delay:0s;-webkit-animation-duration:1s;-webkit-animation-iteration-count:1; -moz-animation-delay:0s;-moz-animation-duration:1s;-moz-animation-iteration-count:1; animation-delay:0s;animation-duration:1s;animation-iteration-count:1;test">
-												<a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-square vc_btn3-style-outline vc_btn3-color-chino" href="/events/" title="" target="_self">VER TODO</a>
+												<a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-square vc_btn3-style-outline vc_btn3-color-chino" href="/es/eventos/" title="" target="_self">VER TODO</a>
 											</div>
                                         </div>
                                     </div>
@@ -9032,7 +9074,7 @@ class Layout_View
                                             
                                             <div class="ult-spacer spacer-56253aed4f277" data-id="56253aed4f277" data-height="25" data-height-mobile="25" data-height-tab="25" data-height-tab-portrait="25" data-height-mobile-landscape="25" style="clear:both;display:block;"></div>
 								            <div class="vc_btn3-container vc_btn3-left animated fadeIn" style="opacity:1;-webkit-animation-delay:0s;-webkit-animation-duration:1s;-webkit-animation-iteration-count:1; -moz-animation-delay:0s;-moz-animation-duration:1s;-moz-animation-iteration-count:1; animation-delay:0s;animation-duration:1s;animation-iteration-count:1;test">
-												<a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-square vc_btn3-style-outline vc_btn3-color-chino" href="/events/" title="" target="_self">VER TODO</a>
+												<a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-square vc_btn3-style-outline vc_btn3-color-chino" href="/es/eventos/" title="" target="_self">VER TODO</a>
 											</div>
                                         </div>
                                     </div>
@@ -9171,7 +9213,7 @@ class Layout_View
                                             <p><i>* Aplican costos por evento.</i></p>
                                             <div class="ult-spacer spacer-56253aed4f277" data-id="56253aed4f277" data-height="25" data-height-mobile="25" data-height-tab="25" data-height-tab-portrait="25" data-height-mobile-landscape="25" style="clear:both;display:block;"></div>
 								            <div class="vc_btn3-container vc_btn3-left animated fadeIn" style="opacity:1;-webkit-animation-delay:0s;-webkit-animation-duration:1s;-webkit-animation-iteration-count:1; -moz-animation-delay:0s;-moz-animation-duration:1s;-moz-animation-iteration-count:1; animation-delay:0s;animation-duration:1s;animation-iteration-count:1;test">
-												<a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-square vc_btn3-style-outline vc_btn3-color-chino" href="/events/" title="" target="_self">VER TODO</a>
+												<a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-square vc_btn3-style-outline vc_btn3-color-chino" href="/es/eventos/" title="" target="_self">VER TODO</a>
 											</div>
                                         </div>
                                     </div>
@@ -9325,7 +9367,7 @@ class Layout_View
                                             <p><i>*aplíca costo extra</i></p>
                                             <div class="ult-spacer spacer-56253aed4f277" data-id="56253aed4f277" data-height="25" data-height-mobile="25" data-height-tab="25" data-height-tab-portrait="25" data-height-mobile-landscape="25" style="clear:both;display:block;"></div>
 								            <div class="vc_btn3-container vc_btn3-left animated fadeIn" style="opacity:1;-webkit-animation-delay:0s;-webkit-animation-duration:1s;-webkit-animation-iteration-count:1; -moz-animation-delay:0s;-moz-animation-duration:1s;-moz-animation-iteration-count:1; animation-delay:0s;animation-duration:1s;animation-iteration-count:1;test">
-												<a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-square vc_btn3-style-outline vc_btn3-color-chino" href="/events/" title="" target="_self">VER TODO</a>
+												<a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-square vc_btn3-style-outline vc_btn3-color-chino" href="/es/eventos/" title="" target="_self">VER TODO</a>
 											</div>
                                         </div>
                                     </div>
@@ -9513,7 +9555,7 @@ class Layout_View
                             <div class="rental-service_item">
                                 <div class="rs-item_inner">
                                     <div class="rs-item_actions">
-                                        <a class="rs-item_action_link" href="/events-weddings/"><i class="fa fa-eye"></i></a>
+                                        <a class="rs-item_action_link" href="/es/bodas/"><i class="fa fa-eye"></i></a>
                                     </div>
                                     <div class="rs-item_content"><img width="570" height="446" src="/images/events/Villa_Aqua_events_weddings.jpg" class="attachment-full wp-post-image" alt="Exellent-view" />
                                     </div>
@@ -9527,7 +9569,7 @@ class Layout_View
                             <div class="rental-service_item">
                                 <div class="rs-item_inner">
                                     <div class="rs-item_actions">
-                                        <a class="rs-item_action_link" href="/events-corporate-retreats/"><i class="fa fa-eye"></i></a>
+                                        <a class="rs-item_action_link" href="/es/retiros-corporativos/"><i class="fa fa-eye"></i></a>
                                     </div>
                                     <div class="rs-item_content"><img width="570" height="446" src="/images/events/Villa_Aqua_events_corporate_retreats.jpg" class="attachment-full wp-post-image" alt="Berth" />
                                     </div>
@@ -9541,7 +9583,7 @@ class Layout_View
                             <div class="rental-service_item">
                                 <div class="rs-item_inner">
                                     <div class="rs-item_actions">
-                                        <a class="rs-item_action_link" href="/events-family-friends-reunion/"><i class="fa fa-eye"></i></a>
+                                        <a class="rs-item_action_link" href="/es/reuniones-de-familia-y-amigos/"><i class="fa fa-eye"></i></a>
                                     </div>
                                     <div class="rs-item_content"><img width="570" height="446" src="/images/events/Villa_Aqua_events_family_reunion.jpg" class="attachment-full wp-post-image" alt="Big-Yacht" />
                                     </div>
@@ -9555,7 +9597,7 @@ class Layout_View
                             <div class="rental-service_item">
                                 <div class="rs-item_inner">
                                     <div class="rs-item_actions">
-                                        <a class="rs-item_action_link" href="/events-private-events/"><i class="fa fa-eye"></i></a>
+                                        <a class="rs-item_action_link" href="/es/eventos/"><i class="fa fa-eye"></i></a>
                                     </div>
                                     <div class="rs-item_content"><img width="570" height="446" src="/images/events/Villa_Aqua_private_events.jpg" class="attachment-full wp-post-image" alt="Villas-near-the-beach" />
                                     </div>
@@ -9569,7 +9611,7 @@ class Layout_View
                             <div class="rental-service_item">
                                 <div class="rs-item_inner">
                                     <div class="rs-item_actions">
-                                        <a class="rs-item_action_link" href="/events-photo-shoots/"><i class="fa fa-eye"></i></a>
+                                        <a class="rs-item_action_link" href="/es/locacion/"><i class="fa fa-eye"></i></a>
                                     </div>
                                     <div class="rs-item_content"><img width="570" height="446" src="/images/events/Villa_Aqua_photo_shooting_01.jpg" class="attachment-full wp-post-image" alt="Over-the-Sea" />
                                     </div>
@@ -10752,7 +10794,7 @@ class Layout_View
                                         años de edad en el grupo, se aceptan hasta 12 personas)
                                         <br>
 										No se permiten mascotas.<br>
-										No smoking inside property.<br>
+										No fumar dentro de la propiedad.<br>
                                     </p>
                                     <div class="ult-spacer spacer-5633a4efa6329" data-id="5633a4efa6329" data-height="52" data-height-mobile="52" data-height-tab="52" data-height-tab-portrait="52" data-height-mobile-landscape="52" style="clear:both;display:block;"></div>
                                     <div class="vc_separator wpb_content_element vc_sep_width_100 vc_sep_pos_align_center vc_separator_no_text">
@@ -10787,8 +10829,7 @@ class Layout_View
                                         
                                             <p class="paragraph ng-attr-widget">
                                                 <span class="ng-directive ng-binding" style="">
-                                                	Para hacer una reservación, dé click en el siguiente 
-                                                    ícono cuando esté listo para llenar nuestro <a href="/contact-us/">Formato de Contacto:</a>
+                                                	Para hacer una reservación, favor de llenar nuestro <a href="/es/contacto/">Formato de Contacto:</a>
                                                 </span>
                                             </p>
                                             <div class="stm_item-features">
@@ -10821,7 +10862,7 @@ class Layout_View
                                                                 confirmar la reserva. 
                                                             </li>
                                                 			<li class="item-feature">Otros gastos como transportación, tours, alimentos
-                                                                y otros servicios deberán pagarse en efectivo, un día antes de su fecha 
+                                                                y otros servicios deberán pagarse en <strong>efectivo</strong>, un día antes de su fecha 
                                                                 de salida (check out).
                                                             </li>
                                                 		</ul>

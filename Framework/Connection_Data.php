@@ -6,9 +6,9 @@
 	}
 	else
 	{
-		define ('DB_HOST', 'internal-db.s161140.gridserver.com');
+		define ('DB_HOST', 'villaaquadb.db.10062387.hostedresource.com');
 	}
 	
-	define ('DB_USER', 'db161140_2go');
-	define ('DB_PASS', 'where2GO');
-	define ('DB_NAME', 'db161140_tro');
+	define ('DB_USER', 'villaaquadb');
+	define ('DB_PASS', 'barbiE787!');
+	define ('DB_NAME', 'villaaquadb');
