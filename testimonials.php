@@ -25,10 +25,10 @@
     $title = '';
     $data  = '';
     
-    $testimonialsDir = 'images/guest/';
-    $testimonials = glob($testimonialsDir.'*.jpg');
-//     var_dump($testimonials);
-	$data['testimonials'] = $testimonials;
+//     $testimonialsDir = 'images/guest/';
+//     $testimonials = glob($testimonialsDir.'*.jpg');
+// //     var_dump($testimonials);
+// 	$data['testimonials'] = $testimonials;
 
     switch ($lang)
     {
@@ -50,7 +50,8 @@
     
     $info 		= $backend->loadBackend('reviews');
     array_push($data, $info);
-
+    
+	
 	$view 		= new Layout_View($data);
 
 	echo $view->printHTMLPage('testimonials');

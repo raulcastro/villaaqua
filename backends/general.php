@@ -78,7 +78,20 @@ class generalFrontBackend
 				// 				get Reviews for the section
 				$reviewsArray = $this->model->getSectionReviews();
 				$data['reviews'] = $reviewsArray;
-				break;
+				
+				$testimonials = $this->model->getGalleryBySection('Testimonials');
+				$data['testimonials'] = $testimonials;
+			break;
+			
+			case 'the-rooms':
+				$bedrooms = $this->model->getGalleryBySection('master-bedroom');
+				$data['master-bedroom'] = $bedrooms;
+				
+				$bedrooms = $this->model->getGalleryBySection('bedroom-two');
+				$data['bedroom-two'] = $bedrooms;
+				
+			break;			
+			
 		}
 
 		return $data;

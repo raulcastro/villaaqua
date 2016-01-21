@@ -61,4 +61,45 @@ class Layout_Model
 			return false;
 		}
 	}
+	
+	public function addGallery($sectionName, $name)
+	{
+		try
+		{
+			$query = 'INSERT INTO gallery(section_name, picture)
+	                VALUES("'.$sectionName.'", "'.$name.'")';
+			if ($this->db->run($query))
+				return $this->db->insert_id;
+		}
+		catch (Exception $e)
+		{
+			return false;
+		}
+	}
+	
+	public function getGalleryBySection($sectionName)
+	{
+		try {
+			$query = 'SELECT * FROM gallery WHERE section_name = "'.$sectionName.'" ORDER BY picture_id DESC';
+			return $this->db->getArray($query);
+		} catch (Exception $e) {
+			return false;
+		}
+	}
+	
+	public function deleteGallery($picture_id)
+	{
+		try
+		{
+			$picture_id = (int) $picture_id;
+	
+			$query = 'DELETE FROM gallery
+					WHERE picture_id = '.$picture_id;
+			return $this->db->run($query);
+		}
+		catch (Exception $e)
+		{
+			return false;
+		}
+	}
 }

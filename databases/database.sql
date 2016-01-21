@@ -28,3 +28,11 @@ CREATE TABLE `app_info` (
   `instagram` varchar(256) DEFAULT NULL,
   `location` varchar(256) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+CREATE TABLE `gallery` (
+  `picture_id` int(11) NOT NULL AUTO_INCREMENT,
+  `section_name` varchar(512) DEFAULT NULL,
+  `picture` varchar(512) DEFAULT NULL,
+  PRIMARY KEY (`picture_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2976 DEFAULT CHARSET=latin1;

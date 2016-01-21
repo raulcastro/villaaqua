@@ -398,8 +398,8 @@ function validar(formulario) {
                 <td align="right" nowrap="nowrap">
                 	<a href="villarate.php" class="Aqua">Rates</a>&nbsp;&nbsp;
                 	<a href="reviews.php" class="Aqua">Reviews</a>&nbsp;&nbsp;
-                	<a href="reviews.php" class="Aqua">Main Slider</a>&nbsp;&nbsp;
-                	<a href="reviews.php" class="Aqua">Sections</a>&nbsp;&nbsp;
+                	<a href="main-slider.php" class="Aqua">Testimonials</a>&nbsp;&nbsp;
+                	<a href="sections.php" class="Aqua">Sections</a>&nbsp;&nbsp;
                 	<a href="login.php" class="Aqua">Log out</a>
                 </td>
               </tr>
