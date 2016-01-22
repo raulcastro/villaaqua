@@ -70,6 +70,7 @@ RewriteRule ^es/bodas/$ 							/events-weddings.php?lang=es
 RewriteRule ^es/eventos/$ 							/events.php?lang=es
 RewriteRule ^es/contacto/$ 							/contact-us.php?lang=es
 RewriteRule ^es/faq/$								/faq.php?lang=es
+RewriteRule ^es/testimoniales/$ 					/testimonials.php?lang=es
 RewriteRule ^es/info-del-destino/$ 					/arriving-to-the-villa-playacar-playa-del-carmen.php?lang=es
 RewriteRule ^es/cultura/$ 							/out-and-about-dining-culture-shopping.php?lang=es
 RewriteRule ^es/proceso-de-reserva/$ 				/reservation-rental-rates-and-process.php?lang=es

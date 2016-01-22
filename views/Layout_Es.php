@@ -536,7 +536,7 @@ class Layout_View
                             </li>
                             
                             <li class="dropdown menu-item">
-                                <a href="/testimonials/" class="dropdown-toggle">Testimoniales</a>
+                                <a href="/es/testimoniales/" class="dropdown-toggle">Testimoniales</a>
                             </li>
                             
                             <li class="dropdown menu-item menu-item-object-page">
@@ -10416,149 +10416,21 @@ class Layout_View
                                     <div class="ult-animation ult-animate-viewport ult-no-mobile " data-animate="fadeInUp " data-animation-delay="0 " data-animation-duration=".5 " data-animation-iteration="1 " style="opacity:1; " data-opacity_start_effect=" ">
                                         <div id="ult-carousel-984694667561be29557b29 " class="ult-carousel-wrapper bullets-white ult_horizontal " data-gutter="15 " data-rtl="false ">
                                             <div class="ult-carousel-slide">
-                                                <div class="ult-item-wrap " data-animation="animated no-animation ">
-                                                    <div class="stm-testimonial ">
-                                                        <p>
-                                                        	Perfect perfect perfect!
-                                                        </p>
-                                                        <div class="author ">Williams & Bell<br> <span style="color: #525252;">Louisiana & Nevada, USA</span>  <br>August 2015</div>
-                                                    </div>
-                                                </div>
-                                                <div class="ult-item-wrap " data-animation="animated no-animation ">
-                                                    <div class="stm-testimonial ">
-                                                        <p>We can not say enough. The staff was incredible. We enjoyed our stay so much & can not wait to come back again. Truly was an incredible house, stay & more!!!!</p>
-                                                        <div class="author ">Edmonton´s<br> <span style="color: #525252;">Texas, USA</span><br>July 2015</div>
-                                                    </div>
-                                                </div>
-                                                
-                                                <div class="ult-item-wrap " data-animation="animated no-animation ">
-                                                    <div class="stm-testimonial ">
-                                                        <p>We had an amazing stay at Villa Aqua. We stayed with our family before our wedding ceremony. The villa is beyond words. The staff could not be friendlier and are such hard workers. The chef cooks delicious meals. Carolina could quite possibly be the kindest, most calming and positive host. Our stay was perfect. We stayed at an all inclusive after our stay at the villa and there was no way it could compare. We would love to come back. </p>
-                                                        <div class="author ">Maggie Guilfoile<br><span style="color: #525252;">Chicago, USA</span><br>December 2014</div>
-                                                    </div>
-                                                </div>
-                                                
-                                                <div class="ult-item-wrap " data-animation="animated no-animation ">
-                                                    <div class="stm-testimonial ">
-                                                        <p>Greatest and most helpful staff very warm and hard working, everytime I'm in playa I'll be staying at the Villa Aqua. Nothing compares.</p>
-                                                        <div class="author ">Jimmy<br><span style="color: #525252;">Australia</span><br>December 2014</div>
-                                                    </div>
-                                                </div>
-                                                
-                                                <div class="ult-item-wrap " data-animation="animated no-animation ">
-                                                    <div class="stm-testimonial ">
-                                                        <p>Everything about the villa is 10/10 don't think you will be able to find a better villa in playa del Carmen. Thanks for everything :)</p>
-                                                        <div class="author ">Adam<br><span style="color: #525252;">Melbourne, Australia</span><br>December 2014</div>
-                                                    </div>
-                                                </div>
-                                                
-                                                <div class="ult-item-wrap " data-animation="animated no-animation ">
-                                                    <div class="stm-testimonial ">
-                                                        <p>A wonderful villa, great location, lovely staff. Many thanks!</p>
-                                                        <div class="author ">Jayne, Andy McGee & Family<br><span style="color: #525252;">British Isles</span><br>August 2014</div>
-                                                    </div>
-                                                </div>
-                                                
-                                                
-                                                
-                                                <div class="ult-item-wrap " data-animation="animated no-animation ">
-                                                    <div class="stm-testimonial ">
-                                                        <p>
-                                                        	Carolina was amazing - talk about someone who gets things done! The house was amazing for relaxing and hanging out. Anything you need, Carolina is on top of! We did not have to worry about the details on this trip!
-                                                        </p>
-                                                        <div class="author ">Drew Rippel<br><span style="color: #525252;">Denver, USA</span> <br>October 2014</div>
-                                                    </div>
-                                                </div>
-                                                
-                                                <div class="ult-item-wrap " data-animation="animated no-animation ">
-                                                    <div class="stm-testimonial ">
-                                                        <p>
-                                                        	We had a reunion of cousins and close family friends at Villa Aqua - we had an incredible time. The chef is fantastic, the house is superb, facilities are top class, and it's a short walk to the beach. We really loved every aspect of this trip
-                                                        </p>
-                                                        <div class="author ">Pritesh<br><span style="color: #525252;">London, UK</span> <br>February 2014</div>
-                                                    </div>
-                                                </div>
-                                                
-                                                <div class="ult-item-wrap " data-animation="animated no-animation ">
-                                                    <div class="stm-testimonial ">
-                                                        <p>
-                                                        	Loved the house!!! Total of 7 people stayed there. The service was amazing and the food was excellent. Everything we asked for we received. The beach was probably a 10 minute walk from the house and very safe. We will certainly stay here again. Thank you to all the staff, we are still talking about our crazy vacation…
-                                                        </p>
-                                                        <div class="author ">Carla Luig<br><span style="color: #525252;">USA </span><br>August 2014</div>
-                                                    </div>
-                                                </div>
-                                                
-                                                <div class="ult-item-wrap " data-animation="animated no-animation ">
-                                                    <div class="stm-testimonial ">
-                                                        <p>
-                                                        	Villa Aqua is a perfect place for families to share a relaxing, fun filled week in paradise. The villa is well equipped and luxurious in its comforts. The staff made us feel like family and were attentive to all our needs. 
-                                                        </p>
-                                                        <div class="author ">Toni Lubetsky<br><span style="color: #525252;">New York, USA</span> <br>January 2014</div>
-                                                    </div>
-                                                </div>
-                                                
-                                                <div class="ult-item-wrap " data-animation="animated no-animation ">
-                                                    <div class="stm-testimonial ">
-                                                        <p>
-                                                        	The villa is beautiful and well equipped for families. The amenities of the home - pool, gym, bar, squash court, technology / music equipment, etc. - are fully functioning and completely up to date. The concierge, chef and staff are top notch as well. They were there to help us every step of our vacation to ensure we had the best experience not just at the home but in Playa Del Carmen. Highly recommend this Villa to any families traveling to Playa!!
-                                                        </p>
-                                                        <div class="author ">Amish Tolia<br><span style="color: #525252;">Chicago, USA </span><br>July 2014</div>
-                                                    </div>
-                                                </div>
-                                                
-                                                <div class="ult-item-wrap " data-animation="animated no-animation ">
-                                                    <div class="stm-testimonial ">
-                                                        <p>
-                                                        	If you're thinking of visiting Aqua Villa for a stay, stop thinking and just go. The location is ideal; the house, magical; and the staff, so incredibly gracious. The beds are incredibly comfortable. The house is as beautiful in person as it is in the professional photographs. The food that Bernardo the chef makes is indescribably good. And, if you choose to venture out for dinner or entertainment, Carolina takes care of every detail. You are left wanting for nothing.
-                                                        </p>
-                                                        <div class="author ">Billy Seiber<br> <span style="color: #525252;">USA</span><br>October 2014</div>
-                                                    </div>
-                                                </div>
-                                                
-                                                <div class="ult-item-wrap " data-animation="animated no-animation ">
-                                                    <div class="stm-testimonial ">
-                                                        <p>
-                                                        	We stayed at Villa Aqua at the end of June 2014. We were a group of ten friends, three couples and 
-                                                        	four singles which worked perfectly with the configuration of the bedrooms. We were celebrating one of 
-                                                        	the couples just getting married and this was the perfect location. We don't have words to explain just 
-                                                        	how amazing the experience was. It was our own little bit of luxury. 
-                                                        </p>
-                                                        <div class="author ">Jessica Nisselle<br><span style="color: #525252;">Melbourne, Australia </span><br>June 2014</div>
-                                                    </div>
-                                                </div>
-                                                
-                                                <div class="ult-item-wrap " data-animation="animated no-animation ">
-                                                    <div class="stm-testimonial ">
-                                                        <p>
-                                                        	We hosted a company offsite at Villa Aqua and it went great! A wonderful and quiet place to gather and work during the day—a lively atmosphere to gather, eat and drink in at night. I would recommend it to anyone who asked, it's the nicest place I saw in Carmen while I was there.
-                                                        </p>
-                                                        <div class="author ">Joshua<br><span style="color: #525252;">San Francisco, USA </span><br>December 2013</div>
-                                                    </div>
-                                                </div>
-                                                
-                                                <div class="ult-item-wrap " data-animation="animated no-animation ">
-                                                    <div class="stm-testimonial ">
-                                                        <p>
-                                                        	a) Can't wait to come back and have chef cook us a meal out of the new wood fired oven being built. 
-															<br>b) Carolina made our trip even more spectacular than the house was. Knowledge of area and setting up trips for us. 	Never change the person that does the fishing trips and snorkelling trips for you....he's great.
-															<br>c) We have stayed in villas like this in St Bart's, st John, st Martin, you guys were right there. Nothing lacking.
-                                                        </p>
-                                                        <div class="author ">Sonny Bonacio<br<span style="color: #525252;">>New York, USA </span><br>April 2015</div>
-                                                    </div>
-                                                </div>
-                                                
-                                                <div class="ult-item-wrap " data-animation="animated no-animation ">
-                                                    <div class="stm-testimonial ">
-                                                        <p>
-                                                        	Each December our three generation family, now ranging in age from 16 to 90, travels for warm waters, good food 
-                                                        	and togetherness. This villa is one of the best we have ever been to in terms of decor, staff, cleanness 
-                                                        	and cuisine. Everything we needed was either taken care of before we needed it or as soon as we asked. Carolina, 
-                                                        	the Manager, is terrific, always available, always good-natured. 
-                                                        </p>
-                                                        <div class="author ">Jennie Kline<br><span style="color: #525252;">NYC, USA </span><br>December 2014</div>
-                                                    </div>
-                                                </div>
-                                                
+												<?php 
+												foreach ($this->data[0]['reviews'] as $review) 
+												{
+													?>
+												<div class="ult-item-wrap " data-animation="animated no-animation ">
+													<div class="stm-testimonial ">
+														<p>
+															<?php echo $review['reviewShare']; ?>
+														</p>
+														<div class="author "><?php echo $review['name']; ?><br> <?php echo $review['city']; ?><br><?php echo Tools::formatMYSQLToFront($review['date']); ?></div>
+													</div>
+												</div>
+													<?php
+												}
+												?>                                                
                                             </div>
                                         </div>
                                     </div>
@@ -10591,7 +10463,7 @@ class Layout_View
 					<div class="ult-animation  ult-animate-viewport  ult-no-mobile" data-animate="fadeIn" data-animation-delay="0" data-animation-duration="3" data-animation-iteration="1" style="opacity:0;" data-opacity_start_effect="">
 						<div class="rental-service_latest js-carousel-testimonials">
 							<?php 
-							foreach ($this->data['testimonials'] as $testimonial)
+							foreach ($this->data[0]['testimonials'] as $testimonial)
 							{
 								$i = 0;
 								?>
@@ -10599,10 +10471,10 @@ class Layout_View
 							<div class="rental-service_item">
                             	<div class="rs-item_inner">
                                 	<div class="rs-item_actions">
-                                		<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/guest/<?php echo basename($testimonial); ?>"><i class="fa fa-search-plus"></i></a>
+                                		<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/media/original/<?php echo $testimonial['picture']; ?>"><i class="fa fa-search-plus"></i></a>
                                 	</div>
                                 	<div class="rs-item_content">
-                                		<img width="1140" height="676" src="/<?php echo $testimonial; ?>" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
+                                		<img width="1140" height="676" src="/images/media/thumb/<?php echo $testimonial['picture']; ?>" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
                                 	</div>
                                 </div>
                             </div>
@@ -11469,21 +11341,35 @@ class Layout_View
                         <aside id="stm_tweets-3 " class="widget widget_stm_tweets col-xs-12 col-sm-6 col-md-3 col-lg-3 ">
                         	<h4 class="widget-title " style="text-align: center;">Clíma</h4>
                             <div style="margin-top:20px">
-								<div id="ww_2">
-								    <ul id="weather02_body_3531673" style="position: relative; width: 177px; height: 73px; margin: 0px auto 10px; list-style: none;">
-								    	<li style="position:absolute; margin:0px auto 10px auto; left:10px;">
-								    		<img width="60px" height="60px" src="http://www.weatherandtime.net/images/icons/5/10d.png">
-								    	</li>
-								    	<li style="position:absolute; margin:0px auto 10px auto; left:10px;">
-								    		<img width="60px" height="60px" src="http://www.weatherandtime.net/images/icons/5/04d.png">
-								    	</li>
-								        <li id="weather02_t_3531673" class="weather02_t">+25°C</li>
-								        <li id="weather02_city_3531673" class="weather02_city">Playacar, Mex.</li>
-								        <li id="weather02_date_3531673" class="weather02_date">2015-12-19</li>
-								    </ul>
-								</div>
-								<script type="text/javascript" src="http://www.weatherandtime.net/w_4.js?city=3531673&amp;lang=en&amp;cf=C&amp;icon=5"></script>
-						      </div>
+								
+								<div id="plemx-root"></div> 
+  
+  <script type="text/javascript"> 
+
+  var _plm = _plm || [];
+  _plm.push(['_btn', 22073]); 
+  _plm.push(['_loc','mxxx0099']);
+  _plm.push(['location', document.location.host ]);
+
+  (function(d,e,i) {
+  if (d.getElementById(i)) return;
+  var px = d.createElement(e);
+  px.type = 'text/javascript';
+  px.async = true;
+  px.id = i;
+  px.src = ('https:' == d.location.protocol ? 'https:' : 'http:') + '//widget.twnmm.com/js/btn/pelm.js?orig=en_ca';
+  var s = d.getElementsByTagName('script')[0];
+
+  var py = d.createElement('link');
+  py.rel = 'stylesheet'
+  py.href = ('https:' == d.location.protocol ? 'https:' : 'http:') + '//widget.twnmm.com/styles/btn/styles.css'
+
+  s.parentNode.insertBefore(px, s);
+  s.parentNode.insertBefore(py, s);
+})(document, 'script', 'plmxbtn');</script>
+								
+								
+						   	</div>
                         </aside>
                     </div>
                 </div>

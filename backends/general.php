@@ -90,7 +90,128 @@ class generalFrontBackend
 				$bedrooms = $this->model->getGalleryBySection('bedroom-two');
 				$data['bedroom-two'] = $bedrooms;
 				
-			break;			
+				$bedrooms = $this->model->getGalleryBySection('bedroom-three');
+				$data['bedroom-three'] = $bedrooms;
+				
+				$bedrooms = $this->model->getGalleryBySection('bedroom-four');
+				$data['bedroom-four'] = $bedrooms;
+				
+				$bedrooms = $this->model->getGalleryBySection('bedroom-five');
+				$data['bedroom-five'] = $bedrooms;
+				
+			break;		
+
+			case 'living':
+				$info = $this->model->getGalleryBySection('living-room');
+				$data['living-room'] = $info;
+				
+				$info = $this->model->getGalleryBySection('dining-room');
+				$data['dining-room'] = $info;
+				
+				$info = $this->model->getGalleryBySection('family-room');
+				$data['family-room'] = $info;
+				
+				$info = $this->model->getGalleryBySection('library-room');
+				$data['library-room'] = $info;
+				
+				$info = $this->model->getGalleryBySection('kitchen');
+				$data['kitchen'] = $info;
+			break;
+			
+			case 'pool':
+				$info = $this->model->getGalleryBySection('pool');
+				$data['pool'] = $info;
+				
+				$info = $this->model->getGalleryBySection('jacuzzy');
+				$data['jacuzzy'] = $info;
+				
+				$info = $this->model->getGalleryBySection('oven');
+				$data['oven'] = $info;
+				
+				$info = $this->model->getGalleryBySection('gym');
+				$data['gym'] = $info;
+				
+				$info = $this->model->getGalleryBySection('squash');
+				$data['squash'] = $info;
+			break;
+			
+			case 'what':
+				$info = $this->model->getGalleryBySection('activities');
+				$data['activities'] = $info;
+			break;
+			
+			case 'arriving':
+				$info = $this->model->getGalleryBySection('playacar');
+				$data['playacar'] = $info;
+			break;
+			
+			case 'weddings':
+				$info = $this->model->getGalleryBySection('weddings');
+				$data['weddings'] = $info;
+			break;
+			
+			case 'corporate':
+				$info = $this->model->getGalleryBySection('corporate');
+				$data['corporate'] = $info;
+			break;
+			
+			case 'private':
+				$info = $this->model->getGalleryBySection('private-events');
+				$data['private-events'] = $info;
+			break;
+			
+			case 'photo':
+				$info = $this->model->getGalleryBySection('photoshoots');
+				$data['photoshoots'] = $info;
+			break;
+			
+			case 'gallery':
+				$bedrooms = $this->model->getGalleryBySection('master-bedroom');
+				$data['master-bedroom'] = $bedrooms;
+				
+				$bedrooms = $this->model->getGalleryBySection('bedroom-two');
+				$data['bedroom-two'] = $bedrooms;
+				
+				$bedrooms = $this->model->getGalleryBySection('bedroom-three');
+				$data['bedroom-three'] = $bedrooms;
+				
+				$bedrooms = $this->model->getGalleryBySection('bedroom-four');
+				$data['bedroom-four'] = $bedrooms;
+				
+				$bedrooms = $this->model->getGalleryBySection('bedroom-five');
+				$data['bedroom-five'] = $bedrooms;
+				
+				$info = $this->model->getGalleryBySection('living-room');
+				$data['living-room'] = $info;
+				
+				$info = $this->model->getGalleryBySection('dining-room');
+				$data['dining-room'] = $info;
+				
+				$info = $this->model->getGalleryBySection('family-room');
+				$data['family-room'] = $info;
+				
+				$info = $this->model->getGalleryBySection('library-room');
+				$data['library-room'] = $info;
+				
+				$info = $this->model->getGalleryBySection('kitchen');
+				$data['kitchen'] = $info;
+				
+				$info = $this->model->getGalleryBySection('pool');
+				$data['pool'] = $info;
+				
+				$info = $this->model->getGalleryBySection('jacuzzy');
+				$data['jacuzzy'] = $info;
+				
+				$info = $this->model->getGalleryBySection('oven');
+				$data['oven'] = $info;
+				
+				$info = $this->model->getGalleryBySection('gym');
+				$data['gym'] = $info;
+				
+				$info = $this->model->getGalleryBySection('squash');
+				$data['squash'] = $info;
+				
+			break;
 			
 		}
 
