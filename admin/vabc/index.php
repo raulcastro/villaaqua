@@ -1,4 +1,5 @@
 <?php include "../../db.php";
+date_default_timezone_set('America/Cancun');
 include "logcheck.php";
 $villaid=1;
 $owneridses=1;

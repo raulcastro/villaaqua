@@ -92,7 +92,7 @@ $pictures = $model->getGalleryBySection('Testimonials');
                             </li>
                             
                             <li class="dropdown menu-item">
-                                <a href="reviews.php class="dropdown-toggle">Reviews</a>
+                                <a href="reviews.php" class=dropdown-toggle">Reviews</a>
                             </li>
                             
                             <li class="dropdown menu-item">

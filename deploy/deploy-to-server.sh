@@ -1,1 +1,1 @@
-rsync -rvz /var/www/villaaqua.dev/* wheretogo.com.mx@s161140.gridserver.com:/home/161140/users/.home/domains/villaaqua.com/html --exclude-from rsync_exclude.txt
+rsync -rvz /var/www/villaaqua.dev/* wheretogo.com.mx@s161140.gridserver.com:/home/161140/users/.home/domains/5thes/html --exclude-from rsync_exclude.txt

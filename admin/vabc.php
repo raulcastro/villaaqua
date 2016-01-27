@@ -1,4 +1,5 @@
 <?php include "../db.php";
+date_default_timezone_set('America/Cancun');
 include "logcheck.php";
 $villaid=1;
 $owneridses=1;
@@ -392,7 +393,11 @@ function validar(formulario) {
           <td width="56%"><div align="right">
             <table width="300px" border="0" cellpadding="4" cellspacing="1">
               <tr>
-                <td align="right" nowrap="nowrap"><a href="reviews.php" class="Aqua">Reviews</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="login.php" class="Aqua">Log out</a></td>
+                <a href="villarate.php" class="Aqua">Rates</a>&nbsp;&nbsp;
+                	<a href="reviews.php" class="Aqua">Reviews</a>&nbsp;&nbsp;
+                	<a href="main-slider.php" class="Aqua">Testimonials</a>&nbsp;&nbsp;
+                	<a href="sections.php?section=master-bedroom" class="Aqua">Sections</a>&nbsp;&nbsp;
+                	<a href="login.php" class="Aqua">Log out</a>
               </tr>
               </table>
           </div></td>

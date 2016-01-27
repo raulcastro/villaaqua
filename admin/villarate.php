@@ -179,8 +179,8 @@ return false;
                 <td align="right" nowrap="nowrap">
                 	<a href="villarate.php" class="Aqua">Rates</a>&nbsp;&nbsp;
                 	<a href="reviews.php" class="Aqua">Reviews</a>&nbsp;&nbsp;
-                	<a href="reviews.php" class="Aqua">Main Slider</a>&nbsp;&nbsp;
-                	<a href="reviews.php" class="Aqua">Sections</a>&nbsp;&nbsp;
+                	<a href="main-slider.php" class="Aqua">Testimonials</a>&nbsp;&nbsp;
+                	<a href="sections.php?section=master-bedroom" class="Aqua">Sections</a>&nbsp;&nbsp;
                 	<a href="login.php" class="Aqua">Log out</a>
                 </td>
               </tr>
@@ -400,13 +400,13 @@ mysql_close ($connection);
 </table>
 <?php
 	// Include CKEditor class.
-	include_once "../ckeditor/ckeditor.php";
+	include_once "../js/ckeditor/ckeditor.php";
 	// Create class instance.
 	$CKEditor = new CKEditor();
 	// Path to CKEditor directory, ideally instead of relative dir, use an absolute path:
 	//   $CKEditor->basePath = '/ckeditor/'
 	// If not set, CKEditor will try to detect the correct path.
-	$CKEditor->basePath = '../ckeditor/';
+	$CKEditor->basePath = '../js/ckeditor/';
 	// Replace textarea with id (or name) "editor1".
 	$CKEditor->replace("policy");
 	?>

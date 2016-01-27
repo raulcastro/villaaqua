@@ -1,4 +1,5 @@
 <? 
+date_default_timezone_set('America/Cancun');
 if ($_REQUEST["out"]==1){
 session_start(); 
 session_destroy(); 
