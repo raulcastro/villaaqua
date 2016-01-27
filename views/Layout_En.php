@@ -8927,8 +8927,7 @@ You can recognize our maintenance team for their uniform.
                                     <div class="ult-spacer spacer-5633a4efa59d6" data-id="5633a4efa59d6" data-height="18" data-height-mobile="18" data-height-tab="18" data-height-tab-portrait="18" data-height-mobile-landscape="18" style="clear:both;display:block;"></div>
                                     <div class="wpb_text_column wpb_content_element  content-style">
                                         <div class="wpb_wrapper">
-											<?php echo $this->data[0]['policy']['policy']; 
-											?>
+											<?php echo $this->data[0]['policy']['policy']; ?>
                                         </div>
                                     </div>
                                     <div class="ult-spacer spacer-5633a4efa6329" data-id="5633a4efa6329" data-height="52" data-height-mobile="52" data-height-tab="52" data-height-tab-portrait="52" data-height-mobile-landscape="52" style="clear:both;display:block;"></div>
