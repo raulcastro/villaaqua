@@ -16,14 +16,24 @@ mysql_query ($sql);
 mysql_close ($connection);
 }
 
- if($_POST["policy"]<>""){;
- $idvilla=1;
- $vpolicia=$_POST["policy"];
-$connection = mysql_connect($servername,$username, $password);
-mysql_select_db($db, $connection);
-$sql ="update properties set policy=' $vpolicia' where id=1";
-mysql_query ($sql);
-mysql_close ($connection);
+if($_POST["policy"]<>""){;
+	$idvilla=1;
+	$vpolicia=$_POST["policy"];
+	$connection = mysql_connect($servername,$username, $password);
+	mysql_select_db($db, $connection);
+	$sql ="update properties set policy=' $vpolicia' where id=1";
+	mysql_query ($sql);
+	mysql_close ($connection);
+}
+
+if($_POST["policyes"]<>""){;
+	$idvilla=1;
+	$vpolicia=$_POST["policyes"];
+	$connection = mysql_connect($servername,$username, $password);
+	mysql_select_db($db, $connection);
+	$sql ="update properties set policy_esp=' $vpolicia' where id=1";
+	mysql_query ($sql);
+	mysql_close ($connection);
 }
 
 
@@ -119,6 +129,7 @@ $result = mysql_query($query);
 $row = mysql_fetch_array($result);
 $nombre=$row["title"];
 $policy=$row["policy"];
+$policyes=$row["policy_esp"];
 mysql_close ($connection); ?>   
 <html>
 <head>
@@ -375,18 +386,34 @@ mysql_close ($connection);
   </table>
    
 
-  <p><br>
-<p class="admintitles">Policy<br>
-  <form name="form1" method="post" action="villarate.php">
-              <p>
-                <textarea cols="80" id="policy" name="policy" rows="5"><?php echo $policy;?>
-              </textarea>
-              </p>
-              <p>
-                <input type="submit" name="button3" id="button3" value="Submit policy">
-              </p>
-  </form>
-            </p></p>
+<p>
+	<br>
+	<p class="admintitles">Policy English<br>
+		<form name="form1" method="post" action="villarate.php">
+			<p>
+				<textarea cols="80" id="policy" name="policy" rows="5"><?php echo $policy;?></textarea>
+			</p>
+			<p>
+				<input type="submit" name="button3" id="button3" value="Submit policy">
+			</p>
+		</form>
+	</p>
+</p>
+
+<br>
+<p>
+	<br>
+	<p class="admintitles">Policy Spanish<br>
+		<form name="form2" method="post" action="villarate.php">
+			<p>
+				<textarea cols="80" id="policyes" name="policyes" rows="5"><?php echo $policyes;?></textarea>
+			</p>
+			<p>
+				<input type="submit" name="button3" id="button3" value="Submit policy">
+			</p>
+		</form>
+	</p>
+</p>
   <?php }?>
   
       <p>&nbsp;</p></td>
@@ -409,6 +436,7 @@ mysql_close ($connection);
 	$CKEditor->basePath = '../js/ckeditor/';
 	// Replace textarea with id (or name) "editor1".
 	$CKEditor->replace("policy");
+	$CKEditor->replace("policyes");
 	?>
 </body>
 </html>

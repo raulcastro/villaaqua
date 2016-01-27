@@ -87,6 +87,17 @@ class Layout_Model
 		}
 	}
 	
+	public function getPolicies()
+	{
+		try {
+			$query = 'SELECT policy, policy_esp FROM properties WHERE id = 1';
+			return $this->db->getRow($query);
+			
+		} catch (Exception $e) {
+			return false;
+		}
+	}
+	
 	public function deleteGallery($picture_id)
 	{
 		try

@@ -213,6 +213,11 @@ class generalFrontBackend
 				
 			break;
 			
+			case 'policy':
+				$info = $this->model->getPolicies();
+				$data['policy'] = $info;
+			break;
+			
 		}
 
 		return $data;

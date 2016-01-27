@@ -200,43 +200,43 @@ class Layout_View
 				break;
 				
 				case 'arriving':
-					echo self::getArrivingContent();
+					echo self :: getArrivingContent();
 				break;
 				
 				case 'riviera':
-					echo self::getRivieraContent();
+					echo self :: getRivieraContent();
 				break;
 				
 				case 'out':
-					echo self::getOutContent();
+					echo self :: getOutContent();
 				break;
 				
 				case 'culture':
-					echo self::getCultureContent();
+					echo self :: getCultureContent();
 				break;
 				
 				case 'contact':
-					echo self::getContactContent();
+					echo self :: getContactContent();
 				break;
 				
 				case 'corporate':
-					echo self::getCorporateContent();
+					echo self :: getCorporateContent();
 				break;
 				
 				case 'family':
-					echo self::getFamilyContent();
+					echo self :: getFamilyContent();
 				break;
 				
 				case 'photo':
-					echo self::getPhotoContent();
+					echo self :: getPhotoContent();
 				break;
 				
 				case 'private':
-					echo self::getPrivateContent();
+					echo self :: getPrivateContent();
 				break;
 				
 				case 'weddings':
-					echo self::getWeddingsContent();
+					echo self :: getWeddingsContent();
 				break;
 				
 				case 'events':
@@ -8927,40 +8927,8 @@ You can recognize our maintenance team for their uniform.
                                     <div class="ult-spacer spacer-5633a4efa59d6" data-id="5633a4efa59d6" data-height="18" data-height-mobile="18" data-height-tab="18" data-height-tab-portrait="18" data-height-mobile-landscape="18" style="clear:both;display:block;"></div>
                                     <div class="wpb_text_column wpb_content_element  content-style">
                                         <div class="wpb_wrapper">
-                                            <p>At Villa Aqua we encourage our guests to respect and treat the property with responsibility and courtesy by following some basic rules:</p>
-                                            <p><strong>Check-In time: 3pm <br>	Check-Out time: 12pm</strong></p>
-                                            <h6>IT IS STRICTLY FORBIDDEN TO:</h6>
-                                            <ul>
-                                            	<li>Smoke inside the house.</li>
-                                            	<li>Use any illegal or prohibited substance inside the property</li>
-                                            	<li>Make loud noise after 11pm.</li>
-                                            	<li>Deteriorate furniture, decoration or property itself.</li>
-                                            	<li>Remove anything from this property at any time for any reason.</li>
-                                            </ul>
-                                            <h6>WE KINDLY ASK YOU TO:</h6>
-                                            <ul>
-                                            	<li>Respect the maximum number of occupants at all times: 10 adults or up to 12 guests if there are 2 or more children 12 years old or younger in the group.</li>
-                                            	<li>Turn off AC units while room windows/doors are open.</li>
-                                            	<li>Keep exterior doors locked.</li>
-                                            	<li>Place all your valuable items in safe boxes.</li>
-                                            	<li>Use the garage or park in front of the front door but please do not block the street or park in the lawn for any reason.</li>
-                                            	<li>Do not leave valuables in your car.</li>
-                                            </ul>
-                                            <h6>POOL RULES:</h6>
-                                            <ul>
-                                            	<li>Children are to be supervised at all times.</li>
-                                            	<li>Swim at your own risk.</li>
-                                            	<li>No lifeguard on duty.</li>
-                                            	<li>Shower before swimming.</li>
-                                            	<li>No running / No diving</li>
-                                            	<li>No horseplay or ball play</li>
-                                            	<li>No glass in pool area.</li>
-                                            	<li>No foreign objects in pool / whirlpool. </li>
-                                            	<li>No bubble bath, shampoo or foam in pool/ whirlpool.</li>
-                                            </ul>
-                                            <p>These and some other simple rules that will be specified in detailed upon your arrival will be courteously but firmly enforced and supervised by the villa staff. We ask your cooperation in maintaining an environment that encourages relaxation and enjoyment.</p>
-                                            <p>Villa Aqua is located inside a family neighborhood so we ask you to respect the neighbors and the use of the facilities so that our next guests can enjoy their vacation as you do. Villa Aqua staff members have the authority to maintain order, to ensure the safety of staff and property, and to enforce these and other regulations. Directions given by villa staff must be followed. Disruptive behavior will not be tolerated and may result in the police being notified.</p>
-
+											<?php echo $this->data[0]['policy']['policy']; 
+											?>
                                         </div>
                                     </div>
                                     <div class="ult-spacer spacer-5633a4efa6329" data-id="5633a4efa6329" data-height="52" data-height-mobile="52" data-height-tab="52" data-height-tab-portrait="52" data-height-mobile-landscape="52" style="clear:both;display:block;"></div>
