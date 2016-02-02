@@ -445,8 +445,8 @@ class Layout_View
 			<div class="top-navbar navbar navbar-default">
 			    <div class="container">
 					<ul class="nav navbar-nav navbar-right">
-							<li><a href="/">Ingl&eacute;s</a></li>
-			                <li><a href="/es/">Spanish</a></li>
+							<li><a href="/">English</a></li>
+			                <li><a href="/es/">Español</a></li>
 					</ul>
 				</div><!-- end .container -->
 			</div>
@@ -515,11 +515,11 @@ class Layout_View
                                 <ul class="dropdown-menu">
                                     <li class="menu-item"><a href="/es/out-and-about/">Playas</a></li>
                                     <li class="menu-item"><a href="/es/out-and-about/#actividadesacuaticas" class="to-section">Actividades Acuáticas</a></li>
-                                    <li class="menu-item"><a href="/es/out-and-about/" class="to-section">Golf</a></li>
-                                    <li class="menu-item"><a href="/es/out-and-about/" class="to-section">Parques</a></li>
-                                    <li class="menu-item"><a href="/es/cultura/">Cultura</a></li>
-                                    <li class="menu-item"><a href="es/cultura/#dining" class="to-section">Restaurantes</a></li>
-                                    <li class="menu-item"><a href="es/cultura/#shopping" class="to-section">Compras</a></li>
+                                    <li class="menu-item"><a href="/es/out-and-about/#golf" class="to-section">Golf</a></li>
+                                    <li class="menu-item"><a href="/es/out-and-about/#parques" class="to-section">Parques</a></li>
+                                    <li class="menu-item"><a href="/es/cultura/#cultura">Cultura</a></li>
+                                    <li class="menu-item"><a href="es/cultura/#restaurantes" class="to-section">Restaurantes</a></li>
+                                    <li class="menu-item"><a href="es/cultura/#compras" class="to-section">Compras</a></li>
                                 </ul>
                             </li>
                             
@@ -1106,7 +1106,7 @@ class Layout_View
 
                                                 </span>
                                             </p>
-                                            
+                                            <br>
                                            
                                         </div>
 
@@ -1148,16 +1148,19 @@ class Layout_View
 </li>
 	                                                                        		<li class="item-feature">Jacuzzi Interior en la habitación principal
 </li>
-	                                                                        		<li class="item-feature">Cuarto de lavado</li>
+	                                                                        		<li class="item-feature">Cuarto de lavado </li>
+                                                                                   
 	                                                                        		
                                                                         		</ul>
+                                                                                
                                                                         	</div>
+                                                                            <br>
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        
+                                                       
                                                         <div class="wpb_accordion_section group">
                                                             <h3 class="wpb_accordion_header ui-accordion-header"><a href="#optimised-for-speed"><strong>SERVICIOS INCLUIDOS:</strong></a></h3>
                                                             <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
@@ -1216,7 +1219,7 @@ class Layout_View
 </li>
                                                                         		</ul>
                                                                         	</div>
-                                                                        	<p><i>*Contacte a su  <a href="/contact-us/" target="_blank">Anfitrión de Villa</a> para obtener mayor información y precios.</i></p>
+                                                                        	<p><i>*Contacte a su  <a href="mailto:villahost@villaaqua.com?Subject=Contact%20from%20Villa%20Aqua" target="_top">Anfitrión de Villa</a> para obtener mayor información y precios.</i></p>
                                                                         </div>
 
                                                                     </div>
@@ -1320,7 +1323,7 @@ class Layout_View
 	                                                                     			<li class="item-feature">Teléfonos: 2 líneas (local + internacional)</li>
 	                                                                     			<li class="item-feature">Servicio telefónico: Servicio Local/Nacional y Llamadas gratuitas a Estados Unidos y Canadá a través de servicio VOIP (voz sobre IP)</li>
 	                                                                     			<li class="item-feature">Internet inalámbrico sin costo</li>
-	                                                                     			<li class="item-feature">Servicios de Fax y Paquetería.  <a href="/es/contacto/">(Consulte con su Anfitrión de Villa)</a>)</li>
+	                                                                     			<li class="item-feature">Servicios de Fax y Paquetería. (Consulte con su   <a href="mailto:villahost@villaaqua.com?Subject=Contact%20from%20Villa%20Aqua" target="_top">Anfitrión de Villa</a>)</li>
 	                                                                     		</ul>
                                                                         	</div>
                                                                         </div>
@@ -1760,7 +1763,7 @@ class Layout_View
 	                                                                     		<ul class="item-features_list_extended">
 	                                                                     			<li class="item-feature">Servicio de cortesía nocturna
 </li>
-	                                                                     			<li class="item-feature">Entrega de periódico a la habitación,                                                                                                             bajo solicitud(Favor de informar a su                                                                                                               Anfitrión de Villa sobre el periódico de                                                                                                            su preferencia, con una semana de
+                                                                                    <li class="item-feature">Entrega de periódico a la habitación,                                                                                                             bajo solicitud(Favor de informar a su                                                                                                               <a href="mailto:villahost@villaaqua.com?Subject=Contact%20from%20Villa%20Aqua" target="_top">Anfitrión de Villa </a> sobre el periódico de                                                                                                            su preferencia, con una semana de
                                                                                                             anticipación a su llegada, para                                                                                                                 verificar la disponibilidad del mismo).</li>
 	                                                                     		</ul>
 	                                                                     	</div>
@@ -2107,8 +2110,8 @@ class Layout_View
 	                                                                  	<div class="stm_item-features_inner">
 	                                                                   		<ul class="item-features_list_extended">
 	                                                                   			<li class="item-feature">Servicio de cortesía nocturna</li>
-	                                                                   			<li class="item-feature">Entrega de periódico a la habitación, bajo                                                                                      solicitud (Favor de informar a su anfitrión de villa sobre su                                                                                          periódico de preferencia para verificar la disponibilidad del                                                                                        mismo)
-                                                                                </li>
+	                                                                   			<li class="item-feature">Anfitrión de Villa </a> sobre el periódico de                                                                                                            su preferencia, con una semana de
+                                                                                                            anticipación a su llegada, para                                                                                                                 verificar la disponibilidad del mismo).</li>
 	                                                                     	</ul>
 	                                                                   </div>
 
@@ -2272,8 +2275,8 @@ class Layout_View
 	                                                                     	<div class="stm_item-features_inner">
 	                                                                     		<ul class="item-features_list_extended">
 	                                                                     			<li class="item-feature">Servicio de cortesía nocturna</li>
-	                                                                     			<li class="item-feature">Entrega de periódico a la habitación,                                                                                         bajo solicitud (Favor de informar a su anfitrión de villa                                                                                           sobre el periódico de su preferencia, con una semana de                                                                                             anticipación a su llegada, para verificar la disponibilidad                                                                                         del mismo. 
-                                                                                    </li>
+	                                                                     			<li class="item-feature">Anfitrión de Villa </a> sobre el periódico de                                                                                                            su preferencia, con una semana de
+                                                                                                            anticipación a su llegada, para                                                                                                                 verificar la disponibilidad del mismo).</li>
 	                                                                     		</ul>
 	                                                                     	</div>
                                                                        </div>
@@ -2569,8 +2572,8 @@ class Layout_View
 	                                                                     	<div class="stm_item-features_inner">
 	                                                                     		<ul class="item-features_list_extended">
 	                                                                     			<li class="item-feature">Servicio de cortesía nocturna</li>
-	                                                                     			<li class="item-feature">Entrega de periódico a la habitación,                                                                                         bajo solicitud (Favor de informar a su anfitrión de villa                                                                                           sobre el periódico de su preferencia, con una semana de                                                                                             anticipación a su llegada, para verificar la disponibilidad                                                                                         del mismo).
-                                                                                    </li>
+	                                                                     			<li class="item-feature">Anfitrión de Villa </a> sobre el periódico de                                                                                                            su preferencia, con una semana de
+                                                                                                            anticipación a su llegada, para                                                                                                                 verificar la disponibilidad del mismo).</li>
 	                                                                     		</ul>
 	                                                                     	</div>
                                                                        </div>
@@ -2736,8 +2739,8 @@ class Layout_View
 	                                                                     	<div class="stm_item-features_inner">
 	                                                                     		<ul class="item-features_list_extended">
 	                                                                     			<li class="item-feature"> Servicio de cortesía nocturna</li>
-	                                                                     			<li class="item-feature">Entrega de periódico a la habitación,                                                                                             bajo solicitud (Favor de informar a su anfitrión de villa                                                                                           sobre el periódico de su preferencia, con una semana de                                                                                             anticipación a su llegada, para verificar la                                                                                                         disponibilidad del mismo)
-                                                                                    </li>
+	                                                                     			<li class="item-feature">Anfitrión de Villa </a> sobre el periódico de                                                                                                            su preferencia, con una semana de
+                                                                                                            anticipación a su llegada, para                                                                                                                 verificar la disponibilidad del mismo).</li>
 	                                                                     		</ul>
 	                                                                     	</div>
                                                                        </div>
@@ -3374,7 +3377,7 @@ class Layout_View
                                             </p>
                                             <p class="paragraph ng-attr-widget">
 												Contacte a su
-<a href="/contact-us/" target="_blank">Anfitrión de Villa</a>  para mayor información sobre nuestros Servicios 
+<a href="mailto:villahost@villaaqua.com?Subject=Contact%20from%20Villa%20Aqua" target="_top">Anfitrión de Villa </a>  para mayor información sobre nuestros Servicios 
                                                 de Alimentos, Bebidas y 
                                                 <a href="/images/staff-and-services/menu-food-and-beverage.pdf" target="_blank">Menús.</a>
                                             </p>
@@ -3871,12 +3874,11 @@ class Layout_View
                                                 única o bien, un programa completo de acondicionamiento 
                                                 físico durante su estancia. Podrá relajarse con unas clases privadas de 
                                                 yoga o ejercitarse intensamente con nuestro especialista de Crossfit, 
-                                                contacte a su <a href="/contact-us/" target="_blank">Anfitrión de Villa</a> para 
-                                                programar sus actividades.
+                                                contacte a su <a href="mailto:villahost@villaaqua.com?Subject=Contact%20from%20Villa%20Aqua" target="_top">Anfitrión de Villa </a> para programar sus actividades.
 
                                             </p>
                                             
-                                            
+                                             
                                             
                                             <p class="paragraph ng-attr-widget">
 												También contamos con equipo deportivo para divertirse en familia mientras 
@@ -4686,8 +4688,7 @@ class Layout_View
                                             </p>
                                             <p class="paragraph ng-attr-widget">
                                                 <span class="ng-directive ng-binding" style="">
-                                                    Contacte a su <a href="/contact-us/" target="_blank">Asistente de 
-                                                    Villa</a>, quien le atenderá con gusto.
+                                                    Contacte a su <a href="mailto:villahost@villaaqua.com?Subject=Contact%20from%20Villa%20Aqua" target="_top">Anfitrión de Villa</a> , quien le atenderá con gusto.
                                                 </span>
                                             </p>
                                         </div>
@@ -4754,7 +4755,7 @@ class Layout_View
                                            
                                            <p class="paragraph ng-attr-widget">
                                                 <span class="ng-directive ng-binding" style="">
-                                                   Contacte a su <a href="/es/contacto/" target="_blank">                                                                                           Anfitrión de Villa</a> para cualquier duda sobre el servicio de alimentos.
+                                                   Contacte a su <a href="mailto:villahost@villaaqua.com?Subject=Contact%20from%20Villa%20Aqua" target="_top">Anfitrión de Villa</a> para cualquier duda sobre el servicio de alimentos.
   
                                                 </span>
                                             </p>
@@ -5021,7 +5022,7 @@ class Layout_View
                                                  			<li class="item-feature">Entretenimiento </li>
                                                  			<li class="item-feature">Tours y Actividades</li>
                                                 		</ul>
-                                                		<p><i>*Contacte a su <a href="/contact-us/" target="_blank">Villa Host</a> para más información y precios</i></p>
+                                                		<p><i>*Contacte a su <a href="mailto:villahost@villaaqua.com?Subject=Contact%20from%20Villa%20Aqua" target="_top">Anfitrion de Villa</a> para más información y precios</i></p>
                                                         
        
                                                 	</div>
@@ -5253,7 +5254,7 @@ class Layout_View
                                                 <span class="ng-directive ng-binding" style="">
                                                	 En el menú de nuestro Spa encontrará masajes relajantes, faciales y otros tratamientos 
                                                 de belleza.
-                                                </span>
+                                                </span> 
                                             </p>
                                             
                                             <p class="paragraph ng-attr-widget">
@@ -5271,8 +5272,8 @@ class Layout_View
                                             
                                             <p class="paragraph ng-attr-widget">
                                                 <span class="ng-directive ng-binding" style="">
-                                               	 Contacte su <a href="/contact-us/" target="_blank">Anfitrión de Villa para más información
-                                                o reservas.</a> Recomendamos ampliamente reservar con al menos 24 horas de anticipación para
+                                               	 Contacte su <a href="mailto:villahost@villaaqua.com?Subject=Contact%20from%20Villa%20Aqua" target="_top">Anfitrion de Villa</a> para más información
+                                                o reservas. Recomendamos ampliamente reservar con al menos 24 horas de anticipación para
                                                 garantizar la disponibilidad de los servicios.
                                       
                                                 </span>
@@ -5360,8 +5361,8 @@ class Layout_View
                                             </p>
                                             <p class="paragraph ng-attr-widget">
                                                 <span class="ng-directive ng-binding" style="">
-                                                   Contacte a su <a href="/contact-us/" target="_blank">Anfitrión de Villa 
-                                                    para conocer las </a> opciones y costos.
+                                                   Contacte a su <a href="mailto:villahost@villaaqua.com?Subject=Contact%20from%20Villa%20Aqua" target="_top">Anfitrion de Villa</a> 
+                                                    para conocer las  opciones y costos.
                                                 </span>
                                             </p>
                                         </div>
@@ -5419,7 +5420,7 @@ class Layout_View
                                             <p class="paragraph ng-attr-widget">
                                                 <span class="ng-directive ng-binding" style="">
                                                     ¡Las opciones son infinitas! ¡Usted sólo piense en lo que le gustaría 
-                                                    hacer y nuestro  hará <a href="/contact-us/" target="_blank">Anfitrión 
+                                                    hacer y nuestro  hará <a href="mailto:villahost@villaaqua.com?Subject=Contact%20from%20Villa%20Aqua" target="_top">Anfitrión 
                                                     de Villa</a> hasta lo imposible para hacer que suceda!
                                                 </span>
                                             </p>
@@ -7176,7 +7177,7 @@ class Layout_View
                                                         	<p class="paragraph ng-attr-widget">
                                                         		Nota: Los paseos en yate salen de Puerto Aventuras y/o Cancún. 
                                                                 La transportación desde Villa Aqua no está incluida 
-                                                                pero puede solicitar este servicio con su Anfitrión de Villa.
+                                                                pero puede solicitar este servicio con su <a href="mailto:villahost@villaaqua.com?Subject=Contact%20from%20Villa%20Aqua" target="_top">Anfitrión de Villa</a> .
  
                                                         	</p> 
                                                             <br>
@@ -7377,10 +7378,7 @@ class Layout_View
 
                                                         	</p> 
                                                             
-                                                            <p class="paragraph ng-attr-widget">
-                                                        		Contacte a su Anfitrión de Villa para obtener más información y precios.
-
-                                                        	</p>
+                                                            
                                                             <br>
 
                                                         </div>
@@ -7413,10 +7411,7 @@ class Layout_View
 
                                                         	</p> 
                                                             
-                                                            <p class="paragraph ng-attr-widget">
-                                                        		Contacte a su Anfitrión de Villa para obtener más información y precios.
-
-                                                        	</p>
+                                                              
                                                             <br>
                                                         </div>
                                                     </div>
@@ -7460,7 +7455,7 @@ class Layout_View
                                     </div>
                                     <br>
 	                                    <p class="paragraph ng-attr-widget">
-                                                        		Contacte a su Anfitrión de Villa para obtener más información y precios.
+                                                        		Contacte a su <a href="mailto:villahost@villaaqua.com?Subject=Contact%20from%20Villa%20Aqua" target="_top">Anfitrión de Villa</a>  para obtener más información y precios.
 
                                                         	</p>
                                 </div>
@@ -7708,7 +7703,7 @@ class Layout_View
 	                                        </div>
 	                                    </div>
 	                                    <br>
-	                                    <p class="paragraph ng-attr-widget">Contacte a su Anfitrión de Villa para obtener información 
+	                                    <p class="paragraph ng-attr-widget">Contacte a su <a href="mailto:villahost@villaaqua.com?Subject=Contact%20from%20Villa%20Aqua" target="_top">Anfitrión de Villa</a>  para obtener información 
                                             sobre horarios, tarifas y reservas.
                                         </p> 
                                     </div>
@@ -7749,6 +7744,8 @@ class Layout_View
                                     </div>
                                 </div>
                             </div>
+                            
+                            
 
 <!------------- Bedroom 4 ------------------->
                             <div class="vc_col-sm-6 wpb_column vc_column_container ">
@@ -8035,6 +8032,11 @@ class Layout_View
 	                                        </div>
 	                                    </div>
                                     </div>
+                                        
+                                        <br>
+	                                    <p class="paragraph ng-attr-widget">Contacte a su <a href="mailto:villahost@villaaqua.com?Subject=Contact%20from%20Villa%20Aqua" target="_top">Anfitrión de Villa</a>  para obtener información 
+                                            sobre horarios, tarifas y reservas.
+                                        </p> 
                                 </div>
                             </div>
                         </div>
@@ -9349,7 +9351,7 @@ class Layout_View
                                                     familia y amigos ya que nosotros nos haremos cargo de todo mientras ustedes 
                                                     intercambian sus votos en una celebración, con la exclusividad, lujo y estilo
                                                     que se merecen.<br>
-                                                    Nuestro <strong>Anfitrión de Villa le ayudará con todo lo que necesite para que 
+                                                    Nuestro <strong><a href="mailto:villahost@villaaqua.com?Subject=Contact%20from%20Villa%20Aqua" target="_top">Anfitrión de Villa</a>  le ayudará con todo lo que necesite para que 
                                                     su evento sea un rotundo éxito. Desde afinar los detalles previos a la 
                                                     boda, tales como el alojamiento, transportación y amenidades especiales 
                                                     para sus invitados, hasta organizar un “día de spa” para la novia y sus 
@@ -9597,7 +9599,7 @@ class Layout_View
                             <div class="rental-service_item">
                                 <div class="rs-item_inner">
                                     <div class="rs-item_actions">
-                                        <a class="rs-item_action_link" href="/es/eventos/"><i class="fa fa-eye"></i></a>
+                                        <a class="rs-item_action_link" href="/es/eventos-privados/"><i class="fa fa-eye"></i></a>
                                     </div>
                                     <div class="rs-item_content"><img width="570" height="446" src="/images/events/Villa_Aqua_private_events.jpg" class="attachment-full wp-post-image" alt="Villas-near-the-beach" />
                                     </div>
@@ -9726,6 +9728,7 @@ class Layout_View
 
 							                                	
 							                                </p>
+                                                            <br>
 	                                                    </div>
 	                                                </div>
 	                                            </div>
@@ -9771,6 +9774,7 @@ class Layout_View
                                                                 duda, son sitios que los turistas no deben dejar de visitar.
 
 	                                                    	</p>
+                                                            <br>
 	                                                    </div>
 	                                                </div>
 	                                            </div>
@@ -9823,7 +9827,7 @@ class Layout_View
                                                                 Si usted es ciudadano de cualquier otro país, necesitará ir al Consulado 
                                                                 mexicano para solicitar una visa.
 	                                                        </p>
-	                                                        
+	                                                        <br>
 	                                                    </div>
 	                                                </div>
 	                                            </div>
@@ -9863,6 +9867,7 @@ class Layout_View
                                                                 información sobre otras opciones de Villas de lujo en la zona.
 
 							                                </p>
+                                                            <br>
 	                                                    </div>
 	                                                </div>
 	                                            </div>
@@ -9892,6 +9897,7 @@ class Layout_View
                                                                 para bebé,  están disponibles para su renta a través de un proveedor 
                                                                 externo.
 	                                                    	</p>
+                                                            <br>
 	                                                    </div>
 	                                                </div>
 	                                            </div>
@@ -9910,7 +9916,7 @@ class Layout_View
                                                                 terracería en el que encontrará vestigios Mayas.
 
 	                                                        </p>
-	                                                        
+	                                                        <br>
 	                                                    </div>
 	                                                </div>
 	                                            </div>
@@ -9928,6 +9934,7 @@ class Layout_View
                                                                 el corazón de Playa! 
 
 	                                                        </p>
+                                                            <br>
 	                                                    </div>
 	                                                </div>
 	                                            </div>
@@ -9958,6 +9965,7 @@ class Layout_View
                                                                 a nuestro Anfitrión de Villa.
 
 	                                                        </p>
+                                                            <br>
 	                                                    </div>
 	                                                </div>
 	                                            </div>
@@ -9982,6 +9990,7 @@ class Layout_View
                                                                 tiene muros de concreto muy gruesos que afectan la conectividad.
 
 	                                                        </p>
+                                                            <br>
 	                                                    </div>
 	                                                </div>
 	                                            </div>
@@ -9999,6 +10008,7 @@ class Layout_View
                                                                 y Eventos</strong></a> para obtener mayor información. 
 
 	                                                        </p>
+                                                            <br>
 	                                                    </div>
 	                                                </div>
 	                                            </div>
@@ -10031,6 +10041,7 @@ class Layout_View
 	                                                        	Para reservaciones hechas con menos de 45 días de anticipación, requerimos
                                                                 la liquidación total del pago (100%) para confirmar la reserva. 
 	                                                        </p>
+                                                            <br>
 	                                                    </div>
 	                                                </div>
 	                                            </div>
@@ -10082,6 +10093,7 @@ class Layout_View
                                                                 estancias en la villa. No habrá reembolsos monetarios.
 
 	                                                        </p>
+                                                            <br>
 	                                                    </div>
 	                                                </div>
 	                                            </div>
@@ -10107,6 +10119,7 @@ class Layout_View
                                                                 el personal que trabaja arduamente en atenderlo como se merece.
 
 	                                                        </p>
+                                                            <br>
 	                                                    </div>
 	                                                </div>
 	                                            </div>
@@ -10126,6 +10139,7 @@ class Layout_View
                                                                 disponibilidad y fechas. 
 
 	                                                        </p>
+                                                            <br>
 	                                                    </div>
 	                                                </div>
 	                                            </div>
@@ -10150,6 +10164,7 @@ class Layout_View
                                                                 devolveremos a su cuenta. (aplica un cargo de 45 dólares por este servicio).
 
 	                                                        </p>
+                                                            <br>
 	                                                    </div>
 	                                                </div>
 	                                            </div>
@@ -10177,6 +10192,7 @@ class Layout_View
                                                                 que usted solicite un servicio diferente.
 
 	                                                        </p>
+                                                            <br>
 	                                                    </div>
 	                                                </div>
 	                                            </div>
@@ -10212,6 +10228,7 @@ class Layout_View
                                                                 embotelladas.
 
 	                                                        </p>
+                                                            <br>
 	                                                    </div>
 	                                                </div>
 	                                            </div>
@@ -10236,6 +10253,7 @@ class Layout_View
                                                                 permiten.
 
 	                                                        </p>
+                                                            <br>
 	                                                    </div>
 	                                                </div>
 	                                            </div>
@@ -10264,6 +10282,7 @@ class Layout_View
  
 	                                                        
 	                                                        </p>
+                                                            <br>
 	                                                    </div>
 	                                                </div>
 	                                            </div>
@@ -10286,6 +10305,7 @@ class Layout_View
                                                                 de Bartender.
 
 	                                                        </p>
+                                                            <br>
 	                                                    </div>
 	                                                </div>
 	                                            </div>
@@ -10307,6 +10327,7 @@ class Layout_View
                                                                 entretenimiento.
 
 	                                                        </p>
+                                                            <br>
 	                                                    </div>
 	                                                </div>
 	                                            </div>
@@ -10326,6 +10347,7 @@ class Layout_View
                                                                 cuenta que al recorrer su horario de servicio para el desayuno, es probable 
                                                                 que no pueda servir el almuerzo o comida o bien aplicar un cargo por horas extra.
 	                                                        </p>
+                                                            <br> 
 	                                                    </div>
 	                                                </div>
 	                                            </div>

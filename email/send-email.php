@@ -1,10 +1,10 @@
 <?php
 require ('PHPMailer/PHPMailerAutoload.php') ;
 
-$from       = 'reservaciones@inroadrivieramaya.com';
-$fromName   = 'In Road Riviera Maya';
-$to         = 'reservaciones@inroadrivieramaya.com';
-$replyTo    = 'reservaciones@inroadrivieramaya.com';
+$from       = 'rentals@villaaqua.com';
+$fromName   = 'Villa Aqua Contact Form';
+$to         = 'rentals@villaaqua.com';
+$replyTo    = 'rentals@villaaqua.com';
 
 $mail       = new PHPMailer;
 
@@ -15,38 +15,33 @@ $mail->isSMTP();                                      // Set mailer to use SMTP 
 $mail->From = $from;
 $mail->FromName = $fromName;
 $mail->addAddress($to, 'Info');     // Add a recipient             // Name is optional
-$mail->addReplyTo($replyTo, 'Comentarios desde In Road Riviera Maya');
+$mail->addReplyTo($replyTo, 'New coments from Villa Aqua - Contact Form');
 $mail->addBCC('oliver@wheretogo.com.mx');
 $mail->addBCC('raul@wheretogo.com.mx');
 
 
 $mail->isHTML(true);                                  // Set email format to HTML
-if ($_POST['kindForm'] == 'transferService')
-{
-    $mail->Subject = 'Nuevo transfer In Road Riviera Maya';
-    $mail->Body    = ' Servicio: <strong>'.$_POST['serviceTitle']. '</strong> <br />'
-                . ' Hora: <strong>'.$_POST['serviceHour']. '</strong> <br />'
-                . ' Dia: <strong>'.$_POST['dateService']. '</strong> <br />'
-                . ' Numero de personas: <strong>'.$_POST['noPeople']. '</strong> <br />'
-                . ' Nombre: <strong>'.$_POST['name']. '</strong> <br />'
-                . ' Email: <strong>'.$_POST['email'] . '</strong> <br />'
-                . ' Telefono: <strong>'.$_POST['phone'] . '</strong> <br />'
-                . ' Nota: <strong>'.$_POST['message']. '</strong>'
+
+    $mail->Subject = 'New coments from Villa Aqua - Contact Form';
+    $mail->Body    = ' Name: <strong>'.$_POST['clientName']. '</strong> <br />'
+                . ' City / Country: <strong>'.$_POST['clientCity']. '</strong> <br />'
+                . ' Company: <strong>'.$_POST['clientCompany']. '</strong> <br />'
+                . ' Phone: <strong>'.$_POST['clientPhone']. '</strong> <br />'
+                . ' Mobile: <strong>'.$_POST['clientMobile']. '</strong> <br />'
+                . ' E-mail: <strong>'.$_POST['clientEmail'] . '</strong> <br />'
+                . ' Arrival: <strong>'.$_POST['clientArrival'] . '</strong> <br />'
+                . ' Departure: <strong>'.$_POST['clientDeparture'] . '</strong> <br />'
+                . ' No. of Adults: <strong>'.$_POST['clientAdults'] . '</strong> <br />'
+                . ' No. of Children: <strong>'.$_POST['clientChildren'] . '</strong> <br />'
+                . ' Purpose of my Trip: <strong>'.$_POST['clientPurpose'] . '</strong> <br />'
+                . ' Info about: <strong>'.$_POST['clientInfo']. '</strong>'
             ;
-}
-else
-{
-    $mail->Subject = 'Comentarios desde In Road Riviera Maya';
-    $mail->Body    = ' Name: <strong>'.$_POST['name']. '</strong> <br />'
-                . ' Email: <strong>'.$_POST['email'] . '</strong> <br />'
-                . ' Phone: <strong>'.$_POST['phone'] . '</strong> <br />'
-                . ' Message: <strong>'.$_POST['message']. '</strong>'
-            ;
-}
+
 
 if(!$mail->send()) {
-    echo 'Message could not be sent.';
-    echo 'Mailer Error: ' . $mail->ErrorInfo;
+//     echo 'Message could not be sent.';
+//     echo 'Mailer Error: ' . $mail->ErrorInfo;
+	echo 0;
 } else {
     echo 'success';
 }

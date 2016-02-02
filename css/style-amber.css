@@ -2768,7 +2768,7 @@ table tbody > tr > td,
 .table > tbody > tr > td {
     color: #7b7b7b;
     font-size: 12px;
-    font-style: italic;
+    /*font-style: italic;*/
 }
 
 /* Table - Striped */
@@ -5500,12 +5500,24 @@ body .ult-carousel-wrapper.bullets-white .slick-dots li.slick-active i {
 .custom-table td {
 	/*border: 1px solid green!important;*/
 	width: 8.333%!important;
+	    padding: 8px 0px!important;
+}
+
+.custom-height {
+	height: 130px!important;
+	vertical-align: middle;
 }
 
 .gal {
 	margin: 10px auto;
 }
 
-
+.failed {
+	font-size: 13px;
+	padding: 0;
+	margin-top: -5px;
+    margin-bottom: 8px;
+    display: none;
+}
 
 

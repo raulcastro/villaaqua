@@ -11,14 +11,14 @@
     {
         case 'es':
             require_once ($root . '/views/Layout_Es.php');
-            $data['title'] = 'Inicio';
+            $data['title'] = 'Contact Us';
             $data['description'] = '';
 			$data['keywords'] = '';
         break;
 
         case '':
             require_once ($root . '/views/Layout_En.php');
-            $data['title'] 			= 'Living';
+            $data['title'] 			= 'Contact Us';
             $data['description'] 	= 'Des';
 			$data['keywords'] 		= 'Key';
         break;
