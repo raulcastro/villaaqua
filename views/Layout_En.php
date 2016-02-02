@@ -841,7 +841,6 @@ class Layout_View
 									<?php
 								}
 								?>
-								
 							</div>
 						</div>
 					</div>
@@ -2486,7 +2485,6 @@ class Layout_View
                                         		}
                                         	}
                                         	?>
-                                        
                                         </div>
                                     </div>
                                 </div>
@@ -8836,7 +8834,9 @@ You can recognize our maintenance team for their uniform.
                                     	    
                                     	 			</table>
                                     	 		</td>
-                                    	   <? }?>
+                                    	   	<?php 
+                                    		}
+                                    		?>
                                     		</tr>
                                     	</table>
                                     	

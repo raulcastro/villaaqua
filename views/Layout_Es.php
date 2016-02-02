@@ -147,6 +147,10 @@ class Layout_View
 					echo self :: getPackagesHead();
 				break;
 				
+				case 'gallery':
+					echo self :: getGalleryHead();
+				break;
+				
 				default:
 				break;
 			}
@@ -257,6 +261,10 @@ class Layout_View
 				
 				case 'packages':
 					echo self :: getPackagesContent();
+				break;
+				
+				case 'gallery':
+					echo self :: getGalleryContent();
 				break;
 			}
 
@@ -823,52 +831,22 @@ class Layout_View
 					<div class="ult-animation ult-animate-viewport ult-no-mobile " data-animate="fadeIn " data-animation-delay="0 " data-animation-duration=".5 " data-animation-iteration="1 " style="opacity:1; " data-opacity_start_effect=" ">
 						<div id="ult-carousel-984694667561be29557b29 " class="ult-carousel-wrapper bullets-white ult_horizontal " data-gutter="15 " data-rtl="false ">
 							<div class="ult-carousel-slide">
+								<?php 
+								foreach ($this->data[0]['reviews'] as $review) 
+								{
+									?>
 								<div class="ult-item-wrap " data-animation="animated no-animation ">
 									<div class="stm-testimonial ">
 										<p>
-											Perfect perfect perfect!
+											<?php echo $review['reviewShare']; ?>
 										</p>
-										<div class="author ">Williams & Bell<br> Louisiana & Nevada, USA <br>August 2015</div>
+										<div class="author "><?php echo $review['name']; ?><br> <?php echo $review['city']; ?><br><?php echo Tools::formatMYSQLToFront($review['date']); ?></div>
 									</div>
 								</div>
-								
-								<div class="ult-item-wrap " data-animation="animated no-animation ">
-									<div class="stm-testimonial ">
-										<p>
-											We can not say enough. The staff was incredible. We enjoyed our stay 
-											so much & can not wait to come back again. Truly was an incredible house, 
-											stay & more!!!!
-										</p>
-										<div class="author ">Edmonton´s<br> Texas, USA<br>July 2015</div>
-									</div>
-								</div>
-								                                                
-								<div class="ult-item-wrap " data-animation="animated no-animation ">
-									<div class="stm-testimonial ">
-										<p>
-											Greatest and most helpful staff very warm and hard working, everytime 
-											I'm in playa I'll be staying at the Villa Aqua. Nothing compares.
-										</p>
-										<div class="author ">Jimmy<br>Australia<br>December 2014</div>
-									</div>
-								</div>
-								                                                
-								<div class="ult-item-wrap " data-animation="animated no-animation ">
-									<div class="stm-testimonial ">
-										<p>
-											Everything about the villa is 10/10 don't think you will be able 
-											to find a better villa in playa del Carmen. Thanks for everything :)
-										</p>
-										<div class="author ">Adam<br>Melbourne, Australia<br>December 2014</div>
-									</div>
-								</div>
-								                                                
-								<div class="ult-item-wrap " data-animation="animated no-animation ">
-									<div class="stm-testimonial ">
-										<p>A wonderful villa, great location, lovely staff. Many thanks!</p>
-										<div class="author ">Jayne, Andy McGee & Family<br>British Isles<br>August 2014</div>
-									</div>
-								</div>
+									<?php
+								}
+								?>
+							
 							</div>
 						</div>
 					</div>
@@ -1785,116 +1763,26 @@ class Layout_View
 
                                     <div class="wpb_single_image wpb_content_element vc_align_center">
                                         <div class="wpb_wrapper ult-carousel">
+                                            <?php 
+                                        	if ($this->data[0]['master-bedroom'])
+                                        	{
+                                        		foreach($this->data[0]['master-bedroom'] as $picture)
+                                        		{
+                                        			?>
                                         	<div class="rental-service_item">
                                             	<div class="rs-item_inner">
                                             		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/the-rooms/Villa_Aqua_master_bedroom_5.jpg"><i class="fa fa-search-plus"></i></a>
+                                            			<a class="rs-item_action_zoom js-fancybox" rel="<?php echo $picture['section_name']; ?>" href="/images/media/original/<?php echo $picture['picture']; ?>"><i class="fa fa-search-plus"></i></a>
                                             		</div>
                                             		<div class="rs-item_content">
-                                            			<img width="1140" height="676" src="/images/overview/the-rooms/Villa_Aqua_master_bedroom_5.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
+                                            			<img width="1140" height="676" src="/images/media/thumb/<?php echo $picture['picture']; ?>" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
                                             		</div>
                                             	</div>
                                             </div>
-                                            
-                                            <div class="rental-service_item">
-                                            	<div class="rs-item_inner">
-                                            		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/the-rooms/Villa_Aqua_master_bedroom_4.jpg"><i class="fa fa-search-plus"></i></a>
-                                            		</div>
-                                            		<div class="rs-item_content">
-                                            			<img width="1140" height="676" src="/images/overview/the-rooms/Villa_Aqua_master_bedroom_4.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-                                            		</div>
-                                            	</div>
-                                            </div>
-                                            
-                                            <div class="rental-service_item">
-                                            	<div class="rs-item_inner">
-                                            		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/the-rooms/Villa_Aqua_master_bedroom_1.jpg"><i class="fa fa-search-plus"></i></a>
-                                            		</div>
-                                            		<div class="rs-item_content">
-                                            			<img width="1140" height="676" src="/images/overview/the-rooms/Villa_Aqua_master_bedroom_1.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-                                            		</div>
-                                            	</div>
-                                            </div>
-                                            
-                                            <div class="rental-service_item">
-                                            	<div class="rs-item_inner">
-                                            		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/the-rooms/Villa_Aqua_master_bedroom_12_4ta_posicion.jpg"><i class="fa fa-search-plus"></i></a>
-                                            		</div>
-                                            		<div class="rs-item_content">
-                                            			<img width="1140" height="676" src="/images/overview/the-rooms/Villa_Aqua_master_bedroom_12_4ta_posicion.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-                                            		</div>
-                                            	</div>
-                                            </div>
-                                             
-                                            <div class="rental-service_item">
-                                            	<div class="rs-item_inner">
-                                            		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/the-rooms/Villa_Aqua_master_bedroom_10_5ta_pos.jpg"><i class="fa fa-search-plus"></i></a>
-                                            		</div>
-                                            		<div class="rs-item_content">
-                                            			<img width="1140" height="676" src="/images/overview/the-rooms/Villa_Aqua_master_bedroom_10_5ta_pos.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-                                            		</div>
-                                            	</div>
-                                            </div>
-                                            
-                                            
-                                            <div class="rental-service_item">
-                                            	<div class="rs-item_inner">
-                                            		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/the-rooms/Villa_Aqua_master_bedroom_3.jpg"><i class="fa fa-search-plus"></i></a>
-                                            		</div>
-                                            		<div class="rs-item_content">
-                                            			<img width="1140" height="676" src="/images/overview/the-rooms/Villa_Aqua_master_bedroom_3.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-                                            		</div>
-                                            	</div>
-                                            </div>
-                                            
-                                            <div class="rental-service_item">
-                                            	<div class="rs-item_inner">
-                                            		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/the-rooms/Villa_Aqua_master_bedroom_2da_bano.jpg"><i class="fa fa-search-plus"></i></a>
-                                            		</div>
-                                            		<div class="rs-item_content">
-                                            			<img width="1140" height="676" src="/images/overview/the-rooms/Villa_Aqua_master_bedroom_2da_bano.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-                                            		</div>
-                                            	</div>
-                                            </div>
-                                            
-                                            <div class="rental-service_item">
-                                            	<div class="rs-item_inner">
-                                            		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/the-rooms/Villa_Aqua_master_bedroom_15_3era_bano.jpg"><i class="fa fa-search-plus"></i></a>
-                                            		</div>
-                                            		<div class="rs-item_content">
-                                            			<img width="1140" height="676" src="/images/overview/the-rooms/Villa_Aqua_master_bedroom_15_3era_bano.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-                                            		</div>
-                                            	</div>
-                                            </div>
-                                            
-                                            <div class="rental-service_item">
-                                            	<div class="rs-item_inner">
-                                            		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/the-rooms/Villa_Aqua_master_bedroom_14_ultima.jpg"><i class="fa fa-search-plus"></i></a>
-                                            		</div>
-                                            		<div class="rs-item_content">
-                                            			<img width="1140" height="676" src="/images/overview/the-rooms/Villa_Aqua_master_bedroom_14_ultima.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-                                            		</div>
-                                            	</div>
-                                            </div>
-                                            
-                                            <div class="rental-service_item">
-                                            	<div class="rs-item_inner">
-                                            		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/the-rooms/Villa_Aqua_master_bedroom_6.jpg"><i class="fa fa-search-plus"></i></a>
-                                            		</div>
-                                            		<div class="rs-item_content">
-                                            			<img width="1140" height="676" src="/images/overview/the-rooms/Villa_Aqua_master_bedroom_6.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-                                            		</div>
-                                            	</div>
-                                            </div>
+                                        			<?php
+                                        		}
+                                        	}
+                                        	?>
                                         </div>
                                     </div>
                                 </div>
@@ -1916,61 +1804,26 @@ class Layout_View
                                 <div class="wpb_wrapper">
                                     <div class="wpb_single_image wpb_content_element vc_align_center">
                                         <div class="wpb_wrapper ult-carousel">
+                                            <?php 
+                                        	if ($this->data[0]['bedroom-two'])
+                                        	{
+                                        		foreach($this->data[0]['bedroom-two'] as $picture)
+                                        		{
+                                        			?>
                                         	<div class="rental-service_item">
                                             	<div class="rs-item_inner">
                                             		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/the-rooms/Villa_Aqua_bedroom_2.jpg"><i class="fa fa-search-plus"></i></a>
+                                            			<a class="rs-item_action_zoom js-fancybox" rel="<?php echo $picture['section_name']; ?>" href="/images/media/original/<?php echo $picture['picture']; ?>"><i class="fa fa-search-plus"></i></a>
                                             		</div>
                                             		<div class="rs-item_content">
-                                            			<img width="1140" height="676" src="/images/overview/the-rooms/Villa_Aqua_bedroom_2.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
+                                            			<img width="1140" height="676" src="/images/media/thumb/<?php echo $picture['picture']; ?>" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
                                             		</div>
                                             	</div>
                                             </div>
-                                            
-                                            <div class="rental-service_item">
-                                            	<div class="rs-item_inner">
-                                            		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/the-rooms/Villa_Aqua_bedroom_2.2.2.jpg"><i class="fa fa-search-plus"></i></a>
-                                            		</div>
-                                            		<div class="rs-item_content">
-                                            			<img width="1140" height="676" src="/images/overview/the-rooms/Villa_Aqua_bedroom_2.2.2.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-                                            		</div>
-                                            	</div>
-                                            </div>
-                                            
-                                            <div class="rental-service_item">
-                                            	<div class="rs-item_inner">
-                                            		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/the-rooms/Villa_Aqua_bedroom_2.3.jpg"><i class="fa fa-search-plus"></i></a>
-                                            		</div>
-                                            		<div class="rs-item_content">
-                                            			<img width="1140" height="676" src="/images/overview/the-rooms/Villa_Aqua_bedroom_2.3.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-                                            		</div>
-                                            	</div>
-                                            </div>
-                                            
-                                            <div class="rental-service_item">
-                                            	<div class="rs-item_inner">
-                                            		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/the-rooms/Villa_Aqua_bedroom_2.4.jpg"><i class="fa fa-search-plus"></i></a>
-                                            		</div>
-                                            		<div class="rs-item_content">
-                                            			<img width="1140" height="676" src="/images/overview/the-rooms/Villa_Aqua_bedroom_2.4.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-                                            		</div>
-                                            	</div>
-                                            </div>
-                                            
-                                            <div class="rental-service_item">
-                                            	<div class="rs-item_inner">
-                                            		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/the-rooms/Villa_Aqua_bedroom_2.2.jpg"><i class="fa fa-search-plus"></i></a>
-                                            		</div>
-                                            		<div class="rs-item_content">
-                                            			<img width="1140" height="676" src="/images/overview/the-rooms/Villa_Aqua_bedroom_2.2.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-                                            		</div>
-                                            	</div>
-                                            </div>
-                                        
+                                        			<?php
+                                        		}
+                                        	}
+                                        	?>
                                         </div>
                                     </div>
                                 </div>
@@ -2030,7 +1883,6 @@ class Layout_View
                                                             </div>
                                                         </div>
                                                     </div>
-
 
                                                     <div class="wpb_accordion_section group">
                                                         <h3 class="wpb_accordion_header ui-accordion-header"><a href="#drag-drop-builder"><strong>BAÑO</strong></a></h3>
@@ -2295,60 +2147,26 @@ class Layout_View
                                 <div class="wpb_wrapper">
                                     <div class="wpb_single_image wpb_content_element vc_align_center">
                                         <div class="wpb_wrapper  ult-carousel">
+                                            <?php 
+                                        	if ($this->data[0]['bedroom-three'])
+                                        	{
+                                        		foreach($this->data[0]['bedroom-three'] as $picture)
+                                        		{
+                                        			?>
                                         	<div class="rental-service_item">
                                             	<div class="rs-item_inner">
                                             		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/the-rooms/Villa_Aqua_bedroom_3.jpg"><i class="fa fa-search-plus"></i></a>
+                                            			<a class="rs-item_action_zoom js-fancybox" rel="<?php echo $picture['section_name']; ?>" href="/images/media/original/<?php echo $picture['picture']; ?>"><i class="fa fa-search-plus"></i></a>
                                             		</div>
                                             		<div class="rs-item_content">
-                                            			<img width="1140" height="676" src="/images/overview/the-rooms/Villa_Aqua_bedroom_3.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
+                                            			<img width="1140" height="676" src="/images/media/thumb/<?php echo $picture['picture']; ?>" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
                                             		</div>
                                             	</div>
                                             </div>
-                                            
-                                            <div class="rental-service_item">
-                                            	<div class="rs-item_inner">
-                                            		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/the-rooms/Villa_Aqua_bedroom_3.1.jpg"><i class="fa fa-search-plus"></i></a>
-                                            		</div>
-                                            		<div class="rs-item_content">
-                                            			<img width="1140" height="676" src="/images/overview/the-rooms/Villa_Aqua_bedroom_3.1.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-                                            		</div>
-                                            	</div>
-                                            </div>
-                                            
-                                            <div class="rental-service_item">
-                                            	<div class="rs-item_inner">
-                                            		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/the-rooms/Villa_Aqua_bedroom_3.2.jpg"><i class="fa fa-search-plus"></i></a>
-                                            		</div>
-                                            		<div class="rs-item_content">
-                                            			<img width="1140" height="676" src="/images/overview/the-rooms/Villa_Aqua_bedroom_3.2.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-                                            		</div>
-                                            	</div>
-                                            </div>
-                                            
-                                            <div class="rental-service_item">
-                                            	<div class="rs-item_inner">
-                                            		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/the-rooms/Villa_Aqua_bedroom_3.4_antes_mapa.jpg"><i class="fa fa-search-plus"></i></a>
-                                            		</div>
-                                            		<div class="rs-item_content">
-                                            			<img width="1140" height="676" src="/images/overview/the-rooms/Villa_Aqua_bedroom_3.4_antes_mapa.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-                                            		</div>
-                                            	</div>
-                                            </div>
-                                            
-                                            <div class="rental-service_item">
-                                            	<div class="rs-item_inner">
-                                            		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/the-rooms/Villa_Aqua_bedroom_3.3.jpg"><i class="fa fa-search-plus"></i></a>
-                                            		</div>
-                                            		<div class="rs-item_content">
-                                            			<img width="1140" height="676" src="/images/overview/the-rooms/Villa_Aqua_bedroom_3.3.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-                                            		</div>
-                                            	</div>
-                                            </div>
+                                        			<?php
+                                        		}
+                                        	}
+                                        	?>
                                         </div>
                                     </div>
                                 </div>
@@ -2370,60 +2188,26 @@ class Layout_View
                                 <div class="wpb_wrapper">
                                     <div class="wpb_single_image wpb_content_element vc_align_center">
                                         <div class="wpb_wrapper ult-carousel">
+                                        	<?php 
+                                        	if ($this->data[0]['bedroom-four'])
+                                        	{
+                                        		foreach($this->data[0]['bedroom-four'] as $picture)
+                                        		{
+                                        			?>
                                         	<div class="rental-service_item">
                                             	<div class="rs-item_inner">
                                             		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/the-rooms/Villa_Aqua_bedroom_4_new.jpg"><i class="fa fa-search-plus"></i></a>
+                                            			<a class="rs-item_action_zoom js-fancybox" rel="<?php echo $picture['section_name']; ?>" href="/images/media/original/<?php echo $picture['picture']; ?>"><i class="fa fa-search-plus"></i></a>
                                             		</div>
                                             		<div class="rs-item_content">
-                                            			<img width="1140" height="676" src="/images/overview/the-rooms/Villa_Aqua_bedroom_4_new.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
+                                            			<img width="1140" height="676" src="/images/media/thumb/<?php echo $picture['picture']; ?>" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
                                             		</div>
                                             	</div>
                                             </div>
-                                            
-                                            <div class="rental-service_item">
-                                            	<div class="rs-item_inner">
-                                            		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/the-rooms/Villa_Aqua_bedroom_4_new_02.jpg"><i class="fa fa-search-plus"></i></a>
-                                            		</div>
-                                            		<div class="rs-item_content">
-                                            			<img width="1140" height="676" src="/images/overview/the-rooms/Villa_Aqua_bedroom_4_new_02.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-                                            		</div>
-                                            	</div>
-                                            </div>
-                                            
-                                            <div class="rental-service_item">
-                                            	<div class="rs-item_inner">
-                                            		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/the-rooms/Villa_Aqua_bedroom_4_new_03.jpg"><i class="fa fa-search-plus"></i></a>
-                                            		</div>
-                                            		<div class="rs-item_content">
-                                            			<img width="1140" height="676" src="/images/overview/the-rooms/Villa_Aqua_bedroom_4_new_03.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-                                            		</div>
-                                            	</div>
-                                            </div>
-                                        	
-                                        	<div class="rental-service_item">
-                                            	<div class="rs-item_inner">
-                                            		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/the-rooms/Villa_Aqua_bedroom_4.1.jpg"><i class="fa fa-search-plus"></i></a>
-                                            		</div>
-                                            		<div class="rs-item_content">
-                                            			<img width="1140" height="676" src="/images/overview/the-rooms/Villa_Aqua_bedroom_4.1.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-                                            		</div>
-                                            	</div>
-                                            </div>
-                                        
-                                        	<div class="rental-service_item">
-                                            	<div class="rs-item_inner">
-                                            		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/the-rooms/Villa_Aqua_bedroom_4.2.jpg"><i class="fa fa-search-plus"></i></a>
-                                            		</div>
-                                            		<div class="rs-item_content">
-                                            			<img width="1140" height="676" src="/images/overview/the-rooms/Villa_Aqua_bedroom_4.2.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-                                            		</div>
-                                            	</div>
-                                            </div>
+                                        			<?php
+                                        		}
+                                        	}
+                                        	?>
                                         </div>
                                     </div>
                                 </div>
@@ -2487,13 +2271,6 @@ class Layout_View
                                                             </div>
                                                         </div>
                                                         
-
-
-
-
-
-
-
                                                         <div class="wpb_accordion_section group">
                                                             <h3 class="wpb_accordion_header ui-accordion-header"><a href="#drag-drop-builder"><strong>Baños</strong></a></h3>
                                                             <div class="wpb_accordion_content ui-accordion-content vc_clearfix">
@@ -2760,72 +2537,26 @@ class Layout_View
 
                                     <div class="wpb_single_image wpb_content_element vc_align_center">
                                         <div class="wpb_wrapper ult-carousel">
+                                            <?php 
+                                        	if ($this->data[0]['bedroom-five'])
+                                        	{
+                                        		foreach($this->data[0]['bedroom-five'] as $picture)
+                                        		{
+                                        			?>
                                         	<div class="rental-service_item">
                                             	<div class="rs-item_inner">
                                             		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/the-rooms/Villa_Aqua_bedroom_5.jpg"><i class="fa fa-search-plus"></i></a>
+                                            			<a class="rs-item_action_zoom js-fancybox" rel="<?php echo $picture['section_name']; ?>" href="/images/media/original/<?php echo $picture['picture']; ?>"><i class="fa fa-search-plus"></i></a>
                                             		</div>
                                             		<div class="rs-item_content">
-                                            			<img width="1140" height="676" src="/images/overview/the-rooms/Villa_Aqua_bedroom_5.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
+                                            			<img width="1140" height="676" src="/images/media/thumb/<?php echo $picture['picture']; ?>" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
                                             		</div>
                                             	</div>
                                             </div>
-                                        
-                                        	<div class="rental-service_item">
-                                            	<div class="rs-item_inner">
-                                            		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/the-rooms/Villa_Aqua_bedroom_5.3.jpg"><i class="fa fa-search-plus"></i></a>
-                                            		</div>
-                                            		<div class="rs-item_content">
-                                            			<img width="1140" height="676" src="/images/overview/the-rooms/Villa_Aqua_bedroom_5.3.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-                                            		</div>
-                                            	</div>
-                                            </div>
-                                            
-                                            <div class="rental-service_item">
-                                            	<div class="rs-item_inner">
-                                            		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/the-rooms/Villa_Aqua_bedroom_5.1.jpg"><i class="fa fa-search-plus"></i></a>
-                                            		</div>
-                                            		<div class="rs-item_content">
-                                            			<img width="1140" height="676" src="/images/overview/the-rooms/Villa_Aqua_bedroom_5.1.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-                                            		</div>
-                                            	</div>
-                                            </div>
-                                            
-                                            <div class="rental-service_item">
-                                            	<div class="rs-item_inner">
-                                            		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/the-rooms/Villa_Aqua_bedroom_2.1.jpg"><i class="fa fa-search-plus"></i></a>
-                                            		</div>
-                                            		<div class="rs-item_content">
-                                            			<img width="1140" height="676" src="/images/overview/the-rooms/Villa_Aqua_bedroom_2.1.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-                                            		</div>
-                                            	</div>
-                                            </div>
-                                            
-                                            <div class="rental-service_item">
-                                            	<div class="rs-item_inner">
-                                            		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/the-rooms/Villa_Aqua_bedroom_5.4_antes_mapa.jpg"><i class="fa fa-search-plus"></i></a>
-                                            		</div>
-                                            		<div class="rs-item_content">
-                                            			<img width="1140" height="676" src="/images/overview/the-rooms/Villa_Aqua_bedroom_5.4_antes_mapa.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-                                            		</div>
-                                            	</div>
-                                            </div>
-                                            
-                                            <div class="rental-service_item">
-                                            	<div class="rs-item_inner">
-                                            		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/the-rooms/Villa_Aqua_bedroom_5.2.jpg"><i class="fa fa-search-plus"></i></a>
-                                            		</div>
-                                            		<div class="rs-item_content">
-                                            			<img width="1140" height="676" src="/images/overview/the-rooms/Villa_Aqua_bedroom_5.2.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-                                            		</div>
-                                            	</div>
-                                            </div>
-                                        
+                                        			<?php
+                                        		}
+                                        	}
+                                        	?>
                                         </div>
                                     </div>
                                 </div>
@@ -2927,71 +2658,26 @@ class Layout_View
 
                                     <div class="wpb_single_image wpb_content_element vc_align_center">
                                         <div class="wpb_wrapper  ult-carousel">
+                                            <?php 
+                                        	if ($this->data[0]['living-room'])
+                                        	{
+                                        		foreach($this->data[0]['living-room'] as $picture)
+                                        		{
+                                        			?>
                                         	<div class="rental-service_item">
                                             	<div class="rs-item_inner">
                                             		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/living-spaces/Villa_Aqua_living_room_1.jpg"><i class="fa fa-search-plus"></i></a>
+                                            			<a class="rs-item_action_zoom js-fancybox" rel="<?php echo $picture['section_name']; ?>" href="/images/media/original/<?php echo $picture['picture']; ?>"><i class="fa fa-search-plus"></i></a>
                                             		</div>
                                             		<div class="rs-item_content">
-                                            			<img width="1140" height="676" src="/images/overview/living-spaces/Villa_Aqua_living_room_1.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
+                                            			<img width="1140" height="676" src="/images/media/thumb/<?php echo $picture['picture']; ?>" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
                                             		</div>
                                             	</div>
                                             </div>
-                                            
-                                            <div class="rental-service_item">
-                                            	<div class="rs-item_inner">
-                                            		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/living-spaces/Villa_Aqua_living_room_2.jpg"><i class="fa fa-search-plus"></i></a>
-                                            		</div>
-                                            		<div class="rs-item_content">
-                                            			<img width="1140" height="676" src="/images/overview/living-spaces/Villa_Aqua_living_room_2.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-                                            		</div>
-                                            	</div>
-                                            </div>
-                                            
-                                            <div class="rental-service_item">
-                                            	<div class="rs-item_inner">
-                                            		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/living-spaces/Villa_Aqua_living_room_3.jpg"><i class="fa fa-search-plus"></i></a>
-                                            		</div>
-                                            		<div class="rs-item_content">
-                                            			<img width="1140" height="676" src="/images/overview/living-spaces/Villa_Aqua_living_room_3.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-                                            		</div>
-                                            	</div>
-                                            </div>
-                                            
-                                            <div class="rental-service_item">
-                                            	<div class="rs-item_inner">
-                                            		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/living-spaces/Villa_Aqua_living_room_5.jpg"><i class="fa fa-search-plus"></i></a>
-                                            		</div>
-                                            		<div class="rs-item_content">
-                                            			<img width="1140" height="676" src="/images/overview/living-spaces/Villa_Aqua_living_room_5.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-                                            		</div>
-                                            	</div>
-                                            </div>
-                                            
-                                            <div class="rental-service_item">
-                                            	<div class="rs-item_inner">
-                                            		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/living-spaces/Villa_Aqua_living_room_6.jpg"><i class="fa fa-search-plus"></i></a>
-                                            		</div>
-                                            		<div class="rs-item_content">
-                                            			<img width="1140" height="676" src="/images/overview/living-spaces/Villa_Aqua_living_room_6.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-                                            		</div>
-                                            	</div>
-                                            </div>
-                                            
-                                            <div class="rental-service_item">
-                                            	<div class="rs-item_inner">
-                                            		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/living-spaces/Villa_Aqua_living_room_7_ultima.jpg"><i class="fa fa-search-plus"></i></a>
-                                            		</div>
-                                            		<div class="rs-item_content">
-                                            			<img width="1140" height="676" src="/images/overview/living-spaces/Villa_Aqua_living_room_7_ultima.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-                                            		</div>
-                                            	</div>
-                                            </div>
+                                        			<?php
+                                        		}
+                                        	}
+                                        	?>
                                         </div>
                                     </div>
                                 </div>
@@ -3011,82 +2697,26 @@ class Layout_View
                                 <div class="wpb_wrapper">
                                     <div class="wpb_single_image wpb_content_element vc_align_center">
                                         <div class="wpb_wrapper ult-carousel">
+                                            <?php 
+                                        	if ($this->data[0]['dining-room'])
+                                        	{
+                                        		foreach($this->data[0]['dining-room'] as $picture)
+                                        		{
+                                        			?>
                                         	<div class="rental-service_item">
                                             	<div class="rs-item_inner">
                                             		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr2" href="/images/overview/living-spaces/Villa_Aqua_dining_room_1.jpg"><i class="fa fa-search-plus"></i></a>
+                                            			<a class="rs-item_action_zoom js-fancybox" rel="<?php echo $picture['section_name']; ?>" href="/images/media/original/<?php echo $picture['picture']; ?>"><i class="fa fa-search-plus"></i></a>
                                             		</div>
                                             		<div class="rs-item_content">
-                                            			<img width="1140" height="676" src="/images/overview/living-spaces/Villa_Aqua_dining_room_1.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
+                                            			<img width="1140" height="676" src="/images/media/thumb/<?php echo $picture['picture']; ?>" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
                                             		</div>
                                             	</div>
                                             </div>
-                                            
-                                            <div class="rental-service_item">
-                                            	<div class="rs-item_inner">
-                                            		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr2" href="/images/overview/living-spaces/Villa_Aqua_dining_room_2.jpg"><i class="fa fa-search-plus"></i></a>
-                                            		</div>
-                                            		<div class="rs-item_content">
-                                            			<img width="1140" height="676" src="/images/overview/living-spaces/Villa_Aqua_dining_room_2.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-                                            		</div>
-                                            	</div>
-                                            </div>
-                                            
-                                            <div class="rental-service_item">
-                                            	<div class="rs-item_inner">
-                                            		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr2" href="/images/overview/living-spaces/Villa_Aqua_dining_room_3.jpg"><i class="fa fa-search-plus"></i></a>
-                                            		</div>
-                                            		<div class="rs-item_content">
-                                            			<img width="1140" height="676" src="/images/overview/living-spaces/Villa_Aqua_dining_room_3.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-                                            		</div>
-                                            	</div>
-                                            </div>
-                                            
-                                            <div class="rental-service_item">
-                                            	<div class="rs-item_inner">
-                                            		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr2" href="/images/overview/living-spaces/Villa_Aqua_dining_room_9_antes_mascaras.jpg"><i class="fa fa-search-plus"></i></a>
-                                            		</div>
-                                            		<div class="rs-item_content">
-                                            			<img width="1140" height="676" src="/images/overview/living-spaces/Villa_Aqua_dining_room_9_antes_mascaras.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-                                            		</div>
-                                            	</div>
-                                            </div>
-                                            
-                                            <div class="rental-service_item">
-                                            	<div class="rs-item_inner">
-                                            		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr2" href="/images/overview/living-spaces/Villa_Aqua_dining_room_4.jpg"><i class="fa fa-search-plus"></i></a>
-                                            		</div>
-                                            		<div class="rs-item_content">
-                                            			<img width="1140" height="676" src="/images/overview/living-spaces/Villa_Aqua_dining_room_4.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-                                            		</div>
-                                            	</div>
-                                            </div>
-                                            
-                                            <div class="rental-service_item">
-                                            	<div class="rs-item_inner">
-                                            		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr2" href="/images/overview/living-spaces/Villa_Aqua_dining_room_5.jpg"><i class="fa fa-search-plus"></i></a>
-                                            		</div>
-                                            		<div class="rs-item_content">
-                                            			<img width="1140" height="676" src="/images/overview/living-spaces/Villa_Aqua_dining_room_5.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-                                            		</div>
-                                            	</div>
-                                            </div>
-                                            
-                                            <div class="rental-service_item">
-                                            	<div class="rs-item_inner">
-                                            		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr2" href="/images/overview/living-spaces/Villa_Aqua_dining_room_6.jpg"><i class="fa fa-search-plus"></i></a>
-                                            		</div>
-                                            		<div class="rs-item_content">
-                                            			<img width="1140" height="676" src="/images/overview/living-spaces/Villa_Aqua_dining_room_6.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-                                            		</div>
-                                            	</div>
-                                            </div>
+                                        			<?php
+                                        		}
+                                        	}
+                                        	?>
                                         </div>
                                     </div>
                                 </div>
@@ -3175,62 +2805,26 @@ class Layout_View
                                 <div class="wpb_wrapper">
                                     <div class="wpb_single_image wpb_content_element vc_align_center">
                                         <div class="wpb_wrapper ult-carousel">
+                                            <?php 
+                                        	if ($this->data[0]['family-room'])
+                                        	{
+                                        		foreach($this->data[0]['family-room'] as $picture)
+                                        		{
+                                        			?>
                                         	<div class="rental-service_item">
                                             	<div class="rs-item_inner">
                                             		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr3" href="/images/overview/living-spaces/Villa_Aqua_family_room_bar_1.jpg"><i class="fa fa-search-plus"></i></a>
+                                            			<a class="rs-item_action_zoom js-fancybox" rel="<?php echo $picture['section_name']; ?>" href="/images/media/original/<?php echo $picture['picture']; ?>"><i class="fa fa-search-plus"></i></a>
                                             		</div>
                                             		<div class="rs-item_content">
-                                            			<img width="1140" height="676" src="/images/overview/living-spaces/Villa_Aqua_family_room_bar_1.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
+                                            			<img width="1140" height="676" src="/images/media/thumb/<?php echo $picture['picture']; ?>" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
                                             		</div>
                                             	</div>
                                             </div>
-                                            
-                                            <div class="rental-service_item">
-                                            	<div class="rs-item_inner">
-                                            		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr3" href="/images/overview/living-spaces/Villa_Aqua_family_room_new.jpg"><i class="fa fa-search-plus"></i></a>
-                                            		</div>
-                                            		<div class="rs-item_content">
-                                            			<img width="1140" height="676" src="/images/overview/living-spaces/Villa_Aqua_family_room_new.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-                                            		</div>
-                                            	</div>
-                                            </div>
-                                            
-                                            <div class="rental-service_item">
-                                            	<div class="rs-item_inner">
-                                            		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr3" href="/images/overview/living-spaces/Villa_Aqua_family_room_bar_3.jpg"><i class="fa fa-search-plus"></i></a>
-                                            		</div>
-                                            		<div class="rs-item_content">
-                                            			<img width="1140" height="676" src="/images/overview/living-spaces/Villa_Aqua_family_room_bar_3.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-                                            		</div>
-                                            	</div>
-                                            </div>
-                                            
-                                            <div class="rental-service_item">
-                                            	<div class="rs-item_inner">
-                                            		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr3" href="/images/overview/living-spaces/Villa_Aqua_family_room_bar_5_4ra_posicion.jpg"><i class="fa fa-search-plus"></i></a>
-                                            		</div>
-                                            		<div class="rs-item_content">
-                                            			<img width="1140" height="676" src="/images/overview/living-spaces/Villa_Aqua_family_room_bar_5_4ra_posicion.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-                                            		</div>
-                                            	</div>
-                                            </div>
-                                            
-                                            <div class="rental-service_item">
-                                            	<div class="rs-item_inner">
-                                            		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr3" href="/images/overview/living-spaces/Villa_Aqua_family_room_bar_2.jpg"><i class="fa fa-search-plus"></i></a>
-                                            		</div>
-                                            		<div class="rs-item_content">
-                                            			<img width="1140" height="676" src="/images/overview/living-spaces/Villa_Aqua_family_room_bar_2.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-                                            		</div>
-                                            	</div>
-                                            </div>
-                                            
-                                            
+                                        			<?php
+                                        		}
+                                        	}
+                                        	?>
                                         </div>
                                     </div>
                                 </div>
@@ -3250,60 +2844,26 @@ class Layout_View
                                 <div class="wpb_wrapper">
                                     <div class="wpb_single_image wpb_content_element vc_align_center">
                                         <div class="wpb_wrapper ult-carousel">
+                                            <?php 
+                                        	if ($this->data[0]['library-room'])
+                                        	{
+                                        		foreach($this->data[0]['library-room'] as $picture)
+                                        		{
+                                        			?>
                                         	<div class="rental-service_item">
                                             	<div class="rs-item_inner">
                                             		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr4" href="/images/overview/living-spaces/Villa_Aqua_library_tv_1.jpg"><i class="fa fa-search-plus"></i></a>
+                                            			<a class="rs-item_action_zoom js-fancybox" rel="<?php echo $picture['section_name']; ?>" href="/images/media/original/<?php echo $picture['picture']; ?>"><i class="fa fa-search-plus"></i></a>
                                             		</div>
                                             		<div class="rs-item_content">
-                                            			<img width="1140" height="676" src="/images/overview/living-spaces/Villa_Aqua_library_tv_1.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
+                                            			<img width="1140" height="676" src="/images/media/thumb/<?php echo $picture['picture']; ?>" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
                                             		</div>
                                             	</div>
                                             </div>
-                                            
-                                            <div class="rental-service_item">
-                                            	<div class="rs-item_inner">
-                                            		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr4" href="/images/overview/living-spaces/Villa_Aqua_library_tv_5_2da_pos.jpg"><i class="fa fa-search-plus"></i></a>
-                                            		</div>
-                                            		<div class="rs-item_content">
-                                            			<img width="1140" height="676" src="/images/overview/living-spaces/Villa_Aqua_library_tv_5_2da_pos.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-                                            		</div>
-                                            	</div>
-                                            </div>
-                                            
-                                            <div class="rental-service_item">
-                                            	<div class="rs-item_inner">
-                                            		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr4" href="/images/overview/living-spaces/Villa_Aqua_library_tv_3.jpg"><i class="fa fa-search-plus"></i></a>
-                                            		</div>
-                                            		<div class="rs-item_content">
-                                            			<img width="1140" height="676" src="/images/overview/living-spaces/Villa_Aqua_library_tv_3.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-                                            		</div>
-                                            	</div>
-                                            </div>
-                                            
-                                            <div class="rental-service_item">
-                                            	<div class="rs-item_inner">
-                                            		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr4" href="/images/overview/living-spaces/Villa_Aqua_library_tv_4_4ta.jpg"><i class="fa fa-search-plus"></i></a>
-                                            		</div>
-                                            		<div class="rs-item_content">
-                                            			<img width="1140" height="676" src="/images/overview/living-spaces/Villa_Aqua_library_tv_4_4ta.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-                                            		</div>
-                                            	</div>
-                                            </div>
-                                            
-                                            <div class="rental-service_item">
-                                            	<div class="rs-item_inner">
-                                            		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr4" href="/images/overview/living-spaces/Villa_Aqua_library_tv_2.jpg"><i class="fa fa-search-plus"></i></a>
-                                            		</div>
-                                            		<div class="rs-item_content">
-                                            			<img width="1140" height="676" src="/images/overview/living-spaces/Villa_Aqua_library_tv_2.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-                                            		</div>
-                                            	</div>
-                                            </div>
+                                        			<?php
+                                        		}
+                                        	}
+                                        	?>
                                         </div>
                                     </div>
                                 </div>
@@ -3391,49 +2951,26 @@ class Layout_View
 
                                     <div class="wpb_single_image wpb_content_element vc_align_center">
                                         <div class="wpb_wrapper  ult-carousel">
+                                            <?php 
+                                        	if ($this->data[0]['kitchen'])
+                                        	{
+                                        		foreach($this->data[0]['kitchen'] as $picture)
+                                        		{
+                                        			?>
                                         	<div class="rental-service_item">
                                             	<div class="rs-item_inner">
                                             		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr5" href="/images/overview/living-spaces/Villa_Aqua_kitchen_1.jpg"><i class="fa fa-search-plus"></i></a>
+                                            			<a class="rs-item_action_zoom js-fancybox" rel="<?php echo $picture['section_name']; ?>" href="/images/media/original/<?php echo $picture['picture']; ?>"><i class="fa fa-search-plus"></i></a>
                                             		</div>
                                             		<div class="rs-item_content">
-                                            			<img width="1140" height="676" src="/images/overview/living-spaces/Villa_Aqua_kitchen_1.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
+                                            			<img width="1140" height="676" src="/images/media/thumb/<?php echo $picture['picture']; ?>" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
                                             		</div>
                                             	</div>
                                             </div>
-                                            
-                                            <div class="rental-service_item">
-                                            	<div class="rs-item_inner">
-                                            		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr5" href="/images/overview/living-spaces/Villa_Aqua_kitchen_2.jpg"><i class="fa fa-search-plus"></i></a>
-                                            		</div>
-                                            		<div class="rs-item_content">
-                                            			<img width="1140" height="676" src="/images/overview/living-spaces/Villa_Aqua_kitchen_2.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-                                            		</div>
-                                            	</div>
-                                            </div>
-                                            
-                                            <div class="rental-service_item">
-                                            	<div class="rs-item_inner">
-                                            		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr5" href="/images/overview/living-spaces/Villa_Aqua_kitchen_5_penultima.jpg"><i class="fa fa-search-plus"></i></a>
-                                            		</div>
-                                            		<div class="rs-item_content">
-                                            			<img width="1140" height="676" src="/images/overview/living-spaces/Villa_Aqua_kitchen_5_penultima.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-                                            		</div>
-                                            	</div>
-                                            </div>
-                                            
-                                            <div class="rental-service_item">
-                                            	<div class="rs-item_inner">
-                                            		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr5" href="/images/overview/living-spaces/Villa_Aqua_kitchen_3.jpg"><i class="fa fa-search-plus"></i></a>
-                                            		</div>
-                                            		<div class="rs-item_content">
-                                            			<img width="1140" height="676" src="/images/overview/living-spaces/Villa_Aqua_kitchen_3.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-                                            		</div>
-                                            	</div>
-                                            </div>
+                                        			<?php
+                                        		}
+                                        	}
+                                        	?>
                                         </div>
                                     </div>
                                 </div>
@@ -3552,71 +3089,26 @@ class Layout_View
 
                                     <div class="wpb_single_image wpb_content_element vc_align_center">
                                         <div class="wpb_wrapper  ult-carousel">
+                                            <?php 
+                                        	if ($this->data[0]['pool'])
+                                        	{
+                                        		foreach($this->data[0]['pool'] as $picture)
+                                        		{
+                                        			?>
                                         	<div class="rental-service_item">
                                             	<div class="rs-item_inner">
                                             		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/pool-and-outdoor/Villa_Aqua_outdoor_pool_1.jpg"><i class="fa fa-search-plus"></i></a>
+                                            			<a class="rs-item_action_zoom js-fancybox" rel="<?php echo $picture['section_name']; ?>" href="/images/media/original/<?php echo $picture['picture']; ?>"><i class="fa fa-search-plus"></i></a>
                                             		</div>
                                             		<div class="rs-item_content">
-                                            			<img width="1140" height="676" src="/images/overview/pool-and-outdoor/Villa_Aqua_outdoor_pool_1.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
+                                            			<img width="1140" height="676" src="/images/media/thumb/<?php echo $picture['picture']; ?>" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
                                             		</div>
                                             	</div>
                                             </div>
-                                        
-                                        	<div class="rental-service_item">
-                                            	<div class="rs-item_inner">
-                                            		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/pool-and-outdoor/Villa_Aqua_outdoor_pool_2.jpg"><i class="fa fa-search-plus"></i></a>
-                                            		</div>
-                                            		<div class="rs-item_content">
-                                            			<img width="1140" height="676" src="/images/overview/pool-and-outdoor/Villa_Aqua_outdoor_pool_2.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-                                            		</div>
-                                            	</div>
-                                            </div>
-                                            
-                                            <div class="rental-service_item">
-                                            	<div class="rs-item_inner">
-                                            		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/pool-and-outdoor/Villa_Aqua_outdoor_pool_3.jpg"><i class="fa fa-search-plus"></i></a>
-                                            		</div>
-                                            		<div class="rs-item_content">
-                                            			<img width="1140" height="676" src="/images/overview/pool-and-outdoor/Villa_Aqua_outdoor_pool_3.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-                                            		</div>
-                                            	</div>
-                                            </div>
-                                        
-                                        	<div class="rental-service_item">
-                                            	<div class="rs-item_inner">
-                                            		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/pool-and-outdoor/Villa_Aqua_outdoor_pool_4.jpg"><i class="fa fa-search-plus"></i></a>
-                                            		</div>
-                                            		<div class="rs-item_content">
-                                            			<img width="1140" height="676" src="/images/overview/pool-and-outdoor/Villa_Aqua_outdoor_pool_4.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-                                            		</div>
-                                            	</div>
-                                            </div>
-                                            
-                                            <div class="rental-service_item">
-                                            	<div class="rs-item_inner">
-                                            		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/pool-and-outdoor/Villa_Aqua_outdoor_pool_5_penultima.jpg"><i class="fa fa-search-plus"></i></a>
-                                            		</div>
-                                            		<div class="rs-item_content">
-                                            			<img width="1140" height="676" src="/images/overview/pool-and-outdoor/Villa_Aqua_outdoor_pool_5_penultima.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-                                            		</div>
-                                            	</div>
-                                            </div>
-                                            
-                                            <div class="rental-service_item">
-                                            	<div class="rs-item_inner">
-                                            		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/pool-and-outdoor/Villa_Aqua_outdoor_pool_6_ultima.jpg"><i class="fa fa-search-plus"></i></a>
-                                            		</div>
-                                            		<div class="rs-item_content">
-                                            			<img width="1140" height="676" src="/images/overview/pool-and-outdoor/Villa_Aqua_outdoor_pool_6_ultima.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-                                            		</div>
-                                            	</div>
-                                            </div>
+                                        			<?php
+                                        		}
+                                        	}
+                                        	?>
                                         </div>
                                     </div>
                                 </div>
@@ -3636,49 +3128,26 @@ class Layout_View
                                 <div class="wpb_wrapper">
                                     <div class="wpb_single_image wpb_content_element vc_align_center">
                                         <div class="wpb_wrapper ult-carousel">
+                                        	<?php 
+                                        	if ($this->data[0]['jacuzzy'])
+                                        	{
+                                        		foreach($this->data[0]['jacuzzy'] as $picture)
+                                        		{
+                                        			?>
                                         	<div class="rental-service_item">
                                             	<div class="rs-item_inner">
                                             		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/pool-and-outdoor/Villa_Aqua_outdoor_jacuzzi_1.jpg"><i class="fa fa-search-plus"></i></a>
+                                            			<a class="rs-item_action_zoom js-fancybox" rel="<?php echo $picture['section_name']; ?>" href="/images/media/original/<?php echo $picture['picture']; ?>"><i class="fa fa-search-plus"></i></a>
                                             		</div>
                                             		<div class="rs-item_content">
-                                            			<img width="1140" height="676" src="/images/overview/pool-and-outdoor/Villa_Aqua_outdoor_jacuzzi_1.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
+                                            			<img width="1140" height="676" src="/images/media/thumb/<?php echo $picture['picture']; ?>" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
                                             		</div>
                                             	</div>
                                             </div>
-                                            
-                                            <div class="rental-service_item">
-                                            	<div class="rs-item_inner">
-                                            		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/pool-and-outdoor/Villa_Aqua_outdoor_jacuzzi_2.jpg"><i class="fa fa-search-plus"></i></a>
-                                            		</div>
-                                            		<div class="rs-item_content">
-                                            			<img width="1140" height="676" src="/images/overview/pool-and-outdoor/Villa_Aqua_outdoor_jacuzzi_2.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-                                            		</div>
-                                            	</div>
-                                            </div>
-                                            
-                                            <div class="rental-service_item">
-                                            	<div class="rs-item_inner">
-                                            		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/pool-and-outdoor/Villa_Aqua_outdoor_jacuzzi_3.jpg"><i class="fa fa-search-plus"></i></a>
-                                            		</div>
-                                            		<div class="rs-item_content">
-                                            			<img width="1140" height="676" src="/images/overview/pool-and-outdoor/Villa_Aqua_outdoor_jacuzzi_3.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-                                            		</div>
-                                            	</div>
-                                            </div>
-                                            
-                                            <div class="rental-service_item">
-                                            	<div class="rs-item_inner">
-                                            		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/pool-and-outdoor/Villa_Aqua_outdoor_jacuzzi_4.jpg"><i class="fa fa-search-plus"></i></a>
-                                            		</div>
-                                            		<div class="rs-item_content">
-                                            			<img width="1140" height="676" src="/images/overview/pool-and-outdoor/Villa_Aqua_outdoor_jacuzzi_4.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-                                            		</div>
-                                            	</div>
-                                            </div>
+                                        			<?php
+                                        		}
+                                        	}
+                                        	?>
                                         </div>
                                     </div>
                                 </div>
@@ -3756,38 +3225,26 @@ class Layout_View
                                 <div class="wpb_wrapper">
                                     <div class="wpb_single_image wpb_content_element vc_align_center">
                                         <div class="wpb_wrapper ult-carousel">
+                                            <?php 
+                                        	if ($this->data[0]['oven'])
+                                        	{
+                                        		foreach($this->data[0]['oven'] as $picture)
+                                        		{
+                                        			?>
                                         	<div class="rental-service_item">
                                             	<div class="rs-item_inner">
                                             		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/pool-and-outdoor/Villa_Aqua_wood_fire_oven_new_02.jpg"><i class="fa fa-search-plus"></i></a>
+                                            			<a class="rs-item_action_zoom js-fancybox" rel="<?php echo $picture['section_name']; ?>" href="/images/media/original/<?php echo $picture['picture']; ?>"><i class="fa fa-search-plus"></i></a>
                                             		</div>
                                             		<div class="rs-item_content">
-                                            			<img width="1140" height="676" src="/images/overview/pool-and-outdoor/Villa_Aqua_wood_fire_oven_new_02.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
+                                            			<img width="1140" height="676" src="/images/media/thumb/<?php echo $picture['picture']; ?>" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
                                             		</div>
                                             	</div>
                                             </div>
-                                            
-                                            <div class="rental-service_item">
-                                            	<div class="rs-item_inner">
-                                            		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/pool-and-outdoor/Villa_Aqua_wooden_oven_new.jpg"><i class="fa fa-search-plus"></i></a>
-                                            		</div>
-                                            		<div class="rs-item_content">
-                                            			<img width="1140" height="676" src="/images/overview/pool-and-outdoor/Villa_Aqua_wooden_oven_new.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-                                            		</div>
-                                            	</div>
-                                            </div>
-                                            
-                                            <div class="rental-service_item">
-                                            	<div class="rs-item_inner">
-                                            		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/pool-and-outdoor/Villa_aqua_outdoor_oven.jpg"><i class="fa fa-search-plus"></i></a>
-                                            		</div>
-                                            		<div class="rs-item_content">
-                                            			<img width="1140" height="676" src="/images/overview/pool-and-outdoor/Villa_aqua_outdoor_oven.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-                                            		</div>
-                                            	</div>
-                                            </div>
+                                        			<?php
+                                        		}
+                                        	}
+                                        	?>
                                         </div>
                                     </div>
                                 </div>
@@ -3807,49 +3264,26 @@ class Layout_View
                                 <div class="wpb_wrapper">
                                     <div class="wpb_single_image wpb_content_element vc_align_center">
                                         <div class="wpb_wrapper ult-carousel">
+                                        	<?php 
+                                        	if ($this->data[0]['gym'])
+                                        	{
+                                        		foreach($this->data[0]['gym'] as $picture)
+                                        		{
+                                        			?>
                                         	<div class="rental-service_item">
                                             	<div class="rs-item_inner">
                                             		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/pool-and-outdoor/Villa_Aqua_gym_new.jpg"><i class="fa fa-search-plus"></i></a>
+                                            			<a class="rs-item_action_zoom js-fancybox" rel="<?php echo $picture['section_name']; ?>" href="/images/media/original/<?php echo $picture['picture']; ?>"><i class="fa fa-search-plus"></i></a>
                                             		</div>
                                             		<div class="rs-item_content">
-                                            			<img width="1140" height="676" src="/images/overview/pool-and-outdoor/Villa_Aqua_gym_new.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
+                                            			<img width="1140" height="676" src="/images/media/thumb/<?php echo $picture['picture']; ?>" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
                                             		</div>
                                             	</div>
                                             </div>
-                                        
-                                        	<div class="rental-service_item">
-                                            	<div class="rs-item_inner">
-                                            		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/pool-and-outdoor/Villa_aqua_fitness.jpg"><i class="fa fa-search-plus"></i></a>
-                                            		</div>
-                                            		<div class="rs-item_content">
-                                            			<img width="1140" height="676" src="/images/overview/pool-and-outdoor/Villa_aqua_fitness.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-                                            		</div>
-                                            	</div>
-                                            </div>
-                                            
-                                            <div class="rental-service_item">
-                                            	<div class="rs-item_inner">
-                                            		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/pool-and-outdoor/Villa_Aqua_indoor_gym_1.jpg"><i class="fa fa-search-plus"></i></a>
-                                            		</div>
-                                            		<div class="rs-item_content">
-                                            			<img width="1140" height="676" src="/images/overview/pool-and-outdoor/Villa_Aqua_indoor_gym_1.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-                                            		</div>
-                                            	</div>
-                                            </div>
-                                            
-                                            <div class="rental-service_item">
-                                            	<div class="rs-item_inner">
-                                            		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/pool-and-outdoor/GYM.jpg"><i class="fa fa-search-plus"></i></a>
-                                            		</div>
-                                            		<div class="rs-item_content">
-                                            			<img width="1140" height="676" src="/images/overview/pool-and-outdoor/GYM.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-                                            		</div>
-                                            	</div>
-                                            </div>
+                                        			<?php
+                                        		}
+                                        	}
+                                        	?>
                                         
                                         </div>
                                     </div>
@@ -3977,26 +3411,26 @@ class Layout_View
                                 <div class="wpb_wrapper">
                                     <div class="wpb_single_image wpb_content_element vc_align_center">
                                         <div class="wpb_wrapper  ult-carousel">
+                                        	<?php 
+                                        	if ($this->data[0]['squash'])
+                                        	{
+                                        		foreach($this->data[0]['squash'] as $picture)
+                                        		{
+                                        			?>
                                         	<div class="rental-service_item">
                                             	<div class="rs-item_inner">
                                             		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/pool-and-outdoor/Villa_Aqua_indoor_squash_court_1.jpg"><i class="fa fa-search-plus"></i></a>
+                                            			<a class="rs-item_action_zoom js-fancybox" rel="<?php echo $picture['section_name']; ?>" href="/images/media/original/<?php echo $picture['picture']; ?>"><i class="fa fa-search-plus"></i></a>
                                             		</div>
                                             		<div class="rs-item_content">
-                                            			<img width="1140" height="676" src="/images/overview/pool-and-outdoor/Villa_Aqua_indoor_squash_court_1.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
+                                            			<img width="1140" height="676" src="/images/media/thumb/<?php echo $picture['picture']; ?>" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
                                             		</div>
                                             	</div>
                                             </div>
-                                            <div class="rental-service_item">
-                                            	<div class="rs-item_inner">
-                                            		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/pool-and-outdoor/Villa_Aqua_indoor_squash_court_3.jpg"><i class="fa fa-search-plus"></i></a>
-                                            		</div>
-                                            		<div class="rs-item_content">
-                                            			<img width="1140" height="676" src="/images/overview/pool-and-outdoor/Villa_Aqua_indoor_squash_court_3.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-                                            		</div>
-                                            	</div>
-                                            </div>
+                                        			<?php
+                                        		}
+                                        	}
+                                        	?>
                                         </div>
                                     </div>
                                 </div>
@@ -4186,105 +3620,26 @@ class Layout_View
 
                                     <div class="wpb_single_image wpb_content_element vc_align_center">
                                         <div class="wpb_wrapper  ult-carousel">
+                                        	<?php 
+                                        	if ($this->data[0]['activities'])
+                                        	{
+                                        		foreach($this->data[0]['activities'] as $picture)
+                                        		{
+                                        			?>
                                         	<div class="rental-service_item">
                                             	<div class="rs-item_inner">
                                             		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/what-to-do/Villa_Aqua_What_to_do_primera_pos.jpg"><i class="fa fa-search-plus"></i></a>
+                                            			<a class="rs-item_action_zoom js-fancybox" rel="<?php echo $picture['section_name']; ?>" href="/images/media/original/<?php echo $picture['picture']; ?>"><i class="fa fa-search-plus"></i></a>
                                             		</div>
                                             		<div class="rs-item_content">
-                                            			<img width="1140" height="676" src="/images/overview/what-to-do/Villa_Aqua_What_to_do_primera_pos.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
+                                            			<img width="1140" height="676" src="/images/media/thumb/<?php echo $picture['picture']; ?>" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
                                             		</div>
                                             	</div>
                                             </div>
-                                        
-                                        	<div class="rental-service_item">
-                                            	<div class="rs-item_inner">
-                                            		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/what-to-do/Villa_Aqua_What_to_do_2da.jpg"><i class="fa fa-search-plus"></i></a>
-                                            		</div>
-                                            		<div class="rs-item_content">
-                                            			<img width="1140" height="676" src="/images/overview/what-to-do/Villa_Aqua_What_to_do_2da.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-                                            		</div>
-                                            	</div>
-                                            </div>
-                                        
-                                        	<div class="rental-service_item">
-                                            	<div class="rs-item_inner">
-                                            		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/what-to-do/Villa_Aqua_What_to_do_4.jpg"><i class="fa fa-search-plus"></i></a>
-                                            		</div>
-                                            		<div class="rs-item_content">
-                                            			<img width="1140" height="676" src="/images/overview/what-to-do/Villa_Aqua_What_to_do_4.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-                                            		</div>
-                                            	</div>
-                                            </div>
-                                        
-                                        	<div class="rental-service_item">
-                                            	<div class="rs-item_inner">
-                                            		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/pool-and-outdoor/what-to-do/Villa_Aqua_gym_new.jpg"><i class="fa fa-search-plus"></i></a>
-                                            		</div>
-                                            		<div class="rs-item_content">
-                                            			<img width="1140" height="676" src="/images/overview/pool-and-outdoor/Villa_Aqua_gym_new.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-                                            		</div>
-                                            	</div>
-                                            </div>
-                                        
-                                            <div class="rental-service_item">
-                                            	<div class="rs-item_inner">
-                                            		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/what-to-do/Villa_Aqua_What_to_do_2.jpg"><i class="fa fa-search-plus"></i></a>
-                                            		</div>
-                                            		<div class="rs-item_content">
-                                            			<img width="1140" height="676" src="/images/overview/what-to-do/Villa_Aqua_What_to_do_2.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-                                            		</div>
-                                            	</div>
-                                            </div>
-                                            
-                                            <div class="rental-service_item">
-                                            	<div class="rs-item_inner">
-                                            		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/what-to-do/Villa_Aqua_services_extra_cost_spa.jpg"><i class="fa fa-search-plus"></i></a>
-                                            		</div>
-                                            		<div class="rs-item_content">
-                                            			<img width="1140" height="676" src="/images/overview/what-to-do/Villa_Aqua_services_extra_cost_spa.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-                                            		</div>
-                                            	</div>
-                                            </div>
-                                            
-                                            <div class="rental-service_item">
-                                            	<div class="rs-item_inner">
-                                            		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/what-to-do/Villa_Aqua_What_to_do_3.jpg"><i class="fa fa-search-plus"></i></a>
-                                            		</div>
-                                            		<div class="rs-item_content">
-                                            			<img width="1140" height="676" src="/images/overview/what-to-do/Villa_Aqua_What_to_do_3.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-                                            		</div>
-                                            	</div>
-                                            </div>
-                                            
-                                            <div class="rental-service_item">
-                                            	<div class="rs-item_inner">
-                                            		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/what-to-do/Villa_aqua_what_to_do_3.1.jpg"><i class="fa fa-search-plus"></i></a>
-                                            		</div>
-                                            		<div class="rs-item_content">
-                                            			<img width="1140" height="676" src="/images/overview/what-to-do/Villa_aqua_what_to_do_3.1.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-                                            		</div>
-                                            	</div>
-                                            </div>
-                                            
-                                            <!-- <div class="rental-service_item">
-                                            	<div class="rs-item_inner">
-                                            		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr1" href="/images/overview/what-to-do/Villa_Aqua_What_to_do_5.jpg"><i class="fa fa-search-plus"></i></a>
-                                            		</div>
-                                            		<div class="rs-item_content">
-                                            			<img width="1140" height="676" src="/images/overview/what-to-do/Villa_Aqua_What_to_do_5.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-                                            		</div>
-                                            	</div>
-                                            </div>
-                                         -->
+                                        			<?php
+                                        		}
+                                        	}
+                                        	?>
                                         </div>
                                     </div>
                                 </div>
@@ -5583,86 +4938,27 @@ class Layout_View
                                 <div class="wpb_wrapper">
                                     <div class="wpb_single_image wpb_content_element vc_align_center">
                                         
-                                        
                                         <div class="wpb_wrapper ult-carousel">
+                                            <?php 
+                                        	if ($this->data[0]['playacar'])
+                                        	{
+                                        		foreach($this->data[0]['playacar'] as $picture)
+                                        		{
+                                        			?>
                                         	<div class="rental-service_item">
                                             	<div class="rs-item_inner">
                                             		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr3" href="/images/location-info/Villa_Aqua_Location_info_Playacar.jpg"><i class="fa fa-search-plus"></i></a>
+                                            			<a class="rs-item_action_zoom js-fancybox" rel="<?php echo $picture['section_name']; ?>" href="/images/media/original/<?php echo $picture['picture']; ?>"><i class="fa fa-search-plus"></i></a>
                                             		</div>
                                             		<div class="rs-item_content">
-                                            			<img width="1140" height="676" src="/images/location-info/Villa_Aqua_Location_info_Playacar.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
+                                            			<img width="1140" height="676" src="/images/media/thumb/<?php echo $picture['picture']; ?>" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
                                             		</div>
                                             	</div>
                                             </div>
-                                            
-                                            <div class="rental-service_item">
-                                            	<div class="rs-item_inner">
-                                            		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr3" href="/images/location-info/playacar-view_2.jpg"><i class="fa fa-search-plus"></i></a>
-                                            		</div>
-                                            		<div class="rs-item_content">
-                                            			<img width="1140" height="676" src="/images/location-info/playacar-view_2.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-                                            		</div>
-                                            	</div>
-                                            </div>
-                                            
-                                            <div class="rental-service_item">
-                                            	<div class="rs-item_inner">
-                                            		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr3" href="/images/location-info/Villa_Aqua_Location_info_03_playacar.jpg"><i class="fa fa-search-plus"></i></a>
-                                            		</div>
-                                            		<div class="rs-item_content">
-                                            			<img width="1140" height="676" src="/images/location-info/Villa_Aqua_Location_info_03_playacar.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-                                            		</div>
-                                            	</div>
-                                            </div>
-                                            
-                                            
-                                            <div class="rental-service_item">
-                                            	<div class="rs-item_inner">
-                                            		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr3" href="/images/location-info/Villa_Aqua_Location_info_04_playacar.jpg"><i class="fa fa-search-plus"></i></a>
-                                            		</div>
-                                            		<div class="rs-item_content">
-                                            			<img width="1140" height="676" src="/images/location-info/Villa_Aqua_Location_info_04_playacar.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-                                            		</div>
-                                            	</div>
-                                            </div>
-                                            
-                                            <div class="rental-service_item">
-                                            	<div class="rs-item_inner">
-                                            		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr3" href="/images/location-info/Villa_Aqua_Location_info_05_playacar.jpg"><i class="fa fa-search-plus"></i></a>
-                                            		</div>
-                                            		<div class="rs-item_content">
-                                            			<img width="1140" height="676" src="/images/location-info/Villa_Aqua_Location_info_05_playacar.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-                                            		</div>
-                                            	</div>
-                                            </div>
-                                            
-                                            <div class="rental-service_item">
-                                            	<div class="rs-item_inner">
-                                            		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr3" href="/images/location-info/Villa_Aqua_Location_info_06_playacar.jpg"><i class="fa fa-search-plus"></i></a>
-                                            		</div>
-                                            		<div class="rs-item_content">
-                                            			<img width="1140" height="676" src="/images/location-info/Villa_Aqua_Location_info_06_playacar.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-                                            		</div>
-                                            	</div>
-                                            </div>
-                                            
-                                            <div class="rental-service_item">
-                                            	<div class="rs-item_inner">
-                                            		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr3" href="/images/location-info/Villa_Aqua_Location_info_06.5_playacar.jpg"><i class="fa fa-search-plus"></i></a>
-                                            		</div>
-                                            		<div class="rs-item_content">
-                                            			<img width="1140" height="676" src="/images/location-info/Villa_Aqua_Location_info_06.5_playacar.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-                                            		</div>
-                                            	</div>
-                                            </div>
-                                            
+                                        			<?php
+                                        		}
+                                        	}
+                                        	?>
                                         </div>
                                     </div>
                                 </div>
@@ -8639,7 +7935,7 @@ class Layout_View
                                     
                                     <div class="vc_separator wpb_content_element vc_sep_width_100 vc_sep_pos_align_center">
                                         <span class="vc_sep_holder vc_sep_holder_l"><span style="border-color:#22BCB8;" class="vc_sep_line"></span></span>
-                                        <h2 style="color:#525252;font-weight: 300;">Contacto</h2>
+                                        <h2 style="color:#525252;font-weight: 300;">Contact Us</h2>
                                         <span class="vc_sep_holder vc_sep_holder_r"><span style="border-color:#22BCB8;" class="vc_sep_line"></span></span>
                                     </div>
                                     <div class="ult-spacer spacer-563bc65e386dc" data-id="563bc65e386dc" data-height="60" data-height-mobile="60" data-height-tab="60" data-height-tab-portrait="60" data-height-mobile-landscape="60" style="clear:both;display:block;"></div>
@@ -8650,7 +7946,7 @@ class Layout_View
                                     <div class="ult-spacer spacer-563bc65e38c9e" data-id="563bc65e38c9e" data-height="30" data-height-mobile="30" data-height-tab="30" data-height-tab-portrait="30" data-height-mobile-landscape="30" style="clear:both;display:block;"></div>
                                     <div role="form" class="wpcf7" id="wpcf7-f338-p323-o1" lang="en-US" dir="ltr">
                                         <div class="screen-reader-response"></div>
-                                        <form action="/contact-us/#wpcf7-f338-p323-o1" method="post" class="wpcf7-form" novalidate="novalidate">
+                                        <form action="/contact-us/#" method="post" class="wpcf7-form" novalidate="novalidate">
                                             <div style="display: none;">
                                                 <input type="hidden" name="_wpcf7" value="338" />
                                                 <input type="hidden" name="_wpcf7_version" value="4.2.2" />
@@ -8660,52 +7956,60 @@ class Layout_View
                                             </div>
                                             <div class="row">
                                                 <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                                                    <span class="wpcf7-form-control-wrap name"><input type="text" name="name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Name *" /></span>
+                                                    <span class="wpcf7-form-control-wrap name"><input id="clientName" type="text" name="name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Name *" /></span>
                                                 </div>
                                                 <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                                                    <span class="wpcf7-form-control-wrap email"><input type="email" name="email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="City/Country" /></span>
+                                                    <span class="wpcf7-form-control-wrap email"><input id="clientCity" type="email" name="email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email " aria-required="true" aria-invalid="false" placeholder="City/Country" /></span>
                                                 </div>
                                                 <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                                                    <span class="wpcf7-form-control-wrap website"><input type="text" name="website" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="Company" /></span>
+                                                    <span class="wpcf7-form-control-wrap website"><input id="clientCompany" type="text" name="website" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="Company" /></span>
                                                 </div>
                                             </div>
                                             <div class="row">
                                                 <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                                                    <span class="wpcf7-form-control-wrap name"><input type="text" name="name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Phone" /></span>
+                                                    <span class="wpcf7-form-control-wrap name"><input id="clientPhone" type="text" name="name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Phone" /></span>
                                                 </div>
                                                 <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                                                    <span class="wpcf7-form-control-wrap email"><input type="email" name="email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Mobile" /></span>
+                                                    <span class="wpcf7-form-control-wrap email"><input id="clientMobile" type="email" name="email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Mobile" /></span>
                                                 </div>
                                                 <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                                                    <span class="wpcf7-form-control-wrap website"><input type="text" name="website" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="E-Mail *" /></span>
+                                                    <span class="wpcf7-form-control-wrap website"><input id="clientEmail" type="text" name="website" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="E-Mail *" /></span>
                                                 </div>
                                             </div>
                                             <div class="row">
                                                 <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3">
-                                                    <span class="wpcf7-form-control-wrap name"><input type="text" name="name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Arrival *" id="arrival" /></span>
+                                                    <span class="wpcf7-form-control-wrap name"><input  type="text" name="name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Arrival *" id="arrival" /></span>
                                                 </div>
                                                 <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3">
                                                     <span class="wpcf7-form-control-wrap email"><input type="email" name="email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Departure *" id="departure" /></span>
                                                 </div>
                                                 <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3">
-                                                    <span class="wpcf7-form-control-wrap website"><input type="text" name="website" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="No. of Adults *" /></span>
+                                                    <span class="wpcf7-form-control-wrap website"><input id="clientAdults" type="text" name="website" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="No. of Adults *" /></span>
                                                 </div>
                                                 <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3">
-                                                    <span class="wpcf7-form-control-wrap website"><input type="text" name="website" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="No. of Children *" /></span>
+                                                    <span class="wpcf7-form-control-wrap website"><input id="clientChildren" type="text" name="website" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="No. of Children *" /></span>
                                                 </div>
                                             </div>
                                             <div class="row">
                                                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                                    <span class="wpcf7-form-control-wrap message"><textarea name="message" cols="40" rows="5" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Purpose of my trip"></textarea></span>
-                                                    <span class="wpcf7-form-control-wrap message"><textarea name="message" cols="40" rows="5" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="I need more info about"></textarea></span>
+                                                    <span class="wpcf7-form-control-wrap message"><textarea id="clientPurpose" name="message" cols="80" rows="5" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Purpose of my trip"></textarea></span>
+                                                    <span class="wpcf7-form-control-wrap message"><textarea id="clientInfo" name="message" cols="40" rows="5" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="I need more info about"></textarea></span>
                                                     <div class="wpcf7-submit_wrap">
-                                                        <input type="submit" value="Enviar mensaje" class="wpcf7-form-control wpcf7-submit" />
+                                                        <input type="submit" value="Send Message" class="wpcf7-form-control wpcf7-submit" id="sendMessage" />
                                                     </div>
                                                 </div>
                                             </div>
                                             
                                             
-                                            <div class="wpcf7-response-output wpcf7-display-none"></div>
+                                            <div class="wpcf7-response-output">
+                                            	<h3 class="failed" id="fName">* Name is mandatory</h3>
+                                            	<h3 class="failed" id="fEmail">* E-mail is mandatory</h3>
+                                            	<h3 class="failed" id="fArrival">* Arrival is mandatory</h3>
+                                            	<h3 class="failed" id="fDeparture">* Departure is mandatory</h3>
+                                            	<h3 class="failed" id="fAdults">* No. of Adults is mandatory</h3>
+                                            	<h3 class="failed" id="fChildren">* No. of children is mandatory</h3>
+                                            	<h3 class="failed" id="hasSent">Your message has been sent, we'll contact you in asap</h3>
+                                            </div>
                                         </form>
                                     </div>
                                 </div>
@@ -8840,42 +8144,27 @@ class Layout_View
 
                             <div class="vc_col-sm-6 wpb_column vc_column_container ">
                                 <div class="wpb_wrapper ult-carousel">
-                                			<div class="rental-service_item">
-                                            	<div class="rs-item_inner">
-                                            		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr3" href="/images/events/Villa_Aqua_events_corporate_retreats.jpg"><i class="fa fa-search-plus"></i></a>
-                                            		</div>
-                                            		<div class="rs-item_content">
-                                            			<img width="1140" height="676" src="/images/events/Villa_Aqua_events_corporate_retreats.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-                                            		</div>
-                                            	</div>
-                                            </div>
-                                
+                                      <?php 
+                                        	if ($this->data[0]['corporate'])
+                                        	{
+                                        		foreach($this->data[0]['corporate'] as $picture)
+                                        		{
+                                        			?>
                                         	<div class="rental-service_item">
                                             	<div class="rs-item_inner">
                                             		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr3" href="/images/events/Villa_Aqua_events_corporate_retreats02.jpg"><i class="fa fa-search-plus"></i></a>
+                                            			<a class="rs-item_action_zoom js-fancybox" rel="<?php echo $picture['section_name']; ?>" href="/images/media/original/<?php echo $picture['picture']; ?>"><i class="fa fa-search-plus"></i></a>
                                             		</div>
                                             		<div class="rs-item_content">
-                                            			<img width="1140" height="676" src="/images/events/Villa_Aqua_events_corporate_retreats02.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
+                                            			<img width="1140" height="676" src="/images/media/thumb/<?php echo $picture['picture']; ?>" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
                                             		</div>
                                             	</div>
                                             </div>
-                                            
-                                            <div class="rental-service_item">
-                                            	<div class="rs-item_inner">
-                                            		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr3" href="/images/events/Villa_Aqua_events_corporate_retreats03.jpg"><i class="fa fa-search-plus"></i></a>
-                                            		</div>
-                                            		<div class="rs-item_content">
-                                            			<img width="1140" height="676" src="/images/events/Villa_Aqua_events_corporate_retreats03.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-                                            		</div>
-                                            	</div>
-                                            </div>
-                                            
-                                            
-                                            
-                                        </div>
+                                        			<?php
+                                        		}
+                                        	}
+                                        	?>       
+                                </div>
                             </div>
                         </div>
                         
@@ -9086,30 +8375,28 @@ class Layout_View
                             <div class="vc_col-sm-6 wpb_column vc_column_container ">
                                 
                                 <div class="wpb_wrapper ult-carousel">
+                                <?php 
+                                        	if ($this->data[0]['photoshoots'])
+                                        	{
+                                        		foreach($this->data[0]['photoshoots'] as $picture)
+                                        		{
+                                        			?>
                                         	<div class="rental-service_item">
                                             	<div class="rs-item_inner">
                                             		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr3" href="/images/events/Villa_Aqua_photo_shooting_01.jpg"><i class="fa fa-search-plus"></i></a>
+                                            			<a class="rs-item_action_zoom js-fancybox" rel="<?php echo $picture['section_name']; ?>" href="/images/media/original/<?php echo $picture['picture']; ?>"><i class="fa fa-search-plus"></i></a>
                                             		</div>
                                             		<div class="rs-item_content">
-                                            			<img width="1140" height="676" src="/images/events/Villa_Aqua_photo_shooting_01.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
+                                            			<img width="1140" height="676" src="/images/media/thumb/<?php echo $picture['picture']; ?>" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
                                             		</div>
                                             	</div>
                                             </div>
+                                        			<?php
+                                        		}
+                                        	}
+                                        	?>             
                                             
-                                            <div class="rental-service_item">
-                                            	<div class="rs-item_inner">
-                                            		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr3" href="/images/events/Villa_Aqua_photo_shooting_02.jpg"><i class="fa fa-search-plus"></i></a>
-                                            		</div>
-                                            		<div class="rs-item_content">
-                                            			<img width="1140" height="676" src="/images/events/Villa_Aqua_photo_shooting_02.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-                                            		</div>
-                                            	</div>
-                                            </div>
-                                            
-                                            
-                                        </div>
+                                </div>
                             </div>
                         </div>
                         
@@ -9227,31 +8514,26 @@ class Layout_View
 
                                     <div class="wpb_single_image wpb_content_element vc_align_center">
                                         <div class="wpb_wrapper ult-carousel">
+                                            <?php 
+                                        	if ($this->data[0]['private-events'])
+                                        	{
+                                        		foreach($this->data[0]['private-events'] as $picture)
+                                        		{
+                                        			?>
                                         	<div class="rental-service_item">
                                             	<div class="rs-item_inner">
                                             		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr3" href="/images/events/Villa_Aqua_private_events.jpg"><i class="fa fa-search-plus"></i></a>
+                                            			<a class="rs-item_action_zoom js-fancybox" rel="<?php echo $picture['section_name']; ?>" href="/images/media/original/<?php echo $picture['picture']; ?>"><i class="fa fa-search-plus"></i></a>
                                             		</div>
                                             		<div class="rs-item_content">
-                                            			<img width="1140" height="676" src="/images/events/Villa_Aqua_private_events.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
+                                            			<img width="1140" height="676" src="/images/media/thumb/<?php echo $picture['picture']; ?>" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
                                             		</div>
                                             	</div>
                                             </div>
-                                            
-                                            
-                                            
-                                            <div class="rental-service_item">
-                                            	<div class="rs-item_inner">
-                                            		<div class="rs-item_actions">
-                                            			<a class="rs-item_action_zoom js-fancybox" rel="gr3" href="/images/events/Villa_Aqua_events_private_02.jpg"><i class="fa fa-search-plus"></i></a>
-                                            		</div>
-                                            		<div class="rs-item_content">
-                                            			<img width="1140" height="676" src="/images/events/Villa_Aqua_events_private_02.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-                                            		</div>
-                                            	</div>
-                                            </div>
-                                            
-                                            
+                                        			<?php
+                                        		}
+                                        	}
+                                        	?>
                                         </div>
                                     </div>
                                 </div>
@@ -9379,71 +8661,26 @@ class Layout_View
                             <div class="vc_col-sm-6 wpb_column vc_column_container ">
                                 
                                 <div class="wpb_wrapper ult-carousel">
-                                    <div class="rental-service_item">
-                                      	<div class="rs-item_inner">
-                                       		<div class="rs-item_actions">
-                                       			<a class="rs-item_action_zoom js-fancybox" rel="gr3" href="/images/events/Villa_Aqua_events_weddings.jpg"><i class="fa fa-search-plus"></i></a>
-                                       		</div>
-                                       		<div class="rs-item_content">
-                                       			<img width="1140" height="676" src="/images/events/Villa_Aqua_events_weddings.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-                                       		</div>
-                                      	</div>
-                                	</div>
-                                	
-                                	<div class="rental-service_item">
-                                      	<div class="rs-item_inner">
-                                       		<div class="rs-item_actions">
-                                       			<a class="rs-item_action_zoom js-fancybox" rel="gr3" href="/images/events/Villa_Aqua_events_weddings_02.jpg"><i class="fa fa-search-plus"></i></a>
-                                       		</div>
-                                       		<div class="rs-item_content">
-                                       			<img width="1140" height="676" src="/images/events/Villa_Aqua_events_weddings_02.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-                                       		</div>
-                                      	</div>
-                                	</div>
-                                	
-                                	<div class="rental-service_item">
-                                      	<div class="rs-item_inner">
-                                       		<div class="rs-item_actions">
-                                       			<a class="rs-item_action_zoom js-fancybox" rel="gr3" href="/images/events/Villa_Aqua_events_weddings_03.jpg"><i class="fa fa-search-plus"></i></a>
-                                       		</div>
-                                       		<div class="rs-item_content">
-                                       			<img width="1140" height="676" src="/images/events/Villa_Aqua_events_weddings_03.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-                                       		</div>
-                                      	</div>
-                                	</div>
-                                	
-                                	<div class="rental-service_item">
-                                      	<div class="rs-item_inner">
-                                       		<div class="rs-item_actions">
-                                       			<a class="rs-item_action_zoom js-fancybox" rel="gr3" href="/images/events/Villa_Aqua_events_weddings_04.jpg"><i class="fa fa-search-plus"></i></a>
-                                       		</div>
-                                       		<div class="rs-item_content">
-                                       			<img width="1140" height="676" src="/images/events/Villa_Aqua_events_weddings_04.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-                                       		</div>
-                                      	</div>
-                                	</div>
-                                	
-                                	<div class="rental-service_item">
-                                      	<div class="rs-item_inner">
-                                       		<div class="rs-item_actions">
-                                       			<a class="rs-item_action_zoom js-fancybox" rel="gr3" href="/images/events/Villa_Aqua_events_weddings_penultima.jpg"><i class="fa fa-search-plus"></i></a>
-                                       		</div>
-                                       		<div class="rs-item_content">
-                                       			<img width="1140" height="676" src="/images/events/Villa_Aqua_events_weddings_penultima.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-                                       		</div>
-                                      	</div>
-                                	</div>
-                                	
-                                	<div class="rental-service_item">
-                                      	<div class="rs-item_inner">
-                                       		<div class="rs-item_actions">
-                                       			<a class="rs-item_action_zoom js-fancybox" rel="gr3" href="/images/events/Villa_Aqua_events_weddings_ultima.jpg"><i class="fa fa-search-plus"></i></a>
-                                       		</div>
-                                       		<div class="rs-item_content">
-                                       			<img width="1140" height="676" src="/images/events/Villa_Aqua_events_weddings_ultima.jpg" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
-                                       		</div>
-                                      	</div>
-                                	</div>
+                                	<?php 
+                                        	if ($this->data[0]['weddings'])
+                                        	{
+                                        		foreach($this->data[0]['weddings'] as $picture)
+                                        		{
+                                        			?>
+                                        	<div class="rental-service_item">
+                                            	<div class="rs-item_inner">
+                                            		<div class="rs-item_actions">
+                                            			<a class="rs-item_action_zoom js-fancybox" rel="<?php echo $picture['section_name']; ?>" href="/images/media/original/<?php echo $picture['picture']; ?>"><i class="fa fa-search-plus"></i></a>
+                                            		</div>
+                                            		<div class="rs-item_content">
+                                            			<img width="1140" height="676" src="/images/media/thumb/<?php echo $picture['picture']; ?>" class="vc_single_image-img attachment-full" alt="Villa Aqua Master Bedroom" />
+                                            		</div>
+                                            	</div>
+                                            </div>
+                                        			<?php
+                                        		}
+                                        	}
+                                        	?>
                                             
                             	</div>
                             </div>
@@ -10552,6 +9789,11 @@ class Layout_View
 	{
 		ob_start();
 		echo self::getRentalHeader();
+		date_default_timezone_set('America/Cancun');
+		$root = $_SERVER['DOCUMENT_ROOT'];
+		include $root."/db.php";
+		$connection = mysql_connect($servername,$username, $password);
+		mysql_select_db($db, $connection);
 		?>
 		<div class="container default-page-container" style="margin: 35px auto 45px auto;">
             <div class="">
@@ -10568,110 +9810,155 @@ class Layout_View
                                     <div class="ult-spacer spacer-5633a4efa59d6" data-id="5633a4efa59d6" data-height="18" data-height-mobile="18" data-height-tab="18" data-height-tab-portrait="18" data-height-mobile-landscape="18" style="clear:both;display:block;"></div>
                                     <div class="wpb_text_column wpb_content_element  content-style">
                                         <div class="wpb_wrapper">
-											<table class="table table-striped custom-table">
-	                                            <thead>
-	                                                <tr>
-	                                                    <th><strong>Temporada</strong><br> 2015-2016 <br><br></th>
-	                                                    <th><strong>Baja </strong><br>May 09 <br>until <br>Dec 19</th>
-	                                                    <th><strong>Accion de Gracias </strong>Nov 21 <br> until<br>Nov 29</th>
-														<th><strong>Navidad</strong><br> Dec 19<br> until<br> Dec 26</th>
-														<th><strong>Año Nuevo</strong><br> Dec 26 <br> until<br>Jan 02</th>
-														<th><strong>Alta </strong><br> Jan 02 <br> until<br>May 07</th>
-														<th><strong>Easter 1</strong><br>  Mar 19 <br>until <br>Mar 26</th>
-														<th><strong>Easter 2</strong><br>  Mar 26 <br>until <br>Apr 02</th>
-														<th><strong>Verano</strong><br> May 07 <br> until<br>Dec 19</th>
-														<th><strong>Thanksgiving</strong><br> Nov 19 <br> until<br>Nov 26</th>
-														<th><strong>Christmas</strong><br> Dec 19<br> until <br>Dec 26</th>
-														<th><strong>New Year</strong><br> Dec 26<br> until <br>Jan 02</th>
-	                                                </tr>
-	                                            </thead>
-	                                            <tbody>
-	                                                <tr>
-	                                                    <th>1 Recámara <br>(1-2 huéspedes)</th>
-	                                                    <td>$1,300</td>
-	                                                    <td>$1,650</td>
-	                                                    <td>$4,000</td>
-	                                                    <td>$4,500</td>
-	                                                    <td>$1,650</td>
-	                                                    <td>$2,050</td>
-	                                                    <td>$2,050</td>
-	                                                    <td>$1,300</td>
-	                                                    <td>$1,650</td>
-	                                                    <td>$4,000</td>
-	                                                    <td>$4,500</td>
-	                                                </tr>
-	                                                <tr>
-	                                                    <th>2 Recámara <br>(2-3 huéspedes)</th>
-	                                                    <td>$1,300</td>
-	                                                    <td>$1,650</td>
-	                                                    <td>$4,000</td>
-	                                                    <td>$4,500</td>
-	                                                    <td>$1,650</td>
-	                                                    <td>$2,050</td>
-	                                                    <td>$2,050</td>
-	                                                    <td>$1,300</td>
-	                                                    <td>$1,650</td>
-	                                                    <td>$4,000</td>
-	                                                    <td>$4,500</td>
-	                                                </tr>
-	                                                <tr>
-	                                                    <th>3 Recámaras <br>(3-4 Huespedes)</th>
-	                                                    <td>$1,300</td>
-	                                                    <td>$1,650</td>
-	                                                    <td>$4,000</td>
-	                                                    <td>$4,500</td>
-	                                                    <td>$1,650</td>
-	                                                    <td>$2,050</td>
-	                                                    <td>$2,050</td>
-	                                                    <td>$1,300</td>
-	                                                    <td>$1,650</td>
-	                                                    <td>$4,000</td>
-	                                                    <td>$4,500</td>
-	                                                </tr>
-	                                                <tr>
-	                                                    <th>4 bedrooms <br> (4-5 Huespedes)</th>
-	                                                    <td>$1,450</td>
-	                                                    <td>$1,900</td>
-	                                                    <td>$4,000</td>
-	                                                    <td>$4,500</td>
-	                                                    <td>$1,900</td>
-	                                                    <td>$2,050</td>
-	                                                    <td>$2,050</td>
-	                                                    <td>$1,450</td>
-	                                                    <td>$1,900</td>
-	                                                    <td>$4,000</td>
-	                                                    <td>$4,500</td>
-	                                                </tr>
-	                                                <tr>
-	                                                    <th>5 bedrooms <br>(5-6 Huespedes)</th>
-	                                                    <td>$1,600</td>
-	                                                    <td>$2,050</td>
-	                                                    <td>$4,000</td>
-	                                                    <td>$4,500</td>
-	                                                    <td>$2,050</td>
-	                                                    <td>$2,050</td>
-	                                                    <td>$2,050</td>
-	                                                    <td>$1,600</td>
-	                                                    <td>$2,050</td>
-	                                                    <td>$4,000</td>
-	                                                    <td>$4,500</td>
-	                                                </tr>
-	                                                <tr>
-	                                                    <th>Noches Mínimas</th>
-	                                                    <td>4</td>
-	                                                    <td>4</td>
-	                                                    <td>7</td>
-	                                                    <td>7</td>
-	                                                    <td>4</td>
-	                                                    <td>7</td>
-	                                                    <td>7</td>
-	                                                    <td>4</td>
-	                                                    <td>4</td>
-	                                                    <td>7</td>
-	                                                    <td>7</td>
-	                                                </tr>
-	                                            </tbody>
-	                                        </table>
+											<table  class="table table-striped custom-table">
+                                    	<tr>
+                                    	<?php
+                                    	$pax=1;
+                                    	$query2="select * from villasrates where idvilla=1 and specialrate=0 and deleted=0 order by fromrate limit 1";
+                                    	$result2 = mysql_query($query2);
+                                    	while($row2 = mysql_fetch_array($result2))
+                                    	{
+                                    		?>
+                                    			<td>
+                                    			<?php
+                                    			$query="select season, fromrate, torate, idr from villasrates where idr=".$row2["idr"];
+                                    			$result = mysql_query($query);
+                                    			while($row = mysql_fetch_array($result))
+                                    			{  
+                                    				$desde= strtotime($row["fromrate"]);
+                                    				$hasta= strtotime($row["torate"]);
+                                    				$desde1 = date("Y", $desde);
+                                    				$hasta1 = $desde1+1;
+                                    				?>
+                                    	   			<table class="table table-striped custom-table">
+                                    	   				<thead>
+	                                    	   				<tr>
+	                                    	   					<th class="custom-height">
+	                                    	   						<br />
+	                                    		   					<strong>Seasons</strong><br />
+	                                    		     				<?php echo $desde1;?>-<?php echo $hasta1;?><br />
+	                                    		     				<br />
+	                                    						</th>
+	                                    	   				</tr> 
+                                    	   				</thead>
+                                    			<?php
+                                    		 		$pax++;
+                                    			}
+                                    			?> 
+                                    	  		<?php 
+                                    	  		$l=1;
+                                    	 		while($l<13)
+                                    	 		{
+                                    				$query="select rate".$l. " from villasrates where idr=".$row2["idr"];
+                                    				$result = mysql_query($query);
+                                    				$row = mysql_fetch_array($result);   
+                                    				if ($row["rate".$l]>0)
+                                    				{
+                                    					$counter ++;
+                                    					if ($counter % 2) 
+                                    					{
+                                    						$xrow="row2";
+                                    					}
+                                    					else
+                                    					{
+                                    						$xrow="row1";
+                                    					}
+                                    					?>  
+                                    	 				<tr >
+                                    	    				<td>
+                                    	    					<strong><?php echo $l." Bedrooms";?></strong><br />
+                                    							(<?php echo $l;?>-<?php echo $l+1;?> guests)</td>
+                                    	  				</tr>
+                                    	   				<?
+                                    				}//if
+                                    	   			$l=$l+1;
+                                    	 		} //While
+                                    	 		?>
+                                    	  				<tr>
+                                    	    				<td>Min. Nights</td>
+                                    	  				</tr>
+                                    	 			</table>
+                                    	 		</td>
+                                    	   	<?php 
+                                    		}
+                                    		?>
+                                    	  
+                                    	  
+                                    		<?php 
+                                    		$query2="select * from villasrates where idvilla=1 and specialrate=0 and deleted=0 order by fromrate ";
+                                    		$result2 = mysql_query($query2);
+                                    		while($row2 = mysql_fetch_array($result2))
+                                    		{    
+                                    		?>
+                                    			<td>
+                                    			<?php
+                                    			$query="select season, fromrate, torate, idr from villasrates where idr=".$row2["idr"];
+                                    			$result = mysql_query($query);
+                                    			while($row = mysql_fetch_array($result))
+                                    			{  
+                                    				$desde= strtotime($row["fromrate"]);
+                                    				$hasta= strtotime($row["torate"]);
+                                    				$desde1 = date("M", $desde)." ".date("d", $desde);
+                                    				$hasta1 = date("M", $hasta)." ".date("d", $hasta);
+                                    			?>
+                                    	   			<table class="table table-striped custom-table">
+                                    	   				<thead>
+                                    	   				<tr>
+                                    	     				<th align="center" class="custom-height">
+                                    	     					<strong><?php echo $row["season"];?></strong>
+                                    	     					<br />
+                                    	     					<span class="text"><?php echo $desde1;?><br> until<br /><?php echo $hasta1;?></span>
+                                    	     				</th>
+                                    	     			</tr> 
+                                    	     			</thead>
+                                    	     	<?php 
+                                    			}
+                                    			?> 
+                                    			<?php 
+                                    			$l=1;
+                                    			$counter=0;
+                                    			while($l<13)
+                                    			{
+                                    				$query="select nights, rate".$l. " from villasrates where idr=".$row2["idr"];
+                                    				$result = mysql_query($query);
+                                    				$row = mysql_fetch_array($result);   
+                                    				
+                                    				if ($row["rate".$l]>0)
+                                    				{
+                                    					$counter ++;
+                                    					if ($counter % 2) 
+                                    					{
+                                    						$xrow="row2";
+                                    					}
+                                    					else
+                                    					{
+                                    						$xrow="row1";
+                                    					}
+                                    			?>  
+                                    			 		<tr>
+                                    			    		<td align="center" class="<?php echo $xrow;?>" >
+                                    			    			$<?php echo number_format ($row["rate".$l], 0);?><br />&nbsp;
+                                    						</td>
+                                    			  		</tr>
+                                    	   		<?php
+                                    				}
+                                    	   			$l=$l+1;
+                                    	 		}
+                                    	 		?>
+                                    			 		<tr>
+                                    			    		<td align="center" class="<?php if ($xrow=="row2"){;?>row1<?php }else{ ?>row2<?php }?>" ><?php echo $row["nights"];?></td>
+                                    			  		</tr>
+                                    	    
+                                    	 			</table>
+                                    	 		</td>
+                                    	   	<?php 
+                                    		}
+                                    		?>
+                                    		</tr>
+                                    	</table>
+											
+											
+											
                                         </div>
                                     </div>
                                     <br>
@@ -10865,51 +10152,7 @@ class Layout_View
                                     <div class="ult-spacer spacer-5633a4efa59d6" data-id="5633a4efa59d6" data-height="18" data-height-mobile="18" data-height-tab="18" data-height-tab-portrait="18" data-height-mobile-landscape="18" style="clear:both;display:block;"></div>
                                     <div class="wpb_text_column wpb_content_element  content-style">
                                         <div class="wpb_wrapper">
-                                            <p>En Villa Aqua invitamos a todos nuestros huéspedes a tratar la propiedad con 
-                                                cortesía y responsabilidad, respetando las siguientes reglas básicas:
-                                            </p>
-                                            <p><strong>Hora de Check In: 3pm <br>	Hora de Check Out: 12 pm</strong></p>
-                                            <h6>QUEDA ESTRICTAMENTE PROHIBIDO: </h6>
-                                            <ul>
-                                            	<li>Fumar dentro de la casa.</li>
-                                            	<li>El uso de drogas dentro de la propiedad.</li>
-                                            	<li>Hacer ruido después de las 11pm.</li>
-                                            	<li>Deteriorar el mobiliario, la decoración o la propiedad. </li>
-                                            	<li>Sustraer cualquier artículo, propiedad de Villa Aqua. </li>
-                                            </ul>
-                                            <h6>AMABLEMENTE LES PEDIMOS: </h6>
-                                            <ul>
-                                            	<li>Respetar el número máximo de ocupantes en la villa: 10 adultos o bien, 
-                                                    hasta 12 huéspedes en caso de haber 2 o más niños menores de 12 años en el grupo. </li>
-                                            	<li>Apagar las unidades de aire acondicionado mientras  permanezcan abiertas puertas/ventanas. </li>
-                                            	<li>Mantener las puertas de acceso cerradas en todo momento. </li>
-                                            	<li>Colocar sus artículos de valor en las cajas de seguridad. </li>
-                                            	<li>Favor de no bloquear la calle o estacionarse en el césped. Use la cochera o puede estacionarse frente a la puerta de entrada.</li>
-                                            	<li>No dejar objetos de valor en su auto.</li>
-                                            </ul>
-                                            <h6>REGLAS DE LA PISCINA: </h6>
-                                            <ul>
-                                            	<li>Los menores de edad deberán contar con supervisión de un adulto en la piscina.</li>
-                                            	<li>Nade bajo su propia responsabilidad. </li>
-                                            	<li>No hay guardavidas.</li>
-                                            	<li>Ducharse antes de nadar.</li>
-                                            	<li>No correr / No clavados</li>
-                                            	<li>No se permiten juegos de forcejeo (caballito) dentro de la piscina.</li>
-                                            	<li>No se permite ningún artículo de vidrio en las áreas de la piscina.</li>
-                                            	<li>No se permite introducir objetos que puedan ensuciar o dañar la piscina / jacuzzi.</li>
-                                            	<li>No se permite el uso de jabón para burbujas, shampoos o espumas en la piscina / jacuzzi.</li>
-                                            </ul>
-                                            <p>A su llegada se le informará sobre otras posibles reglas que deberá seguir durante su estancia. 
-                                                El personal supervisará el cumplimiento de las mismas, por lo que solicitamos de su entera
-                                                cooperación para mantener un ambiente armonioso y relajado para todos.
-                                            </p>
-                                            <p>Villa Aqua está ubicada dentro de un complejo residencial familiar, por lo que le pedimos 
-                                                que respete a los vecinos y utilice adecuadamente las instalaciones, para que nuestros 
-                                                próximos huéspedes puedan disfrutar de sus vacaciones de igual manera. El personal de 
-                                                Villa Aqua tiene la autoridad para hacer cumplir dichas reglas y salvaguardar la integridad 
-                                                física de los huéspedes, el personal y la propiedad, por lo que le sugerimos seguir las
-                                                instrucciones que cualquier colaborador le proporcione.
-                                            </p>
+                                            <?php echo $this->data[0]['policy']['policy_esp']; ?>
 
                                         </div>
                                     </div>
@@ -11304,6 +10547,424 @@ class Layout_View
 	    return $header;
 	}
 	
+	public function getGalleryHead()
+	{
+		ob_start();
+		?>
+		    <?php echo self::getCommonDocuments(); ?>
+		    <?php echo self::getGoogleAnalytics(); ?>
+			<?php
+			$head = ob_get_contents();
+			ob_end_clean();
+			return $head;
+		}
+				
+		public function getGalleryContent()
+		{
+			ob_start();
+			echo self::getGalleryHeader();
+			?>
+			<div class="container vc-page-container" style="margin: 35px auto 45px auto;">
+	            <div class="ult-spacer spacer-56253aed4f277" data-id="56253aed4f277" data-height="25" data-height-mobile="25" data-height-tab="25" data-height-tab-portrait="25" data-height-mobile-landscape="25" style="clear:both;display:block;"></div>
+	            <div class="container-inner">
+	            	<div class="vc_col-sm-12 wpb_column vc_column_container ">
+						<div class="wpb_wrapper">
+							<div class="wpb_single_image wpb_content_element vc_align_center">
+								<div class="wpb_wrapper">
+								<?php 
+	                            if ($this->data[0]['master-bedroom'])
+	                            {
+	                            	$i = 0;
+	                            	$limit = count($this->data[0]['master-bedroom']);
+	                            	
+	                            	foreach($this->data[0]['master-bedroom'] as $picture)
+	                                {	
+	                                	if ($limit != ($i +1))
+	                                	{
+	                                	?>
+		                               	<div class="vc_col-sm-3 wpb_column vc_column_container gal">
+										    <div class="rental-service_item">
+										        <div class="rs-item_inner">
+										            <div class="rs-item_actions">
+										                <a class="rs-item_action_zoom js-fancybox" rel="gallery" href="/images/media/original/<?php echo $picture['picture']; ?>"><i class="fa fa-search-plus"></i></a>
+										            </div>
+										            <div class="rs-item_content">
+										                <img width="1140" height="676" src="/images/media/thumb/<?php echo $picture['picture']; ?>" class="vc_single_image-img attachment-full" alt="Villa Aqua" />
+										            </div>
+										        </div>
+										    </div>
+										</div>
+	                               	<?php
+	                                	}
+	                                	$i++;
+									}
+								}
+								
+								if ($this->data[0]['bedroom-two'])
+	                            {
+	                            	$i = 0;
+	                            	$limit = count($this->data[0]['bedroom-two']);
+	                            	
+	                            	foreach($this->data[0]['bedroom-two'] as $picture)
+	                                {
+	                                	if ($limit != ($i +1))
+	                                	{
+	                                	?>
+		                               	<div class="vc_col-sm-3 wpb_column vc_column_container gal">
+										    <div class="rental-service_item">
+										        <div class="rs-item_inner">
+										            <div class="rs-item_actions">
+										                <a class="rs-item_action_zoom js-fancybox" rel="gallery" href="/images/media/original/<?php echo $picture['picture']; ?>"><i class="fa fa-search-plus"></i></a>
+										            </div>
+										            <div class="rs-item_content">
+										                <img width="1140" height="676" src="/images/media/thumb/<?php echo $picture['picture']; ?>" class="vc_single_image-img attachment-full" alt="Villa Aqua" />
+										            </div>
+										        </div>
+										    </div>
+										</div>
+	                               	<?php
+	                                	}
+	                                $i++;
+									}
+								}
+								
+								if ($this->data[0]['bedroom-three'])
+	                            {
+	                            	$i = 0;
+	                            	$limit = count($this->data[0]['bedroom-three']);
+	                            	
+	                            	foreach($this->data[0]['bedroom-three'] as $picture)
+	                                {
+	                                	if ($limit != ($i +1))
+	                                	{
+	                                	?>
+		                               	<div class="vc_col-sm-3 wpb_column vc_column_container gal">
+										    <div class="rental-service_item">
+										        <div class="rs-item_inner">
+										            <div class="rs-item_actions">
+										                <a class="rs-item_action_zoom js-fancybox" rel="gallery" href="/images/media/original/<?php echo $picture['picture']; ?>"><i class="fa fa-search-plus"></i></a>
+										            </div>
+										            <div class="rs-item_content">
+										                <img width="1140" height="676" src="/images/media/thumb/<?php echo $picture['picture']; ?>" class="vc_single_image-img attachment-full" alt="Villa Aqua" />
+										            </div>
+										        </div>
+										    </div>
+										</div>
+	                               	<?php
+	                                	}
+	                                $i++;
+									}
+								}
+								
+								if ($this->data[0]['bedroom-four'])
+	                            {
+	                            	$i = 0;
+	                            	$limit = count($this->data[0]['bedroom-four']);
+	                            	
+	                            	foreach($this->data[0]['bedroom-four'] as $picture)
+	                                {
+	                                	if ($limit != ($i +1))
+	                                	{
+	                                	?>
+		                               	<div class="vc_col-sm-3 wpb_column vc_column_container gal">
+										    <div class="rental-service_item">
+										        <div class="rs-item_inner">
+										            <div class="rs-item_actions">
+										                <a class="rs-item_action_zoom js-fancybox" rel="gallery" href="/images/media/original/<?php echo $picture['picture']; ?>"><i class="fa fa-search-plus"></i></a>
+										            </div>
+										            <div class="rs-item_content">
+										                <img width="1140" height="676" src="/images/media/thumb/<?php echo $picture['picture']; ?>" class="vc_single_image-img attachment-full" alt="Villa Aqua" />
+										            </div>
+										        </div>
+										    </div>
+										</div>
+	                               	<?php
+	                                	}
+	                                $i++;
+									}
+								}
+								
+								if ($this->data[0]['bedroom-five'])
+	                            {
+	                            	$i = 0;
+	                            	$limit = count($this->data[0]['bedroom-five']);
+	                            	
+	                            	foreach($this->data[0]['bedroom-five'] as $picture)
+	                                {
+	                                	if ($limit != ($i +1))
+	                                	{
+	                                	?>
+		                               	<div class="vc_col-sm-3 wpb_column vc_column_container gal">
+										    <div class="rental-service_item">
+										        <div class="rs-item_inner">
+										            <div class="rs-item_actions">
+										                <a class="rs-item_action_zoom js-fancybox" rel="gallery" href="/images/media/original/<?php echo $picture['picture']; ?>"><i class="fa fa-search-plus"></i></a>
+										            </div>
+										            <div class="rs-item_content">
+										                <img width="1140" height="676" src="/images/media/thumb/<?php echo $picture['picture']; ?>" class="vc_single_image-img attachment-full" alt="Villa Aqua" />
+										            </div>
+										        </div>
+										    </div>
+										</div>
+	                               	<?php
+	                                	}
+	                                $i++;
+									}
+								}
+								
+								if ($this->data[0]['living-room'])
+	                            {
+	                            	foreach($this->data[0]['living-room'] as $picture)
+	                                {
+	                                	?>
+		                               	<div class="vc_col-sm-3 wpb_column vc_column_container gal">
+										    <div class="rental-service_item">
+										        <div class="rs-item_inner">
+										            <div class="rs-item_actions">
+										                <a class="rs-item_action_zoom js-fancybox" rel="gallery" href="/images/media/original/<?php echo $picture['picture']; ?>"><i class="fa fa-search-plus"></i></a>
+										            </div>
+										            <div class="rs-item_content">
+										                <img width="1140" height="676" src="/images/media/thumb/<?php echo $picture['picture']; ?>" class="vc_single_image-img attachment-full" alt="Villa Aqua" />
+										            </div>
+										        </div>
+										    </div>
+										</div>
+	                               	<?php
+									}
+								}
+								
+								if ($this->data[0]['dining-room'])
+	                            {
+	                            	foreach($this->data[0]['dining-room'] as $picture)
+	                                {
+	                                	?>
+		                               	<div class="vc_col-sm-3 wpb_column vc_column_container gal">
+										    <div class="rental-service_item">
+										        <div class="rs-item_inner">
+										            <div class="rs-item_actions">
+										                <a class="rs-item_action_zoom js-fancybox" rel="gallery" href="/images/media/original/<?php echo $picture['picture']; ?>"><i class="fa fa-search-plus"></i></a>
+										            </div>
+										            <div class="rs-item_content">
+										                <img width="1140" height="676" src="/images/media/thumb/<?php echo $picture['picture']; ?>" class="vc_single_image-img attachment-full" alt="Villa Aqua" />
+										            </div>
+										        </div>
+										    </div>
+										</div>
+	                               	<?php
+									}
+								}
+								
+								if ($this->data[0]['family-room'])
+	                            {
+	                            	foreach($this->data[0]['family-room'] as $picture)
+	                                {
+	                                	?>
+		                               	<div class="vc_col-sm-3 wpb_column vc_column_container gal">
+										    <div class="rental-service_item">
+										        <div class="rs-item_inner">
+										            <div class="rs-item_actions">
+										                <a class="rs-item_action_zoom js-fancybox" rel="gallery" href="/images/media/original/<?php echo $picture['picture']; ?>"><i class="fa fa-search-plus"></i></a>
+										            </div>
+										            <div class="rs-item_content">
+										                <img width="1140" height="676" src="/images/media/thumb/<?php echo $picture['picture']; ?>" class="vc_single_image-img attachment-full" alt="Villa Aqua" />
+										            </div>
+										        </div>
+										    </div>
+										</div>
+	                               	<?php
+									}
+								}
+								
+								if ($this->data[0]['library-room'])
+	                            {
+	                            	foreach($this->data[0]['library-room'] as $picture)
+	                                {
+	                                	?>
+		                               	<div class="vc_col-sm-3 wpb_column vc_column_container gal">
+										    <div class="rental-service_item">
+										        <div class="rs-item_inner">
+										            <div class="rs-item_actions">
+										                <a class="rs-item_action_zoom js-fancybox" rel="gallery" href="/images/media/original/<?php echo $picture['picture']; ?>"><i class="fa fa-search-plus"></i></a>
+										            </div>
+										            <div class="rs-item_content">
+										                <img width="1140" height="676" src="/images/media/thumb/<?php echo $picture['picture']; ?>" class="vc_single_image-img attachment-full" alt="Villa Aqua" />
+										            </div>
+										        </div>
+										    </div>
+										</div>
+	                               	<?php
+									}
+								}
+								
+								if ($this->data[0]['kitchen'])
+	                            {
+	                            	foreach($this->data[0]['kitchen'] as $picture)
+	                                {
+	                                	?>
+		                               	<div class="vc_col-sm-3 wpb_column vc_column_container gal">
+										    <div class="rental-service_item">
+										        <div class="rs-item_inner">
+										            <div class="rs-item_actions">
+										                <a class="rs-item_action_zoom js-fancybox" rel="gallery" href="/images/media/original/<?php echo $picture['picture']; ?>"><i class="fa fa-search-plus"></i></a>
+										            </div>
+										            <div class="rs-item_content">
+										                <img width="1140" height="676" src="/images/media/thumb/<?php echo $picture['picture']; ?>" class="vc_single_image-img attachment-full" alt="Villa Aqua" />
+										            </div>
+										        </div>
+										    </div>
+										</div>
+	                               	<?php
+									}
+								}
+								
+								if ($this->data[0]['pool'])
+	                            {
+	                            	foreach($this->data[0]['pool'] as $picture)
+	                                {
+	                                	?>
+		                               	<div class="vc_col-sm-3 wpb_column vc_column_container gal">
+										    <div class="rental-service_item">
+										        <div class="rs-item_inner">
+										            <div class="rs-item_actions">
+										                <a class="rs-item_action_zoom js-fancybox" rel="gallery" href="/images/media/original/<?php echo $picture['picture']; ?>"><i class="fa fa-search-plus"></i></a>
+										            </div>
+										            <div class="rs-item_content">
+										                <img width="1140" height="676" src="/images/media/thumb/<?php echo $picture['picture']; ?>" class="vc_single_image-img attachment-full" alt="Villa Aqua" />
+										            </div>
+										        </div>
+										    </div>
+										</div>
+	                               	<?php
+									}
+								}
+								
+								if ($this->data[0]['jacuzzy'])
+	                            {
+	                            	foreach($this->data[0]['jacuzzy'] as $picture)
+	                                {
+	                                	?>
+		                               	<div class="vc_col-sm-3 wpb_column vc_column_container gal">
+										    <div class="rental-service_item">
+										        <div class="rs-item_inner">
+										            <div class="rs-item_actions">
+										                <a class="rs-item_action_zoom js-fancybox" rel="gallery" href="/images/media/original/<?php echo $picture['picture']; ?>"><i class="fa fa-search-plus"></i></a>
+										            </div>
+										            <div class="rs-item_content">
+										                <img width="1140" height="676" src="/images/media/thumb/<?php echo $picture['picture']; ?>" class="vc_single_image-img attachment-full" alt="Villa Aqua" />
+										            </div>
+										        </div>
+										    </div>
+										</div>
+	                               	<?php
+									}
+								}
+								
+								if ($this->data[0]['oven'])
+	                            {
+	                            	foreach($this->data[0]['oven'] as $picture)
+	                                {
+	                                	?>
+		                               	<div class="vc_col-sm-3 wpb_column vc_column_container gal">
+										    <div class="rental-service_item">
+										        <div class="rs-item_inner">
+										            <div class="rs-item_actions">
+										                <a class="rs-item_action_zoom js-fancybox" rel="gallery" href="/images/media/original/<?php echo $picture['picture']; ?>"><i class="fa fa-search-plus"></i></a>
+										            </div>
+										            <div class="rs-item_content">
+										                <img width="1140" height="676" src="/images/media/thumb/<?php echo $picture['picture']; ?>" class="vc_single_image-img attachment-full" alt="Villa Aqua" />
+										            </div>
+										        </div>
+										    </div>
+										</div>
+	                               	<?php
+									}
+								}
+								
+								if ($this->data[0]['gym'])
+	                            {
+	                            	$i = 0;
+	                            	$limit = count($this->data[0]['gym']);
+	                            	
+	                            	foreach($this->data[0]['gym'] as $picture)
+	                                {
+	                                	if ($limit != ($i +1))
+	                                	{
+	                                	?>
+		                               	<div class="vc_col-sm-3 wpb_column vc_column_container gal">
+										    <div class="rental-service_item">
+										        <div class="rs-item_inner">
+										            <div class="rs-item_actions">
+										                <a class="rs-item_action_zoom js-fancybox" rel="gallery" href="/images/media/original/<?php echo $picture['picture']; ?>"><i class="fa fa-search-plus"></i></a>
+										            </div>
+										            <div class="rs-item_content">
+										                <img width="1140" height="676" src="/images/media/thumb/<?php echo $picture['picture']; ?>" class="vc_single_image-img attachment-full" alt="Villa Aqua" />
+										            </div>
+										        </div>
+										    </div>
+										</div>
+	                               	<?php
+	                                	}
+	                                $i++;
+									}
+								}
+								
+								if ($this->data[0]['squash'])
+	                            {
+	                            	$i = 0;
+	                            	$limit = count($this->data[0]['squash']);
+	                            	
+	                            	foreach($this->data[0]['squash'] as $picture)
+	                                {
+	                                	if ($limit != ($i +1))
+	                                	{
+	                                	?>
+		                               	<div class="vc_col-sm-3 wpb_column vc_column_container gal">
+										    <div class="rental-service_item">
+										        <div class="rs-item_inner">
+										            <div class="rs-item_actions">
+										                <a class="rs-item_action_zoom js-fancybox" rel="gallery" href="/images/media/original/<?php echo $picture['picture']; ?>"><i class="fa fa-search-plus"></i></a>
+										            </div>
+										            <div class="rs-item_content">
+										                <img width="1140" height="676" src="/images/media/thumb/<?php echo $picture['picture']; ?>" class="vc_single_image-img attachment-full" alt="Villa Aqua" />
+										            </div>
+										        </div>
+										    </div>
+										</div>
+	                               	<?php
+	                                	}
+	                                	$i++;
+									}
+	                            }
+								?> 
+								</div>
+							</div>
+						</div>
+					</div>
+	        	</div>
+	        </div>
+	        <div class="ult-spacer spacer-56253aed4f277" data-id="56253aed4f277" data-height="25" data-height-mobile="25" data-height-tab="25" data-height-tab-portrait="25" data-height-mobile-landscape="25" style="clear:both;display:block;"></div>
+			<?php 
+		}
+	
+		public function getGalleryHeader()
+		{
+			ob_start();
+			?>
+		    <div class="page-header" style="background-image:url(/images/Villa_Aqua_Header_gallery.jpg);text-align:center">
+	            <div class="container">
+	                <div class="page-header_wrap">
+	                    <div class="page-header_in">
+	                        <h2 class="page-title">Galler&iacute;a fotogr&aacute;fica</h2>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>	
+		    <?php 
+		    $header = ob_get_contents();
+		    ob_end_clean();
+		    return $header;
+		}
+	
     /**
 	 * getFooter
 	 *
@@ -11346,7 +11007,7 @@ class Layout_View
                             <h4 class="widget-title ">Información Importante</h4>
                             <ul>
                             	<li>
-                                    <a href="/gallery/">Foto Galería</a>
+                                    <a href="/es/galeria/">Foto Galería</a>
                                 </li>
                                 <li>
                                     <a href="/es/reglas-y-politicas-de-la-villa/">Reglas & Políticas de La Villa </a>
@@ -11361,37 +11022,25 @@ class Layout_View
                         </aside>
                         
                         <aside id="stm_tweets-3 " class="widget widget_stm_tweets col-xs-12 col-sm-6 col-md-3 col-lg-3 ">
-                        	<h4 class="widget-title " style="text-align: center;">Clíma</h4>
-                            <div style="margin-top:20px">
-								
-								<div id="plemx-root"></div> 
-  
-  <script type="text/javascript"> 
-
-  var _plm = _plm || [];
-  _plm.push(['_btn', 22073]); 
-  _plm.push(['_loc','mxxx0099']);
-  _plm.push(['location', document.location.host ]);
-
-  (function(d,e,i) {
-  if (d.getElementById(i)) return;
-  var px = d.createElement(e);
-  px.type = 'text/javascript';
-  px.async = true;
-  px.id = i;
-  px.src = ('https:' == d.location.protocol ? 'https:' : 'http:') + '//widget.twnmm.com/js/btn/pelm.js?orig=en_ca';
-  var s = d.getElementsByTagName('script')[0];
-
-  var py = d.createElement('link');
-  py.rel = 'stylesheet'
-  py.href = ('https:' == d.location.protocol ? 'https:' : 'http:') + '//widget.twnmm.com/styles/btn/styles.css'
-
-  s.parentNode.insertBefore(px, s);
-  s.parentNode.insertBefore(py, s);
-})(document, 'script', 'plmxbtn');</script>
-								
-								
-						   	</div>
+                        	<!-- weather widget start -->
+                        		<div id="m-booked-bl-simple-74704"> 
+                        			<a href="//www.booked.net/weather/playa-del-carmen-w653706" class="booked-wzs-160-110" style="background-color:#636262;"> 
+                        				<div class="booked-wzs-160-data wrz-03"> 
+                        					<div class="booked-wzs-160-right"> 
+                        						<div class="booked-wzs-day-deck"> 
+                        							<div class="booked-wzs-day-val"> 
+                        								<div class="booked-wzs-day-number">
+                        									<span class="plus">+</span>28</div> 
+                        									<div class="booked-wzs-day-dergee">
+                        										<div class="booked-wzs-day-dergee-val">&deg;</div> 
+                        										<div class="booked-wzs-day-dergee-name">C</div> 
+                        									</div> </div> <div class="booked-wzs-day"> 
+                        									<div class="booked-wzs-day-d"><span class="plus">+</span>28&deg;</div> 
+                        									<div class="booked-wzs-day-n"><span class="plus">+</span>26&deg;</div> 
+                        									</div> </div> <div class="booked-wzs-160-city smolest">Playa del Carmen</div> 
+                        									<div class="booked-wzs-160-date">Tuesday, 02</div> </div> </div> <div class="booked-wzs-center"> <span class="booked-wzs-bottom-l">See 7-Day Forecast</span> </div> </a> </div><script type="text/javascript"> var css_file=document.createElement("link"); css_file.setAttribute("rel","stylesheet"); css_file.setAttribute("type","text/css"); css_file.setAttribute("href",'//s.bookcdn.com/css/w/booked-wzs-widget-160.css?v=0.0.1'); document.getElementsByTagName("head")[0].appendChild(css_file); function setWidgetData(data) { if(typeof(data) != 'undefined' && data.results.length > 0) { for(var i = 0; i < data.results.length; ++i) { var objMainBlock = document.getElementById('m-booked-bl-simple-74704'); if(objMainBlock !== null) { var copyBlock = document.getElementById('m-bookew-weather-copy-'+data.results[i].widget_type); objMainBlock.innerHTML = data.results[i].html_code; if(copyBlock !== null) objMainBlock.appendChild(copyBlock); } } } else { alert('data=undefined||data.results is empty'); } } </script> <script type="text/javascript" charset="UTF-8" src="http://widgets.booked.net/weather/info?action=get_weather_info&ver=4&cityID=w653706&type=1&scode=124&ltid=3458&domid=&cmetric=1&wlangID=1&color=636262&wwidth=250&header_color=ffffff&text_color=333333&link_color=08488D&border_form=1&footer_color=ffffff&footer_text_color=333333&transparent=0"></script><!-- weather widget end -->
+                        	
+                        	
                         </aside>
                     </div>
                 </div>
