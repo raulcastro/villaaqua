@@ -22,7 +22,6 @@
             $data['description'] 	= 'Des';
 			$data['keywords'] 		= 'Key';
         break;
-
     }
 
 	$view 		= new Layout_View($data);

@@ -32,7 +32,7 @@ class Layout_View
 	<!DOCTYPE html>
 	<html class='no-js' lang='en'>
 		<head>
-			<title>Villa Aqua Rental - <?php echo $this->data['title']; ?></title>
+			<title>Luxury Villa For Rent - Playa Del Carmen <?php echo $this->data['title']; ?></title>
 			<link rel="shortcut icon" href="favicon.ico" />
 			<link rel="icon" type="image/gif" href="/images/favicon.png" />
 			<meta charset="utf-8" />

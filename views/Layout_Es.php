@@ -32,7 +32,7 @@ class Layout_View
 	<!DOCTYPE html>
 	<html class='no-js' lang='en'>
 		<head>
-			<title>Villa Aqua Rental - <?php echo $this->data['title']; ?></title>
+			<title>Villa de Lujo en Renta  <?php echo $this->data['title']; ?></title>
 			<link rel="shortcut icon" href="favicon.ico" />
 			<link rel="icon" type="image/gif" href="/images/favicon.png" />
 			<meta charset="utf-8" />
@@ -526,8 +526,8 @@ class Layout_View
                                     <li class="menu-item"><a href="/es/out-and-about/#golf" class="to-section">Golf</a></li>
                                     <li class="menu-item"><a href="/es/out-and-about/#parques" class="to-section">Parques</a></li>
                                     <li class="menu-item"><a href="/es/cultura/#cultura">Cultura</a></li>
-                                    <li class="menu-item"><a href="es/cultura/#restaurantes" class="to-section">Restaurantes</a></li>
-                                    <li class="menu-item"><a href="es/cultura/#compras" class="to-section">Compras</a></li>
+                                    <li class="menu-item"><a href="/es/cultura/#restaurantes" class="to-section">Restaurantes</a></li>
+                                    <li class="menu-item"><a href="/es/cultura/#compras" class="to-section">Compras</a></li>
                                 </ul>
                             </li>
                             
@@ -1113,19 +1113,17 @@ class Layout_View
                                                                         			<li class="item-feature">Cuarto de juegos y Bar</li>
                                                                         			<li class="item-feature">Sala de TV – Biblioteca</li>
                                                                         			<li class="item-feature">Cocina Gourmet</li>
-                                                                        			<li class="item-feature">Gimnasio privado y Cancha de Squash</li>
-                                                                        			<li class="item-feature">Terraza y jardín con Parrilla de gas y horno de leña
-</li>
+                                                                        			<li class="item-feature">Gimnasio privado y Cancha de
+                                                                                        Squash</li>
+                                                                        			<li class="item-feature">Terraza y jardín con Parrilla 
+                                                                                        de gas y horno de leña</li>
                                                                         		</ul>
                                                                         		<ul class="item-features_list">
-	                                                                        		<li class="item-feature">Salas de estar al aire libre
-</li>
-	                                                                        		<li class="item-feature">Piscina
-</li>
-	                                                                        		<li class="item-feature">Jacuzzi Exterior
-</li>
-	                                                                        		<li class="item-feature">Jacuzzi Interior en la habitación principal
-</li>
+	                                                                        		<li class="item-feature">Salas de estar al aire libre</li>
+	                                                                        		<li class="item-feature">Piscina</li>
+	                                                                        		<li class="item-feature">Jacuzzi Exterior</li>
+	                                                                        		<li class="item-feature">Jacuzzi Interior en la habitación
+                                                                                        principal</li>
 	                                                                        		<li class="item-feature">Cuarto de lavado </li>
                                                                                    
 	                                                                        		
@@ -1159,6 +1157,7 @@ class Layout_View
 </li>
                                                                         		</ul>
                                                                         	</div>
+                                                                             <br>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -1199,6 +1198,7 @@ class Layout_View
                                                                         	</div>
                                                                         	<p><i>*Contacte a su  <a href="mailto:villahost@villaaqua.com?Subject=Contact%20from%20Villa%20Aqua" target="_top">Anfitrión de Villa</a> para obtener mayor información y precios.</i></p>
                                                                         </div>
+                                                                        <br>
 
                                                                     </div>
                                                                 </div>
@@ -1230,9 +1230,10 @@ class Layout_View
                                                                         			<li class="item-feature">Agua embotellada (incluida sólo el día de su llegada)</li>
                                                                         			<li class="item-feature">Surtido de vinos y licores (aplican cargos))</li>
                                                                         			<li class="item-feature">Servicio de Bar de Honor</li>
-                                                                        			<li class="item-feature"><strong> <a href="/images/staff-and-services/Menu_epic-experiences.pdf" target="_blank">Experiencias Épicas Villa Aqua</a></strong></li>
+                                                                        			<li class="item-feature"><strong> <a href="/images/staff-and-services/experiencias-epicas.pdf" target="_blank">Experiencias Épicas Villa Aqua</a></strong></li>
                                                                         		</ul>
                                                                         	</div>
+                                                                            <br>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -1266,6 +1267,7 @@ class Layout_View
 	                                                                     			<li class="item-feature">Libros y Revistas</li>
 	                                                                     		</ul>
                                                                         	</div>
+                                                                            <br>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -1304,6 +1306,7 @@ class Layout_View
 	                                                                     			<li class="item-feature">Servicios de Fax y Paquetería. (Consulte con su   <a href="mailto:villahost@villaaqua.com?Subject=Contact%20from%20Villa%20Aqua" target="_top">Anfitrión de Villa</a>)</li>
 	                                                                     		</ul>
                                                                         	</div>
+                                                                            <br>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -1623,6 +1626,7 @@ class Layout_View
 	                                                                        		<li class="item-feature">Se pueden abrir las ventanas</li>
                                                                         		</ul>
                                                                         	</div>
+                                                                            <br>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -1644,6 +1648,7 @@ class Layout_View
 	                                                                        		<li class="item-feature">Variedad de Almohadas </li>
                                                                         		</ul>
                                                                         	</div>
+                                                                             <br>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -1671,6 +1676,7 @@ class Layout_View
                                                                         			<li class="item-feature">Espejo de aumento</li>
                                                                         		</ul>
                                                                         	</div>
+                                                                            <br>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -1704,6 +1710,7 @@ class Layout_View
 	                                                                     		</ul>
                                         
                                                                         	</div>
+                                                                            <br>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -1725,6 +1732,7 @@ class Layout_View
 	                                                                     			<li class="item-feature">Internet Inalámbrico sin costo.</li>
 	                                                                     		</ul>
                                                                         	</div>
+                                                                            <br>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -1745,6 +1753,7 @@ class Layout_View
                                                                                                             anticipación a su llegada, para                                                                                                                 verificar la disponibilidad del mismo).</li>
 	                                                                     		</ul>
 	                                                                     	</div>
+                                                                            <br>
                                                                        </div>
                                                                     </div>
                                                                 </div>
@@ -1854,6 +1863,7 @@ class Layout_View
 	                                                                       		<li class="item-feature">Se pueden abrir las ventanas</li>
                                                                        		</ul>
                                                                        	</div>
+                                                                        <br>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -1878,6 +1888,7 @@ class Layout_View
 	                                                                       		<li class="item-feature">Máximo de cunas permitidas en la villa: 2</li>
                                                                        		</ul>
                                                                        	</div>
+                                                                         <br>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -1903,6 +1914,7 @@ class Layout_View
                                                                        			<li class="item-feature">Espejo de aumento</li>
                                                                        		</ul>
                                                                        	</div>
+                                                                        <br>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -1927,6 +1939,7 @@ class Layout_View
 	                                                                   			<li class="item-feature">Plancha y tabla para planchar, bajo solicitud</li>
 	                                                                   		</ul>
                                                                       	</div>
+                                                                        <br>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -1947,6 +1960,7 @@ class Layout_View
 	                                                                   			<li class="item-feature">Internet Inalámbrico sin costo.</li>
 	                                                                   		</ul>
                                                                        	</div>
+                                                                        <br>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -1966,6 +1980,7 @@ class Layout_View
                                                                                                             anticipación a su llegada, para                                                                                                                 verificar la disponibilidad del mismo).</li>
 	                                                                     	</ul>
 	                                                                   </div>
+                                                                        <br>
 
                                                                    	</div>
                                                                 </div>
@@ -2019,6 +2034,7 @@ class Layout_View
 	                                                                        		<li class="item-feature">Se pueden abrir las ventanas</li>
                                                                         		</ul>
                                                                         	</div>
+                                                                            <br>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -2043,6 +2059,7 @@ class Layout_View
 	                                                                        		<li class="item-feature">Máximo de cunas permitidas en la Villa:  2</li>
                                                                         		</ul>
                                                                         	</div>
+                                                                             <br>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -2067,7 +2084,9 @@ class Layout_View
                                                                         			<li class="item-feature">Secadora de cabello</li>
                                                                         			<li class="item-feature">Espejo de aumento</li>
                                                                         		</ul>
+                                                                               
                                                                         	</div>
+                                                                             <br>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -2091,6 +2110,7 @@ class Layout_View
 	                                                                     			<li class="item-feature">Plancha y tabla para planchar, bajo solicitud</li>
 	                                                                     		</ul>
                                                                         	</div>
+                                                                             <br>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -2111,6 +2131,7 @@ class Layout_View
 	                                                                     			<li class="item-feature">Internet Inalámbrico sin costo.</li>
 	                                                                     		</ul>
                                                                         	</div>
+                                                                             <br>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -2131,6 +2152,7 @@ class Layout_View
                                                                                                             anticipación a su llegada, para                                                                                                                 verificar la disponibilidad del mismo).</li>
 	                                                                     		</ul>
 	                                                                     	</div>
+                                                                     <br>
                                                                        </div>
                                                                     </div>
                                                                 </div>
@@ -2240,6 +2262,7 @@ class Layout_View
 	                                                                        		<li class="item-feature">Puertas de vidrio corredizas</li>
                                                                         		</ul>
                                                                         	</div>
+                                                                             <br>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -2265,6 +2288,7 @@ class Layout_View
 	                                                                        		<li class="item-feature">Máximo de cunas permitidas en la Villa: 2</li>
                                                                         		</ul>
                                                                         	</div>
+                                                                              <br>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -2290,6 +2314,7 @@ class Layout_View
                                                                         			<li class="item-feature">Espejo de aumento</li>
                                                                         		</ul>
                                                                         	</div>
+                                                                             <br>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -2314,6 +2339,7 @@ class Layout_View
 	                                                                     			<li class="item-feature">Plancha y tabla para planchar, bajo solicitud</li>
 	                                                                     		</ul>
                                                                         	</div>
+                                                                             <br>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -2334,6 +2360,7 @@ class Layout_View
 	                                                                     			<li class="item-feature">Internet Inalámbrico sin costo.</li>
 	                                                                     		</ul>
                                                                         	</div>
+                                                                             <br>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -2353,6 +2380,7 @@ class Layout_View
                                                                                                             anticipación a su llegada, para                                                                                                                 verificar la disponibilidad del mismo).</li>
 	                                                                     		</ul>
 	                                                                     	</div>
+                                                                     <br>
                                                                        </div>
                                                                     </div>
                                                                 </div>
@@ -2405,6 +2433,7 @@ class Layout_View
 	                                                                        		<li class="item-feature">Se pueden abrir las ventanas</li>
                                                                         		</ul>
                                                                         	</div>
+                                                                             <br>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -2429,6 +2458,7 @@ class Layout_View
 	                                                                        		<li class="item-feature">Máximo de cunas permitidas en la Villa: 2</li>
                                                                         		</ul>
                                                                         	</div>
+                                                                              <br>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -2455,6 +2485,7 @@ class Layout_View
                                                                         			<li class="item-feature">Espejo de aumento</li>
                                                                         		</ul>
                                                                         	</div>
+                                                                             <br>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -2479,6 +2510,7 @@ class Layout_View
 	                                                                     			<li class="item-feature">Plancha y tabla para planchar, bajo solicitud</li>
 	                                                                     		</ul>
                                                                         	</div>
+                                                                             <br>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -2501,6 +2533,7 @@ class Layout_View
 	                                                                     			<li class="item-feature">Internet Inalámbrico sin costo.</li>
 	                                                                     		</ul>
                                                                         	</div>
+                                                                             <br>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -2520,6 +2553,7 @@ class Layout_View
                                                                                                             anticipación a su llegada, para                                                                                                                 verificar la disponibilidad del mismo).</li>
 	                                                                     		</ul>
 	                                                                     	</div>
+                                                                     <br>
                                                                        </div>
                                                                     </div>
                                                                 </div>
@@ -2939,7 +2973,7 @@ class Layout_View
 												Contacte a su
 <a href="mailto:villahost@villaaqua.com?Subject=Contact%20from%20Villa%20Aqua" target="_top">Anfitrión de Villa </a>  para mayor información sobre nuestros Servicios 
                                                 de Alimentos, Bebidas y 
-                                                <a href="/images/staff-and-services/menu-food-and-beverage.pdf" target="_blank">Menús.</a>
+                                                <a href="/images/staff-and-services/menu.pdf" target="_blank">Menús.</a>
                                             </p>
                                         </div>
                                     </div>
@@ -3532,9 +3566,10 @@ class Layout_View
                                                                         	<div class="stm_item-features_inner">
                                                                         		<ul class="item-features_list_extended">
                                                                         			<li class="item-feature">- Deléitate con los tratamientos  
- <a href="/images/staff-and-services/menu_spa-services.pdf" target="_blank">disponibles en el menú.</a></li>
+ <a href="/images/staff-and-services/menu_spa_es.pdf" target="_blank">disponibles en el menú.</a></li>
                                                                         		</ul>
                                                                         	</div>
+                                                                            <br>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -3561,6 +3596,7 @@ class Layout_View
 	                                                                        		<li class="item-feature">- Introducción de BUCEO en la piscina*</li>
                                                                         		</ul>
                                                                         	</div>
+                                                                             <br>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -3600,6 +3636,7 @@ class Layout_View
                                                                         		</ul>
                                       
                                                                         	</div>
+                                                                            <br>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -4090,7 +4127,7 @@ class Layout_View
                                                     servicio de chef para cenas, sin embargo, si usted prefiere cenar en la villa, 
                                                     podemos ofrecerle este servicio con cargo adicional. Podrá disfrutar desde 
                                                     parrilladas bajo las estrellas hasta nuestras afamadas<strong>
-                                                    <a href="/images/staff-and-services/Menu_epic-experiences.pdf" target="_blank"> 
+                                                    <a href="/images/staff-and-services/experiencias-epicas.pdf" target="_blank"> 
                                                     Experiencias Épicas,</a></strong> las cuales incluyen música y entretenimiento; 
                                                     estamos seguros que no se arrepentirá de no haber salido de casa.
 
@@ -4253,7 +4290,7 @@ class Layout_View
                                             <p class="paragraph ng-attr-widget">
                                                 <span class="ng-directive ng-binding" style="">
                                                     <strong>Si algo en la casa no funciona apropiadamente, favor de informar a 
-                                                        su Anfitrión de Villa quien intentará resolver cualquier inconveniente lo 
+                                                        su <a href="mailto:villahost@villaaqua.com?Subject=Contact%20from%20Villa%20Aqua" target="_top">Anfitrión de Villa</a> quien intentará resolver cualquier inconveniente lo 
                                                         antes posible.
 
 
@@ -4485,6 +4522,7 @@ class Layout_View
 							                                            </p>
                                                                         
                                                                     </div>
+                                                                    <br>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -4503,6 +4541,7 @@ class Layout_View
 							                                                </span>
 							                                            </p>
                                                                     </div>
+                                                                    <br>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -4518,6 +4557,7 @@ class Layout_View
                                                                             </span>
 							                                            </p>
                                                                     </div>
+                                                                    <br>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -4538,6 +4578,7 @@ class Layout_View
                                                                             </span>
 							                                            </p>
                                                                     </div>
+                                                                    <br>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -4556,6 +4597,7 @@ class Layout_View
 							                                                </span>
 							                                            </p>
                                                                     </div>
+                                                                    <br>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -4567,7 +4609,7 @@ class Layout_View
                                                                     <div class="wpb_wrapper">
 							                                            <p class="paragraph ng-attr-widget">
 							                                                <span class="ng-directive ng-binding" style="">
-							                                                    <a href="/images/staff-and-services/menu-food-and-beverage.pdf" target="_blank">Este menú,</a> 
+							                                                    <a href="/images/staff-and-services/menu.pdf" target="_blank">Este menú,</a> 
 							                                                    es una muestra de algunos de los platillos que su 
                                                                                 chef puede preparar durante su estancia en Villa Aqua.                                                                                              Generalmente recomendamos que nuestros huéspedes programen,                                                                                         por lo menos, el menú para los primeros dos días. A su llegada                                                                                      podrán planear el resto de sus alimentos junto con el chef.
                                                                                 
@@ -4575,6 +4617,7 @@ class Layout_View
 							                                                </span>
 							                                            </p>
                                                                     </div>
+                                                                    <br>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -4614,7 +4657,7 @@ class Layout_View
                                             
                                             <p class="paragraph ng-attr-widget">
                                                 <span class="ng-directive ng-binding" style="">
-                                               	 En el  <a href="/images/staff-and-services/menu_spa-services.pdf" target="_blank">menú de 
+                                               	 En el  <a href="/images/staff-and-services/menu_spa_es.pdf" target="_blank">menú de 
                                                  nuestro Spa</a> encontrará masajes relajantes, faciales y otros tratamientos 
                                                 de belleza. 
                                                     
@@ -7027,7 +7070,7 @@ class Layout_View
 							</div> 
 						</div>
 						
-                        <div class="vc_row wpb_row vc_row-fluid top-margin horizontal-block" id="parks">
+                        <div class="vc_row wpb_row vc_row-fluid top-margin horizontal-block">
                             <div class="vc_col-sm-6 wpb_column vc_column_container ">
                                 <div class="wpb_wrapper">
                                     <div class="wpb_single_image wpb_content_element vc_align_center">
@@ -7044,7 +7087,7 @@ class Layout_View
                             
 
 <!------------- Bedroom 4 ------------------->
-                            <div class="vc_col-sm-6 wpb_column vc_column_container ">
+                            <div class="vc_col-sm-6 wpb_column vc_column_container" id="parques">
                                 <div class="wpb_wrapper">
                                     <div class="vc_custom_heading">
                                         <h2 style="color: 333;text-align: left;font-weight:300;font-style:normal">PARQUES Y AVENTURA</h2>
@@ -7570,7 +7613,7 @@ class Layout_View
 							</div> 
 						</div>
 						
-                        <div class="vc_row wpb_row vc_row-fluid top-margin horizontal-block" id="dining">
+                        <div class="vc_row wpb_row vc_row-fluid top-margin horizontal-block" id="restaurantes">
                             <div class="vc_col-sm-6 wpb_column vc_column_container ">
                                 <div class="wpb_wrapper">
                                     <div class="wpb_single_image wpb_content_element vc_align_center">
@@ -7630,7 +7673,7 @@ class Layout_View
 							</div> 
 						</div>
                         <!-- Row Backgrounds -->
-                        <div class="vc_row wpb_row vc_row-fluid top-margin horizontal-block" id="shopping">
+                        <div class="vc_row wpb_row vc_row-fluid top-margin horizontal-block" id="compras">
                             <div class="vc_col-sm-6 wpb_column vc_column_container ">
                                 <div class="wpb_wrapper">
                                     <div class="vc_custom_heading">
